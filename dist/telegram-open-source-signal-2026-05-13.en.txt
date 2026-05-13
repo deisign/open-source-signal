@@ -38,4 +38,4 @@ Dark-web OSINT needs hard ethical boundaries
 The OSINT Newsletter issue #105 focuses on dark-web OSINT, including tools, strategies, limitations and ways of connecting dark-web signals to surface-web context.
 Source: The OSINT Newsletter
 
-Full issue: https://example.org/issues/open-source-signal-2026-05-13.html
+Full issue: https://deisign.github.io/open-source-signal/issues/open-source-signal-2026-05-13.html

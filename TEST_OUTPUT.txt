@@ -1,8 +1,17 @@
-...........                                                              [100%]
-11 passed in 18.35s
---- build output ---
+$ pytest -q
+................                                                         [100%]
+16 passed in 16.40s
+
+$ python build_site.py --issues issues --templates templates --out dist --config site.json
 dist/issues/open-source-signal-2026-05-13.html
 dist/index.html
 dist/archive.html
+
+$ python telegram_digest.py issues/2026-05-13.json --lang uk --url https://deisign.github.io/open-source-signal/issues/open-source-signal-2026-05-13.html --out dist
 dist/telegram-open-source-signal-2026-05-13.uk.txt
+
+$ python telegram_digest.py issues/2026-05-13.json --lang en --url https://deisign.github.io/open-source-signal/issues/open-source-signal-2026-05-13.html --out dist
 dist/telegram-open-source-signal-2026-05-13.en.txt
+
+$ python create_issue.py --date 2026-05-14 --issue 001 --out /tmp/oss-draft-demo
+/tmp/oss-draft-demo/2026-05-14.json

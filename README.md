@@ -1,10 +1,31 @@
-# Open Source Signal v0.4
+# Open Source Signal v0.5
 
 Static prototype and generator for the bilingual OSINT journal **Open Source Signal / Сигнал відкритих джерел**.
 
 ## What it does
 
-There are three working build modes.
+There are four working build modes.
+
+
+### 0. Create a safe draft for the next issue
+
+`create_issue.py` creates an unfinished issue in `drafts/` so it cannot break the published site.
+
+```bash
+python create_issue.py --date 2026-05-14 --issue 001
+```
+
+When the draft is filled, validate and publish it into `issues/`:
+
+```bash
+python create_issue.py --publish drafts/2026-05-14.json
+```
+
+Full instructions are in:
+
+```text
+docs/ADD_ISSUE.md
+```
 
 ### 1. Render one issue
 
@@ -87,7 +108,7 @@ pytest -q
 Expected result:
 
 ```text
-9 passed
+16 passed
 ```
 
 ## Data model
@@ -115,10 +136,13 @@ Internal editorial notes are stored separately in `internal_notes` and rendered 
 ```text
 open-source-signal-v0.3/
   build_site.py
+  create_issue.py
   render_issue.py
   telegram_digest.py
   site.json
   issue.schema.json
+  drafts/
+    .gitkeep
   issues/
     2026-05-13.json
   templates/
@@ -134,6 +158,7 @@ open-source-signal-v0.3/
       open-source-signal-2026-05-13.html
   tests/
     test_build_site.py
+    test_create_issue.py
     test_render_issue.py
     test_telegram_digest.py
 ```
@@ -150,4 +175,4 @@ The HTML templates use:
 
 ## Next step
 
-GitHub Pages packaging is included in `.github/workflows/pages.yml`. See `docs/GITHUB_PAGES_SETUP.md` for repository setup and publishing instructions.
+Use `create_issue.py` and `docs/ADD_ISSUE.md` to add new issues safely. GitHub Pages packaging is included in `.github/workflows/pages.yml`. See `docs/GITHUB_PAGES_SETUP.md` for repository setup and publishing instructions.
