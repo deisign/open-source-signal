@@ -69,7 +69,7 @@ Before pushing:
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-pytest -q
+python -m pytest -q
 python build_site.py --issues issues --templates templates --out dist --config site.json
 ```
 
@@ -90,7 +90,7 @@ issues/YYYY-MM-DD.json
 Then run:
 
 ```bash
-pytest -q
+python -m pytest -q
 python build_site.py --issues issues --templates templates --out dist --config site.json
 ```
 

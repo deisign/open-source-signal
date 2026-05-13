@@ -102,7 +102,7 @@ pip install -r requirements.txt
 ## Test
 
 ```bash
-pytest -q
+python -m pytest -q
 ```
 
 Expected result:

@@ -55,7 +55,7 @@ If the issue is incomplete, publishing fails and the public site remains untouch
 ## 4. Build and test
 
 ```bash
-pytest -q
+python -m pytest -q
 python build_site.py
 ```
 
