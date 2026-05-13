@@ -87,6 +87,15 @@ issue: 2026-05-13.json
 lang: uk or en
 issue_url: leave empty to use site.json base_url
 max_items: 7
+force: false
 ```
+
+`force: false` prevents accidental duplicate posts. After a successful send, the workflow records the issue/language in:
+
+```text
+data/telegram_sent.json
+```
+
+If the same issue and language are run again, the workflow exits successfully without posting. Set `force: true` only when you intentionally want to resend the same announcement.
 
 This workflow is manual on purpose. It should not post to Telegram on every push, because rebuild commits and small fixes would otherwise spam the channel like a bureaucratic trumpet.

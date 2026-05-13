@@ -23,9 +23,14 @@ on:
         description: "Maximum number of signals in Telegram post"
         required: true
         default: "7"
+      force:
+        description: "Resend even if this issue/language was already recorded as sent"
+        required: true
+        type: boolean
+        default: false
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   publish:
@@ -33,6 +38,8 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -89,7 +96,17 @@ jobs:
           echo "Rendered $TEXT_FILE"
           cat "$TEXT_FILE"
 
+      - name: Check duplicate Telegram announcement
+        id: duplicate
+        run: |
+          python telegram_sent_log.py check \
+            --sent-log data/telegram_sent.json \
+            --issue "${{ inputs.issue }}" \
+            --lang "${{ inputs.lang }}" \
+            --force "${{ inputs.force }}"
+
       - name: Send Telegram announcement
+        if: steps.duplicate.outputs.should_send == 'true'
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
@@ -97,3 +114,33 @@ jobs:
           python send_telegram.py \
             --text-file "${{ steps.render.outputs.text_file }}" \
             --disable-preview
+
+      - name: Record Telegram send
+        if: steps.duplicate.outputs.should_send == 'true'
+        run: |
+          python telegram_sent_log.py record \
+            --sent-log data/telegram_sent.json \
+            --issue "${{ inputs.issue }}" \
+            --lang "${{ inputs.lang }}" \
+            --issue-url "${{ steps.render.outputs.issue_url }}" \
+            --text-file "${{ steps.render.outputs.text_file }}" \
+            --run-id "${{ github.run_id }}" \
+            --run-url "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+
+      - name: Commit Telegram sent log
+        if: steps.duplicate.outputs.should_send == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/telegram_sent.json
+          if git diff --cached --quiet; then
+            echo "No sent-log changes to commit."
+          else
+            git commit -m "Record Telegram announcement for ${{ inputs.issue }} (${{ inputs.lang }})"
+            git push
+          fi
+
+      - name: Skip duplicate notice
+        if: steps.duplicate.outputs.should_send != 'true'
+        run: |
+          echo "Telegram announcement was already sent. Nothing posted. Use force=true to resend."

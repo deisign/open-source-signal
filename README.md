@@ -187,3 +187,7 @@ The HTML templates use:
 - Inter for body text.
 - Arimo for rubric labels and field labels such as `What happened`, `Why it matters`, `Що сталося`, `Чому це важливо`.
 - JetBrains Mono for technical/meta elements.
+
+## Telegram duplicate protection
+
+The manual Telegram workflow records successful sends in `data/telegram_sent.json`. Re-running the workflow for the same issue/language will not post again unless the `force` input is set to `true`.
