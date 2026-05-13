@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Archive — {{ config['site_title_en'] }}</title>
+  <meta name="description" content="Archive of Open Source Signal issues.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@500;600;700&family=Fraunces:opsz,wght,SOFT,WONK@9..144,600..900,50..100,0..1&family=Inter:wght@400;500;650;800;900&family=JetBrains+Mono:wght@400;600;800&family=Source+Serif+4:opsz,wght@8..60,600..900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --display-latin: Fraunces, Georgia, serif;
+      --display-cyr: "Source Serif 4", Georgia, "Times New Roman", serif;
+      --label-font: Arimo, Arial, Helvetica, sans-serif;
+      --paper: #F2EDDD;
+      --paper-2: #FFF9EA;
+      --ink: #141414;
+      --muted: #6d665a;
+      --line: rgba(20,20,20,.16);
+      --shadow: 0 24px 70px rgba(20,20,20,.12);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 10% 5%, rgba(214,66,43,.15), transparent 27rem),
+        radial-gradient(circle at 84% 12%, rgba(36,92,115,.16), transparent 24rem),
+        linear-gradient(135deg, #f7f0df, #ece1c6 58%, #d9cfb7);
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 18px;
+      line-height: 1.48;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: .24;
+      background-image:
+        linear-gradient(rgba(20,20,20,.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(20,20,20,.035) 1px, transparent 1px);
+      background-size: 28px 28px;
+      mask-image: linear-gradient(to bottom, #000, transparent 85%);
+    }
+    a { color: inherit; text-decoration-thickness: .1em; text-underline-offset: .18em; }
+    .wrap { width: min(1080px, calc(100% - 36px)); margin: 0 auto; }
+    header { padding: 68px 0 30px; }
+    .nav { font-family: var(--label-font); font-weight: 800; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; font-size: 13px; }
+    h1 { margin: 18px 0 8px; font-family: var(--display-latin); font-size: clamp(62px, 10vw, 132px); line-height: .84; letter-spacing: -.075em; }
+    .ua { font-family: var(--display-cyr); font-size: clamp(38px, 6vw, 82px); letter-spacing: -.04em; line-height: .9; font-weight: 850; color: #302b25; }
+    .archive-list { display: grid; gap: 18px; padding: 34px 0 90px; }
+    .issue-row {
+      display: grid;
+      grid-template-columns: 170px 1fr auto;
+      gap: 22px;
+      align-items: center;
+      border: 1px solid var(--line);
+      background: rgba(255,249,234,.72);
+      border-radius: 28px;
+      padding: 22px;
+      box-shadow: 0 12px 38px rgba(20,20,20,.06);
+    }
+    .date, .type, .count { font-family: var(--label-font); font-weight: 800; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; font-size: 13px; }
+    h2 { margin: 0 0 4px; font-family: var(--display-latin); font-size: 40px; line-height: .95; letter-spacing: -.05em; }
+    .issue-title-uk { font-family: var(--display-cyr); font-size: 30px; line-height: .98; letter-spacing: -.03em; font-weight: 800; }
+    .open { font-family: var(--label-font); font-weight: 800; white-space: nowrap; }
+    footer { padding: 24px 0 70px; color: var(--muted); font-family: JetBrains Mono, monospace; font-size: 14px; }
+    @media (max-width: 760px) { .issue-row { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <a class="nav" href="index.html">← Home</a>
+    <h1>Archive</h1>
+    <div class="ua">Архів випусків</div>
+  </header>
+  <main class="wrap archive-list">
+    {% for built in issues %}
+    <article class="issue-row">
+      <div>
+        <div class="date">{{ built.issue['date_label_en'] }}</div>
+        <div class="type">#{{ built.issue['issue_number'] }}</div>
+      </div>
+      <div>
+        <h2>{{ built.issue['title_en'] }}</h2>
+        <div class="issue-title-uk">{{ built.issue['title_uk'] }}</div>
+        <div class="count">{{ built.issue['items']|length }} signals · {{ built.issue['language_label'] }}</div>
+      </div>
+      <a class="open" href="{{ built.href }}">Open →</a>
+    </article>
+    {% endfor %}
+  </main>
+  <footer class="wrap">Open Source Signal / Сигнал відкритих джерел.</footer>
+</body>
+</html>

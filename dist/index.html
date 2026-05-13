@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Open Source Signal / Сигнал відкритих джерел</title>
+  <meta name="description" content="A bilingual OSINT editorial radar for investigations, verification, maps, platforms, surveillance and researcher safety.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@500;600;700&family=Fraunces:opsz,wght,SOFT,WONK@9..144,600..900,50..100,0..1&family=Inter:wght@400;500;650;800;900&family=JetBrains+Mono:wght@400;600;800&family=Source+Serif+4:opsz,wght@8..60,600..900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --display-latin: Fraunces, Georgia, serif;
+      --display-cyr: "Source Serif 4", Georgia, "Times New Roman", serif;
+      --label-font: Arimo, Arial, Helvetica, sans-serif;
+      --paper: #F2EDDD;
+      --paper-2: #FFF9EA;
+      --ink: #141414;
+      --muted: #6d665a;
+      --line: rgba(20,20,20,.16);
+      --signal: #D6422B;
+      --surveillance: #5B3B83;
+      --map: #1F7667;
+      --platform: #CC8B21;
+      --opsec: #245C73;
+      --infra: #2F5EA8;
+      --risk: #141414;
+      --shadow: 0 24px 70px rgba(20,20,20,.12);
+      --radius: 28px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 6% 6%, rgba(214,66,43,.18), transparent 26rem),
+        radial-gradient(circle at 86% 10%, rgba(31,118,103,.18), transparent 24rem),
+        radial-gradient(circle at 82% 88%, rgba(91,59,131,.13), transparent 24rem),
+        linear-gradient(135deg, #f7f0df, #ece1c6 58%, #d9cfb7);
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 18px;
+      line-height: 1.48;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: .27;
+      background-image:
+        linear-gradient(rgba(20,20,20,.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(20,20,20,.035) 1px, transparent 1px);
+      background-size: 28px 28px;
+      mask-image: linear-gradient(to bottom, #000, transparent 85%);
+    }
+    a { color: inherit; text-decoration-thickness: .1em; text-underline-offset: .18em; }
+    .wrap { width: min(1180px, calc(100% - 36px)); margin: 0 auto; }
+    .hero {
+      min-height: 90vh;
+      display: grid;
+      align-items: center;
+      padding: 48px 0 54px;
+      position: relative;
+    }
+    .hero-card {
+      border: 1px solid var(--line);
+      background: rgba(255,249,234,.74);
+      backdrop-filter: blur(18px);
+      border-radius: 42px;
+      padding: clamp(28px, 5vw, 72px);
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-card::after {
+      content: "SIGNAL";
+      position: absolute;
+      right: -5vw;
+      bottom: -5vw;
+      font-family: JetBrains Mono, monospace;
+      font-size: clamp(72px, 16vw, 224px);
+      font-weight: 800;
+      letter-spacing: -.09em;
+      color: rgba(20,20,20,.045);
+      transform: rotate(-5deg);
+    }
+    .kicker, .rubric, .button-row, .issue-meta, .chip, .archive-link, .label {
+      font-family: var(--label-font);
+    }
+    .kicker {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--muted);
+      position: relative;
+      z-index: 1;
+      font-weight: 700;
+    }
+    .pill {
+      border: 1px solid var(--line);
+      padding: 7px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.35);
+    }
+    h1 {
+      position: relative;
+      z-index: 1;
+      margin: 24px 0 10px;
+      font-family: var(--display-latin);
+      font-size: clamp(58px, 11vw, 148px);
+      line-height: .84;
+      letter-spacing: -.075em;
+      max-width: 940px;
+      font-weight: 900;
+    }
+    .ua-masthead {
+      position: relative;
+      z-index: 1;
+      margin: 0 0 24px;
+      font-family: var(--display-cyr);
+      font-size: clamp(42px, 7.4vw, 96px);
+      line-height: .9;
+      letter-spacing: -.045em;
+      font-weight: 850;
+      max-width: 980px;
+      color: #2f2b25;
+    }
+    .lead-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 22px;
+      margin-top: 28px;
+      max-width: 980px;
+    }
+    .lead-card {
+      border: 1px solid rgba(20,20,20,.12);
+      border-radius: 24px;
+      padding: 20px;
+      background: rgba(255,255,255,.36);
+    }
+    .lead-card h2 {
+      margin: 0 0 10px;
+      font-family: var(--display-latin);
+      font-size: clamp(32px, 4vw, 52px);
+      letter-spacing: -.055em;
+      line-height: .95;
+    }
+    .lead-card.uk h2 { font-family: var(--display-cyr); letter-spacing: -.035em; }
+    .lead-card p { margin: 0; color: #3d382f; font-size: 19px; }
+    .button-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 28px; position: relative; z-index: 1; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 12px 16px;
+      border-radius: 999px;
+      border: 1px solid rgba(20,20,20,.2);
+      background: var(--ink);
+      color: var(--paper-2);
+      text-decoration: none;
+      font-weight: 800;
+    }
+    .button.secondary { background: rgba(255,255,255,.42); color: var(--ink); }
+    .section { padding: 28px 0 54px; }
+    .section-title {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+    .section-title h2 {
+      margin: 0;
+      font-family: var(--display-latin);
+      font-size: clamp(42px, 6vw, 78px);
+      line-height: .9;
+      letter-spacing: -.065em;
+    }
+    .section-title .uk-label {
+      font-family: var(--display-cyr);
+      letter-spacing: -.035em;
+      color: #3c372f;
+    }
+    .archive-link { font-weight: 800; color: var(--muted); white-space: nowrap; }
+    .latest-card {
+      border: 1px solid var(--line);
+      border-radius: 36px;
+      background: rgba(255,249,234,.74);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: .95fr 1.05fr;
+    }
+    .latest-panel {
+      padding: clamp(24px, 4vw, 42px);
+      border-right: 1px solid rgba(20,20,20,.12);
+    }
+    .issue-meta {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: .07em;
+      font-weight: 700;
+    }
+    .latest-panel h3 {
+      margin: 18px 0 12px;
+      font-family: var(--display-latin);
+      font-size: clamp(42px, 6vw, 78px);
+      line-height: .88;
+      letter-spacing: -.065em;
+    }
+    .latest-panel .uk-title {
+      font-family: var(--display-cyr);
+      font-size: clamp(32px, 4.7vw, 58px);
+      letter-spacing: -.04em;
+      line-height: .9;
+      margin: 0 0 16px;
+      font-weight: 850;
+    }
+    .latest-panel p { color: #403b33; margin: 0 0 18px; }
+    .signal-list { padding: 24px; display: grid; gap: 14px; }
+    .mini-signal {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 12px;
+      padding: 16px;
+      border-radius: 22px;
+      border: 1px solid rgba(20,20,20,.1);
+      background: rgba(255,255,255,.36);
+    }
+    .mini-signal .emoji { font-size: 28px; }
+    .rubric { color: var(--accent); text-transform: uppercase; letter-spacing: .06em; font-size: 12px; font-weight: 800; }
+    .mini-signal h4 {
+      margin: 4px 0 6px;
+      font-family: var(--display-cyr);
+      font-size: 24px;
+      line-height: 1;
+      letter-spacing: -.025em;
+    }
+    .mini-signal p { margin: 0; font-size: 15px; color: #4e493f; }
+    .theme-signal { --accent: var(--signal); }
+    .theme-surveillance { --accent: var(--surveillance); }
+    .theme-map { --accent: var(--map); }
+    .theme-platform { --accent: var(--platform); }
+    .theme-opsec { --accent: var(--opsec); }
+    .theme-infra { --accent: var(--infra); }
+    .theme-risk { --accent: var(--risk); }
+    .rubric-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .chip {
+      min-height: 88px;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-radius: 22px;
+      border: 1px solid rgba(20,20,20,.12);
+      background: rgba(255,249,234,.62);
+      font-weight: 800;
+      box-shadow: 0 10px 28px rgba(20,20,20,.045);
+    }
+    .chip span:first-child { font-size: 26px; }
+    footer { padding: 42px 0 78px; color: #4f493f; font-family: JetBrains Mono, monospace; font-size: 14px; }
+    @media (max-width: 860px) {
+      body { font-size: 16px; }
+      .lead-grid, .latest-card, .rubric-grid { grid-template-columns: 1fr; }
+      .latest-panel { border-right: 0; border-bottom: 1px solid rgba(20,20,20,.12); }
+      .section-title { align-items: start; flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <div class="hero-card">
+        <div class="kicker">
+          <span class="pill">OSINT editorial radar</span>
+          <span class="pill">EN + UKR</span>
+          <span class="pill">Daily Signal / Weekly Magazine</span>
+        </div>
+        <h1>Open Source Signal</h1>
+        <div class="ua-masthead">Сигнал відкритих джерел</div>
+        <div class="lead-grid">
+          <section class="lead-card en">
+            <h2>Signals, not noise.</h2>
+            <p>A bilingual OSINT editorial radar for investigations, verification, maps, platforms, surveillance and researcher safety.</p>
+          </section>
+          <section class="lead-card uk">
+            <h2>Сигнали, не шум.</h2>
+            <p>Двомовний OSINT-радар про розслідування, верифікацію, мапи, платформи, інфраструктуру стеження й безпеку дослідника.</p>
+          </section>
+        </div>
+        <div class="button-row">
+          <a class="button" href="issues/open-source-signal-2026-05-13.html">Open latest issue</a>
+          <a class="button secondary" href="archive.html">Archive</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="section latest">
+      <div class="section-title">
+        <h2>Latest issue <span class="uk-label">/ останній випуск</span></h2>
+        <a class="archive-link" href="archive.html">All issues →</a>
+      </div>
+      <article class="latest-card">
+        <div class="latest-panel">
+          <div class="issue-meta">
+            <span>Issue #000</span>
+            <span>13 May 2026</span>
+            <span>Daily Signal Prototype</span>
+          </div>
+          <h3>Open Source Signal</h3>
+          <div class="uk-title">Сигнал відкритих джерел</div>
+          <p>A visual prototype for the daily digest: editorial cards, color-coded rubrics, source links, Ukrainian adaptations and internal notes separated from the public layer. No cyberpunk fog machine, no “OSINT ninja” confetti. Just signal.</p>
+          <a class="button" href="issues/open-source-signal-2026-05-13.html">Read the issue / Читати випуск</a>
+        </div>
+        <div class="signal-list">
+          <div class="mini-signal theme-signal">
+            <div class="emoji">📡</div>
+            <div>
+              <div class="rubric">Signal One / Головний сигнал</div>
+              <h4>Стеження переходить на рівень телеком-інфраструктури</h4>
+              <p>Для українських журналістів, волонтерів і розслідувачів це нагадування: ризики не закінчуються Telegram, Facebook або відкритими профілями. Навколо існує ринок телеком-метаданих, рекламної геолокації та брокерів даних.</p>
+            </div>
+          </div>
+          <div class="mini-signal theme-surveillance">
+            <div class="emoji">🛰️</div>
+            <div>
+              <div class="rubric">Surveillance Watch / Інфраструктура стеження</div>
+              <h4>Рекламна геолокація як темний двійник OSINT</h4>
+              <p>Це темний двійник OSINT: формально дані можуть походити з відкритої або комерційної екосистеми, але результат — приховане масове стеження. Для громадянського суспільства це не технічна дрібниця, а питання безпеки.</p>
+            </div>
+          </div>
+          <div class="mini-signal theme-map">
+            <div class="emoji">🗺️</div>
+            <div>
+              <div class="rubric">Map Room / Картографічна кімната</div>
+              <h4>Як перевіряти руйнування, коли преміальні супутникові знімки недоступні</h4>
+              <p>Для України це практична методика: що робити, коли немає Maxar/Planet у потрібний момент, але треба перевірити удар, руйнування або зміну об’єкта.</p>
+            </div>
+          </div>
+          <div class="mini-signal theme-platform">
+            <div class="emoji">🔎</div>
+            <div>
+              <div class="rubric">Platform Watch / Платформний радар</div>
+              <h4>Xiaohongshu / RedNote як недооцінене джерело для OSINT</h4>
+              <p>Дослідники часто сидять у Telegram, X і TikTok, але пропускають платформи, де люди говорять побутово. Саме там іноді видно соціальні настрої, локальну лексику, цензурні межі й непрямі сліди подій.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="section rubrics">
+      <div class="section-title">
+        <h2>Rubrics <span class="uk-label">/ рубрики</span></h2>
+      </div>
+      <div class="rubric-grid">
+        <div class="chip"><span>📡</span><span>Signal One</span></div>
+        <div class="chip"><span>🛰️</span><span>Surveillance Watch</span></div>
+        <div class="chip"><span>🗺️</span><span>Map Room</span></div>
+        <div class="chip"><span>🔎</span><span>Platform Watch</span></div>
+        <div class="chip"><span>🛡️</span><span>Investigator OPSEC</span></div>
+        <div class="chip"><span>🌐</span><span>Infrastructure Signals</span></div>
+        <div class="chip"><span>⚠️</span><span>Risk Watch</span></div>
+        <div class="chip"><span>🧰</span><span>Toolbox / when deserved</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">Open Source Signal / Сигнал відкритих джерел. Static prototype v0.2.</div>
+  </footer>
+</body>
+</html>

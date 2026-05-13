@@ -1,0 +1,8 @@
+...........                                                              [100%]
+11 passed in 18.35s
+--- build output ---
+dist/issues/open-source-signal-2026-05-13.html
+dist/index.html
+dist/archive.html
+dist/telegram-open-source-signal-2026-05-13.uk.txt
+dist/telegram-open-source-signal-2026-05-13.en.txt

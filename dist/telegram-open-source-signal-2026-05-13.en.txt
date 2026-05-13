@@ -1,0 +1,41 @@
+OPEN SOURCE SIGNAL — Daily Signal #000
+13 May 2026
+
+Today’s signals:
+
+1. 📡 Signal One
+Telecom surveillance is moving into the infrastructure layer
+Citizen Lab documented telecom-linked surveillance activity involving covert location-tracking operations and mobile-network signalling infrastructure.
+Source: Citizen Lab
+
+2. 🛰️ Surveillance Watch
+Ad-based geolocation is the dark twin of OSINT
+Citizen Lab’s Webloc report links ad-based geolocation products to law-enforcement and intelligence customers.
+Source: Citizen Lab
+
+3. 🗺️ Map Room
+How to verify damage when premium satellite imagery is limited
+Bellingcat tracked reported attacks on Iranian police infrastructure using Sentinel-2, PlanetScope where available, OpenStreetMap, Wikimapia, Google Maps and Overpass Turbo.
+Source: Bellingcat
+
+4. 🔎 Platform Watch
+Xiaohongshu / RedNote deserves a place in platform OSINT
+Bellingcat published a guide to Xiaohongshu / RedNote, emphasizing language-specific search, user IDs, platform conventions and the difference between domestic and international visibility.
+Source: Bellingcat
+
+5. 🛡️ Investigator OPSEC
+Email threats are shifting into identity attacks
+Microsoft’s Q1 2026 email threat report focuses on credential phishing, QR-code phishing, CAPTCHA-gated campaigns, adversary-in-the-middle techniques and shifts after disruption of Tycoon2FA.
+Source: Microsoft Threat Intelligence
+
+6. 🌐 Infrastructure Signals
+Internet disruptions are becoming conflict signals
+Cloudflare Radar’s Q1 2026 review highlights internet disruptions, nationwide shutdowns and attacks affecting cloud infrastructure.
+Source: Cloudflare Radar
+
+7. ⚠️ Risk Watch
+Dark-web OSINT needs hard ethical boundaries
+The OSINT Newsletter issue #105 focuses on dark-web OSINT, including tools, strategies, limitations and ways of connecting dark-web signals to surface-web context.
+Source: The OSINT Newsletter
+
+Full issue: https://example.org/issues/open-source-signal-2026-05-13.html

@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ issue['title_en'] }} #{{ issue['issue_number'] }} / {{ issue['title_uk'] }}</title>
+  <meta name="description" content="Bilingual OSINT editorial digest.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@500;600;700&family=Fraunces:opsz,wght,SOFT,WONK@9..144,600..900,50..100,0..1&family=Inter:wght@400;500;650;800;900&family=JetBrains+Mono:wght@400;600;800&family=Source+Serif+4:opsz,wght@8..60,600..900&display=swap" rel="stylesheet">
+  <style>
+
+    :root {
+      --display-latin: Fraunces, Georgia, serif;
+      --display-cyr: "Source Serif 4", Georgia, "Times New Roman", serif;
+      --label-font: Arimo, Arial, Helvetica, sans-serif;
+      --paper: #F2EDDD;
+      --paper-2: #FFF9EA;
+      --ink: #141414;
+      --muted: #6d665a;
+      --line: rgba(20,20,20,.16);
+      --signal: #D6422B;
+      --surveillance: #5B3B83;
+      --map: #1F7667;
+      --platform: #CC8B21;
+      --opsec: #245C73;
+      --infra: #2F5EA8;
+      --risk: #141414;
+      --shadow: 0 24px 70px rgba(20,20,20,.12);
+      --radius: 28px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 10% 5%, rgba(214,66,43,.18), transparent 27rem),
+        radial-gradient(circle at 86% 14%, rgba(36,92,115,.18), transparent 24rem),
+        linear-gradient(135deg, #f7f0df, #ece1c6 58%, #d9cfb7);
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 18px;
+      line-height: 1.48;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: .26;
+      background-image:
+        linear-gradient(rgba(20,20,20,.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(20,20,20,.035) 1px, transparent 1px);
+      background-size: 28px 28px;
+      mask-image: linear-gradient(to bottom, #000, transparent 85%);
+    }
+    a { color: inherit; text-decoration-thickness: .1em; text-underline-offset: .18em; }
+    .wrap { width: min(1180px, calc(100% - 36px)); margin: 0 auto; }
+    header.hero {
+      min-height: 94vh;
+      display: grid;
+      align-items: center;
+      padding: 48px 0 64px;
+      position: relative;
+    }
+    .hero-card {
+      border: 1px solid var(--line);
+      background: rgba(255,249,234,.72);
+      backdrop-filter: blur(18px);
+      border-radius: 42px;
+      padding: clamp(26px, 5vw, 70px);
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-card::after {
+      content: "OSINT";
+      position: absolute;
+      right: -2vw;
+      bottom: -7vw;
+      font-family: JetBrains Mono, monospace;
+      font-size: clamp(96px, 19vw, 260px);
+      font-weight: 800;
+      letter-spacing: -.08em;
+      color: rgba(20,20,20,.045);
+      transform: rotate(-5deg);
+    }
+    .kicker {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+      font-family: JetBrains Mono, monospace;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--muted);
+      position: relative;
+      z-index: 1;
+    }
+    .pill {
+      border: 1px solid var(--line);
+      padding: 7px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.35);
+    }
+    h1 {
+      position: relative;
+      z-index: 1;
+      margin: 24px 0 18px;
+      font-family: var(--display-latin);
+      font-size: clamp(56px, 11vw, 142px);
+      line-height: .86;
+      letter-spacing: -.07em;
+      max-width: 900px;
+      font-weight: 900;
+    }
+    .ua-masthead {
+      position: relative;
+      z-index: 1;
+      margin: -8px 0 18px;
+      font-family: var(--display-cyr);
+      font-size: clamp(44px, 7.5vw, 96px);
+      line-height: .9;
+      letter-spacing: -.045em;
+      font-weight: 800;
+      max-width: 980px;
+      color: #2f2b25;
+      font-feature-settings: "kern" 1;
+    }
+    .subtitle {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      font-size: clamp(22px, 3vw, 36px);
+      line-height: 1.14;
+      font-weight: 650;
+      letter-spacing: -.03em;
+      margin: 0;
+    }
+    .dek {
+      position: relative;
+      z-index: 1;
+      max-width: 780px;
+      margin: 24px 0 0;
+      color: #3d382f;
+      font-size: 20px;
+    }
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 9;
+      backdrop-filter: blur(16px);
+      background: rgba(242,237,221,.82);
+      border-bottom: 1px solid var(--line);
+    }
+    .toolbar-inner {
+      min-height: 72px;
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .brand-mini {
+      font-family: var(--display-latin);
+      font-weight: 900;
+      font-size: 24px;
+      letter-spacing: -.05em;
+    }
+    .language-toggle, .view-toggle {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    button {
+      appearance: none;
+      border: 1px solid rgba(20,20,20,.2);
+      background: rgba(255,255,255,.45);
+      color: var(--ink);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-family: Inter, sans-serif;
+      font-weight: 800;
+      cursor: pointer;
+      transition: .18s ease;
+    }
+    button:hover, button.active {
+      background: var(--ink);
+      color: var(--paper-2);
+      transform: translateY(-1px);
+    }
+    .intro-grid {
+      padding: 58px 0 34px;
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 26px;
+    }
+    .brief-card, .rubric-map {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255,249,234,.65);
+      padding: 26px;
+      box-shadow: 0 12px 38px rgba(20,20,20,.06);
+    }
+    .brief-card h2, .rubric-map h2 {
+      font-family: var(--display-latin);
+      font-size: 42px;
+      margin: 0 0 14px;
+      letter-spacing: -.045em;
+      line-height: .95;
+    }
+    .rubric-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 18px;
+    }
+    .rubric-chip {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-height: 48px;
+      padding: 10px 12px;
+      border-radius: 16px;
+      background: rgba(255,255,255,.46);
+      border: 1px solid rgba(20,20,20,.1);
+      font-family: var(--label-font);
+      letter-spacing: .015em;
+      font-weight: 800;
+      font-size: 15px;
+    }
+    .issue-section {
+      padding: 18px 0 80px;
+    }
+    .signals {
+      display: grid;
+      gap: 28px;
+    }
+    .signal-card {
+      border-radius: 34px;
+      overflow: hidden;
+      border: 1px solid rgba(20,20,20,.18);
+      background: rgba(255,249,234,.78);
+      box-shadow: var(--shadow);
+      position: relative;
+      isolation: isolate;
+    }
+    .signal-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 13px;
+      background: var(--accent);
+      z-index: 1;
+    }
+    .signal-card::after {
+      content: "";
+      position: absolute;
+      inset: -40% -20% auto auto;
+      width: 360px;
+      height: 360px;
+      border-radius: 50%;
+      background: color-mix(in srgb, var(--accent), transparent 82%);
+      z-index: -1;
+    }
+    .theme-signal { --accent: var(--signal); }
+    .theme-surveillance { --accent: var(--surveillance); }
+    .theme-map { --accent: var(--map); }
+    .theme-platform { --accent: var(--platform); }
+    .theme-opsec { --accent: var(--opsec); }
+    .theme-infra { --accent: var(--infra); }
+    .theme-risk { --accent: var(--risk); }
+    .card-topline {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      align-items: center;
+      padding: 22px 26px 0 36px;
+      font-family: JetBrains Mono, monospace;
+      font-weight: 800;
+      font-size: 14px;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .rubric {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      flex-wrap: wrap;
+      font-family: var(--label-font);
+      letter-spacing: .055em;
+      font-weight: 700;
+    }
+    .emoji {
+      font-size: 24px;
+      filter: saturate(.85);
+    }
+    .issue-index {
+      font-size: 28px;
+      letter-spacing: -.08em;
+      color: rgba(20,20,20,.18);
+    }
+    .lang-panel {
+      padding: 10px 34px 16px 36px;
+    }
+    body.lang-en .lang-panel.uk,
+    body.lang-en .rubric .uk,
+    body.lang-uk .lang-panel.en,
+    body.lang-uk .rubric .en {
+      display: none;
+    }
+    body.lang-both .signal-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    body.lang-both .card-topline,
+    body.lang-both .tags {
+      grid-column: 1 / -1;
+    }
+    body.lang-both .lang-panel.en {
+      border-right: 1px solid rgba(20,20,20,.12);
+    }
+    body.lang-both .rubric .uk::before {
+      content: "/";
+      color: rgba(20,20,20,.36);
+      margin-right: 8px;
+    }
+    h2 {
+      font-family: var(--display-latin);
+      font-size: clamp(36px, 5vw, 74px);
+      line-height: .94;
+      letter-spacing: -.06em;
+      margin: 14px 0 16px;
+      max-width: 920px;
+    }
+    .lang-panel.uk h2,
+    .brief-card h2 .uk,
+    body.lang-uk .hero .ua-masthead {
+      font-family: var(--display-cyr);
+      letter-spacing: -.025em;
+    }
+    .lang-panel.uk h2 {
+      font-weight: 800;
+    }
+    .lang-panel.uk .field h3 {
+      font-weight: 700;
+    }
+    .source-line {
+      display: inline-block;
+      margin: 0 0 24px;
+      padding: 9px 12px;
+      border-radius: 999px;
+      background: rgba(20,20,20,.055);
+      font-family: JetBrains Mono, monospace;
+      font-size: 14px;
+    }
+    .field {
+      display: grid;
+      grid-template-columns: minmax(148px, 190px) minmax(0, 1fr);
+      gap: 18px;
+      padding: 18px 0;
+      border-top: 1px solid rgba(20,20,20,.11);
+    }
+    .field h3 {
+      margin: 0;
+      font-size: 14px;
+      font-family: var(--label-font);
+      text-transform: uppercase;
+      letter-spacing: .075em;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    .field p {
+      margin: 0;
+      font-size: 19px;
+    }
+    .field.use p {
+      font-weight: 650;
+    }
+    .field.limits p {
+      color: #4c473e;
+    }
+    .tags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      padding: 4px 34px 28px 36px;
+    }
+    .tags span {
+      display: inline-flex;
+      border: 1px solid color-mix(in srgb, var(--accent), #000 12%);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 13px;
+      font-family: JetBrains Mono, monospace;
+      font-weight: 800;
+      background: color-mix(in srgb, var(--accent), transparent 92%);
+    }
+    .internal {
+      margin: 0 0 82px;
+      border: 1px dashed rgba(20,20,20,.35);
+      background: rgba(20,20,20,.88);
+      color: #f8eed6;
+      border-radius: 34px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+    .internal h2 {
+      margin-top: 0;
+      color: #fff7e2;
+      font-size: clamp(32px, 5vw, 64px);
+    }
+    .internal ol {
+      margin: 0;
+      padding-left: 24px;
+      font-family: JetBrains Mono, monospace;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    footer {
+      padding: 60px 0 90px;
+      color: #4f493f;
+      font-family: JetBrains Mono, monospace;
+      font-size: 14px;
+    }
+    .print-note {
+      border-top: 1px solid var(--line);
+      padding-top: 24px;
+    }
+    @media (max-width: 860px) {
+      body { font-size: 16px; }
+      .intro-grid, body.lang-both .signal-card {
+        grid-template-columns: 1fr;
+      }
+      body.lang-both .lang-panel.en {
+        border-right: 0;
+        border-bottom: 1px solid rgba(20,20,20,.12);
+      }
+      .field {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+      .rubric-list {
+        grid-template-columns: 1fr;
+      }
+      .toolbar-inner {
+        padding: 12px 0;
+      }
+    }
+    @media print {
+      body {
+        background: #fff;
+        color: #000;
+        font-size: 12pt;
+      }
+      body::before, .toolbar, .hero-card::after {
+        display: none !important;
+      }
+      header.hero { min-height: auto; padding: 24px 0; }
+      .hero-card, .signal-card, .brief-card, .rubric-map, .internal {
+        box-shadow: none;
+        break-inside: avoid;
+        background: #fff;
+      }
+      .signal-card { margin-bottom: 18px; }
+      a { text-decoration: none; }
+    }
+  
+  </style>
+</head>
+<body class="lang-both">
+  <header class="hero">
+    <div class="wrap">
+      <div class="hero-card">
+        <div class="kicker">
+          <span class="pill">Issue #{{ issue['issue_number'] }}</span>
+          <span class="pill">{{ issue['date_label_en'] }}</span>
+          <span class="pill">{{ issue['issue_type'] }}</span>
+          <span class="pill">{{ issue['language_label'] }}</span>
+        </div>
+        <h1>{{ issue['title_en'] }}</h1>
+        <p class="ua-masthead">{{ issue['title_uk'] }}</p>
+        <p class="subtitle">{{ issue['subtitle_en'] }}</p>
+        <p class="dek">{{ issue['dek_en'] }}</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="toolbar" aria-label="Issue controls">
+    <div class="wrap toolbar-inner">
+      <div class="brand-mini">OSS #{{ issue['issue_number'] }}</div>
+      <div class="language-toggle" aria-label="Language view">
+        <button data-lang="both" class="active" type="button">EN + UKR</button>
+        <button data-lang="en" type="button">English</button>
+        <button data-lang="uk" type="button">Українська</button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <section class="intro-grid">
+      <div class="brief-card">
+        <h2>Editorial frame</h2>
+        <p><strong>What this is:</strong> {{ issue['editorial_frame']['what_this_is'] }}</p>
+        <p><strong>What this is not:</strong> {{ issue['editorial_frame']['what_this_is_not'] }}</p>
+      </div>
+      <div class="rubric-map">
+        <h2>Rubric map</h2>
+        <div class="rubric-list">
+          {% for rubric in issue['rubric_map'] %}<div class="rubric-chip">{{ rubric }}</div>{% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <section class="issue-section">
+      <div class="signals">
+        {% for item in issue['items'] %}
+        <article class="signal-card theme-{{ item['theme'] }}" id="item-{{ loop.index }}">
+          <div class="card-topline">
+            <div class="rubric"><span class="emoji">{{ item['emoji'] }}</span><span class="en">{{ item['rubric_en'] }}</span><span class="uk">{{ item['rubric_uk'] }}</span></div>
+            <div class="issue-index">#{{ '%02d'|format(loop.index) }}</div>
+          </div>
+
+          <section class="lang-panel en">
+            <h2>{{ item['title_en'] }}</h2>
+            <p class="source-line"><strong>Source:</strong> <a href="{{ item['source_url'] }}" target="_blank" rel="noopener noreferrer">{{ item['source_name'] }}</a> · {{ item['source_date_label_en'] }}</p>
+            <div class="field"><h3>What happened</h3><p>{{ item['what_happened_en'] }}</p></div>
+            <div class="field"><h3>Why it matters</h3><p>{{ item['why_it_matters_en'] }}</p></div>
+            <div class="field use"><h3>How to use it</h3><p>{{ item['how_to_use_en'] }}</p></div>
+            <div class="field limits"><h3>Limits</h3><p>{{ item['limits_en'] }}</p></div>
+          </section>
+
+          <section class="lang-panel uk">
+            <h2>{{ item['title_uk'] }}</h2>
+            <p class="source-line"><strong>Джерело:</strong> <a href="{{ item['source_url'] }}" target="_blank" rel="noopener noreferrer">{{ item['source_name'] }}</a> · {{ item['source_date_label_uk'] }}</p>
+            <div class="field"><h3>Що сталося</h3><p>{{ item['what_happened_uk'] }}</p></div>
+            <div class="field"><h3>Чому це важливо</h3><p>{{ item['why_it_matters_uk'] }}</p></div>
+            <div class="field use"><h3>Як це застосувати</h3><p>{{ item['how_to_use_uk'] }}</p></div>
+            <div class="field limits"><h3>Обмеження</h3><p>{{ item['limits_uk'] }}</p></div>
+          </section>
+
+          <div class="tags">{% for tag in item['tags'] %}<span>{{ tag }}</span>{% endfor %}</div>
+        </article>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="internal">
+      <h2>EDITORIAL NOTES — INTERNAL</h2>
+      <ol>{% for note in issue['internal_notes'] %}<li>{{ note }}</li>{% endfor %}</ol>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap print-note">{{ issue['footer_note'] }}</div>
+  </footer>
+
+  <script>
+    const buttons = document.querySelectorAll("[data-lang]");
+    buttons.forEach(button => {
+      button.addEventListener("click", () => {
+        const lang = button.dataset.lang;
+        document.body.classList.remove("lang-both", "lang-en", "lang-uk");
+        document.body.classList.add("lang-" + lang);
+        buttons.forEach(b => b.classList.toggle("active", b === button));
+      });
+    });
+  </script>
+</body>
+</html>

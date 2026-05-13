@@ -1,0 +1,726 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Open Source Signal #000 / Сигнал відкритих джерел</title>
+  <meta name="description" content="Bilingual OSINT editorial digest.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@500;600;700&family=Fraunces:opsz,wght,SOFT,WONK@9..144,600..900,50..100,0..1&family=Inter:wght@400;500;650;800;900&family=JetBrains+Mono:wght@400;600;800&family=Source+Serif+4:opsz,wght@8..60,600..900&display=swap" rel="stylesheet">
+  <style>
+
+    :root {
+      --display-latin: Fraunces, Georgia, serif;
+      --display-cyr: "Source Serif 4", Georgia, "Times New Roman", serif;
+      --label-font: Arimo, Arial, Helvetica, sans-serif;
+      --paper: #F2EDDD;
+      --paper-2: #FFF9EA;
+      --ink: #141414;
+      --muted: #6d665a;
+      --line: rgba(20,20,20,.16);
+      --signal: #D6422B;
+      --surveillance: #5B3B83;
+      --map: #1F7667;
+      --platform: #CC8B21;
+      --opsec: #245C73;
+      --infra: #2F5EA8;
+      --risk: #141414;
+      --shadow: 0 24px 70px rgba(20,20,20,.12);
+      --radius: 28px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 10% 5%, rgba(214,66,43,.18), transparent 27rem),
+        radial-gradient(circle at 86% 14%, rgba(36,92,115,.18), transparent 24rem),
+        linear-gradient(135deg, #f7f0df, #ece1c6 58%, #d9cfb7);
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 18px;
+      line-height: 1.48;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: .26;
+      background-image:
+        linear-gradient(rgba(20,20,20,.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(20,20,20,.035) 1px, transparent 1px);
+      background-size: 28px 28px;
+      mask-image: linear-gradient(to bottom, #000, transparent 85%);
+    }
+    a { color: inherit; text-decoration-thickness: .1em; text-underline-offset: .18em; }
+    .wrap { width: min(1180px, calc(100% - 36px)); margin: 0 auto; }
+    header.hero {
+      min-height: 94vh;
+      display: grid;
+      align-items: center;
+      padding: 48px 0 64px;
+      position: relative;
+    }
+    .hero-card {
+      border: 1px solid var(--line);
+      background: rgba(255,249,234,.72);
+      backdrop-filter: blur(18px);
+      border-radius: 42px;
+      padding: clamp(26px, 5vw, 70px);
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-card::after {
+      content: "OSINT";
+      position: absolute;
+      right: -2vw;
+      bottom: -7vw;
+      font-family: JetBrains Mono, monospace;
+      font-size: clamp(96px, 19vw, 260px);
+      font-weight: 800;
+      letter-spacing: -.08em;
+      color: rgba(20,20,20,.045);
+      transform: rotate(-5deg);
+    }
+    .kicker {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+      font-family: JetBrains Mono, monospace;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--muted);
+      position: relative;
+      z-index: 1;
+    }
+    .pill {
+      border: 1px solid var(--line);
+      padding: 7px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.35);
+    }
+    h1 {
+      position: relative;
+      z-index: 1;
+      margin: 24px 0 18px;
+      font-family: var(--display-latin);
+      font-size: clamp(56px, 11vw, 142px);
+      line-height: .86;
+      letter-spacing: -.07em;
+      max-width: 900px;
+      font-weight: 900;
+    }
+    .ua-masthead {
+      position: relative;
+      z-index: 1;
+      margin: -8px 0 18px;
+      font-family: var(--display-cyr);
+      font-size: clamp(44px, 7.5vw, 96px);
+      line-height: .9;
+      letter-spacing: -.045em;
+      font-weight: 800;
+      max-width: 980px;
+      color: #2f2b25;
+      font-feature-settings: "kern" 1;
+    }
+    .subtitle {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      font-size: clamp(22px, 3vw, 36px);
+      line-height: 1.14;
+      font-weight: 650;
+      letter-spacing: -.03em;
+      margin: 0;
+    }
+    .dek {
+      position: relative;
+      z-index: 1;
+      max-width: 780px;
+      margin: 24px 0 0;
+      color: #3d382f;
+      font-size: 20px;
+    }
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 9;
+      backdrop-filter: blur(16px);
+      background: rgba(242,237,221,.82);
+      border-bottom: 1px solid var(--line);
+    }
+    .toolbar-inner {
+      min-height: 72px;
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .brand-mini {
+      font-family: var(--display-latin);
+      font-weight: 900;
+      font-size: 24px;
+      letter-spacing: -.05em;
+    }
+    .language-toggle, .view-toggle {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    button {
+      appearance: none;
+      border: 1px solid rgba(20,20,20,.2);
+      background: rgba(255,255,255,.45);
+      color: var(--ink);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-family: Inter, sans-serif;
+      font-weight: 800;
+      cursor: pointer;
+      transition: .18s ease;
+    }
+    button:hover, button.active {
+      background: var(--ink);
+      color: var(--paper-2);
+      transform: translateY(-1px);
+    }
+    .intro-grid {
+      padding: 58px 0 34px;
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 26px;
+    }
+    .brief-card, .rubric-map {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255,249,234,.65);
+      padding: 26px;
+      box-shadow: 0 12px 38px rgba(20,20,20,.06);
+    }
+    .brief-card h2, .rubric-map h2 {
+      font-family: var(--display-latin);
+      font-size: 42px;
+      margin: 0 0 14px;
+      letter-spacing: -.045em;
+      line-height: .95;
+    }
+    .rubric-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 18px;
+    }
+    .rubric-chip {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-height: 48px;
+      padding: 10px 12px;
+      border-radius: 16px;
+      background: rgba(255,255,255,.46);
+      border: 1px solid rgba(20,20,20,.1);
+      font-family: var(--label-font);
+      letter-spacing: .015em;
+      font-weight: 800;
+      font-size: 15px;
+    }
+    .issue-section {
+      padding: 18px 0 80px;
+    }
+    .signals {
+      display: grid;
+      gap: 28px;
+    }
+    .signal-card {
+      border-radius: 34px;
+      overflow: hidden;
+      border: 1px solid rgba(20,20,20,.18);
+      background: rgba(255,249,234,.78);
+      box-shadow: var(--shadow);
+      position: relative;
+      isolation: isolate;
+    }
+    .signal-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 13px;
+      background: var(--accent);
+      z-index: 1;
+    }
+    .signal-card::after {
+      content: "";
+      position: absolute;
+      inset: -40% -20% auto auto;
+      width: 360px;
+      height: 360px;
+      border-radius: 50%;
+      background: color-mix(in srgb, var(--accent), transparent 82%);
+      z-index: -1;
+    }
+    .theme-signal { --accent: var(--signal); }
+    .theme-surveillance { --accent: var(--surveillance); }
+    .theme-map { --accent: var(--map); }
+    .theme-platform { --accent: var(--platform); }
+    .theme-opsec { --accent: var(--opsec); }
+    .theme-infra { --accent: var(--infra); }
+    .theme-risk { --accent: var(--risk); }
+    .card-topline {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      align-items: center;
+      padding: 22px 26px 0 36px;
+      font-family: JetBrains Mono, monospace;
+      font-weight: 800;
+      font-size: 14px;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .rubric {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      flex-wrap: wrap;
+      font-family: var(--label-font);
+      letter-spacing: .055em;
+      font-weight: 700;
+    }
+    .emoji {
+      font-size: 24px;
+      filter: saturate(.85);
+    }
+    .issue-index {
+      font-size: 28px;
+      letter-spacing: -.08em;
+      color: rgba(20,20,20,.18);
+    }
+    .lang-panel {
+      padding: 10px 34px 16px 36px;
+    }
+    body.lang-en .lang-panel.uk,
+    body.lang-en .rubric .uk,
+    body.lang-uk .lang-panel.en,
+    body.lang-uk .rubric .en {
+      display: none;
+    }
+    body.lang-both .signal-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    body.lang-both .card-topline,
+    body.lang-both .tags {
+      grid-column: 1 / -1;
+    }
+    body.lang-both .lang-panel.en {
+      border-right: 1px solid rgba(20,20,20,.12);
+    }
+    body.lang-both .rubric .uk::before {
+      content: "/";
+      color: rgba(20,20,20,.36);
+      margin-right: 8px;
+    }
+    h2 {
+      font-family: var(--display-latin);
+      font-size: clamp(36px, 5vw, 74px);
+      line-height: .94;
+      letter-spacing: -.06em;
+      margin: 14px 0 16px;
+      max-width: 920px;
+    }
+    .lang-panel.uk h2,
+    .brief-card h2 .uk,
+    body.lang-uk .hero .ua-masthead {
+      font-family: var(--display-cyr);
+      letter-spacing: -.025em;
+    }
+    .lang-panel.uk h2 {
+      font-weight: 800;
+    }
+    .lang-panel.uk .field h3 {
+      font-weight: 700;
+    }
+    .source-line {
+      display: inline-block;
+      margin: 0 0 24px;
+      padding: 9px 12px;
+      border-radius: 999px;
+      background: rgba(20,20,20,.055);
+      font-family: JetBrains Mono, monospace;
+      font-size: 14px;
+    }
+    .field {
+      display: grid;
+      grid-template-columns: minmax(148px, 190px) minmax(0, 1fr);
+      gap: 18px;
+      padding: 18px 0;
+      border-top: 1px solid rgba(20,20,20,.11);
+    }
+    .field h3 {
+      margin: 0;
+      font-size: 14px;
+      font-family: var(--label-font);
+      text-transform: uppercase;
+      letter-spacing: .075em;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    .field p {
+      margin: 0;
+      font-size: 19px;
+    }
+    .field.use p {
+      font-weight: 650;
+    }
+    .field.limits p {
+      color: #4c473e;
+    }
+    .tags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      padding: 4px 34px 28px 36px;
+    }
+    .tags span {
+      display: inline-flex;
+      border: 1px solid color-mix(in srgb, var(--accent), #000 12%);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 13px;
+      font-family: JetBrains Mono, monospace;
+      font-weight: 800;
+      background: color-mix(in srgb, var(--accent), transparent 92%);
+    }
+    .internal {
+      margin: 0 0 82px;
+      border: 1px dashed rgba(20,20,20,.35);
+      background: rgba(20,20,20,.88);
+      color: #f8eed6;
+      border-radius: 34px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+    .internal h2 {
+      margin-top: 0;
+      color: #fff7e2;
+      font-size: clamp(32px, 5vw, 64px);
+    }
+    .internal ol {
+      margin: 0;
+      padding-left: 24px;
+      font-family: JetBrains Mono, monospace;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    footer {
+      padding: 60px 0 90px;
+      color: #4f493f;
+      font-family: JetBrains Mono, monospace;
+      font-size: 14px;
+    }
+    .print-note {
+      border-top: 1px solid var(--line);
+      padding-top: 24px;
+    }
+    @media (max-width: 860px) {
+      body { font-size: 16px; }
+      .intro-grid, body.lang-both .signal-card {
+        grid-template-columns: 1fr;
+      }
+      body.lang-both .lang-panel.en {
+        border-right: 0;
+        border-bottom: 1px solid rgba(20,20,20,.12);
+      }
+      .field {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+      .rubric-list {
+        grid-template-columns: 1fr;
+      }
+      .toolbar-inner {
+        padding: 12px 0;
+      }
+    }
+    @media print {
+      body {
+        background: #fff;
+        color: #000;
+        font-size: 12pt;
+      }
+      body::before, .toolbar, .hero-card::after {
+        display: none !important;
+      }
+      header.hero { min-height: auto; padding: 24px 0; }
+      .hero-card, .signal-card, .brief-card, .rubric-map, .internal {
+        box-shadow: none;
+        break-inside: avoid;
+        background: #fff;
+      }
+      .signal-card { margin-bottom: 18px; }
+      a { text-decoration: none; }
+    }
+  
+  </style>
+</head>
+<body class="lang-both">
+  <header class="hero">
+    <div class="wrap">
+      <div class="hero-card">
+        <div class="kicker">
+          <span class="pill">Issue #000</span>
+          <span class="pill">13 May 2026</span>
+          <span class="pill">Daily Signal Prototype</span>
+          <span class="pill">EN + UKR</span>
+        </div>
+        <h1>Open Source Signal</h1>
+        <p class="ua-masthead">Сигнал відкритих джерел</p>
+        <p class="subtitle">Bilingual OSINT radar for verification, investigations, maps, platforms, surveillance and researcher safety.</p>
+        <p class="dek">A visual prototype for the daily digest: editorial cards, color-coded rubrics, source links, Ukrainian adaptations and internal notes separated from the public layer. No cyberpunk fog machine, no “OSINT ninja” confetti. Just signal.</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="toolbar" aria-label="Issue controls">
+    <div class="wrap toolbar-inner">
+      <div class="brand-mini">OSS #000</div>
+      <div class="language-toggle" aria-label="Language view">
+        <button data-lang="both" class="active" type="button">EN + UKR</button>
+        <button data-lang="en" type="button">English</button>
+        <button data-lang="uk" type="button">Українська</button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <section class="intro-grid">
+      <div class="brief-card">
+        <h2>Editorial frame</h2>
+        <p><strong>What this is:</strong> Not a list of tools, but a daily editorial filter for public-interest OSINT. Each item explains what happened, why it matters, how a reader can use the insight, and where the method or evidence has limits.</p>
+        <p><strong>What this is not:</strong> Doxxing, live targeting, stolen-data workflows, marketplace guides or “find anyone by phone number” circus tricks. The circus has been cancelled; the clowns are in procurement.</p>
+      </div>
+      <div class="rubric-map">
+        <h2>Rubric map</h2>
+        <div class="rubric-list">
+<div class="rubric-chip">📡 Signal One</div><div class="rubric-chip">🛰️ Surveillance Watch</div><div class="rubric-chip">🗺️ Map Room</div><div class="rubric-chip">🔎 Platform Watch</div><div class="rubric-chip">🛡️ Investigator OPSEC</div><div class="rubric-chip">🌐 Infrastructure Signals</div><div class="rubric-chip">⚠️ Risk Watch</div><div class="rubric-chip">🧰 Toolbox / when deserved</div>        </div>
+      </div>
+    </section>
+
+    <section class="issue-section">
+      <div class="signals">
+        <article class="signal-card theme-signal" id="item-1">
+          <div class="card-topline">
+            <div class="rubric"><span class="emoji">📡</span><span class="en">Signal One</span><span class="uk">Головний сигнал</span></div>
+            <div class="issue-index">#01</div>
+          </div>
+
+          <section class="lang-panel en">
+            <h2>Telecom surveillance is moving into the infrastructure layer</h2>
+            <p class="source-line"><strong>Source:</strong> <a href="https://citizenlab.ca/research/uncovering-global-telecom-exploitation-by-covert-surveillance-actors/" target="_blank" rel="noopener noreferrer">Citizen Lab</a> · 23 Apr 2026</p>
+            <div class="field"><h3>What happened</h3><p>Citizen Lab documented telecom-linked surveillance activity involving covert location-tracking operations and mobile-network signalling infrastructure. The case shifts attention from visible social platforms to the systems that quietly generate movement and identity signals.</p></div>
+            <div class="field"><h3>Why it matters</h3><p>For OSINT researchers, this changes the frame: the surveillance environment now includes telecom metadata, commercial surveillance vendors, ad-tech location data and brokered datasets, not only public posts and profiles.</p></div>
+            <div class="field use"><h3>How to use it</h3><p>Use the report as a risk model when working with vulnerable sources, activists, field researchers or civil-society groups. Social-media hygiene is not enough if telecom metadata and location ecosystems are in play.</p></div>
+            <div class="field limits"><h3>Limits</h3><p>This is useful for understanding surveillance ecosystems and risk exposure. It is not a guide to identifying, locating or tracking individual people.</p></div>
+          </section>
+
+          <section class="lang-panel uk">
+            <h2>Стеження переходить на рівень телеком-інфраструктури</h2>
+            <p class="source-line"><strong>Джерело:</strong> <a href="https://citizenlab.ca/research/uncovering-global-telecom-exploitation-by-covert-surveillance-actors/" target="_blank" rel="noopener noreferrer">Citizen Lab</a> · 23 Apr 2026</p>
+            <div class="field"><h3>Що сталося</h3><p>Citizen Lab описав кампанії стеження, пов’язані з мобільною інфраструктурою та прихованим відстеженням місцезнаходження. Ключовий зсув у тому, що джерелом ризику стають не лише соцмережі, а й телеком-сигналізація та комерційні екосистеми даних.</p></div>
+            <div class="field"><h3>Чому це важливо</h3><p>Для українських журналістів, волонтерів і розслідувачів це нагадування: ризики не закінчуються Telegram, Facebook або відкритими профілями. Навколо існує ринок телеком-метаданих, рекламної геолокації та брокерів даних.</p></div>
+            <div class="field use"><h3>Як це застосувати</h3><p>Матеріал варто використовувати як модель ризику: якщо ви працюєте з чутливими джерелами, треба думати не лише про паролі й месенджери, а й про SIM-карти, рекламні трекери, геолокацію та прив’язку акаунтів.</p></div>
+            <div class="field limits"><h3>Обмеження</h3><p>Це не інструкція з відстеження людей. Це матеріал про інфраструктуру стеження і захист від неї.</p></div>
+          </section>
+
+          <div class="tags"><span>telecom</span><span>surveillance</span><span>metadata</span><span>civil society risk</span><span>location</span></div>
+        </article>
+        <article class="signal-card theme-surveillance" id="item-2">
+          <div class="card-topline">
+            <div class="rubric"><span class="emoji">🛰️</span><span class="en">Surveillance Watch</span><span class="uk">Інфраструктура стеження</span></div>
+            <div class="issue-index">#02</div>
+          </div>
+
+          <section class="lang-panel en">
+            <h2>Ad-based geolocation is the dark twin of OSINT</h2>
+            <p class="source-line"><strong>Source:</strong> <a href="https://citizenlab.ca/research/analysis-of-penlinks-ad-based-geolocation-surveillance-tech/" target="_blank" rel="noopener noreferrer">Citizen Lab</a> · 9 Apr 2026</p>
+            <div class="field"><h3>What happened</h3><p>Citizen Lab’s Webloc report links ad-based geolocation products to law-enforcement and intelligence customers. The Hungary section describes the use and procurement of tools that combine location, social-media and AI-assisted analysis.</p></div>
+            <div class="field"><h3>Why it matters</h3><p>This shows how public-ish commercial data can be repurposed into covert tracking. The boundary between open-source investigation and bulk surveillance is becoming one of the central ethical lines in the field.</p></div>
+            <div class="field use"><h3>How to use it</h3><p>Use this as a framework for assessing vendors, data brokers and location tools: who collects the data, who buys access, what populations are exposed, and whether the workflow serves accountability or surveillance.</p></div>
+            <div class="field limits"><h3>Limits</h3><p>Do not treat vendor claims as proof of capability. Reports about surveillance tools require careful sourcing, procurement records, technical evidence and legal context.</p></div>
+          </section>
+
+          <section class="lang-panel uk">
+            <h2>Рекламна геолокація як темний двійник OSINT</h2>
+            <p class="source-line"><strong>Джерело:</strong> <a href="https://citizenlab.ca/research/analysis-of-penlinks-ad-based-geolocation-surveillance-tech/" target="_blank" rel="noopener noreferrer">Citizen Lab</a> · 9 Apr 2026</p>
+            <div class="field"><h3>Що сталося</h3><p>Звіт Citizen Lab про Webloc описує продукти рекламної геолокації, які можуть використовуватися правоохоронними й розвідувальними структурами. Угорський кейс показує поєднання location data, соцмереж і AI-додатків у комерційних surveillance-пакетах.</p></div>
+            <div class="field"><h3>Чому це важливо</h3><p>Це темний двійник OSINT: формально дані можуть походити з відкритої або комерційної екосистеми, але результат — приховане масове стеження. Для громадянського суспільства це не технічна дрібниця, а питання безпеки.</p></div>
+            <div class="field use"><h3>Як це застосувати</h3><p>Використовуйте це як рамку оцінки: хто збирає дані, хто продає доступ, які групи під ризиком, чи є суспільний інтерес, чи це просто інфраструктура переслідування.</p></div>
+            <div class="field limits"><h3>Обмеження</h3><p>Не варто сприймати маркетингові описи вендорів як доказ реальних можливостей. Потрібні технічні сліди, закупівлі, юридичний контекст і незалежна перевірка.</p></div>
+          </section>
+
+          <div class="tags"><span>adtech</span><span>geolocation</span><span>data brokers</span><span>law enforcement</span><span>ethics</span></div>
+        </article>
+        <article class="signal-card theme-map" id="item-3">
+          <div class="card-topline">
+            <div class="rubric"><span class="emoji">🗺️</span><span class="en">Map Room</span><span class="uk">Картографічна кімната</span></div>
+            <div class="issue-index">#03</div>
+          </div>
+
+          <section class="lang-panel en">
+            <h2>How to verify damage when premium satellite imagery is limited</h2>
+            <p class="source-line"><strong>Source:</strong> <a href="https://www.bellingcat.com/news/2026/04/24/make-iran-ungovernable-tracking-efforts-to-destroy-irans-police-infrastructure/" target="_blank" rel="noopener noreferrer">Bellingcat</a> · 24 Apr 2026</p>
+            <div class="field"><h3>What happened</h3><p>Bellingcat tracked reported attacks on Iranian police infrastructure using Sentinel-2, PlanetScope where available, OpenStreetMap, Wikimapia, Google Maps and Overpass Turbo. The investigation is useful because it works under imagery constraints.</p></div>
+            <div class="field"><h3>Why it matters</h3><p>The method matters beyond Iran: many investigations face gaps in commercial imagery, delayed updates, cloud cover, censorship or limited access to high-resolution providers.</p></div>
+            <div class="field use"><h3>How to use it</h3><p>Use this as a practical model for post-event verification: combine public satellite layers, map databases, visual evidence, object footprints, road networks and time windows instead of relying on a single image source.</p></div>
+            <div class="field limits"><h3>Limits</h3><p>Satellite imagery can show change, damage or absence, but it rarely proves cause by itself. Correlation with local reporting, videos, timing and other evidence remains necessary.</p></div>
+          </section>
+
+          <section class="lang-panel uk">
+            <h2>Як перевіряти руйнування, коли преміальні супутникові знімки недоступні</h2>
+            <p class="source-line"><strong>Джерело:</strong> <a href="https://www.bellingcat.com/news/2026/04/24/make-iran-ungovernable-tracking-efforts-to-destroy-irans-police-infrastructure/" target="_blank" rel="noopener noreferrer">Bellingcat</a> · 24 Apr 2026</p>
+            <div class="field"><h3>Що сталося</h3><p>Bellingcat відстежував атаки на іранську поліцейську інфраструктуру через Sentinel-2, PlanetScope, OpenStreetMap, Wikimapia, Google Maps і Overpass Turbo. Сила кейсу в тому, що він працює навіть тоді, коли доступ до комерційних знімків обмежений.</p></div>
+            <div class="field"><h3>Чому це важливо</h3><p>Для України це практична методика: що робити, коли немає Maxar/Planet у потрібний момент, але треба перевірити удар, руйнування або зміну об’єкта.</p></div>
+            <div class="field use"><h3>Як це застосувати</h3><p>Базова схема: Sentinel-2 для загального шару, OSM/Overpass для об’єктів і доріг, Google/Wikimapia для старих прив’язок, відео й фото для локальних деталей, таймлайн для перевірки часу.</p></div>
+            <div class="field limits"><h3>Обмеження</h3><p>Супутниковий знімок показує зміну або пошкодження, але не завжди доводить причину. Потрібна кореляція з відео, локальними повідомленнями, часом події й іншими джерелами.</p></div>
+          </section>
+
+          <div class="tags"><span>geolocation</span><span>satellite</span><span>Sentinel-2</span><span>OSM</span><span>verification</span></div>
+        </article>
+        <article class="signal-card theme-platform" id="item-4">
+          <div class="card-topline">
+            <div class="rubric"><span class="emoji">🔎</span><span class="en">Platform Watch</span><span class="uk">Платформний радар</span></div>
+            <div class="issue-index">#04</div>
+          </div>
+
+          <section class="lang-panel en">
+            <h2>Xiaohongshu / RedNote deserves a place in platform OSINT</h2>
+            <p class="source-line"><strong>Source:</strong> <a href="https://www.bellingcat.com/resources/2026/04/20/xiaohongshu-rednote-open-source-guide/" target="_blank" rel="noopener noreferrer">Bellingcat</a> · 20 Apr 2026</p>
+            <div class="field"><h3>What happened</h3><p>Bellingcat published a guide to Xiaohongshu / RedNote, emphasizing language-specific search, user IDs, platform conventions and the difference between domestic and international visibility.</p></div>
+            <div class="field"><h3>Why it matters</h3><p>Researchers often overuse X, Telegram, Facebook and TikTok. Lifestyle platforms can reveal social signals, local vocabulary, censorship boundaries and everyday evidence that does not appear in political spaces.</p></div>
+            <div class="field use"><h3>How to use it</h3><p>Use platform-specific field notes: search in the right language, preserve stable profile identifiers, document screenshots and URLs, and treat results as platform-shaped evidence rather than a neutral sample.</p></div>
+            <div class="field limits"><h3>Limits</h3><p>Chinese platforms operate under censorship and algorithmic filtering. Absence of evidence on the platform is not evidence that the event or discussion does not exist.</p></div>
+          </section>
+
+          <section class="lang-panel uk">
+            <h2>Xiaohongshu / RedNote як недооцінене джерело для OSINT</h2>
+            <p class="source-line"><strong>Джерело:</strong> <a href="https://www.bellingcat.com/resources/2026/04/20/xiaohongshu-rednote-open-source-guide/" target="_blank" rel="noopener noreferrer">Bellingcat</a> · 20 Apr 2026</p>
+            <div class="field"><h3>Що сталося</h3><p>Bellingcat показує, як працювати з Xiaohongshu / RedNote: мова пошуку впливає на результати, унікальний ID профілю важливіший за display name, а внутрішня видимість платформи відрізняється від того, що бачить зовнішній дослідник.</p></div>
+            <div class="field"><h3>Чому це важливо</h3><p>Дослідники часто сидять у Telegram, X і TikTok, але пропускають платформи, де люди говорять побутово. Саме там іноді видно соціальні настрої, локальну лексику, цензурні межі й непрямі сліди подій.</p></div>
+            <div class="field use"><h3>Як це застосувати</h3><p>Для кожної платформи потрібна польова картка: якою мовою шукати, що зберігати, як фіксувати ID, як архівувати, які типові помилки інтерпретації.</p></div>
+            <div class="field limits"><h3>Обмеження</h3><p>Китайські платформи — цензуроване й алгоритмічно відфільтроване середовище. Те, що ми бачимо, не є нейтральним зрізом суспільства.</p></div>
+          </section>
+
+          <div class="tags"><span>China</span><span>platform OSINT</span><span>search</span><span>censorship</span><span>RedNote</span></div>
+        </article>
+        <article class="signal-card theme-opsec" id="item-5">
+          <div class="card-topline">
+            <div class="rubric"><span class="emoji">🛡️</span><span class="en">Investigator OPSEC</span><span class="uk">Безпека дослідника</span></div>
+            <div class="issue-index">#05</div>
+          </div>
+
+          <section class="lang-panel en">
+            <h2>Email threats are shifting into identity attacks</h2>
+            <p class="source-line"><strong>Source:</strong> <a href="https://www.microsoft.com/en-us/security/blog/2026/04/30/email-threat-landscape-q1-2026-trends-and-insights/" target="_blank" rel="noopener noreferrer">Microsoft Threat Intelligence</a> · 30 Apr 2026</p>
+            <div class="field"><h3>What happened</h3><p>Microsoft’s Q1 2026 email threat report focuses on credential phishing, QR-code phishing, CAPTCHA-gated campaigns, adversary-in-the-middle techniques and shifts after disruption of Tycoon2FA.</p></div>
+            <div class="field"><h3>Why it matters</h3><p>For journalists, NGOs and investigators, account compromise is still the boring door through which the interesting disasters enter: sources, files, chats, archives and cloud access.</p></div>
+            <div class="field use"><h3>How to use it</h3><p>Build a defensive checklist: phishing-resistant MFA, hardware keys for critical accounts, session-token review, separate research identities, careful handling of QR codes and regular account recovery tests.</p></div>
+            <div class="field limits"><h3>Limits</h3><p>Threat reports describe patterns, not a complete map of every campaign. Defensive controls should be adapted to the organization’s actual accounts, devices and threat model.</p></div>
+          </section>
+
+          <section class="lang-panel uk">
+            <h2>Фішинг дедалі більше стає атакою на ідентичність</h2>
+            <p class="source-line"><strong>Джерело:</strong> <a href="https://www.microsoft.com/en-us/security/blog/2026/04/30/email-threat-landscape-q1-2026-trends-and-insights/" target="_blank" rel="noopener noreferrer">Microsoft Threat Intelligence</a> · 30 Apr 2026</p>
+            <div class="field"><h3>Що сталося</h3><p>Звіт Microsoft за Q1 2026 описує credential phishing, QR-фішинг, CAPTCHA-gated кампанії, adversary-in-the-middle атаки й зміну тактик після disruption Tycoon2FA.</p></div>
+            <div class="field"><h3>Чому це важливо</h3><p>Для журналістів, волонтерів, аналітиків і розслідувачів компрометація пошти — найкоротший шлях до витоку джерел, документів і робочих чатів.</p></div>
+            <div class="field use"><h3>Як це застосувати</h3><p>Мінімальний чекліст: phishing-resistant MFA, апаратні ключі для критичних акаунтів, перевірка активних сесій, окремі дослідницькі акаунти, обережність із QR-кодами, регулярна перевірка recovery-каналів.</p></div>
+            <div class="field limits"><h3>Обмеження</h3><p>Threat report показує патерни, а не повну карту всіх атак. Захист треба прив’язувати до власної моделі ризику: акаунти, пристрої, ролі, джерела й канали зв’язку.</p></div>
+          </section>
+
+          <div class="tags"><span>phishing</span><span>MFA</span><span>identity</span><span>OPSEC</span><span>email security</span></div>
+        </article>
+        <article class="signal-card theme-infra" id="item-6">
+          <div class="card-topline">
+            <div class="rubric"><span class="emoji">🌐</span><span class="en">Infrastructure Signals</span><span class="uk">Інфраструктурні сигнали</span></div>
+            <div class="issue-index">#06</div>
+          </div>
+
+          <section class="lang-panel en">
+            <h2>Internet disruptions are becoming conflict signals</h2>
+            <p class="source-line"><strong>Source:</strong> <a href="https://radar.cloudflare.com/" target="_blank" rel="noopener noreferrer">Cloudflare Radar</a> · Apr 2026</p>
+            <div class="field"><h3>What happened</h3><p>Cloudflare Radar’s Q1 2026 review highlights internet disruptions, nationwide shutdowns and attacks affecting cloud infrastructure. Connectivity data is becoming part of the public evidence environment.</p></div>
+            <div class="field"><h3>Why it matters</h3><p>Shutdowns, routing anomalies and traffic drops can indicate censorship, conflict, infrastructure damage, power failures or political decisions. They are not proof alone, but they are often early signals.</p></div>
+            <div class="field use"><h3>How to use it</h3><p>Use connectivity data alongside NetBlocks, local reporting, energy-infrastructure timelines, social-media interruptions and official statements to build a multi-source picture.</p></div>
+            <div class="field limits"><h3>Limits</h3><p>A traffic drop does not prove a cause. It must be correlated with local events, technical reports, policy decisions and independent reporting.</p></div>
+          </section>
+
+          <section class="lang-panel uk">
+            <h2>Інтернет-збої як частина моніторингу конфліктів</h2>
+            <p class="source-line"><strong>Джерело:</strong> <a href="https://radar.cloudflare.com/" target="_blank" rel="noopener noreferrer">Cloudflare Radar</a> · Apr 2026</p>
+            <div class="field"><h3>Що сталося</h3><p>Огляд Cloudflare Radar за Q1 2026 вказує на інтернет-порушення, nationwide shutdowns і атаки, що зачіпають cloud-інфраструктуру. Дані про зв’язок стають частиною OSINT-картини.</p></div>
+            <div class="field"><h3>Чому це важливо</h3><p>Збій зв’язку може бути наслідком цензури, блекауту, кібератаки, удару по інфраструктурі або політичного рішення. Це сигнал, але не доказ сам по собі.</p></div>
+            <div class="field use"><h3>Як це застосувати</h3><p>Корелюйте Cloudflare Radar із NetBlocks, локальними повідомленнями, енергетичними подіями, бойовими діями, офіційними заявами й часовою лінією інциденту.</p></div>
+            <div class="field limits"><h3>Обмеження</h3><p>Зниження трафіку саме по собі нічого не доводить. Потрібна перевірка через кілька незалежних джерел.</p></div>
+          </section>
+
+          <div class="tags"><span>internet disruption</span><span>NetBlocks</span><span>Cloudflare Radar</span><span>infrastructure</span><span>conflict</span></div>
+        </article>
+        <article class="signal-card theme-risk" id="item-7">
+          <div class="card-topline">
+            <div class="rubric"><span class="emoji">⚠️</span><span class="en">Risk Watch</span><span class="uk">Межі й ризики</span></div>
+            <div class="issue-index">#07</div>
+          </div>
+
+          <section class="lang-panel en">
+            <h2>Dark-web OSINT needs hard ethical boundaries</h2>
+            <p class="source-line"><strong>Source:</strong> <a href="https://osintnewsletter.com/p/105" target="_blank" rel="noopener noreferrer">The OSINT Newsletter</a> · 7 May 2026</p>
+            <div class="field"><h3>What happened</h3><p>The OSINT Newsletter issue #105 focuses on dark-web OSINT, including tools, strategies, limitations and ways of connecting dark-web signals to surface-web context.</p></div>
+            <div class="field"><h3>Why it matters</h3><p>Dark-web research can be legitimate for breach awareness and threat intelligence, but amateur curiosity easily crosses into unsafe possession, interaction with criminals or handling stolen material.</p></div>
+            <div class="field use"><h3>How to use it</h3><p>Keep the workflow passive and legal: monitor public reporting, use reputable threat-intel summaries, document indicators without buying, logging in, negotiating or downloading unlawful material.</p></div>
+            <div class="field limits"><h3>Limits</h3><p>No marketplace walkthroughs, no credential hunting, no stolen-data handling guides. This is a risk-literacy topic, not an operational manual.</p></div>
+          </section>
+
+          <section class="lang-panel uk">
+            <h2>Dark web OSINT потребує жорстких меж</h2>
+            <p class="source-line"><strong>Джерело:</strong> <a href="https://osintnewsletter.com/p/105" target="_blank" rel="noopener noreferrer">The OSINT Newsletter</a> · 7 May 2026</p>
+            <div class="field"><h3>Що сталося</h3><p>Випуск The OSINT Newsletter #105 присвячений dark-web OSINT: інструментам, стратегіям, обмеженням і способам пов’язувати темні сигнали з surface web-контекстом.</p></div>
+            <div class="field"><h3>Чому це важливо</h3><p>Dark web може бути корисним для threat intelligence, витоків і шахрайства. Але аматорський OSINT тут дуже швидко перетворюється на історію, де головний герой уже пояснює прокурору, що він “просто досліджував”.</p></div>
+            <div class="field use"><h3>Як це застосувати</h3><p>Безпечна рамка: пасивний моніторинг, легальні джерела, reputable threat-intel summaries, фіксація індикаторів без купівлі, листування, завантаження або використання викрадених даних.</p></div>
+            <div class="field limits"><h3>Обмеження</h3><p>Жодних інструкцій для маркетплейсів, credential hunting або роботи з украденими обліковками. Це тема про межі й ризики, не операційний посібник.</p></div>
+          </section>
+
+          <div class="tags"><span>dark web</span><span>threat intel</span><span>ethics</span><span>breach monitoring</span><span>legal risk</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="internal">
+      <h2>EDITORIAL NOTES — INTERNAL</h2>
+      <ol><li>Strongest recurring rubrics after the pilot: Surveillance Watch, Map Room, Platform Watch, Investigator OPSEC, Risk Watch.</li><li>Toolbox should not be forced. Use it only when a tool has clear practical value and a reliable source.</li><li>Ukrainian version should remain an adapted explanation, not a literal translation of the English card.</li><li>Potential weekly deep dives: telecom surveillance risk model; Sentinel-2 + OSM verification workflow; platform field-guide template.</li><li>Safety line: no operational tracking, no live targeting, no stolen-data workflows, no vendor shopping guides for surveillance tools.</li><li>Best signal sources in pilot: Citizen Lab, Bellingcat, Microsoft Threat Intelligence, Cloudflare Radar.</li><li>Dark-web topics must stay in risk-literacy mode: passive monitoring, legal boundaries, no marketplace instructions.</li></ol>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap print-note">Generated for Open Source Signal / Сигнал відкритих джерел. Fonts: Fraunces for Latin display, Source Serif 4 for Ukrainian display, Inter and JetBrains Mono via Google Fonts with local fallbacks.</div>
+  </footer>
+
+  <script>
+    const buttons = document.querySelectorAll("[data-lang]");
+    buttons.forEach(button => {
+      button.addEventListener("click", () => {
+        const lang = button.dataset.lang;
+        document.body.classList.remove("lang-both", "lang-en", "lang-uk");
+        document.body.classList.add("lang-" + lang);
+        buttons.forEach(b => b.classList.toggle("active", b === button));
+      });
+    });
+  </script>
+</body>
+</html>
