@@ -48,7 +48,8 @@ def test_rendered_html_contains_expected_structure(tmp_path):
     cards = soup.select("article.signal-card")
     assert len(cards) == 7
     assert soup.select_one(".ua-masthead").get_text(strip=True) == "Сигнал відкритих джерел"
-    assert soup.select_one(".internal h2").get_text(strip=True) == "EDITORIAL NOTES — INTERNAL"
+    assert soup.select_one(".internal") is None
+    assert "EDITORIAL NOTES — INTERNAL" not in html
     assert len(soup.select("a[href^='https://']")) >= 7
     assert "Source Serif 4" in html
     assert "Arimo" in html

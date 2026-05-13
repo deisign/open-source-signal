@@ -176,3 +176,8 @@ The HTML templates use:
 ## Next step
 
 Use `create_issue.py` and `docs/ADD_ISSUE.md` to add new issues safely. GitHub Pages packaging is included in `.github/workflows/pages.yml`. See `docs/GITHUB_PAGES_SETUP.md` for repository setup and publishing instructions.
+
+
+## Public issue pages
+
+Internal editorial notes stay in issue JSON for editorial workflow, but they are not rendered on public issue pages.

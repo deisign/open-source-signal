@@ -399,27 +399,6 @@
       font-weight: 800;
       background: color-mix(in srgb, var(--accent), transparent 92%);
     }
-    .internal {
-      margin: 0 0 82px;
-      border: 1px dashed rgba(20,20,20,.35);
-      background: rgba(20,20,20,.88);
-      color: #f8eed6;
-      border-radius: 34px;
-      padding: 28px;
-      box-shadow: var(--shadow);
-    }
-    .internal h2 {
-      margin-top: 0;
-      color: #fff7e2;
-      font-size: clamp(32px, 5vw, 64px);
-    }
-    .internal ol {
-      margin: 0;
-      padding-left: 24px;
-      font-family: JetBrains Mono, monospace;
-      font-size: 15px;
-      line-height: 1.7;
-    }
     footer {
       padding: 60px 0 90px;
       color: #4f493f;
@@ -460,7 +439,7 @@
         display: none !important;
       }
       header.hero { min-height: auto; padding: 24px 0; }
-      .hero-card, .signal-card, .brief-card, .rubric-map, .internal {
+      .hero-card, .signal-card, .brief-card, .rubric-map {
         box-shadow: none;
         break-inside: avoid;
         background: #fff;
@@ -548,10 +527,6 @@
       </div>
     </section>
 
-    <section class="internal">
-      <h2>EDITORIAL NOTES — INTERNAL</h2>
-      <ol>{% for note in issue['internal_notes'] %}<li>{{ note }}</li>{% endfor %}</ol>
-    </section>
   </main>
 
   <footer>
