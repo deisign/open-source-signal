@@ -1,5 +1,2 @@
-.......................                                                  [100%]
-23 passed in 17.17s
-dist/issues/open-source-signal-2026-05-13.html
-dist/index.html
-dist/archive.html
+..........................                                               [100%]
+26 passed in 2.78s

@@ -1,0 +1,99 @@
+name: Publish Telegram announcement
+
+on:
+  workflow_dispatch:
+    inputs:
+      issue:
+        description: "Issue JSON filename inside issues/, for example 2026-05-13.json"
+        required: true
+        default: "2026-05-13.json"
+      lang:
+        description: "Announcement language"
+        required: true
+        type: choice
+        options:
+          - uk
+          - en
+        default: uk
+      issue_url:
+        description: "Optional full issue URL. Leave empty to use site.json base_url."
+        required: false
+        default: ""
+      max_items:
+        description: "Maximum number of signals in Telegram post"
+        required: true
+        default: "7"
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run tests
+        run: python -m pytest -q
+
+      - name: Build static site
+        run: python build_site.py --issues issues --templates templates --out dist --config site.json
+
+      - name: Render Telegram announcement
+        id: render
+        shell: bash
+        run: |
+          set -euo pipefail
+          ISSUE_PATH="issues/${{ inputs.issue }}"
+          if [ ! -f "$ISSUE_PATH" ]; then
+            echo "Issue JSON not found: $ISSUE_PATH" >&2
+            exit 1
+          fi
+
+          ISSUE_URL="${{ inputs.issue_url }}"
+          if [ -z "$ISSUE_URL" ]; then
+            ISSUE_URL=$(python - "$ISSUE_PATH" <<'PY'
+          import json
+          import sys
+          from pathlib import Path
+          from render_issue import load_issue, output_filename
+
+          issue_path = Path(sys.argv[1])
+          issue = load_issue(issue_path)
+          config_path = Path("site.json")
+          config = json.loads(config_path.read_text(encoding="utf-8")) if config_path.exists() else {}
+          base_url = str(config.get("base_url") or "https://deisign.github.io/open-source-signal").rstrip("/")
+          print(f"{base_url}/issues/{output_filename(issue)}")
+          PY
+          )
+          fi
+
+          TEXT_FILE=$(python telegram_digest.py "$ISSUE_PATH" \
+            --lang "${{ inputs.lang }}" \
+            --url "$ISSUE_URL" \
+            --out dist \
+            --max-items "${{ inputs.max_items }}")
+
+          echo "text_file=$TEXT_FILE" >> "$GITHUB_OUTPUT"
+          echo "issue_url=$ISSUE_URL" >> "$GITHUB_OUTPUT"
+          echo "Rendered $TEXT_FILE"
+          cat "$TEXT_FILE"
+
+      - name: Send Telegram announcement
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python send_telegram.py \
+            --text-file "${{ steps.render.outputs.text_file }}" \
+            --disable-preview
