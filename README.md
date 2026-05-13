@@ -181,3 +181,33 @@ Use `create_issue.py` and `docs/ADD_ISSUE.md` to add new issues safely. GitHub P
 ## Public issue pages
 
 Internal editorial notes stay in issue JSON for editorial workflow, but they are not rendered on public issue pages.
+
+## Send Telegram announcement
+
+Render an announcement:
+
+```bash
+python telegram_digest.py issues/2026-05-13.json \
+  --lang uk \
+  --url https://deisign.github.io/open-source-signal/issues/open-source-signal-2026-05-13.html \
+  --out dist
+```
+
+Dry run:
+
+```bash
+python send_telegram.py \
+  --text-file dist/telegram-open-source-signal-2026-05-13.uk.txt \
+  --chat-id @your_channel_name \
+  --dry-run
+```
+
+Real send:
+
+```bash
+export TELEGRAM_BOT_TOKEN="..."
+export TELEGRAM_CHAT_ID="@your_channel_name"
+python send_telegram.py --text-file dist/telegram-open-source-signal-2026-05-13.uk.txt --disable-preview
+```
+
+See `docs/TELEGRAM_SETUP.md`.
