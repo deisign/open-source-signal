@@ -13,6 +13,18 @@ REQUIRED_ISSUE_FIELDS = [
     "slug", "issue_type", "subtitle_en", "dek_en", "items", "internal_notes",
 ]
 
+
+
+DEFAULT_SITE_CONFIG = {
+    "site_title_en": "Open Source Signal",
+    "site_title_uk": "Сигнал відкритих джерел",
+    "site_description_en": "A bilingual OSINT editorial radar for investigations, verification, maps, platforms, surveillance and researcher safety.",
+    "site_description_uk": "Двомовний OSINT-радар про розслідування, верифікацію, мапи, платформи, інфраструктуру стеження й безпеку дослідника.",
+    "base_url": "",
+    "telegram_url": "https://t.me/open_source_signal_ua",
+    "rss_path": "feed.xml",
+}
+
 REQUIRED_ITEM_FIELDS = [
     "theme", "emoji", "rubric_en", "rubric_uk", "title_en", "title_uk",
     "source_name", "source_url", "source_date_label_en", "source_date_label_uk",
@@ -74,7 +86,7 @@ def render_issue(issue_path: Path, template_path: Path, out_dir: Path) -> Path:
         lstrip_blocks=True,
     )
     template = env.get_template(template_path.name)
-    html = template.render(issue=issue, asset_prefix="")
+    html = template.render(issue=issue, asset_prefix="", config=DEFAULT_SITE_CONFIG, page_url="", og_image_url="static/og-image.png")
     out_dir.mkdir(parents=True, exist_ok=True)
     out_path = out_dir / output_filename(issue)
     out_path.write_text(html, encoding="utf-8")

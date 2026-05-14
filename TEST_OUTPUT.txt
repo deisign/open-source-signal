@@ -1,2 +1,2 @@
-python -m pytest -q -> 45 passed in 25.09s
+python -m pytest -q -> 46 passed in 29.51s
 python build_site.py -> OK

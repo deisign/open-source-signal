@@ -5,8 +5,19 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Open Source Signal / Сигнал відкритих джерел</title>
   <meta name="description" content="A bilingual OSINT editorial radar for investigations, verification, maps, platforms, surveillance and researcher safety.">
+  <link rel="canonical" href="https://deisign.github.io/open-source-signal">
+  <meta property="og:title" content="Open Source Signal / Сигнал відкритих джерел">
+  <meta property="og:description" content="A bilingual OSINT editorial radar for investigations, verification, maps, platforms, surveillance and researcher safety.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://deisign.github.io/open-source-signal">
+  <meta property="og:image" content="https://deisign.github.io/open-source-signal/static/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Open Source Signal">
+  <meta name="twitter:description" content="A bilingual OSINT editorial radar for investigations, verification, maps, platforms, surveillance and researcher safety.">
+  <meta name="twitter:image" content="https://deisign.github.io/open-source-signal/static/og-image.png">
+  <link rel="alternate" type="application/rss+xml" title="Open Source Signal RSS" href="feed.xml">
   <meta name="theme-color" content="#141414">
-  <link rel="icon" href="static/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="static/logo-mark.png" type="image/png">
   <link rel="shortcut icon" href="static/favicon.ico">
   <link rel="apple-touch-icon" href="static/apple-touch-icon.png">
   <link rel="manifest" href="static/site.webmanifest">
@@ -86,6 +97,15 @@
       position: relative;
       overflow: hidden;
     }
+
+    .brand-lockup { display:flex; align-items:center; gap:16px; position:relative; z-index:1; }
+    .brand-mark { width:72px; height:72px; border-radius:18px; box-shadow: 0 10px 24px rgba(20,20,20,.12); flex: 0 0 auto; }
+    .brand-wording { display:flex; flex-direction:column; gap:2px; }
+    .brand-wording strong { font-family: var(--label-font); font-size: 15px; letter-spacing: .08em; text-transform: uppercase; }
+    .brand-wording span { font-family: var(--display-cyr); font-size: 18px; letter-spacing: -.02em; color: #3b362f; }
+    .hero-links, .footer-links { display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
+    .footer-inner { display:flex; gap:18px; align-items:center; justify-content:space-between; flex-wrap:wrap; }
+    .footer-links a { color: #4f493f; font-weight: 700; text-decoration: none; }
     .hero-card::after {
       content: "SIGNAL";
       position: absolute;
@@ -298,6 +318,7 @@
     footer { padding: 42px 0 78px; color: #4f493f; font-family: JetBrains Mono, monospace; font-size: 14px; }
     @media (max-width: 860px) {
       body { font-size: 16px; }
+      .brand-mark { width:56px; height:56px; border-radius:14px; }
       .lead-grid, .latest-card, .rubric-grid { grid-template-columns: 1fr; }
       .latest-panel { border-right: 0; border-bottom: 1px solid rgba(20,20,20,.12); }
       .section-title { align-items: start; flex-direction: column; }
@@ -308,6 +329,10 @@
   <header class="hero">
     <div class="wrap">
       <div class="hero-card">
+        <div class="brand-lockup">
+          <img class="brand-mark" src="static/logo-mark.png" alt="Open Source Signal logo">
+          <div class="brand-wording"><strong>Open Source Signal</strong><span>Сигнал відкритих джерел</span></div>
+        </div>
         <div class="kicker">
           <span class="pill">OSINT editorial radar</span>
           <span class="pill">EN + UKR</span>
@@ -328,6 +353,8 @@
         <div class="button-row">
           <a class="button" href="issues/open-source-signal-2026-05-14.html">Open latest issue</a>
           <a class="button secondary" href="archive.html">Archive</a>
+          <a class="button secondary" href="feed.xml">RSS</a>
+          <a class="button secondary" href="https://t.me/open_source_signal_ua">Telegram</a>
         </div>
       </div>
     </div>
@@ -405,7 +432,14 @@
   </main>
 
   <footer>
-    <div class="wrap">Open Source Signal / Сигнал відкритих джерел. Static prototype v0.2.</div>
+    <div class="wrap footer-inner">
+      <div>Open Source Signal / Сигнал відкритих джерел.</div>
+      <div class="footer-links">
+        <a href="feed.xml">RSS</a>
+        <a href="https://t.me/open_source_signal_ua">Telegram</a>
+        <a href="archive.html">Archive</a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

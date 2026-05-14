@@ -104,13 +104,48 @@ def test_build_site_copies_static_assets_and_links_favicon(tmp_path):
         ],
         check=True,
     )
-    assert (out_dir / "static" / "favicon.svg").exists()
+    assert (out_dir / "static" / "logo-mark.png").exists()
     assert (out_dir / "static" / "favicon.ico").exists()
     assert (out_dir / "static" / "apple-touch-icon.png").exists()
     assert (out_dir / "static" / "site.webmanifest").exists()
+    assert (out_dir / "static" / "og-image.png").exists()
 
     home = BeautifulSoup((out_dir / "index.html").read_text(encoding="utf-8"), "html.parser")
     issue = BeautifulSoup((out_dir / "issues" / "open-source-signal-2026-05-14.html").read_text(encoding="utf-8"), "html.parser")
 
-    assert home.find("link", rel="icon")["href"] == "static/favicon.svg"
-    assert issue.find("link", rel="icon")["href"] == "../static/favicon.svg"
+    assert home.find("link", rel="icon")["href"] == "static/logo-mark.png"
+    assert issue.find("link", rel="icon")["href"] == "../static/logo-mark.png"
+    assert home.find("img", {"class": "brand-mark"}) is not None
+
+
+def test_build_site_generates_rss_and_social_metadata(tmp_path):
+    out_dir = tmp_path / "dist"
+    subprocess.run(
+        [
+            sys.executable,
+            str(ROOT / "build_site.py"),
+            "--issues",
+            str(ROOT / "issues"),
+            "--templates",
+            str(ROOT / "templates"),
+            "--out",
+            str(out_dir),
+            "--config",
+            str(ROOT / "site.json"),
+            "--static",
+            str(ROOT / "static"),
+        ],
+        check=True,
+    )
+    feed = (out_dir / "feed.xml").read_text(encoding="utf-8")
+    assert "<rss version=\"2.0\">" in feed
+    assert "open-source-signal-2026-05-14.html" in feed
+
+    home = BeautifulSoup((out_dir / "index.html").read_text(encoding="utf-8"), "html.parser")
+    issue = BeautifulSoup((out_dir / "issues" / "open-source-signal-2026-05-14.html").read_text(encoding="utf-8"), "html.parser")
+
+    assert home.find("meta", attrs={"property": "og:title"}) is not None
+    assert issue.find("meta", attrs={"property": "og:type"})["content"] == "article"
+    assert home.find("link", attrs={"rel": "alternate", "type": "application/rss+xml"})["href"] == "feed.xml"
+    links = {a.get("href") for a in home.select("a[href]")}
+    assert "https://t.me/open_source_signal_ua" in links

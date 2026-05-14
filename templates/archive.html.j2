@@ -5,8 +5,16 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Archive — {{ config['site_title_en'] }}</title>
   <meta name="description" content="Archive of Open Source Signal issues.">
+  <link rel="canonical" href="{{ page_url }}">
+  <meta property="og:title" content="Archive — {{ config['site_title_en'] }}">
+  <meta property="og:description" content="Archive of Open Source Signal issues.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page_url }}">
+  <meta property="og:image" content="{{ og_image_url }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="alternate" type="application/rss+xml" title="Open Source Signal RSS" href="{{ feed_href }}">
   <meta name="theme-color" content="#141414">
-  <link rel="icon" href="{{ asset_prefix }}static/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="{{ asset_prefix }}static/logo-mark.png" type="image/png">
   <link rel="shortcut icon" href="{{ asset_prefix }}static/favicon.ico">
   <link rel="apple-touch-icon" href="{{ asset_prefix }}static/apple-touch-icon.png">
   <link rel="manifest" href="{{ asset_prefix }}static/site.webmanifest">
@@ -52,6 +60,14 @@
     a { color: inherit; text-decoration-thickness: .1em; text-underline-offset: .18em; }
     .wrap { width: min(1080px, calc(100% - 36px)); margin: 0 auto; }
     header { padding: 68px 0 30px; }
+
+    .brand-row { display:flex; gap:14px; align-items:center; margin-top: 28px; }
+    .brand-row img { width:60px; height:60px; border-radius:15px; box-shadow: 0 10px 24px rgba(20,20,20,.12); }
+    .brand-copy { display:flex; flex-direction:column; }
+    .brand-copy strong { font-family: var(--label-font); font-size: 14px; letter-spacing: .08em; text-transform: uppercase; }
+    .brand-copy span { font-family: var(--display-cyr); font-size: 17px; color: #3b362f; }
+    .footer-inner, .footer-links { display:flex; gap:16px; align-items:center; justify-content:space-between; flex-wrap:wrap; }
+    .footer-links a { color: inherit; text-decoration: none; font-weight: 700; }
     .nav { font-family: var(--label-font); font-weight: 800; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; font-size: 13px; }
     h1 { margin: 18px 0 8px; font-family: var(--display-latin); font-size: clamp(62px, 10vw, 132px); line-height: .84; letter-spacing: -.075em; }
     .ua { font-family: var(--display-cyr); font-size: clamp(38px, 6vw, 82px); letter-spacing: -.04em; line-height: .9; font-weight: 850; color: #302b25; }
@@ -78,6 +94,7 @@
 <body>
   <header class="wrap">
     <a class="nav" href="index.html">← Home</a>
+    <div class="brand-row"><img src="{{ asset_prefix }}static/logo-mark.png" alt="Open Source Signal logo"><div class="brand-copy"><strong>Open Source Signal</strong><span>Сигнал відкритих джерел</span></div></div>
     <h1>Archive</h1>
     <div class="ua">Архів випусків</div>
   </header>
@@ -97,6 +114,6 @@
     </article>
     {% endfor %}
   </main>
-  <footer class="wrap">Open Source Signal / Сигнал відкритих джерел.</footer>
+  <footer class="wrap footer-inner"><div>Open Source Signal / Сигнал відкритих джерел.</div><div class="footer-links"><a href="{{ feed_href }}">RSS</a><a href="{{ config['telegram_url'] }}">Telegram</a><a href="index.html">Home</a></div></footer>
 </body>
 </html>

@@ -4,9 +4,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>{{ issue['title_en'] }} #{{ issue['issue_number'] }} / {{ issue['title_uk'] }}</title>
-  <meta name="description" content="Bilingual OSINT editorial digest.">
+  <meta name="description" content="{{ issue['dek_en'] }}">
+  <link rel="canonical" href="{{ page_url }}">
+  <meta property="og:title" content="{{ issue['title_en'] }} #{{ issue['issue_number'] }}">
+  <meta property="og:description" content="{{ issue['dek_en'] }}">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="{{ page_url }}">
+  <meta property="og:image" content="{{ og_image_url }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ issue['title_en'] }} #{{ issue['issue_number'] }}">
+  <meta name="twitter:description" content="{{ issue['dek_en'] }}">
+  <meta name="twitter:image" content="{{ og_image_url }}">
+  <link rel="alternate" type="application/rss+xml" title="Open Source Signal RSS" href="{{ asset_prefix }}{{ config['rss_path'] }}">
   <meta name="theme-color" content="#141414">
-  <link rel="icon" href="{{ asset_prefix }}static/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="{{ asset_prefix }}static/logo-mark.png" type="image/png">
   <link rel="shortcut icon" href="{{ asset_prefix }}static/favicon.ico">
   <link rel="apple-touch-icon" href="{{ asset_prefix }}static/apple-touch-icon.png">
   <link rel="manifest" href="{{ asset_prefix }}static/site.webmanifest">
@@ -86,6 +97,17 @@
       position: relative;
       overflow: hidden;
     }
+
+    .brand-lockup { display:flex; gap:16px; align-items:center; position:relative; z-index:1; }
+    .brand-lockup img { width:72px; height:72px; border-radius:18px; box-shadow: 0 10px 24px rgba(20,20,20,.12); }
+    .brand-copy { display:flex; flex-direction:column; gap:2px; }
+    .brand-copy strong { font-family: var(--label-font); font-size: 15px; letter-spacing: .08em; text-transform: uppercase; }
+    .brand-copy span { font-family: var(--display-cyr); font-size: 18px; color: #3b362f; }
+    .brand-mini { display:flex; gap:10px; align-items:center; font-family: var(--display-latin); font-weight: 900; font-size: 24px; letter-spacing: -.05em; }
+    .brand-mini img { width:34px; height:34px; border-radius:10px; }
+    .toolbar-links { display:flex; gap:8px; flex-wrap:wrap; }
+    .toolbar-links a, .footer-links a { display:inline-flex; align-items:center; border:1px solid rgba(20,20,20,.15); background: rgba(255,255,255,.4); border-radius:999px; padding: 10px 14px; text-decoration:none; font-family: Inter, sans-serif; font-size: 14px; font-weight: 800; }
+    .footer-inner { display:flex; gap:18px; align-items:center; justify-content:space-between; flex-wrap:wrap; }
     .hero-card::after {
       content: "OSINT";
       position: absolute;
@@ -449,6 +471,7 @@
       .toolbar-inner {
         padding: 12px 0;
       }
+      .brand-lockup img { width:56px; height:56px; border-radius:14px; }
     }
     @media print {
       body {
@@ -475,6 +498,7 @@
   <header class="hero">
     <div class="wrap">
       <div class="hero-card">
+        <div class="brand-lockup"><img src="{{ asset_prefix }}static/logo-mark.png" alt="Open Source Signal logo"><div class="brand-copy"><strong>Open Source Signal</strong><span>Сигнал відкритих джерел</span></div></div>
         <div class="kicker">
           <span class="pill">Issue #{{ issue['issue_number'] }}</span>
           <span class="pill">{{ issue['date_label_en'] }}</span>
@@ -491,11 +515,16 @@
 
   <nav class="toolbar" aria-label="Issue controls">
     <div class="wrap toolbar-inner">
-      <div class="brand-mini">OSS #{{ issue['issue_number'] }}</div>
+      <div class="brand-mini"><img src="{{ asset_prefix }}static/logo-mark.png" alt="Open Source Signal logo">OSS #{{ issue['issue_number'] }}</div>
       <div class="language-toggle" aria-label="Language view">
         <button data-lang="both" class="active" type="button">EN + UKR</button>
         <button data-lang="en" type="button">English</button>
         <button data-lang="uk" type="button">Українська</button>
+      </div>
+      <div class="toolbar-links">
+        <a href="{{ asset_prefix }}{{ config['rss_path'] }}">RSS</a>
+        <a href="{{ config['telegram_url'] }}">Telegram</a>
+        <a href="{{ asset_prefix }}archive.html">Archive</a>
       </div>
     </div>
   </nav>
@@ -551,7 +580,7 @@
   </main>
 
   <footer>
-    <div class="wrap print-note">{{ issue['footer_note'] }}</div>
+    <div class="wrap print-note footer-inner"><div>{{ issue['footer_note'] }}</div><div class="footer-links"><a href="{{ asset_prefix }}{{ config['rss_path'] }}">RSS</a><a href="{{ config['telegram_url'] }}">Telegram</a><a href="{{ asset_prefix }}index.html">Home</a></div></div>
   </footer>
 
   <script>

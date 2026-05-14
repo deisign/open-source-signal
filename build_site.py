@@ -3,6 +3,9 @@ from __future__ import annotations
 
 import argparse
 import json
+from datetime import datetime, timezone
+from email.utils import format_datetime
+from xml.sax.saxutils import escape
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
@@ -17,6 +20,8 @@ DEFAULT_SITE_CONFIG = {
     "site_description_en": "A bilingual OSINT editorial radar for investigations, verification, maps, platforms, surveillance and researcher safety.",
     "site_description_uk": "Двомовний OSINT-радар про розслідування, верифікацію, мапи, платформи, інфраструктуру стеження й безпеку дослідника.",
     "base_url": "",
+    "telegram_url": "https://t.me/open_source_signal_ua",
+    "rss_path": "feed.xml",
 }
 
 
@@ -58,6 +63,55 @@ def load_issues(issues_dir: Path) -> list[dict[str, Any]]:
     return sorted(issues, key=_issue_sort_key, reverse=True)
 
 
+
+
+def _absolute_url(base_url: str, path: str = "") -> str:
+    if not base_url:
+        return path
+    base = base_url.rstrip("/")
+    if not path:
+        return base
+    return f"{base}/{path.lstrip('/')}"
+
+
+def _pub_date(issue: dict[str, Any]) -> str:
+    dt = datetime.strptime(str(issue["date_iso"]), "%Y-%m-%d").replace(tzinfo=timezone.utc)
+    return format_datetime(dt)
+
+
+def write_feed(issues: list[BuiltIssue], out_dir: Path, config: dict[str, Any]) -> Path:
+    items_xml: list[str] = []
+    base_url = str(config.get("base_url", ""))
+    for built in issues:
+        issue = built.issue
+        link = _absolute_url(base_url, built.href)
+        description = escape((issue.get("dek_en") or issue.get("dek_uk") or config.get("site_description_en", "")).strip())
+        title = escape(f"{issue['title_en']} / {issue['title_uk']} #{issue['issue_number']}")
+        item_xml = f"""    <item>
+      <title>{title}</title>
+      <link>{escape(link)}</link>
+      <guid>{escape(link)}</guid>
+      <pubDate>{_pub_date(issue)}</pubDate>
+      <description>{description}</description>
+    </item>"""
+        items_xml.append(item_xml)
+
+    feed = f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>{escape(config['site_title_en'] + " / " + config['site_title_uk'])}</title>
+    <link>{escape(_absolute_url(base_url))}</link>
+    <description>{escape(config['site_description_en'])}</description>
+    <language>en</language>
+    <lastBuildDate>{format_datetime(datetime.now(timezone.utc))}</lastBuildDate>
+{chr(10).join(items_xml)}
+  </channel>
+</rss>
+"""
+    path = out_dir / str(config.get('rss_path', 'feed.xml'))
+    path.write_text(feed, encoding='utf-8')
+    return path
+
 def copy_static(static_dir: Path, out_dir: Path) -> list[Path]:
     written: list[Path] = []
     if not static_dir.exists():
@@ -88,11 +142,17 @@ def build_site(issues_dir: Path, templates_dir: Path, out_dir: Path, config_path
     written: list[Path] = []
 
     issue_template = env.get_template("issue.html.j2")
+    og_image_url = _absolute_url(str(config.get("base_url", "")), "static/og-image.png")
     for issue in issues:
         name = output_filename(issue)
+        href = f"issues/{name}"
+        page_url = _absolute_url(str(config.get("base_url", "")), href)
         path = issue_out_dir / name
-        path.write_text(issue_template.render(issue=issue, asset_prefix="../"), encoding="utf-8")
-        built_issues.append(BuiltIssue(issue=issue, output_name=name, href=f"issues/{name}"))
+        path.write_text(
+            issue_template.render(issue=issue, config=config, asset_prefix="../", page_url=page_url, og_image_url=og_image_url),
+            encoding="utf-8",
+        )
+        built_issues.append(BuiltIssue(issue=issue, output_name=name, href=href))
         written.append(path)
 
     context = {
@@ -100,16 +160,22 @@ def build_site(issues_dir: Path, templates_dir: Path, out_dir: Path, config_path
         "issues": built_issues,
         "latest": built_issues[0],
         "latest_items": built_issues[0].issue["items"][:4],
+        "feed_href": str(config.get("rss_path", "feed.xml")),
+        "og_image_url": _absolute_url(str(config.get("base_url", "")), "static/og-image.png"),
     }
 
-    for template_name, output_name in [
+    pages = [
         ("index.html.j2", "index.html"),
         ("archive.html.j2", "archive.html"),
-    ]:
+    ]
+    for template_name, output_name in pages:
         template = env.get_template(template_name)
         path = out_dir / output_name
-        path.write_text(template.render(asset_prefix="", **context), encoding="utf-8")
+        page_url = _absolute_url(str(config.get("base_url", "")), output_name if output_name != "index.html" else "")
+        path.write_text(template.render(asset_prefix="", page_url=page_url, **context), encoding="utf-8")
         written.append(path)
+
+    written.append(write_feed(built_issues, out_dir, config))
 
     if static_dir is not None:
         written.extend(copy_static(static_dir, out_dir))
