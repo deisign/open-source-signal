@@ -1,0 +1,85 @@
+name: Import Daily Signal
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: Issue date in YYYY-MM-DD format
+        required: true
+        type: string
+      issue:
+        description: Issue number, for example 002
+        required: true
+        type: string
+      signal_text:
+        description: Paste the full Daily Signal markdown/text here
+        required: true
+        type: string
+      force:
+        description: Overwrite existing issue JSON if present
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
+      - name: Write pasted Daily Signal input
+        env:
+          SIGNAL_TEXT: ${{ inputs.signal_text }}
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          Path('drafts').mkdir(exist_ok=True)
+          Path('drafts/daily_signal_input.md').write_text(os.environ['SIGNAL_TEXT'], encoding='utf-8')
+          PY
+
+      - name: Import Daily Signal into issue JSON
+        run: |
+          FORCE_FLAG=""
+          if [ "${{ inputs.force }}" = "true" ]; then
+            FORCE_FLAG="--force"
+          fi
+          python import_daily_signal.py drafts/daily_signal_input.md \
+            --date "${{ inputs.date }}" \
+            --issue "${{ inputs.issue }}" \
+            --out issues \
+            $FORCE_FLAG
+
+      - name: Test and build site
+        run: |
+          python -m pytest -q
+          python build_site.py
+
+      - name: Commit imported issue
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add issues dist
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Import Daily Signal ${{ inputs.date }}"
+            git pull --rebase origin main
+            git push
+          fi

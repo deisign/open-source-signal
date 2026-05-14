@@ -1,4 +1,4 @@
-# Open Source Signal v0.8.3
+# Open Source Signal v0.9
 
 Static generator and publishing toolkit for the bilingual OSINT journal **Open Source Signal / Сигнал відкритих джерел**.
 
@@ -128,6 +128,35 @@ Setup instructions are in:
 
 ```text
 docs/TELEGRAM_SETUP.md
+```
+
+### 7. Import Daily Signal text into issue JSON
+
+`import_daily_signal.py` converts a structured Daily Signal markdown/text file into a complete `issues/YYYY-MM-DD.json` file.
+
+```bash
+python import_daily_signal.py drafts/daily_signal_2026-05-15.md \
+  --date 2026-05-15 \
+  --issue 002 \
+  --out issues
+```
+
+A manual GitHub Actions workflow is also included:
+
+```text
+.github/workflows/import_daily_signal.yml
+```
+
+Use it from:
+
+```text
+Actions → Import Daily Signal → Run workflow
+```
+
+Full instructions are in:
+
+```text
+docs/IMPORT_DAILY_SIGNAL.md
 ```
 
 

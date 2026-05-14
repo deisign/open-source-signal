@@ -1,2 +1,8 @@
-......................................                                   [100%]
-38 passed in 11.69s
+python -m pytest -q
+→ 42 passed in 15.58s
+
+python build_site.py
+→ dist/issues/open-source-signal-2026-05-14.html
+→ dist/issues/open-source-signal-2026-05-13.html
+→ dist/index.html
+→ dist/archive.html
