@@ -1,6 +1,8 @@
-# Open Source Signal v0.8
+# Open Source Signal v0.8.3
 
 Static generator and publishing toolkit for the bilingual OSINT journal **Open Source Signal / Сигнал відкритих джерел**.
+
+Editorial focus: Ukrainian accountability OSINT with an international horizon — war-crimes verification, public-interest investigations, Russian KIA/POW/MIA/missing/wounded OSINT, platform research, geolocation, surveillance infrastructure and researcher safety.
 
 ## What it does
 
@@ -127,6 +129,35 @@ Setup instructions are in:
 ```text
 docs/TELEGRAM_SETUP.md
 ```
+
+
+## Editorial and source policy
+
+The project now keeps editorial rules and source registries in the repository:
+
+```text
+docs/EDITORIAL_POLICY.md
+docs/SOURCE_POLICY.md
+data/sources_web.yaml
+data/sources_telegram.yaml
+```
+
+Language handling:
+
+- English-language OSINT material is adapted into Ukrainian.
+- Ukrainian-only material is adapted back into English for international readers.
+- Both versions must read like edited publication text, not literal machine translations.
+
+New Ukrainian-accountability rubrics:
+
+```text
+Ukraine Lens / Українська оптика
+War Crimes Verification / Верифікація воєнних злочинів
+Losses, Captivity & Missing / Втрати, полон, зниклі
+Telegram Radar / Telegram-радар
+```
+
+Evocation.info is included as a source pointer, not as standalone proof.
 
 ## Install
 

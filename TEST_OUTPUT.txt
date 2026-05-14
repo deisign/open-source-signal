@@ -1,11 +1,2 @@
-python -m pytest -q
-→ 32 passed in 16.70s
-
-python build_site.py
-→ dist/issues/open-source-signal-2026-05-14.html
-→ dist/issues/open-source-signal-2026-05-13.html
-→ dist/index.html
-→ dist/archive.html
-
-python telegram_digest.py issues/2026-05-14.json --lang uk --url https://deisign.github.io/open-source-signal/issues/open-source-signal-2026-05-14.html --out dist
-→ dist/telegram-open-source-signal-2026-05-14.uk.txt
+......................................                                   [100%]
+38 passed in 11.69s

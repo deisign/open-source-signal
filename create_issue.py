@@ -17,12 +17,12 @@ DEFAULT_SLUG = "open-source-signal"
 DEFAULT_ISSUE_TYPE = "Daily Signal"
 DEFAULT_LANGUAGE_LABEL = "EN + UKR"
 DEFAULT_SUBTITLE_EN = (
-    "Bilingual OSINT radar for verification, investigations, maps, platforms, "
-    "surveillance and researcher safety."
+    "Bilingual OSINT radar for Ukrainian accountability work, verification, war-crimes documentation, "
+    "losses/captivity/missing-persons research, maps, platforms, surveillance and researcher safety."
 )
 DEFAULT_DEK_EN = (
-    "A daily editorial filter for public-interest OSINT: what happened, why it matters, "
-    "how readers can use the insight, and where the method or evidence has limits."
+    "A daily editorial filter for public-interest OSINT with a Ukrainian accountability lens: "
+    "what happened, why it matters, how readers can use the insight, and where the method, evidence or attribution has limits."
 )
 DEFAULT_EDITORIAL_FRAME = {
     "what_this_is": (
@@ -36,6 +36,10 @@ DEFAULT_EDITORIAL_FRAME = {
 }
 DEFAULT_RUBRIC_MAP = [
     "📡 Signal One",
+    "🇺🇦 Ukraine Lens",
+    "⚖️ War Crimes Verification",
+    "🕯️ Losses, Captivity & Missing",
+    "📨 Telegram Radar",
     "🛰️ Surveillance Watch",
     "🗺️ Map Room",
     "🔎 Platform Watch",

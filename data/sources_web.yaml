@@ -1,0 +1,212 @@
+# Open Source Signal web source registry.
+# Roles: primary, investigative, methodology, data, source_pointer, monitoring.
+# A listed source is not automatically publication-ready evidence.
+
+international_osint:
+  - name: Bellingcat
+    url: https://www.bellingcat.com/
+    roles: [investigative, methodology]
+    language: en
+  - name: Citizen Lab
+    url: https://citizenlab.ca/
+    roles: [investigative, methodology]
+    language: en
+  - name: Sector035 / Week in OSINT
+    url: https://sector035.nl/
+    roles: [monitoring, methodology]
+    language: en
+  - name: OSINT Jobs Newsletter
+    url: https://www.osint-jobs.com/newsletter
+    roles: [monitoring]
+    language: en
+  - name: OSINT Team Blog
+    url: https://osintteam.blog/
+    roles: [methodology, monitoring]
+    language: en
+  - name: IntelTechniques
+    url: https://inteltechniques.com/blog/
+    roles: [methodology]
+    language: en
+  - name: OSINT Combine
+    url: https://www.osintcombine.com/blog
+    roles: [methodology]
+    language: en
+
+international_accountability:
+  - name: OCCRP
+    url: https://www.occrp.org/
+    roles: [investigative]
+    language: en
+  - name: ICIJ
+    url: https://www.icij.org/
+    roles: [investigative]
+    language: en
+  - name: Forensic Architecture
+    url: https://forensic-architecture.org/
+    roles: [investigative, methodology]
+    language: en
+  - name: Amnesty Evidence Lab
+    url: https://citizenevidence.org/
+    roles: [investigative, methodology]
+    language: en
+  - name: Human Rights Watch Investigations
+    url: https://www.hrw.org/
+    roles: [investigative]
+    language: en
+
+ukrainian_osint_accountability:
+  - name: Texty.org.ua
+    url: https://texty.org.ua/
+    roles: [investigative, data]
+    language: uk
+    english_adaptation_needed: true
+  - name: Molfar
+    url: https://molfar.com/
+    roles: [investigative, methodology]
+    language: uk,en
+    english_adaptation_needed: sometimes
+  - name: InformNapalm
+    url: https://informnapalm.org/
+    roles: [investigative, source_pointer]
+    language: uk,en,ru
+    english_adaptation_needed: sometimes
+  - name: Slidstvo.Info
+    url: https://www.slidstvo.info/
+    roles: [investigative]
+    language: uk
+    english_adaptation_needed: true
+  - name: Schemes / Radio Liberty
+    url: https://www.radiosvoboda.org/schemes
+    roles: [investigative]
+    language: uk,ru,en
+    english_adaptation_needed: sometimes
+  - name: NGL.media
+    url: https://ngl.media/
+    roles: [investigative, data]
+    language: uk
+    english_adaptation_needed: true
+  - name: Center for Journalistic Investigations
+    url: https://investigator.org.ua/
+    roles: [investigative]
+    language: uk,ru
+    english_adaptation_needed: true
+  - name: Truth Hounds
+    url: https://truth-hounds.org/
+    roles: [investigative, methodology]
+    language: uk,en
+    english_adaptation_needed: sometimes
+  - name: OSINT for Ukraine
+    url: https://www.osintforukraine.com/
+    roles: [investigative, methodology]
+    language: en,uk
+  - name: DeepStateMap
+    url: https://deepstatemap.live/
+    roles: [data, monitoring]
+    language: uk,en
+  - name: KibOrg
+    url: https://kiborg.news/
+    roles: [investigative, source_pointer]
+    language: uk
+    english_adaptation_needed: true
+  - name: Cyber Resistance
+    url: https://informnapalm.org/en/tag/cyber-resistance/
+    roles: [source_pointer, investigative]
+    language: uk,en,ru
+    note: Prefer credible write-ups and independently verifiable materials.
+  - name: Trap Aggressor / StateWatch
+    url: https://trap.org.ua/
+    roles: [data, investigative]
+    language: uk,en
+  - name: RussianWarCriminals
+    url: https://russianwarcriminals.info/
+    roles: [data, source_pointer]
+    language: uk,en,ru
+    note: Treat as a registry pointer; verify status and evidence before publication.
+  - name: Evocation.info
+    url: https://evocation.info/
+    roles: [source_pointer, data]
+    language: uk,ru,en
+    note: Useful as a lead source on collaborators, propagandists, organizations and occupation-linked networks; verify independently.
+
+losses_captivity_missing:
+  - name: Mediazona / BBC confirmed Russian deaths
+    url: https://en.zona.media/
+    roles: [data, methodology]
+    language: en,ru
+  - name: Mediazona / Meduza statistical loss estimates
+    url: https://en.zona.media/
+    roles: [data, methodology]
+    language: en,ru
+  - name: Ukrainian public POW/MIA/KIA projects
+    url: null
+    roles: [data, source_pointer]
+    language: uk,ru,en
+    note: Add project-specific URLs only after verification and public accessibility review.
+
+cyber_infrastructure_privacy:
+  - name: KrebsOnSecurity
+    url: https://krebsonsecurity.com/
+    roles: [investigative, monitoring]
+    language: en
+  - name: The Record
+    url: https://therecord.media/
+    roles: [monitoring, investigative]
+    language: en
+  - name: Google Threat Intelligence Group / TAG
+    url: https://blog.google/threat-analysis-group/
+    roles: [primary, methodology]
+    language: en
+  - name: Microsoft Threat Intelligence
+    url: https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/
+    roles: [primary, methodology]
+    language: en
+  - name: Cloudflare Radar
+    url: https://radar.cloudflare.com/
+    roles: [data, monitoring]
+    language: en
+  - name: NetBlocks
+    url: https://netblocks.org/
+    roles: [data, monitoring]
+    language: en
+  - name: 404 Media
+    url: https://www.404media.co/
+    roles: [investigative, monitoring]
+    language: en
+  - name: The Markup
+    url: https://themarkup.org/
+    roles: [investigative]
+    language: en
+  - name: AI Forensics
+    url: https://aiforensics.org/
+    roles: [investigative, methodology]
+    language: en
+  - name: Simon Willison
+    url: https://simonwillison.net/
+    roles: [methodology, monitoring]
+    language: en
+  - name: CISA
+    url: https://www.cisa.gov/news-events/cybersecurity-advisories
+    roles: [primary, monitoring]
+    language: en
+  - name: GitHub Security Blog
+    url: https://github.blog/security/
+    roles: [primary, methodology]
+    language: en
+
+geospatial_data:
+  - name: GDELT
+    url: https://www.gdeltproject.org/
+    roles: [data]
+    language: en
+  - name: Copernicus
+    url: https://www.copernicus.eu/
+    roles: [data]
+    language: en
+  - name: Sentinel Hub
+    url: https://www.sentinel-hub.com/
+    roles: [data, methodology]
+    language: en
+  - name: NASA FIRMS
+    url: https://firms.modaps.eosdis.nasa.gov/
+    roles: [data]
+    language: en

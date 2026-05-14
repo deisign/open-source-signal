@@ -1,0 +1,84 @@
+# Candidate Telegram source registry.
+# Telegram leads are never automatically reliable. Verify handles and claims before publication.
+# Fill `username` only after confirming the public channel handle.
+
+ukrainian_osint_accountability:
+  - name: InformNapalm
+    username: null
+    category: osint_accountability
+    status: verify_handle_before_use
+    risk_level: medium
+  - name: Molfar
+    username: null
+    category: osint_investigations
+    status: verify_handle_before_use
+    risk_level: medium
+  - name: Texty.org.ua
+    username: null
+    category: investigative_data
+    status: verify_handle_before_use
+    risk_level: low
+  - name: Slidstvo.Info
+    username: null
+    category: investigations
+    status: verify_handle_before_use
+    risk_level: medium
+  - name: NGL.media
+    username: null
+    category: investigations
+    status: verify_handle_before_use
+    risk_level: medium
+  - name: DeepStateMap
+    username: null
+    category: map_room
+    status: verify_handle_before_use
+    risk_level: medium
+  - name: KibOrg
+    username: null
+    category: leaks_accountability
+    status: verify_handle_before_use
+    risk_level: high
+  - name: Evocation.info
+    username: null
+    category: source_pointer
+    status: verify_handle_before_use
+    risk_level: high
+    note: Treat person-level allegations as leads requiring independent verification.
+
+war_crimes_verification:
+  - name: Ukrainian investigative and accountability channels
+    username: null
+    category: war_crimes_verification
+    status: placeholder_registry
+    risk_level: high
+    note: Add channels only after editorial review.
+
+losses_captivity_missing:
+  - name: Public POW/MIA/KIA related Ukrainian projects
+    username: null
+    category: losses_captivity_missing
+    status: placeholder_registry
+    risk_level: high
+    note: Differentiate confirmed, official-list, relative-reported, statistically estimated and unverified data.
+
+telegram_triage_rules:
+  primary_signal:
+    - original footage
+    - original document
+    - stable public archive
+    - direct project publication
+  verify_before_publication:
+    - reposts
+    - accusations against named persons
+    - casualty identity claims
+    - POW/MIA/KIA claims
+    - collaborator claims
+    - screenshots without source link
+  do_not_auto_publish:
+    - private phone numbers
+    - home addresses
+    - family data
+    - personal documents
+    - revenge calls
+    - live targeting
+    - credential leaks
