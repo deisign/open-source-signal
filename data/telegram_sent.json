@@ -1,3 +1,15 @@
 {
-  "telegram": {}
+  "telegram": {
+    "2026-05-13.json": {
+      "uk": {
+        "github_run_id": "25845155166",
+        "github_run_url": "https://github.com/deisign/open-source-signal/actions/runs/25845155166",
+        "issue": "2026-05-13.json",
+        "issue_url": "https://deisign.github.io/open-source-signal/issues/open-source-signal-2026-05-13.html",
+        "lang": "uk",
+        "sent_at": "2026-05-14T06:16:46Z",
+        "text_file": "dist/telegram-open-source-signal-2026-05-13.uk.txt"
+      }
+    }
+  }
 }
