@@ -4,16 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>{{ issue['title_en'] }} #{{ issue['issue_number'] }} / {{ issue['title_uk'] }}</title>
-  <meta name="description" content="{{ issue['dek_en'] }}">
+  <meta name="description" content="{{ meta_description }}">
   <link rel="canonical" href="{{ page_url }}">
   <meta property="og:title" content="{{ issue['title_en'] }} #{{ issue['issue_number'] }}">
-  <meta property="og:description" content="{{ issue['dek_en'] }}">
+  <meta property="og:description" content="{{ meta_description }}">
   <meta property="og:type" content="article">
   <meta property="og:url" content="{{ page_url }}">
   <meta property="og:image" content="{{ og_image_url }}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ issue['title_en'] }} #{{ issue['issue_number'] }}">
-  <meta name="twitter:description" content="{{ issue['dek_en'] }}">
+  <meta name="twitter:description" content="{{ meta_description }}">
   <meta name="twitter:image" content="{{ og_image_url }}">
   <link rel="alternate" type="application/rss+xml" title="Open Source Signal RSS" href="{{ asset_prefix }}{{ config['rss_path'] }}">
   <meta name="theme-color" content="#141414">
@@ -493,6 +493,10 @@
     }
   
   </style>
+  <script type="application/ld+json">
+{{ issue_schema_json | safe }}
+  </script>
+  {{ analytics_snippet | safe }}
 </head>
 <body class="lang-both">
   <header class="hero">

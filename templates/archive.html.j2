@@ -90,6 +90,10 @@
     footer { padding: 24px 0 70px; color: var(--muted); font-family: JetBrains Mono, monospace; font-size: 14px; }
     @media (max-width: 760px) { .issue-row { grid-template-columns: 1fr; } }
   </style>
+  <script type="application/ld+json">
+{{ site_schema_json | safe }}
+  </script>
+  {{ analytics_snippet | safe }}
 </head>
 <body>
   <header class="wrap">

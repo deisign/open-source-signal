@@ -5,5 +5,10 @@
   "site_description_uk": "Двомовний OSINT-радар про розслідування, верифікацію, мапи, платформи, інфраструктуру стеження й безпеку дослідника.",
   "base_url": "https://osintsignal.org",
   "telegram_url": "https://t.me/open_source_signal_ua",
-  "rss_path": "feed.xml"
+  "rss_path": "feed.xml",
+  "sitemap_path": "sitemap.xml",
+  "robots_path": "robots.txt",
+  "analytics_provider": "goatcounter",
+  "analytics_id": "",
+  "analytics_domain": ""
 }

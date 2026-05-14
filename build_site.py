@@ -22,6 +22,11 @@ DEFAULT_SITE_CONFIG = {
     "base_url": "",
     "telegram_url": "https://t.me/open_source_signal_ua",
     "rss_path": "feed.xml",
+    "sitemap_path": "sitemap.xml",
+    "robots_path": "robots.txt",
+    "analytics_provider": "goatcounter",
+    "analytics_id": "",
+    "analytics_domain": "",
 }
 
 
@@ -77,6 +82,137 @@ def _absolute_url(base_url: str, path: str = "") -> str:
 def _pub_date(issue: dict[str, Any]) -> str:
     dt = datetime.strptime(str(issue["date_iso"]), "%Y-%m-%d").replace(tzinfo=timezone.utc)
     return format_datetime(dt)
+
+
+
+
+def _xml_date(issue: dict[str, Any]) -> str:
+    return str(issue["date_iso"])
+
+
+def _issue_meta_description(issue: dict[str, Any]) -> str:
+    items = issue.get("items", [])
+    fragments: list[str] = []
+    for item in items[:3]:
+        title = str(item.get("title_en") or item.get("title_uk") or "").strip()
+        rubric = str(item.get("rubric_en") or item.get("rubric_uk") or "").strip()
+        if title and rubric:
+            fragments.append(f"{rubric}: {title}")
+        elif title:
+            fragments.append(title)
+    if fragments:
+        return "Ukrainian accountability OSINT digest: " + "; ".join(fragments) + "."
+    return str(issue.get("dek_en") or issue.get("dek_uk") or "")
+
+
+def _json_script(data: dict[str, Any]) -> str:
+    return json.dumps(data, ensure_ascii=False, indent=2)
+
+
+def _issue_json_ld(issue: dict[str, Any], page_url: str, og_image_url: str, config: dict[str, Any]) -> str:
+    keywords = sorted({tag for item in issue.get("items", []) for tag in item.get("tags", [])})
+    data = {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": f"{issue['title_en']} #{issue['issue_number']}",
+        "alternativeHeadline": issue["title_uk"],
+        "description": _issue_meta_description(issue),
+        "datePublished": issue["date_iso"],
+        "dateModified": issue["date_iso"],
+        "url": page_url,
+        "image": [og_image_url] if og_image_url else [],
+        "inLanguage": ["en", "uk"],
+        "isAccessibleForFree": True,
+        "author": {
+            "@type": "Organization",
+            "name": config["site_title_en"],
+            "url": _absolute_url(str(config.get("base_url", ""))),
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": config["site_title_en"],
+            "url": _absolute_url(str(config.get("base_url", ""))),
+            "logo": {
+                "@type": "ImageObject",
+                "url": _absolute_url(str(config.get("base_url", "")), "static/logo-mark-512.png"),
+            },
+        },
+        "keywords": keywords,
+    }
+    return _json_script(data)
+
+
+def _site_json_ld(config: dict[str, Any]) -> str:
+    base_url = _absolute_url(str(config.get("base_url", "")))
+    data = {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": config["site_title_en"],
+        "alternateName": config["site_title_uk"],
+        "url": base_url,
+        "description": config["site_description_en"],
+        "inLanguage": ["en", "uk"],
+        "publisher": {
+            "@type": "Organization",
+            "name": config["site_title_en"],
+            "url": base_url,
+            "logo": {
+                "@type": "ImageObject",
+                "url": _absolute_url(str(config.get("base_url", "")), "static/logo-mark-512.png"),
+            },
+        },
+    }
+    return _json_script(data)
+
+
+def _analytics_snippet(config: dict[str, Any]) -> str:
+    provider = str(config.get("analytics_provider", "")).strip().lower()
+    analytics_id = str(config.get("analytics_id", "")).strip()
+    analytics_domain = str(config.get("analytics_domain", "")).strip()
+    if provider != "goatcounter" or not analytics_id:
+        return ""
+    counter_url = analytics_domain or f"https://{analytics_id}.goatcounter.com/count"
+    return f'<script data-goatcounter="{counter_url}" async src="//gc.zgo.at/count.js"></script>'
+
+
+def write_sitemap(issues: list[BuiltIssue], out_dir: Path, config: dict[str, Any]) -> Path:
+    base_url = str(config.get("base_url", "")).strip()
+    urls: list[tuple[str, str, str]] = [
+        (_absolute_url(base_url), "", "daily"),
+        (_absolute_url(base_url, "archive.html"), "", "weekly"),
+        (_absolute_url(base_url, str(config.get("rss_path", "feed.xml"))), "", "daily"),
+    ]
+    for built in issues:
+        urls.append((_absolute_url(base_url, built.href), _xml_date(built.issue), "weekly"))
+
+    entries = []
+    for loc, lastmod, changefreq in urls:
+        lastmod_line = f"\n    <lastmod>{escape(lastmod)}</lastmod>" if lastmod else ""
+        entries.append(
+            f"  <url>\n    <loc>{escape(loc)}</loc>{lastmod_line}\n    <changefreq>{escape(changefreq)}</changefreq>\n  </url>"
+        )
+
+    sitemap = f"""<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{chr(10).join(entries)}
+</urlset>
+"""
+    path = out_dir / str(config.get("sitemap_path", "sitemap.xml"))
+    path.write_text(sitemap, encoding="utf-8")
+    return path
+
+
+def write_robots(out_dir: Path, config: dict[str, Any]) -> Path:
+    base_url = str(config.get("base_url", "")).rstrip("/")
+    sitemap_url = _absolute_url(base_url, str(config.get("sitemap_path", "sitemap.xml")))
+    body = f"""User-agent: *
+Allow: /
+
+Sitemap: {sitemap_url}
+"""
+    path = out_dir / str(config.get("robots_path", "robots.txt"))
+    path.write_text(body, encoding="utf-8")
+    return path
 
 
 def write_feed(issues: list[BuiltIssue], out_dir: Path, config: dict[str, Any]) -> Path:
@@ -151,13 +287,25 @@ def build_site(issues_dir: Path, templates_dir: Path, out_dir: Path, config_path
 
     issue_template = env.get_template("issue.html.j2")
     og_image_url = _absolute_url(str(config.get("base_url", "")), "static/og-image.png")
+    analytics_snippet = _analytics_snippet(config)
     for issue in issues:
         name = output_filename(issue)
         href = f"issues/{name}"
         page_url = _absolute_url(str(config.get("base_url", "")), href)
+        meta_description = _issue_meta_description(issue)
+        issue_schema_json = _issue_json_ld(issue, page_url, og_image_url, config)
         path = issue_out_dir / name
         path.write_text(
-            issue_template.render(issue=issue, config=config, asset_prefix="../", page_url=page_url, og_image_url=og_image_url),
+            issue_template.render(
+                issue=issue,
+                config=config,
+                asset_prefix="../",
+                page_url=page_url,
+                og_image_url=og_image_url,
+                meta_description=meta_description,
+                issue_schema_json=issue_schema_json,
+                analytics_snippet=analytics_snippet,
+            ),
             encoding="utf-8",
         )
         built_issues.append(BuiltIssue(issue=issue, output_name=name, href=href))
@@ -170,6 +318,8 @@ def build_site(issues_dir: Path, templates_dir: Path, out_dir: Path, config_path
         "latest_items": built_issues[0].issue["items"][:4],
         "feed_href": str(config.get("rss_path", "feed.xml")),
         "og_image_url": _absolute_url(str(config.get("base_url", "")), "static/og-image.png"),
+        "site_schema_json": _site_json_ld(config),
+        "analytics_snippet": analytics_snippet,
     }
 
     pages = [
@@ -184,6 +334,8 @@ def build_site(issues_dir: Path, templates_dir: Path, out_dir: Path, config_path
         written.append(path)
 
     written.append(write_feed(built_issues, out_dir, config))
+    written.append(write_sitemap(built_issues, out_dir, config))
+    written.append(write_robots(out_dir, config))
 
     written.extend(copy_cname(Path("CNAME"), out_dir))
 

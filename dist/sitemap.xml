@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://osintsignal.org</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://osintsignal.org/archive.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://osintsignal.org/feed.xml</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://osintsignal.org/issues/open-source-signal-2026-05-14.html</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://osintsignal.org/issues/open-source-signal-2026-05-13.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+</urlset>
