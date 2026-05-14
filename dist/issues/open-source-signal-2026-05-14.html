@@ -1,0 +1,703 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Open Source Signal #001 / Сигнал відкритих джерел</title>
+  <meta name="description" content="Bilingual OSINT editorial digest.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@500;600;700&family=Fraunces:opsz,wght,SOFT,WONK@9..144,600..900,50..100,0..1&family=Inter:wght@400;500;650;800;900&family=JetBrains+Mono:wght@400;600;800&family=Source+Serif+4:opsz,wght@8..60,600..900&display=swap" rel="stylesheet">
+  <style>
+
+    :root {
+      --display-latin: Fraunces, Georgia, serif;
+      --display-cyr: "Source Serif 4", Georgia, "Times New Roman", serif;
+      --label-font: Arimo, Arial, Helvetica, sans-serif;
+      --paper: #F2EDDD;
+      --paper-2: #FFF9EA;
+      --ink: #141414;
+      --muted: #6d665a;
+      --line: rgba(20,20,20,.16);
+      --signal: #D6422B;
+      --surveillance: #5B3B83;
+      --map: #1F7667;
+      --platform: #CC8B21;
+      --opsec: #245C73;
+      --infra: #2F5EA8;
+      --risk: #141414;
+      --shadow: 0 24px 70px rgba(20,20,20,.12);
+      --radius: 28px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 10% 5%, rgba(214,66,43,.18), transparent 27rem),
+        radial-gradient(circle at 86% 14%, rgba(36,92,115,.18), transparent 24rem),
+        linear-gradient(135deg, #f7f0df, #ece1c6 58%, #d9cfb7);
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 18px;
+      line-height: 1.48;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: .26;
+      background-image:
+        linear-gradient(rgba(20,20,20,.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(20,20,20,.035) 1px, transparent 1px);
+      background-size: 28px 28px;
+      mask-image: linear-gradient(to bottom, #000, transparent 85%);
+    }
+    a { color: inherit; text-decoration-thickness: .1em; text-underline-offset: .18em; }
+    .wrap { width: min(1180px, calc(100% - 36px)); margin: 0 auto; }
+    header.hero {
+      min-height: 94vh;
+      display: grid;
+      align-items: center;
+      padding: 48px 0 64px;
+      position: relative;
+    }
+    .hero-card {
+      border: 1px solid var(--line);
+      background: rgba(255,249,234,.72);
+      backdrop-filter: blur(18px);
+      border-radius: 42px;
+      padding: clamp(26px, 5vw, 70px);
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-card::after {
+      content: "OSINT";
+      position: absolute;
+      right: -2vw;
+      bottom: -7vw;
+      font-family: JetBrains Mono, monospace;
+      font-size: clamp(96px, 19vw, 260px);
+      font-weight: 800;
+      letter-spacing: -.08em;
+      color: rgba(20,20,20,.045);
+      transform: rotate(-5deg);
+    }
+    .kicker {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+      font-family: JetBrains Mono, monospace;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--muted);
+      position: relative;
+      z-index: 1;
+    }
+    .pill {
+      border: 1px solid var(--line);
+      padding: 7px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.35);
+    }
+    h1 {
+      position: relative;
+      z-index: 1;
+      margin: 24px 0 18px;
+      font-family: var(--display-latin);
+      font-size: clamp(56px, 11vw, 142px);
+      line-height: .86;
+      letter-spacing: -.07em;
+      max-width: 900px;
+      font-weight: 900;
+    }
+    .ua-masthead {
+      position: relative;
+      z-index: 1;
+      margin: -8px 0 18px;
+      font-family: var(--display-cyr);
+      font-size: clamp(44px, 7.5vw, 96px);
+      line-height: .9;
+      letter-spacing: -.045em;
+      font-weight: 800;
+      max-width: 980px;
+      color: #2f2b25;
+      font-feature-settings: "kern" 1;
+    }
+    .subtitle {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      font-size: clamp(22px, 3vw, 36px);
+      line-height: 1.14;
+      font-weight: 650;
+      letter-spacing: -.03em;
+      margin: 0;
+    }
+    .dek {
+      position: relative;
+      z-index: 1;
+      max-width: 780px;
+      margin: 24px 0 0;
+      color: #3d382f;
+      font-size: 20px;
+    }
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 9;
+      backdrop-filter: blur(16px);
+      background: rgba(242,237,221,.82);
+      border-bottom: 1px solid var(--line);
+    }
+    .toolbar-inner {
+      min-height: 72px;
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .brand-mini {
+      font-family: var(--display-latin);
+      font-weight: 900;
+      font-size: 24px;
+      letter-spacing: -.05em;
+    }
+    .language-toggle, .view-toggle {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    button {
+      appearance: none;
+      border: 1px solid rgba(20,20,20,.2);
+      background: rgba(255,255,255,.45);
+      color: var(--ink);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-family: Inter, sans-serif;
+      font-weight: 800;
+      cursor: pointer;
+      transition: .18s ease;
+    }
+    button:hover, button.active {
+      background: var(--ink);
+      color: var(--paper-2);
+      transform: translateY(-1px);
+    }
+    .intro-grid {
+      padding: 58px 0 34px;
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 26px;
+    }
+    .brief-card, .rubric-map {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255,249,234,.65);
+      padding: 26px;
+      box-shadow: 0 12px 38px rgba(20,20,20,.06);
+    }
+    .brief-card h2, .rubric-map h2 {
+      font-family: var(--display-latin);
+      font-size: 42px;
+      margin: 0 0 14px;
+      letter-spacing: -.045em;
+      line-height: .95;
+    }
+    .rubric-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 18px;
+    }
+    .rubric-chip {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-height: 48px;
+      padding: 10px 12px;
+      border-radius: 16px;
+      background: rgba(255,255,255,.46);
+      border: 1px solid rgba(20,20,20,.1);
+      font-family: var(--label-font);
+      letter-spacing: .015em;
+      font-weight: 800;
+      font-size: 15px;
+    }
+    .issue-section {
+      padding: 18px 0 80px;
+    }
+    .signals {
+      display: grid;
+      gap: 28px;
+    }
+    .signal-card {
+      border-radius: 34px;
+      overflow: hidden;
+      border: 1px solid rgba(20,20,20,.18);
+      background: rgba(255,249,234,.78);
+      box-shadow: var(--shadow);
+      position: relative;
+      isolation: isolate;
+    }
+    .signal-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 13px;
+      background: var(--accent);
+      z-index: 1;
+    }
+    .signal-card::after {
+      content: "";
+      position: absolute;
+      inset: -40% -20% auto auto;
+      width: 360px;
+      height: 360px;
+      border-radius: 50%;
+      background: color-mix(in srgb, var(--accent), transparent 82%);
+      z-index: -1;
+    }
+    .theme-signal { --accent: var(--signal); }
+    .theme-surveillance { --accent: var(--surveillance); }
+    .theme-map { --accent: var(--map); }
+    .theme-platform { --accent: var(--platform); }
+    .theme-opsec { --accent: var(--opsec); }
+    .theme-infra { --accent: var(--infra); }
+    .theme-ai { --accent: var(--ai); }
+    .theme-casefile { --accent: var(--casefile); }
+    .theme-risk { --accent: var(--risk); }
+    .card-topline {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      align-items: center;
+      padding: 22px 26px 0 36px;
+      font-family: JetBrains Mono, monospace;
+      font-weight: 800;
+      font-size: 14px;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .rubric {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      flex-wrap: wrap;
+      font-family: var(--label-font);
+      letter-spacing: .055em;
+      font-weight: 700;
+    }
+    .emoji {
+      font-size: 24px;
+      filter: saturate(.85);
+    }
+    .issue-index {
+      font-size: 28px;
+      letter-spacing: -.08em;
+      color: rgba(20,20,20,.18);
+    }
+    .lang-panel {
+      padding: 10px 34px 16px 36px;
+    }
+    body.lang-en .lang-panel.uk,
+    body.lang-en .rubric .uk,
+    body.lang-uk .lang-panel.en,
+    body.lang-uk .rubric .en {
+      display: none;
+    }
+    body.lang-both .signal-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    body.lang-both .card-topline,
+    body.lang-both .tags {
+      grid-column: 1 / -1;
+    }
+    body.lang-both .lang-panel.en {
+      border-right: 1px solid rgba(20,20,20,.12);
+    }
+    body.lang-both .rubric .uk::before {
+      content: "/";
+      color: rgba(20,20,20,.36);
+      margin-right: 8px;
+    }
+    h2 {
+      font-family: var(--display-latin);
+      font-size: clamp(36px, 5vw, 74px);
+      line-height: .94;
+      letter-spacing: -.06em;
+      margin: 14px 0 16px;
+      max-width: 920px;
+    }
+    .lang-panel.uk h2,
+    .brief-card h2 .uk,
+    body.lang-uk .hero .ua-masthead {
+      font-family: var(--display-cyr);
+      letter-spacing: -.025em;
+    }
+    .lang-panel.uk h2 {
+      font-weight: 800;
+    }
+    .lang-panel.uk .field h3 {
+      font-weight: 700;
+    }
+    .source-line {
+      display: inline-block;
+      margin: 0 0 24px;
+      padding: 9px 12px;
+      border-radius: 999px;
+      background: rgba(20,20,20,.055);
+      font-family: JetBrains Mono, monospace;
+      font-size: 14px;
+    }
+    .field {
+      display: grid;
+      grid-template-columns: minmax(148px, 190px) minmax(0, 1fr);
+      gap: 18px;
+      padding: 18px 0;
+      border-top: 1px solid rgba(20,20,20,.11);
+    }
+    .field h3 {
+      margin: 0;
+      font-size: 14px;
+      font-family: var(--label-font);
+      text-transform: uppercase;
+      letter-spacing: .075em;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    .field p {
+      margin: 0;
+      font-size: 19px;
+    }
+    .field.use p {
+      font-weight: 650;
+    }
+    .field.limits p {
+      color: #4c473e;
+    }
+    .tags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      padding: 4px 34px 28px 36px;
+    }
+    .tags span {
+      display: inline-flex;
+      border: 1px solid color-mix(in srgb, var(--accent), #000 12%);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 13px;
+      font-family: JetBrains Mono, monospace;
+      font-weight: 800;
+      background: color-mix(in srgb, var(--accent), transparent 92%);
+    }
+    footer {
+      padding: 60px 0 90px;
+      color: #4f493f;
+      font-family: JetBrains Mono, monospace;
+      font-size: 14px;
+    }
+    .print-note {
+      border-top: 1px solid var(--line);
+      padding-top: 24px;
+    }
+    @media (max-width: 860px) {
+      body { font-size: 16px; }
+      .intro-grid, body.lang-both .signal-card {
+        grid-template-columns: 1fr;
+      }
+      body.lang-both .lang-panel.en {
+        border-right: 0;
+        border-bottom: 1px solid rgba(20,20,20,.12);
+      }
+      .field {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+      .rubric-list {
+        grid-template-columns: 1fr;
+      }
+      .toolbar-inner {
+        padding: 12px 0;
+      }
+    }
+    @media print {
+      body {
+        background: #fff;
+        color: #000;
+        font-size: 12pt;
+      }
+      body::before, .toolbar, .hero-card::after {
+        display: none !important;
+      }
+      header.hero { min-height: auto; padding: 24px 0; }
+      .hero-card, .signal-card, .brief-card, .rubric-map {
+        box-shadow: none;
+        break-inside: avoid;
+        background: #fff;
+      }
+      .signal-card { margin-bottom: 18px; }
+      a { text-decoration: none; }
+    }
+  
+  </style>
+</head>
+<body class="lang-both">
+  <header class="hero">
+    <div class="wrap">
+      <div class="hero-card">
+        <div class="kicker">
+          <span class="pill">Issue #001</span>
+          <span class="pill">14 May 2026</span>
+          <span class="pill">Daily Signal</span>
+          <span class="pill">EN + UKR</span>
+        </div>
+        <h1>Open Source Signal</h1>
+        <p class="ua-masthead">Сигнал відкритих джерел</p>
+        <p class="subtitle">Bilingual OSINT radar for verification, investigations, maps, platforms, surveillance and researcher safety.</p>
+        <p class="dek">Daily issue #001: influence-operation infrastructure, AI-assisted cyber workflows, the surveillance marketplace, movement-data OPSEC, SAR damage mapping, coded platform signals and an extremist-network casefile.</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="toolbar" aria-label="Issue controls">
+    <div class="wrap toolbar-inner">
+      <div class="brand-mini">OSS #001</div>
+      <div class="language-toggle" aria-label="Language view">
+        <button data-lang="both" class="active" type="button">EN + UKR</button>
+        <button data-lang="en" type="button">English</button>
+        <button data-lang="uk" type="button">Українська</button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <section class="intro-grid">
+      <div class="brief-card">
+        <h2>Editorial frame</h2>
+        <p><strong>What this is:</strong> A daily editorial filter for public-interest OSINT. Each item explains what happened, why it matters, how a reader can use the insight, and where the method or evidence has limits.</p>
+        <p><strong>What this is not:</strong> Doxxing, live targeting, stolen-data workflows, marketplace guides or ‘find anyone by phone number’ circus tricks. The circus has been cancelled; the clowns are in procurement.</p>
+      </div>
+      <div class="rubric-map">
+        <h2>Rubric map</h2>
+        <div class="rubric-list">
+<div class="rubric-chip">📡 Signal One</div><div class="rubric-chip">🤖 AI Verification</div><div class="rubric-chip">🛰️ Surveillance Watch</div><div class="rubric-chip">🛡️ Investigator OPSEC</div><div class="rubric-chip">🗺️ Map Room</div><div class="rubric-chip">🔎 Platform Watch</div><div class="rubric-chip">📁 Casefile</div>        </div>
+      </div>
+    </section>
+
+    <section class="issue-section">
+      <div class="signals">
+        <article class="signal-card theme-signal" id="item-1">
+          <div class="card-topline">
+            <div class="rubric"><span class="emoji">📡</span><span class="en">Signal One</span><span class="uk">Головний сигнал</span></div>
+            <div class="issue-index">#01</div>
+          </div>
+
+          <section class="lang-panel en">
+            <h2>Foreign-interference probe moves from “bot noise” to political-service infrastructure</h2>
+            <p class="source-line"><strong>Source:</strong> <a href="https://www.reuters.com/business/media-telecom/france-probes-whether-israeli-firm-blackcore-interfered-local-elections-sources-2026-05-13/" target="_blank" rel="noopener noreferrer">Reuters</a> · 13 May 2026</p>
+            <div class="field"><h3>What happened</h3><p>French authorities are examining whether an alleged influence campaign targeting three France Unbowed municipal candidates was connected to an obscure firm called BlackCore. Reuters reports the operation used deceptive websites, social accounts and digital ads; Meta removed a related network for coordinated inauthentic behavior and said the activity originated in Israel and primarily targeted France.</p></div>
+            <div class="field"><h3>Why it matters</h3><p>This is a useful model case for election OSINT: the interesting layer is not only fake accounts, but the service ecosystem around them — websites, ads, platform enforcement, political timing, and cross-border attribution limits.</p></div>
+            <div class="field use"><h3>How to use it</h3><p>Track campaigns as infrastructure bundles: domains, ad placements, QR-code distribution, platform takedowns, candidate complaints, and official regulator language. Keep attribution tiers separate: observed behavior, platform attribution, government investigation, and vendor identity.</p></div>
+            <div class="field limits"><h3>Limits</h3><p>Reuters could not independently establish who was behind BlackCore or verify where it was based. Treat firm attribution as under investigation, not settled fact.</p></div>
+          </section>
+
+          <section class="lang-panel uk">
+            <h2>Розслідування іноземного втручання: не “боти”, а ціла сервісна інфраструктура</h2>
+            <p class="source-line"><strong>Джерело:</strong> <a href="https://www.reuters.com/business/media-telecom/france-probes-whether-israeli-firm-blackcore-interfered-local-elections-sources-2026-05-13/" target="_blank" rel="noopener noreferrer">Reuters</a> · 13 травня 2026</p>
+            <div class="field"><h3>Що сталося</h3><p>Французькі органи перевіряють, чи була кампанія проти трьох кандидатів France Unbowed пов’язана з маловідомою структурою BlackCore. За даними Reuters, у кампанії були фейкові сайти, соцмережеві акаунти й цифрова реклама; Meta видалила пов’язану мережу за coordinated inauthentic behavior і заявила, що активність походила з Ізраїлю та була спрямована переважно на Францію.</p></div>
+            <div class="field"><h3>Чому це важливо</h3><p>Для дослідника це хороший приклад, де кампанія впливу складається не з одного поста, а з екосистеми: домени, реклама, QR-коди, платформи, політичний календар, реакція кандидатів і межі атрибуції.</p></div>
+            <div class="field use"><h3>Як це застосувати</h3><p>Будувати таймлайн і карту інфраструктури окремо від політичних висновків. Фіксувати, хто саме що підтвердив: платформа, журналісти, кандидат, регулятор, прокуратура.</p></div>
+            <div class="field limits"><h3>Обмеження</h3><p>Особу замовника і реальну юрисдикцію BlackCore не встановлено незалежно. Не варто перетворювати підозру на остаточну атрибуцію.</p></div>
+          </section>
+
+          <div class="tags"><span>elections</span><span>foreign interference</span><span>platforms</span><span>disinformation</span><span>France</span><span>CIB</span></div>
+        </article>
+        <article class="signal-card theme-ai" id="item-2">
+          <div class="card-topline">
+            <div class="rubric"><span class="emoji">🤖</span><span class="en">AI Verification</span><span class="uk">ШІ та верифікація</span></div>
+            <div class="issue-index">#02</div>
+          </div>
+
+          <section class="lang-panel en">
+            <h2>AI-assisted cyber operations are becoming a verification problem, not just a security problem</h2>
+            <p class="source-line"><strong>Source:</strong> <a href="https://cloud.google.com/blog/topics/threat-intelligence/ai-vulnerability-exploitation-initial-access" target="_blank" rel="noopener noreferrer">Google Threat Intelligence Group</a> · 11 May 2026</p>
+            <div class="field"><h3>What happened</h3><p>Google’s Threat Intelligence Group says it is seeing a transition from early AI-enabled threat activity to industrial-scale use of generative models in adversary workflows. The report covers AI use for vulnerability exploitation, initial access, infrastructure acquisition, proxy relay services, automated account creation, and malware-related workflows.</p></div>
+            <div class="field"><h3>Why it matters</h3><p>Investigators will increasingly face AI-assisted traces: generated code, automated account infrastructure, synthetic personas, AI-written phishing lures, and toolchains that blend ordinary SaaS with hostile automation.</p></div>
+            <div class="field use"><h3>How to use it</h3><p>Add an AI-assistance hypothesis to technical investigations, but do not use it as a shortcut. Look for repeatable indicators: infrastructure reuse, model/API traces, automation artifacts, prompt-like logs, account-creation patterns, and operational tempo that exceeds normal manual work.</p></div>
+            <div class="field limits"><h3>Limits</h3><p>The report is from a major platform and security vendor with deep visibility into its own ecosystem, not a universal map of all adversary behavior. Avoid overgeneralizing every automated artifact as AI.</p></div>
+          </section>
+
+          <section class="lang-panel uk">
+            <h2>AI в кібератаках: проблема вже не лише для SOC, а й для верифікаторів</h2>
+            <p class="source-line"><strong>Джерело:</strong> <a href="https://cloud.google.com/blog/topics/threat-intelligence/ai-vulnerability-exploitation-initial-access" target="_blank" rel="noopener noreferrer">Google Threat Intelligence Group</a> · 11 травня 2026</p>
+            <div class="field"><h3>Що сталося</h3><p>Google описує перехід від ранніх експериментів до масштабнішого використання генеративних моделей у ворожих операціях: пошук вразливостей, первинний доступ, проксі-інфраструктура, автоматизована реєстрація акаунтів, допоміжні malware-процеси.</p></div>
+            <div class="field"><h3>Чому це важливо</h3><p>OSINT і threat intelligence дедалі частіше бачитимуть не чисто людську або чисто ботну поведінку, а гібриди: SaaS, LLM, проксі, скрипти, одноразові акаунти й людський контроль поверх автоматизації.</p></div>
+            <div class="field use"><h3>Як це застосувати</h3><p>У розборі інциденту додавати окремий шар: які ознаки можуть свідчити про AI-assisted workflow, а які — про звичайну автоматизацію. Не називати AI причиною без технічних індикаторів.</p></div>
+            <div class="field limits"><h3>Обмеження</h3><p>Це видимість Google/GTIG, а не повний зріз усіх операцій. ШІ не має ставати чарівним поясненням у стилі середньовічного єпископа з PowerPoint.</p></div>
+          </section>
+
+          <div class="tags"><span>AI verification</span><span>threat intelligence</span><span>cyber</span><span>automation</span><span>investigations</span></div>
+        </article>
+        <article class="signal-card theme-surveillance" id="item-3">
+          <div class="card-topline">
+            <div class="rubric"><span class="emoji">🛰️</span><span class="en">Surveillance Watch</span><span class="uk">Інфраструктура стеження</span></div>
+            <div class="issue-index">#03</div>
+          </div>
+
+          <section class="lang-panel en">
+            <h2>Spyware is only the visible tip of the surveillance marketplace</h2>
+            <p class="source-line"><strong>Source:</strong> <a href="https://citizenlab.ca/ron-deibert-speaks-at-the-osce-supplementary-human-dimension-meeting-ii/" target="_blank" rel="noopener noreferrer">Citizen Lab</a> · 13 May 2026</p>
+            <div class="field"><h3>What happened</h3><p>Citizen Lab published notes from Ron Deibert’s OSCE intervention on civil space in the digital age. Deibert framed mercenary spyware as the sharp point of the spear of a broader, largely unregulated surveillance marketplace rooted in the personal-data economy, and called for democratic oversight rather than national-security exemptions.</p></div>
+            <div class="field"><h3>Why it matters</h3><p>For OSINT readers, this widens the lens: spyware, adtech location data, data brokers, telecom exploitation, and private intelligence services should be studied as connected markets, not separate scandals.</p></div>
+            <div class="field use"><h3>How to use it</h3><p>When covering surveillance, map the supply chain: data source, broker/vendor, buyer, legal authority, target class, oversight mechanism, and remedy. Separate targeted compromise from bulk behavioral surveillance.</p></div>
+            <div class="field limits"><h3>Limits</h3><p>This is a policy intervention, not a new forensic case report. Pair it with technical reporting before making claims about a specific tool or vendor.</p></div>
+          </section>
+
+          <section class="lang-panel uk">
+            <h2>Spyware — лише видима частина ринку стеження</h2>
+            <p class="source-line"><strong>Джерело:</strong> <a href="https://citizenlab.ca/ron-deibert-speaks-at-the-osce-supplementary-human-dimension-meeting-ii/" target="_blank" rel="noopener noreferrer">Citizen Lab</a> · 13 травня 2026</p>
+            <div class="field"><h3>Що сталося</h3><p>Citizen Lab опублікувала повідомлення про виступ Рона Дейберта щодо громадянського простору в цифрову епоху. Його головна рамка: mercenary spyware — це тільки вістря значно ширшого, слабко регульованого ринку стеження, пов’язаного з економікою персональних даних.</p></div>
+            <div class="field"><h3>Чому це важливо</h3><p>Для редакції це нагадування: не варто звужувати тему стеження до зламу телефону. Є ще рекламні ідентифікатори, брокери даних, телеком-інтерконект, приватні підрядники й державні винятки заради безпеки.</p></div>
+            <div class="field use"><h3>Як це застосувати</h3><p>У кожній історії про surveillance ставити однакові питання: звідки дані, хто продав, хто купив, на якій правовій підставі, кого зачепило, який механізм оскарження.</p></div>
+            <div class="field limits"><h3>Обмеження</h3><p>Це політична й правозахисна рамка, не нова технічна атрибуція конкретної атаки.</p></div>
+          </section>
+
+          <div class="tags"><span>surveillance</span><span>spyware</span><span>data brokers</span><span>civil society</span><span>policy</span></div>
+        </article>
+        <article class="signal-card theme-opsec" id="item-4">
+          <div class="card-topline">
+            <div class="rubric"><span class="emoji">🛡️</span><span class="en">Investigator OPSEC</span><span class="uk">Безпека дослідника</span></div>
+            <div class="issue-index">#04</div>
+          </div>
+
+          <section class="lang-panel en">
+            <h2>Movement data is now both an evidence layer and an exposure risk</h2>
+            <p class="source-line"><strong>Source:</strong> <a href="https://osintfieldnotes.substack.com/p/osint-field-notes-8" target="_blank" rel="noopener noreferrer">OSINT Field Notes #8</a> · 13 May 2026</p>
+            <div class="field"><h3>What happened</h3><p>The latest OSINT Field Notes highlights investigations using phone-location data, Wi-Fi names, satellite imagery, flight tracking and open-source reporting, while warning that the same movement-data pipelines can be purchased by surveillance vendors, private intelligence firms and repressive states.</p></div>
+            <div class="field"><h3>Why it matters</h3><p>Location data is no longer just a lead source. It is also a threat model for journalists, researchers, exile communities, conflict investigators and sources.</p></div>
+            <div class="field use"><h3>How to use it</h3><p>Treat mobile advertising IDs, location permissions, Wi-Fi/Bluetooth exposure and travel patterns as part of investigator OPSEC. For stories using movement data, include a harm review: who could be exposed if the method is replicated?</p></div>
+            <div class="field limits"><h3>Limits</h3><p>Newsletter summaries point to broader cases; verify the original underlying investigations before citing specific routes, actors or datasets.</p></div>
+          </section>
+
+          <section class="lang-panel uk">
+            <h2>Дані про переміщення: доказовий шар і ризик для дослідника одночасно</h2>
+            <p class="source-line"><strong>Джерело:</strong> <a href="https://osintfieldnotes.substack.com/p/osint-field-notes-8" target="_blank" rel="noopener noreferrer">OSINT Field Notes #8</a> · 13 травня 2026</p>
+            <div class="field"><h3>Що сталося</h3><p>Випуск зібрав приклади розслідувань, де поєднуються телефонні location data, Wi-Fi-назви, супутникові знімки, авіатрекінг і відкриті джерела. Але ключове попередження: ці самі канали можуть купувати surveillance-вендори, приватні розвідкомпанії та репресивні держави.</p></div>
+            <div class="field"><h3>Чому це важливо</h3><p>Дані про рух людей — це вже не тільки корисний доказ. Це ще й поверхня атаки проти журналістів, дослідників, джерел і людей у вигнанні.</p></div>
+            <div class="field use"><h3>Як це застосувати</h3><p>Перед польовою роботою перевіряти рекламний ID, дозволи застосунків, Wi-Fi/Bluetooth, резервні телефони, патерни подорожей. Перед публікацією — оцінювати, чи не розкриває методика шлях до повторної ідентифікації вразливих людей.</p></div>
+            <div class="field limits"><h3>Обмеження</h3><p>Для конкретних тверджень треба йти до першоджерел кейсів, а не цитувати лише дайджест.</p></div>
+          </section>
+
+          <div class="tags"><span>OPSEC</span><span>location data</span><span>adtech</span><span>movement analysis</span><span>researcher safety</span></div>
+        </article>
+        <article class="signal-card theme-map" id="item-5">
+          <div class="card-topline">
+            <div class="rubric"><span class="emoji">🗺️</span><span class="en">Map Room</span><span class="uk">Картографічна кімната</span></div>
+            <div class="issue-index">#05</div>
+          </div>
+
+          <section class="lang-panel en">
+            <h2>Open SAR damage mapping remains useful when optical imagery and ground reporting are constrained</h2>
+            <p class="source-line"><strong>Source:</strong> <a href="https://www.bellingcat.com/resources/2026/04/07/tool-damage-assessment-destruction-sentinel-satellite-imagery-iran-us-gulf/" target="_blank" rel="noopener noreferrer">Bellingcat</a> · 7 Apr 2026</p>
+            <div class="field"><h3>What happened</h3><p>Bellingcat introduced the Iran Conflict Damage Proxy Map, an open tool using Sentinel-1 SAR data and a Pixel-Wise T-Test method to flag likely building damage across Iran and the Gulf. Bellingcat stresses that flagged damage is not definitive and should be corroborated with Sentinel-2, commercial imagery, geolocated visuals or other sources.</p></div>
+            <div class="field"><h3>Why it matters</h3><p>It is a practical example of transparent, repeatable geospatial triage when commercial imagery is limited, delayed or restricted.</p></div>
+            <div class="field use"><h3>How to use it</h3><p>Use SAR proxy alerts to narrow search areas, then verify with optical imagery, ground videos, official claims, weather/cloud context, and temporal consistency. Preserve screenshots, coordinates, timestamps and comparison imagery.</p></div>
+            <div class="field limits"><h3>Limits</h3><p>It is not real-time and updates roughly once or twice per week. It detects probability signals, not confirmed destruction.</p></div>
+          </section>
+
+          <section class="lang-panel uk">
+            <h2>SAR-картографування допомагає, коли оптичні знімки й репортажі з місця обмежені</h2>
+            <p class="source-line"><strong>Джерело:</strong> <a href="https://www.bellingcat.com/resources/2026/04/07/tool-damage-assessment-destruction-sentinel-satellite-imagery-iran-us-gulf/" target="_blank" rel="noopener noreferrer">Bellingcat</a> · 7 квітня 2026</p>
+            <div class="field"><h3>Що сталося</h3><p>Bellingcat представив Iran Conflict Damage Proxy Map — інструмент на основі Sentinel‑1 SAR і Pixel-Wise T-Test, який підсвічує ймовірні пошкодження будівель в Ірані та регіоні Затоки.</p></div>
+            <div class="field"><h3>Чому це важливо</h3><p>Це не магічна карта руйнувань, а якісний інструмент первинного відбору місць для перевірки, особливо коли комерційні знімки недоступні або запізнюються.</p></div>
+            <div class="field use"><h3>Як це застосувати</h3><p>Брати SAR-сигнал як lead, а не як доказ. Далі — Sentinel‑2, комерційні знімки, геолоковані відео, офіційні заяви, погодні умови, часовий ряд.</p></div>
+            <div class="field limits"><h3>Обмеження</h3><p>Дані оновлюються не в реальному часі; висока ймовірність на карті не дорівнює підтвердженому удару чи руйнуванню.</p></div>
+          </section>
+
+          <div class="tags"><span>GEOINT</span><span>SAR</span><span>satellite imagery</span><span>damage assessment</span><span>Iran</span></div>
+        </article>
+        <article class="signal-card theme-platform" id="item-6">
+          <div class="card-topline">
+            <div class="rubric"><span class="emoji">🔎</span><span class="en">Platform Watch</span><span class="uk">Платформний радар</span></div>
+            <div class="issue-index">#06</div>
+          </div>
+
+          <section class="lang-panel en">
+            <h2>Obfuscated platform signals can sustain extremist branding without explicit claims</h2>
+            <p class="source-line"><strong>Source:</strong> <a href="https://graphika.com/reports/hidden-in-plain-sight" target="_blank" rel="noopener noreferrer">Graphika</a> · 5 May 2026</p>
+            <div class="field"><h3>What happened</h3><p>Graphika analyzed a sample of 100 TikTok accounts reviewed between April 5 and April 15, 2026, finding recurring textual, visual and audio signals associated with support for CJNG. The report emphasizes that open sources did not prove the accounts were operated by CJNG members, but the recurring coded indicators may help boost cartel identity and content circulation.</p></div>
+            <div class="field"><h3>Why it matters</h3><p>Platform research increasingly depends on weak signals: emojis, songs, gestures, coded names, visual aesthetics and mutual followers. Those signals can be meaningful at network scale while remaining ambiguous at account level.</p></div>
+            <div class="field use"><h3>How to use it</h3><p>Build pattern libraries, but label confidence carefully. Separate supportive signaling, possible affiliation, coordination, and direct membership. Avoid amplifying recruitment language or operational details.</p></div>
+            <div class="field limits"><h3>Limits</h3><p>The public page summarizes findings but the full report requires access. Do not infer direct cartel control of accounts from coded aesthetics alone.</p></div>
+          </section>
+
+          <section class="lang-panel uk">
+            <h2>Закодовані сигнали на платформах можуть підтримувати бренд без прямої заяви</h2>
+            <p class="source-line"><strong>Джерело:</strong> <a href="https://graphika.com/reports/hidden-in-plain-sight" target="_blank" rel="noopener noreferrer">Graphika</a> · 5 травня 2026</p>
+            <div class="field"><h3>Що сталося</h3><p>Graphika проаналізувала 100 TikTok-акаунтів і описала повторювані текстові, візуальні та аудіоознаки, пов’язані з підтримкою CJNG. Водночас дослідники прямо зазначають: відкриті джерела не доводять, що акаунти ведуть члени CJNG.</p></div>
+            <div class="field"><h3>Чому це важливо</h3><p>На платформах важливими стають слабкі сигнали: емодзі, пісні, жести, скорочення, стиль відео, взаємні підписки. На рівні мережі вони можуть щось показувати, але на рівні одного акаунта легко помилитися.</p></div>
+            <div class="field use"><h3>Як це застосувати</h3><p>Створювати бібліотеку патернів і рівнів упевненості. Окремо маркувати: естетика підтримки, можлива афіліація, координація, прямий зв’язок. Не відтворювати рекрутингові формули й не давати інструктивних деталей.</p></div>
+            <div class="field limits"><h3>Обмеження</h3><p>Публічна сторінка — це короткий виклад, не повний звіт. Символіка не дорівнює членству.</p></div>
+          </section>
+
+          <div class="tags"><span>platform research</span><span>TikTok</span><span>extremism</span><span>coded language</span><span>network analysis</span></div>
+        </article>
+        <article class="signal-card theme-casefile" id="item-7">
+          <div class="card-topline">
+            <div class="rubric"><span class="emoji">📁</span><span class="en">Casefile</span><span class="uk">Розбір кейсу</span></div>
+            <div class="issue-index">#07</div>
+          </div>
+
+          <section class="lang-panel en">
+            <h2>Public posts, tattoos and network context: useful, but legally and ethically sharp</h2>
+            <p class="source-line"><strong>Source:</strong> <a href="https://www.bellingcat.com/news/2026/05/11/active-club-colombia-politics/" target="_blank" rel="noopener noreferrer">Bellingcat</a> · 11 May 2026</p>
+            <div class="field"><h3>What happened</h3><p>Bellingcat and Cerosetenta examined public social media material, visible tattoos, follows and likes, group symbols and international far-right network context to assess links between a Colombian political figure and Active Club Bogota. The article also documents right-of-reply exchanges and legal threats from people contacted.</p></div>
+            <div class="field"><h3>Why it matters</h3><p>It is a strong tradecraft case because it shows both method and caution: visual comparison, platform context, public-interest framing, right of reply, and restraint around amplification.</p></div>
+            <div class="field use"><h3>How to use it</h3><p>Use this as a checklist for public-interest extremist-network investigations: evidentiary screenshots, archived posts, visible identifiers, expert context, response requests, and explicit no-evidence boundaries where appropriate.</p></div>
+            <div class="field limits"><h3>Limits</h3><p>Do not generalize tattoo or follow/like evidence beyond the exact claim it supports. Avoid naming private individuals unless there is clear public interest and editorial/legal review.</p></div>
+          </section>
+
+          <section class="lang-panel uk">
+            <h2>Публічні пости, татуювання й мережевий контекст: корисно, але гостро як алебарда</h2>
+            <p class="source-line"><strong>Джерело:</strong> <a href="https://www.bellingcat.com/news/2026/05/11/active-club-colombia-politics/" target="_blank" rel="noopener noreferrer">Bellingcat</a> · 11 травня 2026</p>
+            <div class="field"><h3>Що сталося</h3><p>Bellingcat і Cerosetenta використали публічні матеріали соцмереж, видимі татуювання, підписки/лайки, символіку груп і міжнародний контекст ультраправих мереж, щоб перевірити зв’язки колумбійського політичного діяча з Active Club Bogota.</p></div>
+            <div class="field"><h3>Чому це важливо</h3><p>Це не просто знайшли фото. Кейс показує повний редакційний контур: візуальне зіставлення, архівація, контекст платформи, запити на коментар, юридичні ризики й чіткі межі тверджень.</p></div>
+            <div class="field use"><h3>Як це застосувати</h3><p>Як чеклист для розслідувань про екстремістські мережі: що видно публічно, що архівовано, що підтверджує лише слабкий зв’язок, де потрібен експерт, кому надсилали right of reply.</p></div>
+            <div class="field limits"><h3>Обмеження</h3><p>Лайк, підписка або татуювання не мають доводити все. Для приватних осіб — максимальна обережність, мінімізація імен, сильний суспільний інтерес і редакційний перегляд.</p></div>
+          </section>
+
+          <div class="tags"><span>casefile</span><span>far right</span><span>visual verification</span><span>public interest</span><span>ethics</span></div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap print-note">Open Source Signal / Сигнал відкритих джерел. Public-interest OSINT only: verification, accountability, safety and method over spectacle.</div>
+  </footer>
+
+  <script>
+    const buttons = document.querySelectorAll("[data-lang]");
+    buttons.forEach(button => {
+      button.addEventListener("click", () => {
+        const lang = button.dataset.lang;
+        document.body.classList.remove("lang-both", "lang-en", "lang-uk");
+        document.body.classList.add("lang-" + lang);
+        buttons.forEach(b => b.classList.toggle("active", b === button));
+      });
+    });
+  </script>
+</body>
+</html>
