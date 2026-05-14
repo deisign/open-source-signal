@@ -71,6 +71,38 @@ LANG_HEADING_RE = re.compile(r"^###\s+(EN|UK|UA|Українська|English)\s+
 BOLD_LABEL_RE = re.compile(r"^\*\*(.+?):\*\*\s*(.*)$")
 
 
+FIELD_ORDER = ["source", "what", "why", "how", "limits", "tags"]
+FIELD_LABELS = {
+    "en": {
+        "source": "Source",
+        "what": "What happened",
+        "why": "Why it matters",
+        "how": "How to use it",
+        "limits": "Limits",
+        "tags": "Tags",
+    },
+    "uk": {
+        "source": "Джерело",
+        "what": "Що сталося",
+        "why": "Чому це важливо",
+        "how": "Як використати",
+        "limits": "Обмеження",
+        "tags": "Теги",
+    },
+}
+
+
+def summarize_block(text: str, limit: int = 120) -> str:
+    clean = clean_inline(text)
+    return clean if len(clean) <= limit else clean[: limit - 1].rstrip() + "…"
+
+
+def format_missing_fields(lang: str, fields: list[str]) -> str:
+    labels = ", ".join(FIELD_LABELS[lang][field] for field in fields)
+    lang_name = "EN" if lang == "en" else "UK"
+    return f"{lang_name} section is missing: {labels}"
+
+
 def strip_citations(text: str) -> str:
     return CITATION_RE.sub("", text)
 
@@ -214,21 +246,34 @@ def build_item(rubric_heading: str, body: str, issue_date_en: str, issue_date_uk
         title = clean_inline(match.group(2))
         lang_blocks[lang] = (title, lang_body)
 
-    if "en" not in lang_blocks or "uk" not in lang_blocks:
-        raise ValueError(f"Item under rubric '{rubric_heading}' must contain both EN and UK sections")
+    missing_langs = [lang.upper() for lang in ("en", "uk") if lang not in lang_blocks]
+    if missing_langs:
+        raise ValueError(
+            f"Rubric '{rubric_heading}' must contain both EN and UK sections; missing: {', '.join(missing_langs)}. "
+            f"Preview: {summarize_block(body)}"
+        )
 
     title_en, body_en = lang_blocks["en"]
     title_uk, body_uk = lang_blocks["uk"]
     en_fields = parse_labelled_fields(body_en, "en")
     uk_fields = parse_labelled_fields(body_uk, "uk")
 
-    missing = [key for key in ["source", "what", "why", "how", "limits", "tags"] if key not in en_fields]
-    missing += [f"uk:{key}" for key in ["source", "what", "why", "how", "limits", "tags"] if key not in uk_fields]
-    if missing:
-        raise ValueError(f"Missing required fields for '{title_en}': {', '.join(missing)}")
+    missing_en = [key for key in FIELD_ORDER if key not in en_fields]
+    missing_uk = [key for key in FIELD_ORDER if key not in uk_fields]
+    if missing_en or missing_uk:
+        details = []
+        if missing_en:
+            details.append(format_missing_fields("en", missing_en))
+        if missing_uk:
+            details.append(format_missing_fields("uk", missing_uk))
+        raise ValueError(f"Item '{title_en}' has an invalid structure: {'; '.join(details)}")
 
     fallback_url = extract_first_url(en_fields["source"] + " " + uk_fields["source"] + " " + body_en + " " + body_uk)
     source_name, source_url = parse_source(en_fields["source"], fallback_url=fallback_url)
+    if not source_url:
+        raise ValueError(
+            f"Item '{title_en}' does not contain a source URL. Add a markdown link or plain URL to the Source/Джерело line."
+        )
 
     return {
         "theme": theme,
@@ -261,12 +306,16 @@ def parse_daily_signal(markdown: str, date_value: str, issue_number: str) -> dic
     issue = build_draft_issue(day, normalize_issue_number(issue_number))
     issue.pop("draft", None)
 
+    item_blocks = list(_iter_heading_blocks(public_text, ITEM_HEADING_RE))
     items: list[dict[str, Any]] = []
-    for match, body in _iter_heading_blocks(public_text, ITEM_HEADING_RE):
+    for index, (match, body) in enumerate(item_blocks, start=1):
         rubric_heading = match.group(1)
         if not LANG_HEADING_RE.search(body):
             continue
-        items.append(build_item(rubric_heading, body, issue["date_label_en"], issue["date_label_uk"]))
+        try:
+            items.append(build_item(rubric_heading, body, issue["date_label_en"], issue["date_label_uk"]))
+        except ValueError as exc:
+            raise ValueError(f"Item #{index} ({rubric_heading}): {exc}") from exc
 
     if not items:
         raise ValueError("No Daily Signal items found. Expected headings like '## 1. Signal One / Головний сигнал'.")

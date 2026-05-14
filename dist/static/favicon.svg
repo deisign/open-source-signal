@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Open Source Signal">
+  <rect x="8" y="8" width="112" height="112" rx="24" fill="#141414"/>
+  <circle cx="42" cy="64" r="10" fill="#FFF9EA"/>
+  <path d="M58 64a22 22 0 0 1 22-22" fill="none" stroke="#D6422B" stroke-width="10" stroke-linecap="round"/>
+  <path d="M58 64a22 22 0 0 0 22 22" fill="none" stroke="#D6422B" stroke-width="10" stroke-linecap="round"/>
+  <path d="M60 64a38 38 0 0 1 38-38" fill="none" stroke="#2B67D6" stroke-width="8" stroke-linecap="round" opacity="0.95"/>
+  <path d="M60 64a38 38 0 0 0 38 38" fill="none" stroke="#2B67D6" stroke-width="8" stroke-linecap="round" opacity="0.95"/>
+</svg>

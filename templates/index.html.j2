@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>{{ config['site_title_en'] }} / {{ config['site_title_uk'] }}</title>
   <meta name="description" content="{{ config['site_description_en'] }}">
+  <meta name="theme-color" content="#141414">
+  <link rel="icon" href="{{ asset_prefix }}static/favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="{{ asset_prefix }}static/favicon.ico">
+  <link rel="apple-touch-icon" href="{{ asset_prefix }}static/apple-touch-icon.png">
+  <link rel="manifest" href="{{ asset_prefix }}static/site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@500;600;700&family=Fraunces:opsz,wght,SOFT,WONK@9..144,600..900,50..100,0..1&family=Inter:wght@400;500;650;800;900&family=JetBrains+Mono:wght@400;600;800&family=Source+Serif+4:opsz,wght@8..60,600..900&display=swap" rel="stylesheet">
@@ -19,11 +24,19 @@
       --muted: #6d665a;
       --line: rgba(20,20,20,.16);
       --signal: #D6422B;
+      --toolbox: #A64D79;
+      --tradecraft: #875C2D;
       --surveillance: #5B3B83;
       --map: #1F7667;
       --platform: #CC8B21;
       --opsec: #245C73;
       --infra: #2F5EA8;
+      --ai: #5C4AE5;
+      --casefile: #7A2E3A;
+      --ukraine: #2B67D6;
+      --war-crimes: #8A1C1C;
+      --losses: #7A6231;
+      --telegram: #2E8FA3;
       --risk: #141414;
       --shadow: 0 24px 70px rgba(20,20,20,.12);
       --radius: 28px;
@@ -250,11 +263,19 @@
     }
     .mini-signal p { margin: 0; font-size: 15px; color: #4e493f; }
     .theme-signal { --accent: var(--signal); }
+    .theme-toolbox { --accent: var(--toolbox); }
+    .theme-tradecraft { --accent: var(--tradecraft); }
     .theme-surveillance { --accent: var(--surveillance); }
     .theme-map { --accent: var(--map); }
     .theme-platform { --accent: var(--platform); }
     .theme-opsec { --accent: var(--opsec); }
     .theme-infra { --accent: var(--infra); }
+    .theme-ai { --accent: var(--ai); }
+    .theme-casefile { --accent: var(--casefile); }
+    .theme-ukraine { --accent: var(--ukraine); }
+    .theme-war-crimes { --accent: var(--war-crimes); }
+    .theme-losses { --accent: var(--losses); }
+    .theme-telegram { --accent: var(--telegram); }
     .theme-risk { --accent: var(--risk); }
     .rubric-grid {
       display: grid;

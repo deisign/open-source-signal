@@ -74,7 +74,7 @@ def render_issue(issue_path: Path, template_path: Path, out_dir: Path) -> Path:
         lstrip_blocks=True,
     )
     template = env.get_template(template_path.name)
-    html = template.render(issue=issue)
+    html = template.render(issue=issue, asset_prefix="")
     out_dir.mkdir(parents=True, exist_ok=True)
     out_path = out_dir / output_filename(issue)
     out_path.write_text(html, encoding="utf-8")

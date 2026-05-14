@@ -83,3 +83,34 @@ def test_archive_lists_available_issues(tmp_path):
     assert "14 May 2026" in archive_text
     assert "13 May 2026" in archive_text
     assert rows[0].select_one("a[href='issues/open-source-signal-2026-05-14.html']") is not None
+
+
+def test_build_site_copies_static_assets_and_links_favicon(tmp_path):
+    out_dir = tmp_path / "dist"
+    subprocess.run(
+        [
+            sys.executable,
+            str(ROOT / "build_site.py"),
+            "--issues",
+            str(ROOT / "issues"),
+            "--templates",
+            str(ROOT / "templates"),
+            "--out",
+            str(out_dir),
+            "--config",
+            str(ROOT / "site.json"),
+            "--static",
+            str(ROOT / "static"),
+        ],
+        check=True,
+    )
+    assert (out_dir / "static" / "favicon.svg").exists()
+    assert (out_dir / "static" / "favicon.ico").exists()
+    assert (out_dir / "static" / "apple-touch-icon.png").exists()
+    assert (out_dir / "static" / "site.webmanifest").exists()
+
+    home = BeautifulSoup((out_dir / "index.html").read_text(encoding="utf-8"), "html.parser")
+    issue = BeautifulSoup((out_dir / "issues" / "open-source-signal-2026-05-14.html").read_text(encoding="utf-8"), "html.parser")
+
+    assert home.find("link", rel="icon")["href"] == "static/favicon.svg"
+    assert issue.find("link", rel="icon")["href"] == "../static/favicon.svg"

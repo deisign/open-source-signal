@@ -58,7 +58,24 @@ def load_issues(issues_dir: Path) -> list[dict[str, Any]]:
     return sorted(issues, key=_issue_sort_key, reverse=True)
 
 
-def build_site(issues_dir: Path, templates_dir: Path, out_dir: Path, config_path: Path | None = None) -> list[Path]:
+def copy_static(static_dir: Path, out_dir: Path) -> list[Path]:
+    written: list[Path] = []
+    if not static_dir.exists():
+        return written
+    out_static = out_dir / "static"
+    out_static.mkdir(parents=True, exist_ok=True)
+    for path in static_dir.rglob("*"):
+        if path.is_dir():
+            continue
+        rel = path.relative_to(static_dir)
+        target = out_static / rel
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_bytes(path.read_bytes())
+        written.append(target)
+    return written
+
+
+def build_site(issues_dir: Path, templates_dir: Path, out_dir: Path, config_path: Path | None = None, static_dir: Path | None = None) -> list[Path]:
     config = _load_config(config_path)
     issues = load_issues(issues_dir)
     env = _make_env(templates_dir)
@@ -74,7 +91,7 @@ def build_site(issues_dir: Path, templates_dir: Path, out_dir: Path, config_path
     for issue in issues:
         name = output_filename(issue)
         path = issue_out_dir / name
-        path.write_text(issue_template.render(issue=issue), encoding="utf-8")
+        path.write_text(issue_template.render(issue=issue, asset_prefix="../"), encoding="utf-8")
         built_issues.append(BuiltIssue(issue=issue, output_name=name, href=f"issues/{name}"))
         written.append(path)
 
@@ -91,8 +108,11 @@ def build_site(issues_dir: Path, templates_dir: Path, out_dir: Path, config_path
     ]:
         template = env.get_template(template_name)
         path = out_dir / output_name
-        path.write_text(template.render(**context), encoding="utf-8")
+        path.write_text(template.render(asset_prefix="", **context), encoding="utf-8")
         written.append(path)
+
+    if static_dir is not None:
+        written.extend(copy_static(static_dir, out_dir))
 
     return written
 
@@ -103,10 +123,12 @@ def main() -> None:
     parser.add_argument("--templates", type=Path, default=Path("templates"), help="Directory with Jinja templates")
     parser.add_argument("--out", type=Path, default=Path("dist"), help="Output site directory")
     parser.add_argument("--config", type=Path, default=Path("site.json"), help="Optional site config JSON")
+    parser.add_argument("--static", type=Path, default=Path("static"), help="Static assets directory")
     args = parser.parse_args()
 
     config_path = args.config if args.config.exists() else None
-    written = build_site(args.issues, args.templates, args.out, config_path)
+    static_dir = args.static if args.static.exists() else None
+    written = build_site(args.issues, args.templates, args.out, config_path, static_dir)
     for path in written:
         print(path)
 

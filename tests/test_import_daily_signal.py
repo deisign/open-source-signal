@@ -81,3 +81,81 @@ def test_import_daily_signal_refuses_overwrite(tmp_path):
     )
     assert result.returncode != 0
     assert "Refusing to overwrite" in result.stderr
+
+
+def test_parse_daily_signal_reports_missing_fields_clearly():
+    from import_daily_signal import parse_daily_signal
+
+    broken = """# Open Source Signal / Сигнал відкритих джерел
+
+## 1. Signal One / Головний сигнал
+
+### EN — Broken item
+
+**Source:** Example, May 15, 2026 — Item [https://example.org/item]
+
+**What happened:** Something happened.
+
+**Why it matters:** It matters.
+
+**How to use it:** Use it.
+
+**Limits:** Be careful.
+
+### UK — Зламаний айтем
+
+**Джерело:** Example, 15 травня 2026 — Item [https://example.org/item]
+
+**Що сталося:** Щось сталося.
+
+**Чому це важливо:** Це важливо.
+
+**Як використати:** Використайте це.
+
+**Обмеження:** Будьте уважні.
+
+**Теги:** `тест`
+"""
+
+    try:
+        parse_daily_signal(broken, "2026-05-15", "002")
+    except ValueError as exc:
+        message = str(exc)
+    else:
+        raise AssertionError("Expected ValueError")
+
+    assert "Item #1" in message
+    assert "EN section is missing: Tags" in message
+
+
+def test_parse_daily_signal_reports_missing_uk_section_clearly():
+    from import_daily_signal import parse_daily_signal
+
+    broken = """# Open Source Signal / Сигнал відкритих джерел
+
+## 1. Signal One / Головний сигнал
+
+### EN — Only English
+
+**Source:** Example, May 15, 2026 — Item [https://example.org/item]
+
+**What happened:** Something happened.
+
+**Why it matters:** It matters.
+
+**How to use it:** Use it.
+
+**Limits:** Be careful.
+
+**Tags:** `test`
+"""
+
+    try:
+        parse_daily_signal(broken, "2026-05-15", "002")
+    except ValueError as exc:
+        message = str(exc)
+    else:
+        raise AssertionError("Expected ValueError")
+
+    assert "Item #1" in message
+    assert "missing: UK" in message

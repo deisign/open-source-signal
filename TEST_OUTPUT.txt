@@ -1,8 +1,2 @@
-python -m pytest -q
-→ 42 passed in 15.58s
-
-python build_site.py
-→ dist/issues/open-source-signal-2026-05-14.html
-→ dist/issues/open-source-signal-2026-05-13.html
-→ dist/index.html
-→ dist/archive.html
+python -m pytest -q -> 45 passed in 25.09s
+python build_site.py -> OK
