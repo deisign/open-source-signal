@@ -497,6 +497,10 @@
 {{ issue_schema_json | safe }}
   </script>
   {{ analytics_snippet | safe }}
+{% if config.get('analytics_provider') == 'goatcounter' and config.get('analytics_id') %}
+  {% set goatcounter_domain = config.get('analytics_domain') or (config.get('analytics_id') ~ '.goatcounter.com') %}
+  <script data-goatcounter="https://{{ goatcounter_domain }}/count" async src="//gc.zgo.at/count.js"></script>
+{% endif %}
 </head>
 <body class="lang-both">
   <header class="hero">

@@ -78,7 +78,14 @@ def test_issue_page_contains_json_ld_news_article(tmp_path):
 
 
 def test_analytics_not_inserted_without_id(tmp_path):
-    out_dir = build(tmp_path)
+    out_dir = build(
+        tmp_path,
+        {
+            "analytics_provider": "goatcounter",
+            "analytics_id": "",
+            "analytics_domain": "",
+        },
+    )
     home = (out_dir / "index.html").read_text(encoding="utf-8")
     assert "gc.zgo.at/count.js" not in home
     assert "data-goatcounter" not in home
@@ -90,6 +97,7 @@ def test_goatcounter_snippet_is_inserted_when_configured(tmp_path):
         {
             "analytics_provider": "goatcounter",
             "analytics_id": "osintsignal",
+            "analytics_domain": "",
         },
     )
     home = (out_dir / "index.html").read_text(encoding="utf-8")

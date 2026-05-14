@@ -210,3 +210,13 @@ geospatial_data:
     url: https://firms.modaps.eosdis.nasa.gov/
     roles: [data]
     language: en
+
+- name: OSINT Newsletter
+  url: https://osintnewsletter.com/
+  language: en
+  source_type: newsletter
+  reliability: medium
+  use_as: source_pointer
+  primary_rubrics:
+    - Toolbox / Інструментарій
+  notes: Tracks new OSINT tools, practical services, datasets and workflows. Use mainly as a discovery source; verify tools against original project pages before featuring.
