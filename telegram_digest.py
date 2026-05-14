@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import html
 import re
 import textwrap
 from pathlib import Path
@@ -14,14 +15,12 @@ Lang = Literal["en", "uk"]
 FIELD_MAP = {
     "en": {
         "title": "OPEN SOURCE SIGNAL — Daily Signal",
-        "issue": "Issue",
         "full_issue": "Full issue",
         "source": "Source",
         "items_heading": "Today’s signals",
     },
     "uk": {
         "title": "СИГНАЛ ВІДКРИТИХ ДЖЕРЕЛ — Daily Signal",
-        "issue": "Випуск",
         "full_issue": "Повний випуск",
         "source": "Джерело",
         "items_heading": "Сьогодні в сигналах",
@@ -37,6 +36,10 @@ def _first_sentence(text: str) -> str:
 
 def _shorten(text: str, width: int = 230) -> str:
     return textwrap.shorten(text, width=width, placeholder="…")
+
+
+def _h(text: str) -> str:
+    return html.escape(str(text), quote=False)
 
 
 def _issue_date(issue: dict[str, Any], lang: Lang) -> str:
@@ -60,6 +63,11 @@ def _item_summary(item: dict[str, Any], lang: Lang) -> str:
 
 
 def render_telegram_digest(issue: dict[str, Any], lang: Lang, full_issue_url: str, max_items: int = 7) -> str:
+    """Render a Telegram-ready HTML message.
+
+    Telegram is sent with parse_mode=HTML by send_telegram.py. Keep formatting to
+    Telegram-supported tags only: <b>, <i>, <a>.
+    """
     if lang not in FIELD_MAP:
         raise ValueError("lang must be 'en' or 'uk'")
     if not full_issue_url.strip():
@@ -70,12 +78,13 @@ def render_telegram_digest(issue: dict[str, Any], lang: Lang, full_issue_url: st
     labels = FIELD_MAP[lang]
     date = _issue_date(issue, lang)
     issue_number = str(issue.get("issue_number", "")).strip()
+    issue_suffix = f" #{issue_number}" if issue_number else ""
 
     lines: list[str] = [
-        f"{labels['title']} #{issue_number}" if issue_number else labels["title"],
-        date,
+        f"<b>{_h(labels['title'])}{_h(issue_suffix)}</b>",
+        f"<i>{_h(date)}</i>",
         "",
-        labels["items_heading"] + ":",
+        f"{_h(labels['items_heading'])}:",
         "",
     ]
 
@@ -87,15 +96,16 @@ def render_telegram_digest(issue: dict[str, Any], lang: Lang, full_issue_url: st
         source_name = str(item["source_name"])
         lines.extend(
             [
-                f"{idx}. {emoji} {rubric}",
-                title,
-                summary,
-                f"{labels['source']}: {source_name}",
+                f"{idx}. {_h(emoji)} {_h(rubric)}",
+                f"<b>{_h(title)}</b>",
+                f"<i>{_h(summary)}</i>",
+                f"{_h(labels['source'])}: {_h(source_name)}",
                 "",
             ]
         )
 
-    lines.extend([f"{labels['full_issue']}: {full_issue_url}", ""])
+    safe_url = html.escape(full_issue_url.strip(), quote=True)
+    lines.extend([f"<a href=\"{safe_url}\">{_h(labels['full_issue'])}</a>", ""])
     return "\n".join(lines).rstrip() + "\n"
 
 

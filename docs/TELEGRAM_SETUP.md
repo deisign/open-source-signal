@@ -1,6 +1,6 @@
 # Telegram delivery
 
-`telegram_digest.py` renders a short announcement from an issue JSON file. `send_telegram.py` sends that prepared `.txt` announcement to a Telegram channel or chat.
+`telegram_digest.py` renders a short announcement from an issue JSON file. `send_telegram.py` sends that prepared `.txt` announcement to a Telegram channel or chat. Announcements use Telegram HTML formatting by default: bold title, italic date and leads, and a linked full-issue button.
 
 ## 1. Create a bot
 

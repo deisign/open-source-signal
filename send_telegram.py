@@ -102,6 +102,7 @@ def send_telegram_message(
     chat_id: str,
     text: str,
     disable_web_page_preview: bool = False,
+    parse_mode: str | None = "HTML",
     timeout: int = 20,
     api_base: str = "https://api.telegram.org",
     chunk_limit: int = DEFAULT_SAFE_LIMIT,
@@ -129,6 +130,8 @@ def send_telegram_message(
             "text": chunk,
             "disable_web_page_preview": disable_web_page_preview,
         }
+        if parse_mode:
+            payload["parse_mode"] = parse_mode
         if len(chunks) > 1:
             payload["text"] = f"{chunk}\n\n[{index}/{len(chunks)}]"
         responses.append(_post_json(url, payload, timeout=timeout))
@@ -149,6 +152,7 @@ def main() -> None:
     parser.add_argument("--token", help="Telegram bot token. Defaults to TELEGRAM_BOT_TOKEN env variable")
     parser.add_argument("--chat-id", help="Telegram chat/channel id. Defaults to TELEGRAM_CHAT_ID env variable")
     parser.add_argument("--disable-preview", action="store_true", help="Disable link preview in Telegram")
+    parser.add_argument("--parse-mode", default="HTML", help="Telegram parse mode: HTML, MarkdownV2, Markdown, or empty string for plain text")
     parser.add_argument("--dry-run", action="store_true", help="Print the message and do not call Telegram")
     parser.add_argument("--timeout", type=int, default=20, help="HTTP timeout in seconds")
     parser.add_argument("--chunk-limit", type=int, default=DEFAULT_SAFE_LIMIT, help="Split messages above this length")
@@ -176,6 +180,7 @@ def main() -> None:
         chat_id=chat_id,
         text=text,
         disable_web_page_preview=args.disable_preview,
+        parse_mode=args.parse_mode or None,
         timeout=args.timeout,
         chunk_limit=args.chunk_limit,
     )

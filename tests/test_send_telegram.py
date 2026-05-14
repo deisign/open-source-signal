@@ -69,6 +69,7 @@ def test_send_telegram_message_posts_expected_payload(monkeypatch: pytest.Monkey
                 "chat_id": "@open_source_signal",
                 "text": "Сигнал відкритих джерел",
                 "disable_web_page_preview": True,
+                "parse_mode": "HTML",
             },
         )
     ]
@@ -94,3 +95,33 @@ def test_send_telegram_message_rejects_api_error(monkeypatch: pytest.MonkeyPatch
 
     with pytest.raises(RuntimeError, match="Telegram API error"):
         send_telegram.send_telegram_message(token="123:ABC", chat_id="@missing", text="hello")
+
+
+def test_send_telegram_message_can_disable_parse_mode(monkeypatch: pytest.MonkeyPatch) -> None:
+    calls: list[dict[str, object]] = []
+
+    class FakeResponse:
+        def __enter__(self):
+            return self
+
+        def __exit__(self, exc_type, exc, tb):
+            return False
+
+        def read(self) -> bytes:
+            return json.dumps({"ok": True, "result": {"message_id": 43}}).encode("utf-8")
+
+    def fake_urlopen(request, timeout: int):
+        calls.append(json.loads(request.data.decode("utf-8")))
+        return FakeResponse()
+
+    monkeypatch.setattr(send_telegram.urllib.request, "urlopen", fake_urlopen)
+
+    send_telegram.send_telegram_message(
+        token="123:ABC",
+        chat_id="@open_source_signal",
+        text="plain",
+        parse_mode=None,
+        api_base="https://example.test",
+    )
+
+    assert "parse_mode" not in calls[0]

@@ -65,7 +65,7 @@ python telegram_digest.py issues/2026-05-13.json \
 
 ### 4. Send Telegram announcements locally
 
-`send_telegram.py` sends a prepared announcement to a Telegram channel or chat.
+`send_telegram.py` sends a prepared announcement to a Telegram channel or chat. The default parse mode is Telegram HTML, so generated announcements keep bold titles, italic leads, and linked full-issue URLs.
 
 ```bash
 export TELEGRAM_BOT_TOKEN="123456:ABC..."
