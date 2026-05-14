@@ -1,4 +1,4 @@
-# Open Source Signal v0.9
+# Open Source Signal v1.0
 
 Static generator and publishing toolkit for the bilingual OSINT journal **Open Source Signal / Сигнал відкритих джерел**.
 
@@ -6,7 +6,7 @@ Editorial focus: Ukrainian accountability OSINT with an international horizon �
 
 ## What it does
 
-The project currently supports six working modes.
+The project currently supports eight working modes.
 
 ### 0. Create a safe draft for the next issue
 
@@ -158,6 +158,30 @@ Full instructions are in:
 ```text
 docs/IMPORT_DAILY_SIGNAL.md
 ```
+
+
+### 8. Publish a Daily Issue with one GitHub Actions run
+
+The combined publishing workflow is included:
+
+```text
+.github/workflows/publish_daily_issue.yml
+```
+
+Use it from:
+
+```text
+Actions → Publish Daily Issue → Run workflow
+```
+
+It imports a pasted Daily Signal, runs tests, builds the site, commits the issue, renders the Telegram announcement, checks duplicate protection, sends Telegram if enabled, and records the send log.
+
+Full instructions are in:
+
+```text
+docs/PUBLISH_DAILY_ISSUE.md
+```
+
 
 
 ## Editorial and source policy

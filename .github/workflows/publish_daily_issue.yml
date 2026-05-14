@@ -1,0 +1,205 @@
+name: Publish Daily Issue
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: Issue date in YYYY-MM-DD format
+        required: true
+        type: string
+      issue:
+        description: Issue number, for example 002
+        required: true
+        type: string
+      signal_text:
+        description: Paste the full Daily Signal markdown/text here
+        required: true
+        type: string
+      lang:
+        description: Telegram announcement language
+        required: true
+        type: choice
+        options:
+          - uk
+          - en
+        default: uk
+      max_items:
+        description: Maximum number of signals in Telegram post
+        required: true
+        default: "7"
+      send_telegram:
+        description: Send Telegram announcement after publishing the issue
+        required: true
+        type: boolean
+        default: true
+      force_issue:
+        description: Overwrite existing issue JSON if present
+        required: true
+        type: boolean
+        default: false
+      force_telegram:
+        description: Resend Telegram announcement even if already recorded
+        required: true
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
+      - name: Write pasted Daily Signal input
+        env:
+          SIGNAL_TEXT: ${{ inputs.signal_text }}
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          Path('drafts').mkdir(exist_ok=True)
+          Path('drafts/daily_signal_input.md').write_text(os.environ['SIGNAL_TEXT'], encoding='utf-8')
+          PY
+
+      - name: Import Daily Signal into issue JSON
+        run: |
+          set -euo pipefail
+          FORCE_FLAG=""
+          if [ "${{ inputs.force_issue }}" = "true" ]; then
+            FORCE_FLAG="--force"
+          fi
+          python import_daily_signal.py drafts/daily_signal_input.md \
+            --date "${{ inputs.date }}" \
+            --issue "${{ inputs.issue }}" \
+            --out issues \
+            $FORCE_FLAG
+
+      - name: Test and build site
+        run: |
+          python -m pytest -q
+          python build_site.py --issues issues --templates templates --out dist --config site.json
+
+      - name: Commit imported issue and rebuilt site
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add issues dist
+          if git diff --cached --quiet; then
+            echo "No issue/site changes to commit."
+          else
+            git commit -m "Publish Daily Signal ${{ inputs.date }}"
+            git pull --rebase origin main
+            git push
+          fi
+
+      - name: Resolve issue URL and render Telegram announcement
+        if: inputs.send_telegram == true
+        id: render
+        shell: bash
+        run: |
+          set -euo pipefail
+          ISSUE_PATH="issues/${{ inputs.date }}.json"
+          if [ ! -f "$ISSUE_PATH" ]; then
+            echo "Issue JSON not found: $ISSUE_PATH" >&2
+            exit 1
+          fi
+
+          ISSUE_URL=$(python - "$ISSUE_PATH" <<'PY'
+          import json
+          import sys
+          from pathlib import Path
+          from render_issue import load_issue, output_filename
+
+          issue_path = Path(sys.argv[1])
+          issue = load_issue(issue_path)
+          config_path = Path('site.json')
+          config = json.loads(config_path.read_text(encoding='utf-8')) if config_path.exists() else {}
+          base_url = str(config.get('base_url') or 'https://deisign.github.io/open-source-signal').rstrip('/')
+          print(f"{base_url}/issues/{output_filename(issue)}")
+          PY
+          )
+
+          TEXT_FILE=$(python telegram_digest.py "$ISSUE_PATH" \
+            --lang "${{ inputs.lang }}" \
+            --url "$ISSUE_URL" \
+            --out dist \
+            --max-items "${{ inputs.max_items }}")
+
+          echo "issue_path=$ISSUE_PATH" >> "$GITHUB_OUTPUT"
+          echo "issue_json=${{ inputs.date }}.json" >> "$GITHUB_OUTPUT"
+          echo "issue_url=$ISSUE_URL" >> "$GITHUB_OUTPUT"
+          echo "text_file=$TEXT_FILE" >> "$GITHUB_OUTPUT"
+          echo "Rendered $TEXT_FILE"
+          cat "$TEXT_FILE"
+
+      - name: Check duplicate Telegram announcement
+        if: inputs.send_telegram == true
+        id: duplicate
+        run: |
+          python telegram_sent_log.py check \
+            --sent-log data/telegram_sent.json \
+            --issue "${{ steps.render.outputs.issue_json }}" \
+            --lang "${{ inputs.lang }}" \
+            --force "${{ inputs.force_telegram }}"
+
+      - name: Send Telegram announcement
+        if: inputs.send_telegram == true && steps.duplicate.outputs.should_send == 'true'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python send_telegram.py \
+            --text-file "${{ steps.render.outputs.text_file }}" \
+            --disable-preview
+
+      - name: Record Telegram send
+        if: inputs.send_telegram == true && steps.duplicate.outputs.should_send == 'true'
+        run: |
+          python telegram_sent_log.py record \
+            --sent-log data/telegram_sent.json \
+            --issue "${{ steps.render.outputs.issue_json }}" \
+            --lang "${{ inputs.lang }}" \
+            --issue-url "${{ steps.render.outputs.issue_url }}" \
+            --text-file "${{ steps.render.outputs.text_file }}" \
+            --run-id "${{ github.run_id }}" \
+            --run-url "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+
+      - name: Commit Telegram sent log and rendered announcement
+        if: inputs.send_telegram == true && steps.duplicate.outputs.should_send == 'true'
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/telegram_sent.json dist
+          if git diff --cached --quiet; then
+            echo "No Telegram changes to commit."
+          else
+            git commit -m "Record Telegram announcement for ${{ inputs.date }} (${{ inputs.lang }})"
+            git pull --rebase origin main
+            git push
+          fi
+
+      - name: Telegram skipped
+        if: inputs.send_telegram != true
+        run: echo "Telegram sending disabled for this run."
+
+      - name: Duplicate Telegram notice
+        if: inputs.send_telegram == true && steps.duplicate.outputs.should_send != 'true'
+        run: echo "Telegram announcement was already sent. Use force_telegram=true to resend."
