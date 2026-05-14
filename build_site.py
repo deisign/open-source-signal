@@ -169,9 +169,16 @@ def _analytics_snippet(config: dict[str, Any]) -> str:
     provider = str(config.get("analytics_provider", "")).strip().lower()
     analytics_id = str(config.get("analytics_id", "")).strip()
     analytics_domain = str(config.get("analytics_domain", "")).strip()
+
     if provider != "goatcounter" or not analytics_id:
         return ""
-    counter_url = analytics_domain or f"https://{analytics_id}.goatcounter.com/count"
+
+    if not analytics_domain:
+        analytics_domain = f"{analytics_id}.goatcounter.com"
+
+    analytics_domain = analytics_domain.removeprefix("https://").removeprefix("http://").rstrip("/")
+    counter_url = f"https://{analytics_domain}/count"
+
     return f'<script data-goatcounter="{counter_url}" async src="//gc.zgo.at/count.js"></script>'
 
 
