@@ -112,6 +112,14 @@ def write_feed(issues: list[BuiltIssue], out_dir: Path, config: dict[str, Any]) 
     path.write_text(feed, encoding='utf-8')
     return path
 
+
+def copy_cname(cname_path: Path, out_dir: Path) -> list[Path]:
+    if not cname_path.exists():
+        return []
+    target = out_dir / "CNAME"
+    target.write_text(cname_path.read_text(encoding="utf-8").strip() + "\n", encoding="utf-8")
+    return [target]
+
 def copy_static(static_dir: Path, out_dir: Path) -> list[Path]:
     written: list[Path] = []
     if not static_dir.exists():
@@ -176,6 +184,8 @@ def build_site(issues_dir: Path, templates_dir: Path, out_dir: Path, config_path
         written.append(path)
 
     written.append(write_feed(built_issues, out_dir, config))
+
+    written.extend(copy_cname(Path("CNAME"), out_dir))
 
     if static_dir is not None:
         written.extend(copy_static(static_dir, out_dir))

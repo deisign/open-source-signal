@@ -149,3 +149,33 @@ def test_build_site_generates_rss_and_social_metadata(tmp_path):
     assert home.find("link", attrs={"rel": "alternate", "type": "application/rss+xml"})["href"] == "feed.xml"
     links = {a.get("href") for a in home.select("a[href]")}
     assert "https://t.me/open_source_signal_ua" in links
+
+
+def test_custom_domain_config_is_used_in_built_site(tmp_path):
+    out_dir = tmp_path / "dist"
+    subprocess.run(
+        [
+            sys.executable,
+            str(ROOT / "build_site.py"),
+            "--issues",
+            str(ROOT / "issues"),
+            "--templates",
+            str(ROOT / "templates"),
+            "--out",
+            str(out_dir),
+            "--config",
+            str(ROOT / "site.json"),
+            "--static",
+            str(ROOT / "static"),
+        ],
+        check=True,
+        cwd=ROOT,
+    )
+
+    assert (out_dir / "CNAME").read_text(encoding="utf-8") == "osintsignal.org\n"
+    feed = (out_dir / "feed.xml").read_text(encoding="utf-8")
+    assert "https://osintsignal.org/issues/open-source-signal-2026-05-14.html" in feed
+
+    home = BeautifulSoup((out_dir / "index.html").read_text(encoding="utf-8"), "html.parser")
+    assert home.find("link", rel="canonical")["href"] == "https://osintsignal.org"
+    assert home.find("meta", attrs={"property": "og:image"})["content"] == "https://osintsignal.org/static/og-image.png"

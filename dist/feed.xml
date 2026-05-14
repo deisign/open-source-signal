@@ -2,21 +2,21 @@
 <rss version="2.0">
   <channel>
     <title>Open Source Signal / Сигнал відкритих джерел</title>
-    <link>https://deisign.github.io/open-source-signal</link>
+    <link>https://osintsignal.org</link>
     <description>A bilingual OSINT editorial radar for investigations, verification, maps, platforms, surveillance and researcher safety.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 14 May 2026 11:07:36 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 14 May 2026 12:31:53 +0000</lastBuildDate>
     <item>
       <title>Open Source Signal / Сигнал відкритих джерел #001</title>
-      <link>https://deisign.github.io/open-source-signal/issues/open-source-signal-2026-05-14.html</link>
-      <guid>https://deisign.github.io/open-source-signal/issues/open-source-signal-2026-05-14.html</guid>
+      <link>https://osintsignal.org/issues/open-source-signal-2026-05-14.html</link>
+      <guid>https://osintsignal.org/issues/open-source-signal-2026-05-14.html</guid>
       <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
       <description>Daily issue #001: influence-operation infrastructure, AI-assisted cyber workflows, the surveillance marketplace, movement-data OPSEC, SAR damage mapping, coded platform signals and an extremist-network casefile.</description>
     </item>
     <item>
       <title>Open Source Signal / Сигнал відкритих джерел #000</title>
-      <link>https://deisign.github.io/open-source-signal/issues/open-source-signal-2026-05-13.html</link>
-      <guid>https://deisign.github.io/open-source-signal/issues/open-source-signal-2026-05-13.html</guid>
+      <link>https://osintsignal.org/issues/open-source-signal-2026-05-13.html</link>
+      <guid>https://osintsignal.org/issues/open-source-signal-2026-05-13.html</guid>
       <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
       <description>A visual prototype for the daily digest: editorial cards, color-coded rubrics, source links, Ukrainian adaptations and internal notes separated from the public layer. No cyberpunk fog machine, no “OSINT ninja” confetti. Just signal.</description>
     </item>

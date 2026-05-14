@@ -79,7 +79,7 @@ jobs:
           issue = load_issue(issue_path)
           config_path = Path("site.json")
           config = json.loads(config_path.read_text(encoding="utf-8")) if config_path.exists() else {}
-          base_url = str(config.get("base_url") or "https://deisign.github.io/open-source-signal").rstrip("/")
+          base_url = str(config.get("base_url") or "https://osintsignal.org").rstrip("/")
           print(f"{base_url}/issues/{output_filename(issue)}")
           PY
           )

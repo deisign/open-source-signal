@@ -45,7 +45,7 @@ def test_telegram_setup_doc_mentions_github_secrets():
 
 def test_site_config_has_public_base_url():
     data = json.loads(SITE.read_text(encoding="utf-8"))
-    assert data["base_url"] == "https://deisign.github.io/open-source-signal"
+    assert data["base_url"] == "https://osintsignal.org"
 
 
 def test_initial_telegram_sent_log_exists_and_is_empty():

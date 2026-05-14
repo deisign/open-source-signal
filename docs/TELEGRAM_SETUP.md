@@ -27,7 +27,7 @@ For a private channel, use its numeric chat id. The easiest practical route is t
 ```bash
 python telegram_digest.py issues/2026-05-13.json \
   --lang uk \
-  --url https://deisign.github.io/open-source-signal/issues/open-source-signal-2026-05-13.html \
+  --url https://osintsignal.org/issues/open-source-signal-2026-05-13.html \
   --out dist
 
 python send_telegram.py \

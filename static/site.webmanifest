@@ -1,5 +1,5 @@
 {
-  "name": "Open Source Signal",
+  "name": "Open Source Signal / Сигнал відкритих джерел",
   "short_name": "OS Signal",
   "icons": [
     {
@@ -15,5 +15,7 @@
   ],
   "theme_color": "#141414",
   "background_color": "#F2EDDD",
-  "display": "standalone"
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/"
 }
