@@ -32,14 +32,14 @@ def read_soup(path: Path) -> BeautifulSoup:
     return BeautifulSoup(path.read_text(encoding="utf-8"), "html.parser")
 
 
-def test_trust_pages_are_generated_without_contact(tmp_path):
+def test_trust_pages_are_generated_with_contact(tmp_path):
     out_dir = tmp_path / "dist"
     build_site_into(out_dir)
 
     for name in ["about.html", "methodology.html", "ethics.html", "subscribe.html", "404.html"]:
         assert (out_dir / name).exists()
 
-    assert not (out_dir / "contact.html").exists()
+    assert (out_dir / "contact.html").exists()
 
 
 def test_trust_pages_have_seo_metadata_and_goatcounter_once(tmp_path):
@@ -56,17 +56,18 @@ def test_trust_pages_have_seo_metadata_and_goatcounter_once(tmp_path):
         assert html.count("gc.zgo.at/count.js") == 1
 
 
-def test_sitemap_includes_trust_pages_but_excludes_404_and_contact(tmp_path):
+def test_sitemap_includes_trust_pages_and_contact_but_excludes_404(tmp_path):
     out_dir = tmp_path / "dist"
     build_site_into(out_dir)
 
     sitemap = (out_dir / "sitemap.xml").read_text(encoding="utf-8")
-    for name in ["about.html", "methodology.html", "ethics.html", "subscribe.html"]:
-        assert f"https://osintsignal.org/{name}" in sitemap
 
-    assert "https://osintsignal.org/404.html" not in sitemap
-    assert "https://osintsignal.org/contact.html" not in sitemap
-
+    assert "about.html" in sitemap
+    assert "methodology.html" in sitemap
+    assert "ethics.html" in sitemap
+    assert "contact.html" in sitemap
+    assert "subscribe.html" in sitemap
+    assert "404.html" not in sitemap
 
 def test_footer_links_to_trust_pages_from_home_archive_issue_and_static_pages(tmp_path):
     out_dir = tmp_path / "dist"

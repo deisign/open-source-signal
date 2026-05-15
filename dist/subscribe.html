@@ -217,6 +217,47 @@ footer .trust-links a:hover {
   text-underline-offset: .22em;
 }
 /* /OSS v1.1.5b trust layout */
+
+.link-list {
+  display: grid;
+  gap: 12px;
+  margin: 18px 0 8px;
+}
+.link-card {
+  border: 1px solid var(--line, rgba(20,20,20,.16));
+  border-radius: 18px;
+  padding: 14px 16px;
+  background: rgba(255,255,255,.32);
+}
+.link-card a {
+  font-weight: 800;
+  text-decoration-thickness: .08em;
+  text-underline-offset: .2em;
+}
+.link-card p {
+  margin: 6px 0 0;
+}
+
+
+/* v1.1.6: keep trust/footer links centered on static pages */
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+}
+.trust-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: min(860px, 100%);
+  margin: 0 auto;
+  text-align: center;
+}
+
 </style>
 </head>
 <body>
@@ -245,19 +286,12 @@ footer .trust-links a:hover {
   <main class="wrap">
     <article class="panel">
       <section>
-        <h2>English</h2>
-          <p>Telegram: follow new Daily Signal announcements at https://t.me/open_source_signal_ua.</p>
-          <p>RSS: use https://osintsignal.org/feed.xml in any feed reader.</p>
-          <p>Archive: browse previous issues at https://osintsignal.org/archive.html.</p>
-          <p>Daily Signal is published Monday to Friday when there is enough material worth surfacing. It focuses on OSINT investigations, Ukrainian accountability work, tools, datasets, verification methods, platform changes, OPSEC, and source-risk notes.</p>
-          <p>A future Weekly Magazine will collect and develop the strongest signals of the week into a more editorial format.</p>
+        <h2>Follow Open Source Signal</h2>
+          <p>Daily Signal is published Monday to Friday when there is enough material worth surfacing.</p>
       </section>
       <section>
         <h2>Українською</h2>
-          <p>Telegram: повідомлення про нові випуски — https://t.me/open_source_signal_ua.</p>
-          <p>RSS: стрічка для feed reader — https://osintsignal.org/feed.xml.</p>
-          <p>Архів: попередні випуски — https://osintsignal.org/archive.html.</p>
-          <p>Daily Signal виходить з понеділка по п’ятницю, якщо є достатньо сильних матеріалів. Фокус — OSINT-розслідування, українська accountability-оптика, інструменти, датасети, методики верифікації, зміни платформ, OPSEC і ризики джерел.</p>
+          <p>Підписатися можна через Telegram, RSS або архів сайту.</p>
       </section>
       <div class="cta">
         <a href="https://t.me/open_source_signal_ua">Telegram</a>
@@ -276,6 +310,7 @@ footer .trust-links a:hover {
       <a href="about.html">About</a>
       <a href="methodology.html">Methodology</a>
       <a href="ethics.html">Ethics</a>
+      <a href="contact.html">Contact</a>
       <a href="subscribe.html">Subscribe</a>
       <a href="archive.html">Archive</a>
       <a href="feed.xml">RSS</a>
