@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       issue:
-  description: "Issue JSON file in issues/"
-  required: true
-  type: string
+        description: "Issue JSON file in issues/"
+        required: true
+        type: string
       lang:
         description: "Announcement language"
         required: true
@@ -35,6 +35,7 @@ permissions:
 jobs:
   publish:
     runs-on: ubuntu-latest
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -44,7 +45,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
           cache: pip
 
       - name: Install dependencies
@@ -61,13 +62,16 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+
           ISSUE_PATH="issues/${{ inputs.issue }}"
+
           if [ ! -f "$ISSUE_PATH" ]; then
             echo "Issue JSON not found: $ISSUE_PATH" >&2
             exit 1
           fi
 
           ISSUE_URL="${{ inputs.issue_url }}"
+
           if [ -z "$ISSUE_URL" ]; then
             ISSUE_URL=$(python - "$ISSUE_PATH" <<'PY'
           import json
@@ -77,8 +81,10 @@ jobs:
 
           issue_path = Path(sys.argv[1])
           issue = load_issue(issue_path)
+
           config_path = Path("site.json")
           config = json.loads(config_path.read_text(encoding="utf-8")) if config_path.exists() else {}
+
           base_url = str(config.get("base_url") or "https://osintsignal.org").rstrip("/")
           print(f"{base_url}/issues/{output_filename(issue)}")
           PY
@@ -93,6 +99,7 @@ jobs:
 
           echo "text_file=$TEXT_FILE" >> "$GITHUB_OUTPUT"
           echo "issue_url=$ISSUE_URL" >> "$GITHUB_OUTPUT"
+
           echo "Rendered $TEXT_FILE"
           cat "$TEXT_FILE"
 
@@ -132,7 +139,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add data/telegram_sent.json
+
           if git diff --cached --quiet; then
             echo "No sent-log changes to commit."
           else
