@@ -25,6 +25,10 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>https://osintsignal.org/contact.html</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>https://osintsignal.org/subscribe.html</loc>
     <changefreq>monthly</changefreq>
   </url>
