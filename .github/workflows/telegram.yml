@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       issue:
-        description: "Issue JSON filename inside issues/, for example 2026-05-13.json"
-        required: true
-        default: "2026-05-13.json"
+  description: "Issue JSON file in issues/"
+  required: true
+  type: string
       lang:
         description: "Announcement language"
         required: true
