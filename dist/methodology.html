@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Methodology — Open Source Signal</title>
+  <meta name="description" content="How Open Source Signal selects sources, verifies leads, adapts OSINT material, handles risk, and separates public reporting from internal editorial notes.">
+  <link rel="canonical" href="https://osintsignal.org/methodology.html">
+  <meta property="og:title" content="Methodology — Open Source Signal">
+  <meta property="og:description" content="How Open Source Signal selects sources, verifies leads, adapts OSINT material, handles risk, and separates public reporting from internal editorial notes.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://osintsignal.org/methodology.html">
+  <meta property="og:image" content="https://osintsignal.org/static/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Methodology — Open Source Signal">
+  <meta name="twitter:description" content="How Open Source Signal selects sources, verifies leads, adapts OSINT material, handles risk, and separates public reporting from internal editorial notes.">
+  <meta name="twitter:image" content="https://osintsignal.org/static/og-image.png">
+  <link rel="alternate" type="application/rss+xml" title="Open Source Signal RSS" href="feed.xml">
+  <meta name="theme-color" content="#141414">
+  <link rel="icon" href="static/logo-mark.png" type="image/png">
+  <link rel="shortcut icon" href="static/favicon.ico">
+  <link rel="apple-touch-icon" href="static/apple-touch-icon.png">
+  <link rel="manifest" href="static/site.webmanifest">
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Methodology",
+  "description": "How Open Source Signal selects sources, verifies leads, adapts OSINT material, handles risk, and separates public reporting from internal editorial notes.",
+  "url": "https://osintsignal.org/methodology.html",
+  "inLanguage": [
+    "en",
+    "uk"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Open Source Signal",
+    "alternateName": "Сигнал відкритих джерел",
+    "url": "https://osintsignal.org"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Open Source Signal",
+    "url": "https://osintsignal.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://osintsignal.org/static/logo-mark-512.png"
+    }
+  }
+}</script>
+  <script data-goatcounter="https://deisign.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500;700;800&family=Fraunces:opsz,wght@9..144,700;9..144,850&family=Inter:wght@400;600;800&family=Source+Serif+4:opsz,wght@8..60,700;8..60,850&display=swap');
+    :root {
+      --display-latin: Fraunces, Georgia, 'Times New Roman', serif;
+      --display-cyr: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+      --label-font: Arimo, Arial, Helvetica, sans-serif;
+      --paper: #F2EDDD;
+      --paper-2: #FFF9EA;
+      --ink: #141414;
+      --muted: #6d665a;
+      --line: rgba(20,20,20,.16);
+      --accent: #245c73;
+      --shadow: 0 24px 70px rgba(20,20,20,.12);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 14% 18%, rgba(165,74,44,.16), transparent 26rem),
+        radial-gradient(circle at 84% 12%, rgba(36,92,115,.16), transparent 24rem),
+        linear-gradient(135deg, #f7f0df, #ece1c6 58%, #d9cfb7);
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 18px;
+      line-height: 1.58;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: .22;
+      background-image: linear-gradient(rgba(20,20,20,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(20,20,20,.035) 1px, transparent 1px);
+      background-size: 28px 28px;
+      mask-image: linear-gradient(to bottom, #000, transparent 85%);
+    }
+    a { color: inherit; text-decoration-thickness: .1em; text-underline-offset: .18em; }
+    .wrap { width: min(980px, calc(100% - 36px)); margin: 0 auto; }
+    header { padding: 56px 0 24px; }
+    .topline { display: flex; justify-content: space-between; gap: 18px; align-items: center; flex-wrap: wrap; font-family: var(--label-font); font-size: 13px; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); }
+    .topline a { text-decoration: none; }
+    .brand-row { display:flex; gap:14px; align-items:center; margin-top: 28px; }
+    .brand-row img { width:60px; height:60px; border-radius:15px; box-shadow: 0 10px 24px rgba(20,20,20,.12); }
+    .brand-copy { display:flex; flex-direction:column; }
+    .brand-copy strong { font-family: var(--label-font); font-size: 14px; letter-spacing: .08em; text-transform: uppercase; }
+    .brand-copy span { font-family: var(--label-font); font-size: 17px; color: #3b362f; font-weight: 700; letter-spacing: .015em; }
+    .eyebrow { margin-top: 54px; font-family: var(--label-font); color: var(--muted); text-transform: uppercase; letter-spacing: .08em; font-size: 13px; font-weight: 800; }
+    h1 { margin: 16px 0 8px; font-family: var(--display-latin); font-size: clamp(58px, 9vw, 118px); line-height: .84; letter-spacing: -.07em; }
+    .ua-title { font-family: var(--display-cyr); font-size: clamp(34px, 5.4vw, 72px); letter-spacing: -.04em; line-height: .95; font-weight: 850; color: #302b25; margin: 0 0 26px; }
+    .lead { max-width: 820px; font-size: clamp(22px, 2.7vw, 34px); line-height: 1.18; letter-spacing: -.035em; font-weight: 800; color: #25211d; }
+    main { padding: 22px 0 80px; }
+    .panel { border: 1px solid var(--line); background: rgba(255,249,234,.74); border-radius: 32px; padding: clamp(24px, 4vw, 44px); box-shadow: var(--shadow); margin: 22px 0; }
+    section + section { margin-top: 28px; }
+    h2 { font-family: var(--label-font); font-size: 16px; letter-spacing: .08em; text-transform: uppercase; margin: 0 0 16px; color: var(--accent); }
+    p { margin: 0 0 18px; max-width: 78ch; }
+    ul { margin: 0 0 20px 1.15rem; padding: 0; }
+    li { margin: 0 0 8px; }
+    .cta { display:flex; gap:12px; flex-wrap:wrap; margin-top: 28px; }
+    .cta a { display:inline-flex; align-items:center; border:1px solid var(--line); border-radius:999px; background:#141414; color:#fff9ea; padding:10px 14px; text-decoration:none; font-family:var(--label-font); font-size:13px; font-weight:800; letter-spacing:.04em; text-transform:uppercase; }
+    footer { border-top: 1px solid var(--line); padding: 28px 0 42px; color: var(--muted); font-family: var(--label-font); font-size: 13px; font-weight: 700; }
+    .footer-inner, .footer-links, .trust-links { display:flex; gap:16px; align-items:center; justify-content:space-between; flex-wrap:wrap; }
+    .footer-links a, .trust-links a { color: inherit; text-decoration: none; font-weight: 800; }
+    .trust-links { justify-content:flex-start; margin-top: 14px; }
+    @media (max-width: 680px) { h1 { font-size: clamp(48px, 18vw, 78px); } .panel { border-radius: 24px; } }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <div class="topline">
+      <a href="index.html">← Daily Signal</a>
+      <nav aria-label="Primary navigation">
+        <a href="archive.html">Archive</a> ·
+        <a href="methodology.html">Methodology</a> ·
+        <a href="ethics.html">Ethics</a> ·
+        <a href="subscribe.html">Subscribe</a>
+      </nav>
+    </div>
+    <div class="brand-row">
+      <img class="brand-mark" src="static/logo-mark.png" alt="Open Source Signal mark">
+      <div class="brand-copy">
+        <strong>Open Source Signal</strong>
+        <span>Сигнал відкритих джерел</span>
+      </div>
+    </div>
+    <div class="eyebrow">Open Source Signal / Trust pages</div>
+    <h1>Methodology</h1>
+    <p class="ua-title">Методика</p>
+    <p class="lead">Open Source Signal is built around source discovery, editorial adaptation, verification awareness, and risk marking.</p>
+  </header>
+  <main class="wrap">
+    <article class="panel">
+      <section>
+        <h2>English</h2>
+          <p>Each public card should help the reader understand what happened, why it matters, how it can be used, and where its limits are.</p>
+          <ul>
+            <li>rubric;</li>
+            <li>title;</li>
+            <li>source, date, and link;</li>
+            <li>what happened;</li>
+            <li>why it matters;</li>
+            <li>how to use it;</li>
+            <li>limits;</li>
+            <li>tags.</li>
+          </ul>
+          <p>We separate discovery from verification. Some sources are used as primary reporting or documentation. Others are used only as leads. Telegram channels, Reddit threads, community discussions, and newsletters can help discover tools, workflows, claims, or cases, but they do not automatically establish facts.</p>
+          <p>Tools and workflows found through newsletters or community discussions are checked against original project pages, GitHub repositories, documentation, author sites, release notes, or other primary references where possible.</p>
+          <p>For war-crimes verification, identity claims, POW / KIA / MIA / missing-persons material, and suspect-related items, we apply a higher threshold. Telegram posts, Reddit comments, anonymous claims, or repost chains are not treated as established facts.</p>
+          <p>Every Daily Signal issue may contain an internal editorial block named EDITORIAL NOTES — INTERNAL. It is not part of the public cards and is used for editorial memory, safety cautions, weak-source notes, and weekly follow-up planning.</p>
+      </section>
+      <section>
+        <h2>Discovery sources</h2>
+          <p>OSINT Newsletter is used for tool discovery, workflow discovery, and Toolbox / Tool Radar candidates. Tools found through newsletters are checked against original project pages, GitHub repositories, documentation, or author sites.</p>
+          <p>Reddit OSINT communities are used as community radar and lead-only sources. They may help surface tools, workflows, questions, case ideas, or reading-list items. They are not used as proof for war crimes, identity claims, POW / KIA / MIA / missing-persons cases, or accusations against individuals.</p>
+          <p>Telegram sources are lead-only unless independently verified. Telegram can be useful for monitoring public narratives and discovering claims, but it is not treated as established fact.</p>
+          <p>Evocation.info is treated as a source pointer / database relevant to Ukrainian accountability OSINT. Because such databases may involve personal data, items derived from them require independent verification, risk review, and public-interest assessment.</p>
+      </section>
+      <section>
+        <h2>Українською</h2>
+          <p>Наша базова одиниця — редакційна картка. Вона має пояснювати, що сталося, чому це важливо, як матеріал можна використати і які обмеження треба враховувати.</p>
+          <p>Ми розділяємо виявлення сигналу і підтвердження факту. Telegram, Reddit, спільноти, розсилки й обговорення можуть допомогти знайти інструмент, кейс, методику або потенційний напрямок, але самі по собі не роблять твердження доведеним.</p>
+          <p>Для тем воєнних злочинів, ідентифікації осіб, POW / KIA / MIA / missing, підозрюваних, командирів або колаборантів застосовується вищий поріг обережності.</p>
+      </section>
+      <div class="cta">
+        <a href="ethics.html">Ethics and safety</a>
+        <a href="archive.html">Archive</a>
+      </div>
+    </article>
+  </main>
+  <footer>
+    <div class="wrap">
+      <div class="footer-inner">
+        <span>Open Source Signal / Сигнал відкритих джерел</span>
+        <span>Ukrainian accountability OSINT journal.</span>
+      </div>
+      <nav class="trust-links" aria-label="Trust and discovery pages">
+        <a href="about.html">About</a>
+        <a href="methodology.html">Methodology</a>
+        <a href="ethics.html">Ethics</a>
+        <a href="subscribe.html">Subscribe</a>
+        <a href="archive.html">Archive</a>
+        <a href="feed.xml">RSS</a>
+        <a href="https://t.me/open_source_signal_ua">Telegram</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

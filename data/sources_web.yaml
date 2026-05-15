@@ -1,5 +1,5 @@
 # Open Source Signal web source registry.
-# Roles: primary, investigative, methodology, data, source_pointer, monitoring.
+# Roles: primary, investigative, methodology, data, source_pointer, monitoring, community_radar, lead_only.
 # A listed source is not automatically publication-ready evidence.
 
 international_osint:
@@ -220,3 +220,32 @@ geospatial_data:
   primary_rubrics:
     - Toolbox / Інструментарій
   notes: Tracks new OSINT tools, practical services, datasets and workflows. Use mainly as a discovery source; verify tools against original project pages before featuring.
+
+reddit_osint_communities:
+  - name: Reddit r/OSINT
+    url: https://www.reddit.com/r/OSINT/
+    roles: [community_radar, lead_only]
+    language: en
+    primary_rubrics:
+      - Tool Radar / Інструментальний радар
+      - Tradecraft / Методика
+      - Reading List
+    note: Use for tool discovery, workflow discussion, questions and reading-list leads. Do not use as proof for war crimes, identity claims, POW/KIA/MIA/missing-persons cases or accusations against individuals.
+
+  - name: Reddit r/osinttools
+    url: https://www.reddit.com/r/osinttools/
+    roles: [community_radar, lead_only]
+    language: en
+    primary_rubrics:
+      - Tool Radar / Інструментальний радар
+      - Toolbox / Інструментарій
+    note: Use for candidate tools and workflow leads only. Verify tools against original project pages, GitHub repositories, documentation or author sites before featuring.
+
+  - name: Reddit r/OSINTExperts
+    url: https://www.reddit.com/r/OSINTExperts/
+    roles: [community_radar, lead_only]
+    language: en
+    primary_rubrics:
+      - Tool Radar / Інструментальний радар
+      - Tradecraft / Методика
+    note: Use cautiously as community radar for tool and method discovery. Do not treat community posts as established facts.

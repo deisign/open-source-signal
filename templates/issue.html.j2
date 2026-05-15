@@ -492,7 +492,23 @@
       a { text-decoration: none; }
     }
   
-  </style>
+  
+.trust-links {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 14px;
+  font-family: var(--label-font);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.trust-links a { color: inherit; text-decoration: none; }
+
+</style>
   <script type="application/ld+json">
 {{ issue_schema_json | safe }}
   </script>
@@ -585,7 +601,14 @@
 
   <footer>
     <div class="wrap print-note footer-inner"><div>{{ issue['footer_note'] }}</div><div class="footer-links"><a href="{{ asset_prefix }}{{ config['rss_path'] }}">RSS</a><a href="{{ config['telegram_url'] }}">Telegram</a><a href="{{ asset_prefix }}index.html">Home</a></div></div>
-  </footer>
+  
+  <nav class="trust-links" aria-label="Trust and discovery pages">
+    {% for link in trust_nav_links %}
+    <a href="{{ asset_prefix }}{{ link.href }}">{{ link.label }}</a>
+    {% endfor %}
+  </nav>
+
+</footer>
 
   <script>
     const buttons = document.querySelectorAll("[data-lang]");

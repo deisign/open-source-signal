@@ -492,7 +492,23 @@
       a { text-decoration: none; }
     }
   
-  </style>
+  
+.trust-links {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 14px;
+  font-family: var(--label-font);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.trust-links a { color: inherit; text-decoration: none; }
+
+</style>
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -807,7 +823,17 @@
 
   <footer>
     <div class="wrap print-note footer-inner"><div>Open Source Signal / Сигнал відкритих джерел. Public-interest OSINT only: verification, accountability, safety and method over spectacle.</div><div class="footer-links"><a href="../feed.xml">RSS</a><a href="https://t.me/open_source_signal_ua">Telegram</a><a href="../index.html">Home</a></div></div>
-  </footer>
+  
+  <nav class="trust-links" aria-label="Trust and discovery pages">
+    <a href="../about.html">About</a>
+    <a href="../methodology.html">Methodology</a>
+    <a href="../ethics.html">Ethics</a>
+    <a href="../subscribe.html">Subscribe</a>
+    <a href="../archive.html">Archive</a>
+    <a href="../feed.xml">RSS</a>
+  </nav>
+
+</footer>
 
   <script>
     const buttons = document.querySelectorAll("[data-lang]");

@@ -13,6 +13,22 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://osintsignal.org/about.html</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://osintsignal.org/methodology.html</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://osintsignal.org/ethics.html</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://osintsignal.org/subscribe.html</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>https://osintsignal.org/issues/open-source-signal-2026-05-14.html</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>weekly</changefreq>

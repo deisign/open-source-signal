@@ -13,6 +13,7 @@ from typing import Any
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 from render_issue import load_issue, output_filename
+from static_pages import NOT_FOUND_PAGE, STATIC_PAGES, TRUST_NAV_LINKS
 
 DEFAULT_SITE_CONFIG = {
     "site_title_en": "Open Source Signal",
@@ -165,6 +166,35 @@ def _site_json_ld(config: dict[str, Any]) -> str:
     return _json_script(data)
 
 
+
+
+def _page_json_ld(page: dict[str, Any], page_url: str, config: dict[str, Any]) -> str:
+    base_url = _absolute_url(str(config.get("base_url", "")))
+    data = {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": page["title"],
+        "description": page["meta_description"],
+        "url": page_url,
+        "inLanguage": ["en", "uk"],
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": config["site_title_en"],
+            "alternateName": config["site_title_uk"],
+            "url": base_url,
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": config["site_title_en"],
+            "url": base_url,
+            "logo": {
+                "@type": "ImageObject",
+                "url": _absolute_url(str(config.get("base_url", "")), "static/logo-mark-512.png"),
+            },
+        },
+    }
+    return _json_script(data)
+
 def _analytics_snippet(config: dict[str, Any]) -> str:
     provider = str(config.get("analytics_provider", "")).strip().lower()
     analytics_id = str(config.get("analytics_id", "")).strip()
@@ -182,13 +212,17 @@ def _analytics_snippet(config: dict[str, Any]) -> str:
     return f'<script data-goatcounter="{counter_url}" async src="//gc.zgo.at/count.js"></script>'
 
 
-def write_sitemap(issues: list[BuiltIssue], out_dir: Path, config: dict[str, Any]) -> Path:
+def write_sitemap(issues: list[BuiltIssue], out_dir: Path, config: dict[str, Any], static_pages: list[dict[str, Any]] | None = None) -> Path:
     base_url = str(config.get("base_url", "")).strip()
     urls: list[tuple[str, str, str]] = [
         (_absolute_url(base_url), "", "daily"),
         (_absolute_url(base_url, "archive.html"), "", "weekly"),
         (_absolute_url(base_url, str(config.get("rss_path", "feed.xml"))), "", "daily"),
     ]
+    for page in static_pages or []:
+        if page.get("sitemap", True):
+            urls.append((_absolute_url(base_url, str(page["output_name"])), "", str(page.get("changefreq", "monthly"))))
+
     for built in issues:
         urls.append((_absolute_url(base_url, built.href), _xml_date(built.issue), "weekly"))
 
@@ -312,6 +346,7 @@ def build_site(issues_dir: Path, templates_dir: Path, out_dir: Path, config_path
                 meta_description=meta_description,
                 issue_schema_json=issue_schema_json,
                 analytics_snippet=analytics_snippet,
+                trust_nav_links=TRUST_NAV_LINKS,
             ),
             encoding="utf-8",
         )
@@ -327,6 +362,7 @@ def build_site(issues_dir: Path, templates_dir: Path, out_dir: Path, config_path
         "og_image_url": _absolute_url(str(config.get("base_url", "")), "static/og-image.png"),
         "site_schema_json": _site_json_ld(config),
         "analytics_snippet": analytics_snippet,
+        "trust_nav_links": TRUST_NAV_LINKS,
     }
 
     pages = [
@@ -340,8 +376,45 @@ def build_site(issues_dir: Path, templates_dir: Path, out_dir: Path, config_path
         path.write_text(template.render(asset_prefix="", page_url=page_url, **context), encoding="utf-8")
         written.append(path)
 
+    static_template = env.get_template("static_page.html.j2")
+    for page in STATIC_PAGES:
+        path = out_dir / page["output_name"]
+        page_url = _absolute_url(str(config.get("base_url", "")), page["output_name"])
+        path.write_text(
+            static_template.render(
+                page=page,
+                config=config,
+                asset_prefix="",
+                page_url=page_url,
+                og_image_url=og_image_url,
+                page_schema_json=_page_json_ld(page, page_url, config),
+                analytics_snippet=analytics_snippet,
+                trust_nav_links=TRUST_NAV_LINKS,
+            ),
+            encoding="utf-8",
+        )
+        written.append(path)
+
+    not_found_template = env.get_template("404.html.j2")
+    not_found_page_url = _absolute_url(str(config.get("base_url", "")), NOT_FOUND_PAGE["output_name"])
+    not_found_path = out_dir / NOT_FOUND_PAGE["output_name"]
+    not_found_path.write_text(
+        not_found_template.render(
+            page=NOT_FOUND_PAGE,
+            config=config,
+            asset_prefix="",
+            page_url=not_found_page_url,
+            og_image_url=og_image_url,
+            analytics_snippet=analytics_snippet,
+            trust_nav_links=TRUST_NAV_LINKS,
+        ),
+        encoding="utf-8",
+    )
+    written.append(not_found_path)
+
+
     written.append(write_feed(built_issues, out_dir, config))
-    written.append(write_sitemap(built_issues, out_dir, config))
+    written.append(write_sitemap(built_issues, out_dir, config, STATIC_PAGES))
     written.append(write_robots(out_dir, config))
 
     written.extend(copy_cname(Path("CNAME"), out_dir))
