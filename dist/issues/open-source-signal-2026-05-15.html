@@ -1,0 +1,937 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Open Source Signal #002 / Сигнал відкритих джерел</title>
+  <meta name="description" content="Ukrainian accountability OSINT digest: War Crimes Verification: Large-scale strikes revive the need for double-tap evidence discipline; Ukraine Lens: EU sanctions create a public accountability index for abducted Ukrainian children; Losses, Captivity & Missing: Russian casualty work depends on separating named records from estimates.">
+  <link rel="canonical" href="https://osintsignal.org/issues/open-source-signal-2026-05-15.html">
+  <meta property="og:title" content="Open Source Signal #002">
+  <meta property="og:description" content="Ukrainian accountability OSINT digest: War Crimes Verification: Large-scale strikes revive the need for double-tap evidence discipline; Ukraine Lens: EU sanctions create a public accountability index for abducted Ukrainian children; Losses, Captivity & Missing: Russian casualty work depends on separating named records from estimates.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://osintsignal.org/issues/open-source-signal-2026-05-15.html">
+  <meta property="og:image" content="https://osintsignal.org/static/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Open Source Signal #002">
+  <meta name="twitter:description" content="Ukrainian accountability OSINT digest: War Crimes Verification: Large-scale strikes revive the need for double-tap evidence discipline; Ukraine Lens: EU sanctions create a public accountability index for abducted Ukrainian children; Losses, Captivity & Missing: Russian casualty work depends on separating named records from estimates.">
+  <meta name="twitter:image" content="https://osintsignal.org/static/og-image.png">
+  <link rel="alternate" type="application/rss+xml" title="Open Source Signal RSS" href="../feed.xml">
+  <meta name="theme-color" content="#141414">
+  <link rel="icon" href="../static/logo-mark.png" type="image/png">
+  <link rel="shortcut icon" href="../static/favicon.ico">
+  <link rel="apple-touch-icon" href="../static/apple-touch-icon.png">
+  <link rel="manifest" href="../static/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@500;600;700&family=Fraunces:opsz,wght,SOFT,WONK@9..144,600..900,50..100,0..1&family=Inter:wght@400;500;650;800;900&family=JetBrains+Mono:wght@400;600;800&family=Source+Serif+4:opsz,wght@8..60,600..900&display=swap" rel="stylesheet">
+  <style>
+
+    :root {
+      --display-latin: Fraunces, Georgia, serif;
+      --display-cyr: "Source Serif 4", Georgia, "Times New Roman", serif;
+      --label-font: Arimo, Arial, Helvetica, sans-serif;
+      --paper: #F2EDDD;
+      --paper-2: #FFF9EA;
+      --ink: #141414;
+      --muted: #6d665a;
+      --line: rgba(20,20,20,.16);
+      --signal: #D6422B;
+      --toolbox: #A64D79;
+      --tradecraft: #875C2D;
+      --surveillance: #5B3B83;
+      --map: #1F7667;
+      --platform: #CC8B21;
+      --opsec: #245C73;
+      --infra: #2F5EA8;
+      --ai: #5C4AE5;
+      --casefile: #7A2E3A;
+      --ukraine: #2B67D6;
+      --war-crimes: #8A1C1C;
+      --losses: #7A6231;
+      --telegram: #2E8FA3;
+      --risk: #141414;
+      --shadow: 0 24px 70px rgba(20,20,20,.12);
+      --radius: 28px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 10% 5%, rgba(214,66,43,.18), transparent 27rem),
+        radial-gradient(circle at 86% 14%, rgba(36,92,115,.18), transparent 24rem),
+        linear-gradient(135deg, #f7f0df, #ece1c6 58%, #d9cfb7);
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 18px;
+      line-height: 1.48;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: .26;
+      background-image:
+        linear-gradient(rgba(20,20,20,.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(20,20,20,.035) 1px, transparent 1px);
+      background-size: 28px 28px;
+      mask-image: linear-gradient(to bottom, #000, transparent 85%);
+    }
+    a { color: inherit; text-decoration-thickness: .1em; text-underline-offset: .18em; }
+    .wrap { width: min(1180px, calc(100% - 36px)); margin: 0 auto; }
+    header.hero {
+      min-height: 94vh;
+      display: grid;
+      align-items: center;
+      padding: 48px 0 64px;
+      position: relative;
+    }
+    .hero-card {
+      border: 1px solid var(--line);
+      background: rgba(255,249,234,.72);
+      backdrop-filter: blur(18px);
+      border-radius: 42px;
+      padding: clamp(26px, 5vw, 70px);
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .brand-lockup { display:flex; gap:16px; align-items:center; position:relative; z-index:1; }
+    .brand-lockup img { width:72px; height:72px; border-radius:18px; box-shadow: 0 10px 24px rgba(20,20,20,.12); }
+    .brand-copy { display:flex; flex-direction:column; gap:2px; }
+    .brand-copy strong { font-family: var(--label-font); font-size: 15px; letter-spacing: .08em; text-transform: uppercase; }
+    .brand-copy span { font-family: var(--label-font); font-size: 18px; color: #3b362f; font-weight: 700; letter-spacing: .015em; }
+    .brand-mini { display:flex; gap:10px; align-items:center; font-family: var(--display-latin); font-weight: 900; font-size: 24px; letter-spacing: -.05em; }
+    .brand-mini img { width:34px; height:34px; border-radius:10px; }
+    .toolbar-links { display:flex; gap:8px; flex-wrap:wrap; }
+    .toolbar-links a, .footer-links a { display:inline-flex; align-items:center; border:1px solid rgba(20,20,20,.15); background: rgba(255,255,255,.4); border-radius:999px; padding: 10px 14px; text-decoration:none; font-family: Inter, sans-serif; font-size: 14px; font-weight: 800; }
+    .footer-inner { display:flex; gap:18px; align-items:center; justify-content:space-between; flex-wrap:wrap; }
+    .hero-card::after {
+      content: "OSINT";
+      position: absolute;
+      right: -2vw;
+      bottom: -7vw;
+      font-family: JetBrains Mono, monospace;
+      font-size: clamp(96px, 19vw, 260px);
+      font-weight: 800;
+      letter-spacing: -.08em;
+      color: rgba(20,20,20,.045);
+      transform: rotate(-5deg);
+    }
+    .kicker {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+      font-family: JetBrains Mono, monospace;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--muted);
+      position: relative;
+      z-index: 1;
+    }
+    .pill {
+      border: 1px solid var(--line);
+      padding: 7px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.35);
+    }
+    h1 {
+      position: relative;
+      z-index: 1;
+      margin: 24px 0 18px;
+      font-family: var(--display-latin);
+      font-size: clamp(56px, 11vw, 142px);
+      line-height: .86;
+      letter-spacing: -.07em;
+      max-width: 900px;
+      font-weight: 900;
+    }
+    .ua-masthead {
+      position: relative;
+      z-index: 1;
+      margin: -8px 0 18px;
+      font-family: var(--display-cyr);
+      font-size: clamp(44px, 7.5vw, 96px);
+      line-height: .9;
+      letter-spacing: -.045em;
+      font-weight: 800;
+      max-width: 980px;
+      color: #2f2b25;
+      font-feature-settings: "kern" 1;
+    }
+    .subtitle {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      font-size: clamp(22px, 3vw, 36px);
+      line-height: 1.14;
+      font-weight: 650;
+      letter-spacing: -.03em;
+      margin: 0;
+    }
+    .dek {
+      position: relative;
+      z-index: 1;
+      max-width: 780px;
+      margin: 24px 0 0;
+      color: #3d382f;
+      font-size: 20px;
+    }
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 9;
+      backdrop-filter: blur(16px);
+      background: rgba(242,237,221,.82);
+      border-bottom: 1px solid var(--line);
+    }
+    .toolbar-inner {
+      min-height: 72px;
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .brand-mini {
+      font-family: var(--display-latin);
+      font-weight: 900;
+      font-size: 24px;
+      letter-spacing: -.05em;
+    }
+    .language-toggle, .view-toggle {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    button {
+      appearance: none;
+      border: 1px solid rgba(20,20,20,.2);
+      background: rgba(255,255,255,.45);
+      color: var(--ink);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-family: Inter, sans-serif;
+      font-weight: 800;
+      cursor: pointer;
+      transition: .18s ease;
+    }
+    button:hover, button.active {
+      background: var(--ink);
+      color: var(--paper-2);
+      transform: translateY(-1px);
+    }
+    .intro-grid {
+      padding: 58px 0 34px;
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 26px;
+    }
+    .brief-card, .rubric-map {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255,249,234,.65);
+      padding: 26px;
+      box-shadow: 0 12px 38px rgba(20,20,20,.06);
+    }
+    .brief-card h2, .rubric-map h2 {
+      font-family: var(--display-latin);
+      font-size: 42px;
+      margin: 0 0 14px;
+      letter-spacing: -.045em;
+      line-height: .95;
+    }
+    .rubric-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 18px;
+    }
+    .rubric-chip {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-height: 48px;
+      padding: 10px 12px;
+      border-radius: 16px;
+      background: rgba(255,255,255,.46);
+      border: 1px solid rgba(20,20,20,.1);
+      font-family: var(--label-font);
+      letter-spacing: .015em;
+      font-weight: 800;
+      font-size: 15px;
+    }
+    .issue-section {
+      padding: 18px 0 80px;
+    }
+    .signals {
+      display: grid;
+      gap: 28px;
+    }
+    .signal-card {
+      border-radius: 34px;
+      overflow: hidden;
+      border: 1px solid rgba(20,20,20,.18);
+      background: rgba(255,249,234,.78);
+      box-shadow: var(--shadow);
+      position: relative;
+      isolation: isolate;
+    }
+    .signal-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 13px;
+      background: var(--accent);
+      z-index: 1;
+    }
+    .signal-card::after {
+      content: "";
+      position: absolute;
+      inset: -40% -20% auto auto;
+      width: 360px;
+      height: 360px;
+      border-radius: 50%;
+      background: color-mix(in srgb, var(--accent), transparent 82%);
+      z-index: -1;
+    }
+    .theme-signal { --accent: var(--signal); }
+    .theme-toolbox { --accent: var(--toolbox); }
+    .theme-tradecraft { --accent: var(--tradecraft); }
+    .theme-surveillance { --accent: var(--surveillance); }
+    .theme-map { --accent: var(--map); }
+    .theme-platform { --accent: var(--platform); }
+    .theme-opsec { --accent: var(--opsec); }
+    .theme-infra { --accent: var(--infra); }
+    .theme-ai { --accent: var(--ai); }
+    .theme-casefile { --accent: var(--casefile); }
+    .theme-ukraine { --accent: var(--ukraine); }
+    .theme-war-crimes { --accent: var(--war-crimes); }
+    .theme-losses { --accent: var(--losses); }
+    .theme-telegram { --accent: var(--telegram); }
+    .theme-risk { --accent: var(--risk); }
+    .card-topline {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      align-items: center;
+      padding: 22px 26px 0 36px;
+      font-family: JetBrains Mono, monospace;
+      font-weight: 800;
+      font-size: 14px;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .rubric {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      flex-wrap: wrap;
+      font-family: var(--label-font);
+      letter-spacing: .055em;
+      font-weight: 700;
+    }
+    .emoji {
+      font-size: 24px;
+      filter: saturate(.85);
+    }
+    .issue-index {
+      font-size: 28px;
+      letter-spacing: -.08em;
+      color: rgba(20,20,20,.18);
+    }
+    .lang-panel {
+      padding: 10px 34px 16px 36px;
+    }
+    body.lang-en .lang-panel.uk,
+    body.lang-en .rubric .uk,
+    body.lang-uk .lang-panel.en,
+    body.lang-uk .rubric .en {
+      display: none;
+    }
+    body.lang-both .signal-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    body.lang-both .card-topline,
+    body.lang-both .tags {
+      grid-column: 1 / -1;
+    }
+    body.lang-both .lang-panel.en {
+      border-right: 1px solid rgba(20,20,20,.12);
+    }
+    body.lang-both .rubric .uk::before {
+      content: "/";
+      color: rgba(20,20,20,.36);
+      margin-right: 8px;
+    }
+    h2 {
+      font-family: var(--display-latin);
+      font-size: clamp(36px, 5vw, 74px);
+      line-height: .94;
+      letter-spacing: -.06em;
+      margin: 14px 0 16px;
+      max-width: 920px;
+    }
+    .lang-panel.uk h2,
+    .brief-card h2 .uk,
+    body.lang-uk .hero .ua-masthead {
+      font-family: var(--display-cyr);
+      letter-spacing: -.025em;
+    }
+    .lang-panel.uk h2 {
+      font-weight: 800;
+    }
+    .lang-panel.uk .field h3 {
+      font-weight: 700;
+    }
+    .source-line {
+      display: inline-block;
+      margin: 0 0 24px;
+      padding: 9px 12px;
+      border-radius: 999px;
+      background: rgba(20,20,20,.055);
+      font-family: JetBrains Mono, monospace;
+      font-size: 14px;
+    }
+    .field {
+      display: grid;
+      grid-template-columns: minmax(148px, 190px) minmax(0, 1fr);
+      gap: 18px;
+      padding: 18px 0;
+      border-top: 1px solid rgba(20,20,20,.11);
+    }
+    .field h3 {
+      margin: 0;
+      font-size: 14px;
+      font-family: var(--label-font);
+      text-transform: uppercase;
+      letter-spacing: .075em;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    .field p {
+      margin: 0;
+      font-size: 19px;
+    }
+    .field.use p {
+      font-weight: 650;
+    }
+    .field.limits p {
+      color: #4c473e;
+    }
+    .tags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      padding: 4px 34px 28px 36px;
+    }
+    .tags span {
+      display: inline-flex;
+      border: 1px solid color-mix(in srgb, var(--accent), #000 12%);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 13px;
+      font-family: JetBrains Mono, monospace;
+      font-weight: 800;
+      background: color-mix(in srgb, var(--accent), transparent 92%);
+    }
+    footer {
+      padding: 60px 0 90px;
+      color: #4f493f;
+      font-family: JetBrains Mono, monospace;
+      font-size: 14px;
+    }
+    .print-note {
+      border-top: 1px solid var(--line);
+      padding-top: 24px;
+    }
+    @media (max-width: 860px) {
+      body { font-size: 16px; }
+      .intro-grid, body.lang-both .signal-card {
+        grid-template-columns: 1fr;
+      }
+      body.lang-both .lang-panel.en {
+        border-right: 0;
+        border-bottom: 1px solid rgba(20,20,20,.12);
+      }
+      .field {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+      .rubric-list {
+        grid-template-columns: 1fr;
+      }
+      .toolbar-inner {
+        padding: 12px 0;
+      }
+      .brand-lockup img { width:56px; height:56px; border-radius:14px; }
+    }
+    @media print {
+      body {
+        background: #fff;
+        color: #000;
+        font-size: 12pt;
+      }
+      body::before, .toolbar, .hero-card::after {
+        display: none !important;
+      }
+      header.hero { min-height: auto; padding: 24px 0; }
+      .hero-card, .signal-card, .brief-card, .rubric-map {
+        box-shadow: none;
+        break-inside: avoid;
+        background: #fff;
+      }
+      .signal-card { margin-bottom: 18px; }
+      a { text-decoration: none; }
+    }
+  
+  
+.trust-links {
+  display: flex;
+  gap: 10px 16px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 18px auto 0;
+  text-align: center;
+  font-family: var(--label-font, Arimo, Arial, Helvetica, sans-serif);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.trust-links a {
+  color: inherit;
+  text-decoration: none;
+}
+.trust-links a:hover {
+  text-decoration: underline;
+  text-underline-offset: .22em;
+}
+footer .trust-links {
+  justify-content: center;
+}
+footer .footer-inner {
+  justify-content: center;
+  text-align: center;
+}
+
+
+/* OSS v1.1.5b trust layout */
+.home-trust-strip {
+  display: flex;
+  gap: 10px 14px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: min(760px, 100%);
+  margin: 22px auto 0;
+  padding: 11px 14px;
+  border: 1px solid var(--line, rgba(20,20,20,.16));
+  border-radius: 999px;
+  background: rgba(255,249,234,.62);
+  color: var(--muted, #6d665a);
+  font-family: var(--label-font, JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.home-trust-strip span {
+  color: var(--muted, #6d665a);
+}
+.home-trust-strip a {
+  color: inherit;
+  text-decoration: none;
+}
+.home-trust-strip a:hover {
+  text-decoration: underline;
+  text-underline-offset: .22em;
+}
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+}
+.footer-brand {
+  display: grid;
+  gap: 4px;
+  justify-items: center;
+  max-width: 760px;
+}
+.footer-brand strong {
+  font-weight: 850;
+}
+.footer-brand span {
+  color: var(--muted, #6d665a);
+}
+footer .trust-links {
+  display: flex;
+  gap: 10px 16px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: min(820px, 100%);
+  margin: 0 auto;
+}
+footer .trust-links a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 800;
+}
+footer .trust-links a:hover {
+  text-decoration: underline;
+  text-underline-offset: .22em;
+}
+/* /OSS v1.1.5b trust layout */
+</style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "headline": "Open Source Signal #002",
+  "alternativeHeadline": "Сигнал відкритих джерел",
+  "description": "Ukrainian accountability OSINT digest: War Crimes Verification: Large-scale strikes revive the need for double-tap evidence discipline; Ukraine Lens: EU sanctions create a public accountability index for abducted Ukrainian children; Losses, Captivity & Missing: Russian casualty work depends on separating named records from estimates.",
+  "datePublished": "2026-05-15",
+  "dateModified": "2026-05-15",
+  "url": "https://osintsignal.org/issues/open-source-signal-2026-05-15.html",
+  "image": [
+    "https://osintsignal.org/static/og-image.png"
+  ],
+  "inLanguage": [
+    "en",
+    "uk"
+  ],
+  "isAccessibleForFree": true,
+  "author": {
+    "@type": "Organization",
+    "name": "Open Source Signal",
+    "url": "https://osintsignal.org"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Open Source Signal",
+    "url": "https://osintsignal.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://osintsignal.org/static/logo-mark-512.png"
+    }
+  },
+  "keywords": [
+    "accountability",
+    "ai-verification",
+    "casualty-osint",
+    "children",
+    "data-governance",
+    "datasets",
+    "double-tap",
+    "emergency-responders",
+    "hybrid-investigations",
+    "informnapalm",
+    "infrastructure",
+    "internet-disruption",
+    "kazuar",
+    "losses",
+    "malware",
+    "measurement",
+    "methodology",
+    "opsec",
+    "outage-analysis",
+    "palantir",
+    "russia",
+    "sanctions",
+    "threat-intelligence",
+    "ukraine",
+    "ukraine-lens",
+    "ukrainian-osint",
+    "verification",
+    "volunteer-intelligence",
+    "war-crimes"
+  ]
+}
+  </script>
+  <script data-goatcounter="https://deisign.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body class="lang-both">
+  <header class="hero">
+    <div class="wrap">
+      <div class="hero-card">
+        <div class="brand-lockup"><img src="../static/logo-mark.png" alt="Open Source Signal logo"><div class="brand-copy"><strong>Open Source Signal</strong><span>Сигнал відкритих джерел</span></div></div>
+        <div class="kicker">
+          <span class="pill">Issue #002</span>
+          <span class="pill">15 May 2026</span>
+          <span class="pill">Daily Signal</span>
+          <span class="pill">EN + UKR</span>
+        </div>
+        <h1>Open Source Signal</h1>
+        <p class="ua-masthead">Сигнал відкритих джерел</p>
+        <p class="subtitle">Bilingual OSINT radar for Ukrainian accountability work, verification, war-crimes documentation, losses/captivity/missing-persons research, maps, platforms, surveillance and researcher safety.</p>
+        <p class="dek">Daily issue #002: Large-scale strikes revive the need for double-tap evidence discipline; EU sanctions create a public accountability index for abducted Ukrainian children; Russian casualty work depends on separating named records from estimates; Ukraine’s battlefield AI expansion raises verification and governance questions.</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="toolbar" aria-label="Issue controls">
+    <div class="wrap toolbar-inner">
+      <div class="brand-mini"><img src="../static/logo-mark.png" alt="Open Source Signal logo">OSS #002</div>
+      <div class="language-toggle" aria-label="Language view">
+        <button data-lang="both" class="active" type="button">EN + UKR</button>
+        <button data-lang="en" type="button">English</button>
+        <button data-lang="uk" type="button">Українська</button>
+      </div>
+      <div class="toolbar-links">
+        <a href="../feed.xml">RSS</a>
+        <a href="https://t.me/open_source_signal_ua">Telegram</a>
+        <a href="../archive.html">Archive</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <section class="intro-grid">
+      <div class="brief-card">
+        <h2>Editorial frame</h2>
+        <p><strong>What this is:</strong> Not a list of tools, but a daily editorial filter for public-interest OSINT. Each item explains what happened, why it matters, how a reader can use the insight, and where the method or evidence has limits.</p>
+        <p><strong>What this is not:</strong> Doxxing, live targeting, stolen-data workflows, marketplace guides or 'find anyone by phone number' tricks.</p>
+      </div>
+      <div class="rubric-map">
+        <h2>Rubric map</h2>
+        <div class="rubric-list">
+<div class="rubric-chip">⚖️ War Crimes Verification</div><div class="rubric-chip">🇺🇦 Ukraine Lens</div><div class="rubric-chip">🕯️ Losses, Captivity & Missing</div><div class="rubric-chip">🤖 AI Verification</div><div class="rubric-chip">🌐 Infrastructure Signals</div><div class="rubric-chip">🛡️ Investigator OPSEC</div><div class="rubric-chip">🇺🇦 Ukraine Lens</div>        </div>
+      </div>
+    </section>
+
+    <section class="issue-section">
+      <div class="signals">
+        <article class="signal-card theme-war-crimes" id="item-1">
+          <div class="card-topline">
+            <div class="rubric"><span class="emoji">⚖️</span><span class="en">War Crimes Verification</span><span class="uk">Верифікація воєнних злочинів</span></div>
+            <div class="issue-index">#01</div>
+          </div>
+
+          <section class="lang-panel en">
+            <h2>Large-scale strikes revive the need for double-tap evidence discipline</h2>
+            <p class="source-line"><strong>Source:</strong> <a href="https://www.theguardian.com/world/2026/may/14/ukraine-second-day-large-scale-russian-missile-drone-strikes" target="_blank" rel="noopener noreferrer">The Guardian</a> · 15 May 2026</p>
+            <div class="field"><h3>What happened</h3><p>Ukraine faced a second consecutive day of large-scale Russian missile and drone attacks, with Kyiv suffering heavy damage and civilian casualties. The Guardian reported that Ukrainian officials described some strikes as “double-tap” style attacks aimed at emergency responders after an initial impact.</p></div>
+            <div class="field"><h3>Why it matters</h3><p>For war-crimes verification, the key question is not only where a missile or drone hit, but the sequence of events around the strike. A double-tap allegation requires a timeline of the first impact, arrival of responders, second impact, damage to rescue capacity, and available public messaging around the attack.</p></div>
+            <div class="field use"><h3>How to use it</h3><p>Treat such cases as timeline investigations. Preserve air-alert times, first social media reports, official updates, footage timestamps, geolocation, emergency-service statements, damage imagery and later casualty revisions as separate evidence layers.</p></div>
+            <div class="field limits"><h3>Limits</h3><p>Do not infer intent from timing alone. Double-tap analysis needs corroboration through timestamps, geolocation, multiple sources, munition pattern, witness accounts and official or investigative follow-up.</p></div>
+          </section>
+
+          <section class="lang-panel uk">
+            <h2>Масовані удари знову показують потребу в дисципліні доказування “double-tap”</h2>
+            <p class="source-line"><strong>Джерело:</strong> <a href="https://www.theguardian.com/world/2026/may/14/ukraine-second-day-large-scale-russian-missile-drone-strikes" target="_blank" rel="noopener noreferrer">The Guardian</a> · 15 травня 2026</p>
+            <div class="field"><h3>Що сталося</h3><p>Україна пережила другу поспіль добу масштабних російських ракетно-дронових атак, а Київ зазнав значних руйнувань і цивільних втрат. The Guardian повідомив, що українські посадовці описували частину ударів як атаки в стилі “double-tap”, коли повторний удар може припадати на момент прибуття рятувальників після першого влучання.</p></div>
+            <div class="field"><h3>Чому це важливо</h3><p>Для верифікації воєнних злочинів важлива не лише точка влучання ракети чи дрона, а вся послідовність подій навколо атаки. Твердження про “double-tap” потребує таймлайну першого удару, прибуття служб, другого удару, пошкодження спроможності реагування та публічної комунікації довкола події.</p></div>
+            <div class="field use"><h3>Як це застосувати</h3><p>Такі кейси варто розбирати як таймлайн-розслідування. Окремо зберігати час повітряних тривог, перші повідомлення в соцмережах, офіційні оновлення, відео з часовими мітками, геолокацію, заяви служб, зображення руйнувань і подальші уточнення щодо постраждалих.</p></div>
+            <div class="field limits"><h3>Обмеження</h3><p>Намір не можна виводити лише з часової близькості. Аналіз “double-tap” потребує підтвердження через таймстемпи, геолокацію, кілька джерел, характер боєприпасу, свідчення та подальші офіційні або розслідувальні матеріали.</p></div>
+          </section>
+
+          <div class="tags"><span>war-crimes</span><span>double-tap</span><span>emergency-responders</span><span>verification</span></div>
+        </article>
+        <article class="signal-card theme-ukraine" id="item-2">
+          <div class="card-topline">
+            <div class="rubric"><span class="emoji">🇺🇦</span><span class="en">Ukraine Lens</span><span class="uk">Українська оптика</span></div>
+            <div class="issue-index">#02</div>
+          </div>
+
+          <section class="lang-panel en">
+            <h2>EU sanctions create a public accountability index for abducted Ukrainian children</h2>
+            <p class="source-line"><strong>Source:</strong> <a href="https://www.reuters.com/world/eu-imposes-sanctions-russia-individuals-entities-russia-over-ukrainian-children-2026-05-11/" target="_blank" rel="noopener noreferrer">Reuters</a> · 15 May 2026</p>
+            <div class="field"><h3>What happened</h3><p>The European Union sanctioned 16 individuals and seven Russian entities connected to the unlawful deportation, forced transfer, indoctrination and assimilation of Ukrainian children. Reuters reported that the measures target officials, institutions and organizations involved in Russian youth and education programs tied to the removal of children from Ukraine.</p></div>
+            <div class="field"><h3>Why it matters</h3><p>The sanctions turn documentation of child deportations into a structured public accountability list. For OSINT readers, the listed individuals and entities become starting points for mapping institutions, camps, officials, media appearances, youth programs and occupation-linked networks.</p></div>
+            <div class="field use"><h3>How to use it</h3><p>Use the sanctions list as an index for further verification. Cross-check names and organizations against Russian registries, official websites, regional media, archived pages, Telegram posts, camp materials and previous Ukrainian or international investigations.</p></div>
+            <div class="field limits"><h3>Limits</h3><p>Sanctions are not criminal convictions. Materials involving children require strict minimization: do not expose names, family details, addresses, school data or other personal information unless it is already lawfully public and necessary for accountability.</p></div>
+          </section>
+
+          <section class="lang-panel uk">
+            <h2>Санкції ЄС створюють публічний індекс відповідальності за викрадення українських дітей</h2>
+            <p class="source-line"><strong>Джерело:</strong> <a href="https://www.reuters.com/world/eu-imposes-sanctions-russia-individuals-entities-russia-over-ukrainian-children-2026-05-11/" target="_blank" rel="noopener noreferrer">Reuters</a> · 15 травня 2026</p>
+            <div class="field"><h3>Що сталося</h3><p>Європейський Союз запровадив санкції проти 16 фізичних осіб і семи російських структур, пов’язаних із незаконною депортацією, примусовим переміщенням, індоктринацією та асиміляцією українських дітей. Reuters повідомив, що під обмеження потрапили чиновники, установи й організації, пов’язані з російськими молодіжними та освітніми програмами, дотичними до вивезення дітей з України.</p></div>
+            <div class="field"><h3>Чому це важливо</h3><p>Санкції перетворюють документування депортації дітей на структурований публічний список відповідальності. Для OSINT-аудиторії імена та організації зі списку стають точками входу для картографування інституцій, таборів, чиновників, медійних появ, молодіжних програм і окупаційних мереж.</p></div>
+            <div class="field use"><h3>Як це застосувати</h3><p>Санкційний список варто використовувати як індекс для подальшої перевірки. Імена та організації потрібно звіряти з російськими реєстрами, офіційними сайтами, регіональними медіа, архівними копіями сторінок, Telegram-дописами, матеріалами таборів і попередніми українськими чи міжнародними розслідуваннями.</p></div>
+            <div class="field limits"><h3>Обмеження</h3><p>Санкції не є кримінальним вироком. У матеріалах про дітей потрібна максимальна мінімізація даних: не публікувати імена, родинні деталі, адреси, шкільну інформацію чи інші персональні дані, якщо це не є законно публічним і необхідним для accountability.</p></div>
+          </section>
+
+          <div class="tags"><span>ukraine-lens</span><span>children</span><span>sanctions</span><span>accountability</span></div>
+        </article>
+        <article class="signal-card theme-losses" id="item-3">
+          <div class="card-topline">
+            <div class="rubric"><span class="emoji">🕯️</span><span class="en">Losses, Captivity & Missing</span><span class="uk">Втрати, полон, зниклі</span></div>
+            <div class="issue-index">#03</div>
+          </div>
+
+          <section class="lang-panel en">
+            <h2>Russian casualty work depends on separating named records from estimates</h2>
+            <p class="source-line"><strong>Source:</strong> <a href="https://200.zona.media/" target="_blank" rel="noopener noreferrer">Russia 200 / Mediazona and BBC Russian</a> · 15 May 2026</p>
+            <div class="field"><h3>What happened</h3><p>The Russia 200 project continues to maintain a named database of confirmed Russian military deaths in Ukraine. Public summaries of the project in May 2026 reported more than 217,000 confirmed names, while separate statistical estimates placed the real number of Russian deaths substantially higher.</p></div>
+            <div class="field"><h3>Why it matters</h3><p>This is a core methodology issue for casualty OSINT. Named records, official lists, relatives’ posts, cemetery evidence, registry-derived estimates and statistical models all answer different questions and should not be merged into one undifferentiated number.</p></div>
+            <div class="field use"><h3>How to use it</h3><p>When reading or citing casualty data, separate categories clearly: confirmed by open sources, listed in a named database, reported by relatives, official claim and statistically estimated. This distinction is essential for regional maps, mobilization analysis and public communication.</p></div>
+            <div class="field limits"><h3>Limits</h3><p>Named databases are conservative floors, not total loss counts. Statistical estimates depend on assumptions and input data. Do not use casualty records to target relatives, expose private data or infer individual guilt.</p></div>
+          </section>
+
+          <section class="lang-panel uk">
+            <h2>Дані про російські втрати потребують розділення іменних записів та оцінок</h2>
+            <p class="source-line"><strong>Джерело:</strong> <a href="https://200.zona.media/" target="_blank" rel="noopener noreferrer">Russia 200 / Mediazona and BBC Russian</a> · 15 травня 2026</p>
+            <div class="field"><h3>Що сталося</h3><p>Проєкт Russia 200 продовжує вести поіменну базу підтверджених загиблих російських військових в Україні. Публічні зведення проєкту в травні 2026 року повідомляли про понад 217 тисяч підтверджених імен, тоді як окремі статистичні оцінки давали значно вищий реальний рівень російських втрат.</p></div>
+            <div class="field"><h3>Чому це важливо</h3><p>Це базове методологічне питання для OSINT по втратах. Поіменні записи, офіційні списки, повідомлення родичів, цвинтарні дані, реєстрові оцінки та статистичні моделі відповідають на різні питання й не мають зливатися в одне нерозрізнене число.</p></div>
+            <div class="field use"><h3>Як це застосувати</h3><p>Під час читання або цитування даних про втрати потрібно чітко розділяти категорії: підтверджено відкритими джерелами, внесено до поіменної бази, повідомлено родичами, заявлено офіційно, статистично оцінено. Це критично для регіональних карт, аналізу мобілізації та публічної комунікації.</p></div>
+            <div class="field limits"><h3>Обмеження</h3><p>Поіменні бази є нижньою межею, а не повною кількістю втрат. Статистичні оцінки залежать від припущень і вхідних даних. Не можна використовувати записи про загиблих для тиску на родичів, публікації приватних даних або висновків про індивідуальну провину.</p></div>
+          </section>
+
+          <div class="tags"><span>losses</span><span>casualty-osint</span><span>russia</span><span>methodology</span><span>datasets</span></div>
+        </article>
+        <article class="signal-card theme-ai" id="item-4">
+          <div class="card-topline">
+            <div class="rubric"><span class="emoji">🤖</span><span class="en">AI Verification</span><span class="uk">ШІ та верифікація</span></div>
+            <div class="issue-index">#04</div>
+          </div>
+
+          <section class="lang-panel en">
+            <h2>Ukraine’s battlefield AI expansion raises verification and governance questions</h2>
+            <p class="source-line"><strong>Source:</strong> <a href="https://www.reuters.com/world/europe/zelenskiy-meets-palantir-ceo-ukraine-expands-use-ai-war-2026-05-12/" target="_blank" rel="noopener noreferrer">Reuters</a> · 15 May 2026</p>
+            <div class="field"><h3>What happened</h3><p>Reuters reported that President Volodymyr Zelenskiy met Palantir CEO Alex Karp as Ukraine expands military uses of artificial intelligence. The article describes Brave1 Dataroom, AI models for aerial-threat detection, and systems for analyzing strikes and managing intelligence data.</p></div>
+            <div class="field"><h3>Why it matters</h3><p>For OSINT readers, the important signal is not only battlefield efficiency, but the governance of war data. AI-assisted detection, intelligence management and strike analysis create questions about auditability, error, evidentiary use, civilian harm and sovereignty over sensitive datasets.</p></div>
+            <div class="field use"><h3>How to use it</h3><p>Use this as a lens for tracking AI in war as an infrastructure and verification problem. Readers should look for what data is collected, who controls it, whether outputs are auditable, and how human review is preserved.</p></div>
+            <div class="field limits"><h3>Limits</h3><p>Do not turn public reporting into operational speculation about targeting workflows. AI-assisted military systems should be discussed at the level of policy, verification, governance and accountability unless specific technical details are lawfully public and safe to cite.</p></div>
+          </section>
+
+          <section class="lang-panel uk">
+            <h2>Українські бойові ШІ-системи ставлять питання верифікації та контролю</h2>
+            <p class="source-line"><strong>Джерело:</strong> <a href="https://www.reuters.com/world/europe/zelenskiy-meets-palantir-ceo-ukraine-expands-use-ai-war-2026-05-12/" target="_blank" rel="noopener noreferrer">Reuters</a> · 15 травня 2026</p>
+            <div class="field"><h3>Що сталося</h3><p>Reuters повідомив, що президент Володимир Зеленський зустрівся з CEO Palantir Алексом Карпом на тлі розширення українського використання штучного інтелекту у війні. У матеріалі згадуються Brave1 Dataroom, моделі для виявлення повітряних загроз, а також системи аналізу ударів і управління розвідувальними даними.</p></div>
+            <div class="field"><h3>Чому це важливо</h3><p>Для OSINT-аудиторії головний сигнал не лише в ефективності на полі бою, а в управлінні воєнними даними. ШІ-допомога у виявленні, intelligence management і аналізі ударів створює питання аудиту, помилок, доказового використання, ризику для цивільних і контролю над чутливими датасетами.</p></div>
+            <div class="field use"><h3>Як це застосувати</h3><p>Це варто читати як тему про ШІ у війні на перетині інфраструктури та верифікації. Читачам важливо дивитися, які дані збираються, хто ними керує, чи можна перевірити висновки системи та як зберігається людський контроль.</p></div>
+            <div class="field limits"><h3>Обмеження</h3><p>Не слід перетворювати публічну новину на припущення про конкретні targeting workflows. Військові ШІ-системи варто обговорювати на рівні політики, верифікації, governance та accountability, якщо операційні деталі не є законно публічними й безпечними для цитування.</p></div>
+          </section>
+
+          <div class="tags"><span>ai-verification</span><span>ukraine</span><span>palantir</span><span>data-governance</span></div>
+        </article>
+        <article class="signal-card theme-infrastructure" id="item-5">
+          <div class="card-topline">
+            <div class="rubric"><span class="emoji">🌐</span><span class="en">Infrastructure Signals</span><span class="uk">Інфраструктурні сигнали</span></div>
+            <div class="issue-index">#05</div>
+          </div>
+
+          <section class="lang-panel en">
+            <h2>Internet-disruption research shows why BGP alone can miss shutdowns</h2>
+            <p class="source-line"><strong>Source:</strong> <a href="https://arxiv.org/abs/2605.00187" target="_blank" rel="noopener noreferrer">arXiv</a> · 15 May 2026</p>
+            <div class="field"><h3>What happened</h3><p>A recent paper on Iran’s 2026 internet shutdowns uses passive Censys data, active TCP reachability probing and BGP analysis to show that shutdowns can be enforced through forwarding-plane null-routing while BGP announcements remain stable. The authors report that this control-plane and forwarding-plane decoupling can prevent BGP-only outage monitors from detecting shutdowns.</p></div>
+            <div class="field"><h3>Why it matters</h3><p>The lesson is useful beyond Iran. OSINT researchers who monitor internet disruptions around conflict, protests or attacks need to understand that routing visibility, active reachability and user-level access can tell different stories.</p></div>
+            <div class="field use"><h3>How to use it</h3><p>Use multi-plane methods when reading outage data: compare BGP, active probes, passive scans, user reports, CDN telemetry and local context. For Ukraine-related infrastructure work, the same logic applies when comparing connectivity drops, kinetic strikes and service degradation.</p></div>
+            <div class="field limits"><h3>Limits</h3><p>This is a technical study of Iran, not evidence about Ukraine. Do not transfer findings mechanically; use the methodology, not the country-specific conclusions, when analyzing other disruption environments.</p></div>
+          </section>
+
+          <section class="lang-panel uk">
+            <h2>Дослідження інтернет-відключень показує, чому одного BGP може бути замало</h2>
+            <p class="source-line"><strong>Джерело:</strong> <a href="https://arxiv.org/abs/2605.00187" target="_blank" rel="noopener noreferrer">arXiv</a> · 15 травня 2026</p>
+            <div class="field"><h3>Що сталося</h3><p>Нове дослідження інтернет-відключень в Ірані у 2026 році поєднує пасивні дані Censys, активні TCP-перевірки доступності та BGP-аналіз. Автори показують, що відключення може здійснюватися через null-routing на forwarding plane, тоді як BGP-анонси залишаються стабільними; через це монітори, які дивляться лише на BGP, можуть не бачити реального shutdown.</p></div>
+            <div class="field"><h3>Чому це важливо</h3><p>Урок важливий не лише для Ірану. OSINT-дослідники, які стежать за інтернет-збоями під час війни, протестів чи атак, мають розуміти, що маршрутизація, активна доступність і користувацький доступ можуть показувати різні рівні реальності.</p></div>
+            <div class="field use"><h3>Як це застосувати</h3><p>Для аналізу збоїв варто поєднувати кілька площин вимірювання: BGP, активні probes, пасивні скани, повідомлення користувачів, CDN-телеметрію та локальний контекст. Для української інфраструктурної тематики той самий підхід корисний при зіставленні падіння зв’язку, фізичних ударів і деградації сервісів.</p></div>
+            <div class="field limits"><h3>Обмеження</h3><p>Це технічне дослідження про Іран, а не доказ щодо України. Його не можна механічно переносити на інші країни; варто використовувати методологію, а не країноспецифічні висновки.</p></div>
+          </section>
+
+          <div class="tags"><span>internet-disruption</span><span>infrastructure</span><span>measurement</span><span>outage-analysis</span></div>
+        </article>
+        <article class="signal-card theme-opsec" id="item-6">
+          <div class="card-topline">
+            <div class="rubric"><span class="emoji">🛡️</span><span class="en">Investigator OPSEC</span><span class="uk">Безпека дослідника</span></div>
+            <div class="issue-index">#06</div>
+          </div>
+
+          <section class="lang-panel en">
+            <h2>Kazuar analysis is a reminder that investigators are also part of the threat surface</h2>
+            <p class="source-line"><strong>Source:</strong> <a href="https://www.microsoft.com/en-us/security/blog/2026/05/14/kazuar-anatomy-of-a-nation-state-botnet/" target="_blank" rel="noopener noreferrer">Microsoft Threat Intelligence</a> · 15 May 2026</p>
+            <div class="field"><h3>What happened</h3><p>Microsoft Threat Intelligence published a technical analysis of Kazuar, describing it as a nation-state botnet. The report is defensive threat intelligence, but it is relevant to investigators because state-linked infrastructure often intersects with civil society, media, government and war-related targets.</p></div>
+            <div class="field"><h3>Why it matters</h3><p>OSINT researchers working on Russia, Ukraine, sanctions evasion, war crimes or occupation networks are often adjacent to the same threat environment as journalists and NGOs. Poor endpoint hygiene, shared accounts or weak device separation can turn research work into a security exposure.</p></div>
+            <div class="field use"><h3>How to use it</h3><p>Treat the report as an OPSEC prompt. Review account separation, password managers, MFA, device capture risk, browser profiles, logging, backups and incident-response routines before handling sensitive leads or collaborating with exposed partners.</p></div>
+            <div class="field limits"><h3>Limits</h3><p>Malware analysis is not public attribution proof for a specific investigation unless corroborated by multiple technical and contextual sources. Do not convert defensive indicators into offensive scanning or vigilante targeting workflows.</p></div>
+          </section>
+
+          <section class="lang-panel uk">
+            <h2>Аналіз Kazuar нагадує, що розслідувачі теж є частиною поверхні атаки</h2>
+            <p class="source-line"><strong>Джерело:</strong> <a href="https://www.microsoft.com/en-us/security/blog/2026/05/14/kazuar-anatomy-of-a-nation-state-botnet/" target="_blank" rel="noopener noreferrer">Microsoft Threat Intelligence</a> · 15 травня 2026</p>
+            <div class="field"><h3>Що сталося</h3><p>Microsoft Threat Intelligence опублікувала технічний розбір Kazuar, описуючи його як ботнет державного рівня. Це defensive threat intelligence, але для розслідувачів матеріал важливий, бо державна кіберінфраструктура часто перетинається з цілями проти громадянського суспільства, медіа, державних структур і воєнних тем.</p></div>
+            <div class="field"><h3>Чому це важливо</h3><p>OSINT-дослідники, які працюють по Росії, Україні, санкційних схемах, воєнних злочинах чи окупаційних мережах, перебувають у тому самому ризиковому полі, що й журналісти та NGO. Слабка гігієна пристроїв, спільні акаунти або погане розділення середовищ можуть перетворити дослідницьку роботу на security exposure.</p></div>
+            <div class="field use"><h3>Як це застосувати</h3><p>Матеріал варто використати як привід для OPSEC-перевірки. Переглянути розділення акаунтів, менеджер паролів, MFA, ризик вилучення пристроїв, браузерні профілі, журнали подій, резервні копії та план реагування перед роботою з чутливими лідами або взаємодією з уразливими партнерами.</p></div>
+            <div class="field limits"><h3>Обмеження</h3><p>Аналіз malware сам по собі не є достатнім доказом атрибуції для конкретного публічного розслідування без додаткових технічних і контекстних підтверджень. Індикатори захисту не слід перетворювати на інструкції для самодіяльного сканування чи атак.</p></div>
+          </section>
+
+          <div class="tags"><span>opsec</span><span>malware</span><span>threat-intelligence</span><span>kazuar</span></div>
+        </article>
+        <article class="signal-card theme-ukraine" id="item-7">
+          <div class="card-topline">
+            <div class="rubric"><span class="emoji">🇺🇦</span><span class="en">Ukraine Lens</span><span class="uk">Українська оптика</span></div>
+            <div class="issue-index">#07</div>
+          </div>
+
+          <section class="lang-panel en">
+            <h2>InformNapalm’s anniversary shows Ukrainian OSINT as a long institutional tradition</h2>
+            <p class="source-line"><strong>Source:</strong> <a href="https://informnapalm.org/en/walking-the-path-of-fire-twelve-years-of-informnapalms-work/" target="_blank" rel="noopener noreferrer">InformNapalm</a> · 15 May 2026</p>
+            <div class="field"><h3>What happened</h3><p>InformNapalm published a retrospective on twelve years of volunteer intelligence work. The piece describes the evolution of Ukrainian OSINT and hybrid investigations that combine HUMINT, OSINT and CYBINT, including references to materials connected to the “Polyus-24” project and Russian military unit 33949.</p></div>
+            <div class="field"><h3>Why it matters</h3><p>For international readers, this places Ukrainian volunteer intelligence in a longer institutional history, not as a sudden 2022 phenomenon. It shows how Ukrainian OSINT communities moved from identifying military presence and equipment to complex investigations involving documents, cyber-derived materials and military-industrial networks.</p></div>
+            <div class="field use"><h3>How to use it</h3><p>Use the retrospective as a map of Ukrainian OSINT traditions and as a pointer to older case files worth revisiting. It helps explain why Ukrainian volunteer groups often combine battlefield verification, sanctions research, unit identification, propaganda analysis and cyber-adjacent evidence.</p></div>
+            <div class="field limits"><h3>Limits</h3><p>An anniversary retrospective is not an independent audit and should not be treated as external validation of every cited operation. Materials involving hacked or leaked data require extra legal, ethical and evidentiary caution before reuse.</p></div>
+          </section>
+
+          <section class="lang-panel uk">
+            <h2>Річниця InformNapalm показує український OSINT як довгу інституційну традицію</h2>
+            <p class="source-line"><strong>Джерело:</strong> <a href="https://informnapalm.org/en/walking-the-path-of-fire-twelve-years-of-informnapalms-work/" target="_blank" rel="noopener noreferrer">InformNapalm</a> · 15 травня 2026</p>
+            <div class="field"><h3>Що сталося</h3><p>InformNapalm опублікував ретроспективу дванадцяти років своєї волонтерської розвідувальної роботи. У тексті описано еволюцію українського OSINT і гібридних розслідувань, де поєднуються HUMINT, OSINT і CYBINT, зокрема згадано матеріали щодо проєкту “Полюс-24” і російської військової частини 33949.</p></div>
+            <div class="field"><h3>Чому це важливо</h3><p>Для міжнародної аудиторії це пояснює українську волонтерську розвідку як довгу інституційну традицію, а не явище, що раптово виникло після 2022 року. Матеріал показує, як українські OSINT-спільноти перейшли від фіксації військової присутності й техніки до складних розслідувань із документами, кіберматеріалами та військово-промисловими зв’язками.</p></div>
+            <div class="field use"><h3>Як це застосувати</h3><p>Ретроспективу можна читати як карту української OSINT-школи й покажчик до старих кейсів, які варто переглядати заново. Вона допомагає зрозуміти, чому українські волонтерські групи часто поєднують battlefield verification, санкційні дослідження, ідентифікацію підрозділів, аналіз пропаганди та кібердокази.</p></div>
+            <div class="field limits"><h3>Обмеження</h3><p>Ювілейна ретроспектива не є незалежним аудитом і не підтверджує автоматично кожну згадану операцію. Матеріали, пов’язані зі зламами або витоками, потребують окремої юридичної, етичної та доказової перевірки перед повторним використанням.</p></div>
+          </section>
+
+          <div class="tags"><span>ukrainian-osint</span><span>informnapalm</span><span>hybrid-investigations</span><span>volunteer-intelligence</span></div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <strong>Open Source Signal / Сигнал відкритих джерел.</strong>
+      <span>Ukrainian accountability OSINT journal.</span>
+    </div>
+    <nav class="trust-links" aria-label="Trust and discovery pages">
+      <a href="../about.html">About</a>
+      <a href="../methodology.html">Methodology</a>
+      <a href="../ethics.html">Ethics</a>
+      <a href="../subscribe.html">Subscribe</a>
+      <a href="../archive.html">Archive</a>
+      <a href="../feed.xml">RSS</a>
+      <a href="https://t.me/open_source_signal_ua">Telegram</a>
+    </nav>
+  </div>
+</footer>
+
+  <script>
+    const buttons = document.querySelectorAll("[data-lang]");
+    buttons.forEach(button => {
+      button.addEventListener("click", () => {
+        const lang = button.dataset.lang;
+        document.body.classList.remove("lang-both", "lang-en", "lang-uk");
+        document.body.classList.add("lang-" + lang);
+        buttons.forEach(b => b.classList.toggle("active", b === button));
+      });
+    });
+  </script>
+</body>
+</html>
