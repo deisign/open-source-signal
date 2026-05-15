@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ weekly["title_en"] }} — {{ config["site_title_en"] }}</title>
+  <meta name="description" content="{{ meta_description }}">
+  <link rel="canonical" href="{{ page_url }}">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{{ weekly["title_en"] }}">
+  <meta property="og:description" content="{{ meta_description }}">
+  <meta property="og:url" content="{{ page_url }}">
+  <meta property="og:image" content="{{ og_image_url }}">
+  <meta name="twitter:card" content="summary_large_image">
+  {{ analytics_snippet | safe }}
+  <link rel="icon" href="{{ asset_prefix }}static/logo-mark.png" type="image/png">
+  <link rel="shortcut icon" href="{{ asset_prefix }}static/favicon.ico">
+  <link rel="apple-touch-icon" href="{{ asset_prefix }}static/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@500;600;700&family=Fraunces:opsz,wght,SOFT,WONK@9..144,600..900,50..100,0..1&family=Inter:wght@400;500;650;800;900&family=JetBrains+Mono:wght@400;600;800&family=Source+Serif+4:opsz,wght@8..60,600..900&display=swap" rel="stylesheet">
+  <style>
+:root {
+  --display-latin: Fraunces, Georgia, serif;
+  --display-cyr: "Source Serif 4", Georgia, serif;
+  --label-font: Arimo, Arial, sans-serif;
+  --paper: #F2EDDD;
+  --paper-2: #FFF9EA;
+  --ink: #141414;
+  --muted: #6d665a;
+  --line: rgba(20,20,20,.16);
+  --signal: #D6422B;
+  --toolbox: #A64D79;
+  --tradecraft: #875C2D;
+  --ukraine: #2B67D6;
+  --war-crimes: #8A1C1C;
+  --losses: #7A6231;
+  --risk: #141414;
+  --shadow: 0 24px 70px rgba(20,20,20,.12);
+  --radius: 28px;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 10% 5%, rgba(214,66,43,.18), transparent 27rem),
+    radial-gradient(circle at 86% 14%, rgba(36,92,115,.18), transparent 24rem),
+    linear-gradient(135deg, #f7f0df, #ece1c6 58%, #d9cfb7);
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 18px;
+  line-height: 1.48;
+}
+a { color: inherit; }
+.wrap { width: min(1180px, calc(100% - 36px)); margin: 0 auto; }
+.hero { min-height: 76vh; display: grid; align-items: center; padding: 48px 0 64px; }
+.hero-card {
+  border: 1px solid var(--line);
+  background: rgba(255,249,234,.72);
+  backdrop-filter: blur(18px);
+  border-radius: 42px;
+  padding: clamp(26px, 5vw, 70px);
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+.hero-card::after {
+  content: "WEEKLY";
+  position: absolute;
+  right: -3vw;
+  bottom: -7vw;
+  font-family: JetBrains Mono, monospace;
+  font-size: clamp(80px, 15vw, 210px);
+  font-weight: 800;
+  letter-spacing: -.09em;
+  color: rgba(20,20,20,.045);
+  transform: rotate(-5deg);
+}
+.brand-lockup { display: flex; gap: 16px; align-items: center; position: relative; z-index: 1; }
+.brand-lockup img { width: 72px; height: 72px; border-radius: 18px; box-shadow: 0 10px 24px rgba(20,20,20,.12); }
+.brand-copy { display: flex; flex-direction: column; }
+.brand-copy strong { font-family: var(--label-font); font-size: 15px; letter-spacing: .08em; text-transform: uppercase; }
+.brand-copy span { font-family: var(--label-font); font-size: 18px; color: #3b362f; font-weight: 700; }
+.kicker {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: JetBrains Mono, monospace;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--muted);
+  position: relative;
+  z-index: 1;
+  margin-top: 34px;
+}
+.pill { border: 1px solid var(--line); padding: 7px 10px; border-radius: 999px; background: rgba(255,255,255,.35); }
+h1 {
+  position: relative;
+  z-index: 1;
+  margin: 24px 0 18px;
+  font-family: var(--display-latin);
+  font-size: clamp(56px, 11vw, 142px);
+  line-height: .86;
+  letter-spacing: -.07em;
+  max-width: 920px;
+}
+.ua-masthead {
+  position: relative;
+  z-index: 1;
+  margin: -8px 0 18px;
+  font-family: var(--display-cyr);
+  font-size: clamp(38px, 6.8vw, 88px);
+  line-height: .9;
+  letter-spacing: -.045em;
+  font-weight: 800;
+  max-width: 980px;
+  color: #2f2b25;
+}
+.subtitle {
+  position: relative;
+  z-index: 1;
+  max-width: 830px;
+  font-size: clamp(22px, 3vw, 36px);
+  line-height: 1.14;
+  font-weight: 650;
+  letter-spacing: -.03em;
+  margin: 0;
+}
+.dek { position: relative; z-index: 1; max-width: 820px; margin: 24px 0 0; color: #3d382f; font-size: 20px; }
+.toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  backdrop-filter: blur(16px);
+  background: rgba(242,237,221,.82);
+  border-bottom: 1px solid var(--line);
+}
+.toolbar-inner { min-height: 72px; display: flex; gap: 18px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+.brand-mini { display: flex; gap: 10px; align-items: center; font-family: var(--display-latin); font-weight: 900; font-size: 24px; letter-spacing: -.05em; text-decoration: none; }
+.brand-mini img { width: 34px; height: 34px; border-radius: 10px; }
+.language-toggle, .toolbar-links { display: flex; gap: 8px; flex-wrap: wrap; }
+button, .toolbar-links a, .trust-links a {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(20,20,20,.2);
+  background: rgba(255,255,255,.45);
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 10px 14px;
+  text-decoration: none;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+}
+button { cursor: pointer; }
+button.active, button:hover, .toolbar-links a:hover { background: var(--ink); color: var(--paper-2); }
+.intro-grid { padding: 58px 0 34px; display: grid; grid-template-columns: 1.05fr .95fr; gap: 26px; }
+.brief-card, .rubric-map, .weekly-note, .reading-list-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255,249,234,.65);
+  padding: 26px;
+  box-shadow: 0 12px 38px rgba(20,20,20,.06);
+}
+.brief-card h2, .rubric-map h2, .weekly-note h2, .reading-list-card h2 {
+  font-family: var(--display-latin);
+  font-size: 42px;
+  margin: 0 0 14px;
+  letter-spacing: -.045em;
+  line-height: .95;
+}
+.rubric-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 18px; }
+.rubric-chip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 10px 12px;
+  border-radius: 16px;
+  background: rgba(255,255,255,.46);
+  border: 1px solid rgba(20,20,20,.1);
+  font-family: var(--label-font);
+  font-weight: 800;
+  font-size: 15px;
+}
+.issue-section { padding: 18px 0 80px; }
+.signals { display: grid; gap: 28px; }
+.signal-card {
+  border-radius: 34px;
+  overflow: hidden;
+  border: 1px solid rgba(20,20,20,.18);
+  background: rgba(255,249,234,.78);
+  box-shadow: var(--shadow);
+  position: relative;
+}
+.signal-card::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 13px; background: var(--accent); }
+.theme-signal { --accent: var(--signal); }
+.theme-toolbox { --accent: var(--toolbox); }
+.theme-tradecraft { --accent: var(--tradecraft); }
+.theme-ukraine { --accent: var(--ukraine); }
+.theme-war-crimes { --accent: var(--war-crimes); }
+.theme-losses { --accent: var(--losses); }
+.theme-risk { --accent: var(--risk); }
+.card-topline {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: center;
+  padding: 22px 26px 0 36px;
+  font-family: JetBrains Mono, monospace;
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.rubric { display: inline-flex; align-items: center; gap: 9px; flex-wrap: wrap; font-family: var(--label-font); font-weight: 700; }
+.emoji { font-size: 24px; }
+.issue-index { font-size: 28px; color: rgba(20,20,20,.18); }
+.lang-panel { padding: 10px 34px 16px 36px; }
+body.lang-en .lang-panel.uk, body.lang-en .rubric .uk, body.lang-uk .lang-panel.en, body.lang-uk .rubric .en { display: none; }
+body.lang-both .weekly-split { display: grid; grid-template-columns: 1fr 1fr; }
+body.lang-both .weekly-split > .lang-panel.en { border-right: 1px solid rgba(20,20,20,.12); }
+body.lang-both .card-topline, body.lang-both .tags, body.lang-both .section-aside { grid-column: 1 / -1; }
+body.lang-both .rubric .uk::before { content: "/"; color: rgba(20,20,20,.36); margin-right: 8px; }
+h2 { font-family: var(--display-latin); font-size: clamp(36px, 5vw, 74px); line-height: .94; letter-spacing: -.06em; margin: 0 0 18px; }
+.lang-panel.uk h2 { font-family: var(--display-cyr); letter-spacing: -.04em; }
+.source-line { font-family: JetBrains Mono, monospace; color: var(--muted); font-size: 14px; margin: 0 0 22px; }
+.field { display: grid; grid-template-columns: 156px minmax(0, 1fr); gap: 18px; border-top: 1px solid rgba(20,20,20,.1); padding: 16px 0; }
+.field h3 { margin: 0; font-family: var(--label-font); text-transform: uppercase; letter-spacing: .08em; font-size: 13px; color: var(--accent); }
+.field p { margin: 0; color: #2f2b25; }
+.field.use { background: rgba(20,20,20,.035); margin-left: -18px; margin-right: -18px; padding-left: 18px; padding-right: 18px; border-radius: 18px; }
+.section-aside { border-top: 1px solid rgba(20,20,20,.1); margin: 0 34px 18px 36px; padding: 18px 0 2px; color: #3d382f; }
+.section-aside strong { color: var(--accent); font-family: var(--label-font); text-transform: uppercase; }
+.tags { display: flex; gap: 8px; flex-wrap: wrap; padding: 4px 34px 28px 36px; }
+.tags span { display: inline-flex; border: 1px solid var(--accent); color: var(--accent); border-radius: 999px; padding: 6px 10px; font-size: 13px; font-family: JetBrains Mono, monospace; font-weight: 800; }
+.weekly-note { margin-bottom: 28px; }
+.weekly-note p { max-width: 920px; font-family: var(--display-cyr); font-size: clamp(24px, 3vw, 40px); line-height: 1.18; margin: 0; color: #2f2b25; }
+.compact-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; margin-top: 28px; }
+.mini-card { min-height: 230px; border-radius: 28px; border: 1px solid rgba(20,20,20,.18); background: rgba(255,249,234,.72); padding: 22px; box-shadow: 0 12px 38px rgba(20,20,20,.06); position: relative; overflow: hidden; }
+.mini-card::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 10px; background: var(--accent); }
+.mini-card h2 { font-size: 38px; margin-top: 12px; }
+.mini-card ul, .reading-list-card ul { padding: 0; margin: 16px 0 0; list-style: none; display: grid; gap: 12px; }
+.mini-card li, .reading-list-card li { border-top: 1px solid rgba(20,20,20,.1); padding-top: 12px; color: #4f493f; }
+.reading-list-card { margin-top: 28px; }
+footer { padding: 60px 0 90px; color: #4f493f; font-family: JetBrains Mono, monospace; font-size: 14px; }
+.footer-inner { display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center; }
+.trust-links { display: flex; gap: 10px 16px; align-items: center; justify-content: center; flex-wrap: wrap; width: min(860px, 100%); margin: 0 auto; text-align: center; font-family: var(--label-font); font-size: 13px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
+@media (max-width: 860px) {
+  .intro-grid, body.lang-both .weekly-split, .compact-grid { grid-template-columns: 1fr; }
+  body.lang-both .weekly-split > .lang-panel.en { border-right: 0; border-bottom: 1px solid rgba(20,20,20,.12); }
+  .field { grid-template-columns: 1fr; gap: 8px; }
+}
+  </style>
+</head>
+<body class="lang-both">
+  <header class="hero">
+    <div class="wrap">
+      <div class="hero-card">
+        <div class="brand-lockup">
+          <img src="{{ asset_prefix }}static/logo-mark.png" alt="Open Source Signal logo">
+          <div class="brand-copy">
+            <strong>Open Source Signal</strong>
+            <span>Сигнал відкритих джерел</span>
+          </div>
+        </div>
+        <div class="kicker">
+          <span class="pill">Issue {{ weekly["issue_number"] }}</span>
+          <span class="pill">{{ weekly["week_label_en"] }}</span>
+          <span class="pill">Weekly Magazine</span>
+          <span class="pill">EN + UKR</span>
+        </div>
+        <h1>{{ weekly["title_en"] }}</h1>
+        <p class="ua-masthead">{{ weekly["title_uk"] }}</p>
+        <p class="subtitle">{{ weekly["subtitle_en"] }}</p>
+        <p class="dek">{{ weekly["dek_en"] }}</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="toolbar" aria-label="Issue controls">
+    <div class="wrap toolbar-inner">
+      <a class="brand-mini" href="../index.html">
+        <img src="{{ asset_prefix }}static/logo-mark.png" alt="Open Source Signal logo">
+        OSS {{ weekly["issue_number"] }}
+      </a>
+      <div class="language-toggle" aria-label="Language view">
+        <button data-lang="both" class="active" type="button">EN + UKR</button>
+        <button data-lang="en" type="button">English</button>
+        <button data-lang="uk" type="button">Українська</button>
+      </div>
+      <div class="toolbar-links">
+        <a href="../index.html">Daily Signal</a>
+        <a href="../feed.xml">RSS</a>
+        <a href="{{ config["telegram_url"] }}">Telegram</a>
+        <a href="../archive.html">Archive</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <section class="intro-grid">
+      <div class="brief-card">
+        <h2>Editorial frame</h2>
+        <p><strong>What this is:</strong> {{ weekly["editorial_frame"]["what_this_is"] }}</p>
+        <p><strong>What this is not:</strong> {{ weekly["editorial_frame"]["what_this_is_not"] }}</p>
+      </div>
+      <div class="rubric-map">
+        <h2>Rubric map</h2>
+        <div class="rubric-list">
+          {% for rubric in weekly["rubric_map"] %}
+          <div class="rubric-chip">{{ rubric }}</div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <section class="weekly-note">
+      <h2>Editorial note</h2>
+      <p>{{ weekly["editorial_note_en"] }}</p>
+    </section>
+
+    <section class="issue-section">
+      <div class="signals">
+        {% for item in weekly["items"] %}
+        <article class="signal-card theme-{{ item["rubric_key"] }}">
+          <div class="card-topline">
+            <div class="rubric">
+              <span class="emoji">{{ item["emoji"] }}</span>
+              <span class="en">{{ item["rubric_en"] }}</span>
+              <span class="uk">{{ item["rubric_uk"] }}</span>
+            </div>
+            <div class="issue-index">#{{ "%02d"|format(loop.index) }}</div>
+          </div>
+          <div class="weekly-split">
+            <section class="lang-panel en">
+              <h2>{{ item["title_en"] }}</h2>
+              <p class="source-line">{{ item["source_line_en"] }}</p>
+              <div class="field"><h3>What happened</h3><p>{{ item["what_happened_en"] }}</p></div>
+              <div class="field"><h3>Why it matters</h3><p>{{ item["why_it_matters_en"] }}</p></div>
+              <div class="field use"><h3>How to use it</h3><p>{{ item["how_to_use_en"] }}</p></div>
+              <div class="field limits"><h3>Limits</h3><p>{{ item["limits_en"] }}</p></div>
+            </section>
+            <section class="lang-panel uk">
+              <h2>{{ item["title_uk"] }}</h2>
+              <p class="source-line">{{ item["source_line_uk"] }}</p>
+              <div class="field"><h3>Що сталося</h3><p>{{ item["what_happened_uk"] }}</p></div>
+              <div class="field"><h3>Чому це важливо</h3><p>{{ item["why_it_matters_uk"] }}</p></div>
+              <div class="field use"><h3>Як це застосувати</h3><p>{{ item["how_to_use_uk"] }}</p></div>
+              <div class="field limits"><h3>Обмеження</h3><p>{{ item["limits_uk"] }}</p></div>
+            </section>
+            <div class="section-aside"><strong>Editorial use:</strong> {{ item["editorial_use"] }}</div>
+            <div class="tags">{% for tag in item["tags"] %}<span>{{ tag }}</span>{% endfor %}</div>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+
+      <div class="compact-grid">
+        {% for section in weekly["compact_sections"] %}
+        <section class="mini-card theme-{{ section["rubric_key"] }}">
+          <div class="rubric"><span class="emoji">{{ section["emoji"] }}</span><span>{{ section["title"] }}</span></div>
+          <h2>{{ section["short_title"] }}</h2>
+          <ul>{% for point in section["points"] %}<li>{{ point }}</li>{% endfor %}</ul>
+        </section>
+        {% endfor %}
+      </div>
+
+      <section class="reading-list-card">
+        <h2>Reading List</h2>
+        <ul>{% for link in weekly["reading_list"] %}<li><a href="{{ link["href"] }}">{{ link["title"] }}</a> — {{ link["note"] }}</li>{% endfor %}</ul>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <div><strong>Open Source Signal / Сигнал відкритих джерел.</strong><br><span>Ukrainian accountability OSINT journal.</span></div>
+      <nav class="trust-links" aria-label="Trust and discovery pages">
+        {% for link in trust_nav_links %}<a href="../{{ link.href }}">{{ link.label }}</a>{% endfor %}
+        <a href="{{ config["telegram_url"] }}">Telegram</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+const buttons = document.querySelectorAll("[data-lang]");
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const lang = button.dataset.lang;
+    document.body.classList.remove("lang-both", "lang-en", "lang-uk");
+    document.body.classList.add("lang-" + lang);
+    buttons.forEach((b) => b.classList.toggle("active", b === button));
+  });
+});
+  </script>
+</body>
+</html>

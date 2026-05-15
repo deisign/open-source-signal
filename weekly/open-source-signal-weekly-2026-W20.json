@@ -1,0 +1,162 @@
+{
+  "issue_number": "W20",
+  "slug": "open-source-signal-weekly-2026-W20",
+  "output_name": "open-source-signal-weekly-2026-W20.html",
+  "date_iso": "2026-05-17",
+  "week_label_en": "11–17 May 2026",
+  "week_label_uk": "11–17 травня 2026",
+  "title_en": "Open Source Signal Weekly",
+  "title_uk": "Тижневий сигнал відкритих джерел",
+  "subtitle_en": "Sunday editorial synthesis for Ukrainian accountability OSINT.",
+  "subtitle_uk": "Недільний редакційний синтез для української accountability-оптики.",
+  "dek_en": "A curated weekly issue on war-crimes verification, Ukrainian OSINT traditions, losses, captivity, missing-persons research, tools, datasets, tradecraft and source-risk limits.",
+  "dek_uk": "Кураторський тижневий випуск про верифікацію воєнних злочинів, українську OSINT-традицію, втрати, полон, зниклих, інструменти, датасети, методику й межі ризику джерел.",
+  "editorial_frame": {
+    "what_this_is": "A weekly editorial synthesis. It develops the strongest signals of the week instead of mechanically stitching daily cards together.",
+    "what_this_is_not": "A leak dump, target list, Telegram rumor digest, or tool marketplace."
+  },
+  "rubric_map": [
+    "📡 Signal of the Week / Головний сигнал тижня",
+    "⚖️ War Crimes Verification / Верифікація воєнних злочинів",
+    "🇺🇦 Ukraine Lens / Українська оптика",
+    "🕯️ Losses, Captivity & Missing / Втрати, полон, зниклі",
+    "🧭 Tradecraft / Методика",
+    "🧰 Toolbox / Інструментарій",
+    "⚠️ Risk Watch / Межі й ризики"
+  ],
+  "editorial_note_en": "This week’s signal is not a single tool or case. It is the need to turn discovery into accountable evidence: documented, attributed, preserved, and framed with explicit limits.",
+  "editorial_note_uk": "Сигнал цього тижня — не один інструмент і не один кейс. Це потреба перетворювати виявлені ліди на відповідальну доказову рамку: задокументовану, атрибутовану, збережену й подану з чіткими межами.",
+  "items": [
+    {
+      "rubric_key": "signal",
+      "emoji": "📡",
+      "rubric_en": "Signal of the Week",
+      "rubric_uk": "Головний сигнал тижня",
+      "title_en": "From daily leads to accountable evidence",
+      "title_uk": "Від щоденних лідів до доказової відповідальності",
+      "source_line_en": "Weekly synthesis · Open Source Signal editorial desk · 17 May 2026",
+      "source_line_uk": "Тижневий синтез · редакція Open Source Signal · 17 травня 2026",
+      "what_happened_en": "The week’s strongest materials showed the same pressure point: discovery is easy, preservation and verification are the real editorial work.",
+      "what_happened_uk": "Найсильніші матеріали тижня показали одну проблему: знайти сигнал легко, але зберегти, перевірити й правильно обмежити його значення — це справжня робота.",
+      "why_it_matters_en": "For accountability OSINT, a lead has value only when its source type, verification status, public-interest logic and risks are visible to the reader.",
+      "why_it_matters_uk": "Для accountability OSINT лід має цінність лише тоді, коли читач бачить тип джерела, статус перевірки, суспільний інтерес і ризики.",
+      "how_to_use_en": "Treat weekly synthesis as a triage layer: what deserves a deep dive, what remains lead-only, and what should be archived for later corroboration.",
+      "how_to_use_uk": "Тижневий випуск має працювати як шар відбору: що варте deep dive, що залишається lead-only, а що треба архівувати для майбутнього зіставлення.",
+      "limits_en": "Weekly synthesis does not upgrade weak evidence. It organizes signals; it does not turn allegations into findings.",
+      "limits_uk": "Тижневий синтез не підвищує якість слабких доказів. Він структурує сигнали, але не перетворює твердження на встановлені факти.",
+      "editorial_use": "Anchor story for the weekly issue; suitable for future methodology explainer.",
+      "tags": [
+        "weekly-synthesis",
+        "accountability",
+        "evidence",
+        "verification-status"
+      ]
+    },
+    {
+      "rubric_key": "war-crimes",
+      "emoji": "⚖️",
+      "rubric_en": "War Crimes Verification",
+      "rubric_uk": "Верифікація воєнних злочинів",
+      "title_en": "Double-tap claims require timeline discipline",
+      "title_uk": "Для double-tap потрібна дисципліна таймлайну",
+      "source_line_en": "Source cluster · daily cards, official updates, open imagery · week review",
+      "source_line_uk": "Пакет джерел · daily-картки, офіційні оновлення, відкриті зображення · огляд тижня",
+      "what_happened_en": "Several items this week involved attacks where timing, rescue response and secondary damage shaped the evidentiary question.",
+      "what_happened_uk": "Кілька матеріалів тижня стосувалися атак, де ключовими були час ударів, прибуття служб і повторні пошкодження.",
+      "why_it_matters_en": "War-crimes verification depends on sequencing. A single image cannot establish the whole pattern.",
+      "why_it_matters_uk": "Верифікація воєнних злочинів залежить від послідовності подій. Одне зображення не встановлює весь патерн.",
+      "how_to_use_en": "Preserve air alerts, first reports, timestamps, geolocation, emergency-service statements and casualty revisions as separate layers.",
+      "how_to_use_uk": "Окремо зберігати повітряні тривоги, перші повідомлення, таймстемпи, геолокацію, заяви служб і подальші уточнення щодо постраждалих.",
+      "limits_en": "Do not infer intent from timing alone. Treat double-tap language as a hypothesis until corroborated.",
+      "limits_uk": "Намір не можна виводити лише з часової близькості. Double-tap слід тримати як гіпотезу до підтвердження.",
+      "editorial_use": "Useful as a future War Crimes Verification methodology note.",
+      "tags": [
+        "war-crimes",
+        "timeline",
+        "double-tap",
+        "limits"
+      ]
+    },
+    {
+      "rubric_key": "ukraine",
+      "emoji": "🇺🇦",
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "title_en": "Ukrainian-only sources need international adaptation",
+      "title_uk": "Українські джерела потребують міжнародної адаптації",
+      "source_line_en": "Editorial operation · Ukrainian source → English context layer",
+      "source_line_uk": "Редакційна операція · українське джерело → англомовний контекст",
+      "what_happened_en": "Ukrainian OSINT work often carries institutional, legal and wartime context that international readers do not automatically have.",
+      "what_happened_uk": "Українські OSINT-матеріали часто містять інституційний, правовий і воєнний контекст, який міжнародний читач не зчитує автоматично.",
+      "why_it_matters_en": "Translation without context strips away the meaning. Weekly issues should explain institutions, abbreviations, war-specific terms and evidentiary stakes.",
+      "why_it_matters_uk": "Переклад без контексту забирає сенс. Weekly має пояснювати інституції, скорочення, воєнну специфіку й доказову вагу матеріалу.",
+      "how_to_use_en": "Use Ukraine Lens as the reverse-adaptation section: not merely English translation, but international framing.",
+      "how_to_use_uk": "Ukraine Lens — це розділ зворотної адаптації: не просто англійський переклад, а міжнародне пояснення.",
+      "limits_en": "Do not flatten Ukrainian legal or military context into generic conflict-reporting language.",
+      "limits_uk": "Не зводити український правовий і воєнний контекст до універсальної мови conflict reporting.",
+      "editorial_use": "Good section for Ukrainian-only sources that deserve international readership.",
+      "tags": [
+        "ukraine-lens",
+        "editorial-adaptation",
+        "context"
+      ]
+    }
+  ],
+  "compact_sections": [
+    {
+      "rubric_key": "losses",
+      "emoji": "🕯️",
+      "title": "Losses, Captivity & Missing",
+      "short_title": "Losses & Missing",
+      "points": [
+        "Separate named records, official claims and statistical estimates.",
+        "Keep humanitarian value apart from identity-exposure risk.",
+        "Do not reproduce private contact or family data."
+      ]
+    },
+    {
+      "rubric_key": "tradecraft",
+      "emoji": "🧭",
+      "title": "Tradecraft",
+      "short_title": "Tradecraft",
+      "points": [
+        "Reusable workflows from the week.",
+        "Verification steps worth preserving.",
+        "Methods suitable for future Casefile pieces."
+      ]
+    },
+    {
+      "rubric_key": "toolbox",
+      "emoji": "🧰",
+      "title": "Tools / Datasets",
+      "short_title": "Tools",
+      "points": [
+        "Tool discovery checked against original pages or repositories.",
+        "Datasets reviewed for provenance and risk.",
+        "Maps, archives, utilities and workflow candidates."
+      ]
+    }
+  ],
+  "reading_list": [
+    {
+      "title": "Methodology article worth keeping",
+      "href": "#",
+      "note": "Why it matters, which workflow it supports, and where it has limits."
+    },
+    {
+      "title": "Tool or repository candidate",
+      "href": "#",
+      "note": "Checked against the original project page before inclusion."
+    },
+    {
+      "title": "Ukraine-focused investigation",
+      "href": "#",
+      "note": "Source suitable for international editorial adaptation."
+    },
+    {
+      "title": "Dataset / archive / map layer",
+      "href": "#",
+      "note": "Provenance, update rhythm, public-interest use and risk flags."
+    }
+  ]
+}
