@@ -87,7 +87,38 @@
     .footer-links a, .trust-links a { color: inherit; text-decoration: none; font-weight: 800; }
     .trust-links { justify-content:flex-start; margin-top: 14px; }
     @media (max-width: 680px) { h1 { font-size: clamp(48px, 18vw, 78px); } .panel { border-radius: 24px; } }
-  </style>
+  .trust-links {
+  display: flex;
+  gap: 10px 16px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 18px auto 0;
+  text-align: center;
+  font-family: var(--label-font, Arimo, Arial, Helvetica, sans-serif);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.trust-links a {
+  color: inherit;
+  text-decoration: none;
+}
+.trust-links a:hover {
+  text-decoration: underline;
+  text-underline-offset: .22em;
+}
+footer .trust-links {
+  justify-content: center;
+}
+footer .footer-inner {
+  justify-content: center;
+  text-align: center;
+}
+
+</style>
 </head>
 <body>
   <header class="wrap">
