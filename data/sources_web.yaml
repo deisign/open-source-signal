@@ -32,6 +32,12 @@ international_osint:
     roles: [methodology]
     language: en
 
+      - name: Project OSINT
+    url: https://projectosint.com/
+    roles: [monitoring, methodology, source_pointer]
+    language: en
+    note: Use for OSINT tool, method and reading-list discovery; verify original sources before featuring.
+
 international_accountability:
   - name: OCCRP
     url: https://www.occrp.org/
