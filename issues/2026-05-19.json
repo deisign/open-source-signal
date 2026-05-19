@@ -1,0 +1,163 @@
+{
+  "issue_number": "006",
+  "date_iso": "2026-05-19",
+  "date_label_en": "19 May 2026",
+  "date_label_uk": "19 травня 2026",
+  "slug": "open-source-signal",
+  "title_en": "Open Source Signal",
+  "title_uk": "Сигнал відкритих джерел",
+  "issue_type": "Daily Signal",
+  "language_label": "EN + UKR",
+  "subtitle_en": "A daily OSINT digest focused on Ukrainian accountability work, verification workflows, investigator safety and ethical source handling.",
+  "subtitle_uk": "Щоденний OSINT-дайджест про українську accountability-оптику, верифікаційні workflow, безпеку дослідника та етичну роботу з джерелами.",
+  "dek_en": "Daily issue #006: a Ukrainian POW-abuse suspect case; Russia’s foreign-fighter recruitment as a captivity and trafficking problem; CERT-UA warning on revived compromises; agentic-AI workflow risks; and Xiaohongshu as an underused platform-research source.",
+  "editorial_frame": {
+    "what_this_is": "A bilingual editorial filter for public-interest OSINT. Each item explains what happened, why it matters, how a reader can use the insight, and where the method or evidence has limits.",
+    "what_this_is_not": "Doxxing, live targeting, stolen-data workflows, private-person deanonymization, credential hunting, revenge calls or unsafe operational guidance."
+  },
+  "rubric_map": [
+    "🇺🇦 Ukraine Lens",
+    "🧾 Losses, Captivity & Missing",
+    "🛡️ Investigator OPSEC",
+    "🧰 Toolbox",
+    "📱 Platform Watch"
+  ],
+  "footer_note": "Generated for Open Source Signal / Сигнал відкритих джерел. Fonts: Fraunces for Latin display, Source Serif 4 for Ukrainian display, Inter and JetBrains Mono via Google Fonts with local fallbacks.",
+  "items": [
+    {
+      "theme": "ukraine",
+      "emoji": "🇺🇦",
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "title_en": "A Russian prison chief named in a Ukrainian POW-abuse case",
+      "title_uk": "Начальник російської колонії у справі про знущання з українських полонених",
+      "source_name": "Slidstvo.Info",
+      "source_url": "https://www.slidstvo.info/news/nachalnyku-kolonii-v-rf-z-rozsliduvannia-slidstva-info-iakyy-nakazuvav-znushchatysia-z-ukrainskykh-polonenykh-povidomyly-pro-pidozru/",
+      "source_date_label_en": "1 May 2026",
+      "source_date_label_uk": "1 травня 2026",
+      "what_happened_en": "Slidstvo.Info reported that Russian prison official Anatoliy Kaplunov was notified of suspicion in Ukraine after former Ukrainian captives testified about abuse in the colony he headed. According to the report, released prisoners described systematic mistreatment and said at least two captives died after abuse there. The case connects a Ukrainian journalistic investigation, survivor testimony and a formal prosecutorial step.",
+      "what_happened_uk": "«Слідство.Інфо» повідомило, що начальнику російської колонії Анатолію Каплунову оголосили підозру в Україні після свідчень звільнених українських полонених. За даними матеріалу, колишні бранці розповіли про систематичні знущання, а щонайменше двоє людей померли після жорстокого поводження. Це кейс, у якому журналістське розслідування, свідчення потерпілих і процесуальний крок прокуратури сходяться в одному доказовому напрямі.",
+      "why_it_matters_en": "For international readers, this is a strong Ukrainian accountability example because it shows how detention-site documentation can move from publication to legal procedure. The important status distinction is precise: Kaplunov is a suspect notified of suspicion by Ukrainian authorities, not a convicted perpetrator.",
+      "why_it_matters_uk": "Для міжнародної аудиторії це сильний приклад українського accountability OSINT: документування місць несвободи може переходити з публічної площини у юридичну процедуру. Важливо не зламати статус: Каплунов є підозрюваним за повідомленням українських органів, а не засудженим.",
+      "how_to_use_en": "Use the case as a template for monitoring detention-facility accountability: facility name, command structure, survivor testimony, known deaths, inspection records, official notices of suspicion, court documents and possible sanctions. Keep facts, testimony and legal qualification in separate fields.",
+      "how_to_use_uk": "Кейс можна використовувати як шаблон моніторингу російських місць утримання: назва установи, керівництво, свідчення звільнених, смерті або зникнення, перевірки, офіційні підозри, судові документи та можливі санкції. Факти, свідчення і правову кваліфікацію треба тримати окремо.",
+      "limits_en": "Survivor testimony is crucial but sensitive and should be corroborated where possible. Do not turn a notice of suspicion into a conviction, and do not publish private data about relatives, guards or unrelated people.",
+      "limits_uk": "Свідчення полонених мають високу цінність, але потребують обережного поводження й додаткової перевірки там, де це можливо. Не можна підміняти підозру вироком або поширювати приватні дані родичів, охоронців чи непричетних осіб.",
+      "tags": [
+        "pow-abuse",
+        "detention-sites",
+        "ukrainian-investigations"
+      ]
+    },
+    {
+      "theme": "losses",
+      "emoji": "🧾",
+      "rubric_en": "Losses, Captivity & Missing",
+      "rubric_uk": "Втрати, полон, зниклі",
+      "title_en": "Foreign fighters in Russia’s war: combatants, mercenaries or trafficking victims",
+      "title_uk": "Іноземці у російській армії: комбатанти, найманці чи жертви торгівлі людьми",
+      "source_name": "Truth Hounds",
+      "source_url": "https://truth-hounds.org/en/cases/combatants-mercenaries-or-victims-of-human-trafficking/",
+      "source_date_label_en": "29 April 2026",
+      "source_date_label_uk": "29 квітня 2026",
+      "what_happened_en": "Truth Hounds, FIDH and the Kazakhstan International Bureau for Human Rights and Rule of Law examined Russia’s recruitment and exploitation of foreign fighters. The report argues that Russia’s recruitment system targets socio-economically vulnerable foreign nationals and sometimes involves deception, coercion or trafficking-like practices. It also discusses how foreign recruits should be classified legally in relation to combatant status, mercenarism, POW treatment and trafficking risks.",
+      "what_happened_uk": "Truth Hounds, FIDH та Казахстанське міжнародне бюро з прав людини дослідили, як Росія залучає й експлуатує іноземців у війні проти України. У звіті йдеться, що система вербування орієнтується на соціально вразливих іноземних громадян і в окремих випадках містить ознаки обману, примусу або практик, схожих на торгівлю людьми. Також розглядається, як таких осіб класифікувати юридично: комбатанти, найманці, військовополонені або потенційні жертви торгівлі людьми.",
+      "why_it_matters_en": "Russian loss and captivity datasets can no longer be treated as purely domestic Russian datasets. They increasingly include foreign nationals recruited through opaque channels, economic pressure, misleading promises or coercive administrative practices.",
+      "why_it_matters_uk": "Дані про російські втрати, полонених і зниклих уже не можна вести лише як внутрішньоросійський масив. У них дедалі частіше з’являються іноземці з непрозорими маршрутами вербування, економічним тиском, оманливими обіцянками або примусовими адміністративними практиками.",
+      "how_to_use_en": "For foreign-fighter case files, create separate fields for identity, nationality, recruitment path, promised job or contract, unit, deployment location, capture or death status, and indicators of coercion or deception. Avoid collapsing all foreign fighters into one moral or legal category.",
+      "how_to_use_uk": "Для кейсів іноземних бійців варто окремо фіксувати особу, громадянство, канал вербування, обіцяне працевлаштування або контракт, підрозділ, місце служби, статус полону чи загибелі та ознаки примусу або обману. Не варто автоматично записувати всіх іноземців в одну моральну чи юридичну категорію.",
+      "limits_en": "Recruitment propaganda, POW interviews and social-media posts can all be incomplete or distorted. Legal classification requires more than open-source identification and should be handled with expert legal review.",
+      "limits_uk": "Рекрутингова реклама, інтерв’ю полонених і пости в соцмережах можуть бути неповними або викривленими. Юридична класифікація потребує більше, ніж встановлення імені через відкриті джерела, і має спиратися на фахову правову оцінку.",
+      "tags": [
+        "foreign-fighters",
+        "pow-data",
+        "trafficking-risk"
+      ]
+    },
+    {
+      "theme": "opsec",
+      "emoji": "🛡️",
+      "rubric_en": "Investigator OPSEC",
+      "rubric_uk": "Безпека дослідника",
+      "title_en": "Russian-linked hackers revisit old access to prepare new attacks",
+      "title_uk": "Російські хакери повертаються до старих зламів як до плацдарму",
+      "source_name": "The Record",
+      "source_url": "https://therecord.media/ukraine-warns-russian-hackers-revisiting-old-attacks",
+      "source_date_label_en": "3 April 2026",
+      "source_date_label_uk": "3 квітня 2026",
+      "what_happened_en": "The Record reported on a CERT-UA warning that Russian hackers are trying to regain access to systems they had previously compromised. CERT-UA said earlier breaches can become footholds for follow-up operations when root causes, credentials, access tokens or infrastructure weaknesses remain unresolved.",
+      "what_happened_uk": "The Record переказує попередження CERT-UA про те, що російські хакери намагаються повторно заходити в системи, які вже були скомпрометовані раніше. За оцінкою CERT-UA, старі злами можуть ставати плацдармом для нових операцій, якщо не усунуто першопричину, не відкликано доступи, токени або не закрито слабкі місця інфраструктури.",
+      "why_it_matters_en": "Investigative teams, NGOs and media often treat an old phishing or intrusion episode as finished after password resets. This warning points to a different security model: compromise history must remain part of the active threat map.",
+      "why_it_matters_uk": "Редакції, правозахисні організації й OSINT-команди часто вважають старий фішинг або злам закритим після зміни паролів. Це попередження пропонує іншу модель безпеки: історія компрометації має залишатися частиною активної карти ризиків.",
+      "how_to_use_en": "After any suspected compromise, review old accounts, forwarding rules, cloud sessions, OAuth grants, shared drives, admin panels and abandoned devices. Keep a dated incident log so repeated approaches are connected instead of treated as isolated noise.",
+      "how_to_use_uk": "Після будь-якого підозрілого інциденту треба перевіряти не лише пароль, а й пересилання пошти, хмарні сесії, OAuth-доступи, спільні диски, адмін-панелі та старі пристрої. Корисно вести журнал інцидентів, щоб повторювані спроби не виглядали як випадковий шум.",
+      "limits_en": "The article summarizes defensive warnings and does not provide a public technical dossier for every incident. Do not infer that every later compromise is connected to the same actor without technical indicators and context.",
+      "limits_uk": "Матеріал переказує захисне попередження і не дає повного технічного досьє щодо кожного інциденту. Не варто автоматично пов’язувати кожен новий злам із тим самим актором без технічних індикаторів і контексту.",
+      "tags": [
+        "opsec",
+        "cert-ua",
+        "russian-hackers"
+      ]
+    },
+    {
+      "theme": "toolbox",
+      "emoji": "🧰",
+      "rubric_en": "Toolbox",
+      "rubric_uk": "Інструментарій",
+      "title_en": "Agentic AI and self-hosted workflows need auditability before adoption",
+      "title_uk": "Agentic AI і самохостингові workflow потребують аудиту перед впровадженням",
+      "source_name": "The OSINT Newsletter",
+      "source_url": "https://osintnewsletter.com/p/106",
+      "source_date_label_en": "14 May 2026",
+      "source_date_label_uk": "14 травня 2026",
+      "what_happened_en": "Issue #106 of The OSINT Newsletter focused on agentic AI, Maltego MCP servers, conflict monitoring and self-hosted intelligence platforms. It also flagged “vibe coding” as an OSINT risk: quick AI-built tools can help analysts but also introduce insecure workflows, bad assumptions and invisible data leaks.",
+      "what_happened_uk": "Випуск #106 The OSINT Newsletter зосереджений на agentic AI, Maltego MCP-серверах, моніторингу конфліктів і самохостингових платформах для розвідки з відкритих джерел. Окремо згадується ризик “vibe coding”: швидко зібрані за допомогою ШІ інструменти можуть допомагати аналітикам, але також створювати небезпечні workflow, хибні припущення й невидимі витоки даних.",
+      "why_it_matters_en": "Small OSINT teams are increasingly building their own monitoring stacks. Agentic tools can reduce repetitive work, but accountability investigations require auditability, source preservation and a hard boundary between evidence and machine-generated interpretation.",
+      "why_it_matters_uk": "Невеликі OSINT-команди дедалі частіше будують власні системи моніторингу. Агентні інструменти можуть зняти рутину, але в accountability-розслідуваннях потрібні аудит, збереження джерел і чітка межа між доказом та машинною інтерпретацією.",
+      "how_to_use_en": "Use AI agents only for low-risk repeatable tasks: collecting public URLs, normalizing metadata, drafting search queries, summarizing public reports and checking duplicate candidates. Keep identity claims, legal labels and publication decisions under human review.",
+      "how_to_use_uk": "ШІ-агентів варто застосовувати лише для низькоризикових повторюваних задач: збору публічних URL, нормалізації метаданих, підготовки пошукових запитів, короткого переказу публічних звітів і пошуку дублікатів. Ідентифікації людей, юридичні формулювання та рішення про публікацію мають залишатися за людиною.",
+      "limits_en": "OSINT Newsletter is a discovery source, not validation. Do not feed agents private witness data, unredacted documents or unpublished case files unless the system is controlled and legally approved.",
+      "limits_uk": "OSINT Newsletter є джерелом для виявлення інструментів, а не їхньої валідації. Не варто завантажувати в агентні системи приватні свідчення, нерозмиті документи або неопубліковані матеріали справ без контрольованого середовища й правової підстави.",
+      "tags": [
+        "agentic-ai",
+        "osint-tools",
+        "workflow-risk"
+      ]
+    },
+    {
+      "theme": "platform",
+      "emoji": "📱",
+      "rubric_en": "Platform Watch",
+      "rubric_uk": "Платформний радар",
+      "title_en": "Xiaohongshu as an underused open-source window into China",
+      "title_uk": "Xiaohongshu як недовикористане джерело для відкритих розслідувань",
+      "source_name": "Bellingcat",
+      "source_url": "https://www.bellingcat.com/resources/2026/04/20/xiaohongshu-rednote-open-source-guide/",
+      "source_date_label_en": "20 April 2026",
+      "source_date_label_uk": "20 квітня 2026",
+      "what_happened_en": "Bellingcat published a guide to using Xiaohongshu, also known as RedNote or “Little Red Book,” for open-source research. The guide explains platform culture, search behavior, language issues and the limits created by censorship and moderation. It argues that the platform can reveal everyday social and economic signals that are hard to see from outside China.",
+      "what_happened_uk": "Bellingcat опублікував гайд із використання Xiaohongshu, також відомої як RedNote або “Little Red Book”, для досліджень відкритих джерел. У матеріалі пояснюються культура платформи, особливості пошуку, мовні бар’єри та обмеження, пов’язані з цензурою й модерацією. Автори показують, що ця lifestyle-платформа може давати побутові, соціальні й економічні сигнали, які важко побачити ззовні.",
+      "why_it_matters_en": "For Ukraine-related OSINT, China’s information environment matters because Russian narratives, sanctions evasion, dual-use supply chains and diplomatic messaging often leave Chinese-language traces. Xiaohongshu is useful not as a political platform, but as a moderated everyday-content environment where indirect signals may survive.",
+      "why_it_matters_uk": "Для українського OSINT китайський інформаційний простір важливий через російські наративи, обхід санкцій, ланцюги постачання товарів подвійного призначення і дипломатичні сигнали. Xiaohongshu корисна не як політична платформа, а як модероване повсякденне середовище, де можуть зберігатися непрямі сигнали.",
+      "how_to_use_en": "Search in simplified Chinese, preserve original-language screenshots and record query terms. Compare findings with other Chinese platforms, corporate registries, customs data and media reports before using them in a case file.",
+      "how_to_use_uk": "Пошук краще вести спрощеною китайською, зберігати оригінальні скриншоти й фіксувати запити. Знахідки варто порівнювати з іншими китайськими платформами, реєстрами компаній, митними даними та медіа перед включенням у кейс.",
+      "limits_en": "Content is censored, moderated and demographically skewed. Search results are not representative of all Chinese public opinion, and automatic translation can erase slang, coded language or platform-specific hints.",
+      "limits_uk": "Контент цензурується, модерується і не є демографічно нейтральним. Результати пошуку не репрезентують усю китайську громадську думку, а автоматичний переклад може стирати сленг, кодовані формулювання або специфічні для платформи натяки.",
+      "tags": [
+        "platform-research",
+        "china",
+        "search-methods"
+      ]
+    }
+  ],
+  "internal_notes": [
+    "Duplicate check completed against 2026-05-18 Daily Signal, 2026-05-16 Saturday Tool Radar and 2026-05-17 Sunday/Weekly issue files available in the working set.",
+    "Rejected duplicate candidates: Truth Hounds emergency-responder attacks repeated the 2026-05-16 Casefile item; Cloudflare Q1 disruption review repeated the 2026-05-17 Infrastructure Signals item.",
+    "No retained item repeats a source URL from the checked previous issues. Kept items focus on POW-abuse accountability, foreign-fighter recruitment/captivity methodology, CERT-UA OPSEC, agentic-AI workflow risk and Xiaohongshu platform research.",
+    "Rubrics that worked: Ukraine Lens, Losses/Captivity/Missing, Investigator OPSEC, Toolbox, Platform Watch.",
+    "Weekly deep-dive candidates: Russian detention-facility accountability; foreign fighters as a combined losses/POW/trafficking dataset problem; revived access after cyber compromise as an investigator OPSEC checklist.",
+    "Best sources: Slidstvo.Info for Ukrainian accountability reporting; Truth Hounds for legal-methodological framing; The Record/CERT-UA for defensive cyber context; Bellingcat for platform research; OSINT Newsletter for tool discovery only.",
+    "Safety/editorial caution: keep legal-status language tight: notified of suspicion, alleged abuse, reported by survivors, not convicted. Do not publish private data from prison staff, relatives, foreign fighters or unrelated persons.",
+    "Tool Radar candidates: controlled agentic-AI workflow sandbox; duplicate-checking assistant for daily issue candidates; platform search checklist for Xiaohongshu and other non-Western platforms."
+  ]
+}
