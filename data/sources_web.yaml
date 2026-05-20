@@ -31,12 +31,19 @@ international_osint:
     url: https://www.osintcombine.com/blog
     roles: [methodology]
     language: en
-
-      - name: Project OSINT
+  - name: Project OSINT
     url: https://projectosint.com/
     roles: [monitoring, methodology, source_pointer]
     language: en
     note: Use for OSINT tool, method and reading-list discovery; verify original sources before featuring.
+  - name: OSINT Newsletter
+    url: https://osintnewsletter.com/
+    roles: [monitoring, source_pointer]
+    language: en
+    primary_rubrics:
+      - Toolbox / Інструментарій
+      - Tool Radar / Інструментальний радар
+    note: Tracks new OSINT tools, practical services, datasets and workflows. Use mainly as a discovery source; verify tools against original project pages before featuring.
 
 international_accountability:
   - name: OCCRP
@@ -134,6 +141,82 @@ ukrainian_osint_accountability:
     language: uk,ru,en
     note: Useful as a lead source on collaborators, propagandists, organizations and occupation-linked networks; verify independently.
 
+war_ukraine_open_data:
+  - name: GeoConfirmed
+    url: https://geoconfirmed.org/
+    roles: [data, methodology, source_pointer]
+    language: en
+    primary_rubrics:
+      - Map Room / Картографічна кімната
+      - War Crimes Verification / Верифікація воєнних злочинів
+    note: Use for geolocation and verification leads on strikes, troop movements and infrastructure damage. Verify each incident against original media, official statements and preserved evidence.
+  - name: Centre for Information Resilience / Eyes on Russia
+    url: https://eyesonrussia.org/
+    roles: [investigative, methodology, data]
+    language: en
+    primary_rubrics:
+      - War Crimes Verification / Верифікація воєнних злочинів
+      - Casefile / Розбір кейсу
+      - Map Room / Картографічна кімната
+    note: Strong source for verified and unverified incident mapping and human-rights accountability workflows. Do not treat map points as standalone proof without source-level review.
+  - name: VIINA
+    url: https://github.com/zhukovyuri/VIINA
+    roles: [data, methodology]
+    language: en
+    primary_rubrics:
+      - Map Room / Картографічна кімната
+      - Infrastructure Signals / Інфраструктурні сигнали
+    note: Structured violent-incident dataset for Ukraine based on media reports and machine-assisted classification. Use for trend analysis and cross-checking, not as direct legal evidence.
+  - name: Russia-Ukraine ConflictMisinfo
+    url: https://conflictmisinfo.org/
+    roles: [data, monitoring, methodology]
+    language: en
+    primary_rubrics:
+      - Platform Watch / Платформний радар
+      - Telegram Radar / Telegram-радар
+      - AI Verification / ШІ та верифікація
+    note: Useful for information-warfare monitoring, fact-check aggregation and Telegram propaganda tracking. Verify original fact-checks before featuring.
+  - name: WhereIsRussia.today
+    url: https://whereisrussia.today/
+    roles: [monitoring, data, source_pointer]
+    language: en
+    primary_rubrics:
+      - Map Room / Картографічна кімната
+      - Infrastructure Signals / Інфраструктурні сигнали
+    note: Tracks current and historical Russian military activity. Use as a monitoring layer and lead source; avoid treating map points as final attribution.
+  - name: Liveuamap
+    url: https://liveuamap.com/
+    roles: [monitoring, source_pointer]
+    language: en
+    primary_rubrics:
+      - Map Room / Картографічна кімната
+      - Infrastructure Signals / Інфраструктурні сигнали
+    note: Useful real-time aggregator for incidents, statements and control changes. Positions can be imprecise; verify every event through original sources.
+  - name: UKR Daily Update
+    url: https://www.ukrdailyupdate.com/
+    roles: [monitoring, source_pointer]
+    language: en
+    primary_rubrics:
+      - Map Room / Картографічна кімната
+      - Tradecraft / Методика
+    note: Use for map-based daily orientation and cited-source discovery. Verify all underlying sources independently.
+  - name: ACLED Ukraine
+    url: https://acleddata.com/
+    roles: [data, monitoring]
+    language: en
+    primary_rubrics:
+      - Map Room / Картографічна кімната
+      - Infrastructure Signals / Інфраструктурні сигнали
+    note: Structured conflict-event data. Useful for trend analysis and comparative datasets, not as standalone evidence for individual incidents.
+  - name: ISW Ukraine Campaign Assessment
+    url: https://www.understandingwar.org/
+    roles: [monitoring, source_pointer]
+    language: en
+    primary_rubrics:
+      - Map Room / Картографічна кімната
+      - Tradecraft / Методика
+    note: Analytical context and campaign mapping. Use for framing and leads, not as primary OSINT evidence.
+
 losses_captivity_missing:
   - name: Mediazona / BBC confirmed Russian deaths
     url: https://en.zona.media/
@@ -143,11 +226,45 @@ losses_captivity_missing:
     url: https://en.zona.media/
     roles: [data, methodology]
     language: en,ru
+  - name: TopCargo200
+    url: https://topcargo200.com/
+    roles: [data, source_pointer]
+    language: en
+    primary_rubrics:
+      - Losses, Captivity & Missing / Втрати, полон, зниклі
+    note: Tracks senior Russian officers and notable individuals killed in Russia's full-scale invasion. Use cautiously; verify against obituaries, official notices, local media and other casualty datasets.
+  - name: Poteru.net
+    url: https://poteru.net/
+    roles: [data, source_pointer]
+    language: ru
+    primary_rubrics:
+      - Losses, Captivity & Missing / Втрати, полон, зниклі
+    note: Russian-language database of Russian war deaths with filters and downloadable data. Treat as a lead source requiring methodology review and independent verification.
   - name: Ukrainian public POW/MIA/KIA projects
     url: null
     roles: [data, source_pointer]
     language: uk,ru,en
     note: Add project-specific URLs only after verification and public accessibility review.
+
+sanctions_supply_chains:
+  - name: War & Sanctions Portal
+    url: https://war-sanctions.gur.gov.ua/
+    roles: [primary, data, source_pointer]
+    language: uk,en
+    primary_rubrics:
+      - Ukraine Lens / Українська оптика
+      - War Crimes Verification / Верифікація воєнних злочинів
+      - Tradecraft / Методика
+    note: Ukrainian DIU-linked open-data portal on sanctions, child abductors, weapon components, vessels, propaganda and support networks behind Russian aggression. Verify person and entity claims before publication.
+  - name: Trade Integrity Project
+    url: https://www.trade-integrity.org/
+    roles: [data, monitoring, source_pointer]
+    language: en
+    primary_rubrics:
+      - Ukraine Lens / Українська оптика
+      - Infrastructure Signals / Інфраструктурні сигнали
+      - Tradecraft / Методика
+    note: Monitors military and dual-use trade with Russia, especially Common High Priority List goods. Useful for sanctions, procurement and supply-chain leads.
 
 cyber_infrastructure_privacy:
   - name: KrebsOnSecurity
@@ -216,16 +333,6 @@ geospatial_data:
     url: https://firms.modaps.eosdis.nasa.gov/
     roles: [data]
     language: en
-
-- name: OSINT Newsletter
-  url: https://osintnewsletter.com/
-  language: en
-  source_type: newsletter
-  reliability: medium
-  use_as: source_pointer
-  primary_rubrics:
-    - Toolbox / Інструментарій
-  notes: Tracks new OSINT tools, practical services, datasets and workflows. Use mainly as a discovery source; verify tools against original project pages before featuring.
 
 reddit_osint_communities:
   - name: Reddit r/OSINT
