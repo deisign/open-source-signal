@@ -1,0 +1,335 @@
+{
+  "issue": {
+    "id": "daily-signal-2026-05-21",
+    "type": "daily",
+    "issue_number": "008",
+    "project": "Open Source Signal / Сигнал відкритих джерел",
+    "date": "2026-05-21",
+    "timezone": "Europe/Kyiv",
+    "status": "ready_for_publication",
+    "schema_version": "oss-daily-v1",
+    "slug": "daily-signal-2026-05-21",
+    "language_label": "EN + UKR",
+    "public_title": {
+      "en": "Daily Signal — May 21, 2026",
+      "uk": "Щоденний сигнал — 21 травня 2026"
+    },
+    "dek": {
+      "en": "Ukrainian accountability datasets, propaganda-network mapping, foreign weapon components, verified incident maps, occupation OPSEC, survivor-first CRSV handling, and protected OSINT workflows for missing Ukrainian children.",
+      "uk": "Українські набори даних для підзвітності, мапування пропагандистських мереж, іноземні компоненти у зброї, верифіковані мапи інцидентів, OPSEC в окупації, survivor-first підхід до сексуального насильства та захищені OSINT-workflow для пошуку депортованих дітей."
+    },
+    "editorial_frame": {
+      "what_this_is": "A bilingual editorial filter for public-interest OSINT. Each item explains what happened, why it matters, how a reader can use the insight, and where the method or evidence has limits.",
+      "what_this_is_not": "Doxxing, live targeting, stolen-data workflows, private-person deanonymization, credential hunting, revenge calls, unsafe operational guidance or unverified accusations against private people."
+    },
+    "rubric_map": [
+      "Signal One / Головний сигнал",
+      "Ukraine Lens / Українська оптика",
+      "Map Room / Картографічна кімната",
+      "Investigator OPSEC / Безпека дослідника",
+      "War Crimes Verification / Верифікація воєнних злочинів",
+      "Losses, Captivity & Missing / Втрати, полон, зниклі"
+    ]
+  },
+  "items": [
+    {
+      "id": "2026-05-21-signal-one-war-sanctions-kremlin-mouthpieces",
+      "rubric": {
+        "en": "Signal One",
+        "uk": "Головний сигнал"
+      },
+      "title": {
+        "en": "War & Sanctions updates “Kremlin Mouthpieces” as an accountability dataset",
+        "uk": "War & Sanctions оновив «Kremlin Mouthpieces» як набір даних для підзвітності"
+      },
+      "sources": [
+        {
+          "name": "War & Sanctions",
+          "date": "2026-05-18",
+          "url": "https://war-sanctions.gur.gov.ua/en/news"
+        }
+      ],
+      "en": {
+        "what_happened": "Ukraine’s War & Sanctions portal reported an update to its “Kremlin Mouthpieces” section in cooperation with the Center for Countering Disinformation. The portal also structures public data on child kidnappers, foreign components in weapons, vessels and aircraft, stolen heritage, sanctions lists, propaganda actors and Russia’s military-industrial complex.",
+        "why_it_matters": "For Ukrainian accountability OSINT, this is a state-backed entity layer for mapping the infrastructure that supports aggression: propaganda, deportation-linked networks, weapons supply chains, sanctions evasion and military production.",
+        "how_to_use": "Treat the portal as a lead and entity-mapping layer. For any person, company, vessel or propaganda actor, cross-check against sanctions lists, official decisions, corporate records, archived public statements and independent reporting before publication.",
+        "limits": "A database entry is not a complete evidentiary package. Separate “listed by a Ukrainian official portal,” “sanctioned,” “investigated,” and “legally convicted” as different statuses. Avoid republishing unnecessary personal data."
+      },
+      "uk": {
+        "what_happened": "Український портал War & Sanctions повідомив про оновлення розділу «Kremlin Mouthpieces» у співпраці з Центром протидії дезінформації. На цьому ж порталі зібрані відкриті розділи про викрадачів дітей, іноземні компоненти у зброї, судна й авіацію, викрадену спадщину, санкційні списки, пропагандистів і російський ВПК.",
+        "why_it_matters": "Для українського accountability OSINT це не просто список фігурантів, а шар для мапування інфраструктури агресії: пропаганди, депортаційних мереж, компонентів озброєння, санкційного обходу й військового виробництва.",
+        "how_to_use": "Використовувати портал як стартову точку для entity map. Кожну особу, компанію, судно чи пропагандистську структуру треба звіряти із санкційними рішеннями, реєстрами, архівами публічних заяв і незалежними розслідуваннями.",
+        "limits": "Запис у базі не дорівнює повному доказовому пакету. Не варто перепубліковувати зайві персональні дані. Статуси «є в українському реєстрі», «під санкціями», «фігурує в розслідуванні» і «засуджений» мають бути розділені."
+      },
+      "tags": [
+        "ukraine-accountability",
+        "sanctions",
+        "propaganda-networks",
+        "entity-mapping",
+        "war-and-sanctions"
+      ]
+    },
+    {
+      "id": "2026-05-21-ukraine-lens-war-sanctions-weapon-components",
+      "rubric": {
+        "en": "Ukraine Lens",
+        "uk": "Українська оптика"
+      },
+      "title": {
+        "en": "Foreign components database: 5,762 components across 201 weapon units",
+        "uk": "База іноземних компонентів: 5 762 деталі у 201 одиниці озброєння"
+      },
+      "sources": [
+        {
+          "name": "War & Sanctions",
+          "date": "2026-05-12",
+          "url": "https://war-sanctions.gur.gov.ua/en/components"
+        }
+      ],
+      "en": {
+        "what_happened": "The War & Sanctions “Components in the aggressor’s weapon” database lists 5,762 foreign-produced components across 201 weapon units. The portal frames the database as a way to disrupt the supply chains that allow civilian electronics to be repurposed into Russian weapons.",
+        "why_it_matters": "This is a practical Ukraine-led supply-chain dataset. It helps investigators move from missile and drone debris to manufacturers, distributors, re-export risks, sanctions exposure and due-diligence gaps.",
+        "how_to_use": "Build a chain for each entry: weapon system → component → manufacturer → distributor → export route → sanctions exposure → red flags. Pair it with customs data, corporate registries, manufacturer compliance statements and official sanctions documents.",
+        "limits": "A component’s presence in a Russian weapon does not automatically prove direct manufacturer intent or sanctions violation. Attribution must distinguish production, distribution, resale, diversion and battlefield recovery."
+      },
+      "uk": {
+        "what_happened": "Розділ War & Sanctions «Components in the aggressor’s weapon» містить 5 762 іноземні компоненти у 201 одиниці озброєння. Портал пояснює задачу як перекриття ланцюгів, через які цивільна електроніка перетворюється на інструмент російської війни.",
+        "why_it_matters": "Це український набір даних для supply-chain OSINT: від уламків ракет і дронів — до виробників, дистриб’юторів, реекспорту, санкційних прогалин і due diligence.",
+        "how_to_use": "Будувати ланцюг: система озброєння → компонент → виробник → дистриб’ютор → маршрут постачання → санкційний ризик → red flags. Обов’язково звіряти з митними даними, реєстрами компаній, заявами виробників і санкційними документами.",
+        "limits": "Наявність компонента у російській зброї не доводить автоматично намір виробника або порушення санкцій. Треба розділяти виробництво, дистрибуцію, перепродаж, диверсію постачання й факт вилучення на полі бою."
+      },
+      "tags": [
+        "weapon-components",
+        "dual-use",
+        "sanctions-research",
+        "supply-chain-osint",
+        "war-and-sanctions"
+      ]
+    },
+    {
+      "id": "2026-05-21-map-room-eyes-on-russia-filterable-verification-layer",
+      "rubric": {
+        "en": "Map Room",
+        "uk": "Картографічна кімната"
+      },
+      "title": {
+        "en": "Eyes on Russia map adds a stronger filterable verification layer",
+        "uk": "Eyes on Russia посилює мапу як фільтрований шар верифікації"
+      },
+      "sources": [
+        {
+          "name": "Centre for Information Resilience / Eyes on Russia Maps",
+          "date": "2026-05-21",
+          "date_type": "accessed",
+          "url": "https://www.info-res.org/eyes-on-russia-maps/"
+        }
+      ],
+      "en": {
+        "what_happened": "CIR’s Eyes on Russia project describes an updated map with expanded search and filtering functions. The map is built from verified videos, photos, satellite imagery and other media related to Russia’s invasion of Ukraine, coordinated with the wider OSINT community, including Bellingcat and GeoConfirmed. Users can filter by keywords, dates, event categories, affected sectors and Ukrainian oblasts, and inspect pins with source links.",
+        "why_it_matters": "This is the kind of public verification layer Ukrainian accountability work needs: not a pile of claims from Telegram, but a searchable database where each mapped point has verification context and source linkage.",
+        "how_to_use": "Use it for incident discovery, map-based cross-checking and pattern analysis: infrastructure damage, civilian harm, strike clusters, affected sectors and oblast-level trends. Pull the original source from each pin before citing or adapting an item.",
+        "limits": "A map point is not a court-ready conclusion by itself. Check the original media, capture context, date, geolocation confidence and whether the incident has later corrections or reclassification."
+      },
+      "uk": {
+        "what_happened": "Проєкт CIR Eyes on Russia описує оновлену мапу з розширеним пошуком і фільтрами. Вона побудована на перевірених відео, фото, супутникових знімках та інших матеріалах про російське вторгнення, зібраних ширшою OSINT-спільнотою, зокрема Bellingcat і GeoConfirmed. Дані можна фільтрувати за ключовими словами, датами, категоріями подій, секторами ураження й областями України.",
+        "why_it_matters": "Це саме той тип публічного шару, який потрібен для українського accountability OSINT: не хаотична купа заяв із Telegram, а пошукова база, де кожна точка має контекст перевірки й посилання на джерело.",
+        "how_to_use": "Використовувати для пошуку інцидентів, картографічної звірки й аналізу патернів: руйнування інфраструктури, шкода цивільним, кластери ударів, сектори ураження, динаміка по областях. Перед публікацією брати оригінальне джерело з картки події.",
+        "limits": "Точка на мапі не є сама по собі судовим висновком. Потрібно перевіряти первинне медіа, контекст завантаження, дату, рівень геолокаційної впевненості та можливі подальші уточнення."
+      },
+      "tags": [
+        "geolocation",
+        "incident-map",
+        "verification",
+        "civilian-harm",
+        "eyes-on-russia"
+      ]
+    },
+    {
+      "id": "2026-05-21-investigator-opsec-resistance-under-occupation",
+      "rubric": {
+        "en": "Investigator OPSEC",
+        "uk": "Безпека дослідника"
+      },
+      "title": {
+        "en": "Resistance under occupation raises a hard OSINT ethics problem",
+        "uk": "Опір в окупації ставить жорстке питання безпеки джерел"
+      },
+      "sources": [
+        {
+          "name": "ZOiS",
+          "date": "2026-05-13",
+          "url": "https://www.zois-berlin.de/en/publications/zois-spotlight/resistance-under-occupation-in-ukraine"
+        }
+      ],
+      "en": {
+        "what_happened": "Yulia Abibok’s ZOiS essay examines the risks of public resistance actions under Russian occupation, including cases where publicity, Telegram-tasking and visible symbols can expose civilians to detention. The article notes that CCTV, phone searches and digital traces can make even symbolic actions dangerous in occupied territories.",
+        "why_it_matters": "This is a necessary corrective for resistance romanticism. OSINT and media projects can unintentionally turn occupied civilians into exposed data points. Visibility is not automatically safety; sometimes it is a targeting surface.",
+        "how_to_use": "For any material from occupied territories, add a harm-check before publication: could the image reveal the person, route, window, courtyard, camera angle, device, upload pattern or local network? Is the symbolic value worth the risk to the source?",
+        "limits": "The article is commentary, not a universal rulebook. Some local actors may knowingly choose public visibility. Editorial teams still need a conservative safety default: blur, delay, aggregate or do not publish when risk is unclear."
+      },
+      "uk": {
+        "what_happened": "Текст Юлії Абібок для ZOiS розбирає ризики публічних акцій опору під російською окупацією: Telegram-завдання, фото з символами, публічність і цифрові сліди можуть наражати цивільних на затримання. У матеріалі згадуються камери спостереження, перевірки телефонів і технологічні можливості окупаційних служб.",
+        "why_it_matters": "Це протиотрута від романтизації опору. OSINT і медіа можуть ненавмисно перетворити людину в окупації на відкриту мішень. Видимість не завжди дорівнює безпеці; іноді це просто зручна поверхня для репресій.",
+        "how_to_use": "Для матеріалів з окупованих територій потрібен harm-check перед публікацією: чи видно людину, маршрут, двір, вікно, кут зйомки, пристрій, патерн завантаження або локальну мережу? Чи символічна цінність кадру справді переважає ризик для джерела?",
+        "limits": "Це аналітичний текст, а не універсальний протокол. Частина місцевих учасників може свідомо обирати публічність. Але редакційний default має бути обережним: розмити, відкласти, агрегувати або не публікувати, якщо ризик неясний."
+      },
+      "tags": [
+        "opsec",
+        "occupied-territories",
+        "source-protection",
+        "ethical-osint",
+        "resistance"
+      ]
+    },
+    {
+      "id": "2026-05-21-war-crimes-verification-crsv-survivor-first-evidence",
+      "rubric": {
+        "en": "War Crimes Verification",
+        "uk": "Верифікація воєнних злочинів"
+      },
+      "title": {
+        "en": "Sexual-violence cases need survivor-first evidence handling",
+        "uk": "Справи про сексуальне насильство потребують survivor-first доказової логіки"
+      },
+      "sources": [
+        {
+          "name": "UNITED24 Media",
+          "date": "2026-05-12",
+          "url": "https://united24media.com/war-in-ukraine/ukraine-investigates-26-russian-wartime-sexual-violence-cases-against-women-men-and-children-18729"
+        }
+      ],
+      "en": {
+        "what_happened": "UNITED24 Media reported that Donetsk prosecutors are investigating 26 conflict-related sexual-violence proceedings involving 17 women, three men and six children; 10 proceedings concern rape allegations. One reported case involves a Russian serviceman from the 114th Separate Motorized Rifle Brigade who was notified of suspicion under Article 438 of Ukraine’s Criminal Code.",
+        "why_it_matters": "Conflict-related sexual violence is both a war-crimes issue and a high-risk evidence category. It should never be handled as ordinary crime news. The evidentiary workflow must protect survivors, avoid sensationalism and preserve legal precision.",
+        "how_to_use": "Track only what is necessary: proceeding number where public, legal article, unit reference, date range, location at settlement or oblast level, procedural status and official source. Keep survivor details out of public cards unless already lawfully public and clearly necessary.",
+        "limits": "Do not identify survivors, relatives or precise shelter locations. Do not convert “notified of suspicion” into conviction. Avoid graphic detail unless legally necessary and ethically justified."
+      },
+      "uk": {
+        "what_happened": "UNITED24 Media повідомило, що прокуратура Донеччини розслідує 26 проваджень щодо сексуального насильства, пов’язаного з війною: серед потерпілих 17 жінок, троє чоловіків і шестеро дітей; 10 проваджень стосуються зґвалтування. В одному з епізодів російському військовому зі 114-ї окремої мотострілецької бригади повідомлено про підозру за статтею 438 КК України.",
+        "why_it_matters": "Сексуальне насильство, пов’язане з війною, — це і категорія воєнних злочинів, і зона максимального ризику для постраждалих. Такі кейси не можна вести як звичайну кримінальну новину. Доказова логіка має захищати людину, не експлуатувати травму й не ламати юридичну точність.",
+        "how_to_use": "Фіксувати тільки необхідне: номер провадження, якщо він публічний; правову статтю; підрозділ; період; локацію на рівні населеного пункту або області; процесуальний статус; офіційне джерело. Дані постраждалих не мають потрапляти в публічні картки без крайньої потреби.",
+        "limits": "Не ідентифікувати постраждалих, родичів або точні місця укриття. Не перетворювати «повідомлено про підозру» на вирок. Уникати графічних деталей, якщо вони не є юридично необхідними й етично виправданими."
+      },
+      "tags": [
+        "crsv",
+        "article-438",
+        "war-crimes",
+        "survivor-protection",
+        "evidence-handling"
+      ]
+    },
+    {
+      "id": "2026-05-21-losses-captivity-missing-deported-children-protected-osint",
+      "rubric": {
+        "en": "Losses, Captivity & Missing",
+        "uk": "Втрати, полон, зниклі"
+      },
+      "title": {
+        "en": "Europol-style OSINT for missing Ukrainian children needs a protected workflow",
+        "uk": "OSINT-пошук депортованих дітей потребує захищеного workflow"
+      },
+      "sources": [
+        {
+          "name": "International Centre for Defence and Security",
+          "date": "2026-05-12",
+          "url": "https://icds.ee/en/taken-as-children-to-grow-up-as-russians-will-the-war-be-truly-over-if-they-are-still-missing/"
+        },
+        {
+          "name": "Europol",
+          "date": "2026-04-20",
+          "url": "https://www.europol.europa.eu/media-press/newsroom/news/europol-and-partners-track-down-45-forcibly-transferred-ukrainian-children"
+        }
+      ],
+      "en": {
+        "what_happened": "ICDS summarized the forced transfer and deportation problem and highlighted a Hague hackathon hosted by Europol, where 40 investigators from 18 countries, alongside the ICC and private parties, used open-source tools to identify potential locations of 45 Ukrainian children.",
+        "why_it_matters": "This is one of the strongest practical models for child-return OSINT: multinational, legally bounded and focused on location leads rather than public exposure. It connects open sources, official databases, child-protection work and international criminal accountability.",
+        "how_to_use": "Build a safe editorial explainer on the workflow, not on individual children: source categories, verification thresholds, handoff to Ukrainian authorities, protection of minors, audit trail and what cannot be published.",
+        "limits": "Do not publish names, locations, school data, social-media profiles or family links of children. Public OSINT can support tracing, but child-return work belongs in protected institutional channels, not open Telegram threads."
+      },
+      "uk": {
+        "what_happened": "ICDS описав проблему примусового переміщення українських дітей і окремо згадав хакатон у Гаазі, організований Europol: 40 розслідувачів із 18 країн разом з ICC і приватними учасниками використовували відкриті цифрові інструменти, щоб встановити можливі місця перебування 45 українських дітей.",
+        "why_it_matters": "Це один із найсильніших практичних прикладів OSINT для повернення дітей: міжнародний, юридично обмежений, з фокусом на передачу lead-ів компетентним органам, а не на публічне викриття. Тут сходяться відкриті джерела, офіційні бази, захист дітей і міжнародна кримінальна відповідальність.",
+        "how_to_use": "Варто зробити безпечний редакційний пояснювач про сам workflow, а не про конкретних дітей: типи джерел, пороги перевірки, передача українським органам, захист неповнолітніх, audit trail і те, що категорично не публікується.",
+        "limits": "Не публікувати імена, локації, школи, профілі соцмереж або родинні зв’язки дітей. Публічний OSINT може допомагати пошуку, але робота з повернення дітей має залишатися в захищених інституційних каналах, а не у відкритих Telegram-нитках."
+      },
+      "tags": [
+        "missing-children",
+        "child-deportation",
+        "europol",
+        "protected-osint",
+        "institutional-handoff"
+      ]
+    }
+  ],
+  "editorial_notes_internal": {
+    "rubrics_that_worked": [
+      "Signal One",
+      "Ukraine Lens",
+      "Map Room",
+      "Investigator OPSEC",
+      "War Crimes Verification",
+      "Losses, Captivity & Missing"
+    ],
+    "duplicate_check": {
+      "checked_against": [
+        "Available previous Daily Signal file in File Library: daily-signal-2026-05-20 / issue #007.",
+        "Latest Saturday Tool Radar and latest Weekly/Sunday issue were searched for in the File Library but were not returned as accessible files in this run.",
+        "Previously logged recent-cycle duplicate guards were also applied: Lantratova/child-deportation appointment, Baltic drone spillover, Mediazona 352,000 estimate, POW exchange verification anchor, Auto Archiver, OSM geolocation, GDELT/BigQuery, OSINT Newsletter #106 agentic-AI angle, Bellingcat Xiaohongshu."
+      ],
+      "result": "No exact or substantial duplicate remains among the final public cards.",
+      "notes": [
+        "War & Sanctions appears twice, but the two items are distinct: propaganda/entity mapping versus weapon-component supply-chain OSINT. This is same-source concentration, not a duplicate.",
+        "The ICDS/Europol children item is adjacent to the previous child-deportation sanctions/Lantratova track, but retained because the new editorial object is the protected OSINT workflow and institutional handoff model, not sanctions or appointments.",
+        "Eyes on Russia is already in the source registry, but this card covers the current map-as-verification-layer workflow and does not duplicate the previous Baltic drone-spillover Map Room item."
+      ],
+      "rejected_duplicate_candidates": [
+        "Mediazona / BBC / Meduza Russian-losses estimate and Russia 200 dataset: already used in Daily #007.",
+        "Lantratova appointment and EU child-deportation sanctions: already used in Daily #007.",
+        "Baltic drone-spillover / Estonia Reuters item: already used in Daily #007.",
+        "GDELT / BigQuery, OSM geolocation, Auto Archiver and OSINT Newsletter #106 agentic-AI risk: held for future Tool Radar only if there is a concrete new testable use case."
+      ]
+    },
+    "weekly_deep_dive_candidates": [
+      "Database is not evidence: how to use War & Sanctions safely.",
+      "The ethics of visibility under occupation.",
+      "From open-source child tracing to protected institutional handoff.",
+      "Survivor-first evidence handling in conflict-related sexual violence."
+    ],
+    "best_sources": [
+      "War & Sanctions",
+      "Centre for Information Resilience / Eyes on Russia",
+      "ZOiS",
+      "UNITED24 Media as a pointer to prosecutor statements",
+      "ICDS with Europol as primary workflow source"
+    ],
+    "weak_sources": [
+      "General battlefield drone-strike reporting was noisy and not accountability-specific.",
+      "Tabloid-style or single-source claims about radioactive debris, individual suspects or dramatic battlefield effects should be held unless confirmed by official technical material or reputable follow-up."
+    ],
+    "safety_editorial_cautions": [
+      "Do not expose personal data of children, survivors, relatives, occupied-territory civilians or low-level private persons.",
+      "Do not turn database entries into legal conclusions.",
+      "Do not publish operationally useful details from occupied-territory resistance material.",
+      "Do not identify or accuse individual suspects without independent public corroboration and clear legal status."
+    ],
+    "follow_up_sources": [
+      "War & Sanctions changelog and section pages",
+      "Center for Countering Disinformation updates",
+      "Donetsk Regional Prosecutor’s Office source posts",
+      "Europol hackathon materials",
+      "CIR Eyes on Russia methodology notes",
+      "Bring Kids Back UA",
+      "Save Ukraine",
+      "Regional Center for Human Rights"
+    ],
+    "tool_radar_candidates": [
+      "Hold OSINT Newsletter #106 tool leads for Saturday only after testing original project pages and filtering out unsafe bots or questionable deanonymization workflows.",
+      "Eyes on Russia can be revisited as a Tool Radar / Map Room hybrid if a hands-on workflow card is needed."
+    ],
+    "weekly_magazine_candidates": [
+      "War & Sanctions as a Ukrainian accountability data ecosystem.",
+      "Resistance visibility under occupation: how OSINT can endanger sources.",
+      "Protected OSINT for missing children: why public leads need institutional handoff."
+    ]
+  }
+}
