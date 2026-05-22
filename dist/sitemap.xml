@@ -33,6 +33,41 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>https://osintsignal.org/issues/open-source-signal-2026-05-22.html</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://osintsignal.org/issues/open-source-signal-2026-05-21.html</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://osintsignal.org/issues/open-source-signal-2026-05-20.html</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://osintsignal.org/issues/open-source-signal-2026-05-19.html</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://osintsignal.org/issues/open-source-signal-2026-05-18.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://osintsignal.org/issues/open-source-signal-2026-05-17.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://osintsignal.org/issues/open-source-signal-2026-05-16.html</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://osintsignal.org/issues/open-source-signal-2026-05-15.html</loc>
     <lastmod>2026-05-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -45,6 +80,16 @@
   <url>
     <loc>https://osintsignal.org/issues/open-source-signal-2026-05-13.html</loc>
     <lastmod>2026-05-13</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://osintsignal.org/weekly/</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://osintsignal.org/weekly/open-source-signal-weekly-2026-W20.html</loc>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>

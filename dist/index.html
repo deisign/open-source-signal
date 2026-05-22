@@ -461,6 +461,50 @@ footer .trust-links a:hover {
   text-underline-offset: .22em;
 }
 /* /OSS v1.1.5b trust layout */
+
+.weekly-home-card,
+.weekly-archive-card {
+  width: min(980px, 100%);
+  margin: 28px auto;
+  padding: 24px;
+  border: 1px solid var(--line, rgba(20,20,20,.16));
+  border-radius: 28px;
+  background: rgba(255,249,234,.72);
+  box-shadow: 0 14px 42px rgba(20,20,20,.08);
+  text-align: center;
+}
+.weekly-home-eyebrow {
+  display: inline-flex;
+  margin-bottom: 10px;
+  color: var(--muted, #6d665a);
+  font-family: var(--label-font, Arimo, Arial, sans-serif);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.weekly-home-card h2,
+.weekly-archive-card h2 {
+  margin: 0 0 10px;
+}
+.weekly-home-card p,
+.weekly-archive-card p {
+  max-width: 720px;
+  margin: 8px auto;
+}
+.weekly-home-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px 14px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+.weekly-home-actions a,
+.weekly-archive-card a {
+  font-weight: 800;
+  text-underline-offset: .22em;
+}
+
 </style>
   <script type="application/ld+json">
 {
@@ -513,8 +557,8 @@ footer .trust-links a:hover {
           </section>
         </div>
         <div class="button-row">
-          <a class="button" href="issues/open-source-signal-2026-05-15.html">Open latest issue</a>
-          <a class="button secondary" href="archive.html">Archive</a>
+          <a class="button" href="issues/open-source-signal-2026-05-22.html">Open latest issue</a>
+          <a class="button secondary" href="weekly/">Weekly</a> <a href="archive.html">Archive</a>
           <a class="button secondary" href="feed.xml">RSS</a>
           <a class="button secondary" href="https://t.me/open_source_signal_ua">Telegram</a>
         </div>
@@ -540,46 +584,46 @@ footer .trust-links a:hover {
       <article class="latest-card">
         <div class="latest-panel">
           <div class="issue-meta">
-            <span>Issue #002</span>
-            <span>15 May 2026</span>
+            <span>Issue #009</span>
+            <span>22 May 2026</span>
             <span>Daily Signal</span>
           </div>
           <h3>Open Source Signal</h3>
           <div class="uk-title">Сигнал відкритих джерел</div>
-          <p>Daily issue #002: Large-scale strikes revive the need for double-tap evidence discipline; EU sanctions create a public accountability index for abducted Ukrainian children; Russian casualty work depends on separating named records from estimates; Ukraine’s battlefield AI expansion raises verification and governance questions.</p>
-          <a class="button" href="issues/open-source-signal-2026-05-15.html">Read the issue / Читати випуск</a>
+          <p>Fiber-optic drone attacks on civilians, long-range refinery-strike verification, humanitarian UGV evacuations, occupation Telegram outage claims, and maritime incident verification around Odesa-bound civilian vessels.</p>
+          <a class="button" href="issues/open-source-signal-2026-05-22.html">Read the issue / Читати випуск</a>
         </div>
         <div class="signal-list">
-          <div class="mini-signal theme-war-crimes">
-            <div class="emoji">⚖️</div>
+          <div class="mini-signal theme-signal">
+            <div class="emoji">📡</div>
             <div>
-              <div class="rubric">War Crimes Verification / Верифікація воєнних злочинів</div>
-              <h4>Масовані удари знову показують потребу в дисципліні доказування “double-tap”</h4>
-              <p>Для верифікації воєнних злочинів важлива не лише точка влучання ракети чи дрона, а вся послідовність подій навколо атаки. Твердження про “double-tap” потребує таймлайну першого удару, прибуття служб, другого удару, пошкодження спроможності реагування та публічної комунікації довкола події.</p>
+              <div class="rubric">Signal One / Головний сигнал</div>
+              <h4>Атаки FPV-дронів по цивільних потребують безпечної для потерпілих верифікації</h4>
+              <p>FPV на оптоволокні ускладнюють документування шкоди цивільним: їх важче глушити, вони можуть заходити просто в двори й на вулиці, а докази часто небезпечні, крихкі й локальні. Цей кейс важливий не як героїчна історія, а як нагадування: навіть діти стають водночас потерпілими й відкритими свідками.</p>
             </div>
           </div>
-          <div class="mini-signal theme-ukraine">
-            <div class="emoji">🇺🇦</div>
+          <div class="mini-signal theme-infrastructure">
+            <div class="emoji">🌐</div>
             <div>
-              <div class="rubric">Ukraine Lens / Українська оптика</div>
-              <h4>Санкції ЄС створюють публічний індекс відповідальності за викрадення українських дітей</h4>
-              <p>Санкції перетворюють документування депортації дітей на структурований публічний список відповідальності. Для OSINT-аудиторії імена та організації зі списку стають точками входу для картографування інституцій, таборів, чиновників, медійних появ, молодіжних програм і окупаційних мереж.</p>
+              <div class="rubric">Infrastructure Signals / Інфраструктурні сигнали</div>
+              <h4>Удар по Сизранському НПЗ показує, чому оцінка пошкоджень потребує дисципліни доказів</h4>
+              <p>Для OSINT удари по НПЗ — це не просто військова новина. Тут потрібно окремо перевіряти ідентичність об’єкта, місце пожежі, власника, виробничу роль, військове значення, шкоду цивільним, екологічний ризик і реальний операційний ефект.</p>
             </div>
           </div>
-          <div class="mini-signal theme-losses">
-            <div class="emoji">🕯️</div>
+          <div class="mini-signal theme-toolbox">
+            <div class="emoji">🧰</div>
             <div>
-              <div class="rubric">Losses, Captivity & Missing / Втрати, полон, зниклі</div>
-              <h4>Дані про російські втрати потребують розділення іменних записів та оцінок</h4>
-              <p>Це базове методологічне питання для OSINT по втратах. Поіменні записи, офіційні списки, повідомлення родичів, цвинтарні дані, реєстрові оцінки та статистичні моделі відповідають на різні питання й не мають зливатися в одне нерозрізнене число.</p>
+              <div class="rubric">Toolbox / Інструментарій</div>
+              <h4>Наземні роботи створюють гуманітарний workflow евакуації із сірих зон</h4>
+              <p>Це практичний гуманітарний переворот у розмові про дрони. Безпілотні системи можуть зменшувати ризик не лише для військових, а й для цивільних, медиків і волонтерів у місцях, де дороги, обстріли та FPV-дрони роблять звичайний порятунок майже неможливим.</p>
             </div>
           </div>
-          <div class="mini-signal theme-ai">
-            <div class="emoji">🤖</div>
+          <div class="mini-signal theme-platform">
+            <div class="emoji">🔎</div>
             <div>
-              <div class="rubric">AI Verification / ШІ та верифікація</div>
-              <h4>Українські бойові ШІ-системи ставлять питання верифікації та контролю</h4>
-              <p>Для OSINT-аудиторії головний сигнал не лише в ефективності на полі бою, а в управлінні воєнними даними. ШІ-допомога у виявленні, intelligence management і аналізі ударів створює питання аудиту, помилок, доказового використання, ризику для цивільних і контролю над чутливими датасетами.</p>
+              <div class="rubric">Platform Watch / Платформний радар</div>
+              <h4>Заяви окупаційних Telegram-каналів про відключення потребують source grading</h4>
+              <p>Окупаційні Telegram-канали одночасно є джерелом, пропагандистським шаром і каналом damage control. Вони можуть давати ранні інфраструктурні сигнали, але їх не можна відмивати до статусу нейтрального місцевого повідомлення.</p>
             </div>
           </div>
         </div>
@@ -591,16 +635,26 @@ footer .trust-links a:hover {
         <h2>Rubrics <span class="uk-label">/ рубрики</span></h2>
       </div>
       <div class="rubric-grid">
-        <div class="chip"><span>⚖️</span><span>War Crimes Verification</span></div>
-        <div class="chip"><span>🇺🇦</span><span>Ukraine Lens</span></div>
-        <div class="chip"><span>🕯️</span><span>Losses, Captivity & Missing</span></div>
-        <div class="chip"><span>🤖</span><span>AI Verification</span></div>
+        <div class="chip"><span>📡</span><span>Signal One</span></div>
         <div class="chip"><span>🌐</span><span>Infrastructure Signals</span></div>
-        <div class="chip"><span>🛡️</span><span>Investigator OPSEC</span></div>
-        <div class="chip"><span>🇺🇦</span><span>Ukraine Lens</span></div>
+        <div class="chip"><span>🧰</span><span>Toolbox</span></div>
+        <div class="chip"><span>🔎</span><span>Platform Watch</span></div>
+        <div class="chip"><span>🗺️</span><span>Map Room</span></div>
       </div>
     </section>
-  </main>
+  
+<!-- weekly-magazine-block:start -->
+<section class="weekly-home-card" aria-labelledby="weekly-home-title">
+  <div class="weekly-home-eyebrow">Weekly Magazine</div>
+  <h2 id="weekly-home-title">Open Source Signal Weekly</h2>
+  <p>Sunday editorial synthesis of the strongest OSINT signals of the week: Ukrainian accountability, verification, tools, datasets, tradecraft, and source-risk notes.</p>
+  <div class="weekly-home-actions">
+    <a href="weekly/open-source-signal-weekly-2026-W20.html">Read latest weekly</a>
+    <a href="weekly/">Weekly archive</a>
+  </div>
+</section>
+<!-- weekly-magazine-block:end -->
+</main>
 
   <footer>
   <div class="wrap footer-inner">
@@ -614,7 +668,7 @@ footer .trust-links a:hover {
       <a href="ethics.html">Ethics</a>
       <a href="contact.html">Contact</a>
       <a href="subscribe.html">Subscribe</a>
-      <a href="archive.html">Archive</a>
+      <a href="weekly/">Weekly</a> <a href="archive.html">Archive</a>
       <a href="feed.xml">RSS</a>
       <a href="https://t.me/open_source_signal_ua">Telegram</a>
     </nav>
