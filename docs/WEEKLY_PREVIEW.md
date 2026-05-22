@@ -44,3 +44,15 @@ dist/weekly/open-source-signal-weekly-2026-W20.html
 The weekly builder also patches the generated homepage and archive with Weekly links and appends Weekly URLs to `sitemap.xml`.
 
 RSS and Telegram integration are intentionally left for later iterations.
+
+## v1.2.0c homepage policy
+
+Weekly is discoverable from the homepage through a compact navigation link only.
+
+The homepage should not contain a large Weekly promo card or a direct link to a specific Weekly issue. Weekly issue discovery happens through `/weekly/` and the archive. This keeps the front page focused on the latest Daily Signal while still making the Weekly section reachable.
+
+Weekly issue pages remain under:
+
+```text
+/weekly/open-source-signal-weekly-YYYY-Www.html
+```

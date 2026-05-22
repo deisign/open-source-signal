@@ -196,48 +196,10 @@ footer .trust-links a:hover {
 }
 /* /OSS v1.1.5b trust layout */
 
-.weekly-home-card,
-.weekly-archive-card {
-  width: min(980px, 100%);
-  margin: 28px auto;
-  padding: 24px;
-  border: 1px solid var(--line, rgba(20,20,20,.16));
-  border-radius: 28px;
-  background: rgba(255,249,234,.72);
-  box-shadow: 0 14px 42px rgba(20,20,20,.08);
-  text-align: center;
-}
-.weekly-home-eyebrow {
-  display: inline-flex;
-  margin-bottom: 10px;
-  color: var(--muted, #6d665a);
-  font-family: var(--label-font, Arimo, Arial, sans-serif);
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-}
-.weekly-home-card h2,
-.weekly-archive-card h2 {
-  margin: 0 0 10px;
-}
-.weekly-home-card p,
-.weekly-archive-card p {
-  max-width: 720px;
-  margin: 8px auto;
-}
-.weekly-home-actions {
-  display: flex;
-  justify-content: center;
-  gap: 10px 14px;
-  flex-wrap: wrap;
-  margin-top: 18px;
-}
-.weekly-home-actions a,
-.weekly-archive-card a {
-  font-weight: 800;
-  text-underline-offset: .22em;
-}
+.weekly-archive-card { width: min(980px, 100%); margin: 28px auto; padding: 22px; border: 1px solid var(--line, rgba(20,20,20,.16)); border-radius: 24px; background: rgba(255,249,234,.58); text-align: center; }
+.weekly-home-eyebrow { display: inline-flex; margin: 0 0 10px; color: var(--muted, #6d665a); font-family: var(--label-font, Arimo, Arial, sans-serif); font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.weekly-home-actions { display: flex; justify-content: center; gap: 10px 14px; flex-wrap: wrap; margin-top: 16px; }
+.weekly-home-actions a { font-weight: 800; text-underline-offset: .22em; }
 
 </style>
   <script type="application/ld+json">
@@ -393,17 +355,21 @@ footer .trust-links a:hover {
       </div>
       <a class="open" href="issues/open-source-signal-2026-05-13.html">Open →</a>
     </article>
-  </main>
   
-<!-- weekly-archive-block:start -->
-<section class="weekly-archive-card" aria-labelledby="weekly-archive-title">
-  <h2 id="weekly-archive-title">Weekly Magazine</h2>
+<!-- WEEKLY_ARCHIVE_START -->
+<section class="weekly-archive-card" aria-label="Weekly Magazine">
+  <p class="weekly-home-eyebrow">Weekly Magazine</p>
+  <h2>Open Source Signal Weekly</h2>
   <p>Sunday editorial synthesis, separate from the Daily Signal stream.</p>
-  <p><a href="weekly/open-source-signal-weekly-2026-W20.html">Latest weekly: W20 · 11–17 May 2026</a></p>
-  <p><a href="weekly/">All weekly issues →</a></p>
+  <p class="weekly-home-actions">
+    <a href="weekly/open-source-signal-weekly-2026-W20.html">Latest weekly: W20 · 11–17 May 2026</a>
+    <a href="weekly/">All weekly issues →</a>
+  </p>
 </section>
-<!-- weekly-archive-block:end -->
-<footer>
+<!-- WEEKLY_ARCHIVE_END -->
+
+</main>
+  <footer>
   <div class="wrap footer-inner">
     <div class="footer-brand">
       <strong>Open Source Signal / Сигнал відкритих джерел.</strong>
