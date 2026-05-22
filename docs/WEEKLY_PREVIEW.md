@@ -56,3 +56,12 @@ Weekly issue pages remain under:
 ```text
 /weekly/open-source-signal-weekly-YYYY-Www.html
 ```
+
+## v1.2.0d archive semantics
+
+Homepage navigation distinguishes between the two archives:
+
+- `archive.html` — Daily archive;
+- `weekly/` — Weekly archive.
+
+The homepage should not contain a large Weekly promo card and should not link directly to a specific Weekly issue. Specific Weekly issues are discovered from `/weekly/`, the Daily archive cross-link block, and the sitemap.
