@@ -1,0 +1,769 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Open Source Signal Weekly — Open Source Signal</title>
+  <meta name="description" content="A magazine-style synthesis of the week’s strongest accountability OSINT: strike-claim discipline, detention-site evidence, child-deportation networks, protected tracing workflows, Russian loss and recruitment data, verified maps, infrastructure-strike verification, platform research, AI risk and investigator OPSEC.">
+  <link rel="canonical" href="https://osintsignal.org/weekly/open-source-signal-weekly-2026-W21.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Open Source Signal Weekly">
+  <meta property="og:description" content="A magazine-style synthesis of the week’s strongest accountability OSINT: strike-claim discipline, detention-site evidence, child-deportation networks, protected tracing workflows, Russian loss and recruitment data, verified maps, infrastructure-strike verification, platform research, AI risk and investigator OPSEC.">
+  <meta property="og:url" content="https://osintsignal.org/weekly/open-source-signal-weekly-2026-W21.html">
+  <meta property="og:image" content="https://osintsignal.org/static/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <script data-goatcounter="https://deisign.goatcounter.com/count" async src="https://deisign.goatcounter.com/count.js"></script>
+  <link rel="icon" href="../static/logo-mark.png" type="image/png">
+  <link rel="shortcut icon" href="../static/favicon.ico">
+  <link rel="apple-touch-icon" href="../static/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@500;600;700&family=Fraunces:opsz,wght,SOFT,WONK@9..144,600..900,50..100,0..1&family=Inter:wght@400;500;650;800;900&family=JetBrains+Mono:wght@400;600;800&family=Source+Serif+4:opsz,wght@8..60,600..900&display=swap" rel="stylesheet">
+  <style>
+:root {
+  --display-latin: Fraunces, Georgia, serif;
+  --display-cyr: "Source Serif 4", Georgia, serif;
+  --label-font: Arimo, Arial, sans-serif;
+  --paper: #F2EDDD;
+  --paper-2: #FFF9EA;
+  --ink: #141414;
+  --muted: #6d665a;
+  --line: rgba(20,20,20,.16);
+  --signal: #D6422B;
+  --toolbox: #A64D79;
+  --tradecraft: #875C2D;
+  --ukraine: #2B67D6;
+  --war-crimes: #8A1C1C;
+  --losses: #7A6231;
+  --risk: #141414;
+  --shadow: 0 24px 70px rgba(20,20,20,.12);
+  --radius: 28px;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 10% 5%, rgba(214,66,43,.18), transparent 27rem),
+    radial-gradient(circle at 86% 14%, rgba(36,92,115,.18), transparent 24rem),
+    linear-gradient(135deg, #f7f0df, #ece1c6 58%, #d9cfb7);
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 18px;
+  line-height: 1.48;
+}
+a { color: inherit; }
+.wrap { width: min(1180px, calc(100% - 36px)); margin: 0 auto; }
+.hero { min-height: 76vh; display: grid; align-items: center; padding: 48px 0 64px; }
+.hero-card {
+  border: 1px solid var(--line);
+  background: rgba(255,249,234,.72);
+  backdrop-filter: blur(18px);
+  border-radius: 42px;
+  padding: clamp(26px, 5vw, 70px);
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+.hero-card::after {
+  content: "WEEKLY";
+  position: absolute;
+  right: -3vw;
+  bottom: -7vw;
+  font-family: JetBrains Mono, monospace;
+  font-size: clamp(80px, 15vw, 210px);
+  font-weight: 800;
+  letter-spacing: -.09em;
+  color: rgba(20,20,20,.045);
+  transform: rotate(-5deg);
+}
+.brand-lockup { display: flex; gap: 16px; align-items: center; position: relative; z-index: 1; }
+.brand-lockup img { width: 72px; height: 72px; border-radius: 18px; box-shadow: 0 10px 24px rgba(20,20,20,.12); }
+.brand-copy { display: flex; flex-direction: column; }
+.brand-copy strong { font-family: var(--label-font); font-size: 15px; letter-spacing: .08em; text-transform: uppercase; }
+.brand-copy span { font-family: var(--label-font); font-size: 18px; color: #3b362f; font-weight: 700; }
+.kicker {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: JetBrains Mono, monospace;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--muted);
+  position: relative;
+  z-index: 1;
+  margin-top: 34px;
+}
+.pill { border: 1px solid var(--line); padding: 7px 10px; border-radius: 999px; background: rgba(255,255,255,.35); }
+h1 {
+  position: relative;
+  z-index: 1;
+  margin: 24px 0 18px;
+  font-family: var(--display-latin);
+  font-size: clamp(56px, 11vw, 142px);
+  line-height: .86;
+  letter-spacing: -.07em;
+  max-width: 920px;
+}
+.ua-masthead {
+  position: relative;
+  z-index: 1;
+  margin: -8px 0 18px;
+  font-family: var(--display-cyr);
+  font-size: clamp(38px, 6.8vw, 88px);
+  line-height: .9;
+  letter-spacing: -.045em;
+  font-weight: 800;
+  max-width: 980px;
+  color: #2f2b25;
+}
+.subtitle {
+  position: relative;
+  z-index: 1;
+  max-width: 830px;
+  font-size: clamp(22px, 3vw, 36px);
+  line-height: 1.14;
+  font-weight: 650;
+  letter-spacing: -.03em;
+  margin: 0;
+}
+.dek { position: relative; z-index: 1; max-width: 820px; margin: 24px 0 0; color: #3d382f; font-size: 20px; }
+.toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  backdrop-filter: blur(16px);
+  background: rgba(242,237,221,.82);
+  border-bottom: 1px solid var(--line);
+}
+.toolbar-inner { min-height: 72px; display: flex; gap: 18px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+.brand-mini { display: flex; gap: 10px; align-items: center; font-family: var(--display-latin); font-weight: 900; font-size: 24px; letter-spacing: -.05em; text-decoration: none; }
+.brand-mini img { width: 34px; height: 34px; border-radius: 10px; }
+.language-toggle, .toolbar-links { display: flex; gap: 8px; flex-wrap: wrap; }
+button, .toolbar-links a, .trust-links a {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(20,20,20,.2);
+  background: rgba(255,255,255,.45);
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 10px 14px;
+  text-decoration: none;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+}
+button { cursor: pointer; }
+button.active, button:hover, .toolbar-links a:hover { background: var(--ink); color: var(--paper-2); }
+.intro-grid { padding: 58px 0 34px; display: grid; grid-template-columns: 1.05fr .95fr; gap: 26px; }
+.brief-card, .rubric-map, .weekly-note, .reading-list-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255,249,234,.65);
+  padding: 26px;
+  box-shadow: 0 12px 38px rgba(20,20,20,.06);
+}
+.brief-card h2, .rubric-map h2, .weekly-note h2, .reading-list-card h2 {
+  font-family: var(--display-latin);
+  font-size: 42px;
+  margin: 0 0 14px;
+  letter-spacing: -.045em;
+  line-height: .95;
+}
+.rubric-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 18px; }
+.rubric-chip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 10px 12px;
+  border-radius: 16px;
+  background: rgba(255,255,255,.46);
+  border: 1px solid rgba(20,20,20,.1);
+  font-family: var(--label-font);
+  font-weight: 800;
+  font-size: 15px;
+}
+.issue-section { padding: 18px 0 80px; }
+.signals { display: grid; gap: 28px; }
+.signal-card {
+  border-radius: 34px;
+  overflow: hidden;
+  border: 1px solid rgba(20,20,20,.18);
+  background: rgba(255,249,234,.78);
+  box-shadow: var(--shadow);
+  position: relative;
+}
+.signal-card::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 13px; background: var(--accent); }
+.theme-signal { --accent: var(--signal); }
+.theme-toolbox { --accent: var(--toolbox); }
+.theme-tradecraft { --accent: var(--tradecraft); }
+.theme-ukraine { --accent: var(--ukraine); }
+.theme-war-crimes { --accent: var(--war-crimes); }
+.theme-losses { --accent: var(--losses); }
+.theme-risk { --accent: var(--risk); }
+.card-topline {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: center;
+  padding: 22px 26px 0 36px;
+  font-family: JetBrains Mono, monospace;
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.rubric { display: inline-flex; align-items: center; gap: 9px; flex-wrap: wrap; font-family: var(--label-font); font-weight: 700; }
+.emoji { font-size: 24px; }
+.issue-index { font-size: 28px; color: rgba(20,20,20,.18); }
+.lang-panel { padding: 10px 34px 16px 36px; }
+body.lang-en .lang-panel.uk, body.lang-en .rubric .uk, body.lang-uk .lang-panel.en, body.lang-uk .rubric .en { display: none; }
+body.lang-both .weekly-split { display: grid; grid-template-columns: 1fr 1fr; }
+body.lang-both .weekly-split > .lang-panel.en { border-right: 1px solid rgba(20,20,20,.12); }
+body.lang-both .card-topline, body.lang-both .tags, body.lang-both .section-aside { grid-column: 1 / -1; }
+body.lang-both .rubric .uk::before { content: "/"; color: rgba(20,20,20,.36); margin-right: 8px; }
+h2 { font-family: var(--display-latin); font-size: clamp(36px, 5vw, 74px); line-height: .94; letter-spacing: -.06em; margin: 0 0 18px; }
+.lang-panel.uk h2 { font-family: var(--display-cyr); letter-spacing: -.04em; }
+.source-line { font-family: JetBrains Mono, monospace; color: var(--muted); font-size: 14px; margin: 0 0 22px; }
+.field { display: grid; grid-template-columns: 156px minmax(0, 1fr); gap: 18px; border-top: 1px solid rgba(20,20,20,.1); padding: 16px 0; }
+.field h3 { margin: 0; font-family: var(--label-font); text-transform: uppercase; letter-spacing: .08em; font-size: 13px; color: var(--accent); }
+.field p { margin: 0; color: #2f2b25; }
+.field.use { background: rgba(20,20,20,.035); margin-left: -18px; margin-right: -18px; padding-left: 18px; padding-right: 18px; border-radius: 18px; }
+.section-aside { border-top: 1px solid rgba(20,20,20,.1); margin: 0 34px 18px 36px; padding: 18px 0 2px; color: #3d382f; }
+.section-aside strong { color: var(--accent); font-family: var(--label-font); text-transform: uppercase; }
+.tags { display: flex; gap: 8px; flex-wrap: wrap; padding: 4px 34px 28px 36px; }
+.tags span { display: inline-flex; border: 1px solid var(--accent); color: var(--accent); border-radius: 999px; padding: 6px 10px; font-size: 13px; font-family: JetBrains Mono, monospace; font-weight: 800; }
+.weekly-note { margin-bottom: 28px; }
+.weekly-note p { max-width: 920px; font-family: var(--display-cyr); font-size: clamp(24px, 3vw, 40px); line-height: 1.18; margin: 0; color: #2f2b25; }
+.compact-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; margin-top: 28px; }
+.mini-card { min-height: 230px; border-radius: 28px; border: 1px solid rgba(20,20,20,.18); background: rgba(255,249,234,.72); padding: 22px; box-shadow: 0 12px 38px rgba(20,20,20,.06); position: relative; overflow: hidden; }
+.mini-card::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 10px; background: var(--accent); }
+.mini-card h2 { font-size: 38px; margin-top: 12px; }
+.mini-card ul, .reading-list-card ul { padding: 0; margin: 16px 0 0; list-style: none; display: grid; gap: 12px; }
+.mini-card li, .reading-list-card li { border-top: 1px solid rgba(20,20,20,.1); padding-top: 12px; color: #4f493f; }
+.reading-list-card { margin-top: 28px; }
+footer { padding: 60px 0 90px; color: #4f493f; font-family: JetBrains Mono, monospace; font-size: 14px; }
+.footer-inner { display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center; }
+.trust-links { display: flex; gap: 10px 16px; align-items: center; justify-content: center; flex-wrap: wrap; width: min(860px, 100%); margin: 0 auto; text-align: center; font-family: var(--label-font); font-size: 13px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
+@media (max-width: 860px) {
+  .intro-grid, body.lang-both .weekly-split, .compact-grid { grid-template-columns: 1fr; }
+  body.lang-both .weekly-split > .lang-panel.en { border-right: 0; border-bottom: 1px solid rgba(20,20,20,.12); }
+  .field { grid-template-columns: 1fr; gap: 8px; }
+}
+  </style>
+</head>
+<body class="lang-both">
+  <header class="hero">
+    <div class="wrap">
+      <div class="hero-card">
+        <div class="brand-lockup">
+          <img src="../static/logo-mark.png" alt="Open Source Signal logo">
+          <div class="brand-copy">
+            <strong>Open Source Signal</strong>
+            <span>Сигнал відкритих джерел</span>
+          </div>
+        </div>
+        <div class="kicker">
+          <span class="pill">Issue W21</span>
+          <span class="pill">18–24 May 2026</span>
+          <span class="pill">Weekly Magazine</span>
+          <span class="pill">EN + UKR</span>
+        </div>
+        <h1>Open Source Signal Weekly</h1>
+        <p class="ua-masthead">Тижневий сигнал відкритих джерел</p>
+        <p class="subtitle">Sunday editorial synthesis for Ukrainian accountability OSINT.</p>
+        <p class="dek">A magazine-style synthesis of the week’s strongest accountability OSINT: strike-claim discipline, detention-site evidence, child-deportation networks, protected tracing workflows, Russian loss and recruitment data, verified maps, infrastructure-strike verification, platform research, AI risk and investigator OPSEC.</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="toolbar" aria-label="Issue controls">
+    <div class="wrap toolbar-inner">
+      <a class="brand-mini" href="../index.html">
+        <img src="../static/logo-mark.png" alt="Open Source Signal logo">
+        OSS W21
+      </a>
+      <div class="language-toggle" aria-label="Language view">
+        <button data-lang="both" class="active" type="button">EN + UKR</button>
+        <button data-lang="en" type="button">English</button>
+        <button data-lang="uk" type="button">Українська</button>
+      </div>
+      <div class="toolbar-links">
+        <a href="../index.html">Daily Signal</a>
+        <a href="../feed.xml">RSS</a>
+        <a href="https://t.me/open_source_signal_ua">Telegram</a>
+        <a href="../archive.html">Archive</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <section class="intro-grid">
+      <div class="brief-card">
+        <h2>Editorial frame</h2>
+        <p><strong>What this is:</strong> A Sunday weekly magazine. It develops the strongest signals from the week’s Daily Signal issues and fresh public OSINT developments into editorial sections with evidence status, source limits and practical use.</p>
+        <p><strong>What this is not:</strong> A dump of daily cards, a Telegram rumor digest, a target list, a doxxing board, a leaked-data workflow, or a place to turn allegations into verdicts by putting a hat on them.</p>
+      </div>
+      <div class="rubric-map">
+        <h2>Rubric map</h2>
+        <div class="rubric-list">
+          <div class="rubric-chip">📡 Signal of the Week / Головний сигнал тижня</div>
+          <div class="rubric-chip">⚖️ War Crimes Verification / Верифікація воєнних злочинів</div>
+          <div class="rubric-chip">🇺🇦 Ukraine Lens / Українська оптика</div>
+          <div class="rubric-chip">🕯️ Losses, Captivity & Missing / Втрати, полон, зниклі</div>
+          <div class="rubric-chip">🧭 Tradecraft / Методика</div>
+          <div class="rubric-chip">🧰 Toolbox / Інструментарій</div>
+          <div class="rubric-chip">⚠️ Risk Watch / Межі й ризики</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="weekly-note">
+      <h2>Editorial note</h2>
+      <p>The week’s central lesson is category discipline. The same stream contains verified civilian harm, official claims, Telegram leads, intelligence-sourced reporting, legal suspicion notices, datasets, maps and tool outputs. Weekly synthesis should make those categories visible instead of stirring them into one confident bowl of nonsense.</p>
+    </section>
+
+    <section class="issue-section">
+      <div class="signals">
+        <article class="signal-card theme-signal">
+          <div class="card-topline">
+            <div class="rubric">
+              <span class="emoji">📡</span>
+              <span class="en">Signal of the Week</span>
+              <span class="uk">Головний сигнал тижня</span>
+            </div>
+            <div class="issue-index">#01</div>
+          </div>
+          <div class="weekly-split">
+            <section class="lang-panel en">
+              <h2>The strike week became an evidence-status problem</h2>
+              <p class="source-line">Reuters; Daily Signal #005/#009; fresh Sunday reporting · 18–24 May 2026</p>
+              <div class="field"><h3>What happened</h3><p>Russia’s May 23–24 missile and drone assault on Kyiv, earlier multi-city attacks on Odesa, Dnipro, Zaporizhzhia and Kherson, and Russian claims around Starobilsk all produced the same editorial problem: several categories of information arrived together, but not with the same evidentiary status.</p></div>
+              <div class="field"><h3>Why it matters</h3><p>For accountability OSINT, this is the week’s anchor. Confirmed civilian harm, official claims, denials, geolocated footage, munition assumptions, hospital figures and Telegram clips cannot be collapsed into one confident narrative.</p></div>
+              <div class="field use"><h3>How to use it</h3><p>Use a claim-status grid for every strike: confirmed civilian casualty, claimed military target, denied claim, geolocated footage, verified munition evidence, official casualty update, unverified Telegram lead and later correction. Keep location folders separate.</p></div>
+              <div class="field limits"><h3>Limits</h3><p>Do not infer intent, target category or casualty count from one dramatic video. Mark Starobilsk-type claims as unverified unless independently corroborated; mark Kyiv civilian harm separately when supported by officials, imagery and later reporting.</p></div>
+            </section>
+            <section class="lang-panel uk">
+              <h2>Тиждень ударів став проблемою статусу доказів</h2>
+              <p class="source-line">Reuters; Daily Signal #005/#009; свіже недільне повідомлення · 18–24 травня 2026</p>
+              <div class="field"><h3>Що сталося</h3><p>Російський ракетно-дроновий удар по Києву 23–24 травня, попередні атаки по Одесі, Дніпру, Запоріжжю й Херсону та російські заяви щодо Старобільська створили одну редакційну проблему: різні типи інформації прийшли одночасно, але не з однаковим доказовим статусом.</p></div>
+              <div class="field"><h3>Чому це важливо</h3><p>Для accountability OSINT це головний сигнал тижня. Підтверджена шкода цивільним, офіційні заяви, заперечення, геолоковані відео, припущення щодо боєприпасів, медичні дані й Telegram-кадри не можна зливати в один самовпевнений сюжет.</p></div>
+              <div class="field use"><h3>Як це застосувати</h3><p>Використовуйте таблицю статусів для кожного удару: підтверджена цивільна жертва, заявлена військова ціль, заперечена заява, геолоковане відео, перевірені уламки, офіційне оновлення щодо постраждалих, неперевірений Telegram-лід і подальше уточнення. Локації тримайте окремо.</p></div>
+              <div class="field limits"><h3>Обмеження</h3><p>Не виводьте намір, тип цілі або кількість жертв з одного ефектного відео. Заяви типу Старобільська позначайте як неперевірені без незалежної корроборації; шкоду цивільним у Києві маркуйте окремо, коли вона підтверджена посадовцями, зображеннями й подальшими повідомленнями.</p></div>
+            </section>
+            <div class="section-aside"><strong>Editorial use:</strong> Lead section; useful as a reusable verification-status explainer for future strike coverage.</div>
+            <div class="tags"><span>signal-of-week</span><span>strike-verification</span><span>claim-status</span><span>kyiv</span><span>starobilsk</span><span>telegram-leads</span></div>
+          </div>
+        </article>
+        <article class="signal-card theme-war-crimes">
+          <div class="card-topline">
+            <div class="rubric">
+              <span class="emoji">⚖️</span>
+              <span class="en">War Crimes Verification</span>
+              <span class="uk">Верифікація воєнних злочинів</span>
+            </div>
+            <div class="issue-index">#02</div>
+          </div>
+          <div class="weekly-split">
+            <section class="lang-panel en">
+              <h2>Detention-site accountability moved from survivor testimony to suspect status</h2>
+              <p class="source-line">Slidstvo.Info; Le Monde; Daily Signal #006/#007 · May 2026</p>
+              <div class="field"><h3>What happened</h3><p>Slidstvo.Info reported that Russian prison official Anatoliy Kaplunov was notified of suspicion in Ukraine after former Ukrainian captives testified about abuse in the colony he headed. Le Monde separately reported on Ukrainian civilians detained by Russia, including incommunicado detention, torture allegations and long Russian-law sentences.</p></div>
+              <div class="field"><h3>Why it matters</h3><p>This is a strong Ukrainian accountability pattern: detention-site evidence is not just a story about individual suffering, but a map of facilities, command roles, transfer routes, legal labels and procedural steps.</p></div>
+              <div class="field use"><h3>How to use it</h3><p>Build facility casefiles: institution name, location, command chain, survivor testimony, known deaths or disappearances, transfer route, Russian legal label, Ukrainian suspicion notice, court material, sanctions status and corroborating media.</p></div>
+              <div class="field limits"><h3>Limits</h3><p>Keep legal language exact. Kaplunov is reported as notified of suspicion, not convicted. Survivor testimony is crucial but sensitive; do not publish private family data, addresses, unrelated guards or unverified low-level accusations.</p></div>
+            </section>
+            <section class="lang-panel uk">
+              <h2>Від свідчень звільнених до статусу підозрюваного</h2>
+              <p class="source-line">Слідство.Інфо; Le Monde; Daily Signal #006/#007 · травень 2026</p>
+              <div class="field"><h3>Що сталося</h3><p>«Слідство.Інфо» повідомило, що російському посадовцю колонії Анатолію Каплунову в Україні оголошено підозру після свідчень звільнених українських полонених про знущання в установі, яку він очолював. Le Monde окремо писав про утримання українських цивільних Росією, ізоляцію без зв’язку, заяви про тортури й довгі строки за російським законодавством.</p></div>
+              <div class="field"><h3>Чому це важливо</h3><p>Це сильний український accountability-патерн: докази щодо місць несвободи — не лише історія індивідуального страждання, а мапа установ, ролей командування, маршрутів перевезення, правових ярликів і процесуальних кроків.</p></div>
+              <div class="field use"><h3>Як це застосувати</h3><p>Будуйте casefile установи: назва, локація, ланцюг керівництва, свідчення звільнених, відомі смерті або зникнення, маршрут перевезення, російська правова кваліфікація, українська підозра, судові матеріали, санкційний статус і медійна корроборація.</p></div>
+              <div class="field limits"><h3>Обмеження</h3><p>Юридичну мову треба тримати точною. Каплунов у матеріалі фігурує як особа, якій повідомлено про підозру, а не як засуджений. Свідчення звільнених критично важливі, але чутливі; не публікуйте дані родин, адреси, непричетних охоронців або неперевірені низові звинувачення.</p></div>
+            </section>
+            <div class="section-aside"><strong>Editorial use:</strong> Major accountability story; candidate for a full detention-infrastructure methodology piece.</div>
+            <div class="tags"><span>pow-abuse</span><span>civilian-detention</span><span>detention-sites</span><span>article-438</span><span>legal-status</span></div>
+          </div>
+        </article>
+        <article class="signal-card theme-losses">
+          <div class="card-topline">
+            <div class="rubric">
+              <span class="emoji">🕯️</span>
+              <span class="en">Losses, Captivity & Missing</span>
+              <span class="uk">Втрати, полон, зниклі</span>
+            </div>
+            <div class="issue-index">#03</div>
+          </div>
+          <div class="weekly-split">
+            <section class="lang-panel en">
+              <h2>Foreign fighters are a captivity, loss and trafficking dataset problem</h2>
+              <p class="source-line">Truth Hounds, FIDH, Kazakhstan International Bureau; Daily Signal #006 · 29 April 2026</p>
+              <div class="field"><h3>What happened</h3><p>Truth Hounds and partners examined Russia’s recruitment and exploitation of foreign fighters, including possible deception, coercion and trafficking-like practices affecting socio-economically vulnerable foreign nationals.</p></div>
+              <div class="field"><h3>Why it matters</h3><p>Russian loss, POW, MIA and missing-person datasets are no longer purely domestic Russian datasets. They include foreign nationals with opaque recruitment routes and unclear legal status.</p></div>
+              <div class="field use"><h3>How to use it</h3><p>For each foreign-fighter case, separate identity, nationality, recruitment channel, promised job or contract, unit, deployment location, capture/death/missing status and indicators of coercion or deception.</p></div>
+              <div class="field limits"><h3>Limits</h3><p>Do not collapse all foreign fighters into one moral or legal category. Recruitment propaganda, POW interviews and social-media traces can all be incomplete or distorted; legal classification requires expert review.</p></div>
+            </section>
+            <section class="lang-panel uk">
+              <h2>Іноземці в російській армії як проблема втрат, полону й торгівлі людьми</h2>
+              <p class="source-line">Truth Hounds, FIDH, Казахстанське міжнародне бюро; Daily Signal #006 · 29 квітня 2026</p>
+              <div class="field"><h3>Що сталося</h3><p>Truth Hounds та партнери дослідили російське вербування й експлуатацію іноземців, зокрема можливі обман, примус і практики, схожі на торгівлю людьми, щодо соціально вразливих іноземних громадян.</p></div>
+              <div class="field"><h3>Чому це важливо</h3><p>Масиви російських втрат, полонених, зниклих і MIA вже не є суто внутрішньоросійськими. У них є іноземці з непрозорими маршрутами вербування й неочевидним правовим статусом.</p></div>
+              <div class="field use"><h3>Як це застосувати</h3><p>Для кожного кейсу іноземного бійця окремо фіксуйте особу, громадянство, канал вербування, обіцяне працевлаштування або контракт, підрозділ, місце служби, статус полону/загибелі/зникнення та ознаки примусу чи обману.</p></div>
+              <div class="field limits"><h3>Обмеження</h3><p>Не записуйте всіх іноземців в одну моральну чи юридичну категорію. Рекрутингова пропаганда, інтерв’ю полонених і соцмережі можуть бути неповними або викривленими; юридична класифікація потребує фахової оцінки.</p></div>
+            </section>
+            <div class="section-aside"><strong>Editorial use:</strong> Recurring Losses/Captivity/Missing framework; useful for regional and nationality-based data work.</div>
+            <div class="tags"><span>foreign-fighters</span><span>pow-data</span><span>trafficking-risk</span><span>losses</span><span>missing</span></div>
+          </div>
+        </article>
+        <article class="signal-card theme-ukraine">
+          <div class="card-topline">
+            <div class="rubric">
+              <span class="emoji">🇺🇦</span>
+              <span class="en">Ukraine Lens</span>
+              <span class="uk">Українська оптика</span>
+            </div>
+            <div class="issue-index">#04</div>
+          </div>
+          <div class="weekly-split">
+            <section class="lang-panel en">
+              <h2>War & Sanctions is an entity layer, not a verdict machine</h2>
+              <p class="source-line">War & Sanctions; Daily Signal #008 · 12–18 May 2026</p>
+              <div class="field"><h3>What happened</h3><p>Ukraine’s War & Sanctions portal updated its “Kremlin Mouthpieces” section and continues to maintain structured public sections on propaganda actors, child kidnappers, foreign weapon components, vessels, aircraft, stolen heritage and the Russian military-industrial complex.</p></div>
+              <div class="field"><h3>Why it matters</h3><p>The portal is one of Ukraine’s strongest public entity layers for accountability OSINT. Its value is not only the names, but the structure: people, companies, weapons, vessels, components, sanctions exposure and institutional links.</p></div>
+              <div class="field use"><h3>How to use it</h3><p>Use it as a starting point for entity maps. Cross-check each person, component, company, vessel or propaganda actor against sanctions acts, corporate registries, archived statements, procurement data and independent reporting.</p></div>
+              <div class="field limits"><h3>Limits</h3><p>A database entry is not a complete evidentiary package. Separate “listed by Ukrainian official project,” “sanctioned,” “identified by investigators,” “charged” and “convicted.” A tiny database hat does not make a legal finding.</p></div>
+            </section>
+            <section class="lang-panel uk">
+              <h2>War & Sanctions — це шар сутностей, а не машина вироків</h2>
+              <p class="source-line">War & Sanctions; Daily Signal #008 · 12–18 травня 2026</p>
+              <div class="field"><h3>Що сталося</h3><p>Український портал War & Sanctions оновив розділ «Kremlin Mouthpieces» і веде структуровані публічні розділи про пропагандистів, викрадачів дітей, іноземні компоненти у зброї, судна, авіацію, викрадену спадщину та російський ВПК.</p></div>
+              <div class="field"><h3>Чому це важливо</h3><p>Портал є одним із найсильніших українських публічних entity-шарів для accountability OSINT. Його цінність не лише в іменах, а в структурі: люди, компанії, зброя, судна, компоненти, санкційні ризики й інституційні зв’язки.</p></div>
+              <div class="field use"><h3>Як це застосувати</h3><p>Використовуйте його як стартову точку для entity map. Кожну особу, компонент, компанію, судно чи пропагандистську структуру звіряйте із санкційними актами, реєстрами, архівами заяв, закупівельними даними й незалежними розслідуваннями.</p></div>
+              <div class="field limits"><h3>Обмеження</h3><p>Запис у базі не дорівнює повному доказовому пакету. Розділяйте статуси: «є в українському офіційному проєкті», «під санкціями», «ідентифікований розслідувачами», «обвинувачений» і «засуджений». Маленький капелюшок бази даних не створює юридичного висновку.</p></div>
+            </section>
+            <div class="section-aside"><strong>Editorial use:</strong> Ukraine Lens anchor; suitable for a guide on using Ukrainian state-backed accountability datasets safely.</div>
+            <div class="tags"><span>war-and-sanctions</span><span>entity-mapping</span><span>sanctions</span><span>propaganda-networks</span><span>weapon-components</span></div>
+          </div>
+        </article>
+        <article class="signal-card theme-war-crimes">
+          <div class="card-topline">
+            <div class="rubric">
+              <span class="emoji">⚖️</span>
+              <span class="en">War Crimes Verification</span>
+              <span class="uk">Верифікація воєнних злочинів</span>
+            </div>
+            <div class="issue-index">#05</div>
+          </div>
+          <div class="weekly-split">
+            <section class="lang-panel en">
+              <h2>Child-deportation OSINT belongs in protected handoff channels</h2>
+              <p class="source-line">The Times; ICDS / Europol; Daily Signal #007/#008 · May 2026</p>
+              <div class="field"><h3>What happened</h3><p>The week connected two child-deportation accountability layers: reporting on Yana Lantratova’s appointment to a Russian human-rights post while accused in a child-transfer context, and an ICDS account of a Europol-hosted Hague hackathon where investigators used OSINT to identify possible locations of Ukrainian children.</p></div>
+              <div class="field"><h3>Why it matters</h3><p>This is the difference between public-interest OSINT and reckless exposure. The public story should explain networks, institutions and workflows, while individual child-location leads must go through protected institutional channels.</p></div>
+              <div class="field use"><h3>How to use it</h3><p>Map institutions and actors: occupation authorities, political offices, children’s facilities, adoption or identity-change mechanisms, youth programs, public propaganda, legal notices and official handoff routes to Ukrainian or international bodies.</p></div>
+              <div class="field limits"><h3>Limits</h3><p>Do not publish names, schools, social profiles, exact locations, family links or identifying details of children. Treat allegation, sanctions status and court material as different evidence layers.</p></div>
+            </section>
+            <section class="lang-panel uk">
+              <h2>OSINT щодо депортованих дітей має йти в захищені канали передачі</h2>
+              <p class="source-line">The Times; ICDS / Europol; Daily Signal #007/#008 · травень 2026</p>
+              <div class="field"><h3>Що сталося</h3><p>Цього тижня зійшлися два шари відповідальності за депортацію дітей: повідомлення про призначення Яни Лантратової на російську «правозахисну» посаду на тлі звинувачень у контексті переміщення дітей і матеріал ICDS про хакатон Europol у Гаазі, де розслідувачі використовували OSINT для встановлення можливих місць перебування українських дітей.</p></div>
+              <div class="field"><h3>Чому це важливо</h3><p>Це різниця між OSINT у публічному інтересі та небезпечним викриттям. Публічний матеріал має пояснювати мережі, інституції й workflow, а ліди щодо конкретних дітей мають іти захищеними інституційними каналами.</p></div>
+              <div class="field use"><h3>Як це застосувати</h3><p>Мапуйте інституції й акторів: окупаційні адміністрації, політичні офіси, дитячі установи, механізми усиновлення або зміни ідентичності, молодіжні програми, пропагандистське прикриття, правові повідомлення й офіційні маршрути передачі українським або міжнародним органам.</p></div>
+              <div class="field limits"><h3>Обмеження</h3><p>Не публікуйте імена, школи, соцмережі, точні локації, родинні зв’язки або ідентифікаційні деталі дітей. Звинувачення, санкційний статус і матеріали справ — це різні доказові шари.</p></div>
+            </section>
+            <div class="section-aside"><strong>Editorial use:</strong> Major War Crimes Verification section; candidate for a protected child-tracing workflow explainer.</div>
+            <div class="tags"><span>deported-children</span><span>protected-osint</span><span>europol</span><span>institutional-handoff</span><span>war-crimes</span></div>
+          </div>
+        </article>
+        <article class="signal-card theme-war-crimes">
+          <div class="card-topline">
+            <div class="rubric">
+              <span class="emoji">⚖️</span>
+              <span class="en">War Crimes Verification</span>
+              <span class="uk">Верифікація воєнних злочинів</span>
+            </div>
+            <div class="issue-index">#06</div>
+          </div>
+          <div class="weekly-split">
+            <section class="lang-panel en">
+              <h2>CRSV evidence must be survivor-first or it is not evidence discipline</h2>
+              <p class="source-line">UNITED24 Media; Daily Signal #008 · 12 May 2026</p>
+              <div class="field"><h3>What happened</h3><p>UNITED24 Media reported that Donetsk prosecutors are investigating 26 conflict-related sexual-violence proceedings involving women, men and children, with one reported suspicion concerning a serviceman from Russia’s 114th Separate Motorized Rifle Brigade under Article 438 of Ukraine’s Criminal Code.</p></div>
+              <div class="field"><h3>Why it matters</h3><p>Conflict-related sexual violence is a war-crimes category and a maximum-risk evidence category. The public-interest argument never cancels the duty to protect survivors.</p></div>
+              <div class="field use"><h3>How to use it</h3><p>Track only what is necessary for accountability: procedural status, legal article, unit reference, broad location, time frame, official source and whether the alleged perpetrator is identified, notified of suspicion, charged or convicted.</p></div>
+              <div class="field limits"><h3>Limits</h3><p>Do not identify survivors, relatives, shelters, exact homes or private support networks. Avoid graphic detail unless legally necessary and ethically justified. “Notified of suspicion” is not “convicted.”</p></div>
+            </section>
+            <section class="lang-panel uk">
+              <h2>CRSV-докази мають бути survivor-first — інакше це не дисципліна доказів</h2>
+              <p class="source-line">UNITED24 Media; Daily Signal #008 · 12 травня 2026</p>
+              <div class="field"><h3>Що сталося</h3><p>UNITED24 Media повідомило, що прокуратура Донеччини розслідує 26 проваджень щодо сексуального насильства, пов’язаного з війною, де потерпілими є жінки, чоловіки й діти; в одному епізоді йдеться про підозру військовому 114-ї окремої мотострілецької бригади РФ за статтею 438 КК України.</p></div>
+              <div class="field"><h3>Чому це важливо</h3><p>Сексуальне насильство, пов’язане з війною, є категорією воєнних злочинів і зоною максимального ризику для доказів. Публічний інтерес ніколи не скасовує обов’язку захищати постраждалих.</p></div>
+              <div class="field use"><h3>Як це застосувати</h3><p>Фіксуйте лише те, що потрібно для відповідальності: процесуальний статус, статтю, підрозділ, широку локацію, часовий проміжок, офіційне джерело й статус імовірного злочинця — встановлений, отримав підозру, обвинувачений або засуджений.</p></div>
+              <div class="field limits"><h3>Обмеження</h3><p>Не ідентифікуйте постраждалих, родичів, укриття, точні домівки або приватні мережі підтримки. Уникайте графічних деталей без юридичної необхідності й етичного обґрунтування. «Повідомлено про підозру» — не «засуджено».</p></div>
+            </section>
+            <div class="section-aside"><strong>Editorial use:</strong> Special War Crimes Verification ethics section; keep as recurring CRSV handling standard.</div>
+            <div class="tags"><span>crsv</span><span>article-438</span><span>survivor-protection</span><span>evidence-handling</span><span>legal-status</span></div>
+          </div>
+        </article>
+        <article class="signal-card theme-tradecraft">
+          <div class="card-topline">
+            <div class="rubric">
+              <span class="emoji">🧭</span>
+              <span class="en">Tradecraft</span>
+              <span class="uk">Методика</span>
+            </div>
+            <div class="issue-index">#07</div>
+          </div>
+          <div class="weekly-split">
+            <section class="lang-panel en">
+              <h2>Visibility under occupation can become a targeting surface</h2>
+              <p class="source-line">ZOiS; Reuters occupation Telegram reporting; Daily Signal #008/#009 · May 2026</p>
+              <div class="field"><h3>What happened</h3><p>ZOiS examined how public resistance actions under Russian occupation can expose civilians through Telegram tasking, symbols, CCTV, phone searches and digital traces. Daily Signal #009 separately treated occupation Telegram channels as source, propaganda layer and damage-control channel at once.</p></div>
+              <div class="field"><h3>Why it matters</h3><p>The week’s OPSEC lesson is not glamorous: publish less when the person on the ground carries the risk. OSINT projects can accidentally turn local civilians into exposed data points.</p></div>
+              <div class="field use"><h3>How to use it</h3><p>Add a harm-check before publication: face, hands, window, courtyard, route, upload pattern, local network, device reflection, timestamp, camera angle, occupation source status and possible retaliation risk.</p></div>
+              <div class="field limits"><h3>Limits</h3><p>Some local actors knowingly choose public visibility, but editorial default should be conservative: blur, delay, aggregate or do not publish when risk is unclear. Do not launder occupation officials into neutral local authorities.</p></div>
+            </section>
+            <section class="lang-panel uk">
+              <h2>Видимість в окупації може стати поверхнею для репресій</h2>
+              <p class="source-line">ZOiS; Reuters про окупаційні Telegram-джерела; Daily Signal #008/#009 · травень 2026</p>
+              <div class="field"><h3>Що сталося</h3><p>ZOiS розглянув, як публічні акції опору під російською окупацією можуть викривати цивільних через Telegram-завдання, символи, камери, перевірки телефонів і цифрові сліди. Daily Signal #009 окремо розбирав окупаційні Telegram-канали як джерело, пропагандистський шар і канал damage control одночасно.</p></div>
+              <div class="field"><h3>Чому це важливо</h3><p>OPSEC-урок тижня не гламурний: публікуйте менше, коли ризик несе людина на місці. OSINT-проєкти можуть випадково перетворити місцевих цивільних на відкриті точки даних.</p></div>
+              <div class="field use"><h3>Як це застосувати</h3><p>Додайте harm-check перед публікацією: обличчя, руки, вікно, двір, маршрут, патерн завантаження, локальна мережа, відбиття пристрою, час, кут зйомки, статус окупаційного джерела й ризик помсти.</p></div>
+              <div class="field limits"><h3>Обмеження</h3><p>Деякі місцеві актори свідомо обирають публічність, але редакційний default має бути обережним: розмити, відкласти, агрегувати або не публікувати, якщо ризик неясний. Не відмивайте окупаційних посадовців до статусу нейтральної місцевої влади.</p></div>
+            </section>
+            <div class="section-aside"><strong>Editorial use:</strong> Practical method section; suitable for a Telegram Radar/source-safety checklist.</div>
+            <div class="tags"><span>occupied-territories</span><span>source-protection</span><span>telegram-radar</span><span>harm-check</span><span>opsec</span></div>
+          </div>
+        </article>
+        <article class="signal-card theme-toolbox">
+          <div class="card-topline">
+            <div class="rubric">
+              <span class="emoji">🧰</span>
+              <span class="en">Toolbox</span>
+              <span class="uk">Інструментарій</span>
+            </div>
+            <div class="issue-index">#08</div>
+          </div>
+          <div class="weekly-split">
+            <section class="lang-panel en">
+              <h2>Verified maps and archives beat Telegram fog</h2>
+              <p class="source-line">CIR Eyes on Russia; Browsertrix; ExifTool; Dangerzone; Daily Signal #008/#010 · May 2026</p>
+              <div class="field"><h3>What happened</h3><p>CIR’s Eyes on Russia map offers a searchable verification layer built from verified videos, photos, satellite imagery and source-linked pins. Saturday Tool Radar added practical preservation and intake tools: Browsertrix for bounded web archives, ExifTool for metadata triage and Dangerzone for safer suspicious-document intake.</p></div>
+              <div class="field"><h3>Why it matters</h3><p>The practical weekly takeaway is workflow, not tool worship. Discovery, preservation, metadata triage and safe intake are separate steps that should leave an audit trail.</p></div>
+              <div class="field use"><h3>How to use it</h3><p>For each public-source item: capture the original URL, archive when lawful, hash raw files, extract metadata on copies, quarantine hostile attachments, store source context and keep working copies separate from raw evidence.</p></div>
+              <div class="field limits"><h3>Limits</h3><p>A map pin, metadata field or archive file is not a final conclusion. Do not archive private groups, credentials, live operational details or unnecessary personal data.</p></div>
+            </section>
+            <section class="lang-panel uk">
+              <h2>Перевірені мапи й архіви кращі за Telegram-туман</h2>
+              <p class="source-line">CIR Eyes on Russia; Browsertrix; ExifTool; Dangerzone; Daily Signal #008/#010 · травень 2026</p>
+              <div class="field"><h3>Що сталося</h3><p>Мапа CIR Eyes on Russia дає пошуковий шар верифікації на основі перевірених відео, фото, супутникових знімків і source-linked pins. Суботній Tool Radar додав практичні інструменти: Browsertrix для контрольованого вебархівування, ExifTool для metadata triage і Dangerzone для безпечнішого прийому підозрілих документів.</p></div>
+              <div class="field"><h3>Чому це важливо</h3><p>Практичний висновок тижня — workflow, а не поклоніння інструментам. Пошук, збереження, metadata triage і безпечний intake — це різні кроки, які мають залишати audit trail.</p></div>
+              <div class="field use"><h3>Як це застосувати</h3><p>Для кожного відкритого джерела: фіксуйте оригінальний URL, архівуйте там, де це законно, хешуйте raw files, витягуйте метадані з копій, карантинуйте небезпечні вкладення, зберігайте контекст джерела й відділяйте робочі копії від raw evidence.</p></div>
+              <div class="field limits"><h3>Обмеження</h3><p>Точка на мапі, поле метаданих або архівний файл не є фінальним висновком. Не архівуйте приватні групи, credentials, live operational details або зайві персональні дані.</p></div>
+            </section>
+            <div class="section-aside"><strong>Editorial use:</strong> Tools/datasets section; useful as the standing “evidence intake pipeline” explainer.</div>
+            <div class="tags"><span>tools</span><span>eyes-on-russia</span><span>browsertrix</span><span>exiftool</span><span>dangerzone</span><span>evidence-preservation</span></div>
+          </div>
+        </article>
+        <article class="signal-card theme-tradecraft">
+          <div class="card-topline">
+            <div class="rubric">
+              <span class="emoji">🧭</span>
+              <span class="en">Map Room</span>
+              <span class="uk">Картографічна кімната</span>
+            </div>
+            <div class="issue-index">#09</div>
+          </div>
+          <div class="weekly-split">
+            <section class="lang-panel en">
+              <h2>Infrastructure-strike verification needs damage assessment, not route astrology</h2>
+              <p class="source-line">Reuters; AP; The Guardian; Daily Signal #005/#007/#009 · 18–22 May 2026</p>
+              <div class="field"><h3>What happened</h3><p>The week included reports on Ukrainian long-range strikes against Russian oil infrastructure, Moscow-region facilities, a Syzran refinery fire, Baltic drone spillover and Odesa-area civilian shipping incidents.</p></div>
+              <div class="field"><h3>Why it matters</h3><p>These stories are important, but easy to mishandle. Infrastructure and maritime OSINT can slide from accountability documentation into operationally useful detail if route, timing, weak-point or live-tracking information is published carelessly.</p></div>
+              <div class="field use"><h3>How to use it</h3><p>Build post-event files: facility identity, ownership, public production role, satellite or FIRMS signal, geolocated local footage, casualty/environmental statements, AIS history for vessels, official claims and later operational reporting.</p></div>
+              <div class="field limits"><h3>Limits</h3><p>Do not publish targeting guidance, weak-point analysis, live vessel movement, route prediction or unverified casualty claims. “Fire observed” is not “facility disabled,” and “flag state” is not proof of intent.</p></div>
+            </section>
+            <section class="lang-panel uk">
+              <h2>Верифікація ударів по інфраструктурі потребує damage assessment, а не маршрутної астрології</h2>
+              <p class="source-line">Reuters; AP; The Guardian; Daily Signal #005/#007/#009 · 18–22 травня 2026</p>
+              <div class="field"><h3>Що сталося</h3><p>Тиждень містив повідомлення про українські дальні удари по російській нафтовій інфраструктурі, об’єктах у Московській області, пожежу на Сизранському НПЗ, інцидент із дроном над Балтією та випадки навколо цивільного судноплавства біля Одеси.</p></div>
+              <div class="field"><h3>Чому це важливо</h3><p>Ці сюжети важливі, але їх легко зіпсувати. Інфраструктурний і maritime OSINT може зісковзнути з документування відповідальності в операційно корисні деталі, якщо необережно публікувати маршрути, час, вразливі точки або live tracking.</p></div>
+              <div class="field use"><h3>Як це застосувати</h3><p>Будуйте post-event files: ідентичність об’єкта, власник, публічна виробнича роль, супутниковий або FIRMS-сигнал, геолоковані локальні відео, заяви про постраждалих чи екологію, AIS-історія суден, офіційні заяви й пізніші дані про роботу об’єкта.</p></div>
+              <div class="field limits"><h3>Обмеження</h3><p>Не публікуйте підказки для наведення, аналіз вразливих точок, живий рух суден, прогноз маршруту або неперевірені дані про постраждалих. «Є пожежа» не дорівнює «об’єкт виведено з ладу», а «прапор судна» не доводить намір.</p></div>
+            </section>
+            <div class="section-aside"><strong>Editorial use:</strong> Map Room method; strong candidate for an infrastructure-strike verification guide.</div>
+            <div class="tags"><span>infrastructure-osint</span><span>damage-assessment</span><span>refineries</span><span>maritime-osint</span><span>drone-spillover</span></div>
+          </div>
+        </article>
+        <article class="signal-card theme-risk">
+          <div class="card-topline">
+            <div class="rubric">
+              <span class="emoji">⚠️</span>
+              <span class="en">Risk Watch</span>
+              <span class="uk">Межі й ризики</span>
+            </div>
+            <div class="issue-index">#10</div>
+          </div>
+          <div class="weekly-split">
+            <section class="lang-panel en">
+              <h2>Russia-China drone training is a transfer-chain lead, not a public proof package</h2>
+              <p class="source-line">Reuters; Daily Signal #007 · 19 May 2026</p>
+              <div class="field"><h3>What happened</h3><p>Reuters reported, citing European intelligence sources, that around 200 Russian military personnel were covertly trained in China in late 2025 in drones, electronic warfare, aviation, mortars and explosives handling; the Kremlin denied the report.</p></div>
+              <div class="field"><h3>Why it matters</h3><p>The story matters because it points to possible external support, sanctions exposure and battlefield adaptation. But the core evidence is not fully public, so the OSINT task is to watch the chain, not pretend the chain is already proven end to end.</p></div>
+              <div class="field use"><h3>How to use it</h3><p>Track locations, dates, training entities, contractors, unit references, procurement links, later battlefield appearances and official denials. Treat this as a structured watchlist for corroboration.</p></div>
+              <div class="field limits"><h3>Limits</h3><p>Do not identify or accuse individual trainees without independent public evidence. Do not convert intelligence-sourced reporting into named allegations.</p></div>
+            </section>
+            <section class="lang-panel uk">
+              <h2>Російсько-китайська підготовка дронщиків — це лід про transfer chain, а не публічний доказовий пакет</h2>
+              <p class="source-line">Reuters; Daily Signal #007 · 19 травня 2026</p>
+              <div class="field"><h3>Що сталося</h3><p>Reuters повідомив із посиланням на європейські розвідджерела, що близько 200 російських військових наприкінці 2025 року таємно проходили підготовку в Китаї з дронів, РЕБ, авіації, мінометів і вибухових речовин; Кремль це заперечив.</p></div>
+              <div class="field"><h3>Чому це важливо</h3><p>Сюжет важливий, бо вказує на можливу зовнішню підтримку, санкційні ризики й бойову адаптацію. Але ключові докази не є повністю публічними, тому OSINT-задача — спостерігати за ланцюгом, а не робити вигляд, що він уже доведений від початку до кінця.</p></div>
+              <div class="field use"><h3>Як це застосувати</h3><p>Фіксуйте локації, дати, навчальні структури, підрядників, згадки підрозділів, закупівельні зв’язки, подальші появи на фронті й офіційні заперечення. Це має бути структурований watchlist для корроборації.</p></div>
+              <div class="field limits"><h3>Обмеження</h3><p>Не ідентифікуйте й не звинувачуйте окремих учасників навчання без незалежних публічних доказів. Не перетворюйте розвідкову журналістику на іменні обвинувачення.</p></div>
+            </section>
+            <div class="section-aside"><strong>Editorial use:</strong> Risk Watch section for foreign-support and sanctions-monitoring follow-up.</div>
+            <div class="tags"><span>russia-china</span><span>drone-warfare</span><span>electronic-warfare</span><span>sanctions-research</span><span>source-limits</span></div>
+          </div>
+        </article>
+        <article class="signal-card theme-risk">
+          <div class="card-topline">
+            <div class="rubric">
+              <span class="emoji">🛡️</span>
+              <span class="en">Investigator OPSEC</span>
+              <span class="uk">Безпека дослідника</span>
+            </div>
+            <div class="issue-index">#11</div>
+          </div>
+          <div class="weekly-split">
+            <section class="lang-panel en">
+              <h2>Old compromise is still infrastructure</h2>
+              <p class="source-line">The Record / CERT-UA; Google Threat Intelligence via Guardian and Axios; Daily Signal #005/#006 · April–May 2026</p>
+              <div class="field"><h3>What happened</h3><p>The Record summarized a CERT-UA warning that Russian-linked actors revisit previously compromised systems. The week also included reporting on Google findings about AI-assisted hacking and possible AI-supported vulnerability work.</p></div>
+              <div class="field"><h3>Why it matters</h3><p>For OSINT teams, the issue is defensive. Investigators working on war crimes, sanctions, POWs or occupation networks often hold sensitive leads long before publication. Old access tokens, mail forwarding rules and forgotten devices can be more dangerous than a new phishing email.</p></div>
+              <div class="field use"><h3>How to use it</h3><p>After any suspected compromise, review cloud sessions, OAuth grants, forwarding rules, shared drives, admin panels, backup access, password reuse and abandoned devices. Keep an incident log so repeat attempts are connected.</p></div>
+              <div class="field limits"><h3>Limits</h3><p>Do not feed private witness data, unredacted documents or unpublished case files into uncontrolled AI agents. Defensive reporting is not an invitation to reproduce exploit mechanics.</p></div>
+            </section>
+            <section class="lang-panel uk">
+              <h2>Стара компрометація все ще є інфраструктурою</h2>
+              <p class="source-line">The Record / CERT-UA; Google Threat Intelligence через Guardian і Axios; Daily Signal #005/#006 · квітень–травень 2026</p>
+              <div class="field"><h3>Що сталося</h3><p>The Record переказав попередження CERT-UA про те, що російськопов’язані актори повертаються до раніше скомпрометованих систем. Тиждень також містив повідомлення про висновки Google щодо AI-assisted hacking і можливого AI-supported пошуку вразливостей.</p></div>
+              <div class="field"><h3>Чому це важливо</h3><p>Для OSINT-команд це захисна тема. Дослідники воєнних злочинів, санкцій, полонених або окупаційних мереж часто зберігають чутливі ліди задовго до публікації. Старі токени доступу, правила пересилання пошти й забуті пристрої можуть бути небезпечнішими за новий фішинговий лист.</p></div>
+              <div class="field use"><h3>Як це застосувати</h3><p>Після будь-якої підозри на компрометацію перевіряйте хмарні сесії, OAuth-доступи, правила пересилання, спільні диски, адмін-панелі, резервні доступи, повторне використання паролів і старі пристрої. Ведіть журнал інцидентів, щоб повторні спроби були пов’язані між собою.</p></div>
+              <div class="field limits"><h3>Обмеження</h3><p>Не завантажуйте приватні свідчення, нерозмиті документи або неопубліковані матеріали справ у неконтрольованих AI-агентів. Defensive reporting не є запрошенням відтворювати exploit mechanics.</p></div>
+            </section>
+            <div class="section-aside"><strong>Editorial use:</strong> OPSEC section; useful as a checklist for small investigative teams.</div>
+            <div class="tags"><span>opsec</span><span>cert-ua</span><span>ai-assisted-hacking</span><span>incident-response</span><span>investigator-safety</span></div>
+          </div>
+        </article>
+        <article class="signal-card theme-toolbox">
+          <div class="card-topline">
+            <div class="rubric">
+              <span class="emoji">📱</span>
+              <span class="en">Platform Watch</span>
+              <span class="uk">Платформний радар</span>
+            </div>
+            <div class="issue-index">#12</div>
+          </div>
+          <div class="weekly-split">
+            <section class="lang-panel en">
+              <h2>Xiaohongshu expands the platform horizon beyond the usual Western stack</h2>
+              <p class="source-line">Bellingcat; Daily Signal #006 · 20 April 2026</p>
+              <div class="field"><h3>What happened</h3><p>Bellingcat published a guide to using Xiaohongshu / RedNote for open-source research, explaining platform culture, search behaviour, Chinese-language searching, censorship and preservation needs.</p></div>
+              <div class="field"><h3>Why it matters</h3><p>For Ukraine-related OSINT, Chinese-language spaces matter for sanctions evasion, dual-use supply chains, drone components, Russian narratives and diplomatic messaging. Xiaohongshu is not a political archive, but everyday platforms can preserve indirect signals.</p></div>
+              <div class="field use"><h3>How to use it</h3><p>Search in simplified Chinese, record query terms, preserve URL/timestamp/profile ID/screenshots, and compare findings with company registries, customs data, other Chinese platforms and independent reporting.</p></div>
+              <div class="field limits"><h3>Limits</h3><p>Content is moderated, censored and demographically skewed. Translation can erase slang, coded language and platform-specific clues. Treat findings as leads, not representative public opinion.</p></div>
+            </section>
+            <section class="lang-panel uk">
+              <h2>Xiaohongshu розширює платформний горизонт за межі звичного західного набору</h2>
+              <p class="source-line">Bellingcat; Daily Signal #006 · 20 квітня 2026</p>
+              <div class="field"><h3>Що сталося</h3><p>Bellingcat опублікував гайд із використання Xiaohongshu / RedNote для відкритих досліджень: культура платформи, поведінка пошуку, пошук китайською, цензура й потреба негайного збереження матеріалів.</p></div>
+              <div class="field"><h3>Чому це важливо</h3><p>Для українського OSINT китайськомовні простори важливі через обхід санкцій, ланцюги товарів подвійного призначення, компоненти дронів, російські наративи й дипломатичні сигнали. Xiaohongshu не є політичним архівом, але повсякденні платформи можуть зберігати непрямі сигнали.</p></div>
+              <div class="field use"><h3>Як це застосувати</h3><p>Шукайте спрощеною китайською, фіксуйте запити, зберігайте URL/час/profile ID/скриншоти й звіряйте знахідки з реєстрами компаній, митними даними, іншими китайськими платформами та незалежними медіа.</p></div>
+              <div class="field limits"><h3>Обмеження</h3><p>Контент модерується, цензурується й має демографічні викривлення. Переклад може стирати сленг, кодовану мову й platform-specific clues. Такі знахідки — це ліди, а не репрезентативна громадська думка.</p></div>
+            </section>
+            <div class="section-aside"><strong>Editorial use:</strong> Platform Watch section; useful for expanding source registry and search-language practice.</div>
+            <div class="tags"><span>xiaohongshu</span><span>rednote</span><span>platform-research</span><span>china</span><span>dual-use</span></div>
+          </div>
+        </article>
+        <article class="signal-card theme-risk">
+          <div class="card-topline">
+            <div class="rubric">
+              <span class="emoji">🤖</span>
+              <span class="en">AI Verification</span>
+              <span class="uk">ШІ та верифікація</span>
+            </div>
+            <div class="issue-index">#13</div>
+          </div>
+          <div class="weekly-split">
+            <section class="lang-panel en">
+              <h2>Ukrainian legal AI needs tokenizer, citation and memory discipline</h2>
+              <p class="source-line">arXiv 2605.14890; arXiv 2604.13765; Saturday Tool Radar #010 · April–May 2026</p>
+              <div class="field"><h3>What happened</h3><p>A Ukrainian legal-text benchmark found major tokenizer and prompting differences across foundation models, including cases where few-shot prompting degraded performance. Another preprint audited how generative AI represents atrocity memory in Ukraine. Saturday Tool Radar added provenance and AI-geolocation tools such as c2patool and GeoSearch.</p></div>
+              <div class="field"><h3>Why it matters</h3><p>Accountability work depends on legal language, memory infrastructure and provenance. LLM output can help summarize and triage, but it can also distort Ukrainian legal terms, hallucinate status or flatten atrocity history.</p></div>
+              <div class="field use"><h3>How to use it</h3><p>Test models on your own Ukrainian legal corpus before deployment. Prefer citation-preserving summaries, extractive outputs, human review, raw-source archiving and clear separation between evidence and model interpretation.</p></div>
+              <div class="field limits"><h3>Limits</h3><p>C2PA absence does not prove fakery; AI geolocation confidence does not prove location; LLM legal summaries are not legal evidence. The machine may sound like a judge, but so does a duck in a wig if the courtroom is badly run.</p></div>
+            </section>
+            <section class="lang-panel uk">
+              <h2>Український юридичний AI потребує дисципліни токенізації, цитат і пам’яті</h2>
+              <p class="source-line">arXiv 2605.14890; arXiv 2604.13765; Saturday Tool Radar #010 · квітень–травень 2026</p>
+              <div class="field"><h3>Що сталося</h3><p>Бенчмарк українських юридичних текстів показав значні відмінності токенізації та prompt-performance між foundation models, зокрема випадки, де few-shot погіршував результат. Інший препринт перевіряв, як generative AI відтворює пам’ять про злочини в Україні. Суботній Tool Radar додав інструменти provenance й AI-geolocation, зокрема c2patool і GeoSearch.</p></div>
+              <div class="field"><h3>Чому це важливо</h3><p>Accountability-робота залежить від юридичної мови, інфраструктури пам’яті й provenance. LLM може допомагати з резюме й triage, але може спотворювати українські юридичні терміни, галюцинувати статус або згладжувати історію злочинів.</p></div>
+              <div class="field use"><h3>Як це застосувати</h3><p>Тестуйте моделі на власному корпусі українських юридичних текстів перед впровадженням. Віддавайте перевагу citation-preserving summaries, extractive outputs, людській перевірці, архівуванню raw sources і чіткому розділенню доказу та машинної інтерпретації.</p></div>
+              <div class="field limits"><h3>Обмеження</h3><p>Відсутність C2PA не доводить фейк; confidence AI-геолокації не доводить локацію; LLM-резюме юридичних текстів не є юридичним доказом. Машина може звучати як суддя, але й качка в перуці звучить переконливо, якщо суд погано організований.</p></div>
+            </section>
+            <div class="section-aside"><strong>Editorial use:</strong> AI Verification section; suitable for a future Ukrainian legal/OSINT AI benchmark note.</div>
+            <div class="tags"><span>ai-verification</span><span>ukrainian-legal-text</span><span>provenance</span><span>c2pa</span><span>geolocation</span><span>llm-risk</span></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="compact-grid">
+        <section class="mini-card theme-tradecraft">
+          <div class="rubric"><span class="emoji">🧭</span><span>Practical Methods</span></div>
+          <h2>Methods</h2>
+          <ul><li>Use claim-status grids for strike reporting: confirmed, claimed, denied, geolocated, unverified and corrected.</li><li>Add harm-checks before publishing material from occupied territories, children, survivors, witnesses or evacuation contexts.</li><li>Build post-event infrastructure files instead of live route reconstructions or weak-point analysis.</li></ul>
+        </section>
+        <section class="mini-card theme-toolbox">
+          <div class="rubric"><span class="emoji">🧰</span><span>Tools / Datasets</span></div>
+          <h2>Tools</h2>
+          <ul><li>War & Sanctions and Eyes on Russia are lead and verification layers, not standalone legal conclusions.</li><li>Browsertrix, ExifTool and Dangerzone form a practical preservation, metadata and safe-intake chain.</li><li>C2PA and AI-geolocation tools help triage provenance and location hypotheses, but never replace human verification.</li></ul>
+        </section>
+        <section class="mini-card theme-risk">
+          <div class="rubric"><span class="emoji">🛡️</span><span>OPSEC / Risk</span></div>
+          <h2>OPSEC</h2>
+          <ul><li>Treat old compromise as live infrastructure: review sessions, tokens, forwarding rules and abandoned devices.</li><li>Do not feed private witness data, child-location leads or unredacted case files into uncontrolled AI agents.</li><li>Never publish private addresses, phone numbers, family data, precise shelter locations or live operational details.</li></ul>
+        </section>
+      </div>
+
+      <section class="reading-list-card">
+        <h2>Reading List</h2>
+        <ul><li><a href="https://www.reuters.com/world/europe/ukraines-capital-kyiv-hit-by-massive-missile-drone-attack-2026-05-23/">Reuters — Russia strikes Kyiv with massive missile and drone attack</a> — Fresh Sunday anchor for claim-status and civilian-harm verification.</li><li><a href="https://www.reuters.com/world/europe/russia-hits-ukraines-odesa-dnipro-with-drones-missiles-overnight-officials-say-2026-05-18/">Reuters — Russia hits Odesa and Dnipro with drones and missiles</a> — Multi-location strike verification and maritime incident context.</li><li><a href="https://www.slidstvo.info/news/nachalnyku-kolonii-v-rf-z-rozsliduvannia-slidstva-info-iakyy-nakazuvav-znushchatysia-z-ukrainskykh-polonenykh-povidomyly-pro-pidozru/">Slidstvo.Info — Russian colony chief notified of suspicion</a> — Ukrainian accountability case linking investigation, testimony and procedure.</li><li><a href="https://truth-hounds.org/en/cases/combatants-mercenaries-or-victims-of-human-trafficking/">Truth Hounds — Foreign fighters: combatants, mercenaries or trafficking victims</a> — Legal-methodological frame for foreign recruits in Russian forces.</li><li><a href="https://www.reuters.com/business/aerospace-defense/russians-covertly-trained-by-china-return-fight-ukraine-sources-say-2026-05-19/">Reuters — Russians covertly trained in China, sources say</a> — Foreign-support and transfer-chain lead with strong source-status caveats.</li><li><a href="https://www.lemonde.fr/en/international/article/2026/05/18/captured-imprisoned-and-tortured-russia-ignores-all-laws-and-does-whatever-it-wants-to-ukrainian-civilians_6753550_4.html">Le Monde — Ukrainian civilians captured, imprisoned and tortured</a> — Civilian detention as occupation infrastructure.</li><li><a href="https://war-sanctions.gur.gov.ua/en/news">War & Sanctions — News and Kremlin Mouthpieces update</a> — Ukrainian entity layer for propaganda and accountability mapping.</li><li><a href="https://war-sanctions.gur.gov.ua/en/components">War & Sanctions — Components in the aggressor’s weapons</a> — Supply-chain OSINT dataset for foreign components in Russian weapons.</li><li><a href="https://www.info-res.org/eyes-on-russia-maps/">CIR — Eyes on Russia Maps</a> — Verified map layer for incident discovery and pattern analysis.</li><li><a href="https://www.zois-berlin.de/en/publications/zois-spotlight/resistance-under-occupation-in-ukraine">ZOiS — Resistance under occupation in Ukraine</a> — Source-safety and visibility-risk corrective for occupied territories.</li><li><a href="https://united24media.com/war-in-ukraine/ukraine-investigates-26-russian-wartime-sexual-violence-cases-against-women-men-and-children-18729">UNITED24 Media — Ukraine investigates 26 wartime sexual-violence cases</a> — Survivor-first CRSV handling and Article 438 context.</li><li><a href="https://icds.ee/en/taken-as-children-to-grow-up-as-russians-will-the-war-be-truly-over-if-they-are-still-missing/">ICDS — Taken as children to grow up as Russians</a> — Protected OSINT workflow and Europol/ICC-linked child-tracing model.</li><li><a href="https://www.bellingcat.com/resources/2026/04/20/xiaohongshu-rednote-open-source-guide/">Bellingcat — Xiaohongshu / RedNote open-source guide</a> — Platform research beyond the usual Western source stack.</li><li><a href="https://therecord.media/ukraine-warns-russian-hackers-revisiting-old-attacks">The Record — Ukraine warns Russian hackers are revisiting old attacks</a> — Investigator OPSEC and old-compromise discipline.</li><li><a href="https://arxiv.org/abs/2605.14890">arXiv — LLM evaluation on Ukrainian legal documents</a> — Tokenizer, prompting and legal-language risk for Ukrainian accountability pipelines.</li></ul>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <div><strong>Open Source Signal / Сигнал відкритих джерел.</strong><br><span>Ukrainian accountability OSINT journal.</span></div>
+      <nav class="trust-links" aria-label="Trust and discovery pages">
+<a href="../about.html">About</a><a href="../methodology.html">Methodology</a><a href="../ethics.html">Ethics</a><a href="../contact.html">Contact</a><a href="../subscribe.html">Subscribe</a><a href="../archive.html">Archive</a><a href="../feed.xml">RSS</a>        <a href="https://t.me/open_source_signal_ua">Telegram</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+const buttons = document.querySelectorAll("[data-lang]");
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const lang = button.dataset.lang;
+    document.body.classList.remove("lang-both", "lang-en", "lang-uk");
+    document.body.classList.add("lang-" + lang);
+    buttons.forEach((b) => b.classList.toggle("active", b === button));
+  });
+});
+  </script>
+</body>
+</html>
