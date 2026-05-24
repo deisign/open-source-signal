@@ -1,0 +1,11 @@
+{
+  "kind": "weekly_telegram_announcement",
+  "issue_number": "W21",
+  "date_iso": "2026-05-24",
+  "source_weekly_json": "weekly/open-source-signal-weekly-2026-W21.json",
+  "parse_mode": "HTML",
+  "disable_web_page_preview": false,
+  "url": "https://osintsignal.org/weekly/open-source-signal-weekly-2026-W21.html",
+  "char_count": 881,
+  "text": "🛰 <b>Open Source Signal Weekly W21</b>\n<i>18–24 травня 2026</i>\n\nЖурнальний синтез найсильніших accountability OSINT-сигналів тижня: дисципліна заяв про удари, докази щодо місць несвободи, мережі депортації дітей, захищені workflow пошуку, російські втрати й вербування, перевірені мапи, верифікація ударів по інфраструктурі, платформні дослідження, ризики ШІ та OPSEC дослідника.\n\n<b>У випуску:</b>\n• Головний сигнал тижня: Тиждень ударів став проблемою статусу доказів\n• Верифікація воєнних злочинів: Від свідчень звільнених до статусу підозрюваного\n• Втрати, полон, зниклі: Іноземці в російській армії як проблема втрат, полону й торгівлі людьми\n• Українська оптика: War &amp; Sanctions — це шар сутностей, а не машина вироків\n\n<a href=\"https://osintsignal.org/weekly/open-source-signal-weekly-2026-W21.html\">Читати тижневий випуск</a>\n\n#OSINT #Ukraine #Verification #WarCrimes\n"
+}
