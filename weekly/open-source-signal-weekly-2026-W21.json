@@ -44,7 +44,6 @@
       "how_to_use_uk": "Використовуйте таблицю статусів для кожного удару: підтверджена цивільна жертва, заявлена військова ціль, заперечена заява, геолоковане відео, перевірені уламки, офіційне оновлення щодо постраждалих, неперевірений Telegram-лід і подальше уточнення. Локації тримайте окремо.",
       "limits_en": "Do not infer intent, target category or casualty count from one dramatic video. Mark Starobilsk-type claims as unverified unless independently corroborated; mark Kyiv civilian harm separately when supported by officials, imagery and later reporting.",
       "limits_uk": "Не виводьте намір, тип цілі або кількість жертв з одного ефектного відео. Заяви типу Старобільська позначайте як неперевірені без незалежної корроборації; шкоду цивільним у Києві маркуйте окремо, коли вона підтверджена посадовцями, зображеннями й подальшими повідомленнями.",
-      "editorial_use": "Lead section; useful as a reusable verification-status explainer for future strike coverage.",
       "tags": [
         "signal-of-week",
         "strike-verification",
@@ -71,7 +70,6 @@
       "how_to_use_uk": "Будуйте casefile установи: назва, локація, ланцюг керівництва, свідчення звільнених, відомі смерті або зникнення, маршрут перевезення, російська правова кваліфікація, українська підозра, судові матеріали, санкційний статус і медійна корроборація.",
       "limits_en": "Keep legal language exact. Kaplunov is reported as notified of suspicion, not convicted. Survivor testimony is crucial but sensitive; do not publish private family data, addresses, unrelated guards or unverified low-level accusations.",
       "limits_uk": "Юридичну мову треба тримати точною. Каплунов у матеріалі фігурує як особа, якій повідомлено про підозру, а не як засуджений. Свідчення звільнених критично важливі, але чутливі; не публікуйте дані родин, адреси, непричетних охоронців або неперевірені низові звинувачення.",
-      "editorial_use": "Major accountability story; candidate for a full detention-infrastructure methodology piece.",
       "tags": [
         "pow-abuse",
         "civilian-detention",
@@ -97,7 +95,6 @@
       "how_to_use_uk": "Для кожного кейсу іноземного бійця окремо фіксуйте особу, громадянство, канал вербування, обіцяне працевлаштування або контракт, підрозділ, місце служби, статус полону/загибелі/зникнення та ознаки примусу чи обману.",
       "limits_en": "Do not collapse all foreign fighters into one moral or legal category. Recruitment propaganda, POW interviews and social-media traces can all be incomplete or distorted; legal classification requires expert review.",
       "limits_uk": "Не записуйте всіх іноземців в одну моральну чи юридичну категорію. Рекрутингова пропаганда, інтерв’ю полонених і соцмережі можуть бути неповними або викривленими; юридична класифікація потребує фахової оцінки.",
-      "editorial_use": "Recurring Losses/Captivity/Missing framework; useful for regional and nationality-based data work.",
       "tags": [
         "foreign-fighters",
         "pow-data",
@@ -123,7 +120,6 @@
       "how_to_use_uk": "Використовуйте його як стартову точку для entity map. Кожну особу, компонент, компанію, судно чи пропагандистську структуру звіряйте із санкційними актами, реєстрами, архівами заяв, закупівельними даними й незалежними розслідуваннями.",
       "limits_en": "A database entry is not a complete evidentiary package. Separate “listed by Ukrainian official project,” “sanctioned,” “identified by investigators,” “charged” and “convicted.” A tiny database hat does not make a legal finding.",
       "limits_uk": "Запис у базі не дорівнює повному доказовому пакету. Розділяйте статуси: «є в українському офіційному проєкті», «під санкціями», «ідентифікований розслідувачами», «обвинувачений» і «засуджений». Маленький капелюшок бази даних не створює юридичного висновку.",
-      "editorial_use": "Ukraine Lens anchor; suitable for a guide on using Ukrainian state-backed accountability datasets safely.",
       "tags": [
         "war-and-sanctions",
         "entity-mapping",
@@ -149,7 +145,6 @@
       "how_to_use_uk": "Мапуйте інституції й акторів: окупаційні адміністрації, політичні офіси, дитячі установи, механізми усиновлення або зміни ідентичності, молодіжні програми, пропагандистське прикриття, правові повідомлення й офіційні маршрути передачі українським або міжнародним органам.",
       "limits_en": "Do not publish names, schools, social profiles, exact locations, family links or identifying details of children. Treat allegation, sanctions status and court material as different evidence layers.",
       "limits_uk": "Не публікуйте імена, школи, соцмережі, точні локації, родинні зв’язки або ідентифікаційні деталі дітей. Звинувачення, санкційний статус і матеріали справ — це різні доказові шари.",
-      "editorial_use": "Major War Crimes Verification section; candidate for a protected child-tracing workflow explainer.",
       "tags": [
         "deported-children",
         "protected-osint",
@@ -175,7 +170,6 @@
       "how_to_use_uk": "Фіксуйте лише те, що потрібно для відповідальності: процесуальний статус, статтю, підрозділ, широку локацію, часовий проміжок, офіційне джерело й статус імовірного злочинця — встановлений, отримав підозру, обвинувачений або засуджений.",
       "limits_en": "Do not identify survivors, relatives, shelters, exact homes or private support networks. Avoid graphic detail unless legally necessary and ethically justified. “Notified of suspicion” is not “convicted.”",
       "limits_uk": "Не ідентифікуйте постраждалих, родичів, укриття, точні домівки або приватні мережі підтримки. Уникайте графічних деталей без юридичної необхідності й етичного обґрунтування. «Повідомлено про підозру» — не «засуджено».",
-      "editorial_use": "Special War Crimes Verification ethics section; keep as recurring CRSV handling standard.",
       "tags": [
         "crsv",
         "article-438",
@@ -201,7 +195,6 @@
       "how_to_use_uk": "Додайте harm-check перед публікацією: обличчя, руки, вікно, двір, маршрут, патерн завантаження, локальна мережа, відбиття пристрою, час, кут зйомки, статус окупаційного джерела й ризик помсти.",
       "limits_en": "Some local actors knowingly choose public visibility, but editorial default should be conservative: blur, delay, aggregate or do not publish when risk is unclear. Do not launder occupation officials into neutral local authorities.",
       "limits_uk": "Деякі місцеві актори свідомо обирають публічність, але редакційний default має бути обережним: розмити, відкласти, агрегувати або не публікувати, якщо ризик неясний. Не відмивайте окупаційних посадовців до статусу нейтральної місцевої влади.",
-      "editorial_use": "Practical method section; suitable for a Telegram Radar/source-safety checklist.",
       "tags": [
         "occupied-territories",
         "source-protection",
@@ -227,7 +220,6 @@
       "how_to_use_uk": "Для кожного відкритого джерела: фіксуйте оригінальний URL, архівуйте там, де це законно, хешуйте raw files, витягуйте метадані з копій, карантинуйте небезпечні вкладення, зберігайте контекст джерела й відділяйте робочі копії від raw evidence.",
       "limits_en": "A map pin, metadata field or archive file is not a final conclusion. Do not archive private groups, credentials, live operational details or unnecessary personal data.",
       "limits_uk": "Точка на мапі, поле метаданих або архівний файл не є фінальним висновком. Не архівуйте приватні групи, credentials, live operational details або зайві персональні дані.",
-      "editorial_use": "Tools/datasets section; useful as the standing “evidence intake pipeline” explainer.",
       "tags": [
         "tools",
         "eyes-on-russia",
@@ -254,7 +246,6 @@
       "how_to_use_uk": "Будуйте post-event files: ідентичність об’єкта, власник, публічна виробнича роль, супутниковий або FIRMS-сигнал, геолоковані локальні відео, заяви про постраждалих чи екологію, AIS-історія суден, офіційні заяви й пізніші дані про роботу об’єкта.",
       "limits_en": "Do not publish targeting guidance, weak-point analysis, live vessel movement, route prediction or unverified casualty claims. “Fire observed” is not “facility disabled,” and “flag state” is not proof of intent.",
       "limits_uk": "Не публікуйте підказки для наведення, аналіз вразливих точок, живий рух суден, прогноз маршруту або неперевірені дані про постраждалих. «Є пожежа» не дорівнює «об’єкт виведено з ладу», а «прапор судна» не доводить намір.",
-      "editorial_use": "Map Room method; strong candidate for an infrastructure-strike verification guide.",
       "tags": [
         "infrastructure-osint",
         "damage-assessment",
@@ -280,7 +271,6 @@
       "how_to_use_uk": "Фіксуйте локації, дати, навчальні структури, підрядників, згадки підрозділів, закупівельні зв’язки, подальші появи на фронті й офіційні заперечення. Це має бути структурований watchlist для корроборації.",
       "limits_en": "Do not identify or accuse individual trainees without independent public evidence. Do not convert intelligence-sourced reporting into named allegations.",
       "limits_uk": "Не ідентифікуйте й не звинувачуйте окремих учасників навчання без незалежних публічних доказів. Не перетворюйте розвідкову журналістику на іменні обвинувачення.",
-      "editorial_use": "Risk Watch section for foreign-support and sanctions-monitoring follow-up.",
       "tags": [
         "russia-china",
         "drone-warfare",
@@ -306,7 +296,6 @@
       "how_to_use_uk": "Після будь-якої підозри на компрометацію перевіряйте хмарні сесії, OAuth-доступи, правила пересилання, спільні диски, адмін-панелі, резервні доступи, повторне використання паролів і старі пристрої. Ведіть журнал інцидентів, щоб повторні спроби були пов’язані між собою.",
       "limits_en": "Do not feed private witness data, unredacted documents or unpublished case files into uncontrolled AI agents. Defensive reporting is not an invitation to reproduce exploit mechanics.",
       "limits_uk": "Не завантажуйте приватні свідчення, нерозмиті документи або неопубліковані матеріали справ у неконтрольованих AI-агентів. Defensive reporting не є запрошенням відтворювати exploit mechanics.",
-      "editorial_use": "OPSEC section; useful as a checklist for small investigative teams.",
       "tags": [
         "opsec",
         "cert-ua",
@@ -332,7 +321,6 @@
       "how_to_use_uk": "Шукайте спрощеною китайською, фіксуйте запити, зберігайте URL/час/profile ID/скриншоти й звіряйте знахідки з реєстрами компаній, митними даними, іншими китайськими платформами та незалежними медіа.",
       "limits_en": "Content is moderated, censored and demographically skewed. Translation can erase slang, coded language and platform-specific clues. Treat findings as leads, not representative public opinion.",
       "limits_uk": "Контент модерується, цензурується й має демографічні викривлення. Переклад може стирати сленг, кодовану мову й platform-specific clues. Такі знахідки — це ліди, а не репрезентативна громадська думка.",
-      "editorial_use": "Platform Watch section; useful for expanding source registry and search-language practice.",
       "tags": [
         "xiaohongshu",
         "rednote",
@@ -358,7 +346,6 @@
       "how_to_use_uk": "Тестуйте моделі на власному корпусі українських юридичних текстів перед впровадженням. Віддавайте перевагу citation-preserving summaries, extractive outputs, людській перевірці, архівуванню raw sources і чіткому розділенню доказу та машинної інтерпретації.",
       "limits_en": "C2PA absence does not prove fakery; AI geolocation confidence does not prove location; LLM legal summaries are not legal evidence. The machine may sound like a judge, but so does a duck in a wig if the courtroom is badly run.",
       "limits_uk": "Відсутність C2PA не доводить фейк; confidence AI-геолокації не доводить локацію; LLM-резюме юридичних текстів не є юридичним доказом. Машина може звучати як суддя, але й качка в перуці звучить переконливо, якщо суд погано організований.",
-      "editorial_use": "AI Verification section; suitable for a future Ukrainian legal/OSINT AI benchmark note.",
       "tags": [
         "ai-verification",
         "ukrainian-legal-text",
@@ -480,17 +467,5 @@
       "href": "https://arxiv.org/abs/2605.14890",
       "note": "Tokenizer, prompting and legal-language risk for Ukrainian accountability pipelines."
     }
-  ],
-  "internal_notes": [
-    "File path should be weekly/open-source-signal-weekly-2026-W21.json.",
-    "Rendered output should be weekly/open-source-signal-weekly-2026-W21.html.",
-    "Derived weekly schema from weekly/open-source-signal-weekly-2026-W20.json, render_weekly.py and templates/weekly.html.j2.",
-    "No issue file issues/2026-05-24.json was found in the repository at the time of assembly; the fresh Sunday Signal is therefore handled directly in W21 as a weekly anchor.",
-    "Daily source base reviewed: issues/2026-05-18.json through issues/2026-05-23.json.",
-    "Rubric keys intentionally restricted to CSS-backed weekly keys: signal, war-crimes, ukraine, losses, tradecraft, toolbox, risk.",
-    "Items avoid direct doxxing, private contact data, live targeting, child-location exposure, survivor identification, operational routes and unsafe exploit detail.",
-    "Legal-status caution: use alleged, reported, notified of suspicion, sanctioned, charged or convicted separately. Do not upgrade suspicion or database listing into conviction.",
-    "Telegram-derived and occupation-official claims should be used as leads requiring corroboration unless they are primary public records or stable archived statements.",
-    "Potential deep dives: claim-status grid for strike verification; detention-site infrastructure; protected child-tracing handoff; War & Sanctions safe-use guide; infrastructure-strike damage assessment; OPSEC after old compromise."
   ]
 }

@@ -113,20 +113,78 @@ def render_weekly_index(
     return path
 
 
-def ensure_home_weekly_nav(out_dir: Path) -> Path | None:
-    """Homepage should expose two archives, not a large Weekly promo block."""
+
+def weekly_home_block(latest: dict[str, Any]) -> str:
+    issue_number = escape(str(latest.get("issue_number", "")))
+    week_label = escape(str(latest.get("week_label_en", "")))
+    output_name = escape(str(latest["output_name"]))
+    title_en = escape(str(latest.get("title_en", "Open Source Signal Weekly")))
+    title_uk = escape(str(latest.get("title_uk", "Тижневий сигнал відкритих джерел")))
+    dek_en = escape(str(latest.get("dek_en", "")))
+
+    signals = []
+    for item in latest.get("items", [])[:3]:
+        theme = escape(str(item.get("rubric_key", "signal")))
+        emoji = escape(str(item.get("emoji", "📡")))
+        rubric_en = escape(str(item.get("rubric_en", "")))
+        rubric_uk = escape(str(item.get("rubric_uk", "")))
+        title = escape(str(item.get("title_uk") or item.get("title_en") or ""))
+        summary = escape(str(item.get("why_it_matters_uk") or item.get("why_it_matters_en") or ""))
+
+        signals.append(
+            "          <div class=\"mini-signal theme-{theme}\">\n"
+            "            <div class=\"emoji\">{emoji}</div>\n"
+            "            <div>\n"
+            "              <div class=\"rubric\">{rubric_en} / {rubric_uk}</div>\n"
+            "              <h4>{title}</h4>\n"
+            "              <p>{summary}</p>\n"
+            "            </div>\n"
+            "          </div>".format(
+                theme=theme,
+                emoji=emoji,
+                rubric_en=rubric_en,
+                rubric_uk=rubric_uk,
+                title=title,
+                summary=summary,
+            )
+        )
+
+    signal_html = "\n".join(signals)
+
+    return (
+        "\n<!-- WEEKLY_HOME_START -->\n"
+        "    <section class=\"section weekly-home-card\" aria-label=\"Latest Weekly Magazine\">\n"
+        "      <div class=\"section-title\">\n"
+        "        <h2>Weekly Magazine <span class=\"uk-label\">/ тижневий журнал</span></h2>\n"
+        "        <a class=\"archive-link\" href=\"weekly/\">All weekly issues →</a>\n"
+        "      </div>\n"
+        "      <article class=\"latest-card\">\n"
+        "        <div class=\"latest-panel\">\n"
+        "          <div class=\"issue-meta\">\n"
+        f"            <span>Weekly {issue_number}</span>\n"
+        f"            <span>{week_label}</span>\n"
+        "            <span>Sunday synthesis</span>\n"
+        "          </div>\n"
+        f"          <h3>{title_en}</h3>\n"
+        f"          <div class=\"uk-title\">{title_uk}</div>\n"
+        f"          <p>{dek_en}</p>\n"
+        f"          <a class=\"button\" href=\"weekly/{output_name}\">Read weekly / Читати тижневик</a>\n"
+        "        </div>\n"
+        "        <div class=\"signal-list\">\n"
+        f"{signal_html}\n"
+        "        </div>\n"
+        "      </article>\n"
+        "    </section>\n"
+        "<!-- WEEKLY_HOME_END -->\n"
+    )
+
+
+def ensure_home_weekly_nav(out_dir: Path, latest: dict[str, Any]) -> Path | None:
     index_path = out_dir / "index.html"
     if not index_path.exists():
         return None
 
     html = index_path.read_text(encoding="utf-8")
-
-    html = re.sub(r"\s*<!-- WEEKLY_HOME_START -->[\s\S]*?<!-- WEEKLY_HOME_END -->\s*", "\n", html, flags=re.I)
-    html = re.sub(r"\s*<section[^>]*class=\"[^\"]*weekly-home-card[^\"]*\"[\s\S]*?</section>\s*", "\n", html, flags=re.I)
-    html = re.sub(r"\s*<div[^>]*class=\"[^\"]*weekly-home-card[^\"]*\"[\s\S]*?</div>\s*", "\n", html, flags=re.I)
-    html = re.sub(r"\s*<a[^>]+href=\"weekly/open-source-signal-weekly-[^\"]+\.html\"[^>]*>[\s\S]*?</a>\s*", " ", html, flags=re.I)
-
-    html = re.sub(r"\s*<a([^>]+)href=\"weekly/\"([^>]*)>\s*Weekly\s*</a>\s*", " ", html, count=1, flags=re.I)
 
     html = re.sub(
         r"(<a[^>]+href=\"archive\.html\"[^>]*>)\s*Archive\s*(</a>)",
@@ -138,17 +196,45 @@ def ensure_home_weekly_nav(out_dir: Path) -> Path | None:
 
     if 'href="weekly/"' not in html:
         html = re.sub(
-            r"(<a[^>]+href=\"archive\.html\"[^>]*>Daily archive</a>)",
+            r'(<a[^>]+href="archive\.html"[^>]*>Daily archive</a>)',
             r'\1 <a class="button secondary" href="weekly/">Weekly archive</a>',
             html,
             count=1,
             flags=re.I,
         )
 
+    block = weekly_home_block(latest)
+
+    html = re.sub(
+        r"\s*<!-- WEEKLY_HOME_START -->[\s\S]*?<!-- WEEKLY_HOME_END -->\s*",
+        "\n" + block + "\n",
+        html,
+        flags=re.I,
+    )
+
+    if "<!-- WEEKLY_HOME_START -->" not in html:
+        html = re.sub(
+            r'\s*<section[^>]*class="[^"]*weekly-home-card[^"]*"[\s\S]*?</section>\s*',
+            "\n",
+            html,
+            flags=re.I,
+        )
+
+        needle = '    </section>\n\n    <section class="section rubrics">'
+        if needle in html:
+            html = html.replace(
+                needle,
+                '    </section>\n\n' + block + '\n\n    <section class="section rubrics">',
+                1,
+            )
+        elif "</main>" in html:
+            html = html.replace("</main>", block + "\n  </main>", 1)
+        else:
+            html += "\n" + block + "\n"
+
     html = re.sub(r"\n{3,}", "\n\n", html)
     index_path.write_text(html, encoding="utf-8")
     return index_path
-
 
 def weekly_archive_block(latest: dict[str, Any]) -> str:
     issue_number = latest.get("issue_number", "")
@@ -303,7 +389,7 @@ def build_weekly_site(
     written = render_weekly_pages(weekly_issues, templates_dir, out_dir, config_path)
     written.append(render_weekly_index(weekly_issues, templates_dir, out_dir, config))
 
-    home_path = ensure_home_weekly_nav(out_dir)
+    home_path = ensure_home_weekly_nav(out_dir, weekly_issues[0])
     if home_path is not None:
         written.append(home_path)
 

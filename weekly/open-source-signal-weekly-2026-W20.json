@@ -44,7 +44,6 @@
       "how_to_use_uk": "Тижневий випуск має працювати як шар відбору: що варте deep dive, що залишається lead-only, а що треба архівувати для майбутнього зіставлення.",
       "limits_en": "Weekly synthesis does not upgrade weak evidence. It organizes signals; it does not turn allegations into findings.",
       "limits_uk": "Тижневий синтез не підвищує якість слабких доказів. Він структурує сигнали, але не перетворює твердження на встановлені факти.",
-      "editorial_use": "Anchor story for the weekly issue; suitable for future methodology explainer.",
       "tags": [
         "weekly-synthesis",
         "accountability",
@@ -69,7 +68,6 @@
       "how_to_use_uk": "Окремо зберігати повітряні тривоги, перші повідомлення, таймстемпи, геолокацію, заяви служб і подальші уточнення щодо постраждалих.",
       "limits_en": "Do not infer intent from timing alone. Treat double-tap language as a hypothesis until corroborated.",
       "limits_uk": "Намір не можна виводити лише з часової близькості. Double-tap слід тримати як гіпотезу до підтвердження.",
-      "editorial_use": "Useful as a future War Crimes Verification methodology note.",
       "tags": [
         "war-crimes",
         "timeline",
@@ -94,7 +92,6 @@
       "how_to_use_uk": "Ukraine Lens — це розділ зворотної адаптації: не просто англійський переклад, а міжнародне пояснення.",
       "limits_en": "Do not flatten Ukrainian legal or military context into generic conflict-reporting language.",
       "limits_uk": "Не зводити український правовий і воєнний контекст до універсальної мови conflict reporting.",
-      "editorial_use": "Good section for Ukrainian-only sources that deserve international readership.",
       "tags": [
         "ukraine-lens",
         "editorial-adaptation",

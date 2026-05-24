@@ -110,12 +110,14 @@ def test_weekly_section_builds_index_issue_archive_and_sitemap(tmp_path: Path) -
 
     assert "archive.html" in home_links
     assert "weekly/" in home_links
-    for weekly in weekly_issues:
-        assert weekly_href(weekly) not in home_links
+    assert latest_href in home_links
     assert "Daily archive" in home_text
     assert "Weekly archive" in home_text
-    assert home.select_one(".weekly-home-card") is None
-    assert "Sunday editorial synthesis of the strongest OSINT signals of the week" not in home_text
+
+    weekly_card = home.select_one(".weekly-home-card")
+    assert weekly_card is not None
+    assert latest_output_name in str(weekly_card)
+    assert "Weekly Magazine" in home_text
 
     archive = BeautifulSoup((out_dir / "archive.html").read_text(encoding="utf-8"), "html.parser")
     archive_links = {a.get("href") for a in archive.select("a[href]")}
@@ -140,10 +142,28 @@ def test_homepage_uses_daily_and_weekly_archive_labels(tmp_path: Path) -> None:
     assert links.get("Weekly archive") == "weekly/"
     assert links.get("Weekly") != "weekly/"
 
-    weekly_hrefs = {weekly_href(weekly) for weekly in load_weekly_issues()}
-    assert weekly_hrefs.isdisjoint(set(links.values()))
+    weekly_issues = load_weekly_issues()
+    assert weekly_href(weekly_issues[0]) in set(links.values())
+    assert "weekly/" in set(links.values())
 
 
 def test_pages_workflow_builds_weekly_after_static_site() -> None:
     workflow = (ROOT / ".github" / "workflows" / "pages.yml").read_text(encoding="utf-8")
     assert "python build_weekly_site.py --weekly weekly --templates templates --out dist --config site.json" in workflow
+
+
+def test_weekly_public_page_does_not_render_internal_editorial_notes(tmp_path: Path) -> None:
+    out_dir = tmp_path / "dist"
+    build_full_site(out_dir)
+
+    latest_weekly = load_weekly_issues()[0]
+    html = (out_dir / "weekly" / weekly_output_name(latest_weekly)).read_text(encoding="utf-8")
+
+    assert "Editorial use:" not in html
+    assert "Lead section; useful as" not in html
+
+    for weekly in load_weekly_issues():
+        assert "internal_notes" not in weekly
+        assert "internal_editorial_notes" not in weekly
+        for item in weekly.get("items", []):
+            assert "editorial_use" not in item
