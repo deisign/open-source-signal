@@ -34,7 +34,7 @@ QUERY_PACKS: dict[str, dict[str, str]] = {
     },
     "losses_captivity_missing": {
         "rubric": "Losses, Captivity & Missing / Втрати, полон, зниклі",
-        "query": '("Ukraine" OR Russia OR Russian) (POW OR "prisoner of war" OR captivity OR "missing soldiers" OR MIA OR KIA OR "body exchange" OR "repatriated bodies")',
+        "query": '("Ukraine" OR "Ukrainian" OR "war in Ukraine") ("Russian soldiers" OR "Russian servicemen" OR "Russian troops" OR "Russian military" OR "Russian casualties" OR "Russian losses" OR "Russian POWs") ("prisoner of war" OR "prisoners of war" OR POW OR captivity OR "missing in action" OR "killed in action" OR "body exchange" OR "repatriated bodies" OR casualties OR losses)',
     },
     "ukraine_osint_geolocation": {
         "rubric": "Ukraine Lens / Українська оптика",
@@ -171,19 +171,55 @@ def build_gdelt_url(query: str, timespan: str, maxrecords: int, mode: str = "art
     return f"{GDELT_DOC_ENDPOINT}?{urlencode(params)}"
 
 
-def fetch_json(url: str, timeout: int = 30) -> dict[str, Any]:
+RETRYABLE_HTTP_CODES = {429, 500, 502, 503, 504}
+
+
+def retry_after_seconds(exc: HTTPError, default: float) -> float:
+    value = exc.headers.get("Retry-After") if exc.headers else None
+    if not value:
+        return default
+    try:
+        return min(180.0, max(default, float(value)))
+    except ValueError:
+        return default
+
+
+def fetch_json(url: str, timeout: int = 90, retries: int = 3, backoff_seconds: float = 30.0) -> dict[str, Any]:
     request = Request(url, headers={"User-Agent": "OpenSourceSignal-GDELT-Radar/1.0"})
-    try:
-        with urlopen(request, timeout=timeout) as response:  # noqa: S310 - fixed public API endpoint
-            raw = response.read().decode("utf-8", errors="replace")
-    except HTTPError as exc:
-        raise RuntimeError(f"GDELT HTTP error {exc.code}: {exc.reason}") from exc
-    except URLError as exc:
-        raise RuntimeError(f"GDELT network error: {exc.reason}") from exc
-    try:
-        return json.loads(raw)
-    except json.JSONDecodeError as exc:
-        raise RuntimeError(f"GDELT returned invalid JSON: {exc}") from exc
+    attempts = max(1, retries + 1)
+
+    for attempt in range(1, attempts + 1):
+        try:
+            with urlopen(request, timeout=timeout) as response:  # noqa: S310 - fixed public API endpoint
+                raw = response.read().decode("utf-8", errors="replace")
+            return json.loads(raw)
+
+        except HTTPError as exc:
+            if exc.code in RETRYABLE_HTTP_CODES and attempt < attempts:
+                wait = retry_after_seconds(exc, backoff_seconds * attempt)
+                print(
+                    f"WARNING: GDELT HTTP {exc.code}; retry {attempt}/{retries} after {wait:.0f}s",
+                    file=sys.stderr,
+                )
+                time.sleep(wait)
+                continue
+            raise RuntimeError(f"GDELT HTTP error {exc.code}: {exc.reason}") from exc
+
+        except URLError as exc:
+            if attempt < attempts:
+                wait = backoff_seconds * attempt
+                print(
+                    f"WARNING: GDELT network error: {exc.reason}; retry {attempt}/{retries} after {wait:.0f}s",
+                    file=sys.stderr,
+                )
+                time.sleep(wait)
+                continue
+            raise RuntimeError(f"GDELT network error: {exc.reason}") from exc
+
+        except json.JSONDecodeError as exc:
+            raise RuntimeError(f"GDELT returned invalid JSON: {exc}") from exc
+
+    raise RuntimeError("GDELT request failed after retries")
 
 
 def clean_domain(domain: str) -> str:
@@ -254,7 +290,7 @@ def article_to_candidate(article: dict[str, Any], query_pack: str, collected_at:
     )
 
 
-def collect(query_packs: list[str], timespan: str, maxrecords: int, sleep_seconds: float = 1.0) -> list[Candidate]:
+def collect(query_packs: list[str], timespan: str, maxrecords: int, sleep_seconds: float = 1.0, timeout: int = 90, retries: int = 3, backoff_seconds: float = 30.0) -> list[Candidate]:
     collected_at = utc_now_iso()
     candidates: list[Candidate] = []
     seen_urls: set[str] = set()
@@ -263,7 +299,11 @@ def collect(query_packs: list[str], timespan: str, maxrecords: int, sleep_second
         if query_pack not in QUERY_PACKS:
             raise ValueError(f"Unknown query pack: {query_pack}")
         url = build_gdelt_url(QUERY_PACKS[query_pack]["query"], timespan, maxrecords)
-        payload = fetch_json(url)
+        try:
+            payload = fetch_json(url, timeout=timeout, retries=retries, backoff_seconds=backoff_seconds)
+        except RuntimeError as exc:
+            print(f"WARNING: skipping query_pack={query_pack}: {exc}", file=sys.stderr)
+            continue
         articles = payload.get("articles", [])
         if not isinstance(articles, list):
             articles = []
@@ -391,6 +431,9 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     parser.add_argument("--query-pack", action="append", choices=sorted(QUERY_PACKS), help="Query pack to run; repeatable")
     parser.add_argument("--out", default="data/leads/gdelt/gdelt_leads.jsonl", help="Output JSONL path")
     parser.add_argument("--sleep", type=float, default=1.0, help="Delay between GDELT requests")
+    parser.add_argument("--timeout", type=int, default=90, help="Network timeout per GDELT request in seconds")
+    parser.add_argument("--retries", type=int, default=3, help="Retry attempts for retryable GDELT failures")
+    parser.add_argument("--backoff", type=float, default=30.0, help="Base backoff delay between retries in seconds")
     parser.add_argument("--demo", action="store_true", help="Write deterministic demo candidates without network")
     parser.add_argument("--self-test", action="store_true", help="Run built-in unit tests")
     return parser.parse_args(argv)
@@ -408,7 +451,7 @@ def main(argv: list[str]) -> int:
         candidates = demo_candidates()
     else:
         query_packs = args.query_pack or list(QUERY_PACKS)
-        candidates = collect(query_packs, args.timespan, args.maxrecords, args.sleep)
+        candidates = collect(query_packs, args.timespan, args.maxrecords, args.sleep, args.timeout, args.retries, args.backoff)
 
     write_jsonl(candidates, out_path)
     print(json.dumps({"out": str(out_path), **summarize(candidates)}, ensure_ascii=False, indent=2, sort_keys=True))

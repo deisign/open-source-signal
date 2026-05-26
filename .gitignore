@@ -3,3 +3,7 @@ __pycache__/
 .pytest_cache/
 *.pyc
 .DS_Store
+# Open Source Signal local/generated files
+/data/leads/
+/scripts/*.bak.*
+
