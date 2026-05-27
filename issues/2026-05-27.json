@@ -1,0 +1,117 @@
+{
+  "issue_number": "013",
+  "date_iso": "2026-05-27",
+  "date_label_en": "27 May 2026",
+  "date_label_uk": "27 травня 2026",
+  "slug": "open-source-signal",
+  "title_en": "Open Source Signal",
+  "title_uk": "Сигнал відкритих джерел",
+  "issue_type": "Daily Signal",
+  "language_label": "EN + UKR",
+  "subtitle_en": "A daily OSINT digest focused on Ukrainian accountability work, verification workflows, investigator safety and ethical source handling.",
+  "subtitle_uk": "Щоденний OSINT-дайджест про українську accountability-оптику, верифікаційні workflow, безпеку дослідника та етичну роботу з джерелами.",
+  "dek_en": "Daily issue #013: separating renewed Kyiv strike warnings from verified impacts, adapting the Berkeley Protocol for Ukrainian digital evidence, and treating Ukraine’s 44 TB war-crimes evidence store as a data-governance problem rather than a headline number.",
+  "dek_uk": "Випуск #013: розділення нових попереджень щодо ударів по Києву й перевірених наслідків, адаптація Berkeley Protocol до українських цифрових доказів і 44 ТБ доказів воєнних злочинів як питання data governance, а не просто велика цифра.",
+  "editorial_frame": {
+    "what_this_is": "A bilingual editorial filter for public-interest OSINT. Each item explains what happened, why it matters, how a reader can use the insight, and where the method or evidence has limits.",
+    "what_this_is_not": "Doxxing, live targeting, stolen-data workflows, private-person deanonymization, credential hunting, revenge calls, unsafe operational guidance or unverified accusations against private people."
+  },
+  "rubric_map": [
+    "📡 Signal One",
+    "🧭 Tradecraft",
+    "⚖️ War Crimes Verification"
+  ],
+  "footer_note": "Generated for Open Source Signal / Сигнал відкритих джерел. Fonts: Fraunces for Latin display, Source Serif 4 for Ukrainian display, Inter and JetBrains Mono via Google Fonts with local fallbacks.",
+  "items": [
+    {
+      "theme": "signal",
+      "emoji": "📡",
+      "rubric_en": "Signal One",
+      "rubric_uk": "Головний сигнал",
+      "title_en": "Renewed Kyiv strike warnings need a threat-to-impact evidence log",
+      "title_uk": "Нові попередження щодо ударів по Києву потребують threat-to-impact evidence log",
+      "source_name": "AP News",
+      "source_url": "https://apnews.com/article/2abde640e27e7b320715d74358ba28f3",
+      "source_date_label_en": "27 May 2026",
+      "source_date_label_uk": "27 травня 2026",
+      "what_happened_en": "AP reported that Russia maintained overnight attacks on Ukraine with more than 100 drones and two ballistic missiles while Kyiv faced renewed warnings of a possible larger barrage. The report also noted that Russia had called on foreign nationals and diplomats to leave the capital, while several Western diplomatic missions said they would remain. This is a continuation of the strike-threat cycle, but the new element is the live overlap between warning, renewed attack activity and diplomatic posture.",
+      "what_happened_uk": "AP повідомило, що Росія продовжила нічні атаки по Україні, застосувавши понад 100 дронів і дві балістичні ракети, тоді як Київ отримав нові попередження про можливий більший удар. У матеріалі також зафіксовано російський заклик до іноземців і дипломатів залишити столицю та позицію кількох західних місій, які заявили, що залишаються. Це продовження циклу погроз, але новий елемент — одночасність попередження, нової атакувальної активності й дипломатичного сигналу.",
+      "why_it_matters_en": "For accountability OSINT, the warning itself is not proof of a later target, and a later strike is not proof that the announced target category was real. The useful work is to preserve a threat-to-impact log: warning language, time issued, audience addressed, subsequent air alerts, verified impacts, civilian harm, official claims and later corrections. Otherwise the evidence file becomes a soup with medals.",
+      "why_it_matters_uk": "Для accountability OSINT саме попередження не доводить майбутню ціль, а подальший удар не доводить реальність заявленої категорії цілей. Корисна робота — вести threat-to-impact log: текст попередження, час, адресатів, наступні тривоги, підтверджені влучання, цивільну шкоду, офіційні заяви й подальші корекції. Інакше доказовий файл перетворюється на юшку з медалями.",
+      "how_to_use_en": "Keep the diplomatic-warning layer separate from strike documentation. Archive the public warning, record which missions responded, then track only post-event evidence: local authority updates, emergency-service photos, geolocated footage, casualty revisions, debris imagery and verified infrastructure impact. Mark every line as threat, claim, observation, official update or verified evidence.",
+      "how_to_use_uk": "Тримайте дипломатично-попереджувальний шар окремо від документації ударів. Архівуйте публічну погрозу, фіксуйте реакції місій, а потім ведіть лише post-event evidence: оновлення місцевої влади, фото служб реагування, геолоковані відео, уточнення щодо постраждалих, уламки й підтверджений інфраструктурний ефект. Кожен рядок маркуйте як threat, claim, observation, official update або verified evidence.",
+      "limits_en": "This item updates but does not replace Daily Signal #012, which covered the original Reuters report on Russia’s declared Kyiv strike campaign. Do not publish live air-defense patterns, embassy security procedures, route guesses, shelter locations or target predictions.",
+      "limits_uk": "Цей матеріал оновлює, але не замінює Daily Signal #012, де йшлося про первинне повідомлення Reuters щодо російської заяви про кампанію ударів по Києву. Не публікуйте live-патерни ППО, процедури безпеки посольств, припущення про маршрути, локації укриттів або прогнози цілей.",
+      "tags": [
+        "kyiv",
+        "strike-threats",
+        "threat-to-impact-log",
+        "claim-status",
+        "civilian-harm"
+      ]
+    },
+    {
+      "theme": "tradecraft",
+      "emoji": "🧭",
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "title_en": "Ukraine’s Berkeley Protocol debate is about turning OSINT into procedural evidence",
+      "title_uk": "Українська дискусія про Berkeley Protocol — це перехід від OSINT до процесуальних доказів",
+      "source_name": "Ukrainian National Lobbyists Association",
+      "source_url": "https://unla.org.ua/en/2026/05/experts-berkeley-protocol-remains-a-key-international-standard-for-documenting-war-crimes-but-needs-to-be-adapted-to-modern-challenges/",
+      "source_date_label_en": "23 May 2026",
+      "source_date_label_uk": "23 травня 2026",
+      "what_happened_en": "UNLA reported on a professional discussion at Ukrinform about implementing the Berkeley Protocol in Ukraine. Participants from legal, law-enforcement, military-law and academic institutions discussed adapting international digital-evidence standards to Ukrainian criminal procedure, including collection, verification, preservation, transfer between agencies and later courtroom use of OSINT materials.",
+      "what_happened_uk": "UNLA повідомила про професійну дискусію в Укрінформі щодо імплементації Berkeley Protocol в Україні. Учасники з юридичної, правоохоронної, військово-правової та академічної сфер обговорили адаптацію міжнародних стандартів цифрових доказів до українського кримінального процесу: збір, перевірку, збереження, передачу між органами й подальше використання OSINT-матеріалів у суді.",
+      "why_it_matters_en": "This is a core Ukrainian accountability issue. Public videos, satellite imagery, Telegram posts, photos and digital traces are abundant, but abundance is not admissibility. The real problem is chain discipline: who collected the material, how it was preserved, how identity was maintained during transfer, what was verified, and what remains only a lead.",
+      "why_it_matters_uk": "Це ядро української accountability-оптики. Публічних відео, супутникових знімків, Telegram-постів, фото й цифрових слідів багато, але кількість не дорівнює допустимості в суді. Реальна проблема — дисципліна ланцюга: хто зібрав матеріал, як його зберегли, як підтримали ідентичність під час передачі, що перевірили, а що лишається лише лідом.",
+      "how_to_use_en": "For every digital-evidence item, record source URL, first-seen time, collector, acquisition method, hash, storage path, transformations, translations, geolocation status, verification notes and handoff history. Keep the raw file, working copy and public excerpt separate. A screenshot with no provenance is a postcard, not a witness in a waistcoat.",
+      "how_to_use_uk": "Для кожного цифрового доказу фіксуйте source URL, час першої появи, збирача, спосіб отримання, hash, шлях зберігання, трансформації, переклади, статус геолокації, verification notes і handoff history. Raw file, working copy і публічний excerpt мають жити окремо. Скріншот без provenance — це листівка, а не свідок у жилеті.",
+      "limits_en": "The UNLA text reflects a professional discussion, not a completed legislative reform. Do not present Berkeley Protocol compliance as automatic admissibility. Closed interagency coordination may be necessary where witness safety, operational security or sensitive evidence is involved.",
+      "limits_uk": "Матеріал UNLA описує професійну дискусію, а не завершену законодавчу реформу. Не подавайте відповідність Berkeley Protocol як автоматичну допустимість доказу. Закрита міжвідомча координація може бути необхідною там, де є безпека свідків, OPSEC або чутливі докази.",
+      "tags": [
+        "berkeley-protocol",
+        "digital-evidence",
+        "osint-evidence",
+        "chain-of-custody",
+        "ukraine"
+      ]
+    },
+    {
+      "theme": "war-crimes",
+      "emoji": "⚖️",
+      "rubric_en": "War Crimes Verification",
+      "rubric_uk": "Верифікація воєнних злочинів",
+      "title_en": "Ukraine’s 44 TB evidence store is a data-governance problem before it is a tribunal headline",
+      "title_uk": "44 ТБ українських доказів — це спершу data-governance проблема, а вже потім заголовок про трибунал",
+      "source_name": "Ukrainska Pravda",
+      "source_url": "https://www.pravda.com.ua/eng/news/2026/05/15/8034835/",
+      "source_date_label_en": "15 May 2026",
+      "source_date_label_uk": "15 травня 2026",
+      "what_happened_en": "Ukrainska Pravda reported, citing Prosecutor General Ruslan Kravchenko, that Ukraine is investigating more than 256,000 crimes committed by Russia against Ukraine. The Prosecutor General’s Office and law-enforcement agencies hold more than 44 TB of digital evidence and have more than 1,100 suspects; some materials related to planning and conducting the war of aggression are expected to support the Special Tribunal for the Crime of Aggression against Ukraine.",
+      "what_happened_uk": "«Українська правда» з посиланням на генпрокурора Руслана Кравченка повідомила, що Україна розслідує понад 256 тисяч злочинів, вчинених Росією проти України. Офіс Генпрокурора та правоохоронні органи мають понад 44 ТБ цифрових доказів і понад 1 100 підозрюваних; частина матеріалів щодо планування й ведення агресивної війни має лягти в основу роботи Спеціального трибуналу щодо злочину агресії проти України.",
+      "why_it_matters_en": "The number is impressive, but the OSINT lesson is not the size of the archive. At this scale, accountability depends on deduplication, provenance, access control, evidence classification, searchability, retention rules and the ability to separate war-crimes evidence from aggression-tribunal evidence. A 44 TB archive without governance is just a very large cupboard making legal noises.",
+      "why_it_matters_uk": "Цифра вражає, але OSINT-урок не в розмірі архіву. На такому масштабі відповідальність залежить від дедуплікації, provenance, access control, класифікації доказів, пошуку, правил зберігання й здатності розділяти докази воєнних злочинів та матеріали для трибуналу щодо агресії. Архів на 44 ТБ без governance — це просто дуже велика шафа, яка видає юридичні звуки.",
+      "how_to_use_en": "Use this as a model for your own evidence catalog. Keep fields for source, date, collector, alleged crime type, location, affected civilians, suspect status, legal status, verification level, storage location, hash and disclosure restrictions. Public products should report aggregate patterns and process status, not leak raw evidence or private victim data.",
+      "how_to_use_uk": "Використовуйте це як модель для власного evidence catalog. Тримайте поля: джерело, дата, збирач, тип імовірного злочину, локація, постраждалі цивільні, статус підозрюваного, юридичний статус, рівень перевірки, місце зберігання, hash і обмеження розкриття. Публічні продукти мають показувати агреговані патерни й процесуальний статус, а не зливати raw evidence або приватні дані потерпілих.",
+      "limits_en": "This source is older than the preferred 7-day window and is retained because the fresher GDELT candidates were mostly duplicates. Treat the numbers as official Ukrainian prosecutorial figures reported by media, not as independently audited archive statistics.",
+      "limits_uk": "Це джерело старше бажаного 7-денного вікна й залишене тому, що свіжіші GDELT-кандидати здебільшого були дублями. Ставтеся до цифр як до офіційних українських прокурорських даних у медійному переказі, а не як до незалежно аудитованої статистики архіву.",
+      "tags": [
+        "war-crimes",
+        "digital-evidence",
+        "data-governance",
+        "special-tribunal",
+        "provenance"
+      ]
+    }
+  ],
+  "internal_notes": [
+    "duplicate_check: checked against repository issue sequence and formats: 2026-05-25 (#011), 2026-05-26 (#012), 2026-05-23 Saturday Tool Radar (#010), and weekly/open-source-signal-weekly-2026-W21.json. No final source_url duplicates an already published issue file reviewed in this pass.",
+    "reused_story_disclosure: the AP Kyiv warning item overlaps with Daily Signal #012's Reuters Kyiv-strike-threat item, but is retained only as a new update about continued overnight attacks, public warning persistence and diplomatic mission posture on 27 May 2026. It is framed as a threat-to-impact evidence log, not as a repeat of the original Lavrov statement.",
+    "rejected_duplicate_candidates: Reuters/AP Oreshnik mass-strike coverage rejected because Kyiv/Oreshnik strike verification was already covered in #011 and the strike-threat claim layer in #012; AP missing-soldier legal-death bill rejected because it was already published in #011; Reuters Starobilsk forensic/media-tour coverage rejected because it was already published in #011 and synthesized in W21; Browsertrix, Dangerzone, ExifTool, GeoSearch, Ames Stereo Pipeline and c2patool rejected because they were covered in Saturday Tool Radar #010; generic child-deportation coalition updates rejected because W21 already covered protected handoff channels for child-location OSINT.",
+    "source_window_note: Berkeley Protocol item is within the last 7 days and directly relevant. Ukrainska Pravda 44 TB item is older than 7 days, but included as a high-value data-governance anchor because fresher GDELT hits were mostly duplicates or weaker derivative coverage.",
+    "safety_cautions: no private names of victims or relatives, child-location details, live air-defense patterns, embassy security procedures, target predictions, raw evidence dumps, malware instructions, credential workflows or private-person deanonymization included.",
+    "weekly_deep_dive_candidates: Berkeley Protocol in Ukrainian practice; threat-to-impact logs for public strike warnings; data governance for very large war-crimes evidence archives.",
+    "layout_check: JSON follows the repository issue model: issues/YYYY-MM-DD.json, top-level issue metadata, bilingual item fields, rubric_map, footer_note and internal_notes. Public issue pages do not render internal_notes."
+  ]
+}
