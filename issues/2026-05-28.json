@@ -1,0 +1,117 @@
+{
+  "issue_number": "014",
+  "date_iso": "2026-05-28",
+  "date_label_en": "28 May 2026",
+  "date_label_uk": "28 травня 2026",
+  "slug": "open-source-signal",
+  "title_en": "Open Source Signal",
+  "title_uk": "Сигнал відкритих джерел",
+  "issue_type": "Daily Signal",
+  "language_label": "EN + UKR",
+  "subtitle_en": "A daily OSINT digest focused on Ukrainian accountability work, verification workflows, investigator safety and ethical source handling.",
+  "subtitle_uk": "Щоденний OSINT-дайджест про українську accountability-оптику, верифікаційні workflow, безпеку дослідника та етичну роботу з джерелами.",
+  "dek_en": "Daily issue #014: keeping Russian-loss numbers in separate evidence-status boxes, reading casualties-per-square-kilometre as a ratio with map caveats, and treating battlefield turning-point claims as source-status material rather than prophecy.",
+  "dek_uk": "Випуск #014: розкладаємо дані про російські втрати за статусами доказовості, читаємо casualties-per-square-kilometre як співвідношення з мапними застереженнями й не перетворюємо прогнози про turning point на пророцтво в шоломі.",
+  "editorial_frame": {
+    "what_this_is": "A bilingual editorial filter for public-interest OSINT. Each item explains what happened, why it matters, how a reader can use the insight, and where the method or evidence has limits.",
+    "what_this_is_not": "Doxxing, live targeting, stolen-data workflows, private-person deanonymization, credential hunting, revenge calls, unsafe operational guidance or unverified accusations against private people."
+  },
+  "rubric_map": [
+    "📡 Signal One",
+    "🗺️ Map Room",
+    "🧭 Tradecraft"
+  ],
+  "footer_note": "Generated for Open Source Signal / Сигнал відкритих джерел. Fonts: Fraunces for Latin display, Source Serif 4 for Ukrainian display, Inter and JetBrains Mono via Google Fonts with local fallbacks.",
+  "items": [
+    {
+      "theme": "signal",
+      "emoji": "📡",
+      "rubric_en": "Signal One",
+      "rubric_uk": "Головний сигнал",
+      "title_en": "Russian-loss headlines need count-status discipline",
+      "title_uk": "Заголовки про російські втрати потребують дисципліни статусів",
+      "source_name": "The Guardian",
+      "source_url": "https://www.theguardian.com/world/2026/may/27/nearly-half-a-million-russians-killed-in-ukraine-war-spy-chief-says",
+      "source_date_label_en": "27 May 2026",
+      "source_date_label_uk": "27 травня 2026",
+      "what_happened_en": "The Guardian reported a new GCHQ-linked estimate that almost half a million Russian soldiers have been killed since the start of the full-scale invasion. The same report contrasted that intelligence-sourced figure with a lower Meduza/Mediazona estimate based on probate-record extrapolation and with Western estimates of recent monthly killed-and-wounded rates.",
+      "what_happened_uk": "The Guardian повідомив про нову оцінку, пов’язану з GCHQ: майже пів мільйона російських військових загинули від початку повномасштабного вторгнення. У тому самому матеріалі ця intelligence-sourced цифра зіставлена з нижчою оцінкою Meduza/Mediazona на основі probate-record extrapolation і з західними оцінками поточного місячного рівня killed-and-wounded.",
+      "why_it_matters_en": "For accountability OSINT, the important lesson is not to crown one giant number king of the spreadsheet. Russian-loss work now contains several evidence statuses: intelligence estimate, statistical extrapolation, confirmed named deaths, official claims, battlefield casualty estimates and local obituary/cemetery traces. Mixing them produces a number-shaped pudding with medals.",
+      "why_it_matters_uk": "Для accountability OSINT головний урок не в тому, щоб посадити одну велику цифру на трон таблиці. Робота з російськими втратами має кілька статусів доказовості: intelligence estimate, статистична екстраполяція, confirmed named deaths, офіційні заяви, battlefield casualty estimates і локальні некрологи/кладовища. Якщо змішати все разом, вийде пудинг у формі числа з медалями.",
+      "how_to_use_en": "In every loss tracker, separate count_status, source_method, time_window, population, update_date and confidence_note. Keep intelligence estimates, statistical estimates and named public-source confirmations in different columns. When citing a headline number, add what it is not: not a named list, not a court finding, not an independently auditable OSINT total unless the source method supports that.",
+      "how_to_use_uk": "У кожному loss tracker розділяйте count_status, source_method, time_window, population, update_date і confidence_note. Intelligence estimates, statistical estimates і named public-source confirmations мають бути в різних колонках. Коли цитуєте велику цифру, додавайте, чим вона не є: не поіменний список, не судовий висновок, не незалежно аудитований OSINT total, якщо метод джерела цього не підтримує.",
+      "limits_en": "The GCHQ figure is an intelligence-sourced estimate, not a transparent OSINT dataset. The Meduza/Mediazona figure cited in the report is a statistical estimate, not the same thing as a confirmed named-death database. Do not republish unnecessary personal details of relatives, cemetery visitors or private individuals.",
+      "limits_uk": "Оцінка GCHQ — це intelligence-sourced estimate, а не прозорий OSINT dataset. Згадана в матеріалі оцінка Meduza/Mediazona є статистичною, а не тотожною поіменній базі підтверджених смертей. Не передруковуйте зайві персональні дані родичів, відвідувачів кладовищ або приватних осіб.",
+      "tags": [
+        "russian-losses",
+        "casualty-verification",
+        "count-status",
+        "mediazona",
+        "gchq"
+      ]
+    },
+    {
+      "theme": "map-room",
+      "emoji": "🗺️",
+      "rubric_en": "Map Room",
+      "rubric_uk": "Картографічна кімната",
+      "title_en": "Casualties per square kilometre is useful only with clean numerator and denominator",
+      "title_uk": "Casualties per square kilometre працює лише з чистим чисельником і знаменником",
+      "source_name": "Business Insider",
+      "source_url": "https://www.businessinsider.com/ukraine-sets-russian-losses-goal-for-every-square-kilometer-captured-2026-5",
+      "source_date_label_en": "21 May 2026",
+      "source_date_label_uk": "21 травня 2026",
+      "what_happened_en": "Business Insider reported that Ukrainian Defence Minister Mykhailo Fedorov framed a strategic goal of at least 200 Russian losses for every square kilometre captured by Moscow. The article listed monthly ratio figures for October 2025 through April 2026 and cited ISW’s assessment that Russia suffered a net territorial-control loss in April, with caveats about brief infiltrations.",
+      "what_happened_uk": "Business Insider повідомив, що міністр оборони України Михайло Федоров сформулював стратегічну мету: щонайменше 200 російських втрат за кожен квадратний кілометр, захоплений Москвою. У матеріалі наведені місячні ratio figures за жовтень 2025 — квітень 2026 і згадано оцінку ISW про чисту втрату РФ контрольованої території у квітні, із застереженням щодо коротких проникнень.",
+      "why_it_matters_en": "This is a good Map Room problem because it joins two unstable datasets: casualties and territorial control. The ratio can show attrition pressure, but only if the numerator says killed, wounded or total losses, and the denominator says stable control, temporary infiltration, net gain or mapped polygon change. Otherwise the map starts doing numerology in boots.",
+      "why_it_matters_uk": "Це добра задача для Map Room, бо вона з’єднує два нестабільні набори даних: втрати й контроль території. Ratio може показувати тиск attrition, але тільки якщо чисельник чітко каже killed, wounded або total losses, а знаменник — stable control, temporary infiltration, net gain чи mapped polygon change. Інакше мапа починає займатися нумерологією в берцях.",
+      "how_to_use_en": "For each ratio, record casualty definition, casualty source, area source, map date, baseline date, whether the area is net or gross change, and whether infiltrations are excluded. Use ranges where possible. Compare ISW, DeepState, official Ukrainian statements and geolocated evidence, but do not turn one polygon into a verdict.",
+      "how_to_use_uk": "Для кожного ratio фіксуйте casualty definition, casualty source, area source, map date, baseline date, чи є площа net або gross change, і чи виключені infiltration zones. Де можливо, використовуйте ranges. Порівнюйте ISW, DeepState, офіційні українські заяви й геолоковані докази, але не перетворюйте один полігон на вирок.",
+      "limits_en": "The metric is reported from a Ukrainian official framing and should not be treated as independently verified casualty accounting. Avoid live tactical map use, route-level interpretation, unit vulnerability analysis or claims that could help targeting.",
+      "limits_uk": "Метрика подана в українській офіційній рамці й не має трактуватися як незалежно перевірений облік втрат. Уникайте live tactical map use, route-level interpretation, аналізу вразливості підрозділів або висновків, які можуть допомогти наведенню.",
+      "tags": [
+        "map-room",
+        "attrition-metrics",
+        "territorial-control",
+        "isw",
+        "casualty-ratio"
+      ]
+    },
+    {
+      "theme": "tradecraft",
+      "emoji": "🧭",
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "title_en": "Turning-point claims belong in a source-status ledger",
+      "title_uk": "Прогнози про turning point мають жити в source-status ledger",
+      "source_name": "Reuters",
+      "source_url": "https://www.reuters.com/business/aerospace-defense/senior-ukrainian-commander-sees-imminent-turning-point-war-2026-05-27/",
+      "source_date_label_en": "27 May 2026",
+      "source_date_label_uk": "27 травня 2026",
+      "what_happened_en": "Reuters interviewed Brigadier General Andriy Biletsky, commander of Ukraine’s Third Army Corps, who argued that the next six to nine months could be a turning point and that Russian forces are exhausted and unlikely to achieve major breakthroughs. Reuters also noted that President Volodymyr Zelenskyy said Ukraine had retaken nearly 600 square kilometres in 2026, a figure Reuters could not independently verify.",
+      "what_happened_uk": "Reuters опублікував інтерв’ю з бригадним генералом Андрієм Білецьким, командиром Третього армійського корпусу України, який заявив, що наступні шість-дев’ять місяців можуть стати turning point, а російські сили виснажені й навряд чи здатні на великі прориви. Reuters також зафіксував заяву президента Володимира Зеленського про майже 600 квадратних кілометрів, відбитих Україною у 2026 році, але окремо зазначив, що не зміг незалежно перевірити цю цифру.",
+      "why_it_matters_en": "Forecasts are not evidence; they are claims with authors, incentives, vantage points and missing data. This item is useful because it contains several statuses in one story: commander assessment, presidential territorial figure, analyst echo, map context and an explicit verification caveat. Put them in boxes before they start breeding like rabbits in a filing cabinet.",
+      "why_it_matters_uk": "Прогноз — не доказ; це claim з автором, мотивацією, точкою спостереження й відсутніми даними. Матеріал корисний тим, що в одному тексті є кілька статусів: оцінка командира, президентська цифра щодо території, аналітична корроборація, мапний контекст і пряме застереження про неперевіреність. Їх треба розкласти по коробках, доки вони не почали плодитися, як кролі в архівній шафі.",
+      "how_to_use_en": "Create a source-status ledger for battlefield narratives: claim, speaker, institutional role, date, claimed time horizon, claimed geography, public evidence, independent corroboration, map baseline, verification caveat and next review date. Treat ‘turning point’ language as a narrative indicator, not as a map layer or forecast product.",
+      "how_to_use_uk": "Створіть source-status ledger для battlefield narratives: claim, speaker, institutional role, date, claimed time horizon, claimed geography, public evidence, independent corroboration, map baseline, verification caveat і next review date. Мову про turning point трактуйте як narrative indicator, а не як мапний шар або прогнозний продукт.",
+      "limits_en": "Do not publish operational details, unit vulnerabilities, route-level readings or live tactical interpretations. The Reuters piece contains battlefield context; this digest abstracts the verification method and does not convert commander assessments into verified territorial facts.",
+      "limits_uk": "Не публікуйте operational details, unit vulnerabilities, route-level readings або live tactical interpretations. Матеріал Reuters містить battlefield context; цей дайджест бере з нього метод верифікації й не перетворює оцінки командира на підтверджені територіальні факти.",
+      "tags": [
+        "tradecraft",
+        "claim-status",
+        "battlefield-narratives",
+        "source-ledger",
+        "verification-caveat"
+      ]
+    }
+  ],
+  "internal_notes": [
+    "filename_check: use issues/2026-05-28.json. The immediately previous daily issue is #013 for 2026-05-27, so this issue_number is #014.",
+    "schema_check: follows the daily issue model used by issues/2026-05-27.json: top-level issue metadata, editorial_frame, rubric_map, footer_note, bilingual items and internal_notes. Public issue pages should not render internal_notes.",
+    "duplicate_check: checked against Daily Signal #013 (27 May 2026), Saturday Tool Radar #010 (23 May 2026) and Weekly Magazine W21 (18–24 May 2026). Final source_url values do not repeat those reviewed issue pages.",
+    "rejected_duplicate_candidates: Kyiv strike-warning/AP item, Berkeley Protocol/UNLA item and 44 TB evidence-store/Ukrainska Pravda item were already published in Daily Signal #013; Browsertrix, Dangerzone, ExifTool, GeoSearch, Ames Stereo Pipeline and c2patool were already published in Saturday Tool Radar #010; Truth Hounds/FIDH foreign-fighters report was already synthesized in Weekly W21; Reuters/AP Starobilsk-type material was already part of earlier Daily/Weekly strike-status coverage.",
+    "source_quality_note: ACA anniversary, Russia Matters/DeepState-vs-ISW, Truth Hounds Calculated Harm and OSINT Newsletter Tools Library were not used in this JSON because exact public source validation was not strong enough in this pass. Revisit manually if URLs are verified.",
+    "newness_note: GCHQ Russian-loss item is fresh and distinct from the earlier generic GCHQ cyber/hybrid warning lead. It is framed as casualty count-status discipline, not as cyber infrastructure watch.",
+    "safety_cautions: no private names of relatives, cemetery visitors, POW families or vulnerable private persons; no live map targeting, route-level inference, unit vulnerability analysis, raw evidence dumps, credentials, stalking workflows or private-person deanonymization."
+  ]
+}
