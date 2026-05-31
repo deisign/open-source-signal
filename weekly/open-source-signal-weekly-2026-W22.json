@@ -1,0 +1,319 @@
+{
+  "issue_number": "W22",
+  "slug": "open-source-signal-weekly-2026-W22",
+  "output_name": "open-source-signal-weekly-2026-W22.html",
+  "date_iso": "2026-05-31",
+  "week_label_en": "25–31 May 2026",
+  "week_label_uk": "25–31 травня 2026",
+  "title_en": "Open Source Signal Weekly",
+  "title_uk": "Тижневий сигнал відкритих джерел",
+  "subtitle_en": "Sunday editorial synthesis for Ukrainian accountability OSINT.",
+  "subtitle_uk": "Недільний редакційний синтез для української accountability-оптики.",
+  "dek_en": "A magazine-style synthesis of the week’s strongest accountability OSINT: UN CRSV listing, Kyiv and Zaporizhzhia claim-status discipline, Ukrainian rear-strike reporting, Russian loss-count categories, digital-evidence governance, satellite/fire/network verification layers and investigator OPSEC under AI-assisted cyber pressure.",
+  "dek_uk": "Журнальний синтез найсильніших accountability OSINT-сигналів тижня: CRSV-список ООН, дисципліна статусів для Києва й Запорізької АЕС, українські удари по російському тилу, категорії підрахунку російських втрат, governance цифрових доказів, супутниково-теплово-мережеві шари верифікації та OPSEC дослідника під тиском AI-assisted кіберзагроз.",
+  "editorial_frame": {
+    "what_this_is": "A Sunday weekly magazine. It develops the strongest signals from the week’s Daily Signal issues, Saturday Tool Radar and fresh public OSINT developments into editorial sections with evidence status, source limits and practical use.",
+    "what_this_is_not": "A dump of daily cards, a Telegram rumor digest, a target list, a doxxing board, a leaked-data workflow, or a place to turn claims into verdicts merely by giving them a monocle."
+  },
+  "rubric_map": [
+    "📡 Signal of the Week / Головний сигнал тижня",
+    "🇺🇦 Ukraine Lens / Українська оптика",
+    "⚖️ War Crimes Verification / Верифікація воєнних злочинів",
+    "🕯️ Losses, Captivity & Missing / Втрати, полон, зниклі",
+    "🧭 Tradecraft / Методика",
+    "🧰 Toolbox / Інструментарій",
+    "⚠️ Risk Watch / Межі й ризики"
+  ],
+  "editorial_note_en": "The week’s central lesson is evidence-status discipline under pressure. UN findings, Russian official claims, Ukrainian denials, strike footage, satellite leads, thermal anomalies, network measurements, intelligence estimates and named-loss databases all entered the same information stream. Weekly synthesis should keep each category visible instead of stirring them into one heroic soup with a field marshal’s moustache.",
+  "editorial_note_uk": "Головний урок тижня — дисципліна статусів доказів під тиском. В одному інформаційному потоці опинилися висновки ООН, російські офіційні заяви, українські заперечення, відео ударів, супутникові зачіпки, теплові аномалії, мережеві вимірювання, розвідувальні оцінки й поіменні бази втрат. Тижневий синтез має показувати ці категорії окремо, а не перемішувати їх в одну героїчну юшку з фельдмаршальськими вусами.",
+  "items": [
+    {
+      "rubric_key": "signal",
+      "emoji": "📡",
+      "rubric_en": "Signal of the Week",
+      "rubric_uk": "Головний сигнал тижня",
+      "title_en": "The week’s real signal was claim status, not claim volume",
+      "title_uk": "Головний сигнал тижня — статуси тверджень, а не їхня кількість",
+      "source_line_en": "AP; Reuters; Daily Signal #012–#016; Saturday Tool Radar #016 · 25–31 May 2026",
+      "source_line_uk": "AP; Reuters; Daily Signal #012–#016; Saturday Tool Radar #016 · 25–31 травня 2026",
+      "what_happened_en": "The week carried several high-risk stories at once: Russia’s UN CRSV listing, Russian threats of systematic strikes on Kyiv, reports around the Russian-occupied Zaporizhzhia nuclear plant, Ukrainian rear-strike reporting, Russian loss estimates and new verification tools. The strongest editorial pattern was not any single headline, but the need to keep each claim in its correct evidence-status box.",
+      "what_happened_uk": "Протягом тижня одночасно з’явилися кілька високоризикових сюжетів: внесення російських структур до CRSV-списку ООН, російські погрози системними ударами по Києву, повідомлення навколо окупованої Запорізької АЕС, репортажі про українські удари по російському тилу, оцінки російських втрат і нові інструменти верифікації. Найсильніший редакційний патерн — не окремий заголовок, а потреба тримати кожне твердження у правильній доказовій комірці.",
+      "why_it_matters_en": "Accountability OSINT fails when verified findings, official claims, denials, tool outputs and intelligence estimates are flattened into one narrative. The weekly value is category discipline: UN-verified, officially claimed, journalist-observed, tool-detected, statistically estimated, intelligence-sourced, independently verified and unverified all mean different things.",
+      "why_it_matters_uk": "Accountability OSINT ламається, коли верифіковані висновки, офіційні заяви, заперечення, результати інструментів і розвідувальні оцінки сплющують в один сюжет. Цінність тижня — дисципліна категорій: UN-verified, officially claimed, journalist-observed, tool-detected, statistically estimated, intelligence-sourced, independently verified і unverified означають різні речі.",
+      "how_to_use_en": "Use one claim-status grid across the week: claim, source, primary or repost, date/time, location confidence, evidence type, legal or procedural status, corroboration path, publication risk and follow-up needed. Apply the grid before writing the story, not after the headline has already marched off with a bugle.",
+      "how_to_use_uk": "Використовуйте одну таблицю статусів для всього тижня: твердження, джерело, primary чи repost, дата/час, упевненість у локації, тип доказу, юридичний або процесуальний статус, шлях корроборації, ризик публікації й потрібне продовження. Таблицю треба застосовувати до написання тексту, а не після того, як заголовок уже пішов маршем із сурмою.",
+      "limits_en": "A weekly synthesis must not upgrade weak evidence. A Russian official claim stays a claim; a Ukrainian denial stays a denial; an IAEA concern is not full access; a satellite or FIRMS signal is a lead; an intelligence estimate is not a named OSINT database.",
+      "limits_uk": "Тижневий синтез не має підвищувати статус слабких доказів. Російська офіційна заява лишається заявою; українське заперечення — запереченням; занепокоєння МАГАТЕ не дорівнює повному доступу; супутниковий або FIRMS-сигнал є лідом; розвідувальна оцінка не є поіменною OSINT-базою.",
+      "tags": [
+        "signal-of-week",
+        "claim-status",
+        "evidence-discipline",
+        "ukraine-accountability",
+        "weekly-synthesis"
+      ]
+    },
+    {
+      "rubric_key": "war-crimes",
+      "emoji": "⚖️",
+      "rubric_en": "War Crimes Verification",
+      "rubric_uk": "Верифікація воєнних злочинів",
+      "title_en": "The UN CRSV listing turns detention abuse into a named accountability layer",
+      "title_uk": "CRSV-список ООН перетворює насильство в місцях несвободи на окремий шар відповідальності",
+      "source_line_en": "AP; Reuters; Guardian · 28–29 May 2026",
+      "source_line_uk": "AP; Reuters; Guardian · 28–29 травня 2026",
+      "what_happened_en": "The UN added Russian armed and security forces to its conflict-related sexual violence list for the first time, with reporting citing 310 verified cases involving Ukrainian prisoners of war and civilian detainees in Russia and Russian-occupied areas. The public story is now no longer only a set of survivor accounts or NGO findings; it has entered a formal UN listing framework.",
+      "what_happened_uk": "ООН уперше внесла російські збройні й силові структури до списку щодо сексуального насильства, пов’язаного з конфліктом; у повідомленнях ідеться про 310 верифікованих випадків щодо українських військовополонених і цивільних утримуваних у Росії та на окупованих територіях. Публічний сюжет більше не є лише набором свідчень або правозахисних висновків — він увійшов у формальну рамку списку ООН.",
+      "why_it_matters_en": "This is the week’s strongest war-crimes verification signal. CRSV documentation connects detention sites, victim status, alleged perpetrator structures, command chains, transfer routes, medical and forensic evidence, legal classification and international reporting. The public task is to show the pattern without exposing survivors.",
+      "why_it_matters_uk": "Це найсильніший сигнал тижня для верифікації воєнних злочинів. Документація CRSV пов’язує місця несвободи, статус постраждалих, імовірні структури виконавців, командні ланцюги, маршрути переміщення, медичні й криміналістичні докази, правову кваліфікацію та міжнародну звітність. Публічне завдання — показати патерн, не відкриваючи постраждалих.",
+      "how_to_use_en": "Build protected casefiles around detention site, time window, status of victim, source type, procedural status, alleged perpetrator structure, corroboration path and disclosure limits. Public outputs should describe institutions and patterns, not names, relatives, medical details or private support networks.",
+      "how_to_use_uk": "Будуйте захищені casefile: місце утримання, часовий проміжок, статус постраждалої особи, тип джерела, процесуальний статус, імовірна структура виконавців, шлях корроборації та межі розкриття. Публічні матеріали мають описувати інституції й патерни, а не імена, родичів, медичні подробиці чи приватні мережі підтримки.",
+      "limits_en": "UN verification does not make survivor-identifying detail publishable. Do not treat listing as conviction of a named individual unless a court or prosecutor’s record supports that status. Access restrictions by Russia should be recorded as part of the evidence environment.",
+      "limits_uk": "Верифікація ООН не робить ідентифікуючі деталі постраждалих придатними для публікації. Не подавайте внесення до списку як вирок конкретній людині без судового або прокурорського статусу. Обмеження доступу з боку РФ треба фіксувати як частину доказового середовища.",
+      "tags": [
+        "crsv",
+        "detention-sites",
+        "war-crimes-verification",
+        "un",
+        "survivor-protection"
+      ]
+    },
+    {
+      "rubric_key": "ukraine",
+      "emoji": "🇺🇦",
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "title_en": "Ukraine’s rear-strike story needs after-action ledgers, not target glamour",
+      "title_uk": "Історія українських ударів по тилу потребує after-action ledger, а не романтики цілей",
+      "source_line_en": "Reuters; AP; Daily Signal #015 · 28–31 May 2026",
+      "source_line_uk": "Reuters; AP; Daily Signal #015 · 28–31 травня 2026",
+      "what_happened_en": "Reuters reported from eastern Ukraine on Ukrainian unmanned-systems units conducting mid-range strikes against Russian rear logistics and air-defence infrastructure. AP later reported new Ukrainian drone strikes on Russian oil infrastructure while Kyiv expected further Russian bombardments. Together, these stories show a growing public evidence stream around Ukrainian deep and rear-strike activity.",
+      "what_happened_uk": "Reuters опублікував репортаж зі сходу України про підрозділи безпілотних систем, які проводять середньодальні удари по російській тиловій логістиці та інфраструктурі ППО. AP пізніше повідомило про нові українські удари по російській нафтовій інфраструктурі на тлі очікувань нових російських обстрілів України. Разом ці сюжети показують зростання публічного доказового потоку навколо української deep/rear-strike активності.",
+      "why_it_matters_en": "The useful Ukrainian Lens is not celebration of targets. It is source-status discipline around claimed effect, infrastructure role, civilian-harm safeguards, later repair status, sanctions relevance and Russian counterclaims. Rear-strike reporting can easily become either propaganda theatre or an accidental operational catalogue.",
+      "why_it_matters_uk": "Корисна українська оптика — не святкування цілей. Це дисципліна статусів щодо заявленого ефекту, ролі інфраструктури, запобіжників щодо цивільної шкоди, подальшого статусу ремонту, санкційної релевантності й російських контрзаяв. Репортажі про удари по тилу легко стають або пропагандистським театром, або випадковим операційним каталогом.",
+      "how_to_use_en": "Track each after-action claim with date, claimed target category, source of claim, available imagery, geolocation status, satellite or FIRMS lead, ownership or sanctions context, civilian-harm allegation status and later correction. Keep launch locations, route logic, weak-point analysis and live tactical inference out of public products.",
+      "how_to_use_uk": "Для кожного after-action claim фіксуйте дату, заявлену категорію цілі, джерело заяви, наявні зображення, статус геолокації, супутниковий або FIRMS-лід, контекст власності чи санкцій, статус тверджень про цивільну шкоду й подальші уточнення. Місця запуску, логіку маршруту, аналіз вразливостей і live tactical inference тримайте поза публічними продуктами.",
+      "limits_en": "Embedded or access-based battlefield reporting is not independent verification of every strike effect. Public infrastructure data can become operationally useful if handled carelessly, so weekly synthesis should stay after-action and public-interest only.",
+      "limits_uk": "Репортаж із доступом до військових не є незалежною перевіркою кожного ефекту удару. Публічні інфраструктурні дані можуть стати операційно корисними, якщо з ними працювати необережно, тому тижневий синтез має лишатися after-action і public-interest only.",
+      "tags": [
+        "ukraine-lens",
+        "rear-strikes",
+        "infrastructure-osint",
+        "after-action",
+        "source-status"
+      ]
+    },
+    {
+      "rubric_key": "tradecraft",
+      "emoji": "🧭",
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "title_en": "Kyiv threats and Zaporizhzhia nuclear-plant claims need threat-to-impact grids",
+      "title_uk": "Погрози щодо Києва й заяви навколо ЗАЕС потребують threat-to-impact grids",
+      "source_line_en": "Reuters; AP; Guardian; Daily Signal #012/#013/#015 · 25–31 May 2026",
+      "source_line_uk": "Reuters; AP; Guardian; Daily Signal #012/#013/#015 · 25–31 травня 2026",
+      "what_happened_en": "The week opened with Russian statements about systematic strikes on Kyiv and ended with contested reporting around the Russian-occupied Zaporizhzhia nuclear plant: Russia claimed a Ukrainian drone hit a turbine-hall wall, Ukraine denied attacking the plant, and the IAEA expressed concern and sought direct inspection. These are not the same kind of evidence, but they belong in the same disciplined workflow.",
+      "what_happened_uk": "Тиждень почався російськими заявами про системні удари по Києву й завершився суперечливими повідомленнями навколо окупованої Запорізької АЕС: РФ заявила про удар українського дрона по стіні турбінної зали, Україна заперечила атаку на станцію, а МАГАТЕ висловило занепокоєння й запросило прямий огляд. Це різні типи доказів, але вони потребують одного дисциплінованого workflow.",
+      "why_it_matters_en": "High-risk infrastructure and nuclear-site claims produce legal, political and safety consequences before facts are fully verified. A threat-to-impact grid prevents escalation rhetoric, official denial, access-controlled observation, damage imagery and independent inspection from being confused with one another.",
+      "why_it_matters_uk": "Твердження щодо критичної інфраструктури й ядерних об’єктів мають юридичні, політичні й безпекові наслідки ще до повної верифікації фактів. Threat-to-impact grid не дозволяє змішати ескалаційну риторику, офіційне заперечення, контрольований доступ, фото пошкоджень і незалежну інспекцію.",
+      "how_to_use_en": "For each incident, separate warning, claim, denial, access condition, observed damage, third-party technical statement, imagery status, inspection status and later correction. Archive the public statements, but keep the evidence file focused on post-event verifiable material and inspection records.",
+      "how_to_use_uk": "Для кожного інциденту розділяйте warning, claim, denial, access condition, observed damage, third-party technical statement, imagery status, inspection status і later correction. Архівуйте публічні заяви, але доказовий файл тримайте навколо post-event матеріалів, які можна перевірити, та записів інспекцій.",
+      "limits_en": "Do not infer legal responsibility from one side’s claim or denial. Do not publish nuclear-site vulnerabilities, security layouts, route guesses, air-defence patterns or tactical assessment. Access-controlled evidence should carry an explicit access caveat.",
+      "limits_uk": "Не виводьте юридичну відповідальність із заяви або заперечення однієї сторони. Не публікуйте вразливості ядерного об’єкта, схеми безпеки, припущення про маршрути, патерни ППО або тактичні оцінки. Докази з контрольованим доступом мають мати чітке застереження про умови доступу.",
+      "tags": [
+        "tradecraft",
+        "threat-to-impact",
+        "zaporizhzhia-npp",
+        "kyiv",
+        "access-controlled-evidence"
+      ]
+    },
+    {
+      "rubric_key": "losses",
+      "emoji": "🕯️",
+      "rubric_en": "Losses, Captivity & Missing",
+      "rubric_uk": "Втрати, полон, зниклі",
+      "title_en": "Russian-loss numbers need separate evidence boxes",
+      "title_uk": "Цифри російських втрат потребують окремих доказових коробок",
+      "source_line_en": "Guardian; Mediazona/Meduza methodology context; Daily Signal #014 · 27–28 May 2026",
+      "source_line_uk": "Guardian; методологічний контекст Mediazona/Meduza; Daily Signal #014 · 27–28 травня 2026",
+      "what_happened_en": "A new GCHQ-linked estimate reported by the Guardian placed Russian military deaths near half a million, while the same public debate continued to reference Mediazona/Meduza statistical estimates and BBC/Mediazona-style named confirmations. The weekly lesson is not which number wins, but which method each number belongs to.",
+      "what_happened_uk": "Нова оцінка, пов’язана з GCHQ і описана Guardian, поставила кількість загиблих російських військових близько до пів мільйона; водночас у публічній дискусії лишаються статистичні оцінки Mediazona/Meduza та поіменні підтвердження у стилі BBC/Mediazona. Урок тижня не в тому, яка цифра перемагає, а в тому, до якого методу належить кожна цифра.",
+      "why_it_matters_en": "Loss data is one of the easiest places to create false precision. Intelligence estimates, statistical mortality models, named open-source confirmations, cemetery/obituary traces, official claims and family reports all answer different questions. Mixing them gives a number-shaped pudding with little flags in it.",
+      "why_it_matters_uk": "Дані про втрати — одна з найпростіших зон для хибної точності. Розвідувальні оцінки, статистичні mortality models, поіменні open-source confirmations, кладовищні/некрологічні сліди, офіційні заяви й повідомлення родичів відповідають на різні питання. Якщо змішати їх, вийде пудинг у формі числа з маленькими прапорцями.",
+      "how_to_use_en": "Every loss dataset should carry count_status, method, population, time window, update date, confidence note and whether the list is named, estimated or claimed. Publish categories such as confirmed by name, statistically estimated, intelligence estimate, official Ukrainian claim, reported by relatives and unverified.",
+      "how_to_use_uk": "Кожен loss dataset має містити count_status, method, population, time window, update date, confidence note і позначку, чи це поіменний список, оцінка або заява. Публікуйте категорії: confirmed by name, statistically estimated, intelligence estimate, official Ukrainian claim, reported by relatives, unverified.",
+      "limits_en": "Do not collapse intelligence estimates into named OSINT databases. Do not republish unnecessary personal details of relatives, cemetery visitors or private individuals. Treat local obituary evidence as confirmation of a death only when identity, military status and source context are stable.",
+      "limits_uk": "Не зводьте розвідувальні оцінки до поіменних OSINT-баз. Не передруковуйте зайві персональні дані родичів, відвідувачів кладовищ або приватних осіб. Локальні некрологи можна використовувати як підтвердження смерті лише тоді, коли стабільні ідентичність, військовий статус і контекст джерела.",
+      "tags": [
+        "russian-losses",
+        "count-status",
+        "mediazona",
+        "casualty-verification",
+        "missing-data"
+      ]
+    },
+    {
+      "rubric_key": "toolbox",
+      "emoji": "🧰",
+      "rubric_en": "Tools / Datasets",
+      "rubric_uk": "Інструменти й дані",
+      "title_en": "The practical stack of the week is satellite, thermal and network evidence",
+      "title_uk": "Практичний стек тижня — супутникові, теплові й мережеві докази",
+      "source_line_en": "Saturday Tool Radar #016; Copernicus Browser; NASA FIRMS; OONI; Bellingcat Telegago/Turnstone · 30 May 2026",
+      "source_line_uk": "Saturday Tool Radar #016; Copernicus Browser; NASA FIRMS; OONI; Bellingcat Telegago/Turnstone · 30 травня 2026",
+      "what_happened_en": "Saturday Tool Radar #016 moved away from generic tool lists and selected a focused verification stack: Copernicus Browser for Sentinel before/after imagery, NASA FIRMS for thermal-anomaly leads, OONI for network-interference evidence, Telegago for public Telegram discovery and Turnstone for historical flight-pattern analysis.",
+      "what_happened_uk": "Saturday Tool Radar #016 відійшов від generic tool lists і зібрав сфокусований стек верифікації: Copernicus Browser для Sentinel before/after imagery, NASA FIRMS для теплових аномалій, OONI для мережевих втручань, Telegago для пошуку в публічному Telegram і Turnstone для історичного аналізу авіаційних патернів.",
+      "why_it_matters_en": "The stack is useful because each layer answers a different question: what changed on the ground, whether a heat signal appeared, whether connectivity was disrupted, where public Telegram traces exist and whether movement patterns are unusual. None of the layers alone is proof; together they structure investigation.",
+      "why_it_matters_uk": "Стек корисний тим, що кожен шар відповідає на інше питання: що змінилося на землі, чи був тепловий сигнал, чи переривався зв’язок, де є публічні Telegram-сліди й чи є патерни руху нетиповими. Жоден шар окремо не є доказом; разом вони структурують розслідування.",
+      "how_to_use_en": "For infrastructure incidents, create one folder per incident with AOI, satellite product IDs, FIRMS export, OONI measurement links if relevant, local visual evidence, official statements, Telegram leads, archive links and a short evidence-status memo. Keep raw products separate from editorial screenshots.",
+      "how_to_use_uk": "Для інфраструктурних інцидентів створюйте окрему папку: AOI, satellite product IDs, FIRMS export, OONI measurement links за потреби, локальні візуальні докази, офіційні заяви, Telegram leads, архівні посилання й короткий evidence-status memo. Raw products тримайте окремо від редакційних скриншотів.",
+      "limits_en": "FIRMS is not strike proof. Satellite imagery is not attribution. OONI tests may expose testers in hostile environments. Telegram search is discovery, not verification. Flight tracks are circumstantial unless corroborated.",
+      "limits_uk": "FIRMS не доводить удар. Супутниковий знімок не доводить виконавця. OONI-тести можуть наражати людей на ризик у ворожому середовищі. Telegram search — це discovery, а не verification. Авіаційні треки є непрямими доказами без корроборації.",
+      "tags": [
+        "toolbox",
+        "satellite-imagery",
+        "nasa-firms",
+        "ooni",
+        "telegram-osint",
+        "turnstone"
+      ]
+    },
+    {
+      "rubric_key": "risk",
+      "emoji": "⚠️",
+      "rubric_en": "Risk Watch",
+      "rubric_uk": "Межі й ризики",
+      "title_en": "Investigator OPSEC now includes AI-assisted cyber pressure and poisoned tooling",
+      "title_uk": "OPSEC дослідника тепер включає AI-assisted кібертиск і отруєні інструменти",
+      "source_line_en": "The Record; GitHub Security Blog; Microsoft Threat Intelligence; Daily Signal #012/#015 · May 2026",
+      "source_line_uk": "The Record; GitHub Security Blog; Microsoft Threat Intelligence; Daily Signal #012/#015 · травень 2026",
+      "what_happened_en": "The week’s OPSEC stream included Ukrainian warnings about Russian AI use inside cyber operations, GitHub’s report of a poisoned VS Code extension compromising an employee device, and broader Russian cyber-espionage reporting. For investigators, this means hostile intake is no longer only a suspicious attachment problem.",
+      "what_happened_uk": "OPSEC-потік тижня включав українські попередження про використання Росією ШІ всередині кібероперацій, повідомлення GitHub про отруєне VS Code extension, яке скомпрометувало пристрій співробітника, і ширший контекст російського кіберespionage. Для дослідників це означає, що hostile intake — це вже не лише проблема підозрілих вкладень.",
+      "why_it_matters_en": "Accountability researchers handle tips, documents, videos, archives, scripts, translation tools, scraping code and shared cloud folders. Every one of those can be an attack surface. AI may increase lure variation, phishing quality, automated triage of stolen material and adaptive malware behaviour.",
+      "why_it_matters_uk": "Accountability-дослідники працюють із підказками, документами, відео, архівами, скриптами, інструментами перекладу, scraping code і спільними cloud folders. Кожен із цих елементів може бути поверхнею атаки. ШІ може збільшити варіативність приманок, якість phishing, автоматизований triage викрадених матеріалів і адаптивність malware.",
+      "how_to_use_en": "Separate raw evidence intake from daily work. Use MFA or hardware keys, separate browser profiles, document quarantine, sandboxing, hash logs, password-manager hygiene, extension audits and a rule that unknown files never open in the main workspace.",
+      "how_to_use_uk": "Відокремлюйте raw evidence intake від щоденної роботи. Використовуйте MFA або hardware keys, окремі browser profiles, document quarantine, sandboxing, hash logs, password-manager hygiene, audit extensions і правило: невідомі файли не відкриваються в основному робочому середовищі.",
+      "limits_en": "Do not publish malware samples, executable steps or attacker-useful indicators without a clear defensive purpose. OPSEC advice must be realistic for small newsrooms and volunteer teams, not a ceremonial parade of enterprise acronyms.",
+      "limits_uk": "Не публікуйте malware samples, executable steps або attacker-useful indicators без чіткої оборонної потреби. OPSEC-поради мають бути реалістичними для малих редакцій і волонтерських команд, а не церемоніальним парадом enterprise-акронімів.",
+      "tags": [
+        "investigator-opsec",
+        "ai-malware",
+        "hostile-documents",
+        "developer-tooling",
+        "source-protection"
+      ]
+    }
+  ],
+  "compact_sections": [
+    {
+      "rubric_key": "tradecraft",
+      "emoji": "🧭",
+      "title": "Practical Methods",
+      "short_title": "Methods",
+      "points": [
+        "Use claim-status grids before writing: UN-verified, officially claimed, denied, observed, tool-detected, estimated and unverified are separate categories.",
+        "For high-risk infrastructure and nuclear-site claims, separate warning, claim, denial, access condition, observed damage, inspection status and later correction.",
+        "For CRSV, document institutional patterns and protected evidence fields; do not publish survivor-identifying detail."
+      ]
+    },
+    {
+      "rubric_key": "toolbox",
+      "emoji": "🧰",
+      "title": "Tools / Datasets",
+      "short_title": "Tools",
+      "points": [
+        "Use Copernicus Browser and Sentinel products for bounded before/after checks, not attribution.",
+        "Use NASA FIRMS as a thermal-anomaly lead layer and OONI as a network-measurement layer, not proof by themselves.",
+        "Use Telegago for public Telegram discovery and Turnstone for historical pattern analysis only with corroboration."
+      ]
+    },
+    {
+      "rubric_key": "risk",
+      "emoji": "🛡️",
+      "title": "OPSEC / Risk",
+      "short_title": "OPSEC",
+      "points": [
+        "Keep hostile evidence intake outside daily work devices and main browser sessions.",
+        "Audit extensions, scripts, shared folders and automation tools as possible attack surfaces.",
+        "Do not publish live targeting logic, nuclear-site vulnerabilities, private survivor data, family data, home addresses or unsafe deanonymization workflows."
+      ]
+    }
+  ],
+  "reading_list": [
+    {
+      "title": "AP — Israeli and Russian forces added to UN blacklist for sexual violence in conflict zones",
+      "href": "https://apnews.com/article/c5d5c8300dd671d0e5cd1594c1da2006",
+      "note": "Main public source for the week’s UN CRSV accountability signal."
+    },
+    {
+      "title": "Reuters — UN places Israel and Russia on sexual violence blacklist",
+      "href": "https://www.reuters.com/world/middle-east/un-place-israel-sexual-violence-in-conflict-blacklist-israeli-envoy-says-2026-05-29/",
+      "note": "Parallel source for the formal UN listing frame and international reaction."
+    },
+    {
+      "title": "Reuters — Russia says Ukrainian drone struck Zaporizhzhia nuclear plant, Kyiv denies",
+      "href": "https://www.reuters.com/world/europe/russias-rosatom-says-ukrainian-drone-struck-zaporizhzhia-nuclear-plant-2026-05-30/",
+      "note": "Fresh Sunday-cycle claim-status case around a Russian-occupied nuclear site."
+    },
+    {
+      "title": "AP — Ukraine keeps up assault on Russian oil sites as Kyiv expects more strikes",
+      "href": "https://apnews.com/article/9d946af5acdb3a32f977c791a79144b2",
+      "note": "After-action source for rear-strike and infrastructure verification workflow."
+    },
+    {
+      "title": "Reuters — On the ground with Ukraine's drone forces targeting Russia's battlefield rear",
+      "href": "https://www.reuters.com/business/aerospace-defense/ground-with-ukraines-drone-forces-targeting-russias-battlefield-rear-2026-05-28/",
+      "note": "Ukrainian rear-strike reporting as a source-status and OPSEC exercise."
+    },
+    {
+      "title": "Reuters — Russia brushes off US call not to launch systematic strikes on Kyiv",
+      "href": "https://www.reuters.com/world/russia-brushes-off-us-call-not-launch-systemic-strikes-kyiv-2026-05-28/",
+      "note": "Threat-to-impact preservation source for Kyiv strike rhetoric."
+    },
+    {
+      "title": "Guardian — Nearly half a million Russians killed in Ukraine war, UK spy chief says",
+      "href": "https://www.theguardian.com/world/2026/may/27/nearly-half-a-million-russians-killed-in-ukraine-war-uk-spy-chief-says",
+      "note": "Loss-count discipline: intelligence estimate versus statistical and named-confirmation methods."
+    },
+    {
+      "title": "UNLA — Berkeley Protocol remains a key international standard but needs adaptation",
+      "href": "https://unla.org.ua/en/2026/05/experts-berkeley-protocol-remains-a-key-international-standard-for-documenting-war-crimes-but-needs-to-be-adapted-to-modern-challenges/",
+      "note": "Ukrainian discussion of OSINT evidence, preservation, procedure and courtroom use."
+    },
+    {
+      "title": "Ukrainska Pravda — Ukraine scales digital evidence collection for Russian crimes",
+      "href": "https://www.pravda.com.ua/eng/news/2026/05/15/8034835/",
+      "note": "Data-governance context for large-scale Ukrainian war-crimes evidence."
+    },
+    {
+      "title": "Copernicus Data Space — Copernicus Browser documentation",
+      "href": "https://documentation.dataspace.copernicus.eu/Applications/Browser.html",
+      "note": "Sentinel before/after satellite workflow for incident triage."
+    },
+    {
+      "title": "NASA FIRMS — active fire and thermal anomalies",
+      "href": "https://firms.modaps.eosdis.nasa.gov/",
+      "note": "Thermal-anomaly lead layer for after-action infrastructure verification."
+    },
+    {
+      "title": "OONI — Probe and Explorer",
+      "href": "https://ooni.org/install/",
+      "note": "Network-interference measurement layer with OPSEC caveats."
+    },
+    {
+      "title": "Bellingcat — Turnstone flight-tracking tool",
+      "href": "https://www.bellingcat.com/resources/2026/03/05/turnstone-flight-tracking-tool/",
+      "note": "Historical and spatial flight-pattern analysis with non-live-use constraints."
+    },
+    {
+      "title": "The Record — Ukraine says Russia is using AI malware on the battlefield",
+      "href": "https://therecord.media/ukraine-says-russia-using-ai-malware-on-battlefield",
+      "note": "AI-assisted cyber risk for investigators and civil-society evidence intake."
+    },
+    {
+      "title": "GitHub Security Blog — investigating unauthorized access to internal repositories",
+      "href": "https://github.blog/security/investigating-unauthorized-access-to-githubs-internal-repositories/",
+      "note": "Poisoned developer tooling as an investigator OPSEC warning."
+    }
+  ]
+}
