@@ -362,3 +362,45 @@ reddit_osint_communities:
       - Tool Radar / Інструментальний радар
       - Tradecraft / Методика
     note: Use cautiously as community radar for tool and method discovery. Do not treat community posts as established facts.
+
+osint_place_directory_additions:
+  - name: OSINT.place Blogs Directory
+    url: https://www.osint.place/#/blogs
+    roles: [community_radar, source_pointer, lead_only]
+    language: en
+    note: Use as a discovery directory for OSINT blogs and workflows. Do not treat directory entries as evidence; verify original sources before featuring.
+  - name: Centre for Information Resilience
+    url: https://www.info-res.org/
+    roles: [investigative, methodology, accountability]
+    language: en
+    note: Use for human-rights, conflict-monitoring and war-crimes verification leads; prefer original project pages and methodology notes.
+  - name: OSINT for Ukraine
+    url: https://osintforukraine.com/
+    roles: [investigative, accountability, ukraine_lens]
+    language: en
+    note: Use for Ukraine-focused accountability OSINT leads and investigator ecosystem monitoring; independently verify case-specific claims.
+  - name: Molfar
+    url: https://www.molfar.global/
+    roles: [investigative, accountability, ukraine_lens]
+    language: en
+    note: Use for Ukrainian OSINT and accountability investigations; apply extra cross-checking for named entities and attribution claims.
+  - name: Mnemonic Ukrainian Archive
+    url: https://ukrainianarchive.org/
+    roles: [archive, accountability, methodology]
+    language: en
+    note: Use for archiving methodology, evidence preservation and accountability context rather than daily news monitoring.
+  - name: NixIntel
+    url: https://nixintel.info/
+    roles: [methodology, tradecraft, investigator_opsec]
+    language: en
+    note: Use for practical OSINT tradecraft, search workflows and OPSEC-aware research methods.
+  - name: OSINT Combine Blog
+    url: https://www.osintcombine.com/blog/
+    roles: [methodology, toolbox, tool_radar]
+    language: en
+    note: Use for tool and workflow discovery; account for vendor bias and verify tools against original project pages.
+  - name: OSINT Team
+    url: https://medium.com/osintteam
+    roles: [community_radar, lead_only, methodology]
+    language: en
+    note: Use only as community radar and lead discovery; verify all claims and tools through primary sources before publication.
