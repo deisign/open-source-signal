@@ -1,0 +1,546 @@
+- id: wayback_machine
+  name: Wayback Machine
+  url: https://web.archive.org/
+  category: archiving
+  use_cases:
+    - Preserve public web pages
+    - Compare historical versions of a site
+  input: Public URL
+  output: Archived snapshots and capture timeline
+  access: free
+  requires_login: false
+  api_available: true
+  opsec_level: low
+  legal_risk: low
+  evidence_value: high
+  automation_value: medium
+  learning_cost: low
+  tested_status: core
+  public: true
+  project_fit: Core preservation and source history tool for public-interest verification.
+  notes: Best used early when a source may change or disappear.
+- id: archive_today
+  name: archive.today / archive.ph
+  url: https://archive.ph/
+  category: archiving
+  use_cases:
+    - Save a public page capture
+    - Compare page state against other archives
+  input: Public URL
+  output: Static archived page copy
+  access: free
+  requires_login: false
+  api_available: false
+  opsec_level: low
+  legal_risk: low
+  evidence_value: high
+  automation_value: low
+  learning_cost: low
+  tested_status: recommended
+  public: true
+  project_fit: Useful second archive source when cross-checking public web evidence.
+  notes: Availability and domain variants can change; record the final archive URL.
+- id: perma_cc
+  name: Perma.cc
+  url: https://perma.cc/
+  category: archiving
+  use_cases:
+    - Create citation-grade web records
+    - Preserve sources for research notes
+  input: Public URL
+  output: Permanent citation link and archived record
+  access: freemium
+  requires_login: true
+  api_available: true
+  opsec_level: low
+  legal_risk: low
+  evidence_value: high
+  automation_value: medium
+  learning_cost: low
+  tested_status: recommended
+  public: true
+  project_fit: Strong fit for transparent citation trails and durable references.
+  notes: Free access is often tied to institutions or limited personal use.
+- id: google_earth
+  name: Google Earth
+  url: https://earth.google.com/
+  category: geolocation
+  use_cases:
+    - Inspect terrain and landmarks
+    - Compare historical imagery where available
+  input: Place name, coordinates, or visual clues
+  output: Satellite imagery, 3D terrain, and map context
+  access: free
+  requires_login: false
+  api_available: false
+  opsec_level: low
+  legal_risk: low
+  evidence_value: high
+  automation_value: none
+  learning_cost: low
+  tested_status: core
+  public: true
+  project_fit: Core geolocation workspace for verifying places and terrain context.
+  notes: Imagery dates and coverage vary by location.
+- id: sentinel_hub_eo_browser
+  name: Sentinel Hub EO Browser
+  url: https://apps.sentinel-hub.com/eo-browser/
+  category: geolocation
+  use_cases:
+    - Review satellite imagery over time
+    - Check environmental and conflict-related changes
+  input: Coordinates, area, time range, and satellite layer
+  output: Satellite scenes, visualizations, and exports
+  access: freemium
+  requires_login: false
+  api_available: true
+  opsec_level: low
+  legal_risk: low
+  evidence_value: high
+  automation_value: medium
+  learning_cost: medium
+  tested_status: recommended
+  public: true
+  project_fit: Useful for corroborating public claims with repeatable satellite context.
+  notes: Some exports and advanced features require an account.
+- id: nasa_worldview
+  name: NASA Worldview
+  url: https://worldview.earthdata.nasa.gov/
+  category: geolocation
+  use_cases:
+    - Review near-real-time Earth observation layers
+    - Check fires, smoke, weather, and environmental context
+  input: Location, date, and selected imagery layers
+  output: Satellite layer views and image exports
+  access: free
+  requires_login: false
+  api_available: true
+  opsec_level: low
+  legal_risk: low
+  evidence_value: medium
+  automation_value: medium
+  learning_cost: medium
+  tested_status: recommended
+  public: true
+  project_fit: Good contextual source for environmental indicators around events.
+  notes: Resolution depends on the selected sensor and layer.
+- id: openstreetmap
+  name: OpenStreetMap
+  url: https://www.openstreetmap.org/
+  category: geolocation
+  use_cases:
+    - Check roads, buildings, and local place names
+    - Compare mapped features against visual evidence
+  input: Place name, coordinates, or map area
+  output: Open map data and feature metadata
+  access: free
+  requires_login: false
+  api_available: true
+  opsec_level: low
+  legal_risk: low
+  evidence_value: medium
+  automation_value: high
+  learning_cost: low
+  tested_status: core
+  public: true
+  project_fit: Baseline map layer and structured geography source for verification.
+  notes: Treat user-edited map details as leads and corroborate important claims.
+- id: mapillary
+  name: Mapillary
+  url: https://www.mapillary.com/
+  category: geolocation
+  use_cases:
+    - Inspect street-level imagery
+    - Compare road signs, storefronts, and landmarks
+  input: Location or map area
+  output: Street-level images and capture metadata
+  access: free
+  requires_login: false
+  api_available: true
+  opsec_level: low
+  legal_risk: low
+  evidence_value: medium
+  automation_value: medium
+  learning_cost: low
+  tested_status: recommended
+  public: true
+  project_fit: Helpful when geolocating public imagery with street-level clues.
+  notes: Coverage is uneven and imagery may be old.
+- id: suncalc
+  name: SunCalc
+  url: https://www.suncalc.org/
+  category: geolocation
+  use_cases:
+    - Estimate sun position from shadows
+    - Test time-of-day hypotheses
+  input: Location, date, and time
+  output: Sun path, azimuth, altitude, and shadow direction
+  access: free
+  requires_login: false
+  api_available: false
+  opsec_level: low
+  legal_risk: low
+  evidence_value: medium
+  automation_value: low
+  learning_cost: low
+  tested_status: core
+  public: true
+  project_fit: Simple, explainable support for visual chronology checks.
+  notes: Works best when camera direction and local geometry are understood.
+- id: google_lens
+  name: Google Lens
+  url: https://lens.google/
+  category: image_video_verification
+  use_cases:
+    - Reverse image search
+    - Identify objects, signs, and similar images
+  input: Image or image crop
+  output: Similar images, web matches, and object guesses
+  access: free
+  requires_login: false
+  api_available: false
+  opsec_level: medium
+  legal_risk: low
+  evidence_value: medium
+  automation_value: none
+  learning_cost: low
+  tested_status: recommended
+  public: true
+  project_fit: Useful lead generator for visual verification, especially with crops.
+  notes: Uploading sensitive images to third-party services requires judgment.
+- id: tineye
+  name: TinEye
+  url: https://tineye.com/
+  category: image_video_verification
+  use_cases:
+    - Reverse image search
+    - Find older copies of an image
+  input: Image upload or image URL
+  output: Matching images, dates, and source pages
+  access: freemium
+  requires_login: false
+  api_available: true
+  opsec_level: medium
+  legal_risk: low
+  evidence_value: high
+  automation_value: medium
+  learning_cost: low
+  tested_status: core
+  public: true
+  project_fit: Strong tool for checking reuse and earlier publication of images.
+  notes: Combine with other reverse search engines for better coverage.
+- id: invid_weverify
+  name: InVID / WeVerify
+  url: https://www.invid-project.eu/tools-and-services/invid-verification-plugin/
+  category: image_video_verification
+  use_cases:
+    - Break videos into keyframes
+    - Run verification checks on social video
+  input: Video URL, image, or local media
+  output: Keyframes, metadata helpers, and search shortcuts
+  access: free
+  requires_login: false
+  api_available: false
+  opsec_level: medium
+  legal_risk: low
+  evidence_value: high
+  automation_value: low
+  learning_cost: medium
+  tested_status: core
+  public: true
+  project_fit: Practical visual verification toolkit for public videos.
+  notes: Browser extension permissions should be reviewed before use.
+- id: exiftool
+  name: ExifTool
+  url: https://exiftool.org/
+  category: image_video_verification
+  use_cases:
+    - Inspect metadata from media files
+    - Preserve metadata in evidence notes
+  input: Local image, video, audio, or document file
+  output: Metadata fields and timestamps
+  access: free
+  requires_login: false
+  api_available: false
+  opsec_level: low
+  legal_risk: low
+  evidence_value: medium
+  automation_value: high
+  learning_cost: medium
+  tested_status: core
+  public: true
+  project_fit: Core local-first utility for transparent metadata inspection.
+  notes: Metadata can be missing, edited, or misleading; treat it as one signal.
+- id: forensically
+  name: Forensically
+  url: https://29a.ch/photo-forensics/
+  category: image_video_verification
+  use_cases:
+    - Inspect images for visual anomalies
+    - Compare compression and clone-detection signals
+  input: Image file
+  output: Visual forensic analysis views
+  access: free
+  requires_login: false
+  api_available: false
+  opsec_level: medium
+  legal_risk: low
+  evidence_value: medium
+  automation_value: none
+  learning_cost: medium
+  tested_status: caution
+  public: true
+  project_fit: Useful for teaching and triage, with careful interpretation.
+  notes: Forensic visualizations are not proof by themselves and can be overread.
+- id: whois
+  name: Whois
+  url: https://lookup.icann.org/
+  category: domains_infrastructure
+  use_cases:
+    - Check domain registration data
+    - Record registrar and registration timeline
+  input: Domain name
+  output: Registration, registrar, nameserver, and status records
+  access: free
+  requires_login: false
+  api_available: false
+  opsec_level: low
+  legal_risk: low
+  evidence_value: medium
+  automation_value: low
+  learning_cost: low
+  tested_status: core
+  public: true
+  project_fit: Basic domain context for public source assessment.
+  notes: Privacy services and redactions limit attribution value.
+- id: ripestat
+  name: RIPEstat
+  url: https://stat.ripe.net/
+  category: domains_infrastructure
+  use_cases:
+    - Inspect IP and ASN context
+    - Review routing and registry history
+  input: IP address, prefix, or ASN
+  output: Registry, routing, DNS, and network relationship data
+  access: free
+  requires_login: false
+  api_available: true
+  opsec_level: low
+  legal_risk: low
+  evidence_value: medium
+  automation_value: high
+  learning_cost: medium
+  tested_status: recommended
+  public: true
+  project_fit: Useful infrastructure context without active scanning.
+  notes: Registry data explains networks, not direct responsibility.
+- id: crtsh
+  name: crt.sh
+  url: https://crt.sh/
+  category: domains_infrastructure
+  use_cases:
+    - Search certificate transparency logs
+    - Find related subdomains from certificates
+  input: Domain name or certificate search pattern
+  output: Certificate records and hostnames
+  access: free
+  requires_login: false
+  api_available: true
+  opsec_level: low
+  legal_risk: low
+  evidence_value: medium
+  automation_value: medium
+  learning_cost: low
+  tested_status: recommended
+  public: true
+  project_fit: Good passive source for domain history and infrastructure leads.
+  notes: Certificate records can include stale or unrelated hostnames.
+- id: dnsdumpster
+  name: DNSDumpster
+  url: https://dnsdumpster.com/
+  category: domains_infrastructure
+  use_cases:
+    - Map public DNS records
+    - Generate passive infrastructure leads
+  input: Domain name
+  output: DNS records, hosts, and network map
+  access: free
+  requires_login: false
+  api_available: false
+  opsec_level: low
+  legal_risk: low
+  evidence_value: medium
+  automation_value: low
+  learning_cost: low
+  tested_status: recommended
+  public: true
+  project_fit: Passive DNS overview for public infrastructure checks.
+  notes: Use for context, not vulnerability discovery or active probing.
+- id: builtwith
+  name: BuiltWith
+  url: https://builtwith.com/
+  category: domains_infrastructure
+  use_cases:
+    - Identify visible web technologies
+    - Compare site technology and tracking changes
+  input: Domain or URL
+  output: Technology profile, tags, and historical signals
+  access: freemium
+  requires_login: false
+  api_available: true
+  opsec_level: low
+  legal_risk: low
+  evidence_value: medium
+  automation_value: medium
+  learning_cost: low
+  tested_status: situational
+  public: true
+  project_fit: Useful when source credibility depends on web platform context.
+  notes: Commercial limits apply to deeper history and automation.
+- id: wappalyzer
+  name: Wappalyzer
+  url: https://www.wappalyzer.com/
+  category: domains_infrastructure
+  use_cases:
+    - Identify web frameworks and services
+    - Document visible technology stack
+  input: Domain, URL, or browser visit
+  output: Detected web technologies and categories
+  access: freemium
+  requires_login: false
+  api_available: true
+  opsec_level: low
+  legal_risk: low
+  evidence_value: low
+  automation_value: medium
+  learning_cost: low
+  tested_status: situational
+  public: true
+  project_fit: Lightweight context for evaluating public websites and sources.
+  notes: Browser extension use can expose browsing context to the service.
+- id: gdelt
+  name: GDELT
+  url: https://www.gdeltproject.org/
+  category: news_media_monitoring
+  use_cases:
+    - Monitor global news coverage
+    - Search events, themes, and source mentions
+  input: Query, date range, country, source, or theme
+  output: News records, event data, and article metadata
+  access: free
+  requires_login: false
+  api_available: true
+  opsec_level: low
+  legal_risk: low
+  evidence_value: medium
+  automation_value: high
+  learning_cost: medium
+  tested_status: core
+  public: true
+  project_fit: Strong fit for editorial radar, media monitoring, and repeatable queries.
+  notes: Machine-coded event data needs sampling and source review.
+- id: media_cloud
+  name: Media Cloud
+  url: https://mediacloud.org/
+  category: news_media_monitoring
+  use_cases:
+    - Analyze media attention over time
+    - Compare coverage across source collections
+  input: Keywords, media collections, and date range
+  output: Story lists, attention metrics, and source comparisons
+  access: free
+  requires_login: true
+  api_available: true
+  opsec_level: low
+  legal_risk: low
+  evidence_value: medium
+  automation_value: medium
+  learning_cost: medium
+  tested_status: recommended
+  public: true
+  project_fit: Useful for understanding media ecosystems and narrative spread.
+  notes: Collection definitions shape the results and should be documented.
+- id: gephi
+  name: Gephi
+  url: https://gephi.org/
+  category: data_visualization
+  use_cases:
+    - Explore network relationships
+    - Visualize source, entity, or link graphs
+  input: Nodes and edges as CSV, GEXF, GraphML, or similar
+  output: Network visualizations and graph metrics
+  access: free
+  requires_login: false
+  api_available: false
+  opsec_level: low
+  legal_risk: low
+  evidence_value: medium
+  automation_value: low
+  learning_cost: medium
+  tested_status: recommended
+  public: true
+  project_fit: Good for explaining relationships after data has been cleaned.
+  notes: Layout choices can mislead; publish data definitions with visuals.
+- id: datasette
+  name: Datasette
+  url: https://datasette.io/
+  category: data_visualization
+  use_cases:
+    - Publish small structured datasets
+    - Explore SQLite-backed evidence tables
+  input: SQLite database or structured data converted to SQLite
+  output: Searchable web interface and JSON API
+  access: free
+  requires_login: false
+  api_available: true
+  opsec_level: low
+  legal_risk: low
+  evidence_value: high
+  automation_value: high
+  learning_cost: medium
+  tested_status: recommended
+  public: true
+  project_fit: Strong fit for transparent public datasets and reproducible notes.
+  notes: Review data sensitivity before publishing any dataset.
+- id: rawgraphs
+  name: RAWGraphs
+  url: https://www.rawgraphs.io/
+  category: data_visualization
+  use_cases:
+    - Turn tabular data into charts
+    - Prototype explanatory visualizations
+  input: CSV, TSV, or pasted tabular data
+  output: Charts and exported SVG or image files
+  access: free
+  requires_login: false
+  api_available: false
+  opsec_level: medium
+  legal_risk: low
+  evidence_value: medium
+  automation_value: none
+  learning_cost: low
+  tested_status: recommended
+  public: true
+  project_fit: Helpful for quickly explaining structured findings.
+  notes: Use local/offline options for sensitive unpublished data.
+- id: obsidian
+  name: Obsidian
+  url: https://obsidian.md/
+  category: workflow_methods
+  use_cases:
+    - Maintain source notes and hypotheses
+    - Link evidence, checks, and open questions
+  input: Markdown notes and local files
+  output: Local knowledge base and linked research graph
+  access: freemium
+  requires_login: false
+  api_available: false
+  opsec_level: low
+  legal_risk: low
+  evidence_value: medium
+  automation_value: low
+  learning_cost: low
+  tested_status: recommended
+  public: true
+  project_fit: Useful local-first workspace for verification notes and source trails.
+  notes: Sync and plugin choices should match the sensitivity of the work.
