@@ -86,9 +86,14 @@
     .tool-card { border: 1px solid var(--line); background: rgba(255,249,234,.72); border-radius: 8px; padding: 16px; box-shadow: 0 16px 44px rgba(20,20,20,.08); }
     .tool-card h3 { margin: 0 0 6px; font-family: var(--label-font); font-size: 20px; line-height: 1.15; }
     .tool-url { display: inline-block; max-width: 100%; overflow-wrap: anywhere; color: var(--accent); font-weight: 800; }
-    .facts { display: grid; grid-template-columns: minmax(120px, .45fr) 1fr; gap: 7px 12px; margin: 14px 0 0; }
-    .facts dt { color: var(--muted); font-family: var(--label-font); font-size: 12px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
-    .facts dd { margin: 0; }
+    .tool-fields { display: grid; gap: 14px; margin-top: 16px; }
+    .field-section { border-top: 1px solid var(--line); padding-top: 12px; }
+    .field-title { margin: 0 0 8px; color: var(--muted); font-family: var(--label-font); font-size: 12px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; overflow-wrap: normal; }
+    .lang-block { display: grid; gap: 4px; margin-top: 8px; }
+    .lang-label { color: var(--accent); font-family: var(--label-font); font-size: 12px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
+    .lang-block p { margin: 0; }
+    .lang-block ul { margin: 0; padding-left: 1.15rem; }
+    .lang-block li + li { margin-top: 2px; }
     .tag-row { display:flex; gap:7px; flex-wrap:wrap; margin: 12px 0 0; }
     .tag { border:1px solid var(--line); border-radius:999px; padding:4px 8px; background:rgba(255,255,255,.42); font-family:var(--label-font); font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:.04em; }
     footer { border-top: 1px solid var(--line); padding: 30px 0 46px; color: var(--muted); font-family: var(--label-font); font-size: 13px; font-weight: 700; }
@@ -102,7 +107,7 @@
       h1 { font-size: clamp(46px, 16vw, 76px); }
       details.category > summary { grid-template-columns: 1fr; gap: 8px; }
       details.category > summary::after { width: 30px; height: 30px; }
-      .facts { grid-template-columns: 1fr; gap: 2px; }
+      .field-title { font-size: 11px; }
     }
   </style>
 </head>
@@ -146,32 +151,74 @@
           <a class="tool-url" href="{{ tool.url }}">{{ tool.url }}</a>
           <div class="tag-row">
             <span class="tag">{{ tool.access }}</span>
+            <span class="tag">{{ 'Login required' if tool.requires_login else 'No login' }}</span>
+            <span class="tag">{{ 'API available' if tool.api_available else 'No API' }}</span>
             <span class="tag">Risk {{ tool.legal_risk }}</span>
             <span class="tag">Evidence {{ tool.evidence_value }}</span>
             <span class="tag">{{ tool.tested_status }}</span>
           </div>
-          <dl class="facts">
-            <dt>Best for / Для чого</dt>
-            <dd>{{ tool.use_cases | join('; ') }}</dd>
-            <dt>Input / Вхідні дані</dt>
-            <dd>{{ tool.input }}</dd>
-            <dt>Output / Результат</dt>
-            <dd>{{ tool.output }}</dd>
-            <dt>Access / Доступ</dt>
-            <dd>{{ tool.access }}</dd>
-            <dt>Login / Логін</dt>
-            <dd>{{ 'Required' if tool.requires_login else 'Not required' }}</dd>
-            <dt>API / API</dt>
-            <dd>{{ 'Available' if tool.api_available else 'Not available' }}</dd>
-            <dt>Risk / Ризик</dt>
-            <dd>Legal {{ tool.legal_risk }}; OPSEC {{ tool.opsec_level }}</dd>
-            <dt>Evidence value / Доказова цінність</dt>
-            <dd>{{ tool.evidence_value }}</dd>
-            <dt>Status / Статус</dt>
-            <dd>{{ tool.tested_status }}</dd>
-            <dt>Notes / Примітки</dt>
-            <dd>{{ tool.notes }}</dd>
-          </dl>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  {% for use_case in tool.use_cases %}
+                  <li>{{ use_case }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  {% for use_case in tool.use_cases_uk %}
+                  <li>{{ use_case }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>{{ tool.input }}</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  {% for item in tool.input_uk %}
+                  <li>{{ item }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>{{ tool.output }}</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  {% for item in tool.output_uk %}
+                  <li>{{ item }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>{{ tool.notes }}</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>{{ tool.notes_uk }}</p>
+              </div>
+            </section>
+          </div>
         </article>
         {% endfor %}
       </div>

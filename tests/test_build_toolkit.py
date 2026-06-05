@@ -20,6 +20,10 @@ def test_build_toolkit_creates_static_page(tmp_path):
     assert "OSINT Signal Toolkit" in html
     assert "SunCalc" in html
     assert "Інструментарій відкритих джерел" in html
+    assert "EN:" in html
+    assert "UK:" in html
+    assert "Для чого" in html
+    assert "Вхідні дані" in html
     assert "<details" in html
     assert "<summary" in html
     assert "curated verification-oriented toolkit" in html

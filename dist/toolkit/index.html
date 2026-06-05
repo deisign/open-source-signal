@@ -86,9 +86,14 @@
     .tool-card { border: 1px solid var(--line); background: rgba(255,249,234,.72); border-radius: 8px; padding: 16px; box-shadow: 0 16px 44px rgba(20,20,20,.08); }
     .tool-card h3 { margin: 0 0 6px; font-family: var(--label-font); font-size: 20px; line-height: 1.15; }
     .tool-url { display: inline-block; max-width: 100%; overflow-wrap: anywhere; color: var(--accent); font-weight: 800; }
-    .facts { display: grid; grid-template-columns: minmax(120px, .45fr) 1fr; gap: 7px 12px; margin: 14px 0 0; }
-    .facts dt { color: var(--muted); font-family: var(--label-font); font-size: 12px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
-    .facts dd { margin: 0; }
+    .tool-fields { display: grid; gap: 14px; margin-top: 16px; }
+    .field-section { border-top: 1px solid var(--line); padding-top: 12px; }
+    .field-title { margin: 0 0 8px; color: var(--muted); font-family: var(--label-font); font-size: 12px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; overflow-wrap: normal; }
+    .lang-block { display: grid; gap: 4px; margin-top: 8px; }
+    .lang-label { color: var(--accent); font-family: var(--label-font); font-size: 12px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
+    .lang-block p { margin: 0; }
+    .lang-block ul { margin: 0; padding-left: 1.15rem; }
+    .lang-block li + li { margin-top: 2px; }
     .tag-row { display:flex; gap:7px; flex-wrap:wrap; margin: 12px 0 0; }
     .tag { border:1px solid var(--line); border-radius:999px; padding:4px 8px; background:rgba(255,255,255,.42); font-family:var(--label-font); font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:.04em; }
     footer { border-top: 1px solid var(--line); padding: 30px 0 46px; color: var(--muted); font-family: var(--label-font); font-size: 13px; font-weight: 700; }
@@ -102,7 +107,7 @@
       h1 { font-size: clamp(46px, 16vw, 76px); }
       details.category > summary { grid-template-columns: 1fr; gap: 8px; }
       details.category > summary::after { width: 30px; height: 30px; }
-      .facts { grid-template-columns: 1fr; gap: 2px; }
+      .field-title { font-size: 11px; }
     }
   </style>
 </head>
@@ -144,96 +149,204 @@
           <a class="tool-url" href="https://archive.ph/">https://archive.ph/</a>
           <div class="tag-row">
             <span class="tag">free</span>
+            <span class="tag">No login</span>
+            <span class="tag">No API</span>
             <span class="tag">Risk low</span>
             <span class="tag">Evidence high</span>
             <span class="tag">recommended</span>
           </div>
-          <dl class="facts">
-            <dt>Best for / Для чого</dt>
-            <dd>Save a public page capture; Compare page state against other archives</dd>
-            <dt>Input / Вхідні дані</dt>
-            <dd>Public URL</dd>
-            <dt>Output / Результат</dt>
-            <dd>Static archived page copy</dd>
-            <dt>Access / Доступ</dt>
-            <dd>free</dd>
-            <dt>Login / Логін</dt>
-            <dd>Not required</dd>
-            <dt>API / API</dt>
-            <dd>Not available</dd>
-            <dt>Risk / Ризик</dt>
-            <dd>Legal low; OPSEC low</dd>
-            <dt>Evidence value / Доказова цінність</dt>
-            <dd>high</dd>
-            <dt>Status / Статус</dt>
-            <dd>recommended</dd>
-            <dt>Notes / Примітки</dt>
-            <dd>Availability and domain variants can change; record the final archive URL.</dd>
-          </dl>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>Save a public page capture</li>
+                  <li>Compare page state against other archives</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Зберігати копію публічної сторінки</li>
+                  <li>Порівнювати стан сторінки з іншими архівами</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Public URL</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Публічний URL</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Static archived page copy</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Статична архівна копія сторінки</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Availability and domain variants can change; record the final archive URL.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Доступність і доменні варіанти можуть змінюватися; фіксуйте фінальний archive URL.</p>
+              </div>
+            </section>
+          </div>
         </article>
         <article class="tool-card">
           <h3>Perma.cc</h3>
           <a class="tool-url" href="https://perma.cc/">https://perma.cc/</a>
           <div class="tag-row">
             <span class="tag">freemium</span>
+            <span class="tag">Login required</span>
+            <span class="tag">API available</span>
             <span class="tag">Risk low</span>
             <span class="tag">Evidence high</span>
             <span class="tag">recommended</span>
           </div>
-          <dl class="facts">
-            <dt>Best for / Для чого</dt>
-            <dd>Create citation-grade web records; Preserve sources for research notes</dd>
-            <dt>Input / Вхідні дані</dt>
-            <dd>Public URL</dd>
-            <dt>Output / Результат</dt>
-            <dd>Permanent citation link and archived record</dd>
-            <dt>Access / Доступ</dt>
-            <dd>freemium</dd>
-            <dt>Login / Логін</dt>
-            <dd>Required</dd>
-            <dt>API / API</dt>
-            <dd>Available</dd>
-            <dt>Risk / Ризик</dt>
-            <dd>Legal low; OPSEC low</dd>
-            <dt>Evidence value / Доказова цінність</dt>
-            <dd>high</dd>
-            <dt>Status / Статус</dt>
-            <dd>recommended</dd>
-            <dt>Notes / Примітки</dt>
-            <dd>Free access is often tied to institutions or limited personal use.</dd>
-          </dl>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>Create citation-grade web records</li>
+                  <li>Preserve sources for research notes</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Створювати записи для надійного цитування</li>
+                  <li>Зберігати джерела для дослідницьких нотаток</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Public URL</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Публічний URL</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Permanent citation link and archived record</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Постійне посилання для цитування та архівний запис</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Free access is often tied to institutions or limited personal use.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Безкоштовний доступ часто прив'язаний до установ або обмеженого особистого використання.</p>
+              </div>
+            </section>
+          </div>
         </article>
         <article class="tool-card">
           <h3>Wayback Machine</h3>
           <a class="tool-url" href="https://web.archive.org/">https://web.archive.org/</a>
           <div class="tag-row">
             <span class="tag">free</span>
+            <span class="tag">No login</span>
+            <span class="tag">API available</span>
             <span class="tag">Risk low</span>
             <span class="tag">Evidence high</span>
             <span class="tag">core</span>
           </div>
-          <dl class="facts">
-            <dt>Best for / Для чого</dt>
-            <dd>Preserve public web pages; Compare historical versions of a site</dd>
-            <dt>Input / Вхідні дані</dt>
-            <dd>Public URL</dd>
-            <dt>Output / Результат</dt>
-            <dd>Archived snapshots and capture timeline</dd>
-            <dt>Access / Доступ</dt>
-            <dd>free</dd>
-            <dt>Login / Логін</dt>
-            <dd>Not required</dd>
-            <dt>API / API</dt>
-            <dd>Available</dd>
-            <dt>Risk / Ризик</dt>
-            <dd>Legal low; OPSEC low</dd>
-            <dt>Evidence value / Доказова цінність</dt>
-            <dd>high</dd>
-            <dt>Status / Статус</dt>
-            <dd>core</dd>
-            <dt>Notes / Примітки</dt>
-            <dd>Best used early when a source may change or disappear.</dd>
-          </dl>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>Preserve public web pages</li>
+                  <li>Compare historical versions of a site</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Зберігати публічні вебсторінки</li>
+                  <li>Порівнювати історичні версії сайту</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Public URL</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Публічний URL</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Archived snapshots and capture timeline</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Архівні знімки та хронологія збережень</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Best used early when a source may change or disappear.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Найкраще використовувати на початку, коли джерело може змінитися або зникнути.</p>
+              </div>
+            </section>
+          </div>
         </article>
       </div>
     </details>
@@ -251,192 +364,408 @@
           <a class="tool-url" href="https://earth.google.com/">https://earth.google.com/</a>
           <div class="tag-row">
             <span class="tag">free</span>
+            <span class="tag">No login</span>
+            <span class="tag">No API</span>
             <span class="tag">Risk low</span>
             <span class="tag">Evidence high</span>
             <span class="tag">core</span>
           </div>
-          <dl class="facts">
-            <dt>Best for / Для чого</dt>
-            <dd>Inspect terrain and landmarks; Compare historical imagery where available</dd>
-            <dt>Input / Вхідні дані</dt>
-            <dd>Place name, coordinates, or visual clues</dd>
-            <dt>Output / Результат</dt>
-            <dd>Satellite imagery, 3D terrain, and map context</dd>
-            <dt>Access / Доступ</dt>
-            <dd>free</dd>
-            <dt>Login / Логін</dt>
-            <dd>Not required</dd>
-            <dt>API / API</dt>
-            <dd>Not available</dd>
-            <dt>Risk / Ризик</dt>
-            <dd>Legal low; OPSEC low</dd>
-            <dt>Evidence value / Доказова цінність</dt>
-            <dd>high</dd>
-            <dt>Status / Статус</dt>
-            <dd>core</dd>
-            <dt>Notes / Примітки</dt>
-            <dd>Imagery dates and coverage vary by location.</dd>
-          </dl>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>Inspect terrain and landmarks</li>
+                  <li>Compare historical imagery where available</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Оглядати рельєф і орієнтири</li>
+                  <li>Порівнювати історичні знімки там, де вони доступні</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Place name, coordinates, or visual clues</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Назва місця, координати або візуальні підказки</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Satellite imagery, 3D terrain, and map context</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Супутникові знімки, 3D-рельєф і картографічний контекст</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Imagery dates and coverage vary by location.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Дати знімків і покриття залежать від локації.</p>
+              </div>
+            </section>
+          </div>
         </article>
         <article class="tool-card">
           <h3>Mapillary</h3>
           <a class="tool-url" href="https://www.mapillary.com/">https://www.mapillary.com/</a>
           <div class="tag-row">
             <span class="tag">free</span>
+            <span class="tag">No login</span>
+            <span class="tag">API available</span>
             <span class="tag">Risk low</span>
             <span class="tag">Evidence medium</span>
             <span class="tag">recommended</span>
           </div>
-          <dl class="facts">
-            <dt>Best for / Для чого</dt>
-            <dd>Inspect street-level imagery; Compare road signs, storefronts, and landmarks</dd>
-            <dt>Input / Вхідні дані</dt>
-            <dd>Location or map area</dd>
-            <dt>Output / Результат</dt>
-            <dd>Street-level images and capture metadata</dd>
-            <dt>Access / Доступ</dt>
-            <dd>free</dd>
-            <dt>Login / Логін</dt>
-            <dd>Not required</dd>
-            <dt>API / API</dt>
-            <dd>Available</dd>
-            <dt>Risk / Ризик</dt>
-            <dd>Legal low; OPSEC low</dd>
-            <dt>Evidence value / Доказова цінність</dt>
-            <dd>medium</dd>
-            <dt>Status / Статус</dt>
-            <dd>recommended</dd>
-            <dt>Notes / Примітки</dt>
-            <dd>Coverage is uneven and imagery may be old.</dd>
-          </dl>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>Inspect street-level imagery</li>
+                  <li>Compare road signs, storefronts, and landmarks</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Оглядати зображення з рівня вулиці</li>
+                  <li>Порівнювати дорожні знаки, вітрини та орієнтири</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Location or map area</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Локація або ділянка мапи</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Street-level images and capture metadata</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Вуличні зображення та метадані зйомки</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Coverage is uneven and imagery may be old.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Покриття нерівномірне, а зображення можуть бути застарілими.</p>
+              </div>
+            </section>
+          </div>
         </article>
         <article class="tool-card">
           <h3>NASA Worldview</h3>
           <a class="tool-url" href="https://worldview.earthdata.nasa.gov/">https://worldview.earthdata.nasa.gov/</a>
           <div class="tag-row">
             <span class="tag">free</span>
+            <span class="tag">No login</span>
+            <span class="tag">API available</span>
             <span class="tag">Risk low</span>
             <span class="tag">Evidence medium</span>
             <span class="tag">recommended</span>
           </div>
-          <dl class="facts">
-            <dt>Best for / Для чого</dt>
-            <dd>Review near-real-time Earth observation layers; Check fires, smoke, weather, and environmental context</dd>
-            <dt>Input / Вхідні дані</dt>
-            <dd>Location, date, and selected imagery layers</dd>
-            <dt>Output / Результат</dt>
-            <dd>Satellite layer views and image exports</dd>
-            <dt>Access / Доступ</dt>
-            <dd>free</dd>
-            <dt>Login / Логін</dt>
-            <dd>Not required</dd>
-            <dt>API / API</dt>
-            <dd>Available</dd>
-            <dt>Risk / Ризик</dt>
-            <dd>Legal low; OPSEC low</dd>
-            <dt>Evidence value / Доказова цінність</dt>
-            <dd>medium</dd>
-            <dt>Status / Статус</dt>
-            <dd>recommended</dd>
-            <dt>Notes / Примітки</dt>
-            <dd>Resolution depends on the selected sensor and layer.</dd>
-          </dl>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>Review near-real-time Earth observation layers</li>
+                  <li>Check fires, smoke, weather, and environmental context</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Переглядати майже оперативні шари спостереження Землі</li>
+                  <li>Перевіряти пожежі, дим, погоду та екологічний контекст</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Location, date, and selected imagery layers</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Локація, дата та вибрані шари знімків</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Satellite layer views and image exports</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Перегляд супутникових шарів та експорт зображень</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Resolution depends on the selected sensor and layer.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Роздільна здатність залежить від вибраного сенсора і шару.</p>
+              </div>
+            </section>
+          </div>
         </article>
         <article class="tool-card">
           <h3>OpenStreetMap</h3>
           <a class="tool-url" href="https://www.openstreetmap.org/">https://www.openstreetmap.org/</a>
           <div class="tag-row">
             <span class="tag">free</span>
+            <span class="tag">No login</span>
+            <span class="tag">API available</span>
             <span class="tag">Risk low</span>
             <span class="tag">Evidence medium</span>
             <span class="tag">core</span>
           </div>
-          <dl class="facts">
-            <dt>Best for / Для чого</dt>
-            <dd>Check roads, buildings, and local place names; Compare mapped features against visual evidence</dd>
-            <dt>Input / Вхідні дані</dt>
-            <dd>Place name, coordinates, or map area</dd>
-            <dt>Output / Результат</dt>
-            <dd>Open map data and feature metadata</dd>
-            <dt>Access / Доступ</dt>
-            <dd>free</dd>
-            <dt>Login / Логін</dt>
-            <dd>Not required</dd>
-            <dt>API / API</dt>
-            <dd>Available</dd>
-            <dt>Risk / Ризик</dt>
-            <dd>Legal low; OPSEC low</dd>
-            <dt>Evidence value / Доказова цінність</dt>
-            <dd>medium</dd>
-            <dt>Status / Статус</dt>
-            <dd>core</dd>
-            <dt>Notes / Примітки</dt>
-            <dd>Treat user-edited map details as leads and corroborate important claims.</dd>
-          </dl>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>Check roads, buildings, and local place names</li>
+                  <li>Compare mapped features against visual evidence</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Перевіряти дороги, будівлі та місцеві назви</li>
+                  <li>Зіставляти нанесені об'єкти з візуальними доказами</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Place name, coordinates, or map area</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Назва місця, координати або ділянка мапи</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Open map data and feature metadata</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Відкриті картографічні дані та метадані об'єктів</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Treat user-edited map details as leads and corroborate important claims.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Дані, редаговані користувачами, варто сприймати як зачіпки й підтверджувати важливі твердження.</p>
+              </div>
+            </section>
+          </div>
         </article>
         <article class="tool-card">
           <h3>Sentinel Hub EO Browser</h3>
           <a class="tool-url" href="https://apps.sentinel-hub.com/eo-browser/">https://apps.sentinel-hub.com/eo-browser/</a>
           <div class="tag-row">
             <span class="tag">freemium</span>
+            <span class="tag">No login</span>
+            <span class="tag">API available</span>
             <span class="tag">Risk low</span>
             <span class="tag">Evidence high</span>
             <span class="tag">recommended</span>
           </div>
-          <dl class="facts">
-            <dt>Best for / Для чого</dt>
-            <dd>Review satellite imagery over time; Check environmental and conflict-related changes</dd>
-            <dt>Input / Вхідні дані</dt>
-            <dd>Coordinates, area, time range, and satellite layer</dd>
-            <dt>Output / Результат</dt>
-            <dd>Satellite scenes, visualizations, and exports</dd>
-            <dt>Access / Доступ</dt>
-            <dd>freemium</dd>
-            <dt>Login / Логін</dt>
-            <dd>Not required</dd>
-            <dt>API / API</dt>
-            <dd>Available</dd>
-            <dt>Risk / Ризик</dt>
-            <dd>Legal low; OPSEC low</dd>
-            <dt>Evidence value / Доказова цінність</dt>
-            <dd>high</dd>
-            <dt>Status / Статус</dt>
-            <dd>recommended</dd>
-            <dt>Notes / Примітки</dt>
-            <dd>Some exports and advanced features require an account.</dd>
-          </dl>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>Review satellite imagery over time</li>
+                  <li>Check environmental and conflict-related changes</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Переглядати супутникові знімки в часі</li>
+                  <li>Перевіряти екологічні та пов'язані з конфліктом зміни</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Coordinates, area, time range, and satellite layer</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Координати, територія, часовий діапазон і супутниковий шар</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Satellite scenes, visualizations, and exports</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Супутникові сцени, візуалізації та експорти</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Some exports and advanced features require an account.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Для частини експортів і розширених функцій потрібен акаунт.</p>
+              </div>
+            </section>
+          </div>
         </article>
         <article class="tool-card">
           <h3>SunCalc</h3>
           <a class="tool-url" href="https://www.suncalc.org/">https://www.suncalc.org/</a>
           <div class="tag-row">
             <span class="tag">free</span>
+            <span class="tag">No login</span>
+            <span class="tag">No API</span>
             <span class="tag">Risk low</span>
             <span class="tag">Evidence medium</span>
             <span class="tag">core</span>
           </div>
-          <dl class="facts">
-            <dt>Best for / Для чого</dt>
-            <dd>Estimate sun position from shadows; Test time-of-day hypotheses</dd>
-            <dt>Input / Вхідні дані</dt>
-            <dd>Location, date, and time</dd>
-            <dt>Output / Результат</dt>
-            <dd>Sun path, azimuth, altitude, and shadow direction</dd>
-            <dt>Access / Доступ</dt>
-            <dd>free</dd>
-            <dt>Login / Логін</dt>
-            <dd>Not required</dd>
-            <dt>API / API</dt>
-            <dd>Not available</dd>
-            <dt>Risk / Ризик</dt>
-            <dd>Legal low; OPSEC low</dd>
-            <dt>Evidence value / Доказова цінність</dt>
-            <dd>medium</dd>
-            <dt>Status / Статус</dt>
-            <dd>core</dd>
-            <dt>Notes / Примітки</dt>
-            <dd>Works best when camera direction and local geometry are understood.</dd>
-          </dl>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>Estimate sun position from shadows</li>
+                  <li>Test time-of-day hypotheses</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Оцінювати положення сонця за тінями</li>
+                  <li>Перевіряти гіпотези щодо часу доби</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Location, date, and time</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Локація, дата і час</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Sun path, azimuth, altitude, and shadow direction</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Траєкторія сонця, азимут, висота та напрямок тіні</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Works best when camera direction and local geometry are understood.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Найкраще працює, коли зрозумілі напрямок камери та локальна геометрія.</p>
+              </div>
+            </section>
+          </div>
         </article>
       </div>
     </details>
@@ -454,160 +783,353 @@
           <a class="tool-url" href="https://globalfishingwatch.org/map">https://globalfishingwatch.org/map</a>
           <div class="tag-row">
             <span class="tag">free</span>
+            <span class="tag">Login required</span>
+            <span class="tag">API available</span>
             <span class="tag">Risk low</span>
             <span class="tag">Evidence medium</span>
             <span class="tag">recommended</span>
           </div>
-          <dl class="facts">
-            <dt>Best for / Для чого</dt>
-            <dd>Maritime activity context; Vessel-track review; Fishing activity analysis; Port and route context</dd>
-            <dt>Input / Вхідні дані</dt>
-            <dd>Vessel, area, time window, map filters</dd>
-            <dt>Output / Результат</dt>
-            <dd>Vessel tracks, events, activity layers, maritime context</dd>
-            <dt>Access / Доступ</dt>
-            <dd>free</dd>
-            <dt>Login / Логін</dt>
-            <dd>Required</dd>
-            <dt>API / API</dt>
-            <dd>Available</dd>
-            <dt>Risk / Ризик</dt>
-            <dd>Legal low; OPSEC medium</dd>
-            <dt>Evidence value / Доказова цінність</dt>
-            <dd>medium</dd>
-            <dt>Status / Статус</dt>
-            <dd>recommended</dd>
-            <dt>Notes / Примітки</dt>
-            <dd>AIS-derived or vessel activity data should be treated as contextual evidence; AIS can be incomplete, delayed, disabled, or manipulated.</dd>
-          </dl>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>Maritime activity context</li>
+                  <li>Vessel-track review</li>
+                  <li>Fishing activity analysis</li>
+                  <li>Port and route context</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Переглядати треки суден</li>
+                  <li>Аналізувати рибальську активність</li>
+                  <li>Перевіряти контекст портів і маршрутів</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Vessel, area, time window, map filters</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Судно, район, часове вікно та фільтри мапи</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Vessel tracks, events, activity layers, maritime context</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Треки суден, події, шари активності та морський контекст</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>AIS-derived or vessel activity data should be treated as contextual evidence; AIS can be incomplete, delayed, disabled, or manipulated.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Дані з AIS або активності суден є контекстом; AIS може бути неповним, затриманим, вимкненим або підробленим.</p>
+              </div>
+            </section>
+          </div>
         </article>
         <article class="tool-card">
           <h3>NASA FIRMS</h3>
           <a class="tool-url" href="https://firms.modaps.eosdis.nasa.gov/">https://firms.modaps.eosdis.nasa.gov/</a>
           <div class="tag-row">
             <span class="tag">free</span>
+            <span class="tag">No login</span>
+            <span class="tag">API available</span>
             <span class="tag">Risk low</span>
             <span class="tag">Evidence high</span>
             <span class="tag">recommended</span>
           </div>
-          <dl class="facts">
-            <dt>Best for / Для чого</dt>
-            <dd>Active fire detection; Thermal anomaly context; Conflict-impact verification; Environmental incident context</dd>
-            <dt>Input / Вхідні дані</dt>
-            <dd>Location, time window, map view, optional API parameters</dd>
-            <dt>Output / Результат</dt>
-            <dd>Active fire detections, thermal anomaly data, map layers, downloadable data</dd>
-            <dt>Access / Доступ</dt>
-            <dd>free</dd>
-            <dt>Login / Логін</dt>
-            <dd>Not required</dd>
-            <dt>API / API</dt>
-            <dd>Available</dd>
-            <dt>Risk / Ризик</dt>
-            <dd>Legal low; OPSEC low</dd>
-            <dt>Evidence value / Доказова цінність</dt>
-            <dd>high</dd>
-            <dt>Status / Статус</dt>
-            <dd>recommended</dd>
-            <dt>Notes / Примітки</dt>
-            <dd>Thermal anomaly data can support verification, but a hotspot is not proof of a strike or cause by itself.</dd>
-          </dl>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>Active fire detection</li>
+                  <li>Thermal anomaly context</li>
+                  <li>Conflict-impact verification</li>
+                  <li>Environmental incident context</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Виявляти активні пожежі</li>
+                  <li>Перевіряти контекст теплових аномалій</li>
+                  <li>Уточнювати вплив конфліктних подій</li>
+                  <li>Додавати контекст екологічних інцидентів</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Location, time window, map view, optional API parameters</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Локація, часове вікно, вигляд мапи, необов'язкові параметри API</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Active fire detections, thermal anomaly data, map layers, downloadable data</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Дані про активні пожежі, теплові аномалії, картографічні шари та завантажувані дані</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Thermal anomaly data can support verification, but a hotspot is not proof of a strike or cause by itself.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Теплова аномалія може допомогти перевірці, але сама по собі не доводить удар або причину події.</p>
+              </div>
+            </section>
+          </div>
         </article>
         <article class="tool-card">
           <h3>OpenInfraMap</h3>
           <a class="tool-url" href="https://openinframap.org/">https://openinframap.org/</a>
           <div class="tag-row">
             <span class="tag">free</span>
+            <span class="tag">No login</span>
+            <span class="tag">No API</span>
             <span class="tag">Risk low</span>
             <span class="tag">Evidence medium</span>
             <span class="tag">situational</span>
           </div>
-          <dl class="facts">
-            <dt>Best for / Для чого</dt>
-            <dd>Infrastructure context; Power and telecom layer review; Pipeline and facility context</dd>
-            <dt>Input / Вхідні дані</dt>
-            <dd>Map location, infrastructure layer, feature type</dd>
-            <dt>Output / Результат</dt>
-            <dd>Electricity, telecom, oil, gas and other infrastructure map layers</dd>
-            <dt>Access / Доступ</dt>
-            <dd>free</dd>
-            <dt>Login / Логін</dt>
-            <dd>Not required</dd>
-            <dt>API / API</dt>
-            <dd>Not available</dd>
-            <dt>Risk / Ризик</dt>
-            <dd>Legal low; OPSEC medium</dd>
-            <dt>Evidence value / Доказова цінність</dt>
-            <dd>medium</dd>
-            <dt>Status / Статус</dt>
-            <dd>situational</dd>
-            <dt>Notes / Примітки</dt>
-            <dd>Use only for contextual verification and public-interest analysis; do not use for targeting or operational planning.</dd>
-          </dl>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>Infrastructure context</li>
+                  <li>Power and telecom layer review</li>
+                  <li>Pipeline and facility context</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Перевіряти інфраструктурний контекст</li>
+                  <li>Оглядати енергетичні та телеком-шари</li>
+                  <li>Уточнювати контекст трубопроводів і об'єктів</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Map location, infrastructure layer, feature type</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Локація на мапі, інфраструктурний шар або тип об'єкта</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Electricity, telecom, oil, gas and other infrastructure map layers</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Шари електромереж, телекомунікацій, нафти, газу та іншої інфраструктури</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Use only for contextual verification and public-interest analysis; do not use for targeting or operational planning.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Використовуйте лише для контекстної перевірки й аналізу в суспільних інтересах; не використовуйте для наведення чи оперативного планування.</p>
+              </div>
+            </section>
+          </div>
         </article>
         <article class="tool-card">
           <h3>OpenRailwayMap</h3>
           <a class="tool-url" href="https://openrailwaymap.app/">https://openrailwaymap.app/</a>
           <div class="tag-row">
             <span class="tag">free</span>
+            <span class="tag">No login</span>
+            <span class="tag">No API</span>
             <span class="tag">Risk low</span>
             <span class="tag">Evidence medium</span>
             <span class="tag">recommended</span>
           </div>
-          <dl class="facts">
-            <dt>Best for / Для чого</dt>
-            <dd>Railway infrastructure context; Station and track geolocation; Transport-route verification</dd>
-            <dt>Input / Вхідні дані</dt>
-            <dd>Map location, railway feature, station name</dd>
-            <dt>Output / Результат</dt>
-            <dd>Railway tracks, stations, rail infrastructure map layers</dd>
-            <dt>Access / Доступ</dt>
-            <dd>free</dd>
-            <dt>Login / Логін</dt>
-            <dd>Not required</dd>
-            <dt>API / API</dt>
-            <dd>Not available</dd>
-            <dt>Risk / Ризик</dt>
-            <dd>Legal low; OPSEC low</dd>
-            <dt>Evidence value / Доказова цінність</dt>
-            <dd>medium</dd>
-            <dt>Status / Статус</dt>
-            <dd>recommended</dd>
-            <dt>Notes / Примітки</dt>
-            <dd>Useful for contextual geolocation near railways; verify against imagery and other sources.</dd>
-          </dl>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>Railway infrastructure context</li>
+                  <li>Station and track geolocation</li>
+                  <li>Transport-route verification</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Перевіряти контекст залізничної інфраструктури</li>
+                  <li>Геолокувати станції та колії</li>
+                  <li>Звіряти транспортні маршрути</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Map location, railway feature, station name</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Локація на мапі, залізничний об'єкт або назва станції</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Railway tracks, stations, rail infrastructure map layers</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Колії, станції та шари залізничної інфраструктури</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Useful for contextual geolocation near railways; verify against imagery and other sources.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Корисно для контекстної геолокації біля залізниць; звіряйте з imagery та іншими джерелами.</p>
+              </div>
+            </section>
+          </div>
         </article>
         <article class="tool-card">
           <h3>OpenSky Network</h3>
           <a class="tool-url" href="https://opensky-network.org/data/api">https://opensky-network.org/data/api</a>
           <div class="tag-row">
             <span class="tag">freemium</span>
+            <span class="tag">Login required</span>
+            <span class="tag">API available</span>
             <span class="tag">Risk low</span>
             <span class="tag">Evidence medium</span>
             <span class="tag">situational</span>
           </div>
-          <dl class="facts">
-            <dt>Best for / Для чого</dt>
-            <dd>Airspace context; Aircraft movement research; Aviation-data verification</dd>
-            <dt>Input / Вхідні дані</dt>
-            <dd>Time window, bounding box, aircraft identifier, API query</dd>
-            <dt>Output / Результат</dt>
-            <dd>Aircraft states, tracks, airspace observations</dd>
-            <dt>Access / Доступ</dt>
-            <dd>freemium</dd>
-            <dt>Login / Логін</dt>
-            <dd>Required</dd>
-            <dt>API / API</dt>
-            <dd>Available</dd>
-            <dt>Risk / Ризик</dt>
-            <dd>Legal low; OPSEC medium</dd>
-            <dt>Evidence value / Доказова цінність</dt>
-            <dd>medium</dd>
-            <dt>Status / Статус</dt>
-            <dd>situational</dd>
-            <dt>Notes / Примітки</dt>
-            <dd>Use for research and retrospective/contextual verification; do not frame live aviation tracking as targeting or operational use.</dd>
-          </dl>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>Airspace context</li>
+                  <li>Aircraft movement research</li>
+                  <li>Aviation-data verification</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Перевіряти контекст повітряного простору</li>
+                  <li>Досліджувати рух повітряних суден</li>
+                  <li>Звіряти авіаційні дані</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Time window, bounding box, aircraft identifier, API query</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Часове вікно, bounding box, ідентифікатор літака або API-запит</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Aircraft states, tracks, airspace observations</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Стани повітряних суден, треки та спостереження повітряного простору</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Use for research and retrospective/contextual verification; do not frame live aviation tracking as targeting or operational use.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Використовуйте для досліджень і ретроспективної перевірки; не подавайте live tracking як інструмент наведення чи оперативного застосування.</p>
+              </div>
+            </section>
+          </div>
         </article>
       </div>
     </details>
@@ -625,160 +1147,340 @@
           <a class="tool-url" href="https://exiftool.org/">https://exiftool.org/</a>
           <div class="tag-row">
             <span class="tag">free</span>
+            <span class="tag">No login</span>
+            <span class="tag">No API</span>
             <span class="tag">Risk low</span>
             <span class="tag">Evidence medium</span>
             <span class="tag">core</span>
           </div>
-          <dl class="facts">
-            <dt>Best for / Для чого</dt>
-            <dd>Inspect metadata from media files; Preserve metadata in evidence notes</dd>
-            <dt>Input / Вхідні дані</dt>
-            <dd>Local image, video, audio, or document file</dd>
-            <dt>Output / Результат</dt>
-            <dd>Metadata fields and timestamps</dd>
-            <dt>Access / Доступ</dt>
-            <dd>free</dd>
-            <dt>Login / Логін</dt>
-            <dd>Not required</dd>
-            <dt>API / API</dt>
-            <dd>Not available</dd>
-            <dt>Risk / Ризик</dt>
-            <dd>Legal low; OPSEC low</dd>
-            <dt>Evidence value / Доказова цінність</dt>
-            <dd>medium</dd>
-            <dt>Status / Статус</dt>
-            <dd>core</dd>
-            <dt>Notes / Примітки</dt>
-            <dd>Metadata can be missing, edited, or misleading; treat it as one signal.</dd>
-          </dl>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>Inspect metadata from media files</li>
+                  <li>Preserve metadata in evidence notes</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Переглядати метадані медіафайлів</li>
+                  <li>Зберігати метадані в доказових нотатках</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Local image, video, audio, or document file</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Локальний файл зображення, відео, аудіо або документа</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Metadata fields and timestamps</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Поля метаданих і часові мітки</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Metadata can be missing, edited, or misleading; treat it as one signal.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Метадані можуть бути відсутніми, зміненими або оманливими; сприймайте їх як один із сигналів.</p>
+              </div>
+            </section>
+          </div>
         </article>
         <article class="tool-card">
           <h3>Forensically</h3>
           <a class="tool-url" href="https://29a.ch/photo-forensics/">https://29a.ch/photo-forensics/</a>
           <div class="tag-row">
             <span class="tag">free</span>
+            <span class="tag">No login</span>
+            <span class="tag">No API</span>
             <span class="tag">Risk low</span>
             <span class="tag">Evidence medium</span>
             <span class="tag">caution</span>
           </div>
-          <dl class="facts">
-            <dt>Best for / Для чого</dt>
-            <dd>Inspect images for visual anomalies; Compare compression and clone-detection signals</dd>
-            <dt>Input / Вхідні дані</dt>
-            <dd>Image file</dd>
-            <dt>Output / Результат</dt>
-            <dd>Visual forensic analysis views</dd>
-            <dt>Access / Доступ</dt>
-            <dd>free</dd>
-            <dt>Login / Логін</dt>
-            <dd>Not required</dd>
-            <dt>API / API</dt>
-            <dd>Not available</dd>
-            <dt>Risk / Ризик</dt>
-            <dd>Legal low; OPSEC medium</dd>
-            <dt>Evidence value / Доказова цінність</dt>
-            <dd>medium</dd>
-            <dt>Status / Статус</dt>
-            <dd>caution</dd>
-            <dt>Notes / Примітки</dt>
-            <dd>Forensic visualizations are not proof by themselves and can be overread.</dd>
-          </dl>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>Inspect images for visual anomalies</li>
+                  <li>Compare compression and clone-detection signals</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Оглядати зображення на візуальні аномалії</li>
+                  <li>Порівнювати сигнали стиснення та клонування</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Image file</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Файл зображення</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Visual forensic analysis views</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Візуальні режими форензичного аналізу</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Forensic visualizations are not proof by themselves and can be overread.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Форензичні візуалізації самі по собі не є доказом, їх легко переінтерпретувати.</p>
+              </div>
+            </section>
+          </div>
         </article>
         <article class="tool-card">
           <h3>Google Lens</h3>
           <a class="tool-url" href="https://lens.google/">https://lens.google/</a>
           <div class="tag-row">
             <span class="tag">free</span>
+            <span class="tag">No login</span>
+            <span class="tag">No API</span>
             <span class="tag">Risk low</span>
             <span class="tag">Evidence medium</span>
             <span class="tag">recommended</span>
           </div>
-          <dl class="facts">
-            <dt>Best for / Для чого</dt>
-            <dd>Reverse image search; Identify objects, signs, and similar images</dd>
-            <dt>Input / Вхідні дані</dt>
-            <dd>Image or image crop</dd>
-            <dt>Output / Результат</dt>
-            <dd>Similar images, web matches, and object guesses</dd>
-            <dt>Access / Доступ</dt>
-            <dd>free</dd>
-            <dt>Login / Логін</dt>
-            <dd>Not required</dd>
-            <dt>API / API</dt>
-            <dd>Not available</dd>
-            <dt>Risk / Ризик</dt>
-            <dd>Legal low; OPSEC medium</dd>
-            <dt>Evidence value / Доказова цінність</dt>
-            <dd>medium</dd>
-            <dt>Status / Статус</dt>
-            <dd>recommended</dd>
-            <dt>Notes / Примітки</dt>
-            <dd>Uploading sensitive images to third-party services requires judgment.</dd>
-          </dl>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>Reverse image search</li>
+                  <li>Identify objects, signs, and similar images</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Виконувати зворотний пошук зображень</li>
+                  <li>Визначати об'єкти, написи та схожі зображення</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Image or image crop</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Зображення або обрізаний фрагмент зображення</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Similar images, web matches, and object guesses</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Схожі зображення, збіги в мережі та припущення щодо об'єктів</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Uploading sensitive images to third-party services requires judgment.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Завантаження чутливих зображень у сторонні сервіси потребує обережної оцінки.</p>
+              </div>
+            </section>
+          </div>
         </article>
         <article class="tool-card">
           <h3>InVID / WeVerify</h3>
           <a class="tool-url" href="https://www.invid-project.eu/tools-and-services/invid-verification-plugin/">https://www.invid-project.eu/tools-and-services/invid-verification-plugin/</a>
           <div class="tag-row">
             <span class="tag">free</span>
+            <span class="tag">No login</span>
+            <span class="tag">No API</span>
             <span class="tag">Risk low</span>
             <span class="tag">Evidence high</span>
             <span class="tag">core</span>
           </div>
-          <dl class="facts">
-            <dt>Best for / Для чого</dt>
-            <dd>Break videos into keyframes; Run verification checks on social video</dd>
-            <dt>Input / Вхідні дані</dt>
-            <dd>Video URL, image, or local media</dd>
-            <dt>Output / Результат</dt>
-            <dd>Keyframes, metadata helpers, and search shortcuts</dd>
-            <dt>Access / Доступ</dt>
-            <dd>free</dd>
-            <dt>Login / Логін</dt>
-            <dd>Not required</dd>
-            <dt>API / API</dt>
-            <dd>Not available</dd>
-            <dt>Risk / Ризик</dt>
-            <dd>Legal low; OPSEC medium</dd>
-            <dt>Evidence value / Доказова цінність</dt>
-            <dd>high</dd>
-            <dt>Status / Статус</dt>
-            <dd>core</dd>
-            <dt>Notes / Примітки</dt>
-            <dd>Browser extension permissions should be reviewed before use.</dd>
-          </dl>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>Break videos into keyframes</li>
+                  <li>Run verification checks on social video</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Розбивати відео на ключові кадри</li>
+                  <li>Виконувати перевірки для відео із соцмереж</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Video URL, image, or local media</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Video URL, зображення або локальний медіафайл</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Keyframes, metadata helpers, and search shortcuts</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Ключові кадри, допоміжні метадані та швидкі посилання для пошуку</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Browser extension permissions should be reviewed before use.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Перед використанням перевірте дозволи browser extension.</p>
+              </div>
+            </section>
+          </div>
         </article>
         <article class="tool-card">
           <h3>TinEye</h3>
           <a class="tool-url" href="https://tineye.com/">https://tineye.com/</a>
           <div class="tag-row">
             <span class="tag">freemium</span>
+            <span class="tag">No login</span>
+            <span class="tag">API available</span>
             <span class="tag">Risk low</span>
             <span class="tag">Evidence high</span>
             <span class="tag">core</span>
           </div>
-          <dl class="facts">
-            <dt>Best for / Для чого</dt>
-            <dd>Reverse image search; Find older copies of an image</dd>
-            <dt>Input / Вхідні дані</dt>
-            <dd>Image upload or image URL</dd>
-            <dt>Output / Результат</dt>
-            <dd>Matching images, dates, and source pages</dd>
-            <dt>Access / Доступ</dt>
-            <dd>freemium</dd>
-            <dt>Login / Логін</dt>
-            <dd>Not required</dd>
-            <dt>API / API</dt>
-            <dd>Available</dd>
-            <dt>Risk / Ризик</dt>
-            <dd>Legal low; OPSEC medium</dd>
-            <dt>Evidence value / Доказова цінність</dt>
-            <dd>high</dd>
-            <dt>Status / Статус</dt>
-            <dd>core</dd>
-            <dt>Notes / Примітки</dt>
-            <dd>Combine with other reverse search engines for better coverage.</dd>
-          </dl>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>Reverse image search</li>
+                  <li>Find older copies of an image</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Виконувати зворотний пошук зображень</li>
+                  <li>Знаходити старіші копії зображення</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Image upload or image URL</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Завантажене зображення або image URL</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Matching images, dates, and source pages</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Збіги зображень, дати та сторінки-джерела</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Combine with other reverse search engines for better coverage.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Поєднуйте з іншими сервісами зворотного пошуку для кращого покриття.</p>
+              </div>
+            </section>
+          </div>
         </article>
       </div>
     </details>
@@ -796,192 +1498,408 @@
           <a class="tool-url" href="https://builtwith.com/">https://builtwith.com/</a>
           <div class="tag-row">
             <span class="tag">freemium</span>
+            <span class="tag">No login</span>
+            <span class="tag">API available</span>
             <span class="tag">Risk low</span>
             <span class="tag">Evidence medium</span>
             <span class="tag">situational</span>
           </div>
-          <dl class="facts">
-            <dt>Best for / Для чого</dt>
-            <dd>Identify visible web technologies; Compare site technology and tracking changes</dd>
-            <dt>Input / Вхідні дані</dt>
-            <dd>Domain or URL</dd>
-            <dt>Output / Результат</dt>
-            <dd>Technology profile, tags, and historical signals</dd>
-            <dt>Access / Доступ</dt>
-            <dd>freemium</dd>
-            <dt>Login / Логін</dt>
-            <dd>Not required</dd>
-            <dt>API / API</dt>
-            <dd>Available</dd>
-            <dt>Risk / Ризик</dt>
-            <dd>Legal low; OPSEC low</dd>
-            <dt>Evidence value / Доказова цінність</dt>
-            <dd>medium</dd>
-            <dt>Status / Статус</dt>
-            <dd>situational</dd>
-            <dt>Notes / Примітки</dt>
-            <dd>Commercial limits apply to deeper history and automation.</dd>
-          </dl>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>Identify visible web technologies</li>
+                  <li>Compare site technology and tracking changes</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Визначати видимі вебтехнології</li>
+                  <li>Порівнювати зміни технологій сайту та tracking</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Domain or URL</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Домен або URL</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Technology profile, tags, and historical signals</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Технологічний профіль, теги та історичні сигнали</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Commercial limits apply to deeper history and automation.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Для глибшої історії та автоматизації діють комерційні обмеження.</p>
+              </div>
+            </section>
+          </div>
         </article>
         <article class="tool-card">
           <h3>crt.sh</h3>
           <a class="tool-url" href="https://crt.sh/">https://crt.sh/</a>
           <div class="tag-row">
             <span class="tag">free</span>
+            <span class="tag">No login</span>
+            <span class="tag">API available</span>
             <span class="tag">Risk low</span>
             <span class="tag">Evidence medium</span>
             <span class="tag">recommended</span>
           </div>
-          <dl class="facts">
-            <dt>Best for / Для чого</dt>
-            <dd>Search certificate transparency logs; Find related subdomains from certificates</dd>
-            <dt>Input / Вхідні дані</dt>
-            <dd>Domain name or certificate search pattern</dd>
-            <dt>Output / Результат</dt>
-            <dd>Certificate records and hostnames</dd>
-            <dt>Access / Доступ</dt>
-            <dd>free</dd>
-            <dt>Login / Логін</dt>
-            <dd>Not required</dd>
-            <dt>API / API</dt>
-            <dd>Available</dd>
-            <dt>Risk / Ризик</dt>
-            <dd>Legal low; OPSEC low</dd>
-            <dt>Evidence value / Доказова цінність</dt>
-            <dd>medium</dd>
-            <dt>Status / Статус</dt>
-            <dd>recommended</dd>
-            <dt>Notes / Примітки</dt>
-            <dd>Certificate records can include stale or unrelated hostnames.</dd>
-          </dl>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>Search certificate transparency logs</li>
+                  <li>Find related subdomains from certificates</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Шукати в certificate transparency logs</li>
+                  <li>Знаходити пов'язані subdomains через сертифікати</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Domain name or certificate search pattern</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Доменне ім'я або шаблон пошуку сертифікатів</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Certificate records and hostnames</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Записи сертифікатів і hostnames</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Certificate records can include stale or unrelated hostnames.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Записи сертифікатів можуть містити застарілі або непов'язані hostnames.</p>
+              </div>
+            </section>
+          </div>
         </article>
         <article class="tool-card">
           <h3>DNSDumpster</h3>
           <a class="tool-url" href="https://dnsdumpster.com/">https://dnsdumpster.com/</a>
           <div class="tag-row">
             <span class="tag">free</span>
+            <span class="tag">No login</span>
+            <span class="tag">No API</span>
             <span class="tag">Risk low</span>
             <span class="tag">Evidence medium</span>
             <span class="tag">recommended</span>
           </div>
-          <dl class="facts">
-            <dt>Best for / Для чого</dt>
-            <dd>Map public DNS records; Generate passive infrastructure leads</dd>
-            <dt>Input / Вхідні дані</dt>
-            <dd>Domain name</dd>
-            <dt>Output / Результат</dt>
-            <dd>DNS records, hosts, and network map</dd>
-            <dt>Access / Доступ</dt>
-            <dd>free</dd>
-            <dt>Login / Логін</dt>
-            <dd>Not required</dd>
-            <dt>API / API</dt>
-            <dd>Not available</dd>
-            <dt>Risk / Ризик</dt>
-            <dd>Legal low; OPSEC low</dd>
-            <dt>Evidence value / Доказова цінність</dt>
-            <dd>medium</dd>
-            <dt>Status / Статус</dt>
-            <dd>recommended</dd>
-            <dt>Notes / Примітки</dt>
-            <dd>Use for context, not vulnerability discovery or active probing.</dd>
-          </dl>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>Map public DNS records</li>
+                  <li>Generate passive infrastructure leads</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Картувати публічні DNS records</li>
+                  <li>Формувати пасивні зачіпки щодо інфраструктури</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Domain name</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Доменне ім'я</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>DNS records, hosts, and network map</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>DNS records, hosts і мережева мапа</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Use for context, not vulnerability discovery or active probing.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Використовуйте для контексту, а не для пошуку вразливостей чи active probing.</p>
+              </div>
+            </section>
+          </div>
         </article>
         <article class="tool-card">
           <h3>RIPEstat</h3>
           <a class="tool-url" href="https://stat.ripe.net/">https://stat.ripe.net/</a>
           <div class="tag-row">
             <span class="tag">free</span>
+            <span class="tag">No login</span>
+            <span class="tag">API available</span>
             <span class="tag">Risk low</span>
             <span class="tag">Evidence medium</span>
             <span class="tag">recommended</span>
           </div>
-          <dl class="facts">
-            <dt>Best for / Для чого</dt>
-            <dd>Inspect IP and ASN context; Review routing and registry history</dd>
-            <dt>Input / Вхідні дані</dt>
-            <dd>IP address, prefix, or ASN</dd>
-            <dt>Output / Результат</dt>
-            <dd>Registry, routing, DNS, and network relationship data</dd>
-            <dt>Access / Доступ</dt>
-            <dd>free</dd>
-            <dt>Login / Логін</dt>
-            <dd>Not required</dd>
-            <dt>API / API</dt>
-            <dd>Available</dd>
-            <dt>Risk / Ризик</dt>
-            <dd>Legal low; OPSEC low</dd>
-            <dt>Evidence value / Доказова цінність</dt>
-            <dd>medium</dd>
-            <dt>Status / Статус</dt>
-            <dd>recommended</dd>
-            <dt>Notes / Примітки</dt>
-            <dd>Registry data explains networks, not direct responsibility.</dd>
-          </dl>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>Inspect IP and ASN context</li>
+                  <li>Review routing and registry history</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Оглядати контекст IP та ASN</li>
+                  <li>Переглядати маршрутизацію і реєстрову історію</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>IP address, prefix, or ASN</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>IP address, prefix або ASN</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Registry, routing, DNS, and network relationship data</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Реєстрові, routing, DNS та мережеві зв'язки</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Registry data explains networks, not direct responsibility.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Реєстрові дані пояснюють мережі, але не доводять пряму відповідальність.</p>
+              </div>
+            </section>
+          </div>
         </article>
         <article class="tool-card">
           <h3>Wappalyzer</h3>
           <a class="tool-url" href="https://www.wappalyzer.com/">https://www.wappalyzer.com/</a>
           <div class="tag-row">
             <span class="tag">freemium</span>
+            <span class="tag">No login</span>
+            <span class="tag">API available</span>
             <span class="tag">Risk low</span>
             <span class="tag">Evidence low</span>
             <span class="tag">situational</span>
           </div>
-          <dl class="facts">
-            <dt>Best for / Для чого</dt>
-            <dd>Identify web frameworks and services; Document visible technology stack</dd>
-            <dt>Input / Вхідні дані</dt>
-            <dd>Domain, URL, or browser visit</dd>
-            <dt>Output / Результат</dt>
-            <dd>Detected web technologies and categories</dd>
-            <dt>Access / Доступ</dt>
-            <dd>freemium</dd>
-            <dt>Login / Логін</dt>
-            <dd>Not required</dd>
-            <dt>API / API</dt>
-            <dd>Available</dd>
-            <dt>Risk / Ризик</dt>
-            <dd>Legal low; OPSEC low</dd>
-            <dt>Evidence value / Доказова цінність</dt>
-            <dd>low</dd>
-            <dt>Status / Статус</dt>
-            <dd>situational</dd>
-            <dt>Notes / Примітки</dt>
-            <dd>Browser extension use can expose browsing context to the service.</dd>
-          </dl>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>Identify web frameworks and services</li>
+                  <li>Document visible technology stack</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Визначати вебфреймворки та сервіси</li>
+                  <li>Документувати видимий technology stack</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Domain, URL, or browser visit</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Домен, URL або відвідування через browser</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Detected web technologies and categories</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Виявлені вебтехнології та категорії</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Browser extension use can expose browsing context to the service.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Використання browser extension може розкривати сервісу контекст перегляду.</p>
+              </div>
+            </section>
+          </div>
         </article>
         <article class="tool-card">
           <h3>Whois</h3>
           <a class="tool-url" href="https://lookup.icann.org/">https://lookup.icann.org/</a>
           <div class="tag-row">
             <span class="tag">free</span>
+            <span class="tag">No login</span>
+            <span class="tag">No API</span>
             <span class="tag">Risk low</span>
             <span class="tag">Evidence medium</span>
             <span class="tag">core</span>
           </div>
-          <dl class="facts">
-            <dt>Best for / Для чого</dt>
-            <dd>Check domain registration data; Record registrar and registration timeline</dd>
-            <dt>Input / Вхідні дані</dt>
-            <dd>Domain name</dd>
-            <dt>Output / Результат</dt>
-            <dd>Registration, registrar, nameserver, and status records</dd>
-            <dt>Access / Доступ</dt>
-            <dd>free</dd>
-            <dt>Login / Логін</dt>
-            <dd>Not required</dd>
-            <dt>API / API</dt>
-            <dd>Not available</dd>
-            <dt>Risk / Ризик</dt>
-            <dd>Legal low; OPSEC low</dd>
-            <dt>Evidence value / Доказова цінність</dt>
-            <dd>medium</dd>
-            <dt>Status / Статус</dt>
-            <dd>core</dd>
-            <dt>Notes / Примітки</dt>
-            <dd>Privacy services and redactions limit attribution value.</dd>
-          </dl>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>Check domain registration data</li>
+                  <li>Record registrar and registration timeline</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Перевіряти реєстраційні дані домену</li>
+                  <li>Фіксувати реєстратора та часову лінію реєстрації</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Domain name</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Доменне ім'я</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Registration, registrar, nameserver, and status records</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Реєстраційні дані, реєстратор, nameserver і статуси</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Privacy services and redactions limit attribution value.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Privacy-сервіси та редагування даних обмежують цінність для атрибуції.</p>
+              </div>
+            </section>
+          </div>
         </article>
       </div>
     </details>
@@ -999,64 +1917,136 @@
           <a class="tool-url" href="https://www.gdeltproject.org/">https://www.gdeltproject.org/</a>
           <div class="tag-row">
             <span class="tag">free</span>
+            <span class="tag">No login</span>
+            <span class="tag">API available</span>
             <span class="tag">Risk low</span>
             <span class="tag">Evidence medium</span>
             <span class="tag">core</span>
           </div>
-          <dl class="facts">
-            <dt>Best for / Для чого</dt>
-            <dd>Monitor global news coverage; Search events, themes, and source mentions</dd>
-            <dt>Input / Вхідні дані</dt>
-            <dd>Query, date range, country, source, or theme</dd>
-            <dt>Output / Результат</dt>
-            <dd>News records, event data, and article metadata</dd>
-            <dt>Access / Доступ</dt>
-            <dd>free</dd>
-            <dt>Login / Логін</dt>
-            <dd>Not required</dd>
-            <dt>API / API</dt>
-            <dd>Available</dd>
-            <dt>Risk / Ризик</dt>
-            <dd>Legal low; OPSEC low</dd>
-            <dt>Evidence value / Доказова цінність</dt>
-            <dd>medium</dd>
-            <dt>Status / Статус</dt>
-            <dd>core</dd>
-            <dt>Notes / Примітки</dt>
-            <dd>Machine-coded event data needs sampling and source review.</dd>
-          </dl>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>Monitor global news coverage</li>
+                  <li>Search events, themes, and source mentions</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Моніторити глобальне новинне покриття</li>
+                  <li>Шукати події, теми та згадки джерел</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Query, date range, country, source, or theme</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Запит, діапазон дат, країна, джерело або тема</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>News records, event data, and article metadata</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Новинні записи, дані про події та метадані статей</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Machine-coded event data needs sampling and source review.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Дані подій, закодовані автоматично, потребують вибіркової перевірки та огляду джерел.</p>
+              </div>
+            </section>
+          </div>
         </article>
         <article class="tool-card">
           <h3>Media Cloud</h3>
           <a class="tool-url" href="https://mediacloud.org/">https://mediacloud.org/</a>
           <div class="tag-row">
             <span class="tag">free</span>
+            <span class="tag">Login required</span>
+            <span class="tag">API available</span>
             <span class="tag">Risk low</span>
             <span class="tag">Evidence medium</span>
             <span class="tag">recommended</span>
           </div>
-          <dl class="facts">
-            <dt>Best for / Для чого</dt>
-            <dd>Analyze media attention over time; Compare coverage across source collections</dd>
-            <dt>Input / Вхідні дані</dt>
-            <dd>Keywords, media collections, and date range</dd>
-            <dt>Output / Результат</dt>
-            <dd>Story lists, attention metrics, and source comparisons</dd>
-            <dt>Access / Доступ</dt>
-            <dd>free</dd>
-            <dt>Login / Логін</dt>
-            <dd>Required</dd>
-            <dt>API / API</dt>
-            <dd>Available</dd>
-            <dt>Risk / Ризик</dt>
-            <dd>Legal low; OPSEC low</dd>
-            <dt>Evidence value / Доказова цінність</dt>
-            <dd>medium</dd>
-            <dt>Status / Статус</dt>
-            <dd>recommended</dd>
-            <dt>Notes / Примітки</dt>
-            <dd>Collection definitions shape the results and should be documented.</dd>
-          </dl>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>Analyze media attention over time</li>
+                  <li>Compare coverage across source collections</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Аналізувати медійну увагу в часі</li>
+                  <li>Порівнювати покриття між добірками джерел</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Keywords, media collections, and date range</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Ключові слова, медіадобірки та діапазон дат</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Story lists, attention metrics, and source comparisons</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Списки матеріалів, метрики уваги та порівняння джерел</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Collection definitions shape the results and should be documented.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Визначення добірок формують результати, тому їх варто документувати.</p>
+              </div>
+            </section>
+          </div>
         </article>
       </div>
     </details>
@@ -1074,96 +2064,204 @@
           <a class="tool-url" href="https://datasette.io/">https://datasette.io/</a>
           <div class="tag-row">
             <span class="tag">free</span>
+            <span class="tag">No login</span>
+            <span class="tag">API available</span>
             <span class="tag">Risk low</span>
             <span class="tag">Evidence high</span>
             <span class="tag">recommended</span>
           </div>
-          <dl class="facts">
-            <dt>Best for / Для чого</dt>
-            <dd>Publish small structured datasets; Explore SQLite-backed evidence tables</dd>
-            <dt>Input / Вхідні дані</dt>
-            <dd>SQLite database or structured data converted to SQLite</dd>
-            <dt>Output / Результат</dt>
-            <dd>Searchable web interface and JSON API</dd>
-            <dt>Access / Доступ</dt>
-            <dd>free</dd>
-            <dt>Login / Логін</dt>
-            <dd>Not required</dd>
-            <dt>API / API</dt>
-            <dd>Available</dd>
-            <dt>Risk / Ризик</dt>
-            <dd>Legal low; OPSEC low</dd>
-            <dt>Evidence value / Доказова цінність</dt>
-            <dd>high</dd>
-            <dt>Status / Статус</dt>
-            <dd>recommended</dd>
-            <dt>Notes / Примітки</dt>
-            <dd>Review data sensitivity before publishing any dataset.</dd>
-          </dl>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>Publish small structured datasets</li>
+                  <li>Explore SQLite-backed evidence tables</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Публікувати невеликі структуровані datasets</li>
+                  <li>Досліджувати evidence tables на базі SQLite</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>SQLite database or structured data converted to SQLite</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>SQLite database або структуровані дані, перетворені на SQLite</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Searchable web interface and JSON API</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Пошуковий вебінтерфейс і JSON API</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Review data sensitivity before publishing any dataset.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Перед публікацією будь-якого dataset перевірте чутливість даних.</p>
+              </div>
+            </section>
+          </div>
         </article>
         <article class="tool-card">
           <h3>Gephi</h3>
           <a class="tool-url" href="https://gephi.org/">https://gephi.org/</a>
           <div class="tag-row">
             <span class="tag">free</span>
+            <span class="tag">No login</span>
+            <span class="tag">No API</span>
             <span class="tag">Risk low</span>
             <span class="tag">Evidence medium</span>
             <span class="tag">recommended</span>
           </div>
-          <dl class="facts">
-            <dt>Best for / Для чого</dt>
-            <dd>Explore network relationships; Visualize source, entity, or link graphs</dd>
-            <dt>Input / Вхідні дані</dt>
-            <dd>Nodes and edges as CSV, GEXF, GraphML, or similar</dd>
-            <dt>Output / Результат</dt>
-            <dd>Network visualizations and graph metrics</dd>
-            <dt>Access / Доступ</dt>
-            <dd>free</dd>
-            <dt>Login / Логін</dt>
-            <dd>Not required</dd>
-            <dt>API / API</dt>
-            <dd>Not available</dd>
-            <dt>Risk / Ризик</dt>
-            <dd>Legal low; OPSEC low</dd>
-            <dt>Evidence value / Доказова цінність</dt>
-            <dd>medium</dd>
-            <dt>Status / Статус</dt>
-            <dd>recommended</dd>
-            <dt>Notes / Примітки</dt>
-            <dd>Layout choices can mislead; publish data definitions with visuals.</dd>
-          </dl>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>Explore network relationships</li>
+                  <li>Visualize source, entity, or link graphs</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Досліджувати мережеві зв'язки</li>
+                  <li>Візуалізувати графи джерел, сутностей або посилань</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Nodes and edges as CSV, GEXF, GraphML, or similar</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Nodes and edges у CSV, GEXF, GraphML або схожому форматі</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Network visualizations and graph metrics</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Мережеві візуалізації та graph metrics</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Layout choices can mislead; publish data definitions with visuals.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Вибір layout може вводити в оману; публікуйте визначення даних разом із візуалізаціями.</p>
+              </div>
+            </section>
+          </div>
         </article>
         <article class="tool-card">
           <h3>RAWGraphs</h3>
           <a class="tool-url" href="https://www.rawgraphs.io/">https://www.rawgraphs.io/</a>
           <div class="tag-row">
             <span class="tag">free</span>
+            <span class="tag">No login</span>
+            <span class="tag">No API</span>
             <span class="tag">Risk low</span>
             <span class="tag">Evidence medium</span>
             <span class="tag">recommended</span>
           </div>
-          <dl class="facts">
-            <dt>Best for / Для чого</dt>
-            <dd>Turn tabular data into charts; Prototype explanatory visualizations</dd>
-            <dt>Input / Вхідні дані</dt>
-            <dd>CSV, TSV, or pasted tabular data</dd>
-            <dt>Output / Результат</dt>
-            <dd>Charts and exported SVG or image files</dd>
-            <dt>Access / Доступ</dt>
-            <dd>free</dd>
-            <dt>Login / Логін</dt>
-            <dd>Not required</dd>
-            <dt>API / API</dt>
-            <dd>Not available</dd>
-            <dt>Risk / Ризик</dt>
-            <dd>Legal low; OPSEC medium</dd>
-            <dt>Evidence value / Доказова цінність</dt>
-            <dd>medium</dd>
-            <dt>Status / Статус</dt>
-            <dd>recommended</dd>
-            <dt>Notes / Примітки</dt>
-            <dd>Use local/offline options for sensitive unpublished data.</dd>
-          </dl>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>Turn tabular data into charts</li>
+                  <li>Prototype explanatory visualizations</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Перетворювати табличні дані на графіки</li>
+                  <li>Швидко прототипувати пояснювальні візуалізації</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>CSV, TSV, or pasted tabular data</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>CSV, TSV або вставлені табличні дані</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Charts and exported SVG or image files</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Графіки та експортовані SVG або image files</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Use local/offline options for sensitive unpublished data.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Для чутливих неопублікованих даних використовуйте локальні або offline-варіанти.</p>
+              </div>
+            </section>
+          </div>
         </article>
       </div>
     </details>
@@ -1181,32 +2279,68 @@
           <a class="tool-url" href="https://obsidian.md/">https://obsidian.md/</a>
           <div class="tag-row">
             <span class="tag">freemium</span>
+            <span class="tag">No login</span>
+            <span class="tag">No API</span>
             <span class="tag">Risk low</span>
             <span class="tag">Evidence medium</span>
             <span class="tag">recommended</span>
           </div>
-          <dl class="facts">
-            <dt>Best for / Для чого</dt>
-            <dd>Maintain source notes and hypotheses; Link evidence, checks, and open questions</dd>
-            <dt>Input / Вхідні дані</dt>
-            <dd>Markdown notes and local files</dd>
-            <dt>Output / Результат</dt>
-            <dd>Local knowledge base and linked research graph</dd>
-            <dt>Access / Доступ</dt>
-            <dd>freemium</dd>
-            <dt>Login / Логін</dt>
-            <dd>Not required</dd>
-            <dt>API / API</dt>
-            <dd>Not available</dd>
-            <dt>Risk / Ризик</dt>
-            <dd>Legal low; OPSEC low</dd>
-            <dt>Evidence value / Доказова цінність</dt>
-            <dd>medium</dd>
-            <dt>Status / Статус</dt>
-            <dd>recommended</dd>
-            <dt>Notes / Примітки</dt>
-            <dd>Sync and plugin choices should match the sensitivity of the work.</dd>
-          </dl>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>Maintain source notes and hypotheses</li>
+                  <li>Link evidence, checks, and open questions</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Вести нотатки про джерела та гіпотези</li>
+                  <li>Пов'язувати докази, перевірки та відкриті питання</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Markdown notes and local files</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Markdown notes і локальні файли</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Local knowledge base and linked research graph</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Локальна база знань і пов'язаний research graph</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Sync and plugin choices should match the sensitivity of the work.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Вибір sync і plugins має відповідати чутливості роботи.</p>
+              </div>
+            </section>
+          </div>
         </article>
       </div>
     </details>

@@ -19,6 +19,14 @@
   public: true
   project_fit: Core preservation and source history tool for public-interest verification.
   notes: Best used early when a source may change or disappear.
+  use_cases_uk:
+    - Зберігати публічні вебсторінки
+    - Порівнювати історичні версії сайту
+  input_uk:
+    - Публічний URL
+  output_uk:
+    - Архівні знімки та хронологія збережень
+  notes_uk: Найкраще використовувати на початку, коли джерело може змінитися або зникнути.
 - id: archive_today
   name: archive.today / archive.ph
   url: https://archive.ph/
@@ -40,6 +48,14 @@
   public: true
   project_fit: Useful second archive source when cross-checking public web evidence.
   notes: Availability and domain variants can change; record the final archive URL.
+  use_cases_uk:
+    - Зберігати копію публічної сторінки
+    - Порівнювати стан сторінки з іншими архівами
+  input_uk:
+    - Публічний URL
+  output_uk:
+    - Статична архівна копія сторінки
+  notes_uk: Доступність і доменні варіанти можуть змінюватися; фіксуйте фінальний archive URL.
 - id: perma_cc
   name: Perma.cc
   url: https://perma.cc/
@@ -61,6 +77,14 @@
   public: true
   project_fit: Strong fit for transparent citation trails and durable references.
   notes: Free access is often tied to institutions or limited personal use.
+  use_cases_uk:
+    - Створювати записи для надійного цитування
+    - Зберігати джерела для дослідницьких нотаток
+  input_uk:
+    - Публічний URL
+  output_uk:
+    - Постійне посилання для цитування та архівний запис
+  notes_uk: Безкоштовний доступ часто прив'язаний до установ або обмеженого особистого використання.
 - id: google_earth
   name: Google Earth
   url: https://earth.google.com/
@@ -82,6 +106,14 @@
   public: true
   project_fit: Core geolocation workspace for verifying places and terrain context.
   notes: Imagery dates and coverage vary by location.
+  use_cases_uk:
+    - Оглядати рельєф і орієнтири
+    - Порівнювати історичні знімки там, де вони доступні
+  input_uk:
+    - Назва місця, координати або візуальні підказки
+  output_uk:
+    - Супутникові знімки, 3D-рельєф і картографічний контекст
+  notes_uk: Дати знімків і покриття залежать від локації.
 - id: sentinel_hub_eo_browser
   name: Sentinel Hub EO Browser
   url: https://apps.sentinel-hub.com/eo-browser/
@@ -103,6 +135,14 @@
   public: true
   project_fit: Useful for corroborating public claims with repeatable satellite context.
   notes: Some exports and advanced features require an account.
+  use_cases_uk:
+    - Переглядати супутникові знімки в часі
+    - Перевіряти екологічні та пов'язані з конфліктом зміни
+  input_uk:
+    - Координати, територія, часовий діапазон і супутниковий шар
+  output_uk:
+    - Супутникові сцени, візуалізації та експорти
+  notes_uk: Для частини експортів і розширених функцій потрібен акаунт.
 - id: nasa_worldview
   name: NASA Worldview
   url: https://worldview.earthdata.nasa.gov/
@@ -124,6 +164,14 @@
   public: true
   project_fit: Good contextual source for environmental indicators around events.
   notes: Resolution depends on the selected sensor and layer.
+  use_cases_uk:
+    - Переглядати майже оперативні шари спостереження Землі
+    - Перевіряти пожежі, дим, погоду та екологічний контекст
+  input_uk:
+    - Локація, дата та вибрані шари знімків
+  output_uk:
+    - Перегляд супутникових шарів та експорт зображень
+  notes_uk: Роздільна здатність залежить від вибраного сенсора і шару.
 - id: openstreetmap
   name: OpenStreetMap
   url: https://www.openstreetmap.org/
@@ -145,6 +193,14 @@
   public: true
   project_fit: Baseline map layer and structured geography source for verification.
   notes: Treat user-edited map details as leads and corroborate important claims.
+  use_cases_uk:
+    - Перевіряти дороги, будівлі та місцеві назви
+    - Зіставляти нанесені об'єкти з візуальними доказами
+  input_uk:
+    - Назва місця, координати або ділянка мапи
+  output_uk:
+    - Відкриті картографічні дані та метадані об'єктів
+  notes_uk: Дані, редаговані користувачами, варто сприймати як зачіпки й підтверджувати важливі твердження.
 - id: mapillary
   name: Mapillary
   url: https://www.mapillary.com/
@@ -166,6 +222,14 @@
   public: true
   project_fit: Helpful when geolocating public imagery with street-level clues.
   notes: Coverage is uneven and imagery may be old.
+  use_cases_uk:
+    - Оглядати зображення з рівня вулиці
+    - Порівнювати дорожні знаки, вітрини та орієнтири
+  input_uk:
+    - Локація або ділянка мапи
+  output_uk:
+    - Вуличні зображення та метадані зйомки
+  notes_uk: Покриття нерівномірне, а зображення можуть бути застарілими.
 - id: suncalc
   name: SunCalc
   url: https://www.suncalc.org/
@@ -187,6 +251,14 @@
   public: true
   project_fit: Simple, explainable support for visual chronology checks.
   notes: Works best when camera direction and local geometry are understood.
+  use_cases_uk:
+    - Оцінювати положення сонця за тінями
+    - Перевіряти гіпотези щодо часу доби
+  input_uk:
+    - Локація, дата і час
+  output_uk:
+    - Траєкторія сонця, азимут, висота та напрямок тіні
+  notes_uk: Найкраще працює, коли зрозумілі напрямок камери та локальна геометрія.
 - id: nasa_firms
   name: NASA FIRMS
   url: https://firms.modaps.eosdis.nasa.gov/
@@ -210,6 +282,16 @@
   public: true
   project_fit: Strong contextual source for fire and thermal anomaly verification around public-interest events.
   notes: Thermal anomaly data can support verification, but a hotspot is not proof of a strike or cause by itself.
+  use_cases_uk:
+    - Виявляти активні пожежі
+    - Перевіряти контекст теплових аномалій
+    - Уточнювати вплив конфліктних подій
+    - Додавати контекст екологічних інцидентів
+  input_uk:
+    - Локація, часове вікно, вигляд мапи, необов'язкові параметри API
+  output_uk:
+    - Дані про активні пожежі, теплові аномалії, картографічні шари та завантажувані дані
+  notes_uk: Теплова аномалія може допомогти перевірці, але сама по собі не доводить удар або причину події.
 - id: openrailwaymap
   name: OpenRailwayMap
   url: https://openrailwaymap.app/
@@ -232,6 +314,15 @@
   public: true
   project_fit: Useful transport layer for checking public imagery and claims near rail corridors.
   notes: Useful for contextual geolocation near railways; verify against imagery and other sources.
+  use_cases_uk:
+    - Перевіряти контекст залізничної інфраструктури
+    - Геолокувати станції та колії
+    - Звіряти транспортні маршрути
+  input_uk:
+    - Локація на мапі, залізничний об'єкт або назва станції
+  output_uk:
+    - Колії, станції та шари залізничної інфраструктури
+  notes_uk: Корисно для контекстної геолокації біля залізниць; звіряйте з imagery та іншими джерелами.
 - id: global_fishing_watch
   name: Global Fishing Watch
   url: https://globalfishingwatch.org/map
@@ -255,6 +346,15 @@
   public: true
   project_fit: Good maritime context source for reviewing vessel activity, ports, and route patterns.
   notes: AIS-derived or vessel activity data should be treated as contextual evidence; AIS can be incomplete, delayed, disabled, or manipulated.
+  use_cases_uk:
+    - Переглядати треки суден
+    - Аналізувати рибальську активність
+    - Перевіряти контекст портів і маршрутів
+  input_uk:
+    - Судно, район, часове вікно та фільтри мапи
+  output_uk:
+    - Треки суден, події, шари активності та морський контекст
+  notes_uk: Дані з AIS або активності суден є контекстом; AIS може бути неповним, затриманим, вимкненим або підробленим.
 - id: opensky_network
   name: OpenSky Network
   url: https://opensky-network.org/data/api
@@ -277,6 +377,15 @@
   public: true
   project_fit: Contextual aviation data source for retrospective airspace and aircraft movement research.
   notes: Use for research and retrospective/contextual verification; do not frame live aviation tracking as targeting or operational use.
+  use_cases_uk:
+    - Перевіряти контекст повітряного простору
+    - Досліджувати рух повітряних суден
+    - Звіряти авіаційні дані
+  input_uk:
+    - Часове вікно, bounding box, ідентифікатор літака або API-запит
+  output_uk:
+    - Стани повітряних суден, треки та спостереження повітряного простору
+  notes_uk: Використовуйте для досліджень і ретроспективної перевірки; не подавайте live tracking як інструмент наведення чи оперативного застосування.
 - id: openinframap
   name: OpenInfraMap
   url: https://openinframap.org/
@@ -299,6 +408,15 @@
   public: true
   project_fit: Public infrastructure layer for contextual verification of mapped facilities and network features.
   notes: Use only for contextual verification and public-interest analysis; do not use for targeting or operational planning.
+  use_cases_uk:
+    - Перевіряти інфраструктурний контекст
+    - Оглядати енергетичні та телеком-шари
+    - Уточнювати контекст трубопроводів і об'єктів
+  input_uk:
+    - Локація на мапі, інфраструктурний шар або тип об'єкта
+  output_uk:
+    - Шари електромереж, телекомунікацій, нафти, газу та іншої інфраструктури
+  notes_uk: Використовуйте лише для контекстної перевірки й аналізу в суспільних інтересах; не використовуйте для наведення чи оперативного планування.
 - id: google_lens
   name: Google Lens
   url: https://lens.google/
@@ -320,6 +438,14 @@
   public: true
   project_fit: Useful lead generator for visual verification, especially with crops.
   notes: Uploading sensitive images to third-party services requires judgment.
+  use_cases_uk:
+    - Виконувати зворотний пошук зображень
+    - Визначати об'єкти, написи та схожі зображення
+  input_uk:
+    - Зображення або обрізаний фрагмент зображення
+  output_uk:
+    - Схожі зображення, збіги в мережі та припущення щодо об'єктів
+  notes_uk: Завантаження чутливих зображень у сторонні сервіси потребує обережної оцінки.
 - id: tineye
   name: TinEye
   url: https://tineye.com/
@@ -341,6 +467,14 @@
   public: true
   project_fit: Strong tool for checking reuse and earlier publication of images.
   notes: Combine with other reverse search engines for better coverage.
+  use_cases_uk:
+    - Виконувати зворотний пошук зображень
+    - Знаходити старіші копії зображення
+  input_uk:
+    - Завантажене зображення або image URL
+  output_uk:
+    - Збіги зображень, дати та сторінки-джерела
+  notes_uk: Поєднуйте з іншими сервісами зворотного пошуку для кращого покриття.
 - id: invid_weverify
   name: InVID / WeVerify
   url: https://www.invid-project.eu/tools-and-services/invid-verification-plugin/
@@ -362,6 +496,14 @@
   public: true
   project_fit: Practical visual verification toolkit for public videos.
   notes: Browser extension permissions should be reviewed before use.
+  use_cases_uk:
+    - Розбивати відео на ключові кадри
+    - Виконувати перевірки для відео із соцмереж
+  input_uk:
+    - Video URL, зображення або локальний медіафайл
+  output_uk:
+    - Ключові кадри, допоміжні метадані та швидкі посилання для пошуку
+  notes_uk: Перед використанням перевірте дозволи browser extension.
 - id: exiftool
   name: ExifTool
   url: https://exiftool.org/
@@ -383,6 +525,14 @@
   public: true
   project_fit: Core local-first utility for transparent metadata inspection.
   notes: Metadata can be missing, edited, or misleading; treat it as one signal.
+  use_cases_uk:
+    - Переглядати метадані медіафайлів
+    - Зберігати метадані в доказових нотатках
+  input_uk:
+    - Локальний файл зображення, відео, аудіо або документа
+  output_uk:
+    - Поля метаданих і часові мітки
+  notes_uk: Метадані можуть бути відсутніми, зміненими або оманливими; сприймайте їх як один із сигналів.
 - id: forensically
   name: Forensically
   url: https://29a.ch/photo-forensics/
@@ -404,6 +554,14 @@
   public: true
   project_fit: Useful for teaching and triage, with careful interpretation.
   notes: Forensic visualizations are not proof by themselves and can be overread.
+  use_cases_uk:
+    - Оглядати зображення на візуальні аномалії
+    - Порівнювати сигнали стиснення та клонування
+  input_uk:
+    - Файл зображення
+  output_uk:
+    - Візуальні режими форензичного аналізу
+  notes_uk: Форензичні візуалізації самі по собі не є доказом, їх легко переінтерпретувати.
 - id: whois
   name: Whois
   url: https://lookup.icann.org/
@@ -425,6 +583,14 @@
   public: true
   project_fit: Basic domain context for public source assessment.
   notes: Privacy services and redactions limit attribution value.
+  use_cases_uk:
+    - Перевіряти реєстраційні дані домену
+    - Фіксувати реєстратора та часову лінію реєстрації
+  input_uk:
+    - Доменне ім'я
+  output_uk:
+    - Реєстраційні дані, реєстратор, nameserver і статуси
+  notes_uk: Privacy-сервіси та редагування даних обмежують цінність для атрибуції.
 - id: ripestat
   name: RIPEstat
   url: https://stat.ripe.net/
@@ -446,6 +612,14 @@
   public: true
   project_fit: Useful infrastructure context without active scanning.
   notes: Registry data explains networks, not direct responsibility.
+  use_cases_uk:
+    - Оглядати контекст IP та ASN
+    - Переглядати маршрутизацію і реєстрову історію
+  input_uk:
+    - IP address, prefix або ASN
+  output_uk:
+    - Реєстрові, routing, DNS та мережеві зв'язки
+  notes_uk: Реєстрові дані пояснюють мережі, але не доводять пряму відповідальність.
 - id: crtsh
   name: crt.sh
   url: https://crt.sh/
@@ -467,6 +641,14 @@
   public: true
   project_fit: Good passive source for domain history and infrastructure leads.
   notes: Certificate records can include stale or unrelated hostnames.
+  use_cases_uk:
+    - Шукати в certificate transparency logs
+    - Знаходити пов'язані subdomains через сертифікати
+  input_uk:
+    - Доменне ім'я або шаблон пошуку сертифікатів
+  output_uk:
+    - Записи сертифікатів і hostnames
+  notes_uk: Записи сертифікатів можуть містити застарілі або непов'язані hostnames.
 - id: dnsdumpster
   name: DNSDumpster
   url: https://dnsdumpster.com/
@@ -488,6 +670,14 @@
   public: true
   project_fit: Passive DNS overview for public infrastructure checks.
   notes: Use for context, not vulnerability discovery or active probing.
+  use_cases_uk:
+    - Картувати публічні DNS records
+    - Формувати пасивні зачіпки щодо інфраструктури
+  input_uk:
+    - Доменне ім'я
+  output_uk:
+    - DNS records, hosts і мережева мапа
+  notes_uk: Використовуйте для контексту, а не для пошуку вразливостей чи active probing.
 - id: builtwith
   name: BuiltWith
   url: https://builtwith.com/
@@ -509,6 +699,14 @@
   public: true
   project_fit: Useful when source credibility depends on web platform context.
   notes: Commercial limits apply to deeper history and automation.
+  use_cases_uk:
+    - Визначати видимі вебтехнології
+    - Порівнювати зміни технологій сайту та tracking
+  input_uk:
+    - Домен або URL
+  output_uk:
+    - Технологічний профіль, теги та історичні сигнали
+  notes_uk: Для глибшої історії та автоматизації діють комерційні обмеження.
 - id: wappalyzer
   name: Wappalyzer
   url: https://www.wappalyzer.com/
@@ -530,6 +728,14 @@
   public: true
   project_fit: Lightweight context for evaluating public websites and sources.
   notes: Browser extension use can expose browsing context to the service.
+  use_cases_uk:
+    - Визначати вебфреймворки та сервіси
+    - Документувати видимий technology stack
+  input_uk:
+    - Домен, URL або відвідування через browser
+  output_uk:
+    - Виявлені вебтехнології та категорії
+  notes_uk: Використання browser extension може розкривати сервісу контекст перегляду.
 - id: gdelt
   name: GDELT
   url: https://www.gdeltproject.org/
@@ -551,6 +757,14 @@
   public: true
   project_fit: Strong fit for editorial radar, media monitoring, and repeatable queries.
   notes: Machine-coded event data needs sampling and source review.
+  use_cases_uk:
+    - Моніторити глобальне новинне покриття
+    - Шукати події, теми та згадки джерел
+  input_uk:
+    - Запит, діапазон дат, країна, джерело або тема
+  output_uk:
+    - Новинні записи, дані про події та метадані статей
+  notes_uk: Дані подій, закодовані автоматично, потребують вибіркової перевірки та огляду джерел.
 - id: media_cloud
   name: Media Cloud
   url: https://mediacloud.org/
@@ -572,6 +786,14 @@
   public: true
   project_fit: Useful for understanding media ecosystems and narrative spread.
   notes: Collection definitions shape the results and should be documented.
+  use_cases_uk:
+    - Аналізувати медійну увагу в часі
+    - Порівнювати покриття між добірками джерел
+  input_uk:
+    - Ключові слова, медіадобірки та діапазон дат
+  output_uk:
+    - Списки матеріалів, метрики уваги та порівняння джерел
+  notes_uk: Визначення добірок формують результати, тому їх варто документувати.
 - id: gephi
   name: Gephi
   url: https://gephi.org/
@@ -593,6 +815,14 @@
   public: true
   project_fit: Good for explaining relationships after data has been cleaned.
   notes: Layout choices can mislead; publish data definitions with visuals.
+  use_cases_uk:
+    - Досліджувати мережеві зв'язки
+    - Візуалізувати графи джерел, сутностей або посилань
+  input_uk:
+    - Nodes and edges у CSV, GEXF, GraphML або схожому форматі
+  output_uk:
+    - Мережеві візуалізації та graph metrics
+  notes_uk: Вибір layout може вводити в оману; публікуйте визначення даних разом із візуалізаціями.
 - id: datasette
   name: Datasette
   url: https://datasette.io/
@@ -614,6 +844,14 @@
   public: true
   project_fit: Strong fit for transparent public datasets and reproducible notes.
   notes: Review data sensitivity before publishing any dataset.
+  use_cases_uk:
+    - Публікувати невеликі структуровані datasets
+    - Досліджувати evidence tables на базі SQLite
+  input_uk:
+    - SQLite database або структуровані дані, перетворені на SQLite
+  output_uk:
+    - Пошуковий вебінтерфейс і JSON API
+  notes_uk: Перед публікацією будь-якого dataset перевірте чутливість даних.
 - id: rawgraphs
   name: RAWGraphs
   url: https://www.rawgraphs.io/
@@ -635,6 +873,14 @@
   public: true
   project_fit: Helpful for quickly explaining structured findings.
   notes: Use local/offline options for sensitive unpublished data.
+  use_cases_uk:
+    - Перетворювати табличні дані на графіки
+    - Швидко прототипувати пояснювальні візуалізації
+  input_uk:
+    - CSV, TSV або вставлені табличні дані
+  output_uk:
+    - Графіки та експортовані SVG або image files
+  notes_uk: Для чутливих неопублікованих даних використовуйте локальні або offline-варіанти.
 - id: obsidian
   name: Obsidian
   url: https://obsidian.md/
@@ -656,3 +902,11 @@
   public: true
   project_fit: Useful local-first workspace for verification notes and source trails.
   notes: Sync and plugin choices should match the sensitivity of the work.
+  use_cases_uk:
+    - Вести нотатки про джерела та гіпотези
+    - Пов'язувати докази, перевірки та відкриті питання
+  input_uk:
+    - Markdown notes і локальні файли
+  output_uk:
+    - Локальна база знань і пов'язаний research graph
+  notes_uk: Вибір sync і plugins має відповідати чутливості роботи.
