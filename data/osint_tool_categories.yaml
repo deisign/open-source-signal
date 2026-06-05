@@ -1,0 +1,42 @@
+- id: archiving
+  title_en: Archiving
+  title_uk: Архівування
+  description_en: Capture and compare public web pages so claims can be preserved and reviewed later.
+  description_uk: Збереження та порівняння публічних вебсторінок для подальшої перевірки тверджень.
+  order: 10
+- id: geolocation
+  title_en: Geolocation
+  title_uk: Геолокація
+  description_en: Map, satellite, street-level, and environmental tools for locating and contextualizing public media.
+  description_uk: Мапи, супутникові знімки, панорами та природні підказки для локалізації публічних матеріалів.
+  order: 20
+- id: image_video_verification
+  title_en: Image and Video Verification
+  title_uk: Верифікація фото й відео
+  description_en: Reverse search, metadata, and forensic helpers for checking visual evidence and media provenance.
+  description_uk: Зворотний пошук, метадані та форензика для перевірки візуальних доказів і походження медіа.
+  order: 30
+- id: domains_infrastructure
+  title_en: Domains and Infrastructure
+  title_uk: Домени й інфраструктура
+  description_en: Public lookups that explain domain ownership signals, certificates, DNS, and visible web technology.
+  description_uk: Публічні довідники для доменів, сертифікатів, DNS та видимих вебтехнологій.
+  order: 40
+- id: news_media_monitoring
+  title_en: News and Media Monitoring
+  title_uk: Моніторинг новин і медіа
+  description_en: Public datasets and monitoring services for tracking narratives, events, and media coverage.
+  description_uk: Публічні набори даних і сервіси для відстеження наративів, подій та медіависвітлення.
+  order: 50
+- id: data_visualization
+  title_en: Data Visualization
+  title_uk: Візуалізація даних
+  description_en: Tools for exploring, publishing, and explaining structured evidence and source networks.
+  description_uk: Інструменти для дослідження, публікації та пояснення структурованих доказів і мереж джерел.
+  order: 60
+- id: workflow_methods
+  title_en: Workflow Methods
+  title_uk: Робочі методики
+  description_en: Note-taking and workflow tools that help researchers keep source trails, hypotheses, and checks organized.
+  description_uk: Інструменти для нотаток і процесів, які допомагають впорядковувати джерела, гіпотези й перевірки.
+  order: 70

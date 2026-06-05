@@ -1,0 +1,1062 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>OSINT Signal Toolkit</title>
+  <meta name="description" content="A curated verification-oriented OSINT toolkit from Open Source Signal.">
+  <link rel="canonical" href="https://osintsignal.org/toolkit/">
+  <meta property="og:title" content="OSINT Signal Toolkit — Open Source Signal">
+  <meta property="og:description" content="A curated verification-oriented toolkit, not a dump of all OSINT links.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://osintsignal.org/toolkit/">
+  <meta property="og:image" content="https://osintsignal.org/static/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="OSINT Signal Toolkit">
+  <meta name="twitter:description" content="A curated verification-oriented toolkit, not a dump of all OSINT links.">
+  <meta name="twitter:image" content="https://osintsignal.org/static/og-image.png">
+  <link rel="alternate" type="application/rss+xml" title="Open Source Signal RSS" href="../feed.xml">
+  <meta name="theme-color" content="#141414">
+  <link rel="icon" href="../static/logo-mark.png" type="image/png">
+  <link rel="shortcut icon" href="../static/favicon.ico">
+  <link rel="apple-touch-icon" href="../static/apple-touch-icon.png">
+  <link rel="manifest" href="../static/site.webmanifest">
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500;700;800&family=Fraunces:opsz,wght@9..144,700;9..144,850&family=Inter:wght@400;600;800&family=Source+Serif+4:opsz,wght@8..60,700;8..60,850&display=swap');
+    :root {
+      --display-latin: Fraunces, Georgia, 'Times New Roman', serif;
+      --display-cyr: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+      --label-font: Arimo, Arial, Helvetica, sans-serif;
+      --paper: #F2EDDD;
+      --paper-2: #FFF9EA;
+      --ink: #141414;
+      --muted: #6d665a;
+      --line: rgba(20,20,20,.16);
+      --accent: #245c73;
+      --signal: #D6422B;
+      --shadow: 0 24px 70px rgba(20,20,20,.12);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 12% 14%, rgba(214,66,43,.16), transparent 26rem),
+        radial-gradient(circle at 84% 10%, rgba(36,92,115,.16), transparent 24rem),
+        linear-gradient(135deg, #f7f0df, #ece1c6 58%, #d9cfb7);
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 17px;
+      line-height: 1.56;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: .2;
+      background-image: linear-gradient(rgba(20,20,20,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(20,20,20,.035) 1px, transparent 1px);
+      background-size: 28px 28px;
+      mask-image: linear-gradient(to bottom, #000, transparent 85%);
+    }
+    a { color: inherit; text-decoration-thickness: .1em; text-underline-offset: .18em; }
+    .wrap { width: min(1120px, calc(100% - 36px)); margin: 0 auto; }
+    header { padding: 56px 0 30px; }
+    .topline { display: flex; justify-content: space-between; gap: 18px; align-items: center; flex-wrap: wrap; font-family: var(--label-font); font-size: 13px; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); }
+    .topline a { text-decoration: none; }
+    .brand-row { display:flex; gap:14px; align-items:center; margin-top: 28px; }
+    .brand-row img { width:60px; height:60px; border-radius:15px; box-shadow: 0 10px 24px rgba(20,20,20,.12); }
+    .brand-copy { display:flex; flex-direction:column; }
+    .brand-copy strong { font-family: var(--label-font); font-size: 14px; letter-spacing: .08em; text-transform: uppercase; }
+    .brand-copy span { font-family: var(--label-font); font-size: 17px; color: #3b362f; font-weight: 700; letter-spacing: .015em; }
+    .eyebrow { margin-top: 54px; font-family: var(--label-font); color: var(--muted); text-transform: uppercase; letter-spacing: .08em; font-size: 13px; font-weight: 800; }
+    h1 { margin: 16px 0 8px; font-family: var(--display-latin); font-size: clamp(54px, 8vw, 108px); line-height: .86; letter-spacing: -.07em; }
+    .ua-title { font-family: var(--display-cyr); font-size: clamp(34px, 5vw, 68px); letter-spacing: -.04em; line-height: .95; font-weight: 850; color: #302b25; margin: 0 0 22px; }
+    .lead { max-width: 880px; font-size: clamp(21px, 2.3vw, 30px); line-height: 1.22; letter-spacing: -.025em; font-weight: 800; color: #25211d; }
+    main { padding: 18px 0 82px; }
+    details.category { margin: 28px 0 38px; border-top: 1px solid var(--line); padding-top: 18px; }
+    details.category > summary { display: grid; grid-template-columns: 1fr auto; gap: 18px; align-items: start; list-style: none; cursor: pointer; padding: 8px 0 18px; }
+    details.category > summary::-webkit-details-marker { display: none; }
+    details.category > summary::after { content: '+'; display: grid; place-items: center; width: 34px; height: 34px; border: 1px solid var(--line); border-radius: 999px; color: var(--accent); font-family: var(--label-font); font-size: 22px; font-weight: 800; line-height: 1; }
+    details.category[open] > summary::after { content: '-'; }
+    .category-head h2 { margin: 0 0 5px; font-family: var(--display-latin); font-size: clamp(34px, 4vw, 58px); line-height: .95; letter-spacing: -.05em; }
+    .category-head .uk { margin: 0 0 10px; font-family: var(--display-cyr); font-size: 24px; font-weight: 850; color: #302b25; }
+    .category-head p { margin: 0; max-width: 82ch; color: #3d382f; }
+    .tool-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
+    .tool-card { border: 1px solid var(--line); background: rgba(255,249,234,.72); border-radius: 8px; padding: 16px; box-shadow: 0 16px 44px rgba(20,20,20,.08); }
+    .tool-card h3 { margin: 0 0 6px; font-family: var(--label-font); font-size: 20px; line-height: 1.15; }
+    .tool-url { display: inline-block; max-width: 100%; overflow-wrap: anywhere; color: var(--accent); font-weight: 800; }
+    .facts { display: grid; grid-template-columns: minmax(120px, .45fr) 1fr; gap: 7px 12px; margin: 14px 0 0; }
+    .facts dt { color: var(--muted); font-family: var(--label-font); font-size: 12px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
+    .facts dd { margin: 0; }
+    .tag-row { display:flex; gap:7px; flex-wrap:wrap; margin: 12px 0 0; }
+    .tag { border:1px solid var(--line); border-radius:999px; padding:4px 8px; background:rgba(255,255,255,.42); font-family:var(--label-font); font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:.04em; }
+    footer { border-top: 1px solid var(--line); padding: 30px 0 46px; color: var(--muted); font-family: var(--label-font); font-size: 13px; font-weight: 700; }
+    .footer-inner { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; text-align: center; }
+    .footer-brand { display: grid; gap: 4px; justify-items: center; max-width: 760px; }
+    .footer-brand span { color: var(--muted); }
+    .trust-links { display: flex; gap: 10px 16px; align-items: center; justify-content: center; flex-wrap: wrap; width: min(860px, 100%); margin: 0 auto; text-align: center; font-family: var(--label-font); font-size: 13px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
+    .trust-links a { color: inherit; text-decoration: none; }
+    .trust-links a:hover { text-decoration: underline; text-underline-offset: .22em; }
+    @media (max-width: 680px) {
+      h1 { font-size: clamp(46px, 16vw, 76px); }
+      details.category > summary { grid-template-columns: 1fr; gap: 8px; }
+      details.category > summary::after { width: 30px; height: 30px; }
+      .facts { grid-template-columns: 1fr; gap: 2px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <div class="topline">
+      <a href="../index.html">Daily Signal</a>
+      <nav aria-label="Primary navigation">
+        <a href="../archive.html">Archive</a> ·
+        <a href="../methodology.html">Methodology</a> ·
+        <a href="../ethics.html">Ethics</a> ·
+        <a href="../subscribe.html">Subscribe</a>
+      </nav>
+    </div>
+    <div class="brand-row">
+      <img class="brand-mark" src="../static/logo-mark.png" alt="Open Source Signal mark">
+      <div class="brand-copy">
+        <strong>Open Source Signal</strong>
+        <span>Сигнал відкритих джерел</span>
+      </div>
+    </div>
+    <div class="eyebrow">Verification tools / public sources</div>
+    <h1>OSINT Signal Toolkit</h1>
+    <p class="ua-title">Інструментарій відкритих джерел</p>
+    <p class="lead">This is a curated verification-oriented toolkit, not a dump of all OSINT links. Tools are included when they support preservation, geolocation, visual checks, passive infrastructure context, media monitoring, data explanation, or safer research workflow.</p>
+  </header>
+  <main class="wrap">
+    <details class="category" id="archiving" open>
+      <summary>
+        <div class="category-head">
+          <h2>Archiving</h2>
+          <p class="uk">Архівування</p>
+          <p>Capture and compare public web pages so claims can be preserved and reviewed later. Збереження та порівняння публічних вебсторінок для подальшої перевірки тверджень.</p>
+        </div>
+      </summary>
+      <div class="tool-grid">
+        <article class="tool-card">
+          <h3>archive.today / archive.ph</h3>
+          <a class="tool-url" href="https://archive.ph/">https://archive.ph/</a>
+          <div class="tag-row">
+            <span class="tag">free</span>
+            <span class="tag">Risk low</span>
+            <span class="tag">Evidence high</span>
+            <span class="tag">recommended</span>
+          </div>
+          <dl class="facts">
+            <dt>Best for / Для чого</dt>
+            <dd>Save a public page capture; Compare page state against other archives</dd>
+            <dt>Input / Вхідні дані</dt>
+            <dd>Public URL</dd>
+            <dt>Output / Результат</dt>
+            <dd>Static archived page copy</dd>
+            <dt>Access / Доступ</dt>
+            <dd>free</dd>
+            <dt>Login / Логін</dt>
+            <dd>Not required</dd>
+            <dt>API / API</dt>
+            <dd>Not available</dd>
+            <dt>Risk / Ризик</dt>
+            <dd>Legal low; OPSEC low</dd>
+            <dt>Evidence value / Доказова цінність</dt>
+            <dd>high</dd>
+            <dt>Status / Статус</dt>
+            <dd>recommended</dd>
+            <dt>Notes / Примітки</dt>
+            <dd>Availability and domain variants can change; record the final archive URL.</dd>
+          </dl>
+        </article>
+        <article class="tool-card">
+          <h3>Perma.cc</h3>
+          <a class="tool-url" href="https://perma.cc/">https://perma.cc/</a>
+          <div class="tag-row">
+            <span class="tag">freemium</span>
+            <span class="tag">Risk low</span>
+            <span class="tag">Evidence high</span>
+            <span class="tag">recommended</span>
+          </div>
+          <dl class="facts">
+            <dt>Best for / Для чого</dt>
+            <dd>Create citation-grade web records; Preserve sources for research notes</dd>
+            <dt>Input / Вхідні дані</dt>
+            <dd>Public URL</dd>
+            <dt>Output / Результат</dt>
+            <dd>Permanent citation link and archived record</dd>
+            <dt>Access / Доступ</dt>
+            <dd>freemium</dd>
+            <dt>Login / Логін</dt>
+            <dd>Required</dd>
+            <dt>API / API</dt>
+            <dd>Available</dd>
+            <dt>Risk / Ризик</dt>
+            <dd>Legal low; OPSEC low</dd>
+            <dt>Evidence value / Доказова цінність</dt>
+            <dd>high</dd>
+            <dt>Status / Статус</dt>
+            <dd>recommended</dd>
+            <dt>Notes / Примітки</dt>
+            <dd>Free access is often tied to institutions or limited personal use.</dd>
+          </dl>
+        </article>
+        <article class="tool-card">
+          <h3>Wayback Machine</h3>
+          <a class="tool-url" href="https://web.archive.org/">https://web.archive.org/</a>
+          <div class="tag-row">
+            <span class="tag">free</span>
+            <span class="tag">Risk low</span>
+            <span class="tag">Evidence high</span>
+            <span class="tag">core</span>
+          </div>
+          <dl class="facts">
+            <dt>Best for / Для чого</dt>
+            <dd>Preserve public web pages; Compare historical versions of a site</dd>
+            <dt>Input / Вхідні дані</dt>
+            <dd>Public URL</dd>
+            <dt>Output / Результат</dt>
+            <dd>Archived snapshots and capture timeline</dd>
+            <dt>Access / Доступ</dt>
+            <dd>free</dd>
+            <dt>Login / Логін</dt>
+            <dd>Not required</dd>
+            <dt>API / API</dt>
+            <dd>Available</dd>
+            <dt>Risk / Ризик</dt>
+            <dd>Legal low; OPSEC low</dd>
+            <dt>Evidence value / Доказова цінність</dt>
+            <dd>high</dd>
+            <dt>Status / Статус</dt>
+            <dd>core</dd>
+            <dt>Notes / Примітки</dt>
+            <dd>Best used early when a source may change or disappear.</dd>
+          </dl>
+        </article>
+      </div>
+    </details>
+    <details class="category" id="geolocation">
+      <summary>
+        <div class="category-head">
+          <h2>Geolocation</h2>
+          <p class="uk">Геолокація</p>
+          <p>Map, satellite, street-level, and environmental tools for locating and contextualizing public media. Мапи, супутникові знімки, панорами та природні підказки для локалізації публічних матеріалів.</p>
+        </div>
+      </summary>
+      <div class="tool-grid">
+        <article class="tool-card">
+          <h3>Google Earth</h3>
+          <a class="tool-url" href="https://earth.google.com/">https://earth.google.com/</a>
+          <div class="tag-row">
+            <span class="tag">free</span>
+            <span class="tag">Risk low</span>
+            <span class="tag">Evidence high</span>
+            <span class="tag">core</span>
+          </div>
+          <dl class="facts">
+            <dt>Best for / Для чого</dt>
+            <dd>Inspect terrain and landmarks; Compare historical imagery where available</dd>
+            <dt>Input / Вхідні дані</dt>
+            <dd>Place name, coordinates, or visual clues</dd>
+            <dt>Output / Результат</dt>
+            <dd>Satellite imagery, 3D terrain, and map context</dd>
+            <dt>Access / Доступ</dt>
+            <dd>free</dd>
+            <dt>Login / Логін</dt>
+            <dd>Not required</dd>
+            <dt>API / API</dt>
+            <dd>Not available</dd>
+            <dt>Risk / Ризик</dt>
+            <dd>Legal low; OPSEC low</dd>
+            <dt>Evidence value / Доказова цінність</dt>
+            <dd>high</dd>
+            <dt>Status / Статус</dt>
+            <dd>core</dd>
+            <dt>Notes / Примітки</dt>
+            <dd>Imagery dates and coverage vary by location.</dd>
+          </dl>
+        </article>
+        <article class="tool-card">
+          <h3>Mapillary</h3>
+          <a class="tool-url" href="https://www.mapillary.com/">https://www.mapillary.com/</a>
+          <div class="tag-row">
+            <span class="tag">free</span>
+            <span class="tag">Risk low</span>
+            <span class="tag">Evidence medium</span>
+            <span class="tag">recommended</span>
+          </div>
+          <dl class="facts">
+            <dt>Best for / Для чого</dt>
+            <dd>Inspect street-level imagery; Compare road signs, storefronts, and landmarks</dd>
+            <dt>Input / Вхідні дані</dt>
+            <dd>Location or map area</dd>
+            <dt>Output / Результат</dt>
+            <dd>Street-level images and capture metadata</dd>
+            <dt>Access / Доступ</dt>
+            <dd>free</dd>
+            <dt>Login / Логін</dt>
+            <dd>Not required</dd>
+            <dt>API / API</dt>
+            <dd>Available</dd>
+            <dt>Risk / Ризик</dt>
+            <dd>Legal low; OPSEC low</dd>
+            <dt>Evidence value / Доказова цінність</dt>
+            <dd>medium</dd>
+            <dt>Status / Статус</dt>
+            <dd>recommended</dd>
+            <dt>Notes / Примітки</dt>
+            <dd>Coverage is uneven and imagery may be old.</dd>
+          </dl>
+        </article>
+        <article class="tool-card">
+          <h3>NASA Worldview</h3>
+          <a class="tool-url" href="https://worldview.earthdata.nasa.gov/">https://worldview.earthdata.nasa.gov/</a>
+          <div class="tag-row">
+            <span class="tag">free</span>
+            <span class="tag">Risk low</span>
+            <span class="tag">Evidence medium</span>
+            <span class="tag">recommended</span>
+          </div>
+          <dl class="facts">
+            <dt>Best for / Для чого</dt>
+            <dd>Review near-real-time Earth observation layers; Check fires, smoke, weather, and environmental context</dd>
+            <dt>Input / Вхідні дані</dt>
+            <dd>Location, date, and selected imagery layers</dd>
+            <dt>Output / Результат</dt>
+            <dd>Satellite layer views and image exports</dd>
+            <dt>Access / Доступ</dt>
+            <dd>free</dd>
+            <dt>Login / Логін</dt>
+            <dd>Not required</dd>
+            <dt>API / API</dt>
+            <dd>Available</dd>
+            <dt>Risk / Ризик</dt>
+            <dd>Legal low; OPSEC low</dd>
+            <dt>Evidence value / Доказова цінність</dt>
+            <dd>medium</dd>
+            <dt>Status / Статус</dt>
+            <dd>recommended</dd>
+            <dt>Notes / Примітки</dt>
+            <dd>Resolution depends on the selected sensor and layer.</dd>
+          </dl>
+        </article>
+        <article class="tool-card">
+          <h3>OpenStreetMap</h3>
+          <a class="tool-url" href="https://www.openstreetmap.org/">https://www.openstreetmap.org/</a>
+          <div class="tag-row">
+            <span class="tag">free</span>
+            <span class="tag">Risk low</span>
+            <span class="tag">Evidence medium</span>
+            <span class="tag">core</span>
+          </div>
+          <dl class="facts">
+            <dt>Best for / Для чого</dt>
+            <dd>Check roads, buildings, and local place names; Compare mapped features against visual evidence</dd>
+            <dt>Input / Вхідні дані</dt>
+            <dd>Place name, coordinates, or map area</dd>
+            <dt>Output / Результат</dt>
+            <dd>Open map data and feature metadata</dd>
+            <dt>Access / Доступ</dt>
+            <dd>free</dd>
+            <dt>Login / Логін</dt>
+            <dd>Not required</dd>
+            <dt>API / API</dt>
+            <dd>Available</dd>
+            <dt>Risk / Ризик</dt>
+            <dd>Legal low; OPSEC low</dd>
+            <dt>Evidence value / Доказова цінність</dt>
+            <dd>medium</dd>
+            <dt>Status / Статус</dt>
+            <dd>core</dd>
+            <dt>Notes / Примітки</dt>
+            <dd>Treat user-edited map details as leads and corroborate important claims.</dd>
+          </dl>
+        </article>
+        <article class="tool-card">
+          <h3>Sentinel Hub EO Browser</h3>
+          <a class="tool-url" href="https://apps.sentinel-hub.com/eo-browser/">https://apps.sentinel-hub.com/eo-browser/</a>
+          <div class="tag-row">
+            <span class="tag">freemium</span>
+            <span class="tag">Risk low</span>
+            <span class="tag">Evidence high</span>
+            <span class="tag">recommended</span>
+          </div>
+          <dl class="facts">
+            <dt>Best for / Для чого</dt>
+            <dd>Review satellite imagery over time; Check environmental and conflict-related changes</dd>
+            <dt>Input / Вхідні дані</dt>
+            <dd>Coordinates, area, time range, and satellite layer</dd>
+            <dt>Output / Результат</dt>
+            <dd>Satellite scenes, visualizations, and exports</dd>
+            <dt>Access / Доступ</dt>
+            <dd>freemium</dd>
+            <dt>Login / Логін</dt>
+            <dd>Not required</dd>
+            <dt>API / API</dt>
+            <dd>Available</dd>
+            <dt>Risk / Ризик</dt>
+            <dd>Legal low; OPSEC low</dd>
+            <dt>Evidence value / Доказова цінність</dt>
+            <dd>high</dd>
+            <dt>Status / Статус</dt>
+            <dd>recommended</dd>
+            <dt>Notes / Примітки</dt>
+            <dd>Some exports and advanced features require an account.</dd>
+          </dl>
+        </article>
+        <article class="tool-card">
+          <h3>SunCalc</h3>
+          <a class="tool-url" href="https://www.suncalc.org/">https://www.suncalc.org/</a>
+          <div class="tag-row">
+            <span class="tag">free</span>
+            <span class="tag">Risk low</span>
+            <span class="tag">Evidence medium</span>
+            <span class="tag">core</span>
+          </div>
+          <dl class="facts">
+            <dt>Best for / Для чого</dt>
+            <dd>Estimate sun position from shadows; Test time-of-day hypotheses</dd>
+            <dt>Input / Вхідні дані</dt>
+            <dd>Location, date, and time</dd>
+            <dt>Output / Результат</dt>
+            <dd>Sun path, azimuth, altitude, and shadow direction</dd>
+            <dt>Access / Доступ</dt>
+            <dd>free</dd>
+            <dt>Login / Логін</dt>
+            <dd>Not required</dd>
+            <dt>API / API</dt>
+            <dd>Not available</dd>
+            <dt>Risk / Ризик</dt>
+            <dd>Legal low; OPSEC low</dd>
+            <dt>Evidence value / Доказова цінність</dt>
+            <dd>medium</dd>
+            <dt>Status / Статус</dt>
+            <dd>core</dd>
+            <dt>Notes / Примітки</dt>
+            <dd>Works best when camera direction and local geometry are understood.</dd>
+          </dl>
+        </article>
+      </div>
+    </details>
+    <details class="category" id="image_video_verification">
+      <summary>
+        <div class="category-head">
+          <h2>Image and Video Verification</h2>
+          <p class="uk">Верифікація фото й відео</p>
+          <p>Reverse search, metadata, and forensic helpers for checking visual evidence and media provenance. Зворотний пошук, метадані та форензика для перевірки візуальних доказів і походження медіа.</p>
+        </div>
+      </summary>
+      <div class="tool-grid">
+        <article class="tool-card">
+          <h3>ExifTool</h3>
+          <a class="tool-url" href="https://exiftool.org/">https://exiftool.org/</a>
+          <div class="tag-row">
+            <span class="tag">free</span>
+            <span class="tag">Risk low</span>
+            <span class="tag">Evidence medium</span>
+            <span class="tag">core</span>
+          </div>
+          <dl class="facts">
+            <dt>Best for / Для чого</dt>
+            <dd>Inspect metadata from media files; Preserve metadata in evidence notes</dd>
+            <dt>Input / Вхідні дані</dt>
+            <dd>Local image, video, audio, or document file</dd>
+            <dt>Output / Результат</dt>
+            <dd>Metadata fields and timestamps</dd>
+            <dt>Access / Доступ</dt>
+            <dd>free</dd>
+            <dt>Login / Логін</dt>
+            <dd>Not required</dd>
+            <dt>API / API</dt>
+            <dd>Not available</dd>
+            <dt>Risk / Ризик</dt>
+            <dd>Legal low; OPSEC low</dd>
+            <dt>Evidence value / Доказова цінність</dt>
+            <dd>medium</dd>
+            <dt>Status / Статус</dt>
+            <dd>core</dd>
+            <dt>Notes / Примітки</dt>
+            <dd>Metadata can be missing, edited, or misleading; treat it as one signal.</dd>
+          </dl>
+        </article>
+        <article class="tool-card">
+          <h3>Forensically</h3>
+          <a class="tool-url" href="https://29a.ch/photo-forensics/">https://29a.ch/photo-forensics/</a>
+          <div class="tag-row">
+            <span class="tag">free</span>
+            <span class="tag">Risk low</span>
+            <span class="tag">Evidence medium</span>
+            <span class="tag">caution</span>
+          </div>
+          <dl class="facts">
+            <dt>Best for / Для чого</dt>
+            <dd>Inspect images for visual anomalies; Compare compression and clone-detection signals</dd>
+            <dt>Input / Вхідні дані</dt>
+            <dd>Image file</dd>
+            <dt>Output / Результат</dt>
+            <dd>Visual forensic analysis views</dd>
+            <dt>Access / Доступ</dt>
+            <dd>free</dd>
+            <dt>Login / Логін</dt>
+            <dd>Not required</dd>
+            <dt>API / API</dt>
+            <dd>Not available</dd>
+            <dt>Risk / Ризик</dt>
+            <dd>Legal low; OPSEC medium</dd>
+            <dt>Evidence value / Доказова цінність</dt>
+            <dd>medium</dd>
+            <dt>Status / Статус</dt>
+            <dd>caution</dd>
+            <dt>Notes / Примітки</dt>
+            <dd>Forensic visualizations are not proof by themselves and can be overread.</dd>
+          </dl>
+        </article>
+        <article class="tool-card">
+          <h3>Google Lens</h3>
+          <a class="tool-url" href="https://lens.google/">https://lens.google/</a>
+          <div class="tag-row">
+            <span class="tag">free</span>
+            <span class="tag">Risk low</span>
+            <span class="tag">Evidence medium</span>
+            <span class="tag">recommended</span>
+          </div>
+          <dl class="facts">
+            <dt>Best for / Для чого</dt>
+            <dd>Reverse image search; Identify objects, signs, and similar images</dd>
+            <dt>Input / Вхідні дані</dt>
+            <dd>Image or image crop</dd>
+            <dt>Output / Результат</dt>
+            <dd>Similar images, web matches, and object guesses</dd>
+            <dt>Access / Доступ</dt>
+            <dd>free</dd>
+            <dt>Login / Логін</dt>
+            <dd>Not required</dd>
+            <dt>API / API</dt>
+            <dd>Not available</dd>
+            <dt>Risk / Ризик</dt>
+            <dd>Legal low; OPSEC medium</dd>
+            <dt>Evidence value / Доказова цінність</dt>
+            <dd>medium</dd>
+            <dt>Status / Статус</dt>
+            <dd>recommended</dd>
+            <dt>Notes / Примітки</dt>
+            <dd>Uploading sensitive images to third-party services requires judgment.</dd>
+          </dl>
+        </article>
+        <article class="tool-card">
+          <h3>InVID / WeVerify</h3>
+          <a class="tool-url" href="https://www.invid-project.eu/tools-and-services/invid-verification-plugin/">https://www.invid-project.eu/tools-and-services/invid-verification-plugin/</a>
+          <div class="tag-row">
+            <span class="tag">free</span>
+            <span class="tag">Risk low</span>
+            <span class="tag">Evidence high</span>
+            <span class="tag">core</span>
+          </div>
+          <dl class="facts">
+            <dt>Best for / Для чого</dt>
+            <dd>Break videos into keyframes; Run verification checks on social video</dd>
+            <dt>Input / Вхідні дані</dt>
+            <dd>Video URL, image, or local media</dd>
+            <dt>Output / Результат</dt>
+            <dd>Keyframes, metadata helpers, and search shortcuts</dd>
+            <dt>Access / Доступ</dt>
+            <dd>free</dd>
+            <dt>Login / Логін</dt>
+            <dd>Not required</dd>
+            <dt>API / API</dt>
+            <dd>Not available</dd>
+            <dt>Risk / Ризик</dt>
+            <dd>Legal low; OPSEC medium</dd>
+            <dt>Evidence value / Доказова цінність</dt>
+            <dd>high</dd>
+            <dt>Status / Статус</dt>
+            <dd>core</dd>
+            <dt>Notes / Примітки</dt>
+            <dd>Browser extension permissions should be reviewed before use.</dd>
+          </dl>
+        </article>
+        <article class="tool-card">
+          <h3>TinEye</h3>
+          <a class="tool-url" href="https://tineye.com/">https://tineye.com/</a>
+          <div class="tag-row">
+            <span class="tag">freemium</span>
+            <span class="tag">Risk low</span>
+            <span class="tag">Evidence high</span>
+            <span class="tag">core</span>
+          </div>
+          <dl class="facts">
+            <dt>Best for / Для чого</dt>
+            <dd>Reverse image search; Find older copies of an image</dd>
+            <dt>Input / Вхідні дані</dt>
+            <dd>Image upload or image URL</dd>
+            <dt>Output / Результат</dt>
+            <dd>Matching images, dates, and source pages</dd>
+            <dt>Access / Доступ</dt>
+            <dd>freemium</dd>
+            <dt>Login / Логін</dt>
+            <dd>Not required</dd>
+            <dt>API / API</dt>
+            <dd>Available</dd>
+            <dt>Risk / Ризик</dt>
+            <dd>Legal low; OPSEC medium</dd>
+            <dt>Evidence value / Доказова цінність</dt>
+            <dd>high</dd>
+            <dt>Status / Статус</dt>
+            <dd>core</dd>
+            <dt>Notes / Примітки</dt>
+            <dd>Combine with other reverse search engines for better coverage.</dd>
+          </dl>
+        </article>
+      </div>
+    </details>
+    <details class="category" id="domains_infrastructure">
+      <summary>
+        <div class="category-head">
+          <h2>Domains and Infrastructure</h2>
+          <p class="uk">Домени й інфраструктура</p>
+          <p>Public lookups that explain domain ownership signals, certificates, DNS, and visible web technology. Публічні довідники для доменів, сертифікатів, DNS та видимих вебтехнологій.</p>
+        </div>
+      </summary>
+      <div class="tool-grid">
+        <article class="tool-card">
+          <h3>BuiltWith</h3>
+          <a class="tool-url" href="https://builtwith.com/">https://builtwith.com/</a>
+          <div class="tag-row">
+            <span class="tag">freemium</span>
+            <span class="tag">Risk low</span>
+            <span class="tag">Evidence medium</span>
+            <span class="tag">situational</span>
+          </div>
+          <dl class="facts">
+            <dt>Best for / Для чого</dt>
+            <dd>Identify visible web technologies; Compare site technology and tracking changes</dd>
+            <dt>Input / Вхідні дані</dt>
+            <dd>Domain or URL</dd>
+            <dt>Output / Результат</dt>
+            <dd>Technology profile, tags, and historical signals</dd>
+            <dt>Access / Доступ</dt>
+            <dd>freemium</dd>
+            <dt>Login / Логін</dt>
+            <dd>Not required</dd>
+            <dt>API / API</dt>
+            <dd>Available</dd>
+            <dt>Risk / Ризик</dt>
+            <dd>Legal low; OPSEC low</dd>
+            <dt>Evidence value / Доказова цінність</dt>
+            <dd>medium</dd>
+            <dt>Status / Статус</dt>
+            <dd>situational</dd>
+            <dt>Notes / Примітки</dt>
+            <dd>Commercial limits apply to deeper history and automation.</dd>
+          </dl>
+        </article>
+        <article class="tool-card">
+          <h3>crt.sh</h3>
+          <a class="tool-url" href="https://crt.sh/">https://crt.sh/</a>
+          <div class="tag-row">
+            <span class="tag">free</span>
+            <span class="tag">Risk low</span>
+            <span class="tag">Evidence medium</span>
+            <span class="tag">recommended</span>
+          </div>
+          <dl class="facts">
+            <dt>Best for / Для чого</dt>
+            <dd>Search certificate transparency logs; Find related subdomains from certificates</dd>
+            <dt>Input / Вхідні дані</dt>
+            <dd>Domain name or certificate search pattern</dd>
+            <dt>Output / Результат</dt>
+            <dd>Certificate records and hostnames</dd>
+            <dt>Access / Доступ</dt>
+            <dd>free</dd>
+            <dt>Login / Логін</dt>
+            <dd>Not required</dd>
+            <dt>API / API</dt>
+            <dd>Available</dd>
+            <dt>Risk / Ризик</dt>
+            <dd>Legal low; OPSEC low</dd>
+            <dt>Evidence value / Доказова цінність</dt>
+            <dd>medium</dd>
+            <dt>Status / Статус</dt>
+            <dd>recommended</dd>
+            <dt>Notes / Примітки</dt>
+            <dd>Certificate records can include stale or unrelated hostnames.</dd>
+          </dl>
+        </article>
+        <article class="tool-card">
+          <h3>DNSDumpster</h3>
+          <a class="tool-url" href="https://dnsdumpster.com/">https://dnsdumpster.com/</a>
+          <div class="tag-row">
+            <span class="tag">free</span>
+            <span class="tag">Risk low</span>
+            <span class="tag">Evidence medium</span>
+            <span class="tag">recommended</span>
+          </div>
+          <dl class="facts">
+            <dt>Best for / Для чого</dt>
+            <dd>Map public DNS records; Generate passive infrastructure leads</dd>
+            <dt>Input / Вхідні дані</dt>
+            <dd>Domain name</dd>
+            <dt>Output / Результат</dt>
+            <dd>DNS records, hosts, and network map</dd>
+            <dt>Access / Доступ</dt>
+            <dd>free</dd>
+            <dt>Login / Логін</dt>
+            <dd>Not required</dd>
+            <dt>API / API</dt>
+            <dd>Not available</dd>
+            <dt>Risk / Ризик</dt>
+            <dd>Legal low; OPSEC low</dd>
+            <dt>Evidence value / Доказова цінність</dt>
+            <dd>medium</dd>
+            <dt>Status / Статус</dt>
+            <dd>recommended</dd>
+            <dt>Notes / Примітки</dt>
+            <dd>Use for context, not vulnerability discovery or active probing.</dd>
+          </dl>
+        </article>
+        <article class="tool-card">
+          <h3>RIPEstat</h3>
+          <a class="tool-url" href="https://stat.ripe.net/">https://stat.ripe.net/</a>
+          <div class="tag-row">
+            <span class="tag">free</span>
+            <span class="tag">Risk low</span>
+            <span class="tag">Evidence medium</span>
+            <span class="tag">recommended</span>
+          </div>
+          <dl class="facts">
+            <dt>Best for / Для чого</dt>
+            <dd>Inspect IP and ASN context; Review routing and registry history</dd>
+            <dt>Input / Вхідні дані</dt>
+            <dd>IP address, prefix, or ASN</dd>
+            <dt>Output / Результат</dt>
+            <dd>Registry, routing, DNS, and network relationship data</dd>
+            <dt>Access / Доступ</dt>
+            <dd>free</dd>
+            <dt>Login / Логін</dt>
+            <dd>Not required</dd>
+            <dt>API / API</dt>
+            <dd>Available</dd>
+            <dt>Risk / Ризик</dt>
+            <dd>Legal low; OPSEC low</dd>
+            <dt>Evidence value / Доказова цінність</dt>
+            <dd>medium</dd>
+            <dt>Status / Статус</dt>
+            <dd>recommended</dd>
+            <dt>Notes / Примітки</dt>
+            <dd>Registry data explains networks, not direct responsibility.</dd>
+          </dl>
+        </article>
+        <article class="tool-card">
+          <h3>Wappalyzer</h3>
+          <a class="tool-url" href="https://www.wappalyzer.com/">https://www.wappalyzer.com/</a>
+          <div class="tag-row">
+            <span class="tag">freemium</span>
+            <span class="tag">Risk low</span>
+            <span class="tag">Evidence low</span>
+            <span class="tag">situational</span>
+          </div>
+          <dl class="facts">
+            <dt>Best for / Для чого</dt>
+            <dd>Identify web frameworks and services; Document visible technology stack</dd>
+            <dt>Input / Вхідні дані</dt>
+            <dd>Domain, URL, or browser visit</dd>
+            <dt>Output / Результат</dt>
+            <dd>Detected web technologies and categories</dd>
+            <dt>Access / Доступ</dt>
+            <dd>freemium</dd>
+            <dt>Login / Логін</dt>
+            <dd>Not required</dd>
+            <dt>API / API</dt>
+            <dd>Available</dd>
+            <dt>Risk / Ризик</dt>
+            <dd>Legal low; OPSEC low</dd>
+            <dt>Evidence value / Доказова цінність</dt>
+            <dd>low</dd>
+            <dt>Status / Статус</dt>
+            <dd>situational</dd>
+            <dt>Notes / Примітки</dt>
+            <dd>Browser extension use can expose browsing context to the service.</dd>
+          </dl>
+        </article>
+        <article class="tool-card">
+          <h3>Whois</h3>
+          <a class="tool-url" href="https://lookup.icann.org/">https://lookup.icann.org/</a>
+          <div class="tag-row">
+            <span class="tag">free</span>
+            <span class="tag">Risk low</span>
+            <span class="tag">Evidence medium</span>
+            <span class="tag">core</span>
+          </div>
+          <dl class="facts">
+            <dt>Best for / Для чого</dt>
+            <dd>Check domain registration data; Record registrar and registration timeline</dd>
+            <dt>Input / Вхідні дані</dt>
+            <dd>Domain name</dd>
+            <dt>Output / Результат</dt>
+            <dd>Registration, registrar, nameserver, and status records</dd>
+            <dt>Access / Доступ</dt>
+            <dd>free</dd>
+            <dt>Login / Логін</dt>
+            <dd>Not required</dd>
+            <dt>API / API</dt>
+            <dd>Not available</dd>
+            <dt>Risk / Ризик</dt>
+            <dd>Legal low; OPSEC low</dd>
+            <dt>Evidence value / Доказова цінність</dt>
+            <dd>medium</dd>
+            <dt>Status / Статус</dt>
+            <dd>core</dd>
+            <dt>Notes / Примітки</dt>
+            <dd>Privacy services and redactions limit attribution value.</dd>
+          </dl>
+        </article>
+      </div>
+    </details>
+    <details class="category" id="news_media_monitoring">
+      <summary>
+        <div class="category-head">
+          <h2>News and Media Monitoring</h2>
+          <p class="uk">Моніторинг новин і медіа</p>
+          <p>Public datasets and monitoring services for tracking narratives, events, and media coverage. Публічні набори даних і сервіси для відстеження наративів, подій та медіависвітлення.</p>
+        </div>
+      </summary>
+      <div class="tool-grid">
+        <article class="tool-card">
+          <h3>GDELT</h3>
+          <a class="tool-url" href="https://www.gdeltproject.org/">https://www.gdeltproject.org/</a>
+          <div class="tag-row">
+            <span class="tag">free</span>
+            <span class="tag">Risk low</span>
+            <span class="tag">Evidence medium</span>
+            <span class="tag">core</span>
+          </div>
+          <dl class="facts">
+            <dt>Best for / Для чого</dt>
+            <dd>Monitor global news coverage; Search events, themes, and source mentions</dd>
+            <dt>Input / Вхідні дані</dt>
+            <dd>Query, date range, country, source, or theme</dd>
+            <dt>Output / Результат</dt>
+            <dd>News records, event data, and article metadata</dd>
+            <dt>Access / Доступ</dt>
+            <dd>free</dd>
+            <dt>Login / Логін</dt>
+            <dd>Not required</dd>
+            <dt>API / API</dt>
+            <dd>Available</dd>
+            <dt>Risk / Ризик</dt>
+            <dd>Legal low; OPSEC low</dd>
+            <dt>Evidence value / Доказова цінність</dt>
+            <dd>medium</dd>
+            <dt>Status / Статус</dt>
+            <dd>core</dd>
+            <dt>Notes / Примітки</dt>
+            <dd>Machine-coded event data needs sampling and source review.</dd>
+          </dl>
+        </article>
+        <article class="tool-card">
+          <h3>Media Cloud</h3>
+          <a class="tool-url" href="https://mediacloud.org/">https://mediacloud.org/</a>
+          <div class="tag-row">
+            <span class="tag">free</span>
+            <span class="tag">Risk low</span>
+            <span class="tag">Evidence medium</span>
+            <span class="tag">recommended</span>
+          </div>
+          <dl class="facts">
+            <dt>Best for / Для чого</dt>
+            <dd>Analyze media attention over time; Compare coverage across source collections</dd>
+            <dt>Input / Вхідні дані</dt>
+            <dd>Keywords, media collections, and date range</dd>
+            <dt>Output / Результат</dt>
+            <dd>Story lists, attention metrics, and source comparisons</dd>
+            <dt>Access / Доступ</dt>
+            <dd>free</dd>
+            <dt>Login / Логін</dt>
+            <dd>Required</dd>
+            <dt>API / API</dt>
+            <dd>Available</dd>
+            <dt>Risk / Ризик</dt>
+            <dd>Legal low; OPSEC low</dd>
+            <dt>Evidence value / Доказова цінність</dt>
+            <dd>medium</dd>
+            <dt>Status / Статус</dt>
+            <dd>recommended</dd>
+            <dt>Notes / Примітки</dt>
+            <dd>Collection definitions shape the results and should be documented.</dd>
+          </dl>
+        </article>
+      </div>
+    </details>
+    <details class="category" id="data_visualization">
+      <summary>
+        <div class="category-head">
+          <h2>Data Visualization</h2>
+          <p class="uk">Візуалізація даних</p>
+          <p>Tools for exploring, publishing, and explaining structured evidence and source networks. Інструменти для дослідження, публікації та пояснення структурованих доказів і мереж джерел.</p>
+        </div>
+      </summary>
+      <div class="tool-grid">
+        <article class="tool-card">
+          <h3>Datasette</h3>
+          <a class="tool-url" href="https://datasette.io/">https://datasette.io/</a>
+          <div class="tag-row">
+            <span class="tag">free</span>
+            <span class="tag">Risk low</span>
+            <span class="tag">Evidence high</span>
+            <span class="tag">recommended</span>
+          </div>
+          <dl class="facts">
+            <dt>Best for / Для чого</dt>
+            <dd>Publish small structured datasets; Explore SQLite-backed evidence tables</dd>
+            <dt>Input / Вхідні дані</dt>
+            <dd>SQLite database or structured data converted to SQLite</dd>
+            <dt>Output / Результат</dt>
+            <dd>Searchable web interface and JSON API</dd>
+            <dt>Access / Доступ</dt>
+            <dd>free</dd>
+            <dt>Login / Логін</dt>
+            <dd>Not required</dd>
+            <dt>API / API</dt>
+            <dd>Available</dd>
+            <dt>Risk / Ризик</dt>
+            <dd>Legal low; OPSEC low</dd>
+            <dt>Evidence value / Доказова цінність</dt>
+            <dd>high</dd>
+            <dt>Status / Статус</dt>
+            <dd>recommended</dd>
+            <dt>Notes / Примітки</dt>
+            <dd>Review data sensitivity before publishing any dataset.</dd>
+          </dl>
+        </article>
+        <article class="tool-card">
+          <h3>Gephi</h3>
+          <a class="tool-url" href="https://gephi.org/">https://gephi.org/</a>
+          <div class="tag-row">
+            <span class="tag">free</span>
+            <span class="tag">Risk low</span>
+            <span class="tag">Evidence medium</span>
+            <span class="tag">recommended</span>
+          </div>
+          <dl class="facts">
+            <dt>Best for / Для чого</dt>
+            <dd>Explore network relationships; Visualize source, entity, or link graphs</dd>
+            <dt>Input / Вхідні дані</dt>
+            <dd>Nodes and edges as CSV, GEXF, GraphML, or similar</dd>
+            <dt>Output / Результат</dt>
+            <dd>Network visualizations and graph metrics</dd>
+            <dt>Access / Доступ</dt>
+            <dd>free</dd>
+            <dt>Login / Логін</dt>
+            <dd>Not required</dd>
+            <dt>API / API</dt>
+            <dd>Not available</dd>
+            <dt>Risk / Ризик</dt>
+            <dd>Legal low; OPSEC low</dd>
+            <dt>Evidence value / Доказова цінність</dt>
+            <dd>medium</dd>
+            <dt>Status / Статус</dt>
+            <dd>recommended</dd>
+            <dt>Notes / Примітки</dt>
+            <dd>Layout choices can mislead; publish data definitions with visuals.</dd>
+          </dl>
+        </article>
+        <article class="tool-card">
+          <h3>RAWGraphs</h3>
+          <a class="tool-url" href="https://www.rawgraphs.io/">https://www.rawgraphs.io/</a>
+          <div class="tag-row">
+            <span class="tag">free</span>
+            <span class="tag">Risk low</span>
+            <span class="tag">Evidence medium</span>
+            <span class="tag">recommended</span>
+          </div>
+          <dl class="facts">
+            <dt>Best for / Для чого</dt>
+            <dd>Turn tabular data into charts; Prototype explanatory visualizations</dd>
+            <dt>Input / Вхідні дані</dt>
+            <dd>CSV, TSV, or pasted tabular data</dd>
+            <dt>Output / Результат</dt>
+            <dd>Charts and exported SVG or image files</dd>
+            <dt>Access / Доступ</dt>
+            <dd>free</dd>
+            <dt>Login / Логін</dt>
+            <dd>Not required</dd>
+            <dt>API / API</dt>
+            <dd>Not available</dd>
+            <dt>Risk / Ризик</dt>
+            <dd>Legal low; OPSEC medium</dd>
+            <dt>Evidence value / Доказова цінність</dt>
+            <dd>medium</dd>
+            <dt>Status / Статус</dt>
+            <dd>recommended</dd>
+            <dt>Notes / Примітки</dt>
+            <dd>Use local/offline options for sensitive unpublished data.</dd>
+          </dl>
+        </article>
+      </div>
+    </details>
+    <details class="category" id="workflow_methods">
+      <summary>
+        <div class="category-head">
+          <h2>Workflow Methods</h2>
+          <p class="uk">Робочі методики</p>
+          <p>Note-taking and workflow tools that help researchers keep source trails, hypotheses, and checks organized. Інструменти для нотаток і процесів, які допомагають впорядковувати джерела, гіпотези й перевірки.</p>
+        </div>
+      </summary>
+      <div class="tool-grid">
+        <article class="tool-card">
+          <h3>Obsidian</h3>
+          <a class="tool-url" href="https://obsidian.md/">https://obsidian.md/</a>
+          <div class="tag-row">
+            <span class="tag">freemium</span>
+            <span class="tag">Risk low</span>
+            <span class="tag">Evidence medium</span>
+            <span class="tag">recommended</span>
+          </div>
+          <dl class="facts">
+            <dt>Best for / Для чого</dt>
+            <dd>Maintain source notes and hypotheses; Link evidence, checks, and open questions</dd>
+            <dt>Input / Вхідні дані</dt>
+            <dd>Markdown notes and local files</dd>
+            <dt>Output / Результат</dt>
+            <dd>Local knowledge base and linked research graph</dd>
+            <dt>Access / Доступ</dt>
+            <dd>freemium</dd>
+            <dt>Login / Логін</dt>
+            <dd>Not required</dd>
+            <dt>API / API</dt>
+            <dd>Not available</dd>
+            <dt>Risk / Ризик</dt>
+            <dd>Legal low; OPSEC low</dd>
+            <dt>Evidence value / Доказова цінність</dt>
+            <dd>medium</dd>
+            <dt>Status / Статус</dt>
+            <dd>recommended</dd>
+            <dt>Notes / Примітки</dt>
+            <dd>Sync and plugin choices should match the sensitivity of the work.</dd>
+          </dl>
+        </article>
+      </div>
+    </details>
+  </main>
+  <footer>
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <strong>Open Source Signal / Сигнал відкритих джерел.</strong>
+        <span>Ukrainian accountability OSINT journal.</span>
+      </div>
+      <nav class="trust-links" aria-label="Trust and discovery pages">
+        <a href="../about.html">About</a>
+        <a href="../methodology.html">Methodology</a>
+        <a href="../ethics.html">Ethics</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../subscribe.html">Subscribe</a>
+        <a href="../archive.html">Archive</a>
+        <a href="../feed.xml">RSS</a>
+        <a href="https://t.me/open_source_signal_ua">Telegram</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

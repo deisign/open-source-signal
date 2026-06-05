@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>OSINT Signal Toolkit</title>
+  <meta name="description" content="A curated verification-oriented OSINT toolkit from Open Source Signal.">
+  <link rel="canonical" href="{{ page_url }}">
+  <meta property="og:title" content="OSINT Signal Toolkit — {{ config['site_title_en'] }}">
+  <meta property="og:description" content="A curated verification-oriented toolkit, not a dump of all OSINT links.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page_url }}">
+  <meta property="og:image" content="{{ og_image_url }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="OSINT Signal Toolkit">
+  <meta name="twitter:description" content="A curated verification-oriented toolkit, not a dump of all OSINT links.">
+  <meta name="twitter:image" content="{{ og_image_url }}">
+  <link rel="alternate" type="application/rss+xml" title="Open Source Signal RSS" href="{{ asset_prefix }}{{ config['rss_path'] }}">
+  <meta name="theme-color" content="#141414">
+  <link rel="icon" href="{{ asset_prefix }}static/logo-mark.png" type="image/png">
+  <link rel="shortcut icon" href="{{ asset_prefix }}static/favicon.ico">
+  <link rel="apple-touch-icon" href="{{ asset_prefix }}static/apple-touch-icon.png">
+  <link rel="manifest" href="{{ asset_prefix }}static/site.webmanifest">
+  {{ analytics_snippet | safe }}
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500;700;800&family=Fraunces:opsz,wght@9..144,700;9..144,850&family=Inter:wght@400;600;800&family=Source+Serif+4:opsz,wght@8..60,700;8..60,850&display=swap');
+    :root {
+      --display-latin: Fraunces, Georgia, 'Times New Roman', serif;
+      --display-cyr: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+      --label-font: Arimo, Arial, Helvetica, sans-serif;
+      --paper: #F2EDDD;
+      --paper-2: #FFF9EA;
+      --ink: #141414;
+      --muted: #6d665a;
+      --line: rgba(20,20,20,.16);
+      --accent: #245c73;
+      --signal: #D6422B;
+      --shadow: 0 24px 70px rgba(20,20,20,.12);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 12% 14%, rgba(214,66,43,.16), transparent 26rem),
+        radial-gradient(circle at 84% 10%, rgba(36,92,115,.16), transparent 24rem),
+        linear-gradient(135deg, #f7f0df, #ece1c6 58%, #d9cfb7);
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 17px;
+      line-height: 1.56;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: .2;
+      background-image: linear-gradient(rgba(20,20,20,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(20,20,20,.035) 1px, transparent 1px);
+      background-size: 28px 28px;
+      mask-image: linear-gradient(to bottom, #000, transparent 85%);
+    }
+    a { color: inherit; text-decoration-thickness: .1em; text-underline-offset: .18em; }
+    .wrap { width: min(1120px, calc(100% - 36px)); margin: 0 auto; }
+    header { padding: 56px 0 30px; }
+    .topline { display: flex; justify-content: space-between; gap: 18px; align-items: center; flex-wrap: wrap; font-family: var(--label-font); font-size: 13px; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); }
+    .topline a { text-decoration: none; }
+    .brand-row { display:flex; gap:14px; align-items:center; margin-top: 28px; }
+    .brand-row img { width:60px; height:60px; border-radius:15px; box-shadow: 0 10px 24px rgba(20,20,20,.12); }
+    .brand-copy { display:flex; flex-direction:column; }
+    .brand-copy strong { font-family: var(--label-font); font-size: 14px; letter-spacing: .08em; text-transform: uppercase; }
+    .brand-copy span { font-family: var(--label-font); font-size: 17px; color: #3b362f; font-weight: 700; letter-spacing: .015em; }
+    .eyebrow { margin-top: 54px; font-family: var(--label-font); color: var(--muted); text-transform: uppercase; letter-spacing: .08em; font-size: 13px; font-weight: 800; }
+    h1 { margin: 16px 0 8px; font-family: var(--display-latin); font-size: clamp(54px, 8vw, 108px); line-height: .86; letter-spacing: -.07em; }
+    .ua-title { font-family: var(--display-cyr); font-size: clamp(34px, 5vw, 68px); letter-spacing: -.04em; line-height: .95; font-weight: 850; color: #302b25; margin: 0 0 22px; }
+    .lead { max-width: 880px; font-size: clamp(21px, 2.3vw, 30px); line-height: 1.22; letter-spacing: -.025em; font-weight: 800; color: #25211d; }
+    main { padding: 18px 0 82px; }
+    details.category { margin: 28px 0 38px; border-top: 1px solid var(--line); padding-top: 18px; }
+    details.category > summary { display: grid; grid-template-columns: 1fr auto; gap: 18px; align-items: start; list-style: none; cursor: pointer; padding: 8px 0 18px; }
+    details.category > summary::-webkit-details-marker { display: none; }
+    details.category > summary::after { content: '+'; display: grid; place-items: center; width: 34px; height: 34px; border: 1px solid var(--line); border-radius: 999px; color: var(--accent); font-family: var(--label-font); font-size: 22px; font-weight: 800; line-height: 1; }
+    details.category[open] > summary::after { content: '-'; }
+    .category-head h2 { margin: 0 0 5px; font-family: var(--display-latin); font-size: clamp(34px, 4vw, 58px); line-height: .95; letter-spacing: -.05em; }
+    .category-head .uk { margin: 0 0 10px; font-family: var(--display-cyr); font-size: 24px; font-weight: 850; color: #302b25; }
+    .category-head p { margin: 0; max-width: 82ch; color: #3d382f; }
+    .tool-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
+    .tool-card { border: 1px solid var(--line); background: rgba(255,249,234,.72); border-radius: 8px; padding: 16px; box-shadow: 0 16px 44px rgba(20,20,20,.08); }
+    .tool-card h3 { margin: 0 0 6px; font-family: var(--label-font); font-size: 20px; line-height: 1.15; }
+    .tool-url { display: inline-block; max-width: 100%; overflow-wrap: anywhere; color: var(--accent); font-weight: 800; }
+    .facts { display: grid; grid-template-columns: minmax(120px, .45fr) 1fr; gap: 7px 12px; margin: 14px 0 0; }
+    .facts dt { color: var(--muted); font-family: var(--label-font); font-size: 12px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
+    .facts dd { margin: 0; }
+    .tag-row { display:flex; gap:7px; flex-wrap:wrap; margin: 12px 0 0; }
+    .tag { border:1px solid var(--line); border-radius:999px; padding:4px 8px; background:rgba(255,255,255,.42); font-family:var(--label-font); font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:.04em; }
+    footer { border-top: 1px solid var(--line); padding: 30px 0 46px; color: var(--muted); font-family: var(--label-font); font-size: 13px; font-weight: 700; }
+    .footer-inner { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; text-align: center; }
+    .footer-brand { display: grid; gap: 4px; justify-items: center; max-width: 760px; }
+    .footer-brand span { color: var(--muted); }
+    .trust-links { display: flex; gap: 10px 16px; align-items: center; justify-content: center; flex-wrap: wrap; width: min(860px, 100%); margin: 0 auto; text-align: center; font-family: var(--label-font); font-size: 13px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
+    .trust-links a { color: inherit; text-decoration: none; }
+    .trust-links a:hover { text-decoration: underline; text-underline-offset: .22em; }
+    @media (max-width: 680px) {
+      h1 { font-size: clamp(46px, 16vw, 76px); }
+      details.category > summary { grid-template-columns: 1fr; gap: 8px; }
+      details.category > summary::after { width: 30px; height: 30px; }
+      .facts { grid-template-columns: 1fr; gap: 2px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <div class="topline">
+      <a href="{{ asset_prefix }}index.html">Daily Signal</a>
+      <nav aria-label="Primary navigation">
+        <a href="{{ asset_prefix }}archive.html">Archive</a> ·
+        <a href="{{ asset_prefix }}methodology.html">Methodology</a> ·
+        <a href="{{ asset_prefix }}ethics.html">Ethics</a> ·
+        <a href="{{ asset_prefix }}subscribe.html">Subscribe</a>
+      </nav>
+    </div>
+    <div class="brand-row">
+      <img class="brand-mark" src="{{ asset_prefix }}static/logo-mark.png" alt="Open Source Signal mark">
+      <div class="brand-copy">
+        <strong>{{ config['site_title_en'] }}</strong>
+        <span>{{ config['site_title_uk'] }}</span>
+      </div>
+    </div>
+    <div class="eyebrow">Verification tools / public sources</div>
+    <h1>OSINT Signal Toolkit</h1>
+    <p class="ua-title">Інструментарій відкритих джерел</p>
+    <p class="lead">This is a curated verification-oriented toolkit, not a dump of all OSINT links. Tools are included when they support preservation, geolocation, visual checks, passive infrastructure context, media monitoring, data explanation, or safer research workflow.</p>
+  </header>
+  <main class="wrap">
+    {% for group in grouped_categories %}
+    <details class="category" id="{{ group.category.id }}"{% if loop.first %} open{% endif %}>
+      <summary>
+        <div class="category-head">
+          <h2>{{ group.category.title_en }}</h2>
+          <p class="uk">{{ group.category.title_uk }}</p>
+          <p>{{ group.category.description_en }} {{ group.category.description_uk }}</p>
+        </div>
+      </summary>
+      <div class="tool-grid">
+        {% for tool in group.tools %}
+        <article class="tool-card">
+          <h3>{{ tool.name }}</h3>
+          <a class="tool-url" href="{{ tool.url }}">{{ tool.url }}</a>
+          <div class="tag-row">
+            <span class="tag">{{ tool.access }}</span>
+            <span class="tag">Risk {{ tool.legal_risk }}</span>
+            <span class="tag">Evidence {{ tool.evidence_value }}</span>
+            <span class="tag">{{ tool.tested_status }}</span>
+          </div>
+          <dl class="facts">
+            <dt>Best for / Для чого</dt>
+            <dd>{{ tool.use_cases | join('; ') }}</dd>
+            <dt>Input / Вхідні дані</dt>
+            <dd>{{ tool.input }}</dd>
+            <dt>Output / Результат</dt>
+            <dd>{{ tool.output }}</dd>
+            <dt>Access / Доступ</dt>
+            <dd>{{ tool.access }}</dd>
+            <dt>Login / Логін</dt>
+            <dd>{{ 'Required' if tool.requires_login else 'Not required' }}</dd>
+            <dt>API / API</dt>
+            <dd>{{ 'Available' if tool.api_available else 'Not available' }}</dd>
+            <dt>Risk / Ризик</dt>
+            <dd>Legal {{ tool.legal_risk }}; OPSEC {{ tool.opsec_level }}</dd>
+            <dt>Evidence value / Доказова цінність</dt>
+            <dd>{{ tool.evidence_value }}</dd>
+            <dt>Status / Статус</dt>
+            <dd>{{ tool.tested_status }}</dd>
+            <dt>Notes / Примітки</dt>
+            <dd>{{ tool.notes }}</dd>
+          </dl>
+        </article>
+        {% endfor %}
+      </div>
+    </details>
+    {% endfor %}
+  </main>
+  <footer>
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <strong>Open Source Signal / Сигнал відкритих джерел.</strong>
+        <span>Ukrainian accountability OSINT journal.</span>
+      </div>
+      <nav class="trust-links" aria-label="Trust and discovery pages">
+        {% for link in trust_nav_links %}
+        <a href="{{ asset_prefix }}{{ link.href }}">{{ link.label }}</a>
+        {% endfor %}
+        <a href="{{ config['telegram_url'] }}">Telegram</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
