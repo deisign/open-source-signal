@@ -52,6 +52,13 @@ TOOL_REQUIRED_FIELDS = {
     "notes",
 }
 
+PUBLIC_TOOL_UK_FIELDS = {
+    "use_cases_uk",
+    "input_uk",
+    "output_uk",
+    "notes_uk",
+}
+
 ALLOWED_VALUES = {
     "access": {"free", "freemium", "paid", "mixed"},
     "opsec_level": {"low", "medium", "high"},
@@ -117,6 +124,11 @@ def _validate_url(tool: dict[str, Any]) -> None:
         raise ValueError(f"Public tool {tool['id']} must have a valid http/https URL")
 
 
+def _validate_non_empty_string_list(tool: dict[str, Any], field: str) -> None:
+    if not isinstance(tool[field], list) or not tool[field] or not all(isinstance(item, str) and item for item in tool[field]):
+        raise ValueError(f"Tool {tool['id']} {field} must be a non-empty list of strings")
+
+
 def validate_tools(tools: list[dict[str, Any]], category_ids: set[str]) -> None:
     seen: set[str] = set()
     for tool in tools:
@@ -137,8 +149,7 @@ def validate_tools(tools: list[dict[str, Any]], category_ids: set[str]) -> None:
             if tool[field] not in allowed:
                 raise ValueError(f"Tool {tool_id} has invalid {field}: {tool[field]}")
 
-        if not isinstance(tool["use_cases"], list) or not tool["use_cases"] or not all(isinstance(item, str) and item for item in tool["use_cases"]):
-            raise ValueError(f"Tool {tool_id} use_cases must be a non-empty list of strings")
+        _validate_non_empty_string_list(tool, "use_cases")
         if not isinstance(tool["requires_login"], bool):
             raise ValueError(f"Tool {tool_id} requires_login must be boolean")
         if not isinstance(tool["api_available"], bool):
@@ -147,7 +158,14 @@ def validate_tools(tools: list[dict[str, Any]], category_ids: set[str]) -> None:
             raise ValueError(f"Tool {tool_id} public must be boolean")
 
         if tool["public"]:
+            uk_missing = PUBLIC_TOOL_UK_FIELDS - set(tool)
+            if uk_missing:
+                raise ValueError(f"Public tool {tool_id} missing Ukrainian fields: {sorted(uk_missing)}")
             _validate_url(tool)
+            for field in ("use_cases_uk", "input_uk", "output_uk"):
+                _validate_non_empty_string_list(tool, field)
+            if not isinstance(tool["notes_uk"], str) or not tool["notes_uk"]:
+                raise ValueError(f"Public tool {tool_id} notes_uk must be a non-empty string")
             if tool["legal_risk"] == "high":
                 raise ValueError(f"Public tool {tool_id} cannot have high legal risk")
             if tool["opsec_level"] == "high":

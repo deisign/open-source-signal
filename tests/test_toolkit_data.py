@@ -3,6 +3,7 @@ from urllib.parse import urlparse
 
 from scripts.build_toolkit import (
     BLOCKED_PUBLIC_STATUSES,
+    PUBLIC_TOOL_UK_FIELDS,
     TOOL_REQUIRED_FIELDS,
     load_yaml,
     validate_toolkit_data,
@@ -45,6 +46,19 @@ def test_public_tools_have_required_fields():
     for tool in TOOLS:
         if tool["public"]:
             assert TOOL_REQUIRED_FIELDS <= set(tool)
+            assert PUBLIC_TOOL_UK_FIELDS <= set(tool)
+
+
+def test_public_tools_have_ukrainian_content_fields():
+    for tool in TOOLS:
+        if not tool["public"]:
+            continue
+        for field in ("use_cases_uk", "input_uk", "output_uk"):
+            assert isinstance(tool[field], list)
+            assert tool[field]
+            assert all(isinstance(item, str) and item for item in tool[field])
+        assert isinstance(tool["notes_uk"], str)
+        assert tool["notes_uk"]
 
 
 def test_at_least_15_public_tools_exist():
