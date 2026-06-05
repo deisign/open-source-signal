@@ -187,6 +187,118 @@
   public: true
   project_fit: Simple, explainable support for visual chronology checks.
   notes: Works best when camera direction and local geometry are understood.
+- id: nasa_firms
+  name: NASA FIRMS
+  url: https://firms.modaps.eosdis.nasa.gov/
+  category: transport_infrastructure_geoint
+  use_cases:
+    - Active fire detection
+    - Thermal anomaly context
+    - Conflict-impact verification
+    - Environmental incident context
+  input: Location, time window, map view, optional API parameters
+  output: Active fire detections, thermal anomaly data, map layers, downloadable data
+  access: free
+  requires_login: false
+  api_available: true
+  opsec_level: low
+  legal_risk: low
+  evidence_value: high
+  automation_value: high
+  learning_cost: medium
+  tested_status: recommended
+  public: true
+  project_fit: Strong contextual source for fire and thermal anomaly verification around public-interest events.
+  notes: Thermal anomaly data can support verification, but a hotspot is not proof of a strike or cause by itself.
+- id: openrailwaymap
+  name: OpenRailwayMap
+  url: https://openrailwaymap.app/
+  category: transport_infrastructure_geoint
+  use_cases:
+    - Railway infrastructure context
+    - Station and track geolocation
+    - Transport-route verification
+  input: Map location, railway feature, station name
+  output: Railway tracks, stations, rail infrastructure map layers
+  access: free
+  requires_login: false
+  api_available: false
+  opsec_level: low
+  legal_risk: low
+  evidence_value: medium
+  automation_value: low
+  learning_cost: low
+  tested_status: recommended
+  public: true
+  project_fit: Useful transport layer for checking public imagery and claims near rail corridors.
+  notes: Useful for contextual geolocation near railways; verify against imagery and other sources.
+- id: global_fishing_watch
+  name: Global Fishing Watch
+  url: https://globalfishingwatch.org/map
+  category: transport_infrastructure_geoint
+  use_cases:
+    - Maritime activity context
+    - Vessel-track review
+    - Fishing activity analysis
+    - Port and route context
+  input: Vessel, area, time window, map filters
+  output: Vessel tracks, events, activity layers, maritime context
+  access: free
+  requires_login: true
+  api_available: true
+  opsec_level: medium
+  legal_risk: low
+  evidence_value: medium
+  automation_value: medium
+  learning_cost: medium
+  tested_status: recommended
+  public: true
+  project_fit: Good maritime context source for reviewing vessel activity, ports, and route patterns.
+  notes: AIS-derived or vessel activity data should be treated as contextual evidence; AIS can be incomplete, delayed, disabled, or manipulated.
+- id: opensky_network
+  name: OpenSky Network
+  url: https://opensky-network.org/data/api
+  category: transport_infrastructure_geoint
+  use_cases:
+    - Airspace context
+    - Aircraft movement research
+    - Aviation-data verification
+  input: Time window, bounding box, aircraft identifier, API query
+  output: Aircraft states, tracks, airspace observations
+  access: freemium
+  requires_login: true
+  api_available: true
+  opsec_level: medium
+  legal_risk: low
+  evidence_value: medium
+  automation_value: high
+  learning_cost: medium
+  tested_status: situational
+  public: true
+  project_fit: Contextual aviation data source for retrospective airspace and aircraft movement research.
+  notes: Use for research and retrospective/contextual verification; do not frame live aviation tracking as targeting or operational use.
+- id: openinframap
+  name: OpenInfraMap
+  url: https://openinframap.org/
+  category: transport_infrastructure_geoint
+  use_cases:
+    - Infrastructure context
+    - Power and telecom layer review
+    - Pipeline and facility context
+  input: Map location, infrastructure layer, feature type
+  output: Electricity, telecom, oil, gas and other infrastructure map layers
+  access: free
+  requires_login: false
+  api_available: false
+  opsec_level: medium
+  legal_risk: low
+  evidence_value: medium
+  automation_value: low
+  learning_cost: low
+  tested_status: situational
+  public: true
+  project_fit: Public infrastructure layer for contextual verification of mapped facilities and network features.
+  notes: Use only for contextual verification and public-interest analysis; do not use for targeting or operational planning.
 - id: google_lens
   name: Google Lens
   url: https://lens.google/

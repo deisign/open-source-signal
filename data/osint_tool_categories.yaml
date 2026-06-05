@@ -10,6 +10,12 @@
   description_en: Map, satellite, street-level, and environmental tools for locating and contextualizing public media.
   description_uk: Мапи, супутникові знімки, панорами та природні підказки для локалізації публічних матеріалів.
   order: 20
+- id: transport_infrastructure_geoint
+  title_en: Transport & Infrastructure GEOINT
+  title_uk: Транспортна та інфраструктурна GEOINT
+  description_en: Tools for contextual verification of transport networks, vessels, aircraft, fire signals, and infrastructure layers.
+  description_uk: Інструменти для контекстної перевірки транспортних мереж, суден, повітряних даних, пожежних сигналів та інфраструктурних шарів.
+  order: 25
 - id: image_video_verification
   title_en: Image and Video Verification
   title_uk: Верифікація фото й відео
