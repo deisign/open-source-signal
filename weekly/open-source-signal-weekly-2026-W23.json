@@ -1,0 +1,276 @@
+{
+  "issue_number": "W23",
+  "slug": "open-source-signal-weekly-2026-W23",
+  "output_name": "open-source-signal-weekly-2026-W23.html",
+  "date_iso": "2026-06-07",
+  "week_label_en": "1–7 June 2026",
+  "week_label_uk": "1–7 червня 2026",
+  "title_en": "Open Source Signal Weekly",
+  "title_uk": "Тижневий сигнал відкритих джерел",
+  "subtitle_en": "Sunday editorial synthesis for Ukrainian accountability OSINT.",
+  "subtitle_uk": "Недільний редакційний огляд для українських розслідувань за відкритими джерелами.",
+  "dek_en": "A magazine-style synthesis of the week’s strongest accountability OSINT: June mass-strike documentation, Russian retaliation narratives, occupied-source caution, Ukrainian children under Russian militarisation, POW exchange status data, structured threat-intelligence tools, sanctions/entity screening, public-records work, device-code phishing and evidence-infrastructure risk.",
+  "dek_uk": "Журнальний огляд найсильніших сигналів тижня: документування масованих ударів 1 червня, російська риторика відплати, обережність із джерелами з окупованих територій, мілітаризація українських дітей, дані про обміни полонених, інструменти для впорядкування даних про кіберзагрози, санкційні реєстри, робота з публічними базами, фішинг через коди входу та ризики для збереження доказів.",
+  "editorial_frame": {
+    "what_this_is": "A Sunday weekly magazine. It develops the strongest signals from the week’s Daily Signal issues, Saturday Tool Radar and fresh public OSINT developments into editorial sections with evidence status, source limits and practical use.",
+    "what_this_is_not": "A dump of daily cards, a Telegram rumor digest, a target list, a doxxing board, a leaked-data workflow, or a place to turn claims into verdicts merely by giving them a monocle. The monocle remains decorative and legally non-binding."
+  },
+  "rubric_map": [
+    "📡 Signal of the Week / Головний сигнал тижня",
+    "🇺🇦 Ukraine Lens / Українська оптика",
+    "⚖️ War Crimes Verification / Верифікація воєнних злочинів",
+    "🕯️ Losses, Captivity & Missing / Втрати, полон, зниклі",
+    "🧭 Tradecraft / Методика",
+    "🧰 Tools / Datasets / Інструменти й набори даних",
+    "⚠️ Risk Watch / Межі й ризики",
+    "📚 Reading List / Що читати далі"
+  ],
+  "editorial_note_en": "The week’s central lesson is that accountability work now depends as much on evidence infrastructure as on individual revelations. The same stream contained mass-strike reporting, Russian retaliation narratives, occupied-source claims, POW exchange data, missile-production estimates, child militarisation evidence, platform-risk cases, device-code phishing and tool releases. The editorial task is to keep each item in its proper box: verified fact, official claim, lead, estimate, tool output, legal status, or protected evidence.",
+  "editorial_note_uk": "Головний урок тижня: робота з відповідальністю за воєнні злочини тепер залежить не лише від окремих викриттів, а й від інфраструктури доказів. В одному потоці були повідомлення про масований удар, російська риторика відплати, заяви з окупованих територій, дані про обмін полонених, оцінки виробництва ракет, докази мілітаризації дітей, ризики платформ, фішинг через коди входу та релізи інструментів. Редакційне завдання — не змішувати це в одну каструлю з табличкою «правда», а тримати окремо: підтверджений факт, офіційну заяву, зачіпку, оцінку, результат інструмента, юридичний статус або захищений доказ.",
+  "items": [
+    {
+      "rubric_key": "signal",
+      "emoji": "📡",
+      "rubric_en": "Signal of the Week",
+      "rubric_uk": "Головний сигнал тижня",
+      "title_en": "Evidence infrastructure became the week’s real battlefield",
+      "title_uk": "Справжнім полем бою стала інфраструктура доказів",
+      "source_line_en": "Daily Signal #017–#022; Saturday Tool Radar #022 · 1–7 June 2026",
+      "source_line_uk": "Daily Signal #017–#022; Saturday Tool Radar #022 · 1–7 червня 2026",
+      "what_happened_en": "The week opened with Reuters on U.S. funding cuts that weakened Ukraine war-crimes documentation capacity, then moved through a mass Russian strike, Russian retaliation narratives, occupied-source claims, missing-person and POW-exchange data, platform and phishing risks, and a Saturday tool set for structured evidence handling. The thread connecting all of this is not one headline but the need to preserve, classify and protect evidence before it becomes either propaganda or dust.",
+      "what_happened_uk": "Тиждень почався з матеріалу Reuters про скорочення американської підтримки, яке послаблює можливості документування російських воєнних злочинів в Україні. Далі були масований російський удар, риторика відплати, заяви з окупованих територій, дані про зниклих і полонених, ризики платформ та фішингу, а в суботу — добірка інструментів для впорядкування доказів. Усе це поєднує не один заголовок, а потреба зберігати, класифікувати й захищати докази, доки вони не стали пропагандою або пилом у шафі.",
+      "why_it_matters_en": "Accountability OSINT collapses when evidence capacity collapses. A war-crimes case may depend on archive funding, source safety, registry discipline, chain of custody, tool reproducibility, secure accounts and a clean distinction between a claim, a lead and a verified finding.",
+      "why_it_matters_uk": "Розслідування за відкритими джерелами ламаються, коли ламається інфраструктура доказів. Справа про воєнний злочин може залежати від фінансування архівів, безпеки джерел, дисципліни реєстрів, ланцюга збереження, відтворюваності інструментів, захищених облікових записів і чіткого розрізнення між заявою, зачіпкою та підтвердженим висновком.",
+      "how_to_use_en": "For weekly synthesis, build one evidence-infrastructure checklist: source type, preservation status, legal or procedural status, safety restrictions, verification path, tool used, version/hash where relevant, and follow-up owner. Apply it before publication, not after the story has grown a ceremonial helmet and demanded a parade.",
+      "how_to_use_uk": "Для тижневого огляду ведіть єдиний чеклист інфраструктури доказів: тип джерела, стан збереження, юридичний або процесуальний статус, обмеження безпеки, шлях перевірки, використаний інструмент, версію або хеш там, де це доречно, і відповідального за продовження. Застосовуйте це до публікації, а не після того, як матеріал уже вдягнув парадний шолом і вимагає маршу.",
+      "limits_en": "Synthesis must not upgrade evidence. A donor-risk story is not proof of lost cases; a Russian allegation is not a finding; a tool output is not a verdict; an exchange list is not a full captivity database.",
+      "limits_uk": "Огляд не має підвищувати статус доказів. Історія про ризик фінансування не є доказом втрачених справ; російська заява не є встановленим фактом; результат інструмента не є вироком; список обміну не є повною базою полону.",
+      "tags": [
+        "signal-of-week",
+        "evidence-infrastructure",
+        "source-status",
+        "ukraine-accountability",
+        "weekly-synthesis"
+      ]
+    },
+    {
+      "rubric_key": "ukraine",
+      "emoji": "🇺🇦",
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "title_en": "The June 1 mass strike needs an incident ledger, not a frozen number",
+      "title_uk": "Масований удар 1 червня потребує журналу події, а не застиглої цифри",
+      "source_line_en": "Reuters; Daily Signal #018 · 1–2 June 2026",
+      "source_line_uk": "Reuters; Daily Signal #018 · 1–2 червня 2026",
+      "what_happened_en": "The June 1 Russian missile and drone attack across Ukraine produced several evidence streams at once: casualty figures, emergency-service imagery, residential and infrastructure damage, air-alert timing, munition claims and later official corrections. The same week also brought Russian attempts to frame subsequent strikes as retaliation for alleged Ukrainian ‘terrorist acts’. ",
+      "what_happened_uk": "Російська ракетно-дронова атака 1 червня по Україні створила одразу кілька потоків доказів: дані про загиблих і поранених, фото й відео рятувальників, пошкодження житла та інфраструктури, час повітряних тривог, заяви про типи боєприпасів і подальші офіційні уточнення. Того ж тижня Росія намагалася подати нові удари як відплату за нібито українські «терористичні акти».",
+      "why_it_matters_en": "The Ukrainian Lens is sequence discipline. Mass-strike documentation should show how the public record changed over time and separate confirmed civilian harm from early reports, official rhetoric, battlefield context and later propaganda framing.",
+      "why_it_matters_uk": "Українська оптика тут — дисципліна послідовності. Документування масованого удару має показувати, як змінювався публічний запис, і відділяти підтверджену шкоду цивільним від ранніх повідомлень, офіційної риторики, бойового контексту та подальшої пропагандистської рамки.",
+      "how_to_use_en": "Create a city-by-city incident ledger: first report, source, time window, casualty figure, visual evidence, archived copy, location confidence, civilian-object indicators, correction history and unresolved claims. Keep early numbers visible instead of silently replacing them.",
+      "how_to_use_uk": "Створіть журнал події за містами: перше повідомлення, джерело, часовий проміжок, дані про жертви, візуальні докази, архівна копія, упевненість у локації, ознаки цивільних об’єктів, історія уточнень і неперевірені твердження. Ранні цифри треба залишати видимими, а не тихо замінювати новими.",
+      "limits_en": "Do not publish shelter locations, rescue-sensitive details, victim-identifying material or tactical analysis of air-defence performance. Retaliation language is a narrative claim, not a legal classification by itself.",
+      "limits_uk": "Не публікуйте локації укриттів, деталі, чутливі для рятувальних робіт, матеріали, що ідентифікують постраждалих, або тактичний аналіз роботи ППО. Мова про «відплату» — це риторична рамка, а не юридична кваліфікація сама по собі.",
+      "tags": [
+        "ukraine-lens",
+        "strike-documentation",
+        "incident-ledger",
+        "claim-status",
+        "civilian-harm"
+      ]
+    },
+    {
+      "rubric_key": "war-crimes",
+      "emoji": "⚖️",
+      "rubric_en": "War Crimes Verification",
+      "rubric_uk": "Верифікація воєнних злочинів",
+      "title_en": "Child militarisation evidence must be protected before it is persuasive",
+      "title_uk": "Докази мілітаризації дітей треба захищати ще до того, як вони стануть переконливими",
+      "source_line_en": "Daily Signal #021; Ukrainian and international reporting · 5 June 2026",
+      "source_line_uk": "Daily Signal #021; українські та міжнародні повідомлення · 5 червня 2026",
+      "what_happened_en": "The week’s strongest protected-evidence theme was Russian militarisation of Ukrainian children. It sits next to earlier child-deportation and indoctrination investigations but requires its own handling: schools, camps, uniforms, oaths, military-patriotic events, occupation officials and online traces can all become evidence — and also risk exposing children.",
+      "what_happened_uk": "Найсильнішою темою тижня серед захищених доказів стала російська мілітаризація українських дітей. Вона пов’язана з попередніми розслідуваннями депортації та ідеологічної обробки дітей, але потребує окремого підходу: школи, табори, форма, присяги, військово-патріотичні заходи, окупаційні посадовці й онлайн-сліди можуть бути доказами — і водночас можуть наражати дітей на ризик.",
+      "why_it_matters_en": "This is not ordinary propaganda monitoring. Child-related evidence has a different safety threshold because names, faces, schools, relatives and locations can harm the very people an investigation is meant to protect.",
+      "why_it_matters_uk": "Це не звичайний моніторинг пропаганди. Докази щодо дітей мають інший поріг безпеки, бо імена, обличчя, школи, родичі та локації можуть нашкодити саме тим людям, яких розслідування має захистити.",
+      "how_to_use_en": "Use a protected evidence track: archive originals, blur public-facing copies, separate internal identifiers from publication text, record institution names and official roles, and describe patterns rather than exposing children. Link each public claim to a preserved source without publishing raw child-identifying material.",
+      "how_to_use_uk": "Ведіть захищений доказовий трек: архівуйте оригінали, розмивайте публічні копії, відокремлюйте внутрішні ідентифікатори від тексту для публікації, фіксуйте назви установ і ролі посадовців, описуйте закономірності замість розкриття дітей. Кожне публічне твердження має спиратися на збережене джерело, але без публікації матеріалу, що ідентифікує дитину.",
+      "limits_en": "Do not name minors, publish school rosters, expose family ties, reconstruct private chats or turn camps and schools into a searchable target map. Distinguish propaganda evidence, administrative evidence, witness testimony and legal findings.",
+      "limits_uk": "Не називайте неповнолітніх, не публікуйте списки шкіл, не розкривайте родинні зв’язки, не відтворюйте приватні чати й не перетворюйте табори або школи на пошукову мапу цілей. Розрізняйте пропагандистські матеріали, адміністративні документи, свідчення та юридичні висновки.",
+      "tags": [
+        "war-crimes-verification",
+        "children",
+        "protected-evidence",
+        "occupation",
+        "source-safety"
+      ]
+    },
+    {
+      "rubric_key": "losses",
+      "emoji": "🕯️",
+      "rubric_en": "Losses, Captivity & Missing",
+      "rubric_uk": "Втрати, полон, зниклі",
+      "title_en": "POW exchanges are status data, not a complete captivity picture",
+      "title_uk": "Обміни полонених — це дані про статус, а не повна картина полону",
+      "source_line_en": "Reuters; Daily Signal #021 · 5 June 2026",
+      "source_line_uk": "Reuters; Daily Signal #021 · 5 червня 2026",
+      "what_happened_en": "Ukraine and Russia exchanged 185 prisoners of war each on June 5, according to official statements cited by Reuters. The exchange followed broader claims about ceasefire windows and possible all-for-all exchanges, but the public record still contains different categories: returned POWs, civilians, missing persons, presumed dead, unverified family reports and negotiated commitments.",
+      "what_happened_uk": "5 червня Україна й Росія обміняли по 185 військовополонених, про що повідомляли офіційні сторони й Reuters. Обмін відбувся на тлі ширших заяв про тимчасове перемир’я та можливі обміни «всіх на всіх», але публічний запис і далі містить різні категорії: повернені військовополонені, цивільні, зниклі безвісти, імовірно загиблі, неперевірені повідомлення родин і переговорні обіцянки.",
+      "why_it_matters_en": "For losses, captivity and missing-persons research, the key is status taxonomy. A returned person changes one record but does not resolve the whole dataset; an official exchange number is not the same as a verified full list of captivity, missing and death cases.",
+      "why_it_matters_uk": "Для дослідження втрат, полону й зниклих головне — таксономія статусів. Повернення людини змінює один запис, але не закриває весь набір даних; офіційне число обміну не дорівнює повному перевіреному списку полону, зникнення й загибелі.",
+      "how_to_use_en": "Keep separate fields for source, legal status, last update, exchange status, civilian/military category, family report, official confirmation and uncertainty notes. When publishing, aggregate where possible and avoid exposing relatives or private documents.",
+      "how_to_use_uk": "Ведіть окремі поля: джерело, юридичний статус, дата останнього оновлення, статус обміну, цивільна або військова категорія, повідомлення родини, офіційне підтвердження та примітки щодо невизначеності. Для публікації за можливості використовуйте агреговані дані й не розкривайте родичів або приватні документи.",
+      "limits_en": "Do not infer the status of a specific missing person from exchange totals. Do not publish private family contacts, medical records, interrogation material or unverified claims about captivity or death.",
+      "limits_uk": "Не виводьте статус конкретної зниклої людини з цифр обміну. Не публікуйте приватні контакти родин, медичні документи, матеріали допитів або неперевірені твердження про полон чи загибель.",
+      "tags": [
+        "pow",
+        "captivity",
+        "missing-persons",
+        "status-taxonomy",
+        "humanitarian-data"
+      ]
+    },
+    {
+      "rubric_key": "tradecraft",
+      "emoji": "🧭",
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "title_en": "Occupied-source claims require a separate verification lane",
+      "title_uk": "Заяви з окупованих територій потребують окремої лінії перевірки",
+      "source_line_en": "Reuters; Daily Signal #020 · 3–4 June 2026",
+      "source_line_uk": "Reuters; Daily Signal #020 · 3–4 червня 2026",
+      "what_happened_en": "The Yenakiievo bus allegation showed the methodological problem clearly: a Russian-installed administration made a civilian-casualty claim from occupied territory, circulated visual material and said investigators had opened a case, while Ukraine had not commented at the time of the report. The information environment was controlled by an occupying power.",
+      "what_happened_uk": "Заява щодо автобуса в Єнакієвому чітко показала методологічну проблему: окупаційна адміністрація, встановлена Росією, заявила про загибель цивільних на окупованій території, поширила візуальні матеріали й повідомила про відкриття справи, тоді як Україна на момент повідомлення не коментувала епізод. Інформаційне середовище контролювала окупаційна влада.",
+      "why_it_matters_en": "Occupied-source verification is neither automatic belief nor automatic dismissal. It requires a separate lane that records who controls the scene, who controls investigators, whether visual material can be independently geolocated, and what cannot be checked because of access denial.",
+      "why_it_matters_uk": "Перевірка джерел з окупованих територій — це не автоматична довіра й не автоматичне відкидання. Потрібна окрема лінія перевірки: хто контролює місце події, хто контролює слідчих, чи можна незалежно встановити локацію візуальних матеріалів і що неможливо перевірити через відсутність доступу.",
+      "how_to_use_en": "Create an occupied-source lane in the case memo: claimant, institutional dependence, original media, archive copy, geolocation confidence, visible damage, possible alternative explanations, missing counter-source, and access barriers. Publish uncertainty plainly.",
+      "how_to_use_uk": "У робочій записці створіть окрему лінію для джерел з окупованої території: заявник, інституційна залежність, оригінальні матеріали, архівна копія, упевненість у геолокації, видимі пошкодження, можливі альтернативні пояснення, відсутні контрджерела й бар’єри доступу. Невизначеність треба писати прямо.",
+      "limits_en": "Do not convert occupation authorities’ claims into verified facts, but also do not erase possible civilian harm. Avoid naming private victims, publishing bodies, or turning uncertain incidents into retaliation narratives.",
+      "limits_uk": "Не перетворюйте заяви окупаційної влади на підтверджені факти, але й не стирайте можливу шкоду цивільним. Не називайте приватних постраждалих, не публікуйте тіла й не перетворюйте невизначені інциденти на риторику відплати.",
+      "tags": [
+        "tradecraft",
+        "occupied-territories",
+        "source-control",
+        "geolocation",
+        "verification-caveat"
+      ]
+    },
+    {
+      "rubric_key": "tools",
+      "emoji": "🧰",
+      "rubric_en": "Tools / Datasets",
+      "rubric_uk": "Інструменти й набори даних",
+      "title_en": "Saturday’s tools point toward structured evidence, not louder searching",
+      "title_uk": "Суботні інструменти ведуть до впорядкування доказів, а не до гучнішого пошуку",
+      "source_line_en": "Saturday Tool Radar #022 · 6 June 2026",
+      "source_line_uk": "Saturday Tool Radar #022 · 6 червня 2026",
+      "what_happened_en": "Saturday Tool Radar focused on MISP, OpenCTI, misp-stix, TruffleHog, OpenSanctions, a passive disclosure-audit resolver and a public-records workflow. The best tools this week were not shiny person-finders; they were systems for sharing indicators, mapping relationships, checking sanctioned entities, finding accidental secret leaks and auditing institutional contactability.",
+      "what_happened_uk": "Суботній радар зібрав MISP, OpenCTI, misp-stix, TruffleHog, OpenSanctions, пасивний інструмент для перевірки каналів повідомлення про вразливості та порядок роботи з публічними реєстрами. Найкращі інструменти тижня — не блискучі пошуковики людей, а системи для обміну технічними індикаторами, побудови зв’язків, перевірки санкційних сутностей, пошуку випадкових витоків секретів і пасивної перевірки доступності установ.",
+      "why_it_matters_en": "For accountability teams, the tool stack should reduce confusion. MISP and OpenCTI help structure technical and entity relationships; OpenSanctions adds a lead layer for sanctions and corporate links; TruffleHog protects workspaces; passive disclosure audits help partners know whether anyone can report a security problem.",
+      "why_it_matters_uk": "Для команд, що працюють із відповідальністю за воєнні злочини, набір інструментів має зменшувати хаос. MISP і OpenCTI допомагають упорядковувати технічні індикатори та зв’язки між сутностями; OpenSanctions дає шар зачіпок щодо санкцій і корпоративних зв’язків; TruffleHog захищає робочі сховища; пасивні перевірки каналів повідомлення про вразливості показують, чи може хтось взагалі повідомити установу про проблему безпеки.",
+      "how_to_use_en": "Use tools as layers: entity screening, technical indicators, case graph, conversion log, secret-leak self-audit and public-records cross-check. Record tool name, version, date, input source and output limits in the case file.",
+      "how_to_use_uk": "Використовуйте інструменти шарами: перевірка сутностей, технічні індикатори, граф справи, журнал перетворення форматів, самоперевірка на витоки секретів і звірка з публічними реєстрами. У справі фіксуйте назву інструмента, версію, дату, джерело вхідних даних і межі результату.",
+      "limits_en": "Do not let tooling launder weak evidence. Sanctions matches are leads, indicators are leads, graphs are maps, and secret scanners are defensive tools. None of them is a tiny judge with a gavel, despite what the goblin in procurement says.",
+      "limits_uk": "Не дозволяйте інструментам відмивати слабкі докази. Збіги в санкційних базах — це зачіпки; технічні індикатори — зачіпки; графи — мапи; сканери секретів — оборонні інструменти. Жоден із них не є маленьким суддею з молотком, навіть якщо гоблін із закупівель наполягає.",
+      "tags": [
+        "tools",
+        "datasets",
+        "misp",
+        "opencti",
+        "opensanctions",
+        "trufflehog"
+      ]
+    },
+    {
+      "rubric_key": "risk",
+      "emoji": "⚠️",
+      "rubric_en": "Risk Watch",
+      "rubric_uk": "Межі й ризики",
+      "title_en": "Investigator safety now includes accounts, adtech, AI skills and funding gaps",
+      "title_uk": "Безпека дослідника тепер охоплює акаунти, рекламне стеження, ШІ-інструменти й провали фінансування",
+      "source_line_en": "Reuters; arXiv; Microsoft/FBI reporting; Daily Signal #017/#021 · 1–7 June 2026",
+      "source_line_uk": "Reuters; arXiv; повідомлення Microsoft/FBI; Daily Signal #017/#021 · 1–7 червня 2026",
+      "what_happened_en": "This week’s risk layer combined several threads: U.S. funding cuts affecting evidence-preservation capacity, commercial location data as a surveillance risk, device-code phishing against Microsoft accounts, and fresh research on AI-agent skill security and cross-platform threat intelligence. None of these is a war-crimes allegation, but all can affect the survival of evidence and sources.",
+      "what_happened_uk": "Ризиковий шар тижня складався з кількох тем: скорочення американського фінансування, що б’є по збереженню доказів; комерційні дані про місцезнаходження як ризик стеження; фішинг через коди входу в акаунти Microsoft; нові дослідження про безпеку інструментів для ШІ-агентів і раннє виявлення кіберзагроз у різних платформах. Це не окремі звинувачення у воєнних злочинах, але все це впливає на виживання доказів і джерел.",
+      "why_it_matters_en": "A source can be exposed by a phone ad ID; an investigator can lose a mailbox through device-code phishing; an archive can disappear when funding dries up; an AI skill can introduce unsafe behavior into a research environment. The risk perimeter is larger than the story file.",
+      "why_it_matters_uk": "Джерело може бути викрите через рекламний ідентифікатор телефона; дослідник може втратити пошту через фішинговий код входу; архів може зникнути після втрати фінансування; інструмент для ШІ може внести небезпечну поведінку в дослідницьке середовище. Периметр ризику ширший за папку з текстом.",
+      "how_to_use_en": "Add a weekly safety review: account sessions, device-code policy, password and token rotation, ad-ID exposure, source-contact channels, archive redundancy, funding-risk notes and AI-tool permissions. Keep sensitive source material out of experimental agents unless there is a clear containment plan.",
+      "how_to_use_uk": "Раз на тиждень робіть огляд безпеки: активні сесії акаунтів, правила для кодів входу, ротація паролів і токенів, ризик рекламних ідентифікаторів, канали зв’язку з джерелами, резервування архівів, ризики фінансування та дозволи для ШІ-інструментів. Чутливі матеріали джерел не можна давати експериментальним агентам без чіткого плану ізоляції.",
+      "limits_en": "Do not turn defensive safety work into credential hunting, broker exploitation, spyware use or private-person tracking. The correct posture is protection and documentation, not cosplay as the Ministry of Silly Breaches.",
+      "limits_uk": "Не перетворюйте оборонну безпеку на полювання за обліковими даними, використання брокерських витоків, шпигунські програми або стеження за приватними людьми. Правильна позиція — захист і документування, а не косплей Міністерства дурних зламів.",
+      "tags": [
+        "risk-watch",
+        "investigator-safety",
+        "phishing",
+        "adtech",
+        "ai-security",
+        "evidence-preservation"
+      ]
+    }
+  ],
+  "reading_list": [
+    {
+      "title": "Reuters — How Trump’s Ukraine aid cuts undermine justice for Russian war crimes",
+      "href": "https://www.reuters.com/world/europe/how-trumps-ukraine-aid-cuts-undermine-justice-russian-war-crimes-2026-05-31/",
+      "note": "Evidence-preservation capacity, funding risk and Ukrainian war-crimes accountability infrastructure. / Ризик для збереження доказів, фінансування й української інфраструктури відповідальності за воєнні злочини."
+    },
+    {
+      "title": "Reuters — Large Russian strike across Ukraine, 1 June 2026",
+      "href": "https://www.reuters.com/world/large-pillar-smoke-seen-kyiv-after-air-raid-alert-issued-reuters-witness-reports-2026-06-01/",
+      "note": "Incident-ledger material for mass-strike documentation. / Матеріал для журналу події після масованого удару."
+    },
+    {
+      "title": "Reuters — Kremlin talks of a new ‘paradigm’ in the war",
+      "href": "https://www.reuters.com/world/europe/kremlin-talks-new-paradigm-ukraine-war-accusing-kyiv-acts-terror-2026-06-02/",
+      "note": "Retaliation narrative as a claim-status problem, not a legal finding. / Риторика відплати як проблема статусу тверджень, а не юридичний висновок."
+    },
+    {
+      "title": "Reuters — Ukraine and Russia exchange 185 POWs each",
+      "href": "https://www.reuters.com/world/europe/ukraine-russia-exchange-185-prisoners-war-each-swap-2026-06-05/",
+      "note": "Humanitarian status data for captivity and missing-person work. / Гуманітарні статусні дані для теми полону й зниклих."
+    },
+    {
+      "title": "Reuters — Yenakiievo bus allegation from occupied Donetsk region",
+      "href": "https://www.reuters.com/world/europe/russia-installed-donetsk-region-leader-says-7-killed-11-wounded-after-drone-hits-2026-06-03/",
+      "note": "Occupied-source verification and access-control caveats. / Перевірка джерел з окупованої території та обмеження доступу."
+    },
+    {
+      "title": "MISP — MISP 2.5.39 release",
+      "href": "https://github.com/MISP/MISP/releases/tag/v2.5.39",
+      "note": "Structured indicator sharing for defensive investigations. / Впорядкований обмін технічними індикаторами для оборонних розслідувань."
+    },
+    {
+      "title": "OpenCTI — 7.260604.0 release",
+      "href": "https://github.com/OpenCTI-Platform/opencti/releases/tag/7.260604.0",
+      "note": "Case graph, retention and source-linked relationship work. / Граф справи, строки зберігання та зв’язки між джерелами."
+    },
+    {
+      "title": "OpenSanctions — Default dataset",
+      "href": "https://www.opensanctions.org/datasets/default/",
+      "note": "Sanctions and entity-screening lead layer. / Шар зачіпок для санкційної перевірки та перевірки сутностей."
+    },
+    {
+      "title": "arXiv — The Coverage Gap: Chile’s Cyber Disclosure Framework versus the USA, EU and UK",
+      "href": "https://arxiv.org/abs/2606.05594",
+      "note": "Passive institutional disclosure audit method. / Пасивний метод перевірки каналів повідомлення про вразливості в установах."
+    },
+    {
+      "title": "arXiv — ClawHub Security Signals",
+      "href": "https://arxiv.org/abs/2606.01494",
+      "note": "AI-agent skill security as layered governance, not single-scanner certainty. / Безпека інструментів для ШІ-агентів як багаторівневе управління ризиком, а не віра в один сканер."
+    },
+    {
+      "title": "arXiv — TIBlender: Early-Warning Threat Intelligence from Cross-Platform Social Media Evidence",
+      "href": "https://arxiv.org/abs/2606.04580",
+      "note": "Cross-platform threat leads with strong verification and safety caveats. / Зачіпки про кіберзагрози з різних платформ із суворими застереженнями щодо перевірки й безпеки."
+    }
+  ],
+  "internal_notes": [
+    "filename_check: use weekly/open-source-signal-weekly-2026-W23.json or the project’s current weekly path convention. Date is 2026-06-07; week label is 1–7 June 2026.",
+    "schema_check: follows the Weekly Magazine model visible in open-source-signal-weekly-2026-W22.json: top-level weekly metadata, editorial_frame, rubric_map, editorial notes, bilingual items, reading_list and internal_notes.",
+    "source_basis: synthesized Daily Signal #017 dated 2026-06-01, #018 dated 2026-06-02, #019 dated 2026-06-03, #020 dated 2026-06-04, #021 dated 2026-06-05 and Saturday Tool Radar #022 dated 2026-06-06.",
+    "duplicate_check: this weekly synthesis does not reuse W22 CRSV as a full card, does not repeat Saturday Tool Radar #016 tools as standalone items, and does not repeat Browsertrix/c2patool/C2PA as tool cards. It synthesizes only the week’s already-published items and uses fresh reading-list sources as context.",
+    "language_check_uk: Ukrainian fields were rewritten to reduce untranslated English. Kept proper names and unavoidable technical standards/tool names such as OSINT, MISP, OpenCTI, STIX, TruffleHog, OpenSanctions, C2PA, Telegram and Microsoft. Replaced workflow/source-status/casefile/triage/lead/accountability/OPSEC where readable Ukrainian equivalents work.",
+    "safety_cautions: no private addresses, family data, survivor-identifying detail, child-identifying material, shelter locations, rescue-sensitive detail, live tactical guidance, credential hunting, leaked databases, private-person deanonymization or operational targeting guidance.",
+    "reading_list_note: Reading list uses bilingual notes inside the existing title/href/note structure to avoid breaking the known W22 renderer model while improving Ukrainian readability.",
+    "email_note: previous chat outputs do not send email automatically. A Gmail action must be invoked explicitly if email delivery is required."
+  ]
+}
