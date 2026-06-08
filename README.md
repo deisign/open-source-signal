@@ -1,8 +1,22 @@
-# Open Source Signal v1.0
+# Open Source Signal
 
-Static generator and publishing toolkit for the bilingual OSINT journal **Open Source Signal / Сигнал відкритих джерел**.
+**Open Source Signal / Сигнал відкритих джерел** is a static publishing toolkit for a bilingual OSINT journal focused on Ukrainian accountability work.
 
-Editorial focus: Ukrainian accountability OSINT with an international horizon — war-crimes verification, public-interest investigations, Russian KIA/POW/MIA/missing/wounded OSINT, platform research, geolocation, surveillance infrastructure and researcher safety.
+It is built from wartime Kyiv by a Ukrainian soldier. For Ukraine, OSINT is not a hobby or a niche technical craft. It is one of the ways society documents war, resists disinformation, preserves evidence, understands attacks, and keeps public accountability alive under pressure.
+
+The project treats OSINT as a civic skill: how to read sources, verify claims, handle evidence, explain limits, and publish without causing unnecessary harm. The editorial focus is Ukrainian accountability OSINT with an international horizon: war-crimes verification, public-interest investigations, Russian KIA/POW/MIA/missing/wounded OSINT, platform research, geolocation, surveillance infrastructure, and researcher safety.
+
+The visible output is a bilingual digest. The larger goal is reusable open infrastructure: source-aware publishing, editorial workflows, ethical guardrails, verification notes, topic archives, weekly editions, and practical OSINT literacy for Ukrainian and international readers.
+
+## Roadmap
+
+The project is meant to grow beyond a daily digest into reusable public-interest OSINT infrastructure: weekly editions, evidence and source-risk metadata, topic pages, archive filters, link checking, and cautious Telegram lead collection.
+
+See:
+
+```text
+ROADMAP.md
+```
 
 ## What it does
 
@@ -59,7 +73,7 @@ python build_site.py --issues issues --templates templates --out dist --config s
 ```bash
 python telegram_digest.py issues/2026-05-13.json \
   --lang uk \
-  --url https://deisign.github.io/open-source-signal/issues/open-source-signal-2026-05-13.html \
+  --url https://osintsignal.org/issues/open-source-signal-2026-05-13.html \
   --out dist
 ```
 
@@ -257,7 +271,7 @@ site.json
 Default:
 
 ```text
-https://deisign.github.io/open-source-signal
+https://osintsignal.org
 ```
 
 The Telegram workflow uses this `base_url` when the manual `issue_url` input is left empty.
