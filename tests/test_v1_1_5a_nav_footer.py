@@ -46,6 +46,7 @@ def test_homepage_exposes_trust_pages_above_latest_issue(tmp_path):
         "About": "about.html",
         "Methodology": "methodology.html",
         "Ethics": "ethics.html",
+        "Toolkit": "toolkit/",
         "Subscribe": "subscribe.html",
     }
 
