@@ -3,6 +3,7 @@ from __future__ import annotations
 TRUST_NAV_LINKS = [{'label': 'About', 'href': 'about.html'},
  {'label': 'Methodology', 'href': 'methodology.html'},
  {'label': 'Ethics', 'href': 'ethics.html'},
+ {'label': 'Toolkit', 'href': 'toolkit/'},
  {'label': 'Contact', 'href': 'contact.html'},
  {'label': 'Subscribe', 'href': 'subscribe.html'},
  {'label': 'Archive', 'href': 'archive.html'},

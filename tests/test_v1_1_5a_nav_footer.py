@@ -75,6 +75,7 @@ def test_footer_trust_links_are_centered_in_css(tmp_path):
         "About": "about.html",
         "Methodology": "methodology.html",
         "Ethics": "ethics.html",
+        "Toolkit": "toolkit/",
         "Subscribe": "subscribe.html",
         "Archive": "archive.html",
         "RSS": "feed.xml",

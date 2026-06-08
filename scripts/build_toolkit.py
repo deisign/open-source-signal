@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 from pathlib import Path
 from typing import Any
 from urllib.parse import urlparse
@@ -12,6 +13,11 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 
 ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from static_pages import TRUST_NAV_LINKS
+
 
 DEFAULT_CONFIG = {
     "site_title_en": "Open Source Signal",
@@ -231,15 +237,7 @@ def build_toolkit(
             og_image_url=absolute_url(str(site_config.get("base_url", "")), "static/og-image.png"),
             analytics_snippet="",
             grouped_categories=grouped_categories,
-            trust_nav_links=[
-                {"label": "About", "href": "about.html"},
-                {"label": "Methodology", "href": "methodology.html"},
-                {"label": "Ethics", "href": "ethics.html"},
-                {"label": "Contact", "href": "contact.html"},
-                {"label": "Subscribe", "href": "subscribe.html"},
-                {"label": "Archive", "href": "archive.html"},
-                {"label": "RSS", "href": "feed.xml"},
-            ],
+            trust_nav_links=TRUST_NAV_LINKS,
         ),
         encoding="utf-8",
     )
