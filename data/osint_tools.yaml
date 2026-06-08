@@ -201,6 +201,70 @@
   output_uk:
     - Відкриті картографічні дані та метадані об'єктів
   notes_uk: Дані, редаговані користувачами, варто сприймати як зачіпки й підтверджувати важливі твердження.
+- id: overpass_turbo
+  name: Overpass Turbo
+  url: https://overpass-turbo.eu/
+  category: geolocation
+  use_cases:
+    - Geolocation leads
+    - OpenStreetMap feature search
+    - Infrastructure and landmark discovery
+    - Map-based verification
+  input: Overpass QL query, map area, OSM tags, feature constraints
+  output: OSM features, map results, downloadable GeoJSON or data exports
+  access: free
+  requires_login: false
+  api_available: true
+  opsec_level: low
+  legal_risk: low
+  evidence_value: high
+  automation_value: medium
+  learning_cost: medium
+  tested_status: recommended
+  public: true
+  project_fit: Strong fit for repeatable OSM feature queries during geolocation and infrastructure verification.
+  notes: Powerful for searching public OSM features around visual clues; results should be checked against imagery and other sources.
+  use_cases_uk:
+    - Шукати геолокаційні зачіпки
+    - Шукати об'єкти OpenStreetMap
+    - Виявляти інфраструктуру та орієнтири
+    - Проводити верифікацію на мапі
+  input_uk:
+    - Запит Overpass QL, ділянка мапи, OSM tags, обмеження для об'єктів
+  output_uk:
+    - OSM features, результати на мапі, завантажувані експорти GeoJSON або даних
+  notes_uk: Потужний інструмент для пошуку публічних OSM features навколо візуальних підказок; результати варто перевіряти за знімками та іншими джерелами.
+- id: bellingcat_openstreetmap_search
+  name: Bellingcat OpenStreetMap Search
+  url: https://osm-search.bellingcat.com/
+  category: geolocation
+  use_cases:
+    - Quick OSM feature searches
+    - Geolocation clue matching
+    - Distance-based search between map features
+  input: Location hints, preset OSM feature types, distance constraints
+  output: Candidate locations and OSM feature matches
+  access: free
+  requires_login: false
+  api_available: false
+  opsec_level: low
+  legal_risk: low
+  evidence_value: medium
+  automation_value: low
+  learning_cost: low
+  tested_status: recommended
+  public: true
+  project_fit: Practical lead-generation tool for common OSM-based geolocation searches.
+  notes: Easier than Overpass Turbo for common geolocation searches, but less flexible; use it for leads, then verify independently.
+  use_cases_uk:
+    - Швидко шукати OSM features
+    - Зіставляти геолокаційні підказки
+    - Шукати об'єкти на мапі за відстанню між ними
+  input_uk:
+    - Підказки щодо локації, готові типи OSM features, обмеження відстані
+  output_uk:
+    - Кандидатні локації та збіги з OSM features
+  notes_uk: Простіший за Overpass Turbo для типових геолокаційних пошуків, але менш гнучкий; використовуйте його для зачіпок, а потім перевіряйте незалежно.
 - id: mapillary
   name: Mapillary
   url: https://www.mapillary.com/
@@ -794,6 +858,103 @@
   output_uk:
     - Списки матеріалів, метрики уваги та порівняння джерел
   notes_uk: Визначення добірок формують результати, тому їх варто документувати.
+- id: visualping
+  name: Visualping
+  url: https://visualping.io/
+  category: data_analysis_monitoring
+  use_cases:
+    - Website change monitoring
+    - Source tracking
+    - Public-record page monitoring
+    - Procurement or docket updates
+  input: Public webpage URL, selected page area, monitoring frequency, alert settings
+  output: Change alerts, visual diffs, page-change history
+  access: freemium
+  requires_login: true
+  api_available: true
+  opsec_level: low
+  legal_risk: low
+  evidence_value: medium
+  automation_value: medium
+  learning_cost: low
+  tested_status: recommended
+  public: true
+  project_fit: Useful for keeping watch on public pages that lack feeds or structured update signals.
+  notes: Useful for monitoring pages that change without RSS; keep local archives/screenshots for evidentiary preservation.
+  use_cases_uk:
+    - Моніторити зміни на сайтах
+    - Відстежувати джерела
+    - Моніторити сторінки публічних реєстрів
+    - Стежити за оновленнями закупівель або судових матеріалів
+  input_uk:
+    - URL публічної вебсторінки, вибрана зона сторінки, частота моніторингу, налаштування сповіщень
+  output_uk:
+    - Сповіщення про зміни, visual diffs, історія змін сторінки
+  notes_uk: Корисний для моніторингу сторінок, які змінюються без RSS; зберігайте локальні архіви або screenshots для доказової фіксації.
+- id: meaningfully
+  name: Meaningfully
+  url: https://github.com/jeremybmerrill/meaningfully
+  category: data_analysis_monitoring
+  use_cases:
+    - Semantic search in spreadsheets
+    - Text-heavy CSV review
+    - Finding euphemisms or near matches
+    - Investigative data triage
+  input: CSV or spreadsheet text data, semantic search query
+  output: Semantically similar rows or text matches
+  access: free
+  requires_login: false
+  api_available: false
+  opsec_level: low
+  legal_risk: low
+  evidence_value: medium
+  automation_value: low
+  learning_cost: medium
+  tested_status: situational
+  public: true
+  project_fit: Helpful triage layer when spreadsheet evidence needs semantic review beyond exact keywords.
+  notes: Useful when keyword search misses euphemisms, typos, or multilingual phrasing; not ideal for very large datasets.
+  use_cases_uk:
+    - Виконувати semantic search у таблицях
+    - Переглядати текстові CSV
+    - Знаходити евфемізми або близькі збіги
+    - Проводити первинний аналіз investigative data
+  input_uk:
+    - CSV або текстові дані з таблиці, semantic search query
+  output_uk:
+    - Семантично схожі рядки або текстові збіги
+  notes_uk: Корисний, коли keyword search пропускає евфемізми, помилки або багатомовні формулювання; не найкращий вибір для дуже великих datasets.
+- id: semantra
+  name: Semantra
+  url: https://github.com/freedmand/semantra
+  category: data_analysis_monitoring
+  use_cases:
+    - Semantic search in documents
+    - Spreadsheet and text corpus review
+    - Investigative document triage
+  input: Local documents or text corpus, semantic search query
+  output: Semantically relevant passages or document matches
+  access: free
+  requires_login: false
+  api_available: false
+  opsec_level: low
+  legal_risk: low
+  evidence_value: medium
+  automation_value: low
+  learning_cost: medium
+  tested_status: situational
+  public: true
+  project_fit: Local-first semantic search option for reviewing document collections during investigations.
+  notes: Useful for local semantic search over documents and text collections; verify relevant hits against original files before citing.
+  use_cases_uk:
+    - Виконувати semantic search у документах
+    - Переглядати таблиці та текстові корпуси
+    - Проводити первинний аналіз investigative documents
+  input_uk:
+    - Локальні документи або текстовий корпус, semantic search query
+  output_uk:
+    - Семантично релевантні фрагменти або збіги в документах
+  notes_uk: Корисний для локального semantic search у документах і текстових колекціях; перед цитуванням перевіряйте релевантні знахідки за оригінальними файлами.
 - id: gephi
   name: Gephi
   url: https://gephi.org/
