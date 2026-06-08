@@ -34,6 +34,12 @@
   description_en: Public datasets and monitoring services for tracking narratives, events, and media coverage.
   description_uk: Публічні набори даних і сервіси для відстеження наративів, подій та медіависвітлення.
   order: 50
+- id: data_analysis_monitoring
+  title_en: Data Analysis & Website Monitoring
+  title_uk: Аналіз даних і моніторинг сайтів
+  description_en: Tools for searching text-heavy datasets, spreadsheets, documents, and monitoring public webpages for changes.
+  description_uk: Інструменти для пошуку в текстових наборах даних, таблицях, документах і моніторингу змін на публічних вебсторінках.
+  order: 55
 - id: data_visualization
   title_en: Data Visualization
   title_uk: Візуалізація даних
