@@ -8,6 +8,19 @@ The project treats OSINT as a civic skill: how to read sources, verify claims, h
 
 The visible output is a bilingual digest. The larger goal is reusable open infrastructure: source-aware publishing, editorial workflows, ethical guardrails, verification notes, topic archives, weekly editions, and practical OSINT literacy for Ukrainian and international readers.
 
+## Documentation
+
+Project rules and operational notes live in:
+
+```text
+docs/EDITORIAL_POLICY.md
+docs/SOURCE_POLICY.md
+ROADMAP.md
+SECURITY.md
+```
+
+These documents cover editorial scope, source roles, Telegram lead handling, high-risk attribution language, publication boundaries, roadmap, and security reporting.
+
 ## Roadmap
 
 The project is meant to grow beyond a daily digest into reusable public-interest OSINT infrastructure: weekly editions, evidence and source-risk metadata, topic pages, archive filters, link checking, and cautious Telegram lead collection.
