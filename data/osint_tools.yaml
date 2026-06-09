@@ -143,6 +143,41 @@
   output_uk:
     - Супутникові сцени, візуалізації та експорти
   notes_uk: Для частини експортів і розширених функцій потрібен акаунт.
+- id: copernicus_browser
+  name: Copernicus Browser
+  url: https://browser.dataspace.copernicus.eu/
+  category: geolocation
+  use_cases:
+    - Satellite imagery review
+    - Geolocation support
+    - Environmental change detection
+    - Smoke, fire, flood, and disaster verification
+    - Before-and-after imagery checks
+  input: Coordinates, place name, date range, satellite layer, or visualization mode
+  output: Satellite imagery, map layers, and downloadable or viewable evidence leads
+  access: free
+  requires_login: false
+  api_available: false
+  opsec_level: low
+  legal_risk: low
+  evidence_value: high
+  automation_value: low
+  learning_cost: medium
+  tested_status: recommended
+  public: true
+  project_fit: Separate public satellite imagery workspace for corroborating geolocation and environmental change claims.
+  notes: Add as a separate entry from Sentinel Hub EO Browser. Useful when Google imagery is blurred, outdated, or insufficient; imagery resolution and cloud cover can limit conclusions.
+  use_cases_uk:
+    - Оглядати супутникові знімки
+    - Підтримувати геолокаційну перевірку
+    - Виявляти екологічні зміни
+    - Перевіряти дим, пожежі, повені та наслідки катастроф
+    - Порівнювати знімки до і після події
+  input_uk:
+    - Координати, назва місця, діапазон дат, супутниковий шар або режим візуалізації
+  output_uk:
+    - Супутникові знімки, картографічні шари та завантажувані або переглядові доказові зачіпки
+  notes_uk: Додано як окремий запис від Sentinel Hub EO Browser. Корисний, коли Google-знімки розмиті, застарілі або недостатні; роздільна здатність і хмарність можуть обмежувати висновки.
 - id: nasa_worldview
   name: NASA Worldview
   url: https://worldview.earthdata.nasa.gov/
@@ -201,6 +236,41 @@
   output_uk:
     - Відкриті картографічні дані та метадані об'єктів
   notes_uk: Дані, редаговані користувачами, варто сприймати як зачіпки й підтверджувати важливі твердження.
+- id: geonames
+  name: GeoNames
+  url: https://www.geonames.org/
+  category: geolocation
+  use_cases:
+    - Place-name lookup
+    - Alternative spellings
+    - Transliteration checks
+    - Gazetteer research
+    - Location disambiguation
+  input: Place name, coordinates, country or region filters, alternate spelling
+  output: Gazetteer records, coordinates, alternate names, and administrative context
+  access: free
+  requires_login: false
+  api_available: true
+  opsec_level: low
+  legal_risk: low
+  evidence_value: medium
+  automation_value: medium
+  learning_cost: low
+  tested_status: situational
+  public: true
+  project_fit: Useful gazetteer layer for resolving multilingual place names and ambiguous locations.
+  notes: Useful for multilingual and transliterated place names; verify coordinates and administrative claims against maps and local sources.
+  use_cases_uk:
+    - Шукати назви місць
+    - Перевіряти альтернативні написання
+    - Перевіряти транслітерацію
+    - Працювати з gazetteer records
+    - Розрізняти неоднозначні локації
+  input_uk:
+    - Назва місця, координати, фільтри країни чи регіону, альтернативне написання
+  output_uk:
+    - Gazetteer records, координати, альтернативні назви та адміністративний контекст
+  notes_uk: Корисний для багатомовних і транслітерованих назв місць; перевіряйте координати й адміністративні твердження за мапами та локальними джерелами.
 - id: overpass_turbo
   name: Overpass Turbo
   url: https://overpass-turbo.eu/
@@ -626,6 +696,74 @@
   output_uk:
     - Візуальні режими форензичного аналізу
   notes_uk: Форензичні візуалізації самі по собі не є доказом, їх легко переінтерпретувати.
+- id: youstitch_it
+  name: YouStitch.it
+  url: https://www.youstitch.it/
+  category: image_video_verification
+  use_cases:
+    - Video panorama creation
+    - Scene reconstruction
+    - Geolocation support
+    - Camera-pan analysis
+    - Visual clue extraction
+  input: Video file, extracted frames, photos from the same scene
+  output: Panorama image assembled from video frames or photos
+  access: free
+  requires_login: false
+  api_available: false
+  opsec_level: medium
+  legal_risk: low
+  evidence_value: medium
+  automation_value: low
+  learning_cost: medium
+  tested_status: situational
+  public: true
+  project_fit: Helpful for extracting wider scene context from public video during visual verification.
+  notes: Useful for turning camera movement into a wider scene view; avoid uploading sensitive originals and keep local copies of source frames.
+  use_cases_uk:
+    - Створювати панорами з відео
+    - Реконструювати сцену
+    - Підтримувати геолокаційну перевірку
+    - Аналізувати рух камери
+    - Виділяти візуальні підказки
+  input_uk:
+    - Відеофайл, витягнуті кадри, фото з тієї самої сцени
+  output_uk:
+    - Панорамне зображення, зібране з відеокадрів або фото
+  notes_uk: Корисний для перетворення руху камери на ширший вигляд сцени; не завантажуйте чутливі оригінали й зберігайте локальні копії вихідних кадрів.
+- id: fact_check_database_imagewhisperer
+  name: Fact-Check Database / ImageWhisperer
+  url: https://imagewhisperer.org/factcheck-db/
+  category: image_video_verification
+  use_cases:
+    - Debunked image search
+    - Known-fake checks
+    - Viral image triage
+    - Fact-check source discovery
+  input: Keyword, topic, person, place, organization, image-related clue
+  output: Matching debunked-image records and links to fact-checking sources
+  access: free
+  requires_login: false
+  api_available: false
+  opsec_level: low
+  legal_risk: low
+  evidence_value: high
+  automation_value: low
+  learning_cost: low
+  tested_status: recommended
+  public: true
+  project_fit: Fast known-fake triage source for visual verification and citation lead generation.
+  notes: Use as a fast known-fake check; cite the underlying fact-checking source, not only the database result.
+  use_cases_uk:
+    - Шукати спростовані зображення
+    - Перевіряти відомі фейки
+    - Проводити triage вірусних зображень
+    - Знаходити fact-checking sources
+  input_uk:
+    - Ключове слово, тема, особа, місце, організація або підказка щодо зображення
+  output_uk:
+    - Збіги із записами про спростовані зображення та посилання на fact-checking sources
+  notes_uk: Використовуйте як швидку перевірку відомих фейків; цитуйте першоджерело фактчеку, а не лише результат бази.
 - id: whois
   name: Whois
   url: https://lookup.icann.org/
@@ -955,6 +1093,41 @@
   output_uk:
     - Семантично релевантні фрагменти або збіги в документах
   notes_uk: Корисний для локального semantic search у документах і текстових колекціях; перед цитуванням перевіряйте релевантні знахідки за оригінальними файлами.
+- id: query_forge
+  name: Query Forge
+  url: https://osinv.org/queryforge/
+  category: data_analysis_monitoring
+  use_cases:
+    - Advanced Google search construction
+    - Search operator training
+    - Public-record discovery
+    - Source discovery
+    - Query refinement
+  input: Search terms, operators, site filters, filetype constraints, date constraints
+  output: Structured Google search query with plain-language explanation
+  access: free
+  requires_login: false
+  api_available: false
+  opsec_level: low
+  legal_risk: low
+  evidence_value: medium
+  automation_value: low
+  learning_cost: low
+  tested_status: recommended
+  public: true
+  project_fit: Practical query-building helper for finding public sources while keeping search results separate from evidence.
+  notes: Helps build precise search queries without treating search results as evidence by themselves; preserve source pages separately.
+  use_cases_uk:
+    - Конструювати розширені Google-запити
+    - Тренувати search operators
+    - Шукати публічні записи
+    - Знаходити джерела
+    - Уточнювати запити
+  input_uk:
+    - Пошукові терміни, operators, site filters, filetype constraints, date constraints
+  output_uk:
+    - Структурований Google-запит із поясненням простою мовою
+  notes_uk: Допомагає будувати точні пошукові запити, але самі результати пошуку не є доказом; окремо зберігайте сторінки-джерела.
 - id: gephi
   name: Gephi
   url: https://gephi.org/
