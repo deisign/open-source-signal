@@ -207,6 +207,45 @@
   output_uk:
     - Перегляд супутникових шарів та експорт зображень
   notes_uk: Роздільна здатність залежить від вибраного сенсора і шару.
+- id: qgis
+  name: QGIS
+  url: https://qgis.org/
+  category: geolocation
+  use_cases:
+    - Mapping analysis
+    - Geospatial data review
+    - Shapefile and GeoJSON analysis
+    - CSV-to-map workflows
+    - Spatial joins
+    - Intersects, unions, and area calculations
+    - Evidence mapping
+  input: Shapefiles, GeoJSON, CSV with coordinates, raster layers, satellite imagery, administrative boundaries, OSM exports
+  output: Analytical maps, spatial joins, filtered geodata, calculated areas, exported map images, GeoPackage or GeoJSON outputs
+  access: free
+  requires_login: false
+  api_available: false
+  opsec_level: low
+  legal_risk: low
+  evidence_value: high
+  automation_value: medium
+  learning_cost: high
+  tested_status: recommended
+  public: true
+  project_fit: Strong fit for moving incident spreadsheets and geospatial layers into reproducible map analysis.
+  notes: Desktop GIS for moving from single-point geolocation to spatial analysis; preserve source layers and processing steps so maps can be reproduced and audited.
+  use_cases_uk:
+    - Картографічний аналіз
+    - Перегляд геопросторових даних
+    - Аналіз shapefile і GeoJSON
+    - Перенесення CSV на мапу
+    - Просторові з'єднання
+    - Перетини, об'єднання та розрахунок площ
+    - Картографування доказів
+  input_uk:
+    - Shapefile-файли, GeoJSON, CSV з координатами, растрові шари, супутникові знімки, адміністративні межі, експорти OSM
+  output_uk:
+    - Аналітичні мапи, просторові з'єднання, відфільтровані геодані, розраховані площі, експортовані зображення мап, результати у GeoPackage або GeoJSON
+  notes_uk: Настільна GIS для переходу від точкової геолокації до просторового аналізу; зберігайте вихідні шари й кроки обробки, щоб мапи можна було відтворити та перевірити.
 - id: openstreetmap
   name: OpenStreetMap
   url: https://www.openstreetmap.org/
