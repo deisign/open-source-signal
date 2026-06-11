@@ -144,24 +144,30 @@
       z-index: 1;
       margin: 24px 0 18px;
       font-family: var(--display-latin);
-      font-size: clamp(56px, 11vw, 142px);
-      line-height: .86;
-      letter-spacing: -.07em;
+      font-size: clamp(46px, 8.5vw, 112px);
+      line-height: .9;
+      letter-spacing: -.06em;
       max-width: 900px;
       font-weight: 900;
+      overflow-wrap: anywhere;
+      hyphens: auto;
+      text-wrap: balance;
     }
     .ua-masthead {
       position: relative;
       z-index: 1;
       margin: -8px 0 18px;
       font-family: var(--display-cyr);
-      font-size: clamp(44px, 7.5vw, 96px);
-      line-height: .9;
-      letter-spacing: -.045em;
+      font-size: clamp(38px, 6.2vw, 78px);
+      line-height: .94;
+      letter-spacing: -.035em;
       font-weight: 800;
       max-width: 980px;
       color: #2f2b25;
       font-feature-settings: "kern" 1;
+      overflow-wrap: anywhere;
+      hyphens: auto;
+      text-wrap: balance;
     }
     .subtitle {
       position: relative;
@@ -356,7 +362,14 @@
     }
     body.lang-both .signal-card {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    }
+    .signal-card,
+    .lang-panel,
+    .field,
+    .source-line,
+    .tags {
+      min-width: 0;
     }
     body.lang-both .card-topline,
     body.lang-both .tags {
@@ -372,11 +385,14 @@
     }
     h2 {
       font-family: var(--display-latin);
-      font-size: clamp(36px, 5vw, 74px);
-      line-height: .94;
-      letter-spacing: -.06em;
+      font-size: clamp(30px, 4vw, 56px);
+      line-height: 1;
+      letter-spacing: -.045em;
       margin: 14px 0 16px;
       max-width: 920px;
+      overflow-wrap: anywhere;
+      hyphens: auto;
+      text-wrap: balance;
     }
     .lang-panel.uk h2,
     .brief-card h2 .uk,
@@ -386,18 +402,22 @@
     }
     .lang-panel.uk h2 {
       font-weight: 800;
+      line-height: 1.04;
+      letter-spacing: -.02em;
     }
     .lang-panel.uk .field h3 {
       font-weight: 700;
     }
     .source-line {
       display: inline-block;
+      max-width: 100%;
       margin: 0 0 24px;
       padding: 9px 12px;
       border-radius: 999px;
       background: rgba(20,20,20,.055);
       font-family: JetBrains Mono, monospace;
       font-size: 14px;
+      overflow-wrap: anywhere;
     }
     .field {
       display: grid;
