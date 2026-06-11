@@ -461,7 +461,71 @@ footer .trust-links a:hover {
   text-underline-offset: .22em;
 }
 /* /OSS v1.1.5b trust layout */
-</style>
+
+    /* OSS global heading scale v2026-06-11 */
+    h1,
+    .hero h1,
+    .hero-card h1,
+    .page-title,
+    .hero-title,
+    .masthead-title {
+      font-size: clamp(38px, 6.8vw, 92px) !important;
+      line-height: .94 !important;
+      letter-spacing: -.052em !important;
+      overflow-wrap: anywhere;
+      hyphens: auto;
+      text-wrap: balance;
+    }
+
+    .ua-masthead,
+    .hero-title-uk,
+    .masthead-uk,
+    .page-title-uk {
+      font-size: clamp(32px, 5vw, 64px) !important;
+      line-height: .98 !important;
+      letter-spacing: -.028em !important;
+      overflow-wrap: anywhere;
+      hyphens: auto;
+      text-wrap: balance;
+    }
+
+    h2,
+    .section-title,
+    .card-title,
+    .issue-title,
+    .weekly-title,
+    .tool-title {
+      font-size: clamp(26px, 3.2vw, 44px) !important;
+      line-height: 1.06 !important;
+      letter-spacing: -.035em !important;
+      overflow-wrap: anywhere;
+      hyphens: auto;
+      text-wrap: balance;
+    }
+
+    .brief-card h2,
+    .rubric-map h2,
+    .archive-card h2,
+    .static-page h2 {
+      font-size: clamp(25px, 2.8vw, 38px) !important;
+      line-height: 1.08 !important;
+      letter-spacing: -.03em !important;
+    }
+
+    .signal-card,
+    .weekly-card,
+    .tool-card,
+    .lang-panel,
+    .source-line,
+    .source-pill,
+    .tags,
+    .rubric-chip {
+      min-width: 0;
+      max-width: 100%;
+      overflow-wrap: anywhere;
+    }
+
+  </style>
   <script type="application/ld+json">
 {{ site_schema_json | safe }}
   </script>
