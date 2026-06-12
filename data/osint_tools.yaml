@@ -246,6 +246,72 @@
   output_uk:
     - Аналітичні мапи, просторові з'єднання, відфільтровані геодані, розраховані площі, експортовані зображення мап, результати у GeoPackage або GeoJSON
   notes_uk: Настільна GIS для переходу від точкової геолокації до просторового аналізу; зберігайте вихідні шари й кроки обробки, щоб мапи можна було відтворити та перевірити.
+- id: google_earth_engine_data_catalog
+  name: Google Earth Engine Data Catalog
+  url: https://developers.google.com/earth-engine/datasets/catalog
+  category: geolocation
+  use_cases:
+    - Geospatial dataset discovery
+    - Satellite and raster dataset lookup
+    - Environmental context research
+    - Infrastructure and land-cover analysis leads
+  input: Dataset topic, location context, sensor name, date range, or keyword
+  output: Dataset pages, metadata, sample code, and links to Earth Engine assets
+  access: free
+  requires_login: false
+  api_available: true
+  opsec_level: low
+  legal_risk: low
+  evidence_value: medium
+  automation_value: medium
+  learning_cost: medium
+  tested_status: recommended
+  public: true
+  project_fit: Strong discovery layer for geospatial datasets that can support QGIS, Copernicus, Sentinel, FIRMS, and environmental verification workflows.
+  notes: Dataset pages are leads; check spatial resolution, temporal coverage, licensing, update cadence, and processing assumptions before using them as evidence.
+  use_cases_uk:
+    - Пошук геопросторових наборів даних
+    - Пошук супутникових і растрових наборів даних
+    - Дослідження екологічного контексту
+    - Зачіпки для аналізу інфраструктури та земного покриву
+  input_uk:
+    - Тема набору даних, контекст локації, назва сенсора, діапазон дат або ключове слово
+  output_uk:
+    - Сторінки наборів даних, метадані, приклади коду та посилання на Earth Engine assets
+  notes_uk: Сторінки наборів даних є зачіпками; перевіряйте просторову роздільну здатність, часове покриття, ліцензію, частоту оновлення та припущення обробки перед використанням як доказів.
+- id: geoseer
+  name: GeoSeer
+  url: https://www.geoseer.net/
+  category: geolocation
+  use_cases:
+    - WMS/WFS/WCS/WMTS discovery
+    - Public geodata search
+    - Finding map layers for GIS analysis
+    - Source discovery for administrative or environmental layers
+  input: Place name, dataset keyword, service type, or thematic query
+  output: Spatial web-service results, dataset metadata, and service links for GIS tools
+  access: free
+  requires_login: false
+  api_available: true
+  opsec_level: low
+  legal_risk: low
+  evidence_value: medium
+  automation_value: medium
+  learning_cost: medium
+  tested_status: situational
+  public: true
+  project_fit: Useful for finding public spatial services and map layers that can be loaded into QGIS or other GIS workflows.
+  notes: Search results point to external services; verify publisher, freshness, layer meaning, and terms before relying on a dataset.
+  use_cases_uk:
+    - Пошук WMS/WFS/WCS/WMTS
+    - Пошук публічних геоданих
+    - Пошук картографічних шарів для GIS-аналізу
+    - Пошук джерел для адміністративних або екологічних шарів
+  input_uk:
+    - Назва місця, ключове слово набору даних, тип сервісу або тематичний запит
+  output_uk:
+    - Результати просторових вебсервісів, метадані наборів даних і посилання на сервіси для GIS-інструментів
+  notes_uk: Результати пошуку ведуть до зовнішніх сервісів; перевіряйте видавця, актуальність, значення шару та умови використання перед тим, як покладатися на набір даних.
 - id: openstreetmap
   name: OpenStreetMap
   url: https://www.openstreetmap.org/
@@ -403,6 +469,39 @@
   output_uk:
     - Вуличні зображення та метадані зйомки
   notes_uk: Покриття нерівномірне, а зображення можуть бути застарілими.
+- id: kartaview
+  name: KartaView
+  url: https://kartaview.org/
+  category: geolocation
+  use_cases:
+    - Street-level imagery review
+    - Road-sign and landmark comparison
+    - Route context checks
+    - Geolocation support where Google Street View or Mapillary coverage is weak
+  input: Place name, coordinates, map area, or road segment
+  output: Street-level imagery, capture context, and visible road and landmark clues
+  access: free
+  requires_login: false
+  api_available: true
+  opsec_level: low
+  legal_risk: low
+  evidence_value: medium
+  automation_value: medium
+  learning_cost: low
+  tested_status: recommended
+  public: true
+  project_fit: Useful street-level imagery source for corroborating geolocation leads and road-context clues.
+  notes: Coverage is uneven and imagery may be outdated; treat street-level imagery as context and verify against other sources.
+  use_cases_uk:
+    - Оглядати зображення з рівня вулиці
+    - Порівнювати дорожні знаки та орієнтири
+    - Перевіряти контекст маршруту
+    - Підтримувати геолокацію там, де покриття Google Street View або Mapillary слабке
+  input_uk:
+    - Назва місця, координати, ділянка мапи або сегмент дороги
+  output_uk:
+    - Зображення з рівня вулиці, контекст зйомки та видимі підказки дороги й орієнтирів
+  notes_uk: Покриття нерівномірне, а зображення можуть бути застарілими; сприймайте вуличні зображення як контекст і перевіряйте за іншими джерелами.
 - id: suncalc
   name: SunCalc
   url: https://www.suncalc.org/
@@ -432,6 +531,41 @@
   output_uk:
     - Траєкторія сонця, азимут, висота та напрямок тіні
   notes_uk: Найкраще працює, коли зрозумілі напрямок камери та локальна геометрія.
+- id: gpx_studio
+  name: gpx.studio
+  url: https://gpx.studio/
+  category: geolocation
+  use_cases:
+    - GPX file viewing
+    - Route reconstruction
+    - Track cleanup
+    - Movement-context analysis
+    - Field-route planning for open-source review
+  input: GPX file, route points, map clicks, or imported track
+  output: Edited GPX tracks, route visualizations, elevation and distance context, and exported GPX files
+  access: free
+  requires_login: false
+  api_available: false
+  opsec_level: medium
+  legal_risk: low
+  evidence_value: medium
+  automation_value: low
+  learning_cost: low
+  tested_status: situational
+  public: true
+  project_fit: Useful for reviewing and cleaning route or track data before using it in mapping analysis.
+  notes: Do not upload sensitive operational tracks or private-person movement data; strip unnecessary metadata before publication.
+  use_cases_uk:
+    - Переглядати GPX-файли
+    - Відновлювати маршрути
+    - Очищати треки
+    - Аналізувати контекст руху
+    - Планувати польові маршрути для open-source review
+  input_uk:
+    - GPX-файл, точки маршруту, кліки на мапі або імпортований трек
+  output_uk:
+    - Відредаговані GPX-треки, візуалізації маршрутів, контекст висоти й відстані та експортовані GPX-файли
+  notes_uk: Не завантажуйте чутливі оперативні треки або дані переміщення приватних осіб; видаляйте зайві метадані перед публікацією.
 - id: nasa_firms
   name: NASA FIRMS
   url: https://firms.modaps.eosdis.nasa.gov/

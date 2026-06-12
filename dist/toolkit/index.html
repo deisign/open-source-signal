@@ -109,6 +109,70 @@
       details.category > summary::after { width: 30px; height: 30px; }
       .field-title { font-size: 11px; }
     }
+
+    /* OSS global heading scale v2026-06-11 */
+    h1,
+    .hero h1,
+    .hero-card h1,
+    .page-title,
+    .hero-title,
+    .masthead-title {
+      font-size: clamp(38px, 6.8vw, 92px) !important;
+      line-height: .94 !important;
+      letter-spacing: -.052em !important;
+      overflow-wrap: anywhere;
+      hyphens: auto;
+      text-wrap: balance;
+    }
+
+    .ua-masthead,
+    .hero-title-uk,
+    .masthead-uk,
+    .page-title-uk {
+      font-size: clamp(32px, 5vw, 64px) !important;
+      line-height: .98 !important;
+      letter-spacing: -.028em !important;
+      overflow-wrap: anywhere;
+      hyphens: auto;
+      text-wrap: balance;
+    }
+
+    h2,
+    .section-title,
+    .card-title,
+    .issue-title,
+    .weekly-title,
+    .tool-title {
+      font-size: clamp(26px, 3.2vw, 44px) !important;
+      line-height: 1.06 !important;
+      letter-spacing: -.035em !important;
+      overflow-wrap: anywhere;
+      hyphens: auto;
+      text-wrap: balance;
+    }
+
+    .brief-card h2,
+    .rubric-map h2,
+    .archive-card h2,
+    .static-page h2 {
+      font-size: clamp(25px, 2.8vw, 38px) !important;
+      line-height: 1.08 !important;
+      letter-spacing: -.03em !important;
+    }
+
+    .signal-card,
+    .weekly-card,
+    .tool-card,
+    .lang-panel,
+    .source-line,
+    .source-pill,
+    .tags,
+    .rubric-chip {
+      min-width: 0;
+      max-width: 100%;
+      overflow-wrap: anywhere;
+    }
+
   </style>
 </head>
 <body>
@@ -578,6 +642,78 @@
           </div>
         </article>
         <article class="tool-card">
+          <h3>GeoSeer</h3>
+          <a class="tool-url" href="https://www.geoseer.net/">https://www.geoseer.net/</a>
+          <div class="tag-row">
+            <span class="tag">free</span>
+            <span class="tag">No login</span>
+            <span class="tag">API available</span>
+            <span class="tag">Risk low</span>
+            <span class="tag">Evidence medium</span>
+            <span class="tag">situational</span>
+          </div>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>WMS/WFS/WCS/WMTS discovery</li>
+                  <li>Public geodata search</li>
+                  <li>Finding map layers for GIS analysis</li>
+                  <li>Source discovery for administrative or environmental layers</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Пошук WMS/WFS/WCS/WMTS</li>
+                  <li>Пошук публічних геоданих</li>
+                  <li>Пошук картографічних шарів для GIS-аналізу</li>
+                  <li>Пошук джерел для адміністративних або екологічних шарів</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Place name, dataset keyword, service type, or thematic query</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Назва місця, ключове слово набору даних, тип сервісу або тематичний запит</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Spatial web-service results, dataset metadata, and service links for GIS tools</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Результати просторових вебсервісів, метадані наборів даних і посилання на сервіси для GIS-інструментів</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Search results point to external services; verify publisher, freshness, layer meaning, and terms before relying on a dataset.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Результати пошуку ведуть до зовнішніх сервісів; перевіряйте видавця, актуальність, значення шару та умови використання перед тим, як покладатися на набір даних.</p>
+              </div>
+            </section>
+          </div>
+        </article>
+        <article class="tool-card">
           <h3>Google Earth</h3>
           <a class="tool-url" href="https://earth.google.com/">https://earth.google.com/</a>
           <div class="tag-row">
@@ -641,6 +777,224 @@
               <div class="lang-block">
                 <span class="lang-label">UK:</span>
                 <p>Дати знімків і покриття залежать від локації.</p>
+              </div>
+            </section>
+          </div>
+        </article>
+        <article class="tool-card">
+          <h3>Google Earth Engine Data Catalog</h3>
+          <a class="tool-url" href="https://developers.google.com/earth-engine/datasets/catalog">https://developers.google.com/earth-engine/datasets/catalog</a>
+          <div class="tag-row">
+            <span class="tag">free</span>
+            <span class="tag">No login</span>
+            <span class="tag">API available</span>
+            <span class="tag">Risk low</span>
+            <span class="tag">Evidence medium</span>
+            <span class="tag">recommended</span>
+          </div>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>Geospatial dataset discovery</li>
+                  <li>Satellite and raster dataset lookup</li>
+                  <li>Environmental context research</li>
+                  <li>Infrastructure and land-cover analysis leads</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Пошук геопросторових наборів даних</li>
+                  <li>Пошук супутникових і растрових наборів даних</li>
+                  <li>Дослідження екологічного контексту</li>
+                  <li>Зачіпки для аналізу інфраструктури та земного покриву</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Dataset topic, location context, sensor name, date range, or keyword</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Тема набору даних, контекст локації, назва сенсора, діапазон дат або ключове слово</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Dataset pages, metadata, sample code, and links to Earth Engine assets</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Сторінки наборів даних, метадані, приклади коду та посилання на Earth Engine assets</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Dataset pages are leads; check spatial resolution, temporal coverage, licensing, update cadence, and processing assumptions before using them as evidence.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Сторінки наборів даних є зачіпками; перевіряйте просторову роздільну здатність, часове покриття, ліцензію, частоту оновлення та припущення обробки перед використанням як доказів.</p>
+              </div>
+            </section>
+          </div>
+        </article>
+        <article class="tool-card">
+          <h3>gpx.studio</h3>
+          <a class="tool-url" href="https://gpx.studio/">https://gpx.studio/</a>
+          <div class="tag-row">
+            <span class="tag">free</span>
+            <span class="tag">No login</span>
+            <span class="tag">No API</span>
+            <span class="tag">Risk low</span>
+            <span class="tag">Evidence medium</span>
+            <span class="tag">situational</span>
+          </div>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>GPX file viewing</li>
+                  <li>Route reconstruction</li>
+                  <li>Track cleanup</li>
+                  <li>Movement-context analysis</li>
+                  <li>Field-route planning for open-source review</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Переглядати GPX-файли</li>
+                  <li>Відновлювати маршрути</li>
+                  <li>Очищати треки</li>
+                  <li>Аналізувати контекст руху</li>
+                  <li>Планувати польові маршрути для open-source review</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>GPX file, route points, map clicks, or imported track</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>GPX-файл, точки маршруту, кліки на мапі або імпортований трек</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Edited GPX tracks, route visualizations, elevation and distance context, and exported GPX files</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Відредаговані GPX-треки, візуалізації маршрутів, контекст висоти й відстані та експортовані GPX-файли</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Do not upload sensitive operational tracks or private-person movement data; strip unnecessary metadata before publication.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Не завантажуйте чутливі оперативні треки або дані переміщення приватних осіб; видаляйте зайві метадані перед публікацією.</p>
+              </div>
+            </section>
+          </div>
+        </article>
+        <article class="tool-card">
+          <h3>KartaView</h3>
+          <a class="tool-url" href="https://kartaview.org/">https://kartaview.org/</a>
+          <div class="tag-row">
+            <span class="tag">free</span>
+            <span class="tag">No login</span>
+            <span class="tag">API available</span>
+            <span class="tag">Risk low</span>
+            <span class="tag">Evidence medium</span>
+            <span class="tag">recommended</span>
+          </div>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>Street-level imagery review</li>
+                  <li>Road-sign and landmark comparison</li>
+                  <li>Route context checks</li>
+                  <li>Geolocation support where Google Street View or Mapillary coverage is weak</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Оглядати зображення з рівня вулиці</li>
+                  <li>Порівнювати дорожні знаки та орієнтири</li>
+                  <li>Перевіряти контекст маршруту</li>
+                  <li>Підтримувати геолокацію там, де покриття Google Street View або Mapillary слабке</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Place name, coordinates, map area, or road segment</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Назва місця, координати, ділянка мапи або сегмент дороги</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Street-level imagery, capture context, and visible road and landmark clues</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Зображення з рівня вулиці, контекст зйомки та видимі підказки дороги й орієнтирів</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Coverage is uneven and imagery may be outdated; treat street-level imagery as context and verify against other sources.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Покриття нерівномірне, а зображення можуть бути застарілими; сприймайте вуличні зображення як контекст і перевіряйте за іншими джерелами.</p>
               </div>
             </section>
           </div>
