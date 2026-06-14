@@ -1,0 +1,367 @@
+{
+  "issue_number": "W24",
+  "slug": "open-source-signal-weekly-2026-W24",
+  "output_name": "open-source-signal-weekly-2026-W24.html",
+  "date_iso": "2026-06-14",
+  "week_label_en": "8–14 June 2026",
+  "week_label_uk": "8–14 червня 2026",
+  "title_en": "Open Source Signal Weekly",
+  "title_uk": "Тижневий сигнал відкритих джерел",
+  "subtitle_en": "Sunday editorial synthesis for Ukrainian accountability OSINT.",
+  "subtitle_uk": "Недільний редакційний синтез для українського OSINT і роботи з притягнення до відповідальності.",
+  "dek_en": "A magazine-style synthesis of the week’s strongest public-interest OSINT signals: protected evidence around nuclear and civilian infrastructure, detention and rescue-obstruction cases, captivity and casualty-status discipline, drone-war data governance, safer tool choices, geospatial review and platform-risk boundaries.",
+  "dek_uk": "Журнальний синтез найважливіших сигналів тижня з відкритих джерел: захищена робота з доказами щодо ядерної та цивільної інфраструктури, справи про незаконне утримання й перешкоджання порятунку, точне розділення статусів у темах полону та втрат, управління даними війни дронів, безпечний добір інструментів, геопросторова перевірка та межі роботи з ризиками на платформах.",
+  "editorial_frame": {
+    "what_this_is": "A Sunday weekly magazine. It develops the strongest signals from the week’s Daily Signal issues, Saturday Tool Radar and fresh OSINT developments into editorial sections with evidence status, source limits and practical use.",
+    "what_this_is_not": "A dump of daily cards, a Telegram rumor digest, a target list, a doxxing board, a leaked-data workflow, or a place where every shaky claim receives a tiny crown and starts ruling the village."
+  },
+  "rubric_map": [
+    "📡 Signal of the Week / Головний сигнал тижня",
+    "🇺🇦 Ukraine Lens / Українська оптика",
+    "⚖️ War Crimes Verification / Верифікація воєнних злочинів",
+    "🕯️ Losses, Captivity & Missing / Втрати, полон, зниклі",
+    "🧭 Tradecraft / Методика",
+    "🧰 Tools / Datasets / Інструменти й набори даних",
+    "⚠️ Risk Watch / Межі й ризики"
+  ],
+  "editorial_note_en": "This week’s signal is that accountability work is becoming less about finding one striking file and more about maintaining the chain around it: source status, preservation, location confidence, human protection, tool hygiene and a record of what remains uncertain. The same rule applies to a nuclear-site strike, a detention-system report, a POW exchange, drone-war footage, a map layer or a malicious link: keep the original, label the status, protect the person, and do not turn a lead into a verdict just because it has learned to march in a straight line.",
+  "editorial_note_uk": "Головний сигнал тижня: робота з притягнення до відповідальності дедалі менше зводиться до пошуку одного гучного файла і дедалі більше залежить від того, чи збережено ланцюг навколо нього: статус джерела, оригінал, упевненість у місці події, захист людей, безпечне використання інструментів і перелік того, що досі не підтверджено. Це однаково стосується удару по об’єкту біля Чорнобиля, звіту про систему незаконного утримання, обміну полоненими, відео війни дронів, картографічного шару або шкідливого посилання: зберегти оригінал, позначити статус, захистити людину й не перетворювати зачіпку на вирок лише тому, що вона навчилася ходити строєм.",
+  "items": [
+    {
+      "rubric_key": "signal",
+      "emoji": "📡",
+      "rubric_en": "Signal of the Week",
+      "rubric_uk": "Головний сигнал тижня",
+      "title_en": "The week was about evidence chains, not isolated files",
+      "title_uk": "Тиждень був про ланцюги доказів, а не про окремі файли",
+      "source_line_en": "Daily Signal #023–#027; Saturday Tool Radar #028 · 8–14 June 2026",
+      "source_line_uk": "Daily Signal #023–#027; Суботній радар інструментів #028 · 8–14 червня 2026",
+      "what_happened_en": "Across the week, the strongest items pointed to the same problem from different directions: a Chornobyl-area nuclear-site strike, the 185-for-185 POW exchange, front-line mapping, Kakhovka rescue obstruction, Izoliatsiia, drone-war data, spyware risk and evidence tools all depend on the chain around a source. The useful record is not only the file, but also who published it, when it was preserved, what is confirmed, what changed and who could be harmed by publication.",
+      "what_happened_uk": "Протягом тижня найсильніші теми з різних боків показували одну проблему: удар по об’єкту біля Чорнобиля, обмін 185 на 185, фронтові карти, перешкоджання порятунку після Каховки, «Ізоляція», дані війни дронів, ризики шпигунського програмного забезпечення й доказові інструменти залежать від ланцюга навколо джерела. Важливий не лише сам файл, а й те, хто його оприлюднив, коли його збережено, що підтверджено, що змінилося і кому може нашкодити публікація.",
+      "why_it_matters_en": "This is the difference between a public lead and durable evidence. Ukrainian accountability work needs preservation, status labels, source protection, translation, legal qualification and review before public material can responsibly support an investigation or a courtroom process.",
+      "why_it_matters_uk": "Саме тут проходить межа між публічною зачіпкою і стійким доказом. Українська робота з притягнення до відповідальності потребує збереження оригіналів, позначення статусів, захисту джерел, перекладу, юридичної кваліфікації та перевірки, перш ніж відкритий матеріал може відповідально допомогти розслідуванню або судовому процесу.",
+      "how_to_use_en": "For every serious item, keep one evidence-control row: original source, archive, first-seen time, preservation method, location and time confidence, status of people named, corroboration, redaction decision, legal relevance and unresolved claims.",
+      "how_to_use_uk": "Для кожного серйозного матеріалу ведіть один рядок контролю доказів: первинне джерело, архів, час першого виявлення, спосіб збереження, упевненість у місці й часі, статус згаданих людей, підтвердження іншими джерелами, рішення щодо редагування, юридичне значення та неперевірені твердження.",
+      "limits_en": "A weekly synthesis should not upgrade weak claims. It should preserve distinctions between official confirmation, investigator identification, open-source verification, statistical estimate, allegation and unverified repost.",
+      "limits_uk": "Тижневий синтез не має підвищувати рівень слабких тверджень. Потрібно зберігати різницю між офіційним підтвердженням, ідентифікацією дослідниками, перевіркою відкритими джерелами, статистичною оцінкою, заявою та неперевіреним перепостом.",
+      "evidence_level": "weekly synthesis of published issue items",
+      "source_type": "Daily Signal and Saturday Tool Radar synthesis",
+      "risk_flags": [
+        "source-status",
+        "human-protection",
+        "claim-upgrade-risk"
+      ],
+      "public_interest": "Keeps the week’s accountability material organised around evidence durability and safety.",
+      "verification_status": "Synthesised from published Open Source Signal items and primary sources reviewed for the week.",
+      "tags": [
+        "signal-of-week",
+        "evidence-chain",
+        "preservation",
+        "source-status",
+        "ukraine"
+      ]
+    },
+    {
+      "rubric_key": "ukraine",
+      "emoji": "🇺🇦",
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "title_en": "Protected places and occupied-source claims need separate source ledgers",
+      "title_uk": "Захищені об’єкти й заяви з окупації потребують окремих реєстрів джерел",
+      "source_line_en": "Reuters; Daily Signal #023/#025/#027 · 8–12 June 2026",
+      "source_line_uk": "Reuters; Daily Signal #023/#025/#027 · 8–12 червня 2026",
+      "what_happened_en": "The week’s Ukraine-facing items included damage near the Chornobyl nuclear site, a strike on a Kyiv-region dairy facility, claims from Russian-installed authorities in Crimea, and reporting on logistics and fuel disruption. These are different evidence environments: protected nuclear-related infrastructure, civilian production, occupied territory and transport or fuel systems.",
+      "what_happened_uk": "Українська частина тижня охоплювала пошкодження біля Чорнобильського ядерного об’єкта, удар по молокопереробному підприємству в Київській області, заяви окупаційної влади в Криму, а також матеріали про логістику й паливну інфраструктуру. Це різні доказові середовища: захищена ядерна інфраструктура, цивільне виробництво, окупована територія та транспортні або паливні системи.",
+      "why_it_matters_en": "Each environment changes what can be responsibly claimed. A nuclear-site incident requires technical caution and independent monitoring; a civilian-factory strike requires object-status and casualty records; occupied-source claims require separation between claim, image, location and independent confirmation.",
+      "why_it_matters_uk": "Кожне середовище змінює межі відповідального твердження. Інцидент біля ядерного об’єкта потребує технічної обережності й незалежного моніторингу; удар по цивільному підприємству — фіксації статусу об’єкта і даних про жертв; заяви з окупованої території — розділення між заявою, зображенням, місцем і незалежним підтвердженням.",
+      "how_to_use_en": "Create separate ledgers for nuclear-related sites, civilian infrastructure and occupied-source claims. For each, record the source class, confirmation level, location confidence, civilian-object indicators, correction history and details that must not be published.",
+      "how_to_use_uk": "Створюйте окремі реєстри для ядерних об’єктів, цивільної інфраструктури та заяв з окупованих територій. Для кожного записуйте тип джерела, рівень підтвердження, упевненість у локації, ознаки цивільного об’єкта, історію уточнень і деталі, які не можна публікувати.",
+      "limits_en": "Do not publish facility vulnerabilities, rescue-sensitive details, target coordinates, rail or fuel-system weaknesses, or tactical conclusions. Occupation-authority statements remain claims until corroborated.",
+      "limits_uk": "Не публікуйте вразливі місця об’єктів, деталі, чутливі для рятувальників, координати цілей, слабкі місця залізничної або паливної системи чи тактичні висновки. Заяви окупаційної влади залишаються заявами, доки їх не підтвердять інші джерела.",
+      "evidence_level": "mixed official, media and occupied-source reporting",
+      "source_type": "Reuters reporting and Daily Signal synthesis",
+      "risk_flags": [
+        "protected-infrastructure",
+        "occupied-source",
+        "operational-sensitivity"
+      ],
+      "public_interest": "Supports safer public documentation of attacks and disruptions affecting Ukrainian civilians and protected infrastructure.",
+      "verification_status": "Requires item-by-item corroboration and source-class separation.",
+      "tags": [
+        "ukraine-lens",
+        "civilian-infrastructure",
+        "nuclear-safety",
+        "occupied-territories",
+        "source-ledger"
+      ]
+    },
+    {
+      "rubric_key": "war-crimes",
+      "emoji": "⚖️",
+      "rubric_en": "War Crimes Verification",
+      "rubric_uk": "Верифікація воєнних злочинів",
+      "title_en": "Izoliatsiia and Kakhovka show why patterns matter more than single scenes",
+      "title_uk": "«Ізоляція» і Каховка показують, чому важливі не окремі сцени, а повторювані схеми",
+      "source_line_en": "Truth Hounds; KHPG; Daily Signal #026/#027 · 11–12 June 2026",
+      "source_line_uk": "Truth Hounds; ХПГ; Daily Signal #026/#027 · 11–12 червня 2026",
+      "what_happened_en": "Truth Hounds published major studies on two pattern-heavy accountability problems: Izoliatsiia as a long-running detention and torture system, and the disruption of emergency response after the Kakhovka Dam destruction. KHPG also reported on Russian terrorism trials in which the accused Ukrainians alleged abduction and torture.",
+      "what_happened_uk": "Truth Hounds опублікували великі дослідження про дві теми, де вирішальними є повторювані схеми: «Ізоляцію» як тривалу систему незаконного утримання й катувань та перешкоджання порятунку після руйнування Каховської дамби. ХПГ також повідомила про російські справи щодо «тероризму», у яких обвинувачені українці заявляли про викрадення й катування.",
+      "why_it_matters_en": "For war-crimes verification, a single photo or testimony rarely carries the full weight of the case. The stronger method is to connect places, time periods, command structures, access control, repeated abuse, rescue obstruction, court records and survivor protection into a pattern that can be reviewed.",
+      "why_it_matters_uk": "Для верифікації воєнних злочинів одне фото або одне свідчення рідко витримує всю вагу справи. Сильніший підхід — поєднувати місця, періоди, командні структури, контроль доступу, повторювані практики насильства, перешкоджання порятунку, судові матеріали й захист постраждалих у схему, яку можна перевірити.",
+      "how_to_use_en": "Build pattern files: event chronology, site control, alleged perpetrator categories, victim categories, repeated conduct, supporting public material, testimony status, legal category and protection limits. Keep legal qualification as an argument supported by evidence, not as a finished court finding.",
+      "how_to_use_uk": "Створюйте файли для аналізу схем: хронологія подій, контроль над місцем, категорії ймовірних виконавців, категорії потерпілих, повторювана поведінка, відкриті матеріали, статус свідчень, правова категорія та межі захисту. Правову кваліфікацію подавайте як доказово обґрунтований аргумент, а не як готове судове рішення.",
+      "limits_en": "Do not expose survivor identities, graphic torture details, witness locations or non-public family data. Russian court records may look formal while underlying evidence is allegedly contaminated by coercion.",
+      "limits_uk": "Не розкривайте імена постраждалих, графічні подробиці катувань, місця перебування свідків або непублічні дані родин. Російські судові документи можуть виглядати формально, хоча походження доказів, за заявами фігурантів, могло бути зіпсоване примусом.",
+      "evidence_level": "human-rights reports and public-source synthesis",
+      "source_type": "Truth Hounds studies, KHPG reporting and Daily Signal synthesis",
+      "risk_flags": [
+        "survivor-protection",
+        "torture-details",
+        "legal-qualification"
+      ],
+      "public_interest": "Helps convert detention, torture and rescue-obstruction reporting into reviewable accountability structures.",
+      "verification_status": "Strong leads and documented reports; legal findings require competent proceedings.",
+      "tags": [
+        "war-crimes-verification",
+        "izoliatsiia",
+        "kakhovka",
+        "torture",
+        "pattern-evidence"
+      ]
+    },
+    {
+      "rubric_key": "losses",
+      "emoji": "🕯️",
+      "rubric_en": "Losses, Captivity & Missing",
+      "rubric_uk": "Втрати, полон, зниклі",
+      "title_en": "Captivity and casualty data need status discipline before storytelling",
+      "title_uk": "Дані про полон і втрати потребують дисципліни статусів до будь-якої історії",
+      "source_line_en": "Reuters; Mediazona; Daily Signal #023/#026 · 8–11 June 2026",
+      "source_line_uk": "Reuters; Mediazona; Daily Signal #023/#026 · 8–11 червня 2026",
+      "what_happened_en": "Daily Signal #023 treated the 185-for-185 POW exchange as a confirmed status change rather than a negotiating promise. #026 used Mediazona’s Russian-loss update to separate named open-source confirmations from broader statistical estimates.",
+      "what_happened_uk": "Випуск #023 розглянув обмін 185 на 185 як підтверджену зміну статусу, а не як переговорну обіцянку. Випуск #026 використав оновлення Mediazona щодо російських втрат, щоб розділити поіменні підтвердження з відкритих джерел і ширші статистичні оцінки.",
+      "why_it_matters_en": "Humanitarian datasets are easily damaged by tidy language. Returned, listed, missing, confirmed in captivity, identified among the dead, statistically estimated and unverified are different statuses with different consequences for families, lawyers, journalists and investigators.",
+      "why_it_matters_uk": "Гуманітарні набори даних легко зіпсувати занадто охайною мовою. Повернений, внесений до списку, зниклий, підтверджений у полоні, упізнаний серед загиблих, оцінений статистично та неперевірений — це різні статуси з різними наслідками для родин, юристів, журналістів і дослідників.",
+      "how_to_use_en": "Keep status fields separate from narrative fields: person, source, date, status, confirmation type, update history and public-safety limits. When using loss datasets, label whether the figure is a named confirmation, official project count, relatives’ report, statistical estimate or unverified claim.",
+      "how_to_use_uk": "Відділяйте статусні поля від оповідних: людина, джерело, дата, статус, тип підтвердження, історія оновлень і межі безпечної публікації. Працюючи з даними про втрати, позначайте, чи це поіменне підтвердження, офіційний підрахунок, повідомлення родичів, статистична оцінка або неперевірене твердження.",
+      "limits_en": "Do not infer captivity conditions, deliberate exclusion from exchanges, death circumstances or family consent from a status row alone. Avoid publishing private details about POWs, missing persons, relatives or minors.",
+      "limits_uk": "Не робіть висновків про умови полону, навмисне невключення до обміну, обставини смерті або згоду родини лише зі статусного рядка. Не публікуйте приватні дані військовополонених, зниклих, родичів або неповнолітніх.",
+      "evidence_level": "confirmed exchange reporting and open-source casualty methodology",
+      "source_type": "Reuters, Mediazona and Daily Signal synthesis",
+      "risk_flags": [
+        "family-safety",
+        "status-confusion",
+        "casualty-data"
+      ],
+      "public_interest": "Improves public handling of POW, missing-person and casualty information without flattening uncertainty.",
+      "verification_status": "Confirmed exchange totals and methodology-aware casualty data; individual details require separate confirmation.",
+      "tags": [
+        "pow",
+        "captivity",
+        "missing-persons",
+        "casualty-data",
+        "status-discipline"
+      ]
+    },
+    {
+      "rubric_key": "tradecraft",
+      "emoji": "🧭",
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "title_en": "Maps, drone footage and databases are only useful when uncertainty is visible",
+      "title_uk": "Карти, відео з дронів і бази даних корисні лише тоді, коли видно непевність",
+      "source_line_en": "Reuters; Daily Signal #024/#025/#027; Saturday Tool Radar #028 · 9–13 June 2026",
+      "source_line_uk": "Reuters; Daily Signal #024/#025/#027; Суботній радар інструментів #028 · 9–13 червня 2026",
+      "what_happened_en": "The week paired front-line mapping with drone-war data governance and database publishing. Reuters reporting on territorial claims and drone-force data, plus Tool Radar entries on Datasette, GeoLibre and GeoServer, all pointed to the same practical question: how to let analysts inspect material without pretending that every layer has the same certainty.",
+      "what_happened_uk": "Цього тижня фронтове картографування поєдналося з управлінням даними війни дронів і публікацією баз даних. Матеріали Reuters про заяви щодо контролю територій і дані Сил безпілотних систем, а також суботні позиції про Datasette, GeoLibre і GeoServer вели до одного практичного питання: як дати аналітикам змогу перевіряти матеріал і не вдавати, що всі шари мають однакову певність.",
+      "why_it_matters_en": "A map or database can make uncertain material look cleaner than it is. That is useful for navigation and disastrous for evidence unless the interface preserves source class, date, confidence level, version history, redaction and the difference between observation and interpretation.",
+      "why_it_matters_uk": "Карта або база даних може зробити непевний матеріал охайнішим, ніж він є. Це зручно для навігації, але небезпечно для доказів, якщо інтерфейс не зберігає тип джерела, дату, рівень упевненості, історію версій, редагування чутливих даних і різницю між спостереженням та інтерпретацією.",
+      "how_to_use_en": "For maps and structured datasets, require a confidence column, source link, archive link, version date, redaction note and reviewer field. Separate claimed control, mapped control, visual confirmation, contested area, no-man’s-land and unverified movement.",
+      "how_to_use_uk": "Для карт і структурованих наборів даних обов’язково додавайте поле впевненості, посилання на джерело, архівне посилання, дату версії, примітку про вилучені чутливі дані й поле перевіряча. Окремо позначайте заявлений контроль, нанесений на карту контроль, візуальне підтвердження, спірну зону, нічийну територію та неперевірене просування.",
+      "limits_en": "Do not publish live tactical conclusions, route advice, targetable coordinates or sensitive military layers. Database and map tools do not remove the need for editorial judgement.",
+      "limits_uk": "Не публікуйте поточні тактичні висновки, поради щодо маршрутів, координати, які можна використати для ураження, або чутливі військові шари. Інструменти для баз даних і карт не замінюють редакційного рішення.",
+      "evidence_level": "method synthesis from reporting and tool releases",
+      "source_type": "Reuters, Daily Signal and Saturday Tool Radar synthesis",
+      "risk_flags": [
+        "map-sensitivity",
+        "database-leakage",
+        "confidence-labels"
+      ],
+      "public_interest": "Improves reviewability of geospatial and structured evidence while preserving uncertainty.",
+      "verification_status": "Method-level synthesis; each mapped or database record must be checked separately.",
+      "tags": [
+        "tradecraft",
+        "frontline-mapping",
+        "drone-data",
+        "datasette",
+        "geospatial"
+      ]
+    },
+    {
+      "rubric_key": "toolbox",
+      "emoji": "🧰",
+      "rubric_en": "Tools / Datasets",
+      "rubric_uk": "Інструменти й набори даних",
+      "title_en": "Saturday tools formed a safe evidence stack, not a toy shelf",
+      "title_uk": "Суботні інструменти склали безпечний доказовий набір, а не полицю з іграшками",
+      "source_line_en": "Saturday Tool Radar #028 · 13 June 2026",
+      "source_line_uk": "Суботній радар інструментів #028 · 13 червня 2026",
+      "what_happened_en": "Tool Radar #028 selected seven fresh tools or releases: yt-dlp for public-video preservation, Safe-IOC for reversible defanging, CyberChef for local decoding, Subtitle Edit for time-coded transcripts, Datasette for reviewable databases, GeoLibre for local geospatial review and GeoServer 3.0.0 for controlled map-layer publishing.",
+      "what_happened_uk": "Суботній радар інструментів #028 відібрав сім свіжих інструментів або релізів: yt-dlp для збереження публічного відео, Safe-IOC для оборотного знешкодження шкідливих індикаторів, CyberChef для локального декодування, Subtitle Edit для розшифровок із таймкодами, Datasette для перевірюваних баз даних, GeoLibre для локальної геопросторової перевірки та GeoServer 3.0.0 для контрольованої публікації картографічних шарів.",
+      "why_it_matters_en": "Together they cover a real evidence path: capture a public video, preserve metadata, safely share hostile links, decode suspicious strings, make transcripts, organise structured data, inspect locations and publish only redacted map layers. The value is the sequence, not the novelty badge.",
+      "why_it_matters_uk": "Разом вони закривають реальний шлях роботи з доказами: зберегти публічне відео, не втратити метадані, безпечно передати шкідливі посилання, розкодувати підозрілі рядки, зробити розшифровки, впорядкувати структуровані дані, перевірити локації та публікувати лише відредаговані картографічні шари. Цінність у послідовності, а не в блискучій наліпці «нове».",
+      "how_to_use_en": "Build a minimal stack: isolated capture environment, hash and metadata record, safe indicator notation, local decoding, transcript file, SQLite-backed review table, local geospatial check and a separate redacted publication layer.",
+      "how_to_use_uk": "Зберіть мінімальний набір: ізольоване середовище для збереження матеріалів, хеш і запис метаданих, безпечний запис шкідливих індикаторів, локальне декодування, файл розшифровки, перевірювану таблицю на основі SQLite, локальну геопросторову перевірку та окремий відредагований шар для публікації.",
+      "limits_en": "Tools do not create trust by themselves. Do not use them for private scraping, credential hunting, leaked-database abuse, live targeting, publishing sensitive coordinates or laundering weak claims through a polished interface.",
+      "limits_uk": "Інструменти самі по собі не створюють довіри. Не використовуйте їх для збирання приватних матеріалів, пошуку облікових даних, роботи зі злитими базами, наведення в реальному часі, публікації чутливих координат або легалізації слабких тверджень через охайний інтерфейс.",
+      "evidence_level": "fresh tool-release synthesis",
+      "source_type": "Saturday Tool Radar and primary release pages",
+      "risk_flags": [
+        "tool-misuse",
+        "sensitive-locations",
+        "hostile-links"
+      ],
+      "public_interest": "Gives investigators a safer chain for public evidence preservation, review and publication.",
+      "verification_status": "Tool releases verified through original release pages during Saturday selection.",
+      "tags": [
+        "tools",
+        "evidence-stack",
+        "yt-dlp",
+        "safe-ioc",
+        "geospatial"
+      ]
+    },
+    {
+      "rubric_key": "risk",
+      "emoji": "⚠️",
+      "rubric_en": "Risk Watch",
+      "rubric_uk": "Межі й ризики",
+      "title_en": "The week’s risk boundary: platform contact can become physical harm",
+      "title_uk": "Межа тижня: контакт на платформі може перейти у фізичну шкоду",
+      "source_line_en": "Reuters; Daily Signal #025/#026/#027; Saturday Tool Radar #028 · 8–14 June 2026",
+      "source_line_uk": "Reuters; Daily Signal #025/#026/#027; Суботній радар інструментів #028 · 8–14 червня 2026",
+      "what_happened_en": "This week’s risk items included alleged Russian online recruitment of young women for violence against Ukrainian servicemen, NSO-related WhatsApp litigation, Void Blizzard email targeting, AI sandbox update lag and tool rules for hostile links. The common thread is that a platform contact, attachment, link or account can become a route to offline harm.",
+      "what_happened_uk": "Цього тижня ризикові теми включали заяви про російське онлайн-вербування молодих жінок для насильства проти українських військових, судову історію навколо WhatsApp і NSO, атаки Void Blizzard на електронну пошту, затримки оновлень у середовищах для роботи з ШІ та правила поводження зі шкідливими посиланнями. Спільна нитка така: контакт на платформі, вкладення, посилання або обліковий запис може стати шляхом до шкоди поза інтернетом.",
+      "why_it_matters_en": "For investigators, journalists, volunteers and families, source protection now includes platform hygiene. Recruitment attempts, spyware attempts, phishing messages and hostile documents are not separate from accountability work; they are threats against the people and records that make accountability possible.",
+      "why_it_matters_uk": "Для розслідувачів, журналістів, волонтерів і родин захист джерел тепер включає гігієну роботи на платформах. Спроби вербування, шпигунські атаки, фішингові повідомлення й небезпечні документи не стоять окремо від роботи з притягнення до відповідальності; це загрози людям і записам, без яких така робота неможлива.",
+      "how_to_use_en": "Create a harm-first intake rule: isolate hostile links and documents, defang indicators before sharing, avoid publishing scripts or instructions, protect minors and vulnerable sources, record suspicious contact attempts, and escalate credible threats through safe organisational channels.",
+      "how_to_use_uk": "Запровадьте правило прийому матеріалів, де першим кроком є оцінка шкоди: ізолюйте небезпечні посилання й документи, знешкоджуйте індикатори перед передаванням, не публікуйте сценарії або інструкції, захищайте неповнолітніх і вразливі джерела, фіксуйте підозрілі спроби контакту та передавайте реальні загрози через безпечні канали організації.",
+      "limits_en": "Do not reproduce recruitment scripts, poisoning details, spyware instructions, private accounts, identifying details of minors, family data or operational prompts. Treat platform-derived allegations as leads until corroborated.",
+      "limits_uk": "Не відтворюйте сценарії вербування, деталі отруєння, інструкції щодо шпигунського програмного забезпечення, приватні облікові записи, дані неповнолітніх, інформацію про родини або підказки для дій. Заяви, отримані з платформ, слід вважати зачіпками, доки їх не підтверджено.",
+      "evidence_level": "risk synthesis from fresh reporting and security items",
+      "source_type": "Reuters, Daily Signal and Saturday Tool Radar synthesis",
+      "risk_flags": [
+        "minor-protection",
+        "spyware",
+        "phishing",
+        "offline-harm"
+      ],
+      "public_interest": "Defines safe boundaries for covering platform-enabled threats without reproducing harmful instructions.",
+      "verification_status": "Risk pattern is supported by multiple reported items; individual allegations need separate confirmation.",
+      "tags": [
+        "risk-watch",
+        "platform-safety",
+        "source-protection",
+        "phishing",
+        "spyware"
+      ]
+    }
+  ],
+  "compact_sections": [
+    {
+      "rubric_key": "tradecraft",
+      "emoji": "🧭",
+      "title": "Practical Methods",
+      "short_title": "Methods",
+      "points": [
+        "Keep one evidence-control row for each serious item: source, archive, first-seen time, confidence level, redaction decision and unresolved claims.",
+        "For maps and databases, require source class, version date, confidence field, reviewer field and a separate public-redaction layer.",
+        "For detention, torture and rescue-obstruction cases, build pattern files rather than isolated screenshots."
+      ]
+    },
+    {
+      "rubric_key": "toolbox",
+      "emoji": "🧰",
+      "title": "Tools / Datasets",
+      "short_title": "Tools",
+      "points": [
+        "Use yt-dlp only for public evidence preservation with metadata, hashes and page snapshots.",
+        "Use Safe-IOC and CyberChef as defensive handling tools, not as a path to active probing or unsafe clicks.",
+        "Use Datasette, GeoLibre and GeoServer with redaction, access control and separate public/restricted layers."
+      ]
+    },
+    {
+      "rubric_key": "risk",
+      "emoji": "🛡️",
+      "title": "OPSEC / Risk",
+      "short_title": "Risk",
+      "points": [
+        "Do not publish minors’ identities, recruitment scripts, private accounts, family data or operational prompts.",
+        "Do not publish facility vulnerabilities, live tactical conclusions, route advice or targetable coordinates.",
+        "Treat Telegram, occupation-authority material and platform-derived allegations as leads until corroborated."
+      ]
+    }
+  ],
+  "reading_list": [
+    {
+      "title": "Truth Hounds — Izoliatsiia: from Сulture to Torture",
+      "href": "https://truth-hounds.org/en/cases/izoliatsiia/",
+      "note": "Main source for treating Izoliatsiia as a detention-and-torture system rather than a single site story."
+    },
+    {
+      "title": "Truth Hounds — Flood and Fire",
+      "href": "https://truth-hounds.org/en/cases/flood-and-fire/",
+      "note": "Core source for documenting rescue obstruction after the destruction of the Kakhovka Dam."
+    },
+    {
+      "title": "Reuters — Russian drone hit nuclear fuel storage facility near Chornobyl, Ukraine says",
+      "href": "https://www.reuters.com/world/europe/russian-drone-hit-nuclear-fuel-storage-facility-near-chornobyl-ukraine-says-2026-06-07/",
+      "note": "Protected-infrastructure evidence case with IAEA confirmation and technical caution."
+    },
+    {
+      "title": "Reuters — Ukraine and Russia exchange 185 POWs each",
+      "href": "https://www.reuters.com/world/europe/ukraine-russia-exchange-185-prisoners-war-each-swap-2026-06-05/",
+      "note": "Status-data case for confirmed returns, captivity records and public-safety limits."
+    },
+    {
+      "title": "Reuters — Ukraine’s drone commander wants to cut Crimea off from Russia",
+      "href": "https://www.reuters.com/world/europe/ukraines-drone-commander-wants-cut-crimea-off-russia-2026-06-11/",
+      "note": "Source for the drone-war evidence lifecycle: capture, verification, logging, scoring and archiving."
+    },
+    {
+      "title": "KHPG — Russian sentences against Ukrainians in an occupation-related terrorism case",
+      "href": "https://khpg.org/en/1608815819",
+      "note": "Lawfare file where detention history and torture allegations are central to evidence review."
+    },
+    {
+      "title": "Mediazona — How many Russian soldiers died in the war with Ukraine",
+      "href": "https://en.zona.media/article/2026/06/05/casualties_eng-trl",
+      "note": "Named open-source casualty confirmations and separate statistical estimates."
+    },
+    {
+      "title": "Reuters — Ukraine police chief says Russia recruits young women to kill Ukrainian servicemen",
+      "href": "https://www.reuters.com/world/europe/ukraine-police-chief-says-russia-recruits-young-women-kill-ukrainian-servicemen-2026-06-10/",
+      "note": "Risk-watch source for platform contact becoming offline harm."
+    },
+    {
+      "title": "yt-dlp — 2026.06.09 release",
+      "href": "https://github.com/yt-dlp/yt-dlp/releases/tag/2026.06.09",
+      "note": "Public-video preservation release with important security changes."
+    },
+    {
+      "title": "IETF Datatracker — Safe and Reversible Sharing of Malicious URLs and Indicators",
+      "href": "https://datatracker.ietf.org/doc/draft-grimminck-safe-ioc-sharing/12/",
+      "note": "Defanging convention for reducing accidental activation of hostile indicators."
+    },
+    {
+      "title": "Datasette — releases",
+      "href": "https://github.com/simonw/datasette/releases",
+      "note": "Structured evidence-table publishing with security and staging caveats."
+    },
+    {
+      "title": "Qiusheng Wu — GeoLibre 1.0",
+      "href": "https://gishub.org/blog/geolibre/",
+      "note": "Local geospatial review option for incident points, rasters, attributes and map layers."
+    }
+  ]
+}
