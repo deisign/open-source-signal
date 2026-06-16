@@ -685,7 +685,7 @@
   tested_status: situational
   public: true
   project_fit: Useful maritime context layer for retrospective shipping, port, infrastructure, and sanctions-adjacent research.
-  notes: Public Toolkit framing must be retrospective/contextual verification only, not live targeting or real-time targeting. AIS and tracker data can be delayed, filtered, incomplete, spoofed, blocked, switched off, or absent; corroborate with imagery, port records, official notices, and other maritime sources. Never infer military status, cargo, ownership, or intent from tracker points alone.
+  notes: Best used to reconstruct vessel and port timelines after the fact. AIS gaps, spoofing, switched-off transponders, and platform filtering are common; confirm movements with port records, satellite imagery, shipping or sanctions records, and reporting. Do not use for live targeting or infer cargo, ownership, military role, or intent from dots on a map.
   use_cases_uk:
     - Відстежувати судна за AIS
     - Перевіряти контекст заходів у порти
@@ -696,7 +696,7 @@
     - Назва судна, IMO, MMSI, callsign, порт, район або часовий контекст
   output_uk:
     - Позиції суден, контекст руху за AIS, зачіпки з профілю судна та дані про порти чи рейси, якщо доступні
-  notes_uk: Публічний Toolkit має залишатися лише для ретроспективної або контекстної перевірки, не для наведення в реальному часі. AIS і дані трекерів можуть бути затриманими, відфільтрованими, неповними, підробленими, заблокованими, вимкненими або відсутніми; звіряйте зі знімками, портовими записами, офіційними повідомленнями та іншими морськими джерелами. Ніколи не робіть висновків про військовий статус, вантаж, власність чи намір лише з точок трекера.
+  notes_uk: Найкраще підходить для ретроспективної реконструкції руху судна або портової хронології. Прогалини AIS, підміна сигналу, вимкнені транспондери й фільтрація платформою трапляються часто; підтверджуйте рух портовими записами, супутниковими знімками, судновими або санкційними реєстрами та репортажами. Не використовуйте для наведення в реальному часі й не робіть висновків про вантаж, власність, військову роль чи намір лише з точок на мапі.
 - id: vesselfinder
   name: VesselFinder
   url: https://www.vesselfinder.com/
@@ -720,7 +720,7 @@
   tested_status: situational
   public: true
   project_fit: Useful second AIS layer for cross-checking vessel movement leads against MarineTraffic and other maritime sources.
-  notes: Public Toolkit framing must be retrospective/contextual verification only, not live targeting or real-time targeting. AIS and tracker data can be delayed, filtered, incomplete, spoofed, blocked, switched off, missing, or absent; use as a corroboration lead, not standalone evidence. Never infer military status, cargo, ownership, or intent from tracker points alone.
+  notes: Use as a second AIS view for checking whether a vessel lead is consistent across platforms. Differences between services can reflect receiver coverage, data licensing, filtering, identity changes, or stale positions; treat mismatches as leads to investigate. Do not treat tracker points as standalone proof of ownership, cargo, military role, or intent.
   use_cases_uk:
     - Шукати судна за AIS
     - Перевіряти контекст морських інцидентів
@@ -731,7 +731,7 @@
     - Назва судна, IMO, MMSI, порт, район або часовий контекст
   output_uk:
     - Позиції суден, контекст руху за AIS, дані про судно та зачіпки щодо портів чи рейсів, якщо доступні
-  notes_uk: Публічний Toolkit має залишатися лише для ретроспективної або контекстної перевірки, не для наведення в реальному часі. AIS і дані трекерів можуть бути затриманими, відфільтрованими, неповними, підробленими, заблокованими, вимкненими, пропущеними або відсутніми; використовуйте як зачіпку для підтвердження, а не як самостійний доказ. Ніколи не робіть висновків про військовий статус, вантаж, власність чи намір лише з точок трекера.
+  notes_uk: Використовуйте як другий AIS-шар для перевірки, чи збігається суднова зачіпка на різних платформах. Розбіжності між сервісами можуть бути наслідком покриття приймачів, ліцензування даних, фільтрації, змін ідентичності або застарілих позицій; сприймайте їх як зачіпки для перевірки. Не вважайте точки трекера самостійним доказом власності, вантажу, військової ролі чи наміру.
 - id: flightradar24
   name: Flightradar24
   url: https://www.flightradar24.com/
@@ -755,7 +755,7 @@
   tested_status: situational
   public: true
   project_fit: Useful aviation context layer for retrospective public flight and airport-disruption research.
-  notes: Public Toolkit framing must be retrospective/contextual verification only, not live targeting or real-time targeting. ADS-B and flight-tracking data can be delayed, filtered, incomplete, spoofed, blocked, or absent; corroborate with official airport notices, NOTAM context, imagery, and reporting. Never infer military status, cargo, ownership, or intent from tracker points alone.
+  notes: Useful for a first-pass public flight timeline and airport-disruption context. Aircraft visibility can vary by region, blocking, feed availability, history limits, and subscription level; corroborate with airport notices, NOTAM context, imagery, reporting, and other aviation sources. Do not use for live targeting or infer military status or intent from tracker points alone.
   use_cases_uk:
     - Перевіряти контекст руху повітряних суден
     - Оцінювати перебої в роботі аеропортів
@@ -766,7 +766,7 @@
     - Номер рейсу, callsign, реєстрація повітряного судна, аеропорт, маршрут або часовий контекст
   output_uk:
     - Позиції повітряних суден, статус рейсу, історія маршруту, якщо доступна, та контекст аеропорту або літака
-  notes_uk: Публічний Toolkit має залишатися лише для ретроспективної або контекстної перевірки, не для наведення в реальному часі. Дані ADS-B і flight-tracking можуть бути затриманими, відфільтрованими, неповними, підробленими, заблокованими або відсутніми; звіряйте з офіційними повідомленнями аеропортів, контекстом NOTAM, знімками та репортажами. Ніколи не робіть висновків про військовий статус, вантаж, власність чи намір лише з точок трекера.
+  notes_uk: Корисний для первинної публічної хронології рейсу та контексту перебоїв в аеропортах. Видимість повітряних суден залежить від регіону, блокувань, доступності фідів, обмежень історії та рівня доступу; звіряйте з повідомленнями аеропортів, контекстом NOTAM, знімками, репортажами та іншими авіаційними джерелами. Не використовуйте для наведення в реальному часі й не робіть висновків про військовий статус чи намір лише з точок трекера.
 - id: flightaware
   name: FlightAware
   url: https://www.flightaware.com/
@@ -790,7 +790,7 @@
   tested_status: situational
   public: true
   project_fit: Useful cross-check layer for public aviation timelines and airport or route disruptions.
-  notes: Public Toolkit framing must be retrospective/contextual verification only, not live targeting or real-time targeting. Flight-tracking data can be delayed, filtered, incomplete, spoofed, blocked, absent, and affected by coverage or source differences; treat it as a lead. Never infer military status, cargo, ownership, or intent from tracker points alone.
+  notes: Stronger for flight status, route, and airport-delay context than for conclusions about aircraft purpose. API and historical access vary by plan, and blocked aircraft, route changes, diversions, or feed differences can distort a timeline. Use as one corroboration layer, not as proof of military status, ownership, cargo, or intent.
   use_cases_uk:
     - Перевіряти статус рейсу
     - Отримувати зачіпки щодо руху повітряних суден
@@ -801,7 +801,7 @@
     - Номер рейсу, маршрут, аеропорт, реєстрація повітряного судна або часовий контекст
   output_uk:
     - Статус рейсу, мапа трекінгу, контекст затримок в аеропортах і зачіпки щодо маршруту або літака
-  notes_uk: Публічний Toolkit має залишатися лише для ретроспективної або контекстної перевірки, не для наведення в реальному часі. Дані flight-tracking можуть бути затриманими, відфільтрованими, неповними, підробленими, заблокованими, відсутніми та залежними від покриття або відмінностей між джерелами; сприймайте їх як зачіпку. Ніколи не робіть висновків про військовий статус, вантаж, власність чи намір лише з точок трекера.
+  notes_uk: Найкраще працює для статусу рейсу, маршруту та контексту затримок в аеропортах, а не для висновків про призначення літака. Доступ до API та історичних даних залежить від тарифу, а заблоковані борти, зміни маршруту, відхилення й різниця між фідами можуть спотворювати хронологію. Використовуйте як один шар підтвердження, а не як доказ військового статусу, власності, вантажу чи наміру.
 - id: plane_finder
   name: Plane Finder
   url: https://planefinder.net/
@@ -825,7 +825,7 @@
   tested_status: situational
   public: true
   project_fit: Useful additional aviation tracker for cross-checking ADS-B and flight-tracking leads.
-  notes: Public Toolkit framing must be retrospective/contextual verification only, not live targeting or real-time targeting. ADS-B and flight-tracking coverage can be delayed, filtered, incomplete, spoofed, blocked, or absent, and may exclude blocked or non-broadcasting aircraft; verify against independent aviation and official sources. Never infer military status, cargo, ownership, or intent from tracker points alone.
+  notes: Useful as a supplemental ADS-B map when another tracker misses or plots a flight differently. Treat live-map positions as volatile because receiver density, blocking, non-broadcasting aircraft, replay limits, and history access all matter. Verify retrospectively and do not operationalize live positions.
   use_cases_uk:
     - Перехресно перевіряти flight tracking
     - Перевіряти контекст руху повітряних суден
@@ -836,7 +836,7 @@
     - Номер рейсу, callsign, реєстрація повітряного судна, аеропорт, район або часовий контекст
   output_uk:
     - Позиції повітряних суден, контекст live map, зачіпки щодо статусу аеропорту та руху літака
-  notes_uk: Публічний Toolkit має залишатися лише для ретроспективної або контекстної перевірки, не для наведення в реальному часі. Покриття ADS-B і flight-tracking може бути затриманим, відфільтрованим, неповним, підробленим, заблокованим або відсутнім і може не включати заблоковані або такі, що не транслюють сигнал, повітряні судна; перевіряйте через незалежні авіаційні та офіційні джерела. Ніколи не робіть висновків про військовий статус, вантаж, власність чи намір лише з точок трекера.
+  notes_uk: Корисний як додаткова ADS-B-мапа, коли інший трекер не бачить рейс або показує його інакше. Позиції на live map нестабільні через щільність приймачів, блокування, борти без трансляції сигналу, обмеження replay та доступ до історії. Перевіряйте ретроспективно й не використовуйте live-позиції для оперативного наведення.
 - id: opensky_network
   name: OpenSky Network
   url: https://opensky-network.org/data/api
