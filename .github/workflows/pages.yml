@@ -42,6 +42,9 @@ jobs:
       - name: Create .nojekyll marker
         run: touch dist/.nojekyll
 
+      - name: Preserve custom domain
+        run: cp CNAME dist/CNAME
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
