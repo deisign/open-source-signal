@@ -1,0 +1,446 @@
+{
+  "issue_number": "W28",
+  "slug": "open-source-signal-weekly-2026-W28",
+  "output_name": "open-source-signal-weekly-2026-W28.html",
+  "date_iso": "2026-07-12",
+  "week_label_en": "6–12 July 2026",
+  "week_label_uk": "6–12 липня 2026",
+  "title_en": "Open Source Signal Weekly",
+  "title_uk": "Тижневий сигнал відкритих джерел",
+  "subtitle_en": "Sunday editorial synthesis for Ukrainian accountability OSINT.",
+  "subtitle_uk": "Недільний редакційний синтез для української роботи з відкритими джерелами й притягнення до відповідальності.",
+  "dek_en": "A magazine-style synthesis of the week’s strongest public-interest signals: oil-facility and tanker records, downstream fuel-policy evidence, civilian-harm and air-defence ledgers, software supply-chain poisoning, AI-assisted cyber-risk windows, location-data exposure, network-measurement records, maritime tracking, entity resolution and satellite or thermal corroboration.",
+  "dek_uk": "Журнальний синтез найважливіших сигналів тижня з відкритих джерел: записи про нафтові об’єкти й танкери, подальші докази в паливній політиці, журнали шкоди цивільним і протиповітряної оборони, зараження програмних ланцюгів постачання, вікна кіберризику через ШІ, викриття даних про місце перебування, записи мережевих вимірювань, морське відстеження, звіряння сутностей і супутникове або теплове підтвердження.",
+  "editorial_frame": {
+    "what_this_is": "A Sunday weekly magazine. It develops the strongest signals from Daily Signal #047–#051, Saturday Tool Radar #052 and the Sunday source check into editorial sections with evidence status, source limits and practical use.",
+    "what_this_is_not": "A dump of daily cards, a live-targeting board, a Telegram rumor digest, a vessel-hunting console, a leaked-data workflow, or a small official-looking duck that stamps CONFIRMED on anything with smoke in the background."
+  },
+  "rubric_map": [
+    "📡 Signal of the Week / Головний сигнал тижня",
+    "🇺🇦 Ukraine Lens / Українська оптика",
+    "⚖️ War Crimes Verification / Верифікація воєнних злочинів",
+    "🛰️ Infrastructure Signals / Інфраструктурні сигнали",
+    "🤖 AI Verification / ШІ та верифікація",
+    "🛡️ Investigator OPSEC / Безпека дослідника",
+    "🧰 Tools / Datasets / Інструменти й набори даних",
+    "⚠️ Risk Watch / Межі й ризики"
+  ],
+  "editorial_note_en": "This week’s signal is that the useful record is no longer the spectacular event by itself. A refinery fire matters when it becomes an operational-status field, a diesel-export ban, a market signal and a later correction. A missile attack matters when civilian harm, air-defence claims, rescue status and publication limits stay in separate ledgers. A software incident matters when disclosure time, maintainer response, patch window, affected dependency and evidence custody are kept apart. The work is less like shouting at a map and more like persuading eight stubborn spreadsheets to stop wearing each other’s hats.",
+  "editorial_note_uk": "Головний сигнал тижня: корисним записом уже не є сама видовищна подія. Пожежа на НПЗ стає важливою тоді, коли переходить у поле робочого стану об’єкта, заборону експорту дизеля, ринковий сигнал і пізніше уточнення. Ракетний удар потребує окремих журналів для шкоди цивільним, заяв про протиповітряну оборону, стану рятувальних робіт і меж публікації. Програмний інцидент потребує окремого часу розкриття, реакції супровідників, вікна виправлення, зачепленої залежності й збереження доказів. Це вже не крик на мапу, а спроба переконати вісім упертих таблиць не вдягати чужі капелюхи.",
+  "items": [
+    {
+      "rubric_key": "signal",
+      "emoji": "📡",
+      "rubric_en": "Signal of the Week",
+      "rubric_uk": "Головний сигнал тижня",
+      "title_en": "The week was about object status, not dramatic incident labels",
+      "title_uk": "Тиждень був про стан об’єктів, а не про гучні назви інцидентів",
+      "source_line_en": "Daily Signal #047–#051; Saturday Tool Radar #052; Sunday source check · 6–12 July 2026",
+      "source_line_uk": "Щоденні випуски #047–#051; Суботній радар інструментів #052; недільна перевірка джерел · 6–12 липня 2026",
+      "what_happened_en": "Across the week, the strongest signals were records that changed status: a strike became a facility ledger, a tanker hit became a maritime-logistics record, a diesel export ban became downstream evidence, a location-data concern became a minimisation problem, and a tool list became a controlled verification stack.",
+      "what_happened_uk": "Протягом тижня найсильнішими сигналами були записи, що змінювали стан: удар ставав журналом об’єкта, ураження танкера — морським логістичним записом, заборона експорту дизеля — подальшим доказовим сигналом, проблема даних про місце перебування — питанням мінімізації, а перелік інструментів — контрольованим набором для перевірки.",
+      "why_it_matters_en": "For public-interest OSINT, a headline is often the weakest container. The durable unit is the object record: what changed, who says it changed, when the change was first visible, what later confirmed or weakened it, and what should not be published.",
+      "why_it_matters_uk": "Для суспільно важливої роботи з відкритими джерелами заголовок часто є найслабшою оболонкою. Стійкою одиницею є запис про об’єкт: що змінилося, хто про це повідомив, коли зміну вперше було видно, що згодом її підтвердило або послабило і що не можна публікувати.",
+      "how_to_use_en": "Give every major record a status ladder: claim, official acknowledgement, independent observation, operational-status signal, downstream service or market response, correction, confidence level and publication limit.",
+      "how_to_use_uk": "Дайте кожному великому запису сходи станів: твердження, офіційне визнання, незалежне спостереження, сигнал про робочий стан, подальша реакція послуги або ринку, уточнення, рівень упевненості й межа публікації.",
+      "limits_en": "Do not promote smoke, outage, queue, map marker, model output, vessel track or name match into a final conclusion without separate source status and later confirmation.",
+      "limits_uk": "Не підвищуйте дим, відключення, чергу, мітку на мапі, результат моделі, трек судна або збіг імені до остаточного висновку без окремого статусу джерела й подальшого підтвердження.",
+      "evidence_level": "weekly synthesis of Daily Signal #047–#051, Saturday Tool Radar #052 and Sunday source check",
+      "source_type": "published issue synthesis plus Sunday public-source check",
+      "risk_flags": [
+        "status-upgrade-risk",
+        "source-status",
+        "publication-safety",
+        "object-ledger"
+      ],
+      "public_interest": "Keeps the weekly record organised around object status and safe publication rather than spectacle.",
+      "verification_status": "Synthesised from repository issues and current public-source checks.",
+      "source_refs": [
+        "issues/2026-07-06.json",
+        "issues/2026-07-07.json",
+        "issues/2026-07-08.json",
+        "issues/2026-07-09.json",
+        "issues/2026-07-10.json",
+        "issues/2026-07-11.json"
+      ],
+      "tags": [
+        "signal-of-week",
+        "object-status",
+        "evidence-window",
+        "source-discipline",
+        "publication-safety"
+      ]
+    },
+    {
+      "rubric_key": "ukraine",
+      "emoji": "🇺🇦",
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "title_en": "Ukraine-facing records moved from strike reports to infrastructure ledgers",
+      "title_uk": "Українські записи перейшли від повідомлень про удари до інфраструктурних журналів",
+      "source_line_en": "Daily Signal #047–#051; AP and Reuters source checks · 6–12 July 2026",
+      "source_line_uk": "Щоденні випуски #047–#051; перевірка джерел Associated Press і Reuters · 6–12 липня 2026",
+      "what_happened_en": "Ukraine-facing items centred on Kyiv civilian-harm records, repeated air attacks on the capital, Ukrainian strikes on Russian refineries and tankers, the Saratov refinery halt, Russia’s diesel export ban, fuel-shortage signals and maritime logistics in the Sea of Azov.",
+      "what_happened_uk": "Українська частина тижня зосередилася на записах про шкоду цивільним у Києві, повторних повітряних атаках на столицю, українських ударах по російських НПЗ і танкерах, зупинці Саратовського НПЗ, російській забороні експорту дизеля, сигналах паливного дефіциту й морській логістиці в Азовському морі.",
+      "why_it_matters_en": "The useful record is not a single campaign label. Each facility, vessel, policy measure and civilian-harm site needs its own source trail, status, time window and later update.",
+      "why_it_matters_uk": "Корисним записом є не одна назва кампанії. Кожен завод, судно, політичний захід і місце шкоди цивільним потребують власного ланцюга джерел, стану, часового вікна й пізнішого оновлення.",
+      "how_to_use_en": "Separate ledgers by object class: civilian-harm site, air-defence claim, refinery, tanker, pipeline station, export policy, fuel-market signal and public-service consequence.",
+      "how_to_use_uk": "Розділяйте журнали за класом об’єкта: місце шкоди цивільним, заява про протиповітряну оборону, НПЗ, танкер, насосна станція трубопроводу, експортна політика, паливний ринковий сигнал і наслідок для публічної послуги.",
+      "limits_en": "Do not publish launch areas, flight paths, approach routes, exact damage coordinates, repair workarounds, active air-defence details, shelter patterns, evacuation timing or identifiable images of victims and rescuers.",
+      "limits_uk": "Не публікуйте райони запуску, траєкторії польоту, маршрути підходу, точні координати пошкоджень, способи обходу ремонту, поточні деталі протиповітряної оборони, схеми укриттів, час евакуацій або зображення, що можуть ідентифікувати постраждалих і рятувальників.",
+      "evidence_level": "weekly synthesis of Ukraine-facing records",
+      "source_type": "Daily Signal source synthesis and Sunday public-source check",
+      "risk_flags": [
+        "operational-detail",
+        "civilian-protection",
+        "sensitive-infrastructure",
+        "maritime-logistics"
+      ],
+      "public_interest": "Connects Ukrainian accountability records to infrastructure, civilian protection and safe publication boundaries.",
+      "verification_status": "Synthesised from Daily Signal #047–#051 and current source checks.",
+      "source_refs": [
+        "https://apnews.com/article/f0bab8086a84705db07c74b3b1b99c49",
+        "https://www.reuters.com/business/energy/russia-bans-diesel-exports-increase-domestic-supply-says-deputy-pm-2026-07-08/",
+        "https://www.reuters.com/business/energy/russias-saratov-oil-refinery-halt-since-wednesdays-drone-attack-sources-say-2026-07-09/"
+      ],
+      "tags": [
+        "ukraine",
+        "civilian-harm",
+        "energy-infrastructure",
+        "maritime-logistics",
+        "fuel-supply"
+      ]
+    },
+    {
+      "rubric_key": "war-crimes",
+      "emoji": "⚖️",
+      "rubric_en": "War Crimes Verification",
+      "rubric_uk": "Верифікація воєнних злочинів",
+      "title_en": "Civilian-harm records need separate columns for attack, storage, warning and rescue",
+      "title_uk": "Записи про шкоду цивільним потребують окремих колонок для удару, зберігання, попередження й рятувальних робіт",
+      "source_line_en": "Daily Signal #047 and #049; Guardian Sunday briefing · 6–12 July 2026",
+      "source_line_uk": "Щоденні випуски #047 і #049; недільний огляд The Guardian · 6–12 липня 2026",
+      "what_happened_en": "The week included Kyiv civilian-harm records after Russian attacks, repeated reporting on air-defence and ballistic-missile interception, and a Sunday briefing that added a governance question around weapons stored near a residential area struck by Russia.",
+      "what_happened_uk": "Тиждень містив київські записи про шкоду цивільним після російських атак, повторні повідомлення про протиповітряну оборону й перехоплення балістичних ракет, а недільний огляд додав управлінське питання щодо зберігання зброї біля житлового району, по якому вдарила Росія.",
+      "why_it_matters_en": "Civilian-harm work breaks when every fact is pushed into one narrative paragraph. Attack effects, storage decisions, alert timing, rescue status, casualty updates and official accountability steps are different evidence objects.",
+      "why_it_matters_uk": "Робота зі шкодою цивільним ламається, коли всі факти втискають в один сюжетний абзац. Наслідки удару, рішення щодо зберігання, час попередження, стан рятувальних робіт, уточнення щодо постраждалих і офіційні кроки відповідальності — це різні доказові об’єкти.",
+      "how_to_use_en": "Create linked tables for site, harm, warning, rescue, storage or facility issue, official statement, correction and publication restriction. Keep victim protection and sensitive-location redaction visible in the record.",
+      "how_to_use_uk": "Створіть пов’язані таблиці для місця, шкоди, попередження, рятувальних робіт, питання зберігання або об’єкта, офіційної заяви, уточнення й обмеження публікації. Окремо фіксуйте захист постраждалих і приховування чутливих місць.",
+      "limits_en": "Do not publish exact impact points, shelter patterns, rescue-sensitive addresses, private resident data, identifiable victim images or location details that expose military or emergency-service behaviour.",
+      "limits_uk": "Не публікуйте точні місця влучань, схеми укриттів, адреси, чутливі для рятувальників, приватні дані жителів, упізнавані зображення постраждалих або деталі локацій, що розкривають дії військових чи екстрених служб.",
+      "evidence_level": "weekly synthesis with Sunday source update",
+      "source_type": "Daily Signal and public news source synthesis",
+      "risk_flags": [
+        "civilian-protection",
+        "sensitive-location",
+        "governance-record",
+        "casualty-ledger"
+      ],
+      "public_interest": "Separates civilian-harm documentation from tactical disclosure and from unreviewed attribution leaps.",
+      "verification_status": "Synthesised from published issue items and Sunday source check.",
+      "source_refs": [
+        "https://www.theguardian.com/world/2026/jul/12/ukraine-war-briefing-zelenskyy-decries-housing-of-weapons-in-civilian-area-kyiv-russian-strike-deaths"
+      ],
+      "tags": [
+        "war-crimes-verification",
+        "civilian-harm",
+        "kyiv",
+        "air-defence",
+        "publication-safety"
+      ]
+    },
+    {
+      "rubric_key": "ukraine",
+      "emoji": "🛰️",
+      "rubric_en": "Infrastructure Signals",
+      "rubric_uk": "Інфраструктурні сигнали",
+      "title_en": "Energy-infrastructure OSINT needs downstream evidence, not only fire footage",
+      "title_uk": "Робота з енергетичною інфраструктурою потребує подальших доказів, а не лише відео пожежі",
+      "source_line_en": "Daily Signal #048–#051 · 7–10 July 2026",
+      "source_line_uk": "Щоденні випуски #048–#051 · 7–10 липня 2026",
+      "what_happened_en": "The week’s infrastructure records linked Ukrainian strikes on Russian refineries, tankers and pipeline stations to operational-status reports, fuel shortages, price pressure, refinery downtime and Russia’s temporary diesel-export ban.",
+      "what_happened_uk": "Інфраструктурні записи тижня пов’язали українські удари по російських НПЗ, танкерах і насосних станціях із повідомленнями про робочий стан об’єктів, дефіцитом пального, ціновим тиском, зупинкою НПЗ і тимчасовою російською забороною експорту дизеля.",
+      "why_it_matters_en": "A fire video can start a record, but it cannot finish one. Stronger evidence comes from repair status, operating status, product availability, policy reaction, market data, public-service disruption and later corrections.",
+      "why_it_matters_uk": "Відео пожежі може почати запис, але не може його завершити. Сильніші докази дають стан ремонту, робочий стан об’єкта, наявність продукту, політична реакція, ринкові дані, перебої публічних послуг і пізніші уточнення.",
+      "how_to_use_en": "Maintain an infrastructure table with object class, operator, source class, visible effect, operating status, market signal, policy response, environmental note, confidence level and withheld sensitive detail.",
+      "how_to_use_uk": "Ведіть інфраструктурну таблицю з класом об’єкта, оператором, типом джерела, видимим наслідком, робочим станом, ринковим сигналом, політичною реакцією, екологічною позначкою, рівнем упевненості й вилученими чутливими деталями.",
+      "limits_en": "Do not infer exact damage, repair paths, production bottlenecks or repeatable attack information from public imagery, market effects or policy changes alone.",
+      "limits_uk": "Не виводьте точний обсяг шкоди, шляхи ремонту, виробничі вузькі місця або відомості, які допоможуть повторити атаку, лише з публічних знімків, ринкових наслідків чи політичних рішень.",
+      "evidence_level": "multi-day infrastructure synthesis",
+      "source_type": "Daily Signal source synthesis",
+      "risk_flags": [
+        "sensitive-infrastructure",
+        "downstream-evidence",
+        "repair-detail",
+        "market-signal"
+      ],
+      "public_interest": "Improves infrastructure monitoring while avoiding operational assistance.",
+      "verification_status": "Synthesised from Daily Signal #048–#051.",
+      "source_refs": [
+        "https://www.reuters.com/business/energy/russia-bans-diesel-exports-increase-domestic-supply-says-deputy-pm-2026-07-08/",
+        "https://www.reuters.com/business/energy/russias-saratov-oil-refinery-halt-since-wednesdays-drone-attack-sources-say-2026-07-09/"
+      ],
+      "tags": [
+        "infrastructure-signals",
+        "energy",
+        "refineries",
+        "fuel-market",
+        "downstream-evidence"
+      ]
+    },
+    {
+      "rubric_key": "tradecraft",
+      "emoji": "🤖",
+      "rubric_en": "AI Verification",
+      "rubric_uk": "ШІ та верифікація",
+      "title_en": "AI and software incidents are shrinking the verification window",
+      "title_uk": "Інциденти з ШІ й програмним забезпеченням скорочують вікно перевірки",
+      "source_line_en": "Daily Signal #047, #049–#051 · 6–10 July 2026",
+      "source_line_uk": "Щоденні випуски #047, #049–#051 · 6–10 липня 2026",
+      "what_happened_en": "The week covered model-access governance, FLARE-AI flaw reporting, AI-assisted vulnerability disclosure after the Front Gate Tickets case, GitHub security-advisory delays, JADEPUFFER as an agentic-ransomware incident record, Claude Code backdoor allegations, multimodal deepfake preservation and AI-shortened patch windows.",
+      "what_happened_uk": "Тиждень охопив урядування доступу до моделей, повідомлення про вади через FLARE-AI, розкриття вразливостей за допомогою ШІ після випадку Front Gate Tickets, затримки перевірки повідомлень GitHub про вразливості, JADEPUFFER як запис про автономне здирницьке програмне забезпечення, звинувачення щодо Claude Code, збереження доказів про мультимодальні дипфейки та скорочення вікон виправлення через ШІ.",
+      "why_it_matters_en": "The issue is not whether AI is impressive. The issue is how quickly a claim can become a public exploit, a dependency risk, a false accusation, a forged media object or an unreviewed automated action.",
+      "why_it_matters_uk": "Питання не в тому, чи вражає ШІ. Питання в тому, як швидко твердження може перетворитися на публічну експлуатацію вразливості, ризик залежності, хибне звинувачення, підроблений медіаоб’єкт або неперевірену автоматизовану дію.",
+      "how_to_use_en": "Track model or tool name, actor, authority granted, data touched, disclosure time, maintainer response, patch status, human-review point, evidence capture and what operational detail was withheld.",
+      "how_to_use_uk": "Фіксуйте назву моделі або інструмента, учасника, надані права, зачеплені дані, час розкриття, реакцію супровідників, стан виправлення, точку людської перевірки, збереження доказів і вилучені операційні деталі.",
+      "limits_en": "Do not publish exploit steps, credential material, bypass prompts, offensive procedures, private repository details, forged-media recreation steps or unverified claims against private people.",
+      "limits_uk": "Не публікуйте кроки експлуатації вразливостей, облікові дані, запити для обходу запобіжників, наступальні процедури, деталі приватних сховищ коду, способи відтворення підроблених медіа або неперевірені звинувачення проти приватних людей.",
+      "evidence_level": "weekly synthesis of AI and software-supply-chain issue items",
+      "source_type": "Daily Signal issue synthesis",
+      "risk_flags": [
+        "ai-cyber-risk",
+        "patch-window",
+        "software-supply-chain",
+        "deepfake-evidence"
+      ],
+      "public_interest": "Keeps AI incident work focused on evidence custody, review and disclosure windows.",
+      "verification_status": "Synthesised from Daily Signal #047, #049, #050 and #051.",
+      "source_refs": [
+        "issues/2026-07-06.json",
+        "issues/2026-07-08.json",
+        "issues/2026-07-09.json",
+        "issues/2026-07-10.json"
+      ],
+      "tags": [
+        "ai-verification",
+        "software-supply-chain",
+        "vulnerability-disclosure",
+        "deepfakes",
+        "patch-windows"
+      ]
+    },
+    {
+      "rubric_key": "risk",
+      "emoji": "🛡️",
+      "rubric_en": "Investigator OPSEC",
+      "rubric_uk": "Безпека дослідника",
+      "title_en": "The week’s privacy lesson was custody before access",
+      "title_uk": "Урок тижня щодо приватності: спершу збереження, потім доступ",
+      "source_line_en": "Daily Signal #047–#051 · 6–10 July 2026",
+      "source_line_uk": "Щоденні випуски #047–#051 · 6–10 липня 2026",
+      "what_happened_en": "Privacy-facing items covered geofence warrants, EU search-data access, ATF’s withdrawal from warrantless phone-location tracking, sensitive-site location-data gaps and data-broker deletion failures.",
+      "what_happened_uk": "Матеріали про приватність охопили геозонні ордери, доступ до пошукових даних у ЄС, відмову ATF від безордерного стеження за телефонами, прогалини захисту даних про місце перебування біля чутливих об’єктів і невиконані запити до брокерів даних.",
+      "why_it_matters_en": "Access to data is never neutral. The same dataset that helps public-interest work can expose sources, victims, witnesses, residents, investigators and unrelated private people if custody and minimisation are weak.",
+      "why_it_matters_uk": "Доступ до даних ніколи не є нейтральним. Той самий набір даних, який допомагає суспільно важливій роботі, може викрити джерела, потерпілих, свідків, жителів, дослідників і непричетних приватних людей, якщо збереження й мінімізація слабкі.",
+      "how_to_use_en": "Before collecting or receiving sensitive records, document legal basis, data fields, recipient, storage controls, minimisation choices, retention period, deletion plan, reviewer and residual privacy risk.",
+      "how_to_use_uk": "Перед збиранням або отриманням чутливих записів фіксуйте правову підставу, поля даних, отримувача, правила зберігання, рішення щодо мінімізації, строк зберігання, план видалення, перевіряча й залишковий ризик для приватності.",
+      "limits_en": "Do not identify private people through location data, search data, broker records, device signals, home/work patterns, family links or movement histories.",
+      "limits_uk": "Не встановлюйте приватних людей через дані про місце перебування, пошукові дані, записи брокерів даних, сигнали пристроїв, домашні чи робочі маршрути, родинні зв’язки або історії пересування.",
+      "evidence_level": "weekly synthesis of privacy and OPSEC records",
+      "source_type": "Daily Signal issue synthesis",
+      "risk_flags": [
+        "privacy",
+        "data-custody",
+        "re-identification",
+        "source-protection"
+      ],
+      "public_interest": "Prevents public-interest research from becoming secondary exposure of private people.",
+      "verification_status": "Synthesised from Daily Signal #047–#051.",
+      "source_refs": [
+        "issues/2026-07-06.json",
+        "issues/2026-07-07.json",
+        "issues/2026-07-09.json",
+        "issues/2026-07-10.json"
+      ],
+      "tags": [
+        "investigator-opsec",
+        "privacy",
+        "location-data",
+        "data-minimisation",
+        "source-protection"
+      ]
+    },
+    {
+      "rubric_key": "toolbox",
+      "emoji": "🧰",
+      "rubric_en": "Tools / Datasets",
+      "rubric_uk": "Інструменти й набори даних",
+      "title_en": "The Saturday stack moved from screenshots to measurement and entity work",
+      "title_uk": "Суботній набір перейшов від знімків екрана до вимірювань і роботи з сутностями",
+      "source_line_en": "Saturday Tool Radar #052 · 11 July 2026",
+      "source_line_uk": "Суботній радар інструментів #052 · 11 липня 2026",
+      "what_happened_en": "The Tool Radar selected Copernicus Browser, OONI Explorer, Aleph, Global Fishing Watch, OpenCorporates, NASA FIRMS and Wikidata Query Service. Together they cover imagery review, network measurements, documents, maritime activity, company records, thermal checks and controlled entity reconciliation.",
+      "what_happened_uk": "Суботній радар інструментів відібрав Copernicus Browser, OONI Explorer, Aleph, Global Fishing Watch, OpenCorporates, NASA FIRMS і Wikidata Query Service. Разом вони закривають перевірку знімків, мережеві вимірювання, документи, морську активність, записи компаній, теплові перевірки й контрольоване звіряння сутностей.",
+      "why_it_matters_en": "The stack helps turn scattered open sources into a reviewable chain: see a change, measure a network event, preserve documents, track vessels, anchor companies, check heat signals and reconcile names.",
+      "why_it_matters_uk": "Цей набір допомагає перетворити розрізнені відкриті джерела на придатний до перевірки ланцюг: побачити зміну, виміряти мережеву подію, зберегти документи, відстежити судна, прив’язати компанії, перевірити теплові сигнали й звірити назви.",
+      "how_to_use_en": "Use the tools as stages, not verdict machines: record acquisition time, measurement ID, document source, vessel identifier, company number, thermal confidence, query URL, reviewer and limits.",
+      "how_to_use_uk": "Використовуйте інструменти як етапи, а не машини вироків: фіксуйте час отримання, ідентифікатор вимірювання, джерело документа, ідентифікатор судна, номер компанії, рівень упевненості теплового сигналу, адресу запиту, перевіряча й обмеження.",
+      "limits_en": "Do not treat satellite images, OONI anomalies, vessel tracks, company records, heat points or Wikidata matches as final proof without source limits and independent corroboration.",
+      "limits_uk": "Не подавайте супутникові знімки, аномалії OONI, треки суден, записи компаній, теплові точки або збіги Wikidata як остаточний доказ без меж джерела й незалежного підтвердження.",
+      "evidence_level": "weekly synthesis of Saturday Tool Radar #052",
+      "source_type": "Saturday Tool Radar synthesis",
+      "risk_flags": [
+        "tool-safety",
+        "measurement-limits",
+        "entity-resolution",
+        "map-safety"
+      ],
+      "public_interest": "Provides a safer practical stack for evidence review, network records, maps and entity work.",
+      "verification_status": "Synthesised from Saturday Tool Radar #052.",
+      "source_refs": [
+        "https://documentation.dataspace.copernicus.eu/Applications/Browser.html",
+        "https://explorer.ooni.org/",
+        "https://docs.aleph.occrp.org/",
+        "https://globalfishingwatch.org/our-map/",
+        "https://opencorporates.com/",
+        "https://www.earthdata.nasa.gov/data/tools/firms",
+        "https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/Wikidata_Query_Help"
+      ],
+      "tags": [
+        "tools",
+        "satellite-imagery",
+        "network-measurement",
+        "maritime-osint",
+        "entity-resolution"
+      ]
+    },
+    {
+      "rubric_key": "risk",
+      "emoji": "⚠️",
+      "rubric_en": "Risk Watch",
+      "rubric_uk": "Межі й ризики",
+      "title_en": "The main danger was letting one record pretend to be the whole case",
+      "title_uk": "Головна небезпека — дозволити одному запису вдавати всю справу",
+      "source_line_en": "Daily Signal #047–#051; Saturday Tool Radar #052 · 6–11 July 2026",
+      "source_line_uk": "Щоденні випуски #047–#051; Суботній радар інструментів #052 · 6–11 липня 2026",
+      "what_happened_en": "Many records were tempting to overstate: a refinery fire as full operational loss, a diesel ban as proof of one strike, a vessel track as intent, a model-assisted report as autonomy, a location record as identity, a hotspot as cause, or a name match as guilt.",
+      "what_happened_uk": "Багато записів спокушали перебільшити висновок: пожежа на НПЗ як повна втрата роботи, заборона дизельного експорту як доказ одного удару, трек судна як намір, повідомлення з допомогою моделі як автономність, запис про місце перебування як ідентичність, теплова точка як причина або збіг імені як провина.",
+      "why_it_matters_en": "Open-source work fails when a useful signal is promoted past its evidence level. Weak, medium and strong evidence should stay in separate lanes until source status, timing and corroboration improve.",
+      "why_it_matters_uk": "Робота з відкритими джерелами провалюється, коли корисний сигнал підвищують вище за його доказовий рівень. Слабкі, середні й сильні докази мають лишатися в окремих смугах, доки не поліпшаться статус джерела, часова прив’язка й підтвердження.",
+      "how_to_use_en": "Add a status field to every record: claim, official statement, independent observation, corrected figure, operational-status signal, active measure, suspected exposure, verified compromise or publication-restricted detail.",
+      "how_to_use_uk": "Додавайте до кожного запису поле стану: твердження, офіційна заява, незалежне спостереження, уточнена цифра, сигнал про робочий стан, чинний захід, підозра на витік, перевірений злам або деталь з обмеженням публікації.",
+      "limits_en": "Do not publish operational details, private identities, exact routes, exploit steps, sensitive facility data, live map layers, personal movement records or confident attribution unsupported by the sources.",
+      "limits_uk": "Не публікуйте операційні деталі, приватні ідентифікатори, точні маршрути, кроки експлуатації вразливостей, чутливі дані об’єктів, поточні шари мапи, записи про пересування людей або впевнену відповідальність, яку не підтримують джерела.",
+      "evidence_level": "weekly synthesis of safety limits applied across issue cards",
+      "source_type": "Daily Signal and Saturday Tool Radar synthesis",
+      "risk_flags": [
+        "claim-upgrade-risk",
+        "operational-detail",
+        "private-person-risk",
+        "source-status"
+      ],
+      "public_interest": "Prevents cautious records from becoming overconfident claims.",
+      "verification_status": "Synthesis of safety limits applied across the week’s published issue cards.",
+      "source_refs": [
+        "issues/2026-07-06.json",
+        "issues/2026-07-07.json",
+        "issues/2026-07-08.json",
+        "issues/2026-07-09.json",
+        "issues/2026-07-10.json",
+        "issues/2026-07-11.json"
+      ],
+      "tags": [
+        "risk-watch",
+        "source-status",
+        "publication-safety",
+        "privacy",
+        "verification"
+      ]
+    }
+  ],
+  "compact_sections": [
+    {
+      "rubric_key": "signal",
+      "emoji": "📌",
+      "title": "Перевірка стану",
+      "short_title": "Не один висновок",
+      "points": [
+        "Об’єкт, наслідок, робочий стан і подальша реакція мають бути окремими полями.",
+        "Черга, заборона, теплова точка або трек судна не доводять причину самі по собі.",
+        "Кожне пізніше уточнення має змінювати стан запису, а не просто дописуватися в кінець."
+      ]
+    },
+    {
+      "rubric_key": "tradecraft",
+      "emoji": "🧪",
+      "title": "Перевірка інструментів",
+      "short_title": "Сервіс не вирок",
+      "points": [
+        "Супутниковий знімок, мережеве вимірювання, документ і реєстр компаній підтримують різні частини доказу.",
+        "Збіги сутностей потребують первинного джерела й людської перевірки.",
+        "Публічна мапа має мати безпечну точність і видимі межі використання."
+      ]
+    },
+    {
+      "rubric_key": "risk",
+      "emoji": "🛑",
+      "title": "Межа публікації",
+      "short_title": "Менше точності",
+      "points": [
+        "Не публікувати точні координати, маршрути, ремонтні обхідні рішення й поточні шари мапи.",
+        "Не встановлювати приватних людей через рух, пошук, брокерські записи або збіги імен.",
+        "Не перетворювати результат ШІ на дію без окремої людської перевірки."
+      ]
+    }
+  ],
+  "reading_list": [
+    {
+      "title": "AP — Ukrainian attacks on Russia kill 1 as Kyiv continues to target oil tankers and refineries",
+      "href": "https://apnews.com/article/f0bab8086a84705db07c74b3b1b99c49",
+      "note": "Sunday source check for the Ukraine-facing infrastructure thread."
+    },
+    {
+      "title": "Reuters — Russia bans diesel exports to ensure domestic supply after targeted Ukrainian drone strikes",
+      "href": "https://www.reuters.com/business/energy/russia-bans-diesel-exports-increase-domestic-supply-says-deputy-pm-2026-07-08/",
+      "note": "Downstream policy signal for the fuel-supply ledger."
+    },
+    {
+      "title": "Reuters — Russia’s Saratov oil refinery halt since Wednesday’s drone attack, sources say",
+      "href": "https://www.reuters.com/business/energy/russias-saratov-oil-refinery-halt-since-wednesdays-drone-attack-sources-say-2026-07-09/",
+      "note": "Operational-status evidence after a strike report."
+    },
+    {
+      "title": "The Guardian — Ukraine war briefing, 12 July 2026",
+      "href": "https://www.theguardian.com/world/2026/jul/12/ukraine-war-briefing-zelenskyy-decries-housing-of-weapons-in-civilian-area-kyiv-russian-strike-deaths",
+      "note": "Sunday civilian-harm and governance addendum."
+    },
+    {
+      "title": "Copernicus Browser documentation",
+      "href": "https://documentation.dataspace.copernicus.eu/Applications/Browser.html",
+      "note": "Satellite-imagery review starting point from Saturday Tool Radar #052."
+    },
+    {
+      "title": "OONI Explorer",
+      "href": "https://explorer.ooni.org/",
+      "note": "Network-interference measurement records from Saturday Tool Radar #052."
+    },
+    {
+      "title": "OCCRP Aleph documentation",
+      "href": "https://docs.aleph.occrp.org/",
+      "note": "Document and entity workbench from Saturday Tool Radar #052."
+    },
+    {
+      "title": "NASA FIRMS",
+      "href": "https://www.earthdata.nasa.gov/data/tools/firms",
+      "note": "Thermal-event checking source from Saturday Tool Radar #052."
+    }
+  ],
+  "internal_notes": [
+    "Repository schema check. build_weekly_site.py loads every weekly/*.json object, sets output_name and href defaults, and renders templates/weekly.html.j2 through render_weekly.py.",
+    "Template field check. templates/weekly.html.j2 reads issue_number, week_label_en, title_en, title_uk, subtitle_en, dek_en, editorial_frame.what_this_is, editorial_frame.what_this_is_not, rubric_map, editorial_note_en, items, compact_sections and reading_list.",
+    "Numbering check. weekly/open-source-signal-weekly-2026-W27.json exists with issue_number W27 and date_iso 2026-07-05. weekly/open-source-signal-weekly-2026-W28.json returned 404 before preparation, so this file is issue W28 and should be saved as weekly/open-source-signal-weekly-2026-W28.json.",
+    "Input issue check. Repository issues used: 2026-07-06 #047 Daily Signal, 2026-07-07 #048 Daily Signal, 2026-07-08 #049 Daily Signal, 2026-07-09 #050 Daily Signal, 2026-07-10 #051 Daily Signal and 2026-07-11 #052 Saturday Tool Radar.",
+    "Translation audit. Ukrainian public fields avoid unnecessary English-Ukrainian mashups. Preserved proper names and technical identifiers: Open Source Signal, Associated Press, Reuters, The Guardian, Copernicus Browser, OONI Explorer, Aleph, Global Fishing Watch, OpenCorporates, NASA FIRMS, Wikidata Query Service, GitHub, Claude Code, JADEPUFFER, FLARE-AI, SPARQL and QID.",
+    "Safety audit. The issue avoids doxxing, private-person deanonymisation, credential hunting, exploit instructions, live targeting, tactical attack guidance, exact sensitive coordinates, active air-defence details, shelter patterns, evacuation timing and publication of private movement records."
+  ]
+}
