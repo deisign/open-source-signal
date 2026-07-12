@@ -45,31 +45,7 @@
       "how_to_use_uk": "Дайте кожному великому запису сходи станів: твердження, офіційне визнання, незалежне спостереження, сигнал про робочий стан, подальша реакція послуги або ринку, уточнення, рівень упевненості й межа публікації.",
       "limits_en": "Do not promote smoke, outage, queue, map marker, model output, vessel track or name match into a final conclusion without separate source status and later confirmation.",
       "limits_uk": "Не підвищуйте дим, відключення, чергу, мітку на мапі, результат моделі, трек судна або збіг імені до остаточного висновку без окремого статусу джерела й подальшого підтвердження.",
-      "evidence_level": "weekly synthesis of Daily Signal #047–#051, Saturday Tool Radar #052 and Sunday source check",
-      "source_type": "published issue synthesis plus Sunday public-source check",
-      "risk_flags": [
-        "status-upgrade-risk",
-        "source-status",
-        "publication-safety",
-        "object-ledger"
-      ],
-      "public_interest": "Keeps the weekly record organised around object status and safe publication rather than spectacle.",
-      "verification_status": "Synthesised from repository issues and current public-source checks.",
-      "source_refs": [
-        "issues/2026-07-06.json",
-        "issues/2026-07-07.json",
-        "issues/2026-07-08.json",
-        "issues/2026-07-09.json",
-        "issues/2026-07-10.json",
-        "issues/2026-07-11.json"
-      ],
-      "tags": [
-        "signal-of-week",
-        "object-status",
-        "evidence-window",
-        "source-discipline",
-        "publication-safety"
-      ]
+      "tags": ["signal-of-week", "object-status", "evidence-window", "source-discipline", "publication-safety"]
     },
     {
       "rubric_key": "ukraine",
@@ -88,28 +64,7 @@
       "how_to_use_uk": "Розділяйте журнали за класом об’єкта: місце шкоди цивільним, заява про протиповітряну оборону, НПЗ, танкер, насосна станція трубопроводу, експортна політика, паливний ринковий сигнал і наслідок для публічної послуги.",
       "limits_en": "Do not publish launch areas, flight paths, approach routes, exact damage coordinates, repair workarounds, active air-defence details, shelter patterns, evacuation timing or identifiable images of victims and rescuers.",
       "limits_uk": "Не публікуйте райони запуску, траєкторії польоту, маршрути підходу, точні координати пошкоджень, способи обходу ремонту, поточні деталі протиповітряної оборони, схеми укриттів, час евакуацій або зображення, що можуть ідентифікувати постраждалих і рятувальників.",
-      "evidence_level": "weekly synthesis of Ukraine-facing records",
-      "source_type": "Daily Signal source synthesis and Sunday public-source check",
-      "risk_flags": [
-        "operational-detail",
-        "civilian-protection",
-        "sensitive-infrastructure",
-        "maritime-logistics"
-      ],
-      "public_interest": "Connects Ukrainian accountability records to infrastructure, civilian protection and safe publication boundaries.",
-      "verification_status": "Synthesised from Daily Signal #047–#051 and current source checks.",
-      "source_refs": [
-        "https://apnews.com/article/f0bab8086a84705db07c74b3b1b99c49",
-        "https://www.reuters.com/business/energy/russia-bans-diesel-exports-increase-domestic-supply-says-deputy-pm-2026-07-08/",
-        "https://www.reuters.com/business/energy/russias-saratov-oil-refinery-halt-since-wednesdays-drone-attack-sources-say-2026-07-09/"
-      ],
-      "tags": [
-        "ukraine",
-        "civilian-harm",
-        "energy-infrastructure",
-        "maritime-logistics",
-        "fuel-supply"
-      ]
+      "tags": ["ukraine", "civilian-harm", "energy-infrastructure", "maritime-logistics", "fuel-supply"]
     },
     {
       "rubric_key": "war-crimes",
@@ -128,26 +83,7 @@
       "how_to_use_uk": "Створіть пов’язані таблиці для місця, шкоди, попередження, рятувальних робіт, питання зберігання або об’єкта, офіційної заяви, уточнення й обмеження публікації. Окремо фіксуйте захист постраждалих і приховування чутливих місць.",
       "limits_en": "Do not publish exact impact points, shelter patterns, rescue-sensitive addresses, private resident data, identifiable victim images or location details that expose military or emergency-service behaviour.",
       "limits_uk": "Не публікуйте точні місця влучань, схеми укриттів, адреси, чутливі для рятувальників, приватні дані жителів, упізнавані зображення постраждалих або деталі локацій, що розкривають дії військових чи екстрених служб.",
-      "evidence_level": "weekly synthesis with Sunday source update",
-      "source_type": "Daily Signal and public news source synthesis",
-      "risk_flags": [
-        "civilian-protection",
-        "sensitive-location",
-        "governance-record",
-        "casualty-ledger"
-      ],
-      "public_interest": "Separates civilian-harm documentation from tactical disclosure and from unreviewed attribution leaps.",
-      "verification_status": "Synthesised from published issue items and Sunday source check.",
-      "source_refs": [
-        "https://www.theguardian.com/world/2026/jul/12/ukraine-war-briefing-zelenskyy-decries-housing-of-weapons-in-civilian-area-kyiv-russian-strike-deaths"
-      ],
-      "tags": [
-        "war-crimes-verification",
-        "civilian-harm",
-        "kyiv",
-        "air-defence",
-        "publication-safety"
-      ]
+      "tags": ["war-crimes-verification", "civilian-harm", "kyiv", "air-defence", "publication-safety"]
     },
     {
       "rubric_key": "ukraine",
@@ -166,27 +102,7 @@
       "how_to_use_uk": "Ведіть інфраструктурну таблицю з класом об’єкта, оператором, типом джерела, видимим наслідком, робочим станом, ринковим сигналом, політичною реакцією, екологічною позначкою, рівнем упевненості й вилученими чутливими деталями.",
       "limits_en": "Do not infer exact damage, repair paths, production bottlenecks or repeatable attack information from public imagery, market effects or policy changes alone.",
       "limits_uk": "Не виводьте точний обсяг шкоди, шляхи ремонту, виробничі вузькі місця або відомості, які допоможуть повторити атаку, лише з публічних знімків, ринкових наслідків чи політичних рішень.",
-      "evidence_level": "multi-day infrastructure synthesis",
-      "source_type": "Daily Signal source synthesis",
-      "risk_flags": [
-        "sensitive-infrastructure",
-        "downstream-evidence",
-        "repair-detail",
-        "market-signal"
-      ],
-      "public_interest": "Improves infrastructure monitoring while avoiding operational assistance.",
-      "verification_status": "Synthesised from Daily Signal #048–#051.",
-      "source_refs": [
-        "https://www.reuters.com/business/energy/russia-bans-diesel-exports-increase-domestic-supply-says-deputy-pm-2026-07-08/",
-        "https://www.reuters.com/business/energy/russias-saratov-oil-refinery-halt-since-wednesdays-drone-attack-sources-say-2026-07-09/"
-      ],
-      "tags": [
-        "infrastructure-signals",
-        "energy",
-        "refineries",
-        "fuel-market",
-        "downstream-evidence"
-      ]
+      "tags": ["infrastructure-signals", "energy", "refineries", "fuel-market", "downstream-evidence"]
     },
     {
       "rubric_key": "tradecraft",
@@ -205,29 +121,7 @@
       "how_to_use_uk": "Фіксуйте назву моделі або інструмента, учасника, надані права, зачеплені дані, час розкриття, реакцію супровідників, стан виправлення, точку людської перевірки, збереження доказів і вилучені операційні деталі.",
       "limits_en": "Do not publish exploit steps, credential material, bypass prompts, offensive procedures, private repository details, forged-media recreation steps or unverified claims against private people.",
       "limits_uk": "Не публікуйте кроки експлуатації вразливостей, облікові дані, запити для обходу запобіжників, наступальні процедури, деталі приватних сховищ коду, способи відтворення підроблених медіа або неперевірені звинувачення проти приватних людей.",
-      "evidence_level": "weekly synthesis of AI and software-supply-chain issue items",
-      "source_type": "Daily Signal issue synthesis",
-      "risk_flags": [
-        "ai-cyber-risk",
-        "patch-window",
-        "software-supply-chain",
-        "deepfake-evidence"
-      ],
-      "public_interest": "Keeps AI incident work focused on evidence custody, review and disclosure windows.",
-      "verification_status": "Synthesised from Daily Signal #047, #049, #050 and #051.",
-      "source_refs": [
-        "issues/2026-07-06.json",
-        "issues/2026-07-08.json",
-        "issues/2026-07-09.json",
-        "issues/2026-07-10.json"
-      ],
-      "tags": [
-        "ai-verification",
-        "software-supply-chain",
-        "vulnerability-disclosure",
-        "deepfakes",
-        "patch-windows"
-      ]
+      "tags": ["ai-verification", "software-supply-chain", "vulnerability-disclosure", "deepfakes", "patch-windows"]
     },
     {
       "rubric_key": "risk",
@@ -246,29 +140,7 @@
       "how_to_use_uk": "Перед збиранням або отриманням чутливих записів фіксуйте правову підставу, поля даних, отримувача, правила зберігання, рішення щодо мінімізації, строк зберігання, план видалення, перевіряча й залишковий ризик для приватності.",
       "limits_en": "Do not identify private people through location data, search data, broker records, device signals, home/work patterns, family links or movement histories.",
       "limits_uk": "Не встановлюйте приватних людей через дані про місце перебування, пошукові дані, записи брокерів даних, сигнали пристроїв, домашні чи робочі маршрути, родинні зв’язки або історії пересування.",
-      "evidence_level": "weekly synthesis of privacy and OPSEC records",
-      "source_type": "Daily Signal issue synthesis",
-      "risk_flags": [
-        "privacy",
-        "data-custody",
-        "re-identification",
-        "source-protection"
-      ],
-      "public_interest": "Prevents public-interest research from becoming secondary exposure of private people.",
-      "verification_status": "Synthesised from Daily Signal #047–#051.",
-      "source_refs": [
-        "issues/2026-07-06.json",
-        "issues/2026-07-07.json",
-        "issues/2026-07-09.json",
-        "issues/2026-07-10.json"
-      ],
-      "tags": [
-        "investigator-opsec",
-        "privacy",
-        "location-data",
-        "data-minimisation",
-        "source-protection"
-      ]
+      "tags": ["investigator-opsec", "privacy", "location-data", "data-minimisation", "source-protection"]
     },
     {
       "rubric_key": "toolbox",
@@ -287,32 +159,7 @@
       "how_to_use_uk": "Використовуйте інструменти як етапи, а не машини вироків: фіксуйте час отримання, ідентифікатор вимірювання, джерело документа, ідентифікатор судна, номер компанії, рівень упевненості теплового сигналу, адресу запиту, перевіряча й обмеження.",
       "limits_en": "Do not treat satellite images, OONI anomalies, vessel tracks, company records, heat points or Wikidata matches as final proof without source limits and independent corroboration.",
       "limits_uk": "Не подавайте супутникові знімки, аномалії OONI, треки суден, записи компаній, теплові точки або збіги Wikidata як остаточний доказ без меж джерела й незалежного підтвердження.",
-      "evidence_level": "weekly synthesis of Saturday Tool Radar #052",
-      "source_type": "Saturday Tool Radar synthesis",
-      "risk_flags": [
-        "tool-safety",
-        "measurement-limits",
-        "entity-resolution",
-        "map-safety"
-      ],
-      "public_interest": "Provides a safer practical stack for evidence review, network records, maps and entity work.",
-      "verification_status": "Synthesised from Saturday Tool Radar #052.",
-      "source_refs": [
-        "https://documentation.dataspace.copernicus.eu/Applications/Browser.html",
-        "https://explorer.ooni.org/",
-        "https://docs.aleph.occrp.org/",
-        "https://globalfishingwatch.org/our-map/",
-        "https://opencorporates.com/",
-        "https://www.earthdata.nasa.gov/data/tools/firms",
-        "https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/Wikidata_Query_Help"
-      ],
-      "tags": [
-        "tools",
-        "satellite-imagery",
-        "network-measurement",
-        "maritime-osint",
-        "entity-resolution"
-      ]
+      "tags": ["tools", "satellite-imagery", "network-measurement", "maritime-osint", "entity-resolution"]
     },
     {
       "rubric_key": "risk",
@@ -331,31 +178,7 @@
       "how_to_use_uk": "Додавайте до кожного запису поле стану: твердження, офіційна заява, незалежне спостереження, уточнена цифра, сигнал про робочий стан, чинний захід, підозра на витік, перевірений злам або деталь з обмеженням публікації.",
       "limits_en": "Do not publish operational details, private identities, exact routes, exploit steps, sensitive facility data, live map layers, personal movement records or confident attribution unsupported by the sources.",
       "limits_uk": "Не публікуйте операційні деталі, приватні ідентифікатори, точні маршрути, кроки експлуатації вразливостей, чутливі дані об’єктів, поточні шари мапи, записи про пересування людей або впевнену відповідальність, яку не підтримують джерела.",
-      "evidence_level": "weekly synthesis of safety limits applied across issue cards",
-      "source_type": "Daily Signal and Saturday Tool Radar synthesis",
-      "risk_flags": [
-        "claim-upgrade-risk",
-        "operational-detail",
-        "private-person-risk",
-        "source-status"
-      ],
-      "public_interest": "Prevents cautious records from becoming overconfident claims.",
-      "verification_status": "Synthesis of safety limits applied across the week’s published issue cards.",
-      "source_refs": [
-        "issues/2026-07-06.json",
-        "issues/2026-07-07.json",
-        "issues/2026-07-08.json",
-        "issues/2026-07-09.json",
-        "issues/2026-07-10.json",
-        "issues/2026-07-11.json"
-      ],
-      "tags": [
-        "risk-watch",
-        "source-status",
-        "publication-safety",
-        "privacy",
-        "verification"
-      ]
+      "tags": ["risk-watch", "source-status", "publication-safety", "privacy", "verification"]
     }
   ],
   "compact_sections": [
@@ -413,34 +236,6 @@
       "title": "The Guardian — Ukraine war briefing, 12 July 2026",
       "href": "https://www.theguardian.com/world/2026/jul/12/ukraine-war-briefing-zelenskyy-decries-housing-of-weapons-in-civilian-area-kyiv-russian-strike-deaths",
       "note": "Sunday civilian-harm and governance addendum."
-    },
-    {
-      "title": "Copernicus Browser documentation",
-      "href": "https://documentation.dataspace.copernicus.eu/Applications/Browser.html",
-      "note": "Satellite-imagery review starting point from Saturday Tool Radar #052."
-    },
-    {
-      "title": "OONI Explorer",
-      "href": "https://explorer.ooni.org/",
-      "note": "Network-interference measurement records from Saturday Tool Radar #052."
-    },
-    {
-      "title": "OCCRP Aleph documentation",
-      "href": "https://docs.aleph.occrp.org/",
-      "note": "Document and entity workbench from Saturday Tool Radar #052."
-    },
-    {
-      "title": "NASA FIRMS",
-      "href": "https://www.earthdata.nasa.gov/data/tools/firms",
-      "note": "Thermal-event checking source from Saturday Tool Radar #052."
     }
-  ],
-  "internal_notes": [
-    "Repository schema check. build_weekly_site.py loads every weekly/*.json object, sets output_name and href defaults, and renders templates/weekly.html.j2 through render_weekly.py.",
-    "Template field check. templates/weekly.html.j2 reads issue_number, week_label_en, title_en, title_uk, subtitle_en, dek_en, editorial_frame.what_this_is, editorial_frame.what_this_is_not, rubric_map, editorial_note_en, items, compact_sections and reading_list.",
-    "Numbering check. weekly/open-source-signal-weekly-2026-W27.json exists with issue_number W27 and date_iso 2026-07-05. weekly/open-source-signal-weekly-2026-W28.json returned 404 before preparation, so this file is issue W28 and should be saved as weekly/open-source-signal-weekly-2026-W28.json.",
-    "Input issue check. Repository issues used: 2026-07-06 #047 Daily Signal, 2026-07-07 #048 Daily Signal, 2026-07-08 #049 Daily Signal, 2026-07-09 #050 Daily Signal, 2026-07-10 #051 Daily Signal and 2026-07-11 #052 Saturday Tool Radar.",
-    "Translation audit. Ukrainian public fields avoid unnecessary English-Ukrainian mashups. Preserved proper names and technical identifiers: Open Source Signal, Associated Press, Reuters, The Guardian, Copernicus Browser, OONI Explorer, Aleph, Global Fishing Watch, OpenCorporates, NASA FIRMS, Wikidata Query Service, GitHub, Claude Code, JADEPUFFER, FLARE-AI, SPARQL and QID.",
-    "Safety audit. The issue avoids doxxing, private-person deanonymisation, credential hunting, exploit instructions, live targeting, tactical attack guidance, exact sensitive coordinates, active air-defence details, shelter patterns, evacuation timing and publication of private movement records."
   ]
 }
