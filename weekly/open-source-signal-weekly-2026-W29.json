@@ -1,0 +1,278 @@
+{
+  "issue_number": "W29",
+  "slug": "open-source-signal-weekly-2026-W29",
+  "output_name": "open-source-signal-weekly-2026-W29.html",
+  "date_iso": "2026-07-19",
+  "week_label_en": "13–19 July 2026",
+  "week_label_uk": "13–19 липня 2026",
+  "title_en": "Open Source Signal Weekly",
+  "title_uk": "Тижневий сигнал відкритих джерел",
+  "subtitle_en": "Sunday editorial synthesis for Ukrainian accountability OSINT.",
+  "subtitle_uk": "Недільний редакційний синтез для української роботи з відкритими джерелами й притягнення до відповідальності.",
+  "dek_en": "A magazine-style synthesis of the week’s strongest public-interest signals: evidence-status ladders for prisoners of war and civilian captives, witness and pattern verification, wartime governance and procurement records, spyware corroboration, platform-research access, geospatial claim boundaries, entity work and a Saturday tool stack built around reviewable records.",
+  "dek_uk": "Журнальний синтез найважливіших суспільно значущих сигналів тижня: сходи станів доказу для військовополонених і цивільних бранців, перевірка свідчень та повторюваних практик, записи про воєнне управління й закупівлі, підтвердження застосування шпигунського програмного забезпечення, доступ дослідників до даних цифрових платформ, межі геопросторових висновків, робота із сутностями та суботній набір інструментів, побудований навколо придатних до перевірки записів.",
+  "editorial_frame": {
+    "what_this_is": "A Sunday weekly magazine that develops the strongest signals from Daily Signal #053–#057, Saturday Tool Radar #058 and a Sunday primary-source check into separate editorial sections with evidence status, practical use and publication limits.",
+    "what_this_is_not": "A mechanical merge of daily cards, a live-targeting board, a pile of unlike numbers, a tool-generated verdict, a leaked-data workflow or an excuse to let one dramatic record impersonate an entire case."
+  },
+  "rubric_map": [
+    "📡 Signal of the Week / Головний сигнал тижня",
+    "🇺🇦 Ukraine Lens / Українська оптика",
+    "⚖️ War Crimes Verification / Верифікація воєнних злочинів",
+    "🕯️ Losses, Captivity & Missing / Втрати, полон, зниклі",
+    "🧰 Tradecraft / Методика",
+    "🛠️ Tools / Datasets / Інструменти й набори даних",
+    "⚠️ Risk Watch / Межі й ризики"
+  ],
+  "editorial_note_en": "The week’s real tool was the status field. An intelligence estimate was not a verified minimum; a verified minimum was not the full total; an investigation was not a conviction; a witness convergence was not identity confirmation; a procurement announcement was not delivery; a platform action plan was not implemented transparency; and a map result was not attribution. The strongest work kept those states visible and connected without letting them collapse into one confident sentence.",
+  "editorial_note_uk": "Справжнім інструментом тижня стало поле стану доказу. Розвідувальна оцінка не дорівнювала підтвердженому мінімуму; підтверджений мінімум не був повною кількістю; розслідування не було вироком; збіг свідчень не підтверджував особу сам собою; оголошена закупівля не означала поставку; план цифрової платформи не був уже впровадженою прозорістю; а результат на мапі не встановлював відповідальність. Найсильніші матеріали зберігали ці стани видимими й пов’язаними, не дозволяючи їм зливатися в одне надто впевнене речення.",
+  "items": [
+    {
+      "rubric_key": "signal",
+      "emoji": "📡",
+      "rubric_en": "Signal of the Week",
+      "rubric_uk": "Головний сигнал тижня",
+      "title_en": "The week’s real tool was the status field",
+      "title_uk": "Справжнім інструментом тижня стало поле стану доказу",
+      "source_line_en": "Daily Signal #053–#057; Saturday Tool Radar #058; Sunday source check · 13–19 July 2026",
+      "source_line_uk": "Щоденні випуски #053–#057; Суботній радар інструментів #058; недільна перевірка джерел · 13–19 липня 2026",
+      "what_happened_en": "Across the week, the strongest records were not the loudest claims but the ones that preserved transitions: request to pledge to delivery, allegation to investigation to judgment, interview lead to corroborated finding, estimated total to verified minimum, page change to archived record, and tool output to human review.",
+      "what_happened_uk": "Протягом тижня найсильнішими були не найгучніші твердження, а записи, що зберігали переходи: від запиту до обіцянки й поставки, від твердження до розслідування й судового рішення, від зачіпки з інтерв’ю до підтвердженого висновку, від оцінки до перевіреного мінімуму, від зміни сторінки до архівного запису та від результату інструмента до людської перевірки.",
+      "why_it_matters_en": "Public-interest OSINT fails when adjacent stages are presented as synonyms. A visible status ladder makes later corrections possible and shows readers exactly how far the evidence supports the conclusion.",
+      "why_it_matters_uk": "Суспільно важлива робота з відкритими джерелами провалюється, коли сусідні етапи подають як синоніми. Видимі сходи станів дають змогу виправляти запис і показують читачеві, наскільки далеко докази справді підтримують висновок.",
+      "how_to_use_en": "Give every consequential record a controlled state: lead, allegation, official claim, independent observation, corroborated finding, verified minimum, investigation, procedural decision, final judgment, correction and publication restriction. Store the date, source and reviewer for every transition.",
+      "how_to_use_uk": "Надавайте кожному важливому запису контрольований стан: зачіпка, твердження, офіційна заява, незалежне спостереження, підтверджений висновок, перевірений мінімум, розслідування, процесуальне рішення, остаточний вирок, виправлення та обмеження публікації. Для кожного переходу зберігайте дату, джерело й перевіряча.",
+      "limits_en": "A status label does not improve weak evidence by itself. It must be tied to the underlying source, definition, date range and review decision, and it must be revised when stronger or contradictory material appears.",
+      "limits_uk": "Сама позначка стану не робить слабкий доказ сильнішим. Вона має бути пов’язана з первинним джерелом, визначенням, часовим проміжком і рішенням перевіряча та змінюватися після появи сильнішого або суперечливого матеріалу.",
+      "tags": [
+        "signal-of-week",
+        "evidence-status",
+        "corrections",
+        "source-discipline",
+        "review-ledger"
+      ]
+    },
+    {
+      "rubric_key": "ukraine",
+      "emoji": "🇺🇦",
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "title_en": "Ukraine-facing work became a system of linked ledgers, not one war feed",
+      "title_uk": "Українська робота стала системою пов’язаних журналів, а не однією воєнною стрічкою",
+      "source_line_en": "Daily Signal #053–#057; OHCHR civilian-protection update · 13–19 July 2026",
+      "source_line_uk": "Щоденні випуски #053–#057; оновлення Управління ООН з прав людини щодо захисту цивільних · 13–19 липня 2026",
+      "what_happened_en": "Ukraine-facing records covered drone procurement, European missile-defence planning, winter interceptor requests, wartime government succession, a former brigade commander’s pretrial status, education under occupation and civilian harm. A Sunday check of the UN human-rights office’s June update recorded 293 civilians killed and 1,990 injured, the highest monthly total since April 2022.",
+      "what_happened_uk": "Українські записи охопили закупівлю дронів, європейське планування протиракетного захисту, зимові запити на ракети-перехоплювачі, зміну уряду під час війни, процесуальний стан колишнього командира бригади, освіту в окупації та шкоду цивільним. Недільна перевірка червневого оновлення Управління ООН з прав людини зафіксувала 293 загиблих і 1990 поранених цивільних — найвищий місячний показник від квітня 2022 року.",
+      "why_it_matters_en": "These records belong to different accountability systems. Procurement, delivery, protection need, civilian casualty, public office, criminal procedure and occupation policy require separate definitions and update cycles even when they describe the same war.",
+      "why_it_matters_uk": "Ці записи належать до різних систем відповідальності. Закупівля, поставка, потреба в захисті, втрати серед цивільних, державна посада, кримінальна процедура та окупаційна політика потребують окремих визначень і циклів оновлення, навіть коли описують одну війну.",
+      "how_to_use_en": "Use linked tables rather than one event feed: programme and procurement; pledge and delivery; civilian-harm incident; governance office; criminal case; occupied institution; source and correction. Connect them through stable object identifiers, not copied prose.",
+      "how_to_use_uk": "Використовуйте пов’язані таблиці замість однієї стрічки подій: програма й закупівля; обіцянка й поставка; випадок шкоди цивільним; державна посада; кримінальна справа; окупована установа; джерело й виправлення. Пов’язуйте їх сталими ідентифікаторами об’єктів, а не скопійованими абзацами.",
+      "limits_en": "Do not infer delivery from a pledge, operational capability from a coalition announcement, guilt from pretrial detention, or complete casualty totals from a verified reporting window. Withhold air-defence behaviour, routes, stock levels, active locations and victim-identifying detail.",
+      "limits_uk": "Не виводьте поставку з обіцянки, реальну спроможність із оголошення коаліції, вину з тримання під вартою або повну кількість втрат із перевіреного звітного проміжку. Вилучайте дані про роботу протиповітряної оборони, маршрути, запаси, чинні місця та подробиці, що ідентифікують постраждалих.",
+      "tags": [
+        "ukraine",
+        "civilian-harm",
+        "procurement",
+        "governance",
+        "linked-ledgers"
+      ]
+    },
+    {
+      "rubric_key": "war-crimes",
+      "emoji": "⚖️",
+      "rubric_en": "War Crimes Verification",
+      "rubric_uk": "Верифікація воєнних злочинів",
+      "title_en": "Convergence, pattern and legal qualification are three different tests",
+      "title_uk": "Збіг свідчень, повторювана практика й правова кваліфікація є трьома різними перевірками",
+      "source_line_en": "OCCRP / Schemes; Human Rights Watch; OHCHR; Daily Signal #055–#057 · 13–19 July 2026",
+      "source_line_uk": "OCCRP / «Схеми»; Human Rights Watch; Управління ООН з прав людини; щоденні випуски #055–#057 · 13–19 липня 2026",
+      "what_happened_en": "The week paired three demanding evidence problems: former captives gave converging accounts used to identify an alleged prison abuser; Human Rights Watch connected testimony and institutional records to describe coercive schooling in occupied Ukraine; and UN reporting preserved a verified minimum for executions of Ukrainian prisoners of war while other Ukrainian figures referred to investigations and intelligence assessment.",
+      "what_happened_uk": "Тиждень поєднав три складні доказові завдання: колишні бранці дали узгоджені свідчення, використані для встановлення ймовірного кривдника в колонії; Human Rights Watch поєднала інтерв’ю та відомчі записи для опису примусової шкільної політики на окупованих територіях; а звітність ООН зберегла перевірений мінімум страт українських військовополонених, тоді як інші українські числа стосувалися розслідувань і розвідувальної оцінки.",
+      "why_it_matters_en": "Witness convergence can support an identity hypothesis; recurrence across places and institutions can support a pattern finding; legal qualification requires an additional analysis of conduct, context and responsibility. One test cannot silently substitute for another.",
+      "why_it_matters_uk": "Збіг свідчень може підтримати припущення про особу; повторюваність у різних місцях та установах — висновок про практику; правова кваліфікація потребує додаткового аналізу дій, контексту й відповідальності. Одна перевірка не може непомітно замінювати іншу.",
+      "how_to_use_en": "Build three connected matrices: witness and identity; case and recurring mechanism; factual finding and legal element. For every cell, record direct or indirect source status, corroboration, contradiction, temporal and geographic scope, right of reply and reviewer confidence.",
+      "how_to_use_uk": "Побудуйте три пов’язані матриці: свідок і особа; випадок і повторюваний механізм; фактичний висновок і правова ознака. Для кожної клітинки фіксуйте безпосередній або непрямий характер джерела, підтвердження, суперечність, часові й географічні межі, запит на коментар і рівень упевненості перевіряча.",
+      "limits_en": "Do not expose witnesses, children, families or covert learners. Photo recognition cannot stand alone. A human-rights report and a journalistic identification can inform accountability work but are not substitutes for a final judicial finding.",
+      "limits_uk": "Не викривайте свідків, дітей, родини або людей, які приховано навчаються. Впізнання за фотографією не може бути єдиною підставою. Правозахисна доповідь і журналістське встановлення особи можуть підтримувати роботу з відповідальністю, але не замінюють остаточного судового рішення.",
+      "tags": [
+        "war-crimes-verification",
+        "witness-convergence",
+        "pattern-evidence",
+        "legal-qualification",
+        "source-protection"
+      ]
+    },
+    {
+      "rubric_key": "losses",
+      "emoji": "🕯️",
+      "rubric_en": "Losses, Captivity & Missing",
+      "rubric_uk": "Втрати, полон, зниклі",
+      "title_en": "The week’s most dangerous arithmetic was adding unlike captivity and death counts",
+      "title_uk": "Найнебезпечнішою арифметикою тижня було додавання несумісних показників полону й загибелі",
+      "source_line_en": "ZMINA; OHCHR; Ukrainian prosecutorial and intelligence figures reported in Daily Signal #055–#056 · 14–16 July 2026",
+      "source_line_uk": "ZMINA; Управління ООН з прав людини; показники української прокуратури й розвідки у випусках #055–#056 · 14–16 липня 2026",
+      "what_happened_en": "The week contained several numbers that must remain separate: 1,978 civilians whose detention Russia had confirmed; more than 16,000 civilians missing under special circumstances; a straight-line 52-year return scenario; 129 executions of Ukrainian prisoners of war verified by the UN; 116 Ukrainian investigations concerning 306 deaths; and an intelligence estimate of more than 900 deaths in more than 340 alleged incidents.",
+      "what_happened_uk": "Тиждень містив кілька чисел, які мають лишатися окремими: 1978 цивільних, чиє утримання підтвердила Росія; понад 16 тисяч цивільних, зниклих безвісти за особливих обставин; лінійний розрахунок повернення тривалістю 52 роки; 129 страт українських військовополонених, підтверджених ООН; 116 українських розслідувань щодо загибелі 306 людей; і розвідувальну оцінку понад 900 загиблих у більш як 340 ймовірних епізодах.",
+      "why_it_matters_en": "Each figure has a different denominator, source authority, verification threshold and covered period. Adding or ranking them as if they described the same population would create a false total and obscure the people missing from every dataset.",
+      "why_it_matters_uk": "Кожен показник має інший знаменник, установу-джерело, поріг підтвердження та охоплений період. Додавання або порівняння цих чисел як опису однієї групи створило б хибний підсумок і приховало б людей, відсутніх у кожному наборі.",
+      "how_to_use_en": "Store category, person or incident unit, source body, publication date, covered dates, verification rule, numerator, denominator, known overlap, revision history and whether the value is a count, minimum, estimate, scenario or case-file total.",
+      "how_to_use_uk": "Зберігайте категорію, одиницю підрахунку людини або епізоду, установу-джерело, дату публікації, охоплені дати, правило підтвердження, чисельник, знаменник, відомий перетин, історію виправлень і тип значення: підрахунок, мінімум, оцінка, сценарій або кількість справ.",
+      "limits_en": "Do not convert a scenario into a forecast, an investigation into proof, a verified minimum into a complete total, or an intelligence estimate into a reproducible public dataset. Protect family contacts, health information and unverified captivity claims.",
+      "limits_uk": "Не перетворюйте сценарій на прогноз, розслідування — на доказ, перевірений мінімум — на повний підсумок, а розвідувальну оцінку — на відтворюваний відкритий набір даних. Захищайте контакти родин, медичні відомості та неперевірені твердження про полон.",
+      "tags": [
+        "captivity",
+        "missing-persons",
+        "pow",
+        "denominators",
+        "verified-minimum"
+      ]
+    },
+    {
+      "rubric_key": "tradecraft",
+      "emoji": "🧰",
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "title_en": "Discovery, corroboration and publication belong in separate queues",
+      "title_uk": "Пошук зачіпок, підтвердження й публікація мають бути в окремих чергах",
+      "source_line_en": "GIJN; OCCRP; StreetPress; Daily Signal #055–#057 · 14–17 July 2026",
+      "source_line_uk": "GIJN; OCCRP; StreetPress; щоденні випуски #055–#057 · 14–17 липня 2026",
+      "what_happened_en": "Cross-border team guidance emphasised roles and evidence governance; StreetPress used rapid screening to prioritise deeper candidate reporting; OCCRP investigations separated entity-resolution leads from court, company and property records; and the Pegasus investigation split a whistleblower account into claims tested against forensic, registry and independent-source evidence.",
+      "what_happened_uk": "Поради для міжнародних команд наголосили на ролях і керуванні доказами; StreetPress застосувала швидку первинну перевірку, щоб визначити пріоритети для глибшого дослідження кандидатів; розслідування OCCRP відокремили зачіпки зі звіряння сутностей від судових, корпоративних і майнових записів; а розслідування Pegasus розклало свідчення викривача на твердження, перевірені технічними слідами, реєстрами й незалежними джерелами.",
+      "why_it_matters_en": "A fast intake process can widen coverage, but it becomes unsafe when discovery is mistaken for proof or when the same person who finds a lead publishes it without a second review. Clear queues expose where the work is still provisional.",
+      "why_it_matters_uk": "Швидке приймання зачіпок розширює охоплення, але стає небезпечним, коли пошук плутають із доказом або коли одна людина знаходить матеріал і публікує його без другої перевірки. Окремі черги показують, де робота ще попередня.",
+      "how_to_use_en": "Use three queues with explicit exit criteria. Discovery requires provenance and a reason to advance; corroboration requires an independent source, contradiction check and documented confidence; publication requires legal and safety review, right of reply, citation targets and a correction owner.",
+      "how_to_use_uk": "Використовуйте три черги з чіткими умовами переходу. Для зачіпки потрібні походження й причина подальшої перевірки; для підтвердження — незалежне джерело, пошук суперечностей і задокументований рівень упевненості; для публікації — правова й безпекова перевірка, запит на коментар, точні посилання та відповідальний за виправлення.",
+      "limits_en": "Reader tips, public associations, name matches and whistleblower testimony are not self-proving. Do not turn high-volume screening into ideological profiling, publish private data or allow deadlines to erase contradictory evidence.",
+      "limits_uk": "Повідомлення читачів, публічні зв’язки, збіги імен і свідчення викривача не доводять себе самі. Не перетворюйте масову первинну перевірку на ідеологічне профілювання, не публікуйте приватні дані й не дозволяйте строкам витісняти суперечливі докази.",
+      "tags": [
+        "tradecraft",
+        "triage",
+        "corroboration",
+        "right-of-reply",
+        "evidence-governance"
+      ]
+    },
+    {
+      "rubric_key": "toolbox",
+      "emoji": "🛠️",
+      "rubric_en": "Tools / Datasets",
+      "rubric_uk": "Інструменти й набори даних",
+      "title_en": "The Saturday stack worked best as a chain of reviewable records",
+      "title_uk": "Суботній набір найкраще працював як ланцюг придатних до перевірки записів",
+      "source_line_en": "Saturday Tool Radar #058 · 18 July 2026",
+      "source_line_uk": "Суботній радар інструментів #058 · 18 липня 2026",
+      "what_happened_en": "The Tool Radar selected Tools of War for dual-use shipment leads, Project Salt Box for detention-infrastructure records, Meaningfully for semantic spreadsheet review, Visualping for page-change monitoring, Overpass Turbo for advanced OpenStreetMap queries and Bellingcat OpenStreetMap Search for simpler proximity-led geolocation. SHADOHDORKS appeared only as a caution item.",
+      "what_happened_uk": "Радар інструментів відібрав Tools of War для зачіпок про поставки товарів подвійного призначення, Project Salt Box для записів про інфраструктуру утримання, Meaningfully для змістової перевірки таблиць, Visualping для спостереження за змінами сторінок, Overpass Turbo для складних запитів до OpenStreetMap і Bellingcat OpenStreetMap Search для простішої геолокації за сусідством об’єктів. SHADOHDORKS з’явився лише як застереження.",
+      "why_it_matters_en": "The useful stack is not a list of clever interfaces. It is a sequence that preserves the source record: discover an entity or change, save the query and timestamp, export a reviewable result, compare with an independent source and document the publication decision.",
+      "why_it_matters_uk": "Корисний набір — не перелік кмітливих інтерфейсів, а послідовність, що зберігає джерельний запис: знайти сутність або зміну, зберегти запит і час, вивантажити придатний до перевірки результат, порівняти його з незалежним джерелом і задокументувати рішення щодо публікації.",
+      "how_to_use_en": "For every tool run, keep tool and version, input source, exact query, processing location, timestamp, exported file, stable row or object identifier, reviewer, false-positive decision, independent corroboration and data-retention rule.",
+      "how_to_use_uk": "Для кожного запуску зберігайте назву й версію засобу, первинне джерело, точний запит, місце опрацювання, час, вивантажений файл, сталий ідентифікатор рядка або об’єкта, перевіряча, рішення щодо хибного збігу, незалежне підтвердження та правило зберігання даних.",
+      "limits_en": "Tool scores, semantic matches, page alerts and map results are leads, not verdicts. External processing can expose sensitive text. Do not use SHADOHDORKS against third-party systems or treat exposed credentials and administrative panels as ordinary OSINT material.",
+      "limits_uk": "Оцінки інструментів, змістові збіги, сповіщення про сторінки й результати на мапі є зачіпками, а не вироками. Зовнішнє опрацювання може викрити чутливий текст. Не використовуйте SHADOHDORKS проти чужих систем і не подавайте відкриті облікові дані чи службові панелі як звичайний матеріал відкритих джерел.",
+      "tags": [
+        "tools",
+        "datasets",
+        "change-monitoring",
+        "geolocation",
+        "human-review"
+      ]
+    },
+    {
+      "rubric_key": "risk",
+      "emoji": "⚠️",
+      "rubric_en": "Risk Watch",
+      "rubric_uk": "Межі й ризики",
+      "title_en": "Open data can become a coercion surface faster than it becomes evidence",
+      "title_uk": "Відкриті дані можуть стати поверхнею примусу швидше, ніж доказом",
+      "source_line_en": "Daily Signal #054–#057; Saturday Tool Radar #058 · 14–18 July 2026",
+      "source_line_uk": "Щоденні випуски #054–#057; Суботній радар інструментів #058 · 14–18 липня 2026",
+      "what_happened_en": "The week linked private facial-recognition alerts, spyware targeting, transnational repression, social-media age assurance, platform researcher access, public photographs, property records, geospatial traces and exposed-search tooling. Each can support accountability work and each can also expose a target, source or unrelated private person.",
+      "what_happened_uk": "Тиждень пов’язав приватні сповіщення розпізнавання облич, атаки шпигунським програмним забезпеченням, транснаціональні репресії, перевірку віку в соціальних мережах, доступ дослідників до даних платформ, публічні фотографії, майнові записи, геопросторові сліди та засоби пошуку відкритих у мережі ресурсів. Кожен із цих шарів може підтримати роботу з відповідальністю і водночас викрити ціль, джерело або непричетну приватну людину.",
+      "why_it_matters_en": "Availability is not permission, relevance or safety. The same linkage that strengthens a public-interest finding may also reveal movement, family ties, device exposure, home patterns or an investigator’s methods to a repressive actor.",
+      "why_it_matters_uk": "Доступність не означає дозволу, доречності чи безпеки. Те саме поєднання записів, що посилює суспільно важливий висновок, може відкрити репресивній стороні пересування, родинні зв’язки, уразливість пристрою, домашні звички або методи дослідника.",
+      "how_to_use_en": "Before collection and publication, record legal basis, public-interest purpose, minimum fields required, source-protection need, precision reduction, processor, access list, retention period, deletion date, appeal or correction route and residual harm.",
+      "how_to_use_uk": "Перед збиранням і публікацією фіксуйте правову підставу, суспільно важливу мету, мінімально потрібні поля, потребу захисту джерела, зменшення точності, оператора опрацювання, перелік доступу, строк зберігання, дату видалення, шлях оскарження або виправлення та залишкову шкоду.",
+      "limits_en": "Do not identify private people through location, family links, home or work patterns, property detail, facial recognition or device signals. Do not publish current troop positions, vulnerable endpoints, infection procedures, target identifiers or sensitive research queries.",
+      "limits_uk": "Не встановлюйте приватних людей через місце перебування, родинні зв’язки, домашні чи робочі маршрути, майнові подробиці, розпізнавання облич або сигнали пристроїв. Не публікуйте поточні військові позиції, уразливі адреси, способи зараження, ідентифікатори цілей або чутливі дослідницькі запити.",
+      "tags": [
+        "risk-watch",
+        "data-minimisation",
+        "source-protection",
+        "surveillance",
+        "publication-safety"
+      ]
+    }
+  ],
+  "compact_sections": [
+    {
+      "rubric_key": "signal",
+      "emoji": "📌",
+      "title": "Стани доказів",
+      "short_title": "Не складати числа",
+      "points": [
+        "Оцінка, перевірений мінімум, кількість розслідувань і судове рішення мають бути окремими типами запису.",
+        "Кожна зміна стану потребує дати, джерела, перевіряча й причини переходу.",
+        "Пізніше уточнення має змінювати запис, а не губитися в новому абзаці."
+      ]
+    },
+    {
+      "rubric_key": "tradecraft",
+      "emoji": "🧩",
+      "title": "Матриця підтверджень",
+      "short_title": "Джерела за ролями",
+      "points": [
+        "Свідчення, реєстр, технічний слід, офіційна заява й судовий документ підтримують різні частини висновку.",
+        "Пошук зачіпок, підтвердження й публікація мають окремі умови переходу.",
+        "Суперечливе джерело не видаляють: його фіксують поруч із висновком і рівнем упевненості."
+      ]
+    },
+    {
+      "rubric_key": "risk",
+      "emoji": "🛑",
+      "title": "Межа публікації",
+      "short_title": "Менше даних",
+      "points": [
+        "Зменшуйте точність місць, вилучайте приватні ідентифікатори й не показуйте чинні маршрути.",
+        "Не передавайте чутливий текст зовнішньому сервісу без перевірки умов і потреби.",
+        "Відкритість запису не скасовує правової підстави, суспільної мети та оцінки можливої шкоди."
+      ]
+    }
+  ],
+  "reading_list": [
+    {
+      "title": "OHCHR — Protection of Civilians in Armed Conflict, June 2026",
+      "href": "https://ukraine.ohchr.org/en/Protection-of-Civilians-in-Armed-Conflict-June-2026",
+      "note": "Sunday primary-source check for civilian casualty definitions, monthly totals and weapon-category attribution."
+    },
+    {
+      "title": "Human Rights Watch — Ukraine: Russian-Run Schools Violate Children’s Rights",
+      "href": "https://www.hrw.org/news/2026/07/16/ukraine-russian-run-schools-violate-childrens-rights",
+      "note": "Mixed interview, institutional-record and legal source base for the occupied-education pattern."
+    },
+    {
+      "title": "OCCRP / Schemes — For Ukrainians in a Russian Prison Colony, Their Doctor Became Their Tormentor",
+      "href": "https://www.occrp.org/en/investigation/for-ukrainians-in-a-russian-prison-colony-their-doctor-became-their-tormentor",
+      "note": "Witness convergence, identity work, right of reply and procedural-status limits."
+    },
+    {
+      "title": "ZMINA — At the Current Pace, Returning Confirmed Civilian Captives Would Take 52 Years",
+      "href": "https://zmina.info/news/za-nynishnih-tempiv-na-povernennya-vsih-pidtverdzhenyh-rosiyeyu-brantsiv-brancziv-ukrayini-znadobytsya-52-roky-yesypenko/",
+      "note": "A useful backlog scenario only when its denominator, time window and non-forecast status remain visible."
+    },
+    {
+      "title": "OCCRP / Forbidden Stories — Moroccan Intelligence Whistleblower on Pegasus",
+      "href": "https://www.occrp.org/en/project/the-pegasus-project/moroccan-government-used-powerful-israeli-pegasus-spyware-to-hack-phone-of-journalist-former-intelligence-officer-says",
+      "note": "Claim-by-claim corroboration using testimony, technical findings, documents and corporate records."
+    },
+    {
+      "title": "European Commission — Commission Accepts X’s Digital Services Act Action Plan",
+      "href": "https://digital-strategy.ec.europa.eu/en/news/commission-accepts-xs-action-plan-comply-digital-services-act",
+      "note": "Primary regulatory record for testing implementation, research access and advertising transparency over six months."
+    },
+    {
+      "title": "Tools of War — About the Dataset",
+      "href": "https://toolsofwar.be/about.html",
+      "note": "Ukraine-accountability supply-chain research whose scores should remain leads rather than accusations."
+    }
+  ]
+}
