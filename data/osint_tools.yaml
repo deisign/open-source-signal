@@ -1144,70 +1144,49 @@
 - id: ripestat
   name: RIPEstat
   url: https://stat.ripe.net/
-  category: domains_infrastructure
+  category: passive_infrastructure_context
   use_cases:
-    - Inspect IP and ASN context
-    - Review routing and registry history
-  input: IP address, prefix, or ASN
-  output: Registry, routing, DNS, and network relationship data
+    - IP and ASN lookup
+    - Registry context
+    - Routing history
+    - Abuse contact discovery
+    - Network ownership research
+  input: IP address, prefix, ASN, domain or resource identifier
+  output: Registry data, routing context, ASN details, prefixes, related contacts and measurement views
   access: free
   requires_login: false
   api_available: true
   opsec_level: low
   legal_risk: low
-  evidence_value: medium
-  automation_value: high
+  evidence_value: high
+  automation_value: medium
   learning_cost: medium
   tested_status: recommended
   public: true
-  project_fit: Useful infrastructure context without active scanning.
-  notes: Registry data explains networks, not direct responsibility.
+  project_fit: Strong passive source for network ownership, routing, and registry context.
+  notes: Strong source for network and routing context. Registry data can be stale or indirect, so corroborate attribution with other sources.
   use_cases_uk:
-    - Оглядати контекст IP та ASN
-    - Переглядати маршрутизацію і реєстрову історію
+    - Шукати IP та ASN
+    - Перевіряти реєстровий контекст
+    - Досліджувати історію routing
+    - Знаходити abuse contacts
+    - Досліджувати власність мереж
   input_uk:
-    - IP address, prefix або ASN
+    - IP address, prefix, ASN, домен або ідентифікатор ресурсу
   output_uk:
-    - Реєстрові, routing, DNS та мережеві зв'язки
-  notes_uk: Реєстрові дані пояснюють мережі, але не доводять пряму відповідальність.
+    - Реєстрові дані, routing context, деталі ASN, prefixes, пов'язані контакти та measurement views
+  notes_uk: Сильне джерело для мережевого й routing context. Реєстрові дані можуть бути застарілими або непрямими, тому перевіряйте атрибуцію за іншими джерелами.
 - id: crtsh
   name: crt.sh
   url: https://crt.sh/
-  category: domains_infrastructure
+  category: passive_infrastructure_context
   use_cases:
-    - Search certificate transparency logs
-    - Find related subdomains from certificates
-  input: Domain name or certificate search pattern
-  output: Certificate records and hostnames
-  access: free
-  requires_login: false
-  api_available: true
-  opsec_level: low
-  legal_risk: low
-  evidence_value: medium
-  automation_value: medium
-  learning_cost: low
-  tested_status: recommended
-  public: true
-  project_fit: Good passive source for domain history and infrastructure leads.
-  notes: Certificate records can include stale or unrelated hostnames.
-  use_cases_uk:
-    - Шукати в certificate transparency logs
-    - Знаходити пов'язані subdomains через сертифікати
-  input_uk:
-    - Доменне ім'я або шаблон пошуку сертифікатів
-  output_uk:
-    - Записи сертифікатів і hostnames
-  notes_uk: Записи сертифікатів можуть містити застарілі або непов'язані hostnames.
-- id: dnsdumpster
-  name: DNSDumpster
-  url: https://dnsdumpster.com/
-  category: domains_infrastructure
-  use_cases:
-    - Map public DNS records
-    - Generate passive infrastructure leads
-  input: Domain name
-  output: DNS records, hosts, and network map
+    - Certificate transparency search
+    - Subdomain discovery
+    - Domain history research
+    - Infrastructure relationship leads
+  input: Domain name, organization name, certificate fingerprint or wildcard query
+  output: Certificate records, names, subdomains, issuer and validity metadata
   access: free
   requires_login: false
   api_available: false
@@ -1218,16 +1197,191 @@
   learning_cost: low
   tested_status: recommended
   public: true
-  project_fit: Passive DNS overview for public infrastructure checks.
-  notes: Use for context, not vulnerability discovery or active probing.
+  project_fit: Good passive source for certificate history, subdomain leads, and infrastructure relationships.
+  notes: Certificate Transparency logs are excellent for leads, but old certificates and stale names do not prove current control.
   use_cases_uk:
-    - Картувати публічні DNS records
-    - Формувати пасивні зачіпки щодо інфраструктури
+    - Шукати в Certificate Transparency
+    - Знаходити subdomains
+    - Досліджувати історію домену
+    - Збирати зачіпки щодо інфраструктурних зв'язків
+  input_uk:
+    - Доменне ім'я, назва організації, certificate fingerprint або wildcard query
+  output_uk:
+    - Certificate records, names, subdomains, issuer і validity metadata
+  notes_uk: Certificate Transparency logs добре підходять для зачіпок, але старі сертифікати й застарілі names не доводять поточний контроль.
+- id: dnsdumpster
+  name: DNSDumpster
+  url: https://dnsdumpster.com/
+  category: passive_infrastructure_context
+  use_cases:
+    - Domain reconnaissance
+    - DNS record discovery
+    - Subdomain mapping
+    - Infrastructure context
+    - Host relationship discovery
+  input: Domain name
+  output: DNS records, discovered hosts, subdomains, mail records, map-style infrastructure overview
+  access: free
+  requires_login: false
+  api_available: false
+  opsec_level: low
+  legal_risk: low
+  evidence_value: medium
+  automation_value: low
+  learning_cost: low
+  tested_status: recommended
+  public: true
+  project_fit: Good first-pass passive domain map for public infrastructure context.
+  notes: Good first-pass passive domain map. Treat discovered hosts as leads, not proof of current ownership or control.
+  use_cases_uk:
+    - Проводити domain reconnaissance
+    - Знаходити DNS records
+    - Картувати subdomains
+    - Отримувати infrastructure context
+    - Знаходити зв'язки між hosts
   input_uk:
     - Доменне ім'я
   output_uk:
-    - DNS records, hosts і мережева мапа
-  notes_uk: Використовуйте для контексту, а не для пошуку вразливостей чи active probing.
+    - DNS records, знайдені hosts, subdomains, mail records і map-style огляд інфраструктури
+  notes_uk: Добрий перший пасивний map домену. Розглядайте знайдені hosts як зачіпки, а не як доказ поточної власності чи контролю.
+- id: urlscan_io
+  name: urlscan.io
+  url: https://urlscan.io/
+  category: passive_infrastructure_context
+  use_cases:
+    - Suspicious URL triage
+    - Redirect and resource mapping
+    - Webpage behavior capture
+    - Phishing-page context
+    - Domain relationship discovery
+  input: Public URL, optional scan visibility setting
+  output: Page screenshot, loaded resources, contacted domains, IPs, redirects, DOM and request metadata
+  access: freemium
+  requires_login: false
+  api_available: true
+  opsec_level: medium
+  legal_risk: medium
+  evidence_value: high
+  automation_value: medium
+  learning_cost: low
+  tested_status: recommended
+  public: true
+  project_fit: Useful passive URL triage source for redirects, loaded resources, and page behavior context.
+  notes: Useful for safely observing what a public URL loads, but public scans can expose sensitive URLs. Use private scans or local capture for sensitive material, and archive key source pages separately.
+  use_cases_uk:
+    - Проводити triage підозрілих URL
+    - Картувати redirects і resources
+    - Фіксувати поведінку вебсторінки
+    - Аналізувати контекст phishing pages
+    - Знаходити доменні зв'язки
+  input_uk:
+    - Публічний URL, опційне налаштування видимості scan
+  output_uk:
+    - Screenshot сторінки, завантажені resources, contacted domains, IPs, redirects, DOM і request metadata
+  notes_uk: Корисний для безпечного спостереження за тим, що завантажує публічний URL, але public scans можуть розкрити чутливі URL. Для чутливих матеріалів використовуйте private scans або локальне захоплення, а ключові сторінки-джерела архівуйте окремо.
+- id: censys_search
+  name: Censys Search
+  url: https://search.censys.io/
+  category: passive_infrastructure_context
+  use_cases:
+    - Internet asset context
+    - Certificate and host lookup
+    - Domain and IP relationship discovery
+    - Exposed-service context
+    - Infrastructure verification
+  input: Domain, IP address, certificate fingerprint, ASN, search query
+  output: Host records, certificates, names, observed services, IP and DNS context
+  access: freemium
+  requires_login: true
+  api_available: true
+  opsec_level: medium
+  legal_risk: medium
+  evidence_value: high
+  automation_value: medium
+  learning_cost: medium
+  tested_status: situational
+  public: true
+  project_fit: Passive infrastructure context source for hosts, certificates, and observed public services.
+  notes: Use as passive infrastructure context, not as an invitation to probe systems. Do not attempt access to services discovered through search results.
+  use_cases_uk:
+    - Отримувати internet asset context
+    - Шукати certificates і hosts
+    - Знаходити зв'язки між доменами та IP
+    - Аналізувати exposed-service context
+    - Перевіряти інфраструктуру
+  input_uk:
+    - Домен, IP address, certificate fingerprint, ASN або search query
+  output_uk:
+    - Host records, certificates, names, observed services, IP і DNS context
+  notes_uk: Використовуйте як пасивний infrastructure context, а не як запрошення перевіряти системи. Не намагайтеся отримувати доступ до services, знайдених у search results.
+- id: bgp_tools
+  name: bgp.tools
+  url: https://bgp.tools/
+  category: passive_infrastructure_context
+  use_cases:
+    - ASN research
+    - BGP prefix lookup
+    - IP ownership context
+    - Routing relationship checks
+    - Network infrastructure triage
+  input: ASN, IP address, prefix, domain or organization name
+  output: ASN profile, prefixes, peers, routing table context, DNS and ownership clues
+  access: free
+  requires_login: false
+  api_available: false
+  opsec_level: low
+  legal_risk: low
+  evidence_value: high
+  automation_value: low
+  learning_cost: low
+  tested_status: recommended
+  public: true
+  project_fit: Fast passive lookup for ASN, prefix, ownership, and BGP relationship context.
+  notes: Fast passive lookup for network ownership and BGP context. Use it to understand infrastructure relationships, not as sole attribution evidence.
+  use_cases_uk:
+    - Досліджувати ASN
+    - Шукати BGP prefixes
+    - Отримувати контекст власності IP
+    - Перевіряти routing relationships
+    - Проводити triage мережевої інфраструктури
+  input_uk:
+    - ASN, IP address, prefix, домен або назва організації
+  output_uk:
+    - ASN profile, prefixes, peers, routing table context, DNS і ownership clues
+  notes_uk: Швидкий пасивний lookup для network ownership і BGP context. Використовуйте його для розуміння інфраструктурних зв'язків, а не як єдиний доказ атрибуції.
+- id: checkshorturl
+  name: CheckShortURL
+  url: https://checkshorturl.com/
+  category: passive_infrastructure_context
+  use_cases:
+    - Short-link expansion
+    - Redirect triage
+    - Suspicious link review
+    - Social-media URL context
+  input: Shortened URL or redirecting URL
+  output: Expanded destination URL, title, description, safety and preview context where available
+  access: free
+  requires_login: false
+  api_available: false
+  opsec_level: low
+  legal_risk: low
+  evidence_value: medium
+  automation_value: low
+  learning_cost: low
+  tested_status: situational
+  public: true
+  project_fit: Lightweight passive helper for checking redirect destinations before opening links directly.
+  notes: Useful for checking link destinations before opening them directly. Redirect chains can change over time, so preserve timestamped evidence.
+  use_cases_uk:
+    - Розгортати short links
+    - Проводити redirect triage
+    - Перевіряти підозрілі links
+    - Отримувати контекст social-media URL
+  input_uk:
+    - Скорочений URL або redirecting URL
+  output_uk:
+    - Розгорнутий destination URL, title, description, safety і preview context там, де доступно
+  notes_uk: Корисний для перевірки link destinations перед прямим відкриттям. Redirect chains можуть змінюватися з часом, тому зберігайте timestamped evidence.
 - id: builtwith
   name: BuiltWith
   url: https://builtwith.com/

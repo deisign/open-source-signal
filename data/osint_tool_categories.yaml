@@ -40,6 +40,12 @@
   description_en: Tools for searching text-heavy datasets, spreadsheets, documents, and monitoring public webpages for changes.
   description_uk: Інструменти для пошуку в текстових наборах даних, таблицях, документах і моніторингу змін на публічних вебсторінках.
   order: 55
+- id: passive_infrastructure_context
+  title_en: Passive Infrastructure Context
+  title_uk: Пасивний інфраструктурний контекст
+  description_en: Passive tools for understanding domains, URLs, certificates, IP addresses, ASNs, DNS records, redirects, and public web infrastructure without active scanning.
+  description_uk: Пасивні інструменти для аналізу доменів, URL, сертифікатів, IP-адрес, ASN, DNS-записів, редиректів і публічної вебінфраструктури без активного сканування.
+  order: 56
 - id: data_visualization
   title_en: Data Visualization
   title_uk: Візуалізація даних
