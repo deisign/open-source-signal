@@ -1344,6 +1344,41 @@
   output_uk:
     - Списки матеріалів, метрики уваги та порівняння джерел
   notes_uk: Визначення добірок формують результати, тому їх варто документувати.
+- id: ukraine_war_unmanned_systems_tracker
+  name: Ukraine War Unmanned Systems Tracker
+  url: https://unmannedsystemstracker.com/
+  category: news_media_monitoring
+  use_cases:
+    - Ukraine war drone incident tracking
+    - UAV/USV/UGV event research
+    - Claims triage
+    - Source discovery
+    - Conflict dataset review
+  input: Date range, platform type, location, actor, event keyword, linked source references
+  output: Tracker entries, incident context, cited source links, structured event leads
+  access: free
+  requires_login: false
+  api_available: false
+  opsec_level: low
+  legal_risk: low
+  evidence_value: high
+  automation_value: low
+  learning_cost: low
+  tested_status: recommended
+  public: true
+  project_fit: Useful specialist tracker for unmanned-system events in Russia's war against Ukraine.
+  notes: Useful specialist tracker for unmanned-system use in Russia's war against Ukraine. Distinguish confirmed events from claims, and cite the original linked evidence or source rather than only the tracker page.
+  use_cases_uk:
+    - Відстежувати інциденти з дронами у війні проти України
+    - Досліджувати події з UAV/USV/UGV
+    - Проводити первинну перевірку заяв
+    - Знаходити джерела
+    - Переглядати datasets щодо конфлікту
+  input_uk:
+    - Діапазон дат, тип платформи, локація, актор, ключове слово події, пов'язані посилання на джерела
+  output_uk:
+    - Записи tracker, контекст інцидентів, цитовані посилання на джерела, структуровані зачіпки щодо подій
+  notes_uk: Корисний спеціалізований tracker щодо застосування unmanned systems у війні Росії проти України. Відрізняйте підтверджені події від заяв і цитуйте оригінальні пов'язані докази або джерела, а не лише сторінку tracker.
 - id: visualping
   name: Visualping
   url: https://visualping.io/
@@ -1476,6 +1511,41 @@
   output_uk:
     - Структурований Google-запит із поясненням простою мовою
   notes_uk: Допомагає будувати точні пошукові запити, але самі результати пошуку не є доказом; окремо зберігайте сторінки-джерела.
+- id: links_overseer
+  name: Links Overseer
+  url: https://github.com/OsintFlow-Team/links-overseer
+  category: data_analysis_monitoring
+  use_cases:
+    - Website link mapping
+    - Internal page discovery
+    - Document and image extraction
+    - Response-code review
+    - Lightweight website reconnaissance
+  input: Target website URL, crawl depth, local analysis settings
+  output: Discovered links, HTTP status codes, response times, image gallery, document table, PDF or JSON report
+  access: free
+  requires_login: false
+  api_available: false
+  opsec_level: medium
+  legal_risk: medium
+  evidence_value: medium
+  automation_value: medium
+  learning_cost: medium
+  tested_status: situational
+  public: true
+  project_fit: Local website-analysis tool for mapping public pages, linked assets, and response metadata during bounded site review.
+  notes: Local website-analysis tool for quickly mapping public pages and linked assets. Use low crawl depth, respect site load and legal boundaries, and archive important source pages separately before citing.
+  use_cases_uk:
+    - Картувати посилання сайту
+    - Знаходити внутрішні сторінки
+    - Витягувати документи та зображення
+    - Переглядати response codes
+    - Проводити легку website reconnaissance
+  input_uk:
+    - URL цільового сайту, глибина crawl, локальні налаштування аналізу
+  output_uk:
+    - Знайдені посилання, HTTP status codes, response times, галерея зображень, таблиця документів, PDF або JSON report
+  notes_uk: Локальний інструмент website analysis для швидкого картування публічних сторінок і пов'язаних assets. Використовуйте малу глибину crawl, поважайте навантаження на сайт і правові межі, а важливі сторінки-джерела окремо архівуйте перед цитуванням.
 - id: gephi
   name: Gephi
   url: https://gephi.org/
