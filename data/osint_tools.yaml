@@ -1209,6 +1209,41 @@
   output_uk:
     - Certificate records, names, subdomains, issuer і validity metadata
   notes_uk: Certificate Transparency logs добре підходять для зачіпок, але старі сертифікати й застарілі names не доводять поточний контроль.
+- id: securitytrails
+  name: SecurityTrails
+  url: https://securitytrails.com/
+  category: passive_infrastructure_context
+  use_cases:
+    - DNS history research
+    - WHOIS history lookup
+    - Domain and subdomain context
+    - IP relationship discovery
+    - Infrastructure pivoting
+  input: Domain, subdomain, IP address, WHOIS field, organization name
+  output: DNS history, WHOIS records, subdomains, IP relationships, related infrastructure leads
+  access: freemium
+  requires_login: true
+  api_available: true
+  opsec_level: medium
+  legal_risk: low
+  evidence_value: high
+  automation_value: medium
+  learning_cost: medium
+  tested_status: situational
+  public: true
+  project_fit: Strong passive DNS and WHOIS-history source for infrastructure relationship research.
+  notes: Strong passive DNS and WHOIS-history source, but much value is behind login or paid limits. Treat results as infrastructure leads and corroborate ownership or attribution elsewhere.
+  use_cases_uk:
+    - Досліджувати історію DNS
+    - Перевіряти історію WHOIS
+    - Отримувати контекст доменів і subdomains
+    - Знаходити зв'язки між IP
+    - Робити infrastructure pivoting
+  input_uk:
+    - Домен, subdomain, IP address, WHOIS field або назва організації
+  output_uk:
+    - DNS history, WHOIS records, subdomains, IP relationships і зачіпки щодо пов'язаної інфраструктури
+  notes_uk: Сильне джерело passive DNS та WHOIS-history, але значна частина цінності обмежена логіном або платними лімітами. Розглядайте результати як інфраструктурні зачіпки й підтверджуйте власність або атрибуцію в інших джерелах.
 - id: dnsdumpster
   name: DNSDumpster
   url: https://dnsdumpster.com/
@@ -1244,6 +1279,43 @@
   output_uk:
     - DNS records, знайдені hosts, subdomains, mail records і map-style огляд інфраструктури
   notes_uk: Добрий перший пасивний map домену. Розглядайте знайдені hosts як зачіпки, а не як доказ поточної власності чи контролю.
+- id: viewdns_info
+  name: ViewDNS.info
+  url: https://viewdns.info/
+  category: passive_infrastructure_context
+  use_cases:
+    - DNS lookup
+    - Reverse IP lookup
+    - WHOIS lookup
+    - Domain intelligence
+    - Propagation checks
+    - Infrastructure triage
+  input: Domain, IP address, DNS record type, reverse-lookup target
+  output: DNS records, WHOIS data, reverse IP results, propagation views, domain and IP context
+  access: freemium
+  requires_login: false
+  api_available: true
+  opsec_level: low
+  legal_risk: low
+  evidence_value: medium
+  automation_value: medium
+  learning_cost: low
+  tested_status: situational
+  public: true
+  project_fit: Useful all-in-one passive lookup set for quick domain and IP infrastructure triage.
+  notes: Useful all-in-one lookup set for quick checks. Some results may be incomplete, cached, or rate-limited; confirm important findings with registry and DNS sources.
+  use_cases_uk:
+    - Виконувати DNS lookup
+    - Виконувати reverse IP lookup
+    - Перевіряти WHOIS
+    - Збирати domain intelligence
+    - Перевіряти propagation
+    - Проводити infrastructure triage
+  input_uk:
+    - Домен, IP address, тип DNS record або reverse-lookup target
+  output_uk:
+    - DNS records, WHOIS data, reverse IP results, propagation views і контекст домену та IP
+  notes_uk: Корисний набір lookup-інструментів для швидких перевірок. Частина результатів може бути неповною, кешованою або обмеженою rate limits; важливі знахідки підтверджуйте реєстровими та DNS-джерелами.
 - id: urlscan_io
   name: urlscan.io
   url: https://urlscan.io/
@@ -1349,6 +1421,76 @@
   output_uk:
     - ASN profile, prefixes, peers, routing table context, DNS і ownership clues
   notes_uk: Швидкий пасивний lookup для network ownership і BGP context. Використовуйте його для розуміння інфраструктурних зв'язків, а не як єдиний доказ атрибуції.
+- id: greynoise
+  name: GreyNoise
+  url: https://www.greynoise.io/
+  category: passive_infrastructure_context
+  use_cases:
+    - IP reputation context
+    - Internet-noise triage
+    - Scanner-background checks
+    - Malicious or benign IP context
+    - CTI enrichment
+  input: IP address, CVE, tag, actor or context query depending on plan
+  output: IP classification, noise/riot context, tags, observed activity summaries, enrichment leads
+  access: freemium
+  requires_login: true
+  api_available: true
+  opsec_level: medium
+  legal_risk: low
+  evidence_value: medium
+  automation_value: medium
+  learning_cost: medium
+  tested_status: situational
+  public: true
+  project_fit: Useful passive context source for IP reputation, broad scanning activity, and CTI enrichment.
+  notes: Useful for deciding whether an IP appears in broad internet background noise or known scanning context. Do not treat GreyNoise tags alone as attribution or proof of targeting.
+  use_cases_uk:
+    - Отримувати IP reputation context
+    - Проводити triage internet-noise
+    - Перевіряти scanner-background
+    - Аналізувати malicious або benign IP context
+    - Збагачувати CTI
+  input_uk:
+    - IP address, CVE, tag, actor або context query залежно від плану
+  output_uk:
+    - IP classification, noise/riot context, tags, observed activity summaries і enrichment leads
+  notes_uk: Корисний для оцінки, чи IP з'являється у широкому інтернет-шумі або відомому scanning context. Не трактуйте GreyNoise tags самі по собі як атрибуцію або доказ targeting.
+- id: abuseipdb
+  name: AbuseIPDB
+  url: https://www.abuseipdb.com/
+  category: passive_infrastructure_context
+  use_cases:
+    - IP abuse-report lookup
+    - Malicious activity triage
+    - Spam or attack-source context
+    - Community reputation checks
+    - CTI enrichment
+  input: IP address
+  output: Abuse confidence score, report categories, timestamps, reporter-provided context, API results where available
+  access: freemium
+  requires_login: false
+  api_available: true
+  opsec_level: low
+  legal_risk: low
+  evidence_value: medium
+  automation_value: medium
+  learning_cost: low
+  tested_status: situational
+  public: true
+  project_fit: Useful community-reputation source for passive IP abuse triage and CTI enrichment.
+  notes: Community reports are useful leads but can be noisy, outdated, or mistaken. Use AbuseIPDB for triage, not final attribution.
+  use_cases_uk:
+    - Перевіряти IP abuse reports
+    - Проводити triage malicious activity
+    - Отримувати контекст spam або attack-source
+    - Перевіряти community reputation
+    - Збагачувати CTI
+  input_uk:
+    - IP address
+  output_uk:
+    - Abuse confidence score, report categories, timestamps, reporter-provided context і API results там, де доступно
+  notes_uk: Community reports корисні як зачіпки, але можуть бути шумними, застарілими або помилковими. Використовуйте AbuseIPDB для triage, а не для фінальної атрибуції.
 - id: checkshorturl
   name: CheckShortURL
   url: https://checkshorturl.com/
@@ -1385,12 +1527,15 @@
 - id: builtwith
   name: BuiltWith
   url: https://builtwith.com/
-  category: domains_infrastructure
+  category: passive_infrastructure_context
   use_cases:
-    - Identify visible web technologies
-    - Compare site technology and tracking changes
-  input: Domain or URL
-  output: Technology profile, tags, and historical signals
+    - Website technology profiling
+    - Tracker and analytics discovery
+    - CMS and framework clues
+    - Third-party service context
+    - Web infrastructure triage
+  input: Website domain or URL
+  output: Detected technologies, analytics and advertising tags, CMS or framework clues, hosting and service indicators
   access: freemium
   requires_login: false
   api_available: true
@@ -1401,16 +1546,19 @@
   learning_cost: low
   tested_status: situational
   public: true
-  project_fit: Useful when source credibility depends on web platform context.
-  notes: Commercial limits apply to deeper history and automation.
+  project_fit: Useful passive source for visible web technology, tracker, and service-provider context.
+  notes: Good for context on a site's visible technology stack. Detected technologies do not prove ownership, control, or intent, and may miss hidden or path-specific systems.
   use_cases_uk:
-    - Визначати видимі вебтехнології
-    - Порівнювати зміни технологій сайту та tracking
+    - Профілювати технології website
+    - Знаходити tracker і analytics
+    - Отримувати підказки щодо CMS і framework
+    - Аналізувати контекст third-party services
+    - Проводити web infrastructure triage
   input_uk:
-    - Домен або URL
+    - Website domain або URL
   output_uk:
-    - Технологічний профіль, теги та історичні сигнали
-  notes_uk: Для глибшої історії та автоматизації діють комерційні обмеження.
+    - Detected technologies, analytics і advertising tags, підказки щодо CMS або framework, hosting і service indicators
+  notes_uk: Добрий для контексту щодо видимого technology stack сайту. Detected technologies не доводять власність, контроль або намір і можуть не показати приховані чи path-specific systems.
 - id: wappalyzer
   name: Wappalyzer
   url: https://www.wappalyzer.com/
