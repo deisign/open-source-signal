@@ -46,6 +46,12 @@
   description_en: Passive tools for understanding domains, URLs, certificates, IP addresses, ASNs, DNS records, redirects, and public web infrastructure without active scanning.
   description_uk: Пасивні інструменти для аналізу доменів, URL, сертифікатів, IP-адрес, ASN, DNS-записів, редиректів і публічної вебінфраструктури без активного сканування.
   order: 56
+- id: code_repository_osint
+  title_en: Code & Repository OSINT
+  title_uk: OSINT коду та репозиторіїв
+  description_en: Tools for investigating public code repositories, commit history, developer accounts, organizations, metadata, exposed emails, public keys, and accidentally published secrets in a defensive and journalistic context.
+  description_uk: Інструменти для дослідження публічних репозиторіїв коду, історії комітів, акаунтів розробників, організацій, метаданих, відкритих email-адрес, публічних ключів і випадково опублікованих секретів у захисному та журналістському контексті.
+  order: 58
 - id: data_visualization
   title_en: Data Visualization
   title_uk: Візуалізація даних

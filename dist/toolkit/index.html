@@ -4360,6 +4360,387 @@
         </article>
       </div>
     </details>
+    <details class="category" id="code_repository_osint">
+      <summary>
+        <div class="category-head">
+          <h2>Code & Repository OSINT</h2>
+          <p class="uk">OSINT коду та репозиторіїв</p>
+          <p>Tools for investigating public code repositories, commit history, developer accounts, organizations, metadata, exposed emails, public keys, and accidentally published secrets in a defensive and journalistic context. Інструменти для дослідження публічних репозиторіїв коду, історії комітів, акаунтів розробників, організацій, метаданих, відкритих email-адрес, публічних ключів і випадково опублікованих секретів у захисному та журналістському контексті.</p>
+        </div>
+      </summary>
+      <div class="tool-grid">
+        <article class="tool-card">
+          <h3>GitFive</h3>
+          <a class="tool-url" href="https://github.com/mxrch/GitFive">https://github.com/mxrch/GitFive</a>
+          <div class="tag-row">
+            <span class="tag">free</span>
+            <span class="tag">Login required</span>
+            <span class="tag">No API</span>
+            <span class="tag">Risk medium</span>
+            <span class="tag">Evidence medium</span>
+            <span class="tag">situational</span>
+          </div>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>GitHub user profiling</li>
+                  <li>Account-history review</li>
+                  <li>Email and identity correlation</li>
+                  <li>Public-key review</li>
+                  <li>Related-account discovery</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Профілювання GitHub-користувача</li>
+                  <li>Перегляд історії акаунта</li>
+                  <li>Кореляція email та identity</li>
+                  <li>Перегляд публічних ключів</li>
+                  <li>Пошук пов'язаних акаунтів</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>GitHub username, GitHub token or local configuration where required</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>GitHub username, GitHub token або local configuration там, де потрібно</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Account profile, public activity, username or name history, emails, public keys, possible related accounts, JSON export</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Account profile, public activity, історія username або name, emails, public keys, можливі пов'язані акаунти, JSON export</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Powerful but privacy-sensitive profile analysis. Use only for legitimate public-interest research, avoid harassment or doxxing, and verify all identity correlations independently.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Потужний, але privacy-sensitive інструмент аналізу профілів. Використовуйте лише для легітимних досліджень у суспільному інтересі, уникайте harassment або doxxing і незалежно перевіряйте всі identity correlations.</p>
+              </div>
+            </section>
+          </div>
+        </article>
+        <article class="tool-card">
+          <h3>GitLeak</h3>
+          <a class="tool-url" href="https://gitleak.io/">https://gitleak.io/</a>
+          <div class="tag-row">
+            <span class="tag">free</span>
+            <span class="tag">No login</span>
+            <span class="tag">No API</span>
+            <span class="tag">Risk low</span>
+            <span class="tag">Evidence medium</span>
+            <span class="tag">situational</span>
+          </div>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>GitHub profile analysis</li>
+                  <li>Commit-email discovery</li>
+                  <li>Public-key review</li>
+                  <li>Developer activity context</li>
+                  <li>Repository metadata triage</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Аналіз GitHub-профілю</li>
+                  <li>Пошук email-адрес у комітах</li>
+                  <li>Перегляд публічних ключів</li>
+                  <li>Контекст активності розробника</li>
+                  <li>Первинний аналіз метаданих репозиторію</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>GitHub username or profile URL</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>GitHub username або profile URL</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Public emails from commit history, SSH/GPG public-key clues, activity statistics, repository and profile artifacts</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Публічні emails з історії комітів, підказки щодо SSH/GPG public keys, статистика активності, артефакти репозиторію та профілю</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Automates collection of public GitHub profile and commit metadata. Treat emails and keys as leads, respect privacy, and verify identity links before making claims.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Автоматизує збір публічних метаданих GitHub-профілю та комітів. Сприймайте emails і keys як зачіпки, поважайте приватність і перевіряйте зв'язки з особою перед твердженнями.</p>
+              </div>
+            </section>
+          </div>
+        </article>
+        <article class="tool-card">
+          <h3>Gitleaks</h3>
+          <a class="tool-url" href="https://github.com/gitleaks/gitleaks">https://github.com/gitleaks/gitleaks</a>
+          <div class="tag-row">
+            <span class="tag">free</span>
+            <span class="tag">No login</span>
+            <span class="tag">No API</span>
+            <span class="tag">Risk medium</span>
+            <span class="tag">Evidence high</span>
+            <span class="tag">recommended</span>
+          </div>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>Local repository secret scanning</li>
+                  <li>Defensive leak detection</li>
+                  <li>Commit-history review</li>
+                  <li>Pre-publication security checks</li>
+                  <li>Exposed-token triage</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Локальне сканування репозиторіїв на secrets</li>
+                  <li>Defensive leak detection</li>
+                  <li>Перегляд історії комітів</li>
+                  <li>Security checks перед публікацією</li>
+                  <li>Triage exposed tokens</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Local Git repository, files, stdin, or authorized repository target</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Локальний Git repository, files, stdin або authorized repository target</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Detected secrets, rule matches, file paths, commit references, structured reports</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Виявлені secrets, rule matches, file paths, commit references, structured reports</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Best used defensively on repositories you own or are authorized to audit. Do not use discovered credentials; report or rotate them through proper channels.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Найкраще використовувати defensively на репозиторіях, якими ви володієте або маєте дозвіл аудитувати. Не використовуйте знайдені credentials; повідомляйте про них або ротуйте їх належними каналами.</p>
+              </div>
+            </section>
+          </div>
+        </article>
+        <article class="tool-card">
+          <h3>Gitrecon</h3>
+          <a class="tool-url" href="https://github.com/GONZOsint/gitrecon">https://github.com/GONZOsint/gitrecon</a>
+          <div class="tag-row">
+            <span class="tag">free</span>
+            <span class="tag">No login</span>
+            <span class="tag">No API</span>
+            <span class="tag">Risk low</span>
+            <span class="tag">Evidence medium</span>
+            <span class="tag">situational</span>
+          </div>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>GitHub and GitLab profile OSINT</li>
+                  <li>Repository review</li>
+                  <li>Commit-email discovery</li>
+                  <li>Developer-account triage</li>
+                  <li>Organization context</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>OSINT GitHub і GitLab-профілів</li>
+                  <li>Перегляд репозиторіїв</li>
+                  <li>Пошук email-адрес у комітах</li>
+                  <li>Первинний аналіз developer accounts</li>
+                  <li>Контекст організацій</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>GitHub or GitLab username, repository, organization, local configuration</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>GitHub або GitLab username, repository, organization, local configuration</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Public profile data, repository context, commit metadata, discovered emails and OSINT leads</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Публічні profile data, repository context, commit metadata, знайдені emails і OSINT leads</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Useful for structured review of public developer metadata. Commit authorship and emails can be spoofed or misleading, so corroborate identity claims elsewhere.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Корисний для структурованого перегляду публічних метаданих розробників. Авторство комітів і emails можуть бути підробленими або вводити в оману, тому підтверджуйте identity claims в інших джерелах.</p>
+              </div>
+            </section>
+          </div>
+        </article>
+        <article class="tool-card">
+          <h3>TruffleHog</h3>
+          <a class="tool-url" href="https://github.com/trufflesecurity/trufflehog">https://github.com/trufflesecurity/trufflehog</a>
+          <div class="tag-row">
+            <span class="tag">free</span>
+            <span class="tag">No login</span>
+            <span class="tag">No API</span>
+            <span class="tag">Risk medium</span>
+            <span class="tag">Evidence high</span>
+            <span class="tag">situational</span>
+          </div>
+          <div class="tool-fields">
+            <section class="field-section">
+              <h4 class="field-title">Best for / Для чого</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <ul>
+                  <li>Secret scanning</li>
+                  <li>Credential leak detection</li>
+                  <li>Repository and cloud-source review</li>
+                  <li>Defensive security triage</li>
+                  <li>Verified-secret detection</li>
+                </ul>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Secret scanning</li>
+                  <li>Виявлення credential leaks</li>
+                  <li>Перегляд repository і cloud sources</li>
+                  <li>Defensive security triage</li>
+                  <li>Виявлення verified secrets</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Input / Вхідні дані</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Authorized repository, local files, GitHub/GitLab source, Docker image, S3 or other supported source depending on configuration</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Authorized repository, локальні files, GitHub/GitLab source, Docker image, S3 або інше supported source залежно від configuration</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Output / Результат</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Detected secrets, verification status where enabled, source location, structured findings</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <ul>
+                  <li>Виявлені secrets, verification status там, де ввімкнено, source location, structured findings</li>
+                </ul>
+              </div>
+            </section>
+            <section class="field-section">
+              <h4 class="field-title">Notes / Примітки</h4>
+              <div class="lang-block">
+                <span class="lang-label">EN:</span>
+                <p>Very capable secret scanner. Use only on owned or authorized sources; avoid verifying or testing third-party credentials without permission, and handle findings as sensitive material.</p>
+              </div>
+              <div class="lang-block">
+                <span class="lang-label">UK:</span>
+                <p>Дуже потужний secret scanner. Використовуйте лише на власних або authorized sources; не перевіряйте й не тестуйте third-party credentials без дозволу та обробляйте findings як sensitive material.</p>
+              </div>
+            </section>
+          </div>
+        </article>
+      </div>
+    </details>
     <details class="category" id="data_visualization">
       <summary>
         <div class="category-head">

@@ -1848,6 +1848,181 @@
   output_uk:
     - Знайдені посилання, HTTP status codes, response times, галерея зображень, таблиця документів, PDF або JSON report
   notes_uk: Локальний інструмент website analysis для швидкого картування публічних сторінок і пов'язаних assets. Використовуйте малу глибину crawl, поважайте навантаження на сайт і правові межі, а важливі сторінки-джерела окремо архівуйте перед цитуванням.
+- id: gitleak
+  name: GitLeak
+  url: https://gitleak.io/
+  category: code_repository_osint
+  use_cases:
+    - GitHub profile analysis
+    - Commit-email discovery
+    - Public-key review
+    - Developer activity context
+    - Repository metadata triage
+  input: GitHub username or profile URL
+  output: Public emails from commit history, SSH/GPG public-key clues, activity statistics, repository and profile artifacts
+  access: free
+  requires_login: false
+  api_available: false
+  opsec_level: medium
+  legal_risk: low
+  evidence_value: medium
+  automation_value: low
+  learning_cost: low
+  tested_status: situational
+  public: true
+  project_fit: Useful public GitHub metadata triage tool for developer-account context and commit-history leads.
+  notes: Automates collection of public GitHub profile and commit metadata. Treat emails and keys as leads, respect privacy, and verify identity links before making claims.
+  use_cases_uk:
+    - Аналіз GitHub-профілю
+    - Пошук email-адрес у комітах
+    - Перегляд публічних ключів
+    - Контекст активності розробника
+    - Первинний аналіз метаданих репозиторію
+  input_uk:
+    - GitHub username або profile URL
+  output_uk:
+    - Публічні emails з історії комітів, підказки щодо SSH/GPG public keys, статистика активності, артефакти репозиторію та профілю
+  notes_uk: Автоматизує збір публічних метаданих GitHub-профілю та комітів. Сприймайте emails і keys як зачіпки, поважайте приватність і перевіряйте зв'язки з особою перед твердженнями.
+- id: gitrecon
+  name: Gitrecon
+  url: https://github.com/GONZOsint/gitrecon
+  category: code_repository_osint
+  use_cases:
+    - GitHub and GitLab profile OSINT
+    - Repository review
+    - Commit-email discovery
+    - Developer-account triage
+    - Organization context
+  input: GitHub or GitLab username, repository, organization, local configuration
+  output: Public profile data, repository context, commit metadata, discovered emails and OSINT leads
+  access: free
+  requires_login: false
+  api_available: false
+  opsec_level: medium
+  legal_risk: low
+  evidence_value: medium
+  automation_value: medium
+  learning_cost: medium
+  tested_status: situational
+  public: true
+  project_fit: Useful structured review tool for public developer metadata across GitHub, GitLab, repositories, and organizations.
+  notes: Useful for structured review of public developer metadata. Commit authorship and emails can be spoofed or misleading, so corroborate identity claims elsewhere.
+  use_cases_uk:
+    - OSINT GitHub і GitLab-профілів
+    - Перегляд репозиторіїв
+    - Пошук email-адрес у комітах
+    - Первинний аналіз developer accounts
+    - Контекст організацій
+  input_uk:
+    - GitHub або GitLab username, repository, organization, local configuration
+  output_uk:
+    - Публічні profile data, repository context, commit metadata, знайдені emails і OSINT leads
+  notes_uk: Корисний для структурованого перегляду публічних метаданих розробників. Авторство комітів і emails можуть бути підробленими або вводити в оману, тому підтверджуйте identity claims в інших джерелах.
+- id: gitfive
+  name: GitFive
+  url: https://github.com/mxrch/GitFive
+  category: code_repository_osint
+  use_cases:
+    - GitHub user profiling
+    - Account-history review
+    - Email and identity correlation
+    - Public-key review
+    - Related-account discovery
+  input: GitHub username, GitHub token or local configuration where required
+  output: Account profile, public activity, username or name history, emails, public keys, possible related accounts, JSON export
+  access: free
+  requires_login: true
+  api_available: false
+  opsec_level: medium
+  legal_risk: medium
+  evidence_value: medium
+  automation_value: medium
+  learning_cost: medium
+  tested_status: situational
+  public: true
+  project_fit: Useful GitHub profile-analysis tool when privacy-sensitive identity correlations are handled with strict corroboration.
+  notes: Powerful but privacy-sensitive profile analysis. Use only for legitimate public-interest research, avoid harassment or doxxing, and verify all identity correlations independently.
+  use_cases_uk:
+    - Профілювання GitHub-користувача
+    - Перегляд історії акаунта
+    - Кореляція email та identity
+    - Перегляд публічних ключів
+    - Пошук пов'язаних акаунтів
+  input_uk:
+    - GitHub username, GitHub token або local configuration там, де потрібно
+  output_uk:
+    - Account profile, public activity, історія username або name, emails, public keys, можливі пов'язані акаунти, JSON export
+  notes_uk: Потужний, але privacy-sensitive інструмент аналізу профілів. Використовуйте лише для легітимних досліджень у суспільному інтересі, уникайте harassment або doxxing і незалежно перевіряйте всі identity correlations.
+- id: gitleaks
+  name: Gitleaks
+  url: https://github.com/gitleaks/gitleaks
+  category: code_repository_osint
+  use_cases:
+    - Local repository secret scanning
+    - Defensive leak detection
+    - Commit-history review
+    - Pre-publication security checks
+    - Exposed-token triage
+  input: Local Git repository, files, stdin, or authorized repository target
+  output: Detected secrets, rule matches, file paths, commit references, structured reports
+  access: free
+  requires_login: false
+  api_available: false
+  opsec_level: medium
+  legal_risk: medium
+  evidence_value: high
+  automation_value: high
+  learning_cost: medium
+  tested_status: recommended
+  public: true
+  project_fit: Strong defensive scanner for finding secrets in owned repositories and preserving actionable leak evidence.
+  notes: Best used defensively on repositories you own or are authorized to audit. Do not use discovered credentials; report or rotate them through proper channels.
+  use_cases_uk:
+    - Локальне сканування репозиторіїв на secrets
+    - Defensive leak detection
+    - Перегляд історії комітів
+    - Security checks перед публікацією
+    - Triage exposed tokens
+  input_uk:
+    - Локальний Git repository, files, stdin або authorized repository target
+  output_uk:
+    - Виявлені secrets, rule matches, file paths, commit references, structured reports
+  notes_uk: Найкраще використовувати defensively на репозиторіях, якими ви володієте або маєте дозвіл аудитувати. Не використовуйте знайдені credentials; повідомляйте про них або ротуйте їх належними каналами.
+- id: trufflehog
+  name: TruffleHog
+  url: https://github.com/trufflesecurity/trufflehog
+  category: code_repository_osint
+  use_cases:
+    - Secret scanning
+    - Credential leak detection
+    - Repository and cloud-source review
+    - Defensive security triage
+    - Verified-secret detection
+  input: Authorized repository, local files, GitHub/GitLab source, Docker image, S3 or other supported source depending on configuration
+  output: Detected secrets, verification status where enabled, source location, structured findings
+  access: free
+  requires_login: false
+  api_available: false
+  opsec_level: medium
+  legal_risk: medium
+  evidence_value: high
+  automation_value: high
+  learning_cost: medium
+  tested_status: situational
+  public: true
+  project_fit: Strong defensive scanner for repository and cloud-source secret triage with careful handling of sensitive findings.
+  notes: Very capable secret scanner. Use only on owned or authorized sources; avoid verifying or testing third-party credentials without permission, and handle findings as sensitive material.
+  use_cases_uk:
+    - Secret scanning
+    - Виявлення credential leaks
+    - Перегляд repository і cloud sources
+    - Defensive security triage
+    - Виявлення verified secrets
+  input_uk:
+    - Authorized repository, локальні files, GitHub/GitLab source, Docker image, S3 або інше supported source залежно від configuration
+  output_uk:
+    - Виявлені secrets, verification status там, де ввімкнено, source location, structured findings
+  notes_uk: Дуже потужний secret scanner. Використовуйте лише на власних або authorized sources; не перевіряйте й не тестуйте third-party credentials без дозволу та обробляйте findings як sensitive material.
 - id: gephi
   name: Gephi
   url: https://gephi.org/
