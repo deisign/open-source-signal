@@ -1,0 +1,278 @@
+{
+  "issue_number": "W30",
+  "slug": "open-source-signal-weekly-2026-W30",
+  "output_name": "open-source-signal-weekly-2026-W30.html",
+  "date_iso": "2026-07-26",
+  "week_label_en": "20–26 July 2026",
+  "week_label_uk": "20–26 липня 2026",
+  "title_en": "Open Source Signal Weekly",
+  "title_uk": "Тижневий сигнал відкритих джерел",
+  "subtitle_en": "Sunday editorial synthesis for Ukrainian accountability OSINT.",
+  "subtitle_uk": "Недільний редакційний синтез для української роботи з відкритими джерелами й притягнення до відповідальності.",
+  "dek_en": "A magazine-style synthesis of the week’s strongest public-interest signals: evidence handoffs in captivity and missing-person cases; the links between publication, court records and implementation in Ukraine; the boundary between monitoring and criminal investigation; provenance for translated, labelled and computationally transformed material; regulatory decisions that still require observed compliance; a Saturday tool chain for safe intake, search, preservation and review; and the privacy risk created when investigative data moves to an unseen recipient.",
+  "dek_uk": "Журнальний синтез найважливіших суспільно значущих сигналів тижня: передавання доказів у справах про полон і зникнення; зв’язки між публікацією, судовими записами та виконанням рішень в Україні; межа між спостереженням і кримінальним розслідуванням; походження перекладених, маркованих і обчислювально перетворених матеріалів; рішення наглядових органів, виконання яких ще треба перевірити; суботній ланцюг засобів для безпечного приймання, пошуку, збереження й перевірки; і ризик для приватності, що виникає, коли дослідницькі дані переходять до невидимого одержувача.",
+  "editorial_frame": {
+    "what_this_is": "A Sunday weekly magazine that develops the strongest signals from Daily Signal #059–#063, Saturday Tool Radar #064 and a Sunday primary-source check into separate editorial sections with evidence handoffs, practical use and publication limits.",
+    "what_this_is_not": "A mechanical merge of daily cards, a live-targeting board, a pile of unlike administrative counts, a tool-generated verdict, an external-processing shortcut or an excuse to let a copied record lose its source, authority and history."
+  },
+  "rubric_map": [
+    "📡 Signal of the Week / Головний сигнал тижня",
+    "🇺🇦 Ukraine Lens / Українська оптика",
+    "⚖️ War Crimes Verification / Верифікація воєнних злочинів",
+    "🕯️ Losses, Captivity & Missing / Втрати, полон, зниклі",
+    "🧰 Tradecraft / Методика",
+    "🛠️ Tools / Datasets / Інструменти й набори даних",
+    "⚠️ Risk Watch / Межі й ризики"
+  ],
+  "editorial_note_en": "The week’s decisive object was the handoff record. A family update moved into a state system; released-prisoner testimony moved to investigators; a file moved through transcription, translation and metadata enrichment; a grant moved toward procurement; a regulatory decision moved toward remediation; and a URL moved into a third-party scanner. At every handoff, meaning, authority, visibility and risk could change. The strongest work preserved the input, output, responsible actor, time, legal basis and reason for transition.",
+  "editorial_note_uk": "Вирішальним об’єктом тижня став запис передавання. Оновлення родини переходило до державної системи; свідчення звільненого — до слідчого; файл — через розшифрування, переклад і доповнення метаданих; грант — до закупівлі; рішення наглядового органу — до усунення порушення; адреса — до сторонньої служби перевірки. На кожному переході могли змінитися значення, повноваження, видимість і ризик. Найсильніша робота зберігала вхід, вихід, відповідального, час, правову підставу й причину переходу.",
+  "items": [
+    {
+      "rubric_key": "signal",
+      "emoji": "📡",
+      "rubric_en": "Signal of the Week",
+      "rubric_uk": "Головний сигнал тижня",
+      "title_en": "The week’s real evidence object was the handoff",
+      "title_uk": "Справжнім доказовим об’єктом тижня стало передавання",
+      "source_line_en": "Daily Signal #059–#063; Saturday Tool Radar #064; ICRC Central Tracing Agency Bureau source check · 20–26 July 2026",
+      "source_line_uk": "Щоденні випуски #059–#063; Суботній радар інструментів #064; перевірка джерела Центрального агентства розшуку МКЧХ · 20–26 липня 2026",
+      "what_happened_en": "Across the week, consequential information repeatedly crossed a boundary: a blocked investigation was republished by several newsrooms; family and survivor information entered missing-person and criminal-investigation systems; machine-readable marks and visible notices were assigned to AI-generated material; translations and subtitles created new media derivatives; public-sector pilots moved from grants toward procurement; and regulatory decisions moved toward remedies that still require testing.",
+      "what_happened_uk": "Протягом тижня важливі відомості раз у раз перетинали межу: заблоковане розслідування спільно оприлюднили кілька редакцій; відомості родин і звільнених бранців переходили до систем пошуку зниклих та кримінальних проваджень; матеріали, створені штучним інтелектом, отримували машиночитані позначки й видимі повідомлення; переклади та субтитри створювали нові похідні версії; державні дослідні проєкти переходили від грантів до закупівель; а рішення наглядових органів — до способів усунення, які ще треба перевірити.",
+      "why_it_matters_en": "Evidence can lose meaning at the boundary between systems. A receiving institution may change the identifier, definition, confidence, access level or legal purpose. Without a handoff record, a lead can reappear as confirmation, a translation as an original, a regulatory order as completed compliance, or a family update as an official finding.",
+      "why_it_matters_uk": "На межі між системами доказ може втратити значення. Орган-одержувач здатен змінити ідентифікатор, визначення, рівень упевненості, доступ або правову мету. Без запису передавання зачіпка може повернутися як підтвердження, переклад — як оригінал, припис наглядового органу — як уже виконана вимога, а оновлення родини — як офіційний висновок.",
+      "how_to_use_en": "For every consequential transfer, store the source object, stable identifier, sender, recipient, authority, purpose, timestamp, fields transferred, fields removed or transformed, output identifier, acknowledgement, reviewer, new status, access rule, retention period and correction path. Link both sides of the handoff instead of overwriting the earlier record.",
+      "how_to_use_uk": "Для кожного важливого передавання зберігайте первинний об’єкт, сталий ідентифікатор, відправника, одержувача, повноваження, мету, час, передані поля, вилучені або змінені поля, ідентифікатор результату, підтвердження отримання, перевіряча, новий стан, правило доступу, строк зберігання та шлях виправлення. Пов’язуйте обидві сторони переходу, а не перезаписуйте попередній запис.",
+      "limits_en": "A documented handoff does not validate weak content. It shows who relied on it and how it changed. The underlying source, definition, consent, legal basis and corroboration still require independent review, and some transfers should not occur at all when the public-interest need does not outweigh the risk.",
+      "limits_uk": "Задокументоване передавання не робить слабкий матеріал надійним. Воно лише показує, хто на нього спирався і як він змінився. Первинне джерело, визначення, згода, правова підстава та підтвердження однаково потребують незалежної перевірки, а частина передавань узагалі не має відбуватися, якщо суспільна потреба не переважає ризик.",
+      "tags": [
+        "signal-of-week",
+        "evidence-handoff",
+        "source-lineage",
+        "status-transition",
+        "corrections"
+      ]
+    },
+    {
+      "rubric_key": "ukraine",
+      "emoji": "🇺🇦",
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "title_en": "Ukraine’s accountability gap appeared between the public act and the record that should explain it",
+      "title_uk": "Український розрив відповідальності виникав між публічною дією та записом, що мав її пояснювати",
+      "source_line_en": "OCCRP; State Bureau of Investigation of Ukraine; Council of Europe Office in Ukraine; Daily Signal #059–#063 · 20–24 July 2026",
+      "source_line_uk": "OCCRP; Державне бюро розслідувань; Офіс Ради Європи в Україні; щоденні випуски #059–#063 · 20–24 липня 2026",
+      "what_happened_en": "The Ukraine-facing record connected four different accountability problems. Eight newsrooms republished a corruption investigation after a pre-publication injunction; a military-asset case reached the indictment stage; a prosecutorial reform roadmap remained at the consultation and implementation-planning stage; and investigators alleged that more than 100 similar court decisions formed part of a mobilisation-avoidance mechanism. Each public event depended on a different underlying record and procedural state.",
+      "what_happened_uk": "Українська частина тижня поєднала чотири різні проблеми відповідальності. Вісім редакцій повторно оприлюднили антикорупційне розслідування після заборони до публікації; справа про військове майно дійшла до обвинувального акта; дорожня карта реформи прокуратури лишалася на етапі консультацій і планування виконання; а слідство пов’язало понад 100 подібних судових рішень із ймовірним механізмом уникнення мобілізації. Кожна публічна подія спиралася на інший первинний запис і процесуальний стан.",
+      "why_it_matters_en": "Solidarity, indictment, roadmap and repeated pattern are not interchangeable proofs. Public accountability becomes durable only when a publication is linked to its source material and litigation, an asset allegation to inventory and court records, a reform promise to owners and deadlines, and a repeated ruling to each individual case and resulting benefit.",
+      "why_it_matters_uk": "Солідарність, обвинувальний акт, дорожня карта й повторюваний шаблон не є взаємозамінними доказами. Публічна відповідальність стає стійкою лише тоді, коли публікацію пов’язано з матеріалами й судовим спором, твердження про майно — з обліком і справою, обіцянку реформи — з відповідальними та строками, а повторюване рішення — з кожною окремою справою й отриманою пільгою.",
+      "how_to_use_en": "Maintain four linked ledgers: publication, injunction, lawsuit, appeal and correction; military asset, custodian, shortage, valuation, recovery and case status; reform measure, responsible institution, legal act, deadline, budget and observed result; court application, assignment, evidence, ruling, appeal, administrative benefit and later verification. Use stable identifiers and preserve the defence or affected party’s response.",
+      "how_to_use_uk": "Ведіть чотири пов’язані журнали: публікація, заборона, позов, оскарження й виправлення; військове майно, відповідальний за зберігання, нестача, оцінка, повернення та стан справи; захід реформи, відповідальна установа, правовий акт, строк, бюджет і спостережений результат; судова заява, розподіл, докази, рішення, оскарження, адміністративна пільга й подальша перевірка. Використовуйте сталі ідентифікатори та зберігайте відповідь захисту або зачепленої сторони.",
+      "limits_en": "Do not turn coordinated publication into proof of every underlying claim, an indictment into guilt, a roadmap into implementation or a repeated pattern into liability for every case. Withhold military inventories, storage locations, children’s data, family addresses, private communications and operational investigative detail.",
+      "limits_uk": "Не перетворюйте спільну публікацію на доказ кожного первинного твердження, обвинувальний акт — на вину, дорожню карту — на виконання, а повторюваний шаблон — на відповідальність у кожній справі. Вилучайте військові залишки й місця зберігання, дані дітей, адреси родин, приватні листування та робочі подробиці слідства.",
+      "tags": [
+        "ukraine",
+        "accountability",
+        "court-records",
+        "implementation",
+        "linked-ledgers"
+      ]
+    },
+    {
+      "rubric_key": "war-crimes",
+      "emoji": "⚖️",
+      "rubric_en": "War Crimes Verification",
+      "rubric_uk": "Верифікація воєнних злочинів",
+      "title_en": "Monitoring, investigation and adjudication need an explicit evidence handoff",
+      "title_uk": "Спостереження, розслідування й судовий розгляд потребують явного передавання доказів",
+      "source_line_en": "ODIHR Ukraine Monitoring Initiative and Ninth Interim Report; Coordination Headquarters; Daily Signal #059, #062–#063 · 20–24 July 2026",
+      "source_line_uk": "Ініціатива БДІПЛ зі спостереження за Україною та дев’ята проміжна доповідь; Координаційний штаб; випуски #059, #062–#063 · 20–24 липня 2026",
+      "what_happened_en": "ODIHR’s Ukraine Monitoring Initiative described a fact-establishment method led by trauma-informed interviews and supplemented by institutional material, desk research, remote monitoring and open-source investigation, with information cross-checked against several independent credible sources. The initiative explicitly does not conduct criminal investigations. In parallel, Ukrainian captivity work described transferring released-prisoner testimony to investigators.",
+      "what_happened_uk": "Ініціатива БДІПЛ зі спостереження за Україною описала встановлення фактів, у якому провідну роль мають інтерв’ю з урахуванням травми, а додатковими шарами є відомчі матеріали, кабінетне дослідження, дистанційне спостереження та робота з відкритими джерелами; відомості звіряють із кількома незалежними надійними джерелами. Ініціатива прямо не проводить кримінальних розслідувань. Водночас українська робота щодо полону передбачала передавання свідчень звільнених до слідчих.",
+      "why_it_matters_en": "A monitoring interview can support a factual finding, but criminal procedure may require a new interview, authentication, disclosure rules, chain of custody and defence access. Legal qualification then adds a separate test of conduct, conflict nexus, mental element and individual or command responsibility. The same statement cannot silently change roles as it moves between these systems.",
+      "why_it_matters_uk": "Інтерв’ю для спостереження може підтримати фактичний висновок, але кримінальна процедура здатна вимагати нового допиту, підтвердження справжності, правил відкриття матеріалів, ланцюга зберігання та доступу захисту. Правова кваліфікація додає окрему перевірку дії, зв’язку зі збройним конфліктом, умислу та особистої або командної відповідальності. Одне свідчення не може непомітно змінювати роль під час переходу між цими системами.",
+      "how_to_use_en": "Link four records: interview and consent; corroborating artefacts and source assessment; monitoring finding with scope and confidence; criminal-investigation handoff with receiving authority, procedural action and custody record. Add a fifth legal-elements matrix only when the facts support it. Record what the receiving body may reuse, what requires recollection and what cannot be disclosed.",
+      "how_to_use_uk": "Пов’язуйте чотири записи: інтерв’ю й згода; підтверджувальні матеріали та оцінка джерела; висновок спостереження з межами й упевненістю; передавання до кримінального розслідування з органом-одержувачем, процесуальною дією та записом зберігання. П’яту матрицю правових ознак додавайте лише тоді, коли її підтримують факти. Фіксуйте, що одержувач може використати повторно, що треба зібрати наново і що не можна розкривати.",
+      "limits_en": "Do not expose witnesses, detention locations, interview metadata or material whose disclosure could endanger survivors or compromise proceedings. A monitoring report can inform accountability and preserve patterns, but it is not a charge, a trial record or a final judgment.",
+      "limits_uk": "Не викривайте свідків, місця утримання, службові відомості інтерв’ю або матеріал, розкриття якого може загрожувати постраждалим чи зашкодити провадженню. Доповідь спостереження може підтримувати відповідальність і зберігати повторювані практики, але не є обвинуваченням, судовим записом або остаточним рішенням.",
+      "tags": [
+        "war-crimes-verification",
+        "monitoring",
+        "investigative-handoff",
+        "witness-protection",
+        "legal-qualification"
+      ]
+    },
+    {
+      "rubric_key": "losses",
+      "emoji": "🕯️",
+      "rubric_en": "Losses, Captivity & Missing",
+      "rubric_uk": "Втрати, полон, зниклі",
+      "title_en": "The person record must survive every handoff between family, unit, tracing service, investigator and laboratory",
+      "title_uk": "Запис про людину має пережити кожен перехід між родиною, частиною, службою розшуку, слідчим і лабораторією",
+      "source_line_en": "Ukrainian Ombudsman; Coordination Headquarters; ICRC Central Tracing Agency Bureau facts and figures · 20–26 July 2026",
+      "source_line_uk": "Уповноважений Верховної Ради з прав людини; Координаційний штаб; відомості Центрального агентства розшуку МКЧХ · 20–26 липня 2026",
+      "what_happened_en": "Three daily records described family-account updates, requests to the Russian side, released-prisoner testimony, repatriation, DNA comparison and the use of photographs and video to examine unconfirmed captivity. A Sunday check of the ICRC Central Tracing Agency Bureau page displayed separate June 2026 figures for people still missing, contacts with families, families informed and personal messages between prisoners of war and relatives.",
+      "what_happened_uk": "Три щоденні записи описали оновлення кабінетів родин, запити до російської сторони, свідчення звільнених, репатріацію, порівняння ДНК та використання фотографій і відео для перевірки непідтвердженого полону. Недільна перевірка сторінки Центрального агентства розшуку МКЧХ показала окремі показники за червень 2026 року: люди, які лишаються зниклими, контакти з родинами, родини, що отримали відомості, та особисті повідомлення між військовополоненими і близькими.",
+      "why_it_matters_en": "Those figures and actions have different units and meanings. A contact is not a person, a family informed is not necessarily a case closed, a message is not captivity confirmation, a pending DNA comparison is not identification and a survivor’s visual recognition is not final proof. A stable person record is the only way to connect them without adding unlike counts or losing uncertainty.",
+      "why_it_matters_uk": "Ці показники й дії мають різні одиниці та значення. Контакт не є людиною, поінформована родина не обов’язково означає закриту справу, повідомлення не підтверджує полон, незавершене порівняння ДНК не є ідентифікацією, а візуальне впізнання звільненим не є остаточним доказом. Лише сталий запис про людину дає змогу пов’язати ці шари, не додаючи несумісні числа й не втрачаючи невизначеність.",
+      "how_to_use_en": "Use a stable case identifier and separate event tables for family submission, military-unit response, tracing request, ICRC communication, testimony lead, image or video artefact, repatriation batch, biological sample, laboratory comparison, investigative handoff, official status change and family notification. Preserve the previous value, source, reviewer and reason for every change.",
+      "how_to_use_uk": "Використовуйте сталий ідентифікатор справи та окремі таблиці подій для відомостей родини, відповіді військової частини, розшукового запиту, повідомлення МКЧХ, зачіпки зі свідчення, фотографії чи відео, партії репатріації, біологічного зразка, лабораторного порівняння, передавання слідству, офіційної зміни стану й повідомлення родини. Для кожної зміни зберігайте попереднє значення, джерело, перевіряча та причину.",
+      "limits_en": "Do not publish family contacts, case credentials, DNA profiles, medical details, detention locations, negotiation information or unverified names. Absence of Russian or ICRC confirmation does not prove absence from captivity, and no single public system contains the complete truth about a person’s fate.",
+      "limits_uk": "Не публікуйте контакти родини, дані для входу до справи, ДНК-профілі, медичні подробиці, місця утримання, відомості про переговори або неперевірені імена. Відсутність підтвердження від Росії чи МКЧХ не доводить відсутності людини в полоні, а жодна відкрита система не містить повної істини про її долю.",
+      "tags": [
+        "captivity",
+        "missing-persons",
+        "pow",
+        "person-record",
+        "family-protection"
+      ]
+    },
+    {
+      "rubric_key": "tradecraft",
+      "emoji": "🧰",
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "title_en": "Every transformation creates a new evidence object",
+      "title_uk": "Кожне перетворення створює новий доказовий об’єкт",
+      "source_line_en": "European Commission; GIJN / ICIJ; UK Information Commissioner’s Office; European Data Protection Board; Daily Signal #060–#063 · 20–24 July 2026",
+      "source_line_uk": "Європейська комісія; GIJN / ICIJ; Управління уповноваженого з питань інформації; Європейська рада із захисту даних; випуски #060–#063 · 20–24 липня 2026",
+      "what_happened_en": "The week’s methods repeatedly produced derivatives: AI systems added machine-readable marks and notices; MOSAIC transcribed, translated, subtitled and enriched media metadata; cryptocurrency reporting converted public-ledger transactions into bounded analytical flows; access logs expanded one anomalous event into a wider review; and public-sector AI projects moved from grant documents toward procurement and testing.",
+      "what_happened_uk": "Методичні матеріали тижня раз у раз створювали похідні версії: системи штучного інтелекту додавали машиночитані позначки й повідомлення; MOSAIC розшифровував, перекладав, створював субтитри та доповнював метадані медіаматеріалів; дослідження криптовалют перетворювало відкриті операції на обмежені аналітичні потоки; журнали доступу розширювали перевірку від однієї підозрілої дії; державні проєкти штучного інтелекту переходили від грантових документів до закупівлі й випробування.",
+      "why_it_matters_en": "A derivative can be useful and still differ materially from its source. Translation may alter certainty or attribution, metadata may attach the wrong person or place, a wallet label may be incorrect, a missing machine-readable mark may result from platform processing, and an expanded audit may include legitimate activity. The derived object needs its own provenance and review state.",
+      "why_it_matters_uk": "Похідна версія може бути корисною й водночас істотно відрізнятися від джерела. Переклад здатен змінити ступінь упевненості або авторство, метадані — приписати не ту людину чи місце, позначка гаманця — бути помилковою, машиночитана мітка — зникнути після опрацювання платформою, а розширена перевірка — охопити законні дії. Похідний об’єкт потребує власного походження та стану перевірки.",
+      "how_to_use_en": "Create a transformation manifest with original identifier, capture time and hash; tool, model or query and version; settings and scope; input and excluded fields; operator; output identifier and hash; names, numbers and locations checked; automated confidence; human edits; false-positive review; legal basis; destination; correction and link back to the original.",
+      "how_to_use_uk": "Створюйте опис перетворення: первинний ідентифікатор, час збереження й контрольна сума; засіб, модель або запит і версія; налаштування та межі; вхідні й вилучені поля; виконавець; ідентифікатор і контрольна сума результату; перевірені імена, числа й місця; автоматизована оцінка; людські правки; перевірка хибних збігів; правова підстава; місце використання; виправлення й посилання на оригінал.",
+      "limits_en": "Do not treat a detector score, translation, machine label, semantic match, automated summary or entity label as a verified fact. Sensitive material may leave the device when an external service is used. Preserve the original, minimise transferred fields and record when the transformation cannot be reproduced.",
+      "limits_uk": "Не подавайте оцінку визначника, переклад, машинну позначку, змістовий збіг, автоматичний стислий виклад або підпис сутності як перевірений факт. За використання зовнішньої служби чутливий матеріал може залишити пристрій. Зберігайте оригінал, зменшуйте передані поля й фіксуйте, коли перетворення неможливо повторити.",
+      "tags": [
+        "tradecraft",
+        "transformation-provenance",
+        "human-review",
+        "reproducibility",
+        "data-minimisation"
+      ]
+    },
+    {
+      "rubric_key": "toolbox",
+      "emoji": "🛠️",
+      "rubric_en": "Tools / Datasets",
+      "rubric_uk": "Інструменти й набори даних",
+      "title_en": "The Saturday stack formed an evidence life cycle, not a shopping list",
+      "title_uk": "Суботній набір утворив життєвий цикл доказу, а не список покупок",
+      "source_line_en": "Saturday Tool Radar #064 · 25 July 2026",
+      "source_line_uk": "Суботній радар інструментів #064 · 25 липня 2026",
+      "what_happened_en": "Tool Radar #064 selected Turnstone for historical ADS-B queries, Copernicus Browser for satellite comparison, Search Grid Generator for assigning large-area review, Auto Archiver for repeatable preservation, Dangerzone for safer handling of untrusted documents and Datasette for local SQLite review and controlled publication. urlscan.io appeared as a risk card because scan visibility must be chosen before an investigative URL is submitted.",
+      "what_happened_uk": "Радар #064 відібрав Turnstone для історичних запитів до даних ADS-B, Copernicus Browser для порівняння супутникових знімків, Search Grid Generator для розподілу перевірки великих ділянок, Auto Archiver для відтворюваного збереження, Dangerzone для безпечнішого опрацювання недовірених документів і Datasette для локальної перевірки SQLite та контрольованого оприлюднення. urlscan.io стала карткою ризику, бо видимість перевірки треба обрати до надсилання дослідницької адреси.",
+      "why_it_matters_en": "The useful sequence is safer intake, bounded discovery, preserved source, local review, documented export and controlled publication. Tool categories matter less than whether each output can be linked back to its input and reviewed by another person. Copernicus Browser also belongs as a distinct current tool rather than being folded into the older Sentinel Hub EO Browser record.",
+      "why_it_matters_uk": "Корисна послідовність виглядає так: безпечніше приймання, обмежений пошук, збережене джерело, локальна перевірка, задокументоване вивантаження й контрольоване оприлюднення. Категорія засобу менш важлива, ніж можливість пов’язати кожен результат із входом і передати його іншому перевірячу. Copernicus Browser також має бути окремим сучасним записом, а не частиною старої картки Sentinel Hub EO Browser.",
+      "how_to_use_en": "For every run, save tool and version, processing location, source and licence, exact query or area, time zone, filters, input hash, output file and hash, stable row or object identifiers, reviewer, rejected candidates, corroborating sources, visibility setting, retention rule and publication decision. Arrange the tools in a documented project sequence rather than using whichever interface is most convenient at the moment.",
+      "how_to_use_uk": "Для кожного запуску зберігайте назву й версію засобу, місце опрацювання, джерело й ліцензію, точний запит або ділянку, часовий пояс, умови відбору, контрольну суму входу, файл результату й контрольну суму, сталі ідентифікатори рядків або об’єктів, перевіряча, відхилених кандидатів, підтверджувальні джерела, налаштування видимості, правило зберігання та рішення щодо публікації. Розміщуйте засоби в задокументованій послідовності проєкту, а не обирайте випадковий зручний інтерфейс.",
+      "limits_en": "ADS-B and satellite coverage are incomplete, grid completion does not prove area completeness, an archive may fail, Dangerzone reduces rather than removes risk, Datasette can expose data if published carelessly and a public urlscan submission can reveal a source or investigation. No tool output establishes purpose, identity or responsibility by itself.",
+      "limits_uk": "Покриття ADS-B і супутникових знімків неповне, завершена сітка не доводить повноти перевірки, архівування може зірватися, Dangerzone зменшує, але не усуває ризик, Datasette здатен викрити дані за необережного оприлюднення, а відкрите надсилання до urlscan може розкрити джерело або розслідування. Жоден результат засобу сам собою не встановлює мету, особу чи відповідальність.",
+      "tags": [
+        "tools",
+        "evidence-lifecycle",
+        "geospatial",
+        "preservation",
+        "local-review"
+      ]
+    },
+    {
+      "rubric_key": "risk",
+      "emoji": "⚠️",
+      "rubric_en": "Risk Watch",
+      "rubric_uk": "Межі й ризики",
+      "title_en": "The most dangerous field was the unseen recipient",
+      "title_uk": "Найнебезпечнішим полем став невидимий одержувач",
+      "source_line_en": "OCCRP / IStories; Amnesty International; Meta; EDPB; urlscan.io; Daily Signal #060–#063; Tool Radar #064 · 20–25 July 2026",
+      "source_line_uk": "OCCRP / «Важные истории»; Amnesty International; Meta; Європейська рада із захисту даних; urlscan.io; випуски #060–#063; радар #064 · 20–25 липня 2026",
+      "what_happened_en": "Leaked planning documents described an intended FSB system that would combine public media with restricted databases; an Egyptian case showed how online-group membership could be treated as evidence of conduct; platform announcements moved family and youth controls across linked accounts; regulators debated lawful information sharing; and urlscan documentation made clear that an investigative address can become public, unlisted or private depending on a setting chosen at submission.",
+      "what_happened_uk": "Витік планових документів описав задуману систему ФСБ для поєднання відкритих медіа із закритими базами; єгипетська справа показала, як участь у мережевій групі можуть подати як доказ дії; оголошення платформ переносили батьківський нагляд між пов’язаними обліковими записами; наглядові органи обговорювали правомірний обмін відомостями; а документація urlscan прямо показала, що дослідницька адреса може стати відкритою, доступною за посиланням або закритою залежно від налаштування під час надсилання.",
+      "why_it_matters_en": "The same public record changes risk when a new recipient can join it with closed data, retain it, index it, infer relationships or expose the investigator’s interest. A URL, group-membership event, public post or administrative record may be harmless alone and coercive when fused with identity, device, family or location data.",
+      "why_it_matters_uk": "Той самий відкритий запис змінює ризик, коли новий одержувач може поєднати його із закритими даними, зберегти, проіндексувати, вивести зв’язки або викрити інтерес дослідника. Адреса, подія вступу до групи, відкритий допис чи адміністративний запис можуть бути нешкідливими окремо й стати засобом примусу після поєднання з особою, пристроєм, родиною або місцем.",
+      "how_to_use_en": "Before collection or transfer, record the recipient or processor, jurisdiction, visibility, authentication, purpose, minimum fields, onward-sharing rule, indexing behaviour, retention and deletion, access list, audit log, legal basis, source-protection need and residual harm. Use local processing or a controlled account when the external recipient is unnecessary, and test visibility with non-sensitive material first.",
+      "how_to_use_uk": "До збирання або передавання фіксуйте одержувача чи оператора, юрисдикцію, видимість, спосіб входу, мету, мінімальні поля, правило подальшого поширення, індексування, строк зберігання й видалення, перелік доступу, журнал дій, правову підставу, потребу захисту джерела та залишкову шкоду. Коли зовнішній одержувач не потрібен, обирайте локальне опрацювання або контрольований обліковий запис і спочатку перевіряйте видимість на нечутливому матеріалі.",
+      "limits_en": "Do not submit source links, authenticated pages, case-management URLs, vulnerable endpoints, private group material, credentials, family data or live locations to third-party services. Do not infer a person’s beliefs or responsibility from passive membership, and do not treat an intended surveillance capability as evidence of deployment.",
+      "limits_uk": "Не надсилайте стороннім службам посилання джерел, сторінки за входом, адреси систем ведення справ, уразливі вузли, матеріали закритих груп, облікові дані, відомості про родини або поточні місця. Не виводьте погляди чи відповідальність людини з пасивної участі й не подавайте задуману спроможність стеження як доказ її розгортання.",
+      "tags": [
+        "risk-watch",
+        "third-party-processing",
+        "surveillance",
+        "visibility",
+        "source-protection"
+      ]
+    }
+  ],
+  "compact_sections": [
+    {
+      "rubric_key": "signal",
+      "emoji": "🔁",
+      "title": "Запис передавання",
+      "short_title": "Хто передав що",
+      "points": [
+        "Зберігайте окремі ідентифікатори вхідного запису та результату після передавання.",
+        "Фіксуйте відправника, одержувача, час, повноваження, мету й підтвердження отримання.",
+        "Не змінюйте стан без джерела, перевіряча та причини переходу."
+      ]
+    },
+    {
+      "rubric_key": "tradecraft",
+      "emoji": "🧬",
+      "title": "Похідна версія",
+      "short_title": "Оригінал поруч",
+      "points": [
+        "Зберігайте первинний файл і контрольну суму до перекладу, стислого викладу чи автоматичного доповнення.",
+        "Записуйте засіб, версію, налаштування, людські правки та контрольну суму результату.",
+        "Переклад, позначка, рейтинг або автоматичний опис не повинні підміняти першоджерело."
+      ]
+    },
+    {
+      "rubric_key": "risk",
+      "emoji": "👁️",
+      "title": "Невидимий одержувач",
+      "short_title": "Перевірити видимість",
+      "points": [
+        "Стороння служба може отримати не лише вміст, а й адресу, час, обліковий запис та інтерес дослідника.",
+        "До надсилання перевіряйте юрисдикцію, видимість, індексування, строк зберігання й подальше поширення.",
+        "Відкрита адреса не означає, що її безпечно передавати разом із контекстом справи або джерела."
+      ]
+    }
+  ],
+  "reading_list": [
+    {
+      "title": "ODIHR — Ukraine Monitoring Initiative",
+      "href": "https://odihr.osce.org/umi",
+      "note": "Primary methodology source for separating monitoring, open-source corroboration, factual findings and criminal investigation."
+    },
+    {
+      "title": "ICRC — Central Tracing Agency Bureau for the Russia–Ukraine international armed conflict",
+      "href": "https://www.icrc.org/en/document/central-tracing-agency-missing-persons-ukraine",
+      "note": "Current June 2026 figures; useful for comparing unlike units and documenting handoffs among families, tracing services and parties to the conflict."
+    },
+    {
+      "title": "OCCRP — Ukrainian Media Defy Court Ban to Publish Spiked Corruption Probe",
+      "href": "https://www.occrp.org/en/news/ukrainian-media-defy-court-ban-to-publish-spiked-corruption-probe",
+      "note": "Links coordinated republication to the blocked source material, injunction, lawsuit, appeal and right-of-reply record."
+    },
+    {
+      "title": "European Commission — Guidelines on transparency obligations for AI systems",
+      "href": "https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems",
+      "note": "Primary guidance on user notices and machine-readable marking; the relevant obligations begin to apply on 2 August 2026."
+    },
+    {
+      "title": "GIJN / ICIJ — Reporter’s Guide to Investigating Cryptocurrency",
+      "href": "https://gijn.org/resource/reporters-guide-to-investigating-cryptocurrency/",
+      "note": "A reproducibility checklist for chain, direction, time window, wallet-label attribution and the blind spot created by centralised exchanges."
+    },
+    {
+      "title": "Coordination Headquarters — Verifying unconfirmed captivity",
+      "href": "https://koordshtab.gov.ua/posts/sekretar-koordshtabu-zustrivsya-z-rodynamy-polonenykh-i-znyklykh-bezvisty-oborontsiv-3546",
+      "note": "Ukrainian primary source on released-prisoner testimony, photographs and video as distinct inputs rather than a single captivity verdict."
+    },
+    {
+      "title": "Bellingcat — Using Turnstone to explore historical and spatial flight data",
+      "href": "https://www.bellingcat.com/resources/2026/03/05/turnstone-flight-tracking-tool/",
+      "note": "Historical ADS-B query discipline and candidate generation; useful precisely because route patterns still require independent attribution."
+    }
+  ]
+}
