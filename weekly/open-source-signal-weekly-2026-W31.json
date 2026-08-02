@@ -1,0 +1,307 @@
+{
+  "issue_number": "W31",
+  "slug": "open-source-signal-weekly-2026-W31",
+  "output_name": "open-source-signal-weekly-2026-W31.html",
+  "date_iso": "2026-08-02",
+  "week_label_en": "27 July–2 August 2026",
+  "week_label_uk": "27 липня – 2 серпня 2026",
+  "title_en": "Open Source Signal Weekly",
+  "title_uk": "Тижневий сигнал відкритих джерел",
+  "subtitle_en": "Sunday editorial synthesis for Ukrainian accountability OSINT.",
+  "subtitle_uk": "Недільний редакційний синтез для української роботи з відкритими джерелами й притягнення до відповідальності.",
+  "dek_en": "A magazine-style synthesis of the week’s strongest public-interest signals: the transition from lead to verified finding; procedural and financial records behind Ukrainian accountability claims; person-level evidence beneath captivity, death and missing-person aggregates; the claim ladder from observed feature to weapon, operator and responsibility; legal and technical states that must not be inferred from user counts, fines, model scores or missing tracker data; a Saturday tool chain for query, data, collaboration, infrastructure and supply-chain review; and the privacy and authorisation boundaries that keep research from becoming harm.",
+  "dek_uk": "Журнальний синтез найсильніших суспільно значущих сигналів тижня: перехід від зачіпки до перевіреного висновку; процесуальні й фінансові записи під українськими твердженнями про відповідальність; докази щодо кожної людини під загальними показниками полону, смерті та зникнення; сходи висновку від спостереженої ознаки до зброї, оператора й відповідальності; правові й технічні стани, які не можна виводити з чисельності користувачів, штрафу, оцінки моделі або відсутності запису польоту; суботній ланцюг засобів для запитів, даних, співпраці, інфраструктури й перевірки поставок; і межі приватності та дозволу, що не дають дослідженню перетворитися на шкоду.",
+  "editorial_frame": {
+    "what_this_is": "A Sunday weekly magazine that develops the strongest signals from Daily Signal #065–#069 and delayed Saturday Tool Radar #070 into seven editorial sections with practical evidence models, publication limits and a reading list.",
+    "what_this_is_not": "A mechanical merge of daily cards, a leaderboard of dramatic allegations, a live-targeting board, a tool-generated verdict, a replacement for forensic or judicial findings, or permission to access exposed systems."
+  },
+  "rubric_map": [
+    "📡 Signal of the Week / Головний сигнал тижня",
+    "🇺🇦 Ukraine Lens / Українська оптика",
+    "⚖️ War Crimes Verification / Верифікація воєнних злочинів",
+    "🕯️ Losses, Captivity & Missing / Втрати, полон, зниклі",
+    "🧰 Tradecraft / Методика",
+    "🛠️ Tools / Datasets / Інструменти й набори даних",
+    "⚠️ Risk Watch / Межі й ризики"
+  ],
+  "editorial_note_en": "The week’s decisive object was the transition record. A press release became an operative legal measure; an allegation moved through suspicion, investigation, indictment or monitoring; a witness memory entered a state register; a tattoo sketch became an identification lead; a model score became a candidate for review; a proposed property became acquired, cancelled or operational; and an autonomous-system test crossed from simulation into a real organisation. At each boundary, the identifier, authority, evidence standard, visibility and risk could change. The strongest work preserved who changed the status, when, under what authority, on which evidence and with what correction path.",
+  "editorial_note_uk": "Вирішальним об’єктом тижня став запис переходу. Пресреліз перетворювався на чинний правовий захід; твердження проходило через підозру, розслідування, обвинувальний акт або нагляд; спогад свідка переходив до державного реєстру; ескіз татуювання ставав зачіпкою для встановлення особи; оцінка моделі — кандидатом на перевірку; запропоноване майно — придбаним, скасованим або чинним об’єктом; а випробування автономної системи виходило з імітації до справжньої організації. На кожній межі могли змінитися ідентифікатор, повноваження, доказовий рівень, видимість і ризик. Найсильніша робота зберігала, хто змінив стан, коли, на якій підставі, за якими доказами та з яким шляхом виправлення.",
+  "items": [
+    {
+      "rubric_key": "signal",
+      "emoji": "📡",
+      "rubric_en": "Signal of the Week",
+      "rubric_uk": "Головний сигнал тижня",
+      "title_en": "The critical boundary was the move from lead to finding",
+      "title_uk": "Критичною межею став перехід від зачіпки до висновку",
+      "source_line_en": "Daily Signal #065–#069; delayed Saturday Tool Radar #070 · 27 July–2 August 2026",
+      "source_line_uk": "Щоденні випуски #065–#069; запізнілий Суботній радар інструментів #070 · 27 липня – 2 серпня 2026",
+      "what_happened_en": "Across the week, the most consequential mistakes would have come from treating an intermediate state as the final one. A sanctions announcement still needed the operative legal act and effective date. Preliminary platform findings and reported user counts still needed a final Commission decision. A witness interview entered a missing-person system but did not itself determine death or captivity. A tattoo sketch created an identification lead but not an identity. An automated dual-use score created a shipment candidate but not a sanctions violation. Missing flight-tracker data described visibility but did not prove that no aircraft moved. A security test entered real systems, requiring a new incident state, notification and forensic review.",
+      "what_happened_uk": "Протягом тижня найнебезпечніші помилки виникали б тоді, коли проміжний стан подавали як остаточний. Санкційне оголошення ще потребувало чинного правового акта й дати застосування. Попередні висновки щодо платформи та заявлена чисельність користувачів — остаточного рішення Комісії. Опитування свідка переходило до системи пошуку зниклих, але саме собою не встановлювало смерть або полон. Ескіз татуювання створював зачіпку, але не особу. Автоматизована оцінка подвійного призначення створювала кандидата серед поставок, але не доводила порушення санкцій. Відсутність запису в службі стеження характеризувала видимість, але не доводила відсутність польоту. Випробування безпеки дісталося реальних систем і через це потребувало нового стану інциденту, повідомлення та технічної перевірки.",
+      "why_it_matters_en": "Public-interest OSINT is strongest when it records transitions rather than merely collecting objects. A lead has one evidentiary meaning; a corroborated observation, official measure, forensic identification, court finding or completed remediation has another. If a database overwrites the earlier state, it becomes impossible to reconstruct when confidence increased, who had authority to change the status, what evidence was added and whether the decision was later reversed. This is especially dangerous in Ukrainian accountability work, where families, investigators, courts, regulators and journalists may rely on the same record for different purposes.",
+      "why_it_matters_uk": "Суспільно значуща робота з відкритими джерелами найсильніша тоді, коли фіксує переходи, а не лише накопичує об’єкти. Зачіпка має один доказовий зміст; підтверджене спостереження, офіційний захід, судово-медичне встановлення особи, судовий висновок або завершене усунення — інший. Якщо база перезаписує попередній стан, неможливо відновити, коли зросла впевненість, хто мав повноваження змінити запис, які докази додали й чи скасували рішення згодом. Це особливо небезпечно в українській роботі з відповідальністю, де родини, слідчі, суди, наглядові органи та журналісти можуть використовувати той самий запис із різною метою.",
+      "how_to_use_en": "Add a transition table beside every important entity or event. Store the previous status, new status, transition type, timestamp, responsible actor, authority, evidence objects, reviewer, confidence before and after, access change, public wording and reversal or correction path. Keep the original lead and link the later finding rather than replacing it. Use controlled statuses that reflect the domain: announced, operative, amended or delisted; alleged, suspected, indicted, tried or adjudicated; unidentified, possible match, forensically confirmed or notified; proposed, acquired, cancelled, construction observed, opened or closed. Require a source citation for every status change.",
+      "how_to_use_uk": "Додайте таблицю переходів до кожного важливого суб’єкта або події. Зберігайте попередній і новий стан, вид переходу, час, відповідального, повноваження, доказові об’єкти, перевіряльника, рівень упевненості до і після, зміну доступу, публічне формулювання та шлях скасування чи виправлення. Не замінюйте первинну зачіпку пізнішим висновком — пов’язуйте їх. Використовуйте контрольовані стани відповідної галузі: оголошено, набрало чинності, змінено або вилучено; заявлено, підозра, обвинувальний акт, судовий розгляд або рішення; особу не встановлено, можливий збіг, судово-медично підтверджено або родину повідомлено; запропоновано, придбано, скасовано, помічено будівництво, відкрито або закрито. Кожна зміна стану повинна мати посилання на джерело.",
+      "limits_en": "A perfect transition log does not repair weak underlying evidence. It makes the weakness and the later decisions visible. Some states are disputed, jurisdiction-specific or confidential, and several institutions may reach different conclusions from the same material. Do not create a false hierarchy in which an official statement automatically outranks direct evidence, or a public database entry automatically overrides a family’s unresolved information. The status model must preserve contradiction, uncertainty and the possibility of reopening the case.",
+      "limits_uk": "Бездоганний журнал переходів не виправляє слабкі первинні докази. Він лише робить слабкість і подальші рішення видимими. Деякі стани спірні, залежать від юрисдикції або є конфіденційними, а кілька установ можуть по-різному оцінити той самий матеріал. Не створюйте хибної ієрархії, де офіційне повідомлення автоматично переважає прямий доказ, а запис у відкритій базі — невирішені відомості родини. Модель станів має зберігати суперечність, невизначеність і можливість поновлення справи.",
+      "editorial_use": "Use this as the week’s framing rule: every strong claim should show the transition that made it stronger, the authority behind that transition and the route for correction.",
+      "tags": [
+        "signal-of-week",
+        "status-transition",
+        "lead-to-finding",
+        "authority",
+        "corrections"
+      ]
+    },
+    {
+      "rubric_key": "ukraine",
+      "emoji": "🇺🇦",
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "title_en": "Ukraine’s accountability record depended on the chain behind the public allegation",
+      "title_uk": "Український запис відповідальності залежав від ланцюга за публічним твердженням",
+      "source_line_en": "Council of the EU; State Bureau of Investigation; NABU and SAPO; Ukrainian Ombudsman · Daily Signal #065–#069",
+      "source_line_uk": "Рада ЄС; Державне бюро розслідувань; НАБУ і САП; Уповноважений Верховної Ради з прав людини · щоденні випуски #065–#069",
+      "what_happened_en": "Ukraine-facing stories repeatedly required a chain of records rather than a single dramatic document. The EU’s twenty-first Russia sanctions package linked press-release claims to legal acts, annex entries, listed subjects, restrictions and effective dates. The alleged theft of military diesel required authorised issue, actual refuelling, undocumented residue, removal, sale and procedural status. The Skelya abuse case required separate witness, confinement, medical and command-response records. The alleged diversion of more than UAH 37 million in donations required donor intent, account receipt, legal classification of funds, intermediary transfers, claimed documents, cash conversion and the stage of the criminal case.",
+      "what_happened_uk": "Українські сюжети раз у раз потребували ланцюга записів, а не одного виразного документа. Двадцять перший пакет санкцій ЄС проти Росії пов’язував твердження пресрелізу з правовими актами, записами в додатках, внесеними суб’єктами, обмеженнями й датами набрання чинності. Ймовірне викрадення військового дизеля вимагало окремо фіксувати дозволену видачу, фактичну заправку, необлікований залишок, вивезення, продаж і процесуальний стан. Справа про насильство в полку «Скеля» потребувала окремих свідчень, періодів утримання, медичних висновків і реакції командування. Ймовірне привласнення понад 37 мільйонів гривень пожертв вимагало записів про мету донора, надходження на рахунок, правову класифікацію коштів, перекази через посередників, заявлені документи, переведення в готівку та етап кримінальної справи.",
+      "why_it_matters_en": "The common accountability gap lies between the headline and the records that would make the mechanism reviewable. A seized tanker does not establish the full fuel quantity or every participant’s role. A diagnosis corroborates injury but does not identify the assailant. A donation transfer does not by itself establish personal use or intent. A sanctions press release does not show the exact operative clause or later amendment. When those layers are collapsed, an allegation can be overstated, a legal defence can disappear and later recovery, appeal or correction becomes difficult to represent.",
+      "why_it_matters_uk": "Спільний розрив відповідальності виникає між заголовком і записами, що роблять механізм перевірюваним. Вилучений бензовоз не встановлює всієї кількості пального або ролі кожного учасника. Діагноз підтверджує травму, але не визначає нападника. Переказ пожертви сам собою не доводить особистого використання чи умислу. Санкційний пресреліз не показує точну чинну норму або подальшу зміну. Коли ці шари зливають, твердження стає перебільшеним, позиція захисту зникає, а подальше повернення коштів, оскарження чи виправлення важко відобразити.",
+      "how_to_use_en": "Build linked ledgers by domain. For sanctions: legal act, annex, subject, identifier, restriction, effective date and amendment. For military assets: order, custodian, quantity, movement, measurement, buyer claim, seizure, restitution and case stage. For abuse: testimony, consent, confinement period, medical evidence, command notification, suspected person, investigative step and court status. For donations: donor, stated purpose, recipient account, legal fund status, transaction, contract or invoice, intermediary, beneficiary claim, asset restraint, recovery and procedural state. Use stable identifiers and preserve affected-party and defence responses.",
+      "how_to_use_uk": "Будуйте пов’язані журнали за галузями. Для санкцій: правовий акт, додаток, суб’єкт, ідентифікатор, обмеження, дата набрання чинності та зміна. Для військового майна: наказ, відповідальний за зберігання, кількість, переміщення, вимірювання, заявлений покупець, вилучення, повернення й етап справи. Для насильства: свідчення, згода, період утримання, медичний доказ, повідомлення командуванню, підозрювана людина, слідча дія та судовий стан. Для пожертв: донор, заявлена мета, рахунок-одержувач, правовий стан коштів, операція, договір чи рахунок, посередник, заявлений вигодонабувач, арешт майна, повернення й процесуальний стан. Використовуйте сталі ідентифікатори й зберігайте відповіді зачепленої сторони та захисту.",
+      "limits_en": "Most Ukrainian criminal-case sources this week were investigative-agency statements before final judgment. Official quantities can describe documented episodes rather than the full case, and legal classifications can change. Do not publish unit locations, current routes, bank details, donor identities, medical records or witness contacts that are unnecessary to the public-interest finding. Do not convert suspicion, detention, an indictment or a sanctions listing into a criminal conviction.",
+      "limits_uk": "Більшість українських джерел про кримінальні справи цього тижня були повідомленнями слідчих органів до остаточного судового рішення. Офіційні кількості можуть описувати лише задокументовані епізоди, а правова кваліфікація — змінюватися. Не публікуйте місця підрозділів, поточні маршрути, банківські дані, імена непублічних донорів, медичні записи або контакти свідків, якщо вони не потрібні для суспільно значущого висновку. Не перетворюйте підозру, затримання, обвинувальний акт чи санкційне внесення на кримінальний вирок.",
+      "editorial_use": "Use the Ukraine section to show the mechanism behind accountability: the public allegation is the index, while the evidentiary and procedural chain is the story.",
+      "tags": [
+        "ukraine",
+        "accountability",
+        "procedural-chain",
+        "financial-records",
+        "legal-status"
+      ]
+    },
+    {
+      "rubric_key": "war-crimes",
+      "emoji": "⚖️",
+      "rubric_en": "War Crimes Verification",
+      "rubric_uk": "Верифікація воєнних злочинів",
+      "title_en": "Attribution remained a ladder, not a jump from image to perpetrator",
+      "title_uk": "Приписування лишалося сходами, а не стрибком від зображення до виконавця",
+      "source_line_en": "Ukrainian Ombudsman; Ministry of Internal Affairs; Bellingcat; State Bureau of Investigation · 28–31 July 2026",
+      "source_line_uk": "Уповноважений Верховної Ради з прав людини; Міністерство внутрішніх справ; Bellingcat; Державне бюро розслідувань · 28–31 липня 2026",
+      "what_happened_en": "The week’s verification material showed several claim ladders. Ukraine’s Ombudsman reported at least 406 military personnel and civilians who died in Russian captivity because of torture, cruel treatment or inhuman conditions, while also citing hundreds of documented torture forms. The missing-person witness programme sought direct observations about injury, signs of life, evacuation, death or burial and entered them into a state register. Bellingcat’s Mali investigation geolocated strike footage and matched visible components to a Shahed-136-type family, but did not claim certainty about the exact variant or manufacturer. The Skelya case similarly separated medical injury from identification of the alleged assailants and from a final court finding.",
+      "what_happened_uk": "Матеріали тижня з верифікації показали кілька сходів висновку. Уповноважений Верховної Ради з прав людини повідомив щонайменше про 406 військових і цивільних, які загинули в російському полоні внаслідок катувань, жорстокого поводження або нелюдських умов, а також навів сотні задокументованих форм катувань. Програма опитування свідків у справах зниклих збирала прямі спостереження про поранення, ознаки життя, евакуацію, смерть або поховання й передавала їх до державного реєстру. У розслідуванні Bellingcat щодо Малі геолокували відео ударів і зіставили видимі складники з родиною безпілотників типу Shahed-136, але не заявили впевненості щодо точного різновиду або виробника. Справа полку «Скеля» так само відділяла медичне підтвердження травм від встановлення ймовірних нападників та остаточного судового висновку.",
+      "why_it_matters_en": "War-crimes and serious-abuse reporting becomes unreliable when several distinct claims are compressed into one sentence. Location, date, custody status, injury, cause of death, weapon family, exact model, manufacturer, operator, chain of command, intent and legal responsibility each require different evidence. A medical record may establish trauma; a component may identify a product family; a witness may place a person at a site; a command relationship may show authority. None of those alone proves the complete legal case. Preserving the ladder allows stronger claims to be added without pretending that earlier uncertainty never existed.",
+      "why_it_matters_uk": "Повідомлення про воєнні злочини й тяжке насильство стає ненадійним, коли кілька різних тверджень стискають в одне речення. Місце, дата, стан утримання, травма, причина смерті, родина зброї, точна модель, виробник, оператор, ланцюг командування, умисел і правова відповідальність потребують різних доказів. Медичний запис може встановити травму; складник — родину виробу; свідок — перебування людини в місці; командний зв’язок — повноваження. Жоден із цих доказів окремо не доводить повної правової справи. Збереження сходів дає змогу посилювати висновок, не вдаючи, що попередньої невизначеності не було.",
+      "how_to_use_en": "Create a claim matrix with one row per proposition: event occurred, place, time, victim identity, custody, act, injury, cause, object or weapon family, exact variant, operator, commander, policy, intent and legal characterisation. For every row record supporting and contradicting sources, source class, directness, date, file hash, geolocation method, forensic result, expert wording, confidence and reviewer. Use explicit labels such as observed, reported, corroborated, expert-assessed, officially alleged and judicially established. Link person-level records to event and custody timelines without publishing protected identities or current detention locations.",
+      "how_to_use_uk": "Створіть матрицю тверджень з окремим рядком для кожного положення: подія відбулася, місце, час, особа потерпілого, утримання, дія, травма, причина, предмет або родина зброї, точний різновид, оператор, командир, правило, умисел і правова кваліфікація. Для кожного рядка фіксуйте підтвердні й суперечливі джерела, їхній клас, безпосередність, дату, контрольну суму файла, спосіб геолокації, судово-медичний результат, точне формулювання експерта, упевненість і перевіряльника. Використовуйте явні позначки: спостережено, повідомлено, підтверджено кількома джерелами, оцінено експертом, офіційно заявлено, встановлено судом. Пов’язуйте записи про людей із хронологіями подій та утримання, не оприлюднюючи захищені імена або поточні місця полону.",
+      "limits_en": "Official and advocacy aggregates are not public case registers, and a documented torture form is not a victim count. Witnesses can be mistaken, medical findings may have several causes, components can be shared across variants and visual material can be reused or incorrectly dated. Do not publish graphic material without necessity, expose surviving captives or sources, or present an expert probability as laboratory or judicial certainty. Legal characterisation belongs to competent processes and may change as evidence develops.",
+      "limits_uk": "Офіційні й правозахисні загальні показники не є відкритими реєстрами справ, а задокументована форма катування не дорівнює кількості потерпілих. Свідки можуть помилятися, медичні висновки мати кілька причин, складники використовуватися в різних модифікаціях, а візуальні матеріали — повторно поширюватися або мати хибну дату. Не публікуйте графічні матеріали без необхідності, не викривайте живих полонених чи джерела й не подавайте експертну ймовірність як лабораторну або судову певність. Правова кваліфікація належить уповноваженим процедурам і може змінитися з появою доказів.",
+      "editorial_use": "Use the section to discipline attribution language: state the highest supported rung and name the next evidence needed before moving to model, operator, command or legal responsibility.",
+      "tags": [
+        "war-crimes",
+        "claim-ladder",
+        "custody",
+        "weapons-identification",
+        "attribution"
+      ]
+    },
+    {
+      "rubric_key": "losses",
+      "emoji": "🕯️",
+      "rubric_en": "Losses, Captivity & Missing",
+      "rubric_uk": "Втрати, полон, зниклі",
+      "title_en": "The aggregate became meaningful only when linked back to a protected person record",
+      "title_uk": "Загальний показник набував змісту лише через захищений запис про кожну людину",
+      "source_line_en": "Ukrainian Ombudsman; Ministry of Internal Affairs witness and tattoo-identification programmes · 28–31 July 2026",
+      "source_line_uk": "Уповноважений Верховної Ради з прав людини; програми МВС з опитування свідків та впізнання за татуюваннями · 28–31 липня 2026",
+      "what_happened_en": "Three different public objects described people affected by captivity and disappearance. The Ombudsman published an aggregate of deaths in Russian captivity and a count of documented torture forms. The Ministry of Internal Affairs described consent-based remote interviews with witnesses who may know about injury, evacuation, last signs of life, death, burial or location. It also reported 688 published tattoo sketches from unidentified bodies, intended to help families generate identification leads alongside DNA, fingerprints, dental examination and other forensic methods. Each object served a different purpose: memorial scale, event collection and forensic lead generation.",
+      "what_happened_uk": "Три різні відкриті об’єкти описували людей, яких зачепили полон і зникнення. Уповноважений оприлюднив загальний показник смертей у російському полоні та кількість задокументованих форм катувань. Міністерство внутрішніх справ описало дистанційні опитування за згодою свідків, які можуть знати про поранення, евакуацію, останні ознаки життя, смерть, поховання або місце. МВС також повідомило про 688 оприлюднених ескізів татуювань з невпізнаних тіл, покликаних допомагати родинам створювати зачіпки поряд із ДНК, відбитками пальців, дослідженням зубів та іншими судово-медичними методами. Кожний об’єкт мав іншу мету: показати меморіальний масштаб, зібрати події або створити зачіпку для встановлення особи.",
+      "why_it_matters_en": "Aggregates are necessary for policy and public memory, but they can hide the status of the underlying people. A person can be missing, reportedly captive, officially confirmed in captivity, released, repatriated deceased, forensically identified or still unidentified. A witness can describe an event without knowing the person’s later fate. A tattoo match can be compelling but wrong. If the aggregate is not linked to versioned person and event records, a correction may change the headline number without reaching the family, or the same individual may be counted under several states.",
+      "why_it_matters_uk": "Загальні показники потрібні для політики й суспільної пам’яті, але можуть приховувати стан конкретних людей. Людина може бути зниклою, ймовірно в полоні, офіційно підтвердженою в полоні, звільненою, повернутою загиблою, судово-медично встановленою або досі невпізнаною. Свідок може описати подію, не знаючи подальшої долі. Збіг татуювання може здаватися переконливим і бути хибним. Якщо загальне число не пов’язане з версійними записами про людей і події, виправлення здатне змінити заголовок, але не дійти до родини, а ту саму людину можуть врахувати в кількох станах.",
+      "how_to_use_en": "Maintain a protected master person record with stable internal identifier, identity fields, family contact authority, consent and access level. Link separate events for last contact, disappearance, capture claim, confirmed captivity, transfer, witness observation, medical status, release, death report, repatriation, body examination, tattoo feature, DNA, fingerprints, dental comparison, official identification and family notification. Store every status transition and preserve the former status. For public aggregates, define the unit, coverage period, inclusion rules, deduplication method, unresolved cases and last verification date. Never expose the internal key.",
+      "how_to_use_uk": "Ведіть захищений головний запис про людину зі сталим внутрішнім ідентифікатором, полями особи, повноваженням контакту з родиною, згодою та рівнем доступу. Пов’язуйте окремі події останнього зв’язку, зникнення, повідомлення про захоплення, підтвердженого полону, переведення, спостереження свідка, стану здоров’я, звільнення, повідомлення про смерть, репатріації, дослідження тіла, ознаки татуювання, ДНК, відбитків, стоматологічного порівняння, офіційного встановлення особи й повідомлення родини. Зберігайте кожний перехід і попередній стан. Для відкритих показників визначайте одиницю, період, правила включення, спосіб усунення повторів, невирішені справи й дату останньої перевірки. Ніколи не викривайте внутрішній ключ.",
+      "limits_en": "Public lists and sketches can retraumatise families, create false hope and expose sensitive forensic or operational information. Do not contact several families based on a visual resemblance, crowdsource graphic identification or publish unreleased names, body images, exact recovery sites, detention locations or negotiation details. Absence from a public list does not establish that a person was not detained or killed. A family-facing correction and notification process is as important as the public statistical update.",
+      "limits_uk": "Відкриті переліки й ескізи можуть повторно травмувати родини, створювати хибну надію та викривати чутливі судово-медичні або оперативні відомості. Не звертайтеся до кількох родин на підставі візуальної схожості, не організовуйте масове впізнання графічних матеріалів і не публікуйте неоприлюднені імена, зображення тіл, точні місця виявлення, місця полону або подробиці переговорів. Відсутність у відкритому переліку не доводить, що людину не утримували або не вбили. Процедура виправлення й повідомлення родини не менш важлива за публічне оновлення статистики.",
+      "editorial_use": "Use this section to anchor every public count in a protected person-event system and to show readers why witness evidence and visual features remain leads until competent identification.",
+      "tags": [
+        "missing-persons",
+        "captivity",
+        "identification",
+        "person-records",
+        "family-protection"
+      ]
+    },
+    {
+      "rubric_key": "tradecraft",
+      "emoji": "🧰",
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "title_en": "Negative evidence and performance scores needed an explicit denominator",
+      "title_uk": "Негативний доказ і показник роботи потребували явного знаменника",
+      "source_line_en": "European Commission; Reuters; Human Rights Watch; Sialelli et al.; Daily Signal #066–#069",
+      "source_line_uk": "Європейська комісія; Reuters; Human Rights Watch; Sialelli та ін.; щоденні випуски #066–#069",
+      "what_happened_en": "Several strong-looking signals this week were meaningful only after defining what could have been observed. A reported user count could trigger Digital Services Act review but did not equal formal designation. A €550 million fine established a legal enforcement event but did not show that unsafe listings had disappeared. The absence of aircraft traces from independent trackers did not show that no flight occurred because coverage, transmission and filtering were uncertain. A held-out model score did not independently validate the final Earth-observation map. Satellite detection of gas flaring established recurring visible activity and proximity, not the dose received by a resident or the medical cause of symptoms.",
+      "what_happened_uk": "Кілька сильних на вигляд сигналів цього тижня набували змісту лише після визначення того, що взагалі можна було спостерігати. Заявлена чисельність користувачів могла спричинити перевірку за Актом про цифрові послуги, але не дорівнювала офіційному визначенню. Штраф у 550 мільйонів євро встановлював правову наглядову подію, але не показував, що небезпечні оголошення зникли. Відсутність слідів літаків у незалежних службах не доводила відсутності польоту через невідоме покриття, передавання сигналу й відбір даних. Показник моделі на відкладеному матеріалі не був незалежною перевіркою готової карти. Супутникове виявлення спалювання газу підтверджувало повторювану видиму діяльність і близькість, але не дозу впливу на жителя або медичну причину симптомів.",
+      "why_it_matters_en": "Negative evidence depends on detection opportunity. A missing record becomes informative only when the system’s expected coverage, sensitivity, transmission rules and retention are known. Performance metrics have a similar problem: accuracy is conditional on the reference data, sampling frame, class balance and independence of the test. Without those denominators, a newsroom can turn silence into absence, a score into certainty or an enforcement order into observed compliance. The method therefore belongs in the evidence record, not in an invisible footnote.",
+      "why_it_matters_uk": "Негативний доказ залежить від можливості виявлення. Відсутній запис стає змістовним лише тоді, коли відомі очікуване покриття системи, чутливість, правила передавання й строк збереження. Показники роботи мають подібну проблему: точність залежить від еталонних даних, способу вибірки, співвідношення класів і незалежності перевірки. Без цих знаменників редакція може перетворити тишу на відсутність, оцінку на певність або припис нагляду на фактично виконану вимогу. Тому метод має бути частиною доказового запису, а не невидимою приміткою.",
+      "how_to_use_en": "For every absence claim, record the system queried, coverage area and period, expected signal, receiver or sensor limits, search terms or identifiers, query time, retention window, filters, outages and alternative systems checked. Phrase the result as 'not observed in this source under these conditions.' For every score, record the target variable, unit, reference set, sampling design, split method, leakage controls, class distribution, uncertainty and independent validation. For regulatory remediation, define the observable user-facing behaviour, test accounts, countries, dates, sample size and pass condition before testing.",
+      "how_to_use_uk": "Для кожного твердження про відсутність фіксуйте перевірену систему, територію й період покриття, очікуваний сигнал, межі приймача чи сенсора, пошукові умови або ідентифікатори, час запиту, строк збереження, фільтри, збої та інші перевірені системи. Формулюйте результат як «не спостережено в цьому джерелі за цих умов». Для кожного показника зберігайте цільову змінну, одиницю, еталонний масив, спосіб вибірки, поділ даних, захист від витоку між частинами, співвідношення класів, невизначеність і незалежну перевірку. Для перевірки виконання припису заздалегідь визначайте спостережену поведінку для користувача, тестові записи, країни, дати, обсяг вибірки й умову успіху.",
+      "limits_en": "A well-documented denominator cannot create coverage that does not exist. Some systems have unknown receiver networks, proprietary filters or changing definitions. Independent validation can be expensive or impossible at the required scale. Do not overstate a null result, compare unlike metrics or test platforms with children, dangerous products or deceptive contact. When the observation opportunity is weak, the correct finding may be that the question remains unresolved.",
+      "limits_uk": "Добре описаний знаменник не створює покриття, якого немає. Частина систем має невідому мережу приймачів, закриті фільтри або змінні визначення. Незалежна перевірка може бути дорогою або неможливою в потрібному масштабі. Не перебільшуйте нульовий результат, не порівнюйте несумісні показники й не випробовуйте платформи за участю дітей, небезпечних товарів або оманливого контакту. Коли можливість спостереження слабка, правильним висновком може бути те, що питання лишається невирішеним.",
+      "editorial_use": "Use this section as a pre-publication checklist for silence, scores and remediation: name the denominator, observation opportunity and exact claim the evidence cannot support.",
+      "tags": [
+        "tradecraft",
+        "negative-evidence",
+        "denominator",
+        "validation",
+        "remediation"
+      ]
+    },
+    {
+      "rubric_key": "toolbox",
+      "emoji": "🛠️",
+      "rubric_en": "Tools / Datasets",
+      "rubric_uk": "Інструменти й набори даних",
+      "title_en": "The Saturday chain separated candidate generation, records, collaboration and verification",
+      "title_uk": "Суботній ланцюг відділив створення кандидатів, записи, співпрацю та перевірку",
+      "source_line_en": "Delayed Saturday Tool Radar #070; GIJN Toolbox; official project documentation · 1–2 August 2026",
+      "source_line_uk": "Запізнілий Суботній радар інструментів #070; GIJN Toolbox; офіційна документація проєктів · 1–2 серпня 2026",
+      "what_happened_en": "The delayed Saturday issue assembled seven resources into a research chain rather than a flat list. Overpass Turbo and Bellingcat OpenStreetMap Search translated scene features into reproducible candidate locations. The Deportation Data Project demonstrated how to preserve agency-original releases, processed tables, codebooks and historical versions. The Illicit Finance Data Lab treated access, transformation, publication authority, correction and credit as part of collaboration design. Project Salt Box tracked proposed, purchased, cancelled and operational detention infrastructure. Tools of War generated dual-use shipment leads from customs, sanctions and company records. SHADOHDORKS was retained only as a caution about authorisation.",
+      "what_happened_uk": "Запізнілий суботній випуск зібрав сім ресурсів у дослідницький ланцюг, а не плаский перелік. Overpass Turbo та Bellingcat OpenStreetMap Search перетворювали ознаки сцени на відтворювані місця-кандидати. Deportation Data Project показував, як зберігати первинні випуски органів, опрацьовані таблиці, довідники полів та історичні версії. Illicit Finance Data Lab розглядала доступ, перетворення, право на публікацію, виправлення й авторство як частину будови співпраці. Project Salt Box відстежував запропоновану, придбану, скасовану й чинну інфраструктуру утримання. Tools of War створював зачіпки щодо поставок подвійного призначення за митними, санкційними й корпоративними записами. SHADOHDORKS лишився лише застереженням щодо дозволених меж.",
+      "why_it_matters_en": "The tools become safer and more useful when each has a defined role. A geolocation interface should generate candidates; a public-data project should preserve provenance and transformations; a collaboration platform should govern access and review; an infrastructure tracker should version status; a supply-chain system should identify records needing legal and technical verification. Confusion begins when a candidate map point is called a location, a joined table is treated as raw data, a probability score becomes an accusation or a search result becomes permission to access a system.",
+      "why_it_matters_uk": "Засоби стають безпечнішими й кориснішими, коли кожний має визначену роль. Геолокаційний інтерфейс має створювати кандидатів; проєкт відкритих даних — зберігати походження й перетворення; середовище співпраці — керувати доступом і перевіркою; трекер інфраструктури — версіонувати стан; система поставок — визначати записи, що потребують правової й технічної перевірки. Плутанина починається, коли точку-кандидата називають місцем, з’єднану таблицю — первинними даними, оцінку ймовірності — звинуваченням, а результат пошуку — дозволом на доступ до системи.",
+      "how_to_use_en": "Design the workflow as linked stages: question and observed features; reproducible query; candidate export; source and version capture; entity and event resolution; collaboration and access agreement; independent corroboration; legal and harm review; publication decision; correction and archive. Assign one owner and one output object to each stage. Store tool version, parameters, account or hosting exposure, exported file and hash, human reviewer and rejection reason. For Tools of War or similar systems, preserve the raw shipment row and shipment-date law. For hosted geolocation, avoid protected coordinates or self-host reviewed code.",
+      "how_to_use_uk": "Проєктуйте роботу як пов’язані етапи: питання й спостережені ознаки; відтворюваний запит; вивантаження кандидатів; збереження джерела й версії; встановлення суб’єктів і подій; домовленість про співпрацю та доступ; незалежне підтвердження; правова й безпекова перевірка; рішення про публікацію; виправлення й архів. Призначте одного відповідального й один результат для кожного етапу. Зберігайте версію засобу, параметри, слід облікового запису або розміщення, вивантажений файл і контрольну суму, людського перевіряльника та причину відхилення. Для Tools of War та подібних систем зберігайте первинний рядок поставки й право на дату операції. Для розміщеної геолокації не надсилайте захищені координати або самостійно розгортайте перевірений код.",
+      "limits_en": "A seven-tool chain is not mandatory for every story, and adding tools can increase attack surface, privacy leakage and transformation error. Official documentation may be incomplete, hosted services may log queries and open-source repositories can become unmaintained. Do not add catalogue aggregators as public Toolkit entries merely because they list many tools; use them as intake sources. Do not preserve sensitive data indefinitely, and do not let a polished interface obscure missing coverage or an unreviewed scoring model.",
+      "limits_uk": "Ланцюг із семи засобів не є обов’язковим для кожної історії, а додавання інструментів може збільшити поверхню атаки, витік приватності й похибку перетворення. Офіційна документація буває неповною, розміщені служби можуть журналювати запити, а відкриті сховища — втратити підтримку. Не додавайте каталоги каталогів як окремі публічні записи Toolkit лише через велику кількість посилань; використовуйте їх як джерела первинного відбору. Не зберігайте чутливі дані безстроково й не дозволяйте красивому інтерфейсу приховати нестачу покриття або неперевірену модель оцінювання.",
+      "editorial_use": "Use this section to present tools as bounded stages in an evidence process, not as autonomous investigators or a weekly collection of links.",
+      "tags": [
+        "tools",
+        "datasets",
+        "workflow-design",
+        "provenance",
+        "human-review"
+      ]
+    },
+    {
+      "rubric_key": "risk",
+      "emoji": "⚠️",
+      "rubric_en": "Risk Watch",
+      "rubric_uk": "Межі й ризики",
+      "title_en": "The dangerous transition was from public discovery to unauthorised interaction",
+      "title_uk": "Небезпечним переходом був рух від відкритого виявлення до несанкціонованої взаємодії",
+      "source_line_en": "Saturday Tool Radar #070; Reuters AI incident reporting; Bellingcat and GIJN tool documentation · 24 July–2 August 2026",
+      "source_line_uk": "Суботній радар інструментів #070; матеріали Reuters про інциденти систем ШІ; документація Bellingcat і GIJN · 24 липня – 2 серпня 2026",
+      "what_happened_en": "The week exposed several boundary failures. Hosted geolocation and collaboration tools could receive sensitive queries or account traces. SHADOHDORKS generated search templates that mixed ordinary public-document discovery with reconnaissance for exposed panels, credentials and interfaces. Anthropic reported evaluations that reached real organisations after a test environment allowed open-internet access. Reuters described a separate OpenAI–Hugging Face chronology in which an experimental agent, detection, log review, notification and public disclosure were disputed across parties. In each case, a seemingly passive or simulated activity moved into a system, person or organisation that had not authorised the contact.",
+      "what_happened_uk": "Тиждень показав кілька збоїв меж. Розміщені служби геолокації та співпраці могли отримувати чутливі запити або сліди облікових записів. SHADOHDORKS створював пошукові шаблони, що змішували звичайне знаходження відкритих документів із розвідкою відкритих панелей, даних входу й програмних інтерфейсів. Anthropic повідомила про випробування, які дісталися реальних організацій після відкриття доступу до інтернету з тестового середовища. Reuters описав окрему хронологію OpenAI–Hugging Face, де дії експериментальної системи, виявлення, перегляд журналів, повідомлення й публічне розкриття сторони описували по-різному. У кожному випадку начебто пасивна або імітаційна діяльність переходила до системи, людини чи організації, які не давали дозволу на контакт.",
+      "why_it_matters_en": "Public availability is not authorisation. A search engine can index a file that was exposed accidentally; a map query can reveal a protected source’s location; a leaked token can be visible but unlawful to test; an evaluation target can resolve to a real host; a collaboration platform can expose who is investigating whom. The safest research plan defines the stopping point before discovery occurs. Without that rule, curiosity and tool affordances can turn evidence collection into intrusion, privacy harm, source exposure or destruction of the very logs needed for accountability.",
+      "why_it_matters_uk": "Відкрита доступність не є дозволом. Пошукова система може проіндексувати випадково викритий файл; картографічний запит — розкрити місце захищеного джерела; видимий ключ — лишатися незаконним для перевірки; тестова ціль — перенаправити на справжній вузол; середовище співпраці — показати, хто кого розслідує. Найбезпечніший план визначає точку зупинки до того, як знахідка з’явиться. Без цього правила цікавість і можливості інтерфейсу можуть перетворити збирання доказів на проникнення, шкоду приватності, викриття джерела або знищення журналів, потрібних для відповідальності.",
+      "how_to_use_en": "Write a boundary sheet before research: authorised domains, systems, accounts, people and dates; allowed passive actions; prohibited authentication, form submission, downloads, token testing, scanning and contact; required legal review; emergency stop; evidence-preservation method; responsible-disclosure route; and deletion schedule. For hosted tools, document what is transmitted, account requirements, logging, retention, jurisdiction and self-hosting option. For AI evaluations, default-deny network access, use synthetic namespaces, prevent real DNS resolution, monitor outbound traffic and maintain an independent kill switch and notification plan.",
+      "how_to_use_uk": "До початку створіть аркуш меж: дозволені домени, системи, облікові записи, люди й дати; дозволені пасивні дії; заборонені вхід, надсилання форм, завантаження, перевірка ключів, сканування й контакт; потрібна правова перевірка; термінова зупинка; спосіб збереження доказів; шлях відповідального повідомлення та строк видалення. Для розміщених засобів опишіть, що передається, чи потрібен обліковий запис, як ведуться журнали, скільки зберігаються дані, яка юрисдикція й чи можливе самостійне розгортання. Для випробувань систем ШІ забороняйте мережевий доступ за замовчуванням, використовуйте штучні простори назв, не допускайте перенаправлення на справжні адреси, спостерігайте вихідний рух і підтримуйте незалежну аварійну зупинку та план повідомлення.",
+      "limits_en": "A boundary sheet cannot resolve every legal question, and authorisation can be narrower than a researcher assumes. Self-hosting does not make unsafe activity lawful, while responsible disclosure can itself expose a source if performed carelessly. Do not store exposed credentials as trophies, contact private people from weak matches, run bulk offensive queries against third parties or publish security details before remediation. When the public-interest value is low or the potential harm is high, the correct action is to stop and record why.",
+      "limits_uk": "Аркуш меж не розв’язує кожного правового питання, а дозвіл може бути вужчим, ніж припускає дослідник. Самостійне розгортання не робить небезпечну дію законною, а відповідальне повідомлення саме може викрити джерело, якщо виконане недбало. Не зберігайте викриті дані входу як трофеї, не звертайтеся до приватних людей за слабким збігом, не запускайте масові наступальні запити проти сторонніх систем і не публікуйте подробиці захисту до усунення. Коли суспільна цінність низька або можлива шкода висока, правильно зупинитися й зафіксувати причину.",
+      "editorial_use": "End the weekly with a stopping rule: passive discovery is not permission to interact, and operational safety is part of evidence quality rather than a separate technical concern.",
+      "tags": [
+        "risk-watch",
+        "authorisation",
+        "privacy",
+        "ai-evaluation",
+        "do-not-exploit"
+      ]
+    }
+  ],
+  "compact_sections": [
+    {
+      "emoji": "🧾",
+      "title": "Preserve / Зберігати",
+      "short_title": "The transition record / Запис переходу",
+      "points": [
+        "Previous status, new status, authority, timestamp and evidence / Попередній стан, новий стан, повноваження, час і докази",
+        "Stable identifier, source version, reviewer and confidence / Сталий ідентифікатор, версію джерела, перевіряльника й упевненість",
+        "Contradiction, reversal and correction path / Суперечність, скасування та шлях виправлення"
+      ]
+    },
+    {
+      "emoji": "🚫",
+      "title": "Do not infer / Не виводити",
+      "short_title": "The forbidden shortcuts / Заборонені скорочення",
+      "points": [
+        "Lead is not a finding; resemblance is not identity / Зачіпка не є висновком; схожість не є особою",
+        "Silence is not absence; a score is not a violation / Тиша не є відсутністю; оцінка не є порушенням",
+        "A listing, suspicion or fine is not a conviction or remediation / Внесення, підозра чи штраф не є вироком або виконаним усуненням"
+      ]
+    },
+    {
+      "emoji": "➡️",
+      "title": "Next week / Наступного тижня",
+      "short_title": "Operational discipline / Робоча дисципліна",
+      "points": [
+        "Keep exactly seven cards in each Daily and Saturday issue / Зберігати рівно сім карток у кожному щоденному й суботньому випуску",
+        "Add one explicit transition field to every important record / Додати явне поле переходу до кожного важливого запису",
+        "Test implementation after orders, promises and model outputs / Перевіряти виконання після приписів, обіцянок і результатів моделей"
+      ]
+    }
+  ],
+  "reading_list": [
+    {
+      "title": "EU adopts 21st package of sanctions against Russia",
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/07/23/21st-package-of-sanctions-eu-hits-russian-energy-financial-services-and-crypto-hard/",
+      "note": "Operative legal package and subject counts / Чинний правовий пакет і кількість внесених суб’єктів."
+    },
+    {
+      "title": "SBI completes investigation into alleged military diesel theft",
+      "url": "https://dbr.gov.ua/news/dizel-dlya-vijskovoi-tehniki-peretvorili-na-nezakonnij-zarobitok-dbr-zavershilo-rozsliduvannya",
+      "note": "Issue, residue, sale and procedural chain / Видача, залишок, продаж і процесуальний ланцюг."
+    },
+    {
+      "title": "SBI reports suspicions in the Skelya regiment abuse case",
+      "url": "https://dbr.gov.ua/news/dbr-povidomilo-pro-pidozru-dvom-vijskovosluzhbovcyam-polku-skelya-za-zhorstoke-povodzhennya-z-pobratimami-video",
+      "note": "Witness, confinement and medical evidence / Свідчення, утримання й медичні докази."
+    },
+    {
+      "title": "NABU reports alleged diversion of donations for Ukraine",
+      "url": "https://www.nabu.gov.ua/news/rozkradannia-ponad-37-mln-grn-pozhertv-na-pidtrymku-ukra-ny-vykryto-organizovanu-grupu/",
+      "note": "Donor intent, fund status and transfer chain / Мета донора, стан коштів і ланцюг переказів."
+    },
+    {
+      "title": "Ombudsman marks remembrance day for people killed in captivity",
+      "url": "https://www.ombudsman.gov.ua/news_details/28-lipnya-den-vshanuvannya-pamyati-zahisnikiv-i-zahisnic-ukrayini-uchasnikiv-dobrovolchih-formuvan-takozh-civilnih-osib-yaki-buli-stracheni-zakatovani-abo-zaginuli-u-poloni",
+      "note": "Institutional aggregate and memorial framing / Інституційний показник і меморіальна рамка."
+    },
+    {
+      "title": "MIA explains witness interviews in missing-person cases",
+      "url": "https://mvs.gov.ua/news/artur-dobroserdov-kozne-svidcennia-moze-dopomogti-vstanoviti-doliu-znikloyi-bezvisti-liudini-trivaje-opituvannia-svidkiv-obstavin-zniknennia-abo-zagibeli-viiskovosluzbovciv",
+      "note": "Consent-based event collection / Збирання подій за добровільною згодою."
+    },
+    {
+      "title": "MIA publishes 688 tattoo sketches for identification leads",
+      "url": "https://mvs.gov.ua/news/vpiznannia-za-tatuiuvanniam-z-pocatku-roboti-onlain-rozdilu-opublikovano-688-eskiziv",
+      "note": "Visual lead within multi-method identification / Візуальна зачіпка в багатометодному встановленні особи."
+    },
+    {
+      "title": "Bellingcat verifies Shahed-type drone strikes in Mali",
+      "url": "https://www.bellingcat.com/news/2026/07/24/shahed-type-drones-filmed-during-attack-on-mali-villages/",
+      "note": "Geolocation and weapon claim ladder / Геолокація та сходи висновку щодо зброї."
+    },
+    {
+      "title": "Anthropic says models accessed real organisations during tests",
+      "url": "https://www.reuters.com/legal/litigation/anthropic-says-claude-ai-models-accessed-three-companies-during-tests-2026-07-30/",
+      "note": "Test boundary, access and notification / Межа випробування, доступ і повідомлення."
+    },
+    {
+      "title": "Reuters identifies aircraft in suspected Sudan logistics",
+      "url": "https://www.reuters.com/world/americas/boeings-identified-reuters-report-carried-weapons-sudanese-paramilitary-un-2026-07-29/",
+      "note": "Satellite, open video and missing tracker records / Супутники, відкрите відео й відсутні записи стеження."
+    },
+    {
+      "title": "GIJN Toolbox: geolocation, deportation data and collaboration",
+      "url": "https://gijn.org/stories/toolbox-geolocation-deportation-data-collaboration/",
+      "note": "Source roundup for four Saturday tools / Первинна добірка для чотирьох суботніх засобів."
+    },
+    {
+      "title": "GIJN Toolbox: detention infrastructure and dual-use exports",
+      "url": "https://gijn.org/stories/project-saltbox-migrant-detention-tracker-tools-war-russia-dual-use-exports/",
+      "note": "Source roundup for Project Salt Box and Tools of War / Добірка для Project Salt Box і Tools of War."
+    }
+  ]
+}
