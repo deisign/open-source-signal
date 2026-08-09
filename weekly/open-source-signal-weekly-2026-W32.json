@@ -1,0 +1,313 @@
+{
+  "issue_number": "W32",
+  "slug": "open-source-signal-weekly-2026-W32",
+  "output_name": "open-source-signal-weekly-2026-W32.html",
+  "date_iso": "2026-08-09",
+  "week_label_en": "3–9 August 2026",
+  "week_label_uk": "3–9 серпня 2026",
+  "title_en": "Open Source Signal Weekly",
+  "title_uk": "Тижневий сигнал відкритих джерел",
+  "subtitle_en": "Sunday editorial synthesis for Ukrainian accountability OSINT.",
+  "subtitle_uk": "Недільний редакційний синтез для української роботи з відкритими джерелами й притягнення до відповідальності.",
+  "dek_en": "A magazine-style synthesis of the week’s strongest public-interest signals: evidence layers that must remain separable from observation through attribution and legal assessment; civilian-harm records that scale from one victim to a pattern without losing the case beneath the aggregate; prisoner-of-war findings whose meaning depends on access conditions and denominators; a reversible claim ladder for video, satellite change and munition comparison; candidate-generation tools that create review queues rather than verdicts; a Saturday toolchain whose outputs remain exportable and auditable; and three boundaries that repeatedly mattered this week — provenance is not truth, public availability is not permission, and proximity is not attribution.",
+  "dek_uk": "Журнальний синтез найсильніших суспільно значущих сигналів тижня: шари доказів, які мають залишатися відокремленими від спостереження до встановлення виконавця й правової оцінки; записи про шкоду цивільним, що дають змогу перейти від однієї потерпілої людини до закономірності, не втрачаючи справу під загальним числом; висновки про військовополонених, зміст яких залежить від умов доступу й знаменника; зворотні сходи висновку для відео, супутникових змін і порівняння боєприпасів; засоби створення кандидатів, які формують чергу перевірки, а не вирок; суботній ланцюг інструментів із вивантажуваними й придатними до аудиту результатами; і три межі, що постійно поверталися цього тижня — походження не дорівнює правдивості, відкрита доступність не дорівнює дозволу, а близькість не дорівнює встановленню виконавця.",
+  "editorial_frame": {
+    "what_this_is": "A Sunday weekly magazine that develops the strongest signals from Daily Signal #071–#075, Saturday Tool Radar #076 and one material weekend update into seven editorial sections with practical evidence models, publication limits and a reading list.",
+    "what_this_is_not": "A mechanical merge of daily cards, a leaderboard of dramatic allegations, a live-targeting board, a tool-generated verdict, a replacement for forensic or judicial findings, or permission to access exposed systems or sensitive personal data."
+  },
+  "rubric_map": [
+    "📡 Signal of the Week / Головний сигнал тижня",
+    "🇺🇦 Ukraine Lens / Українська оптика",
+    "⚖️ War Crimes Verification / Верифікація воєнних злочинів",
+    "🕯️ Losses, Captivity & Missing / Втрати, полон, зниклі",
+    "🧰 Tradecraft / Методика",
+    "🛠️ Tools / Datasets / Інструменти й набори даних",
+    "⚠️ Risk Watch / Межі й ризики"
+  ],
+  "editorial_note_en": "The week’s decisive object was the evidence layer. A location could be verified while the recording date remained unresolved. Satellite imagery could measure damage without establishing the military status of a warehouse. A munition fragment could support a tentative model without identifying an operator. A prisoner interview could document ill-treatment without turning the interviewed population into every prisoner held. A machine-readable AI mark could support provenance without authenticating the claim inside the file. A device with professional explosives could be real while the perpetrator remained unknown. The strongest work did not force these layers to agree. It recorded what each source could establish, what remained a claim, what required another method, and which later conclusion would have to be reversible if new evidence appeared.",
+  "editorial_note_uk": "Вирішальним об’єктом тижня став шар доказу. Місце можна було підтвердити, коли дата знімання лишалася невстановленою. Супутникові знімки давали змогу виміряти руйнування, не встановлюючи військового статусу складу. Уламок боєприпасу міг підтримувати попереднє визначення моделі, не називаючи оператора. Опитування військовополоненого могло документувати жорстоке поводження, не перетворюючи опитану групу на всіх утримуваних. Машиночитна мітка штучного інтелекту могла свідчити про походження, не підтверджуючи твердження всередині файла. Пристрій із професійною вибухівкою міг бути справжнім, коли виконавець лишався невідомим. Найсильніша робота не змушувала ці шари збігатися. Вона фіксувала, що саме встановлює кожне джерело, що лишається твердженням, для чого потрібен інший спосіб перевірки та який пізніший висновок має залишатися придатним до перегляду після появи нових доказів.",
+  "items": [
+    {
+      "rubric_key": "signal",
+      "emoji": "📡",
+      "rubric_en": "Signal of the Week",
+      "rubric_uk": "Головний сигнал тижня",
+      "title_en": "Verification worked when evidence layers were allowed to disagree",
+      "title_uk": "Верифікація працювала тоді, коли різним шарам доказів дозволяли не збігатися",
+      "source_line_en": "Daily Signal #071–#075; Saturday Tool Radar #076 · 3–8 August 2026",
+      "source_line_uk": "Щоденні випуски #071–#075; Суботній радар інструментів #076 · 3–8 серпня 2026",
+      "what_happened_en": "Across the week, strong sources repeatedly established only one layer of a larger claim. The OSCE civilian-casualty figure depended on case inclusion and deduplication. Reuters verified the location of the Kherson drone video but not its capture date. Satellite imagery quantified damage to Ukrainian and Russian commercial or industrial objects while the military status of those objects remained a separate question. The Zaporizhzhia reporting described a recurring pattern of drone attacks on civilians, but intent and command responsibility still required incident-level evidence. EU transparency rules and OpenAI provenance signals described labels and origin, not factual accuracy. Saturday's tools likewise generated candidate scenes, candidate locations, tentative munition models, ranked posts and entity matches rather than final findings.",
+      "what_happened_uk": "Протягом тижня сильні джерела знову й знову встановлювали лише один шар ширшого твердження. Показник ОБСЄ щодо жертв серед цивільних залежав від правил включення випадків та усунення повторів. Reuters підтвердило місце відео удару дроном у Херсоні, але не дату знімання. Супутникові знімки давали змогу оцінювати руйнування українських і російських комерційних чи виробничих об’єктів, тоді як їхній військовий статус лишався окремим питанням. Матеріал із Запоріжжя описував повторювані атаки дронів на цивільних, але умисел і командна відповідальність однаково потребували доказів щодо окремих подій. Правила ЄС щодо прозорості та сигнали походження OpenAI стосувалися позначення й джерела, а не фактичної точності. Суботні інструменти так само створювали сцени-кандидати, місця-кандидати, попередні визначення боєприпасів, упорядковані повідомлення та можливі збіги сутностей, а не остаточні висновки.",
+      "why_it_matters_en": "OSINT errors often arise when confidence leaks upward: a verified coordinate becomes a verified date, a visible fragment becomes an exact weapon, a damaged warehouse becomes a military target, a label becomes proof of authenticity, or contextual proximity becomes attribution. The safer model lets adjacent layers disagree. Each layer can have a different source class, reviewer, confidence, correction path and publication rule. That preserves both investigative speed and the ability to explain exactly where a claim became stronger — or where it stopped.",
+      "why_it_matters_uk": "Помилки у відкритих джерелах часто виникають тоді, коли впевненість непомітно переходить на вищий рівень: підтверджена координата стає нібито підтвердженою датою, видимий уламок — точною моделлю зброї, пошкоджений склад — військовою ціллю, мітка — доказом справжності, а контекстна близькість — встановленням виконавця. Безпечніша модель дозволяє сусіднім шарам не збігатися. Кожен шар може мати власний клас джерела, перевіряльника, рівень упевненості, шлях виправлення й правило публікації. Це зберігає і швидкість дослідження, і можливість точно пояснити, де твердження стало сильнішим — або де зупинилося.",
+      "how_to_use_en": "For every important claim, create a layered evidence table: observation; time; location; person or object identity; protected or military status; weapon or technical mechanism; operator or responsible entity; intent or purpose; legal classification; and current procedural status. For each layer store source, source date, original artefact and hash where relevant, method, reviewer, confidence, contradictions, dependencies and correction history. Publication copy should state only the highest layer actually supported and should link stronger later findings rather than overwrite the earlier record.",
+      "how_to_use_uk": "Для кожного важливого твердження створюйте шарову таблицю доказів: спостереження; час; місце; встановлення людини або об’єкта; захищений чи військовий статус; зброя або технічний механізм; оператор чи відповідальний суб’єкт; умисел або мета; правова кваліфікація; чинний процесуальний стан. Для кожного шару зберігайте джерело, дату джерела, первинний матеріал і контрольну суму за потреби, спосіб перевірки, перевіряльника, рівень упевненості, суперечності, залежності та історію виправлень. У публічному тексті подавайте лише найвищий реально підтверджений шар, а сильніші пізніші висновки пов’язуйте з попереднім записом замість його заміни.",
+      "limits_en": "Layering does not rescue weak evidence and should not become bureaucratic theatre. Some conclusions depend on classified, forensic or judicial material unavailable to public researchers. Different institutions may reasonably assign different confidence to the same layer. The model should preserve unresolved alternatives and allow a claim to move down as well as up when evidence is corrected or withdrawn.",
+      "limits_uk": "Поділ на шари не рятує слабкі докази й не повинен перетворюватися на бюрократичний ритуал. Частина висновків залежить від закритих, криміналістичних або судових матеріалів, недоступних дослідникам відкритих джерел. Різні установи можуть обґрунтовано давати різний рівень упевненості тому самому шару. Модель має зберігати невирішені альтернативи й дозволяти твердженню рухатися не лише вгору, а й униз після виправлення або відкликання доказу.",
+      "tags": [
+        "signal-of-week",
+        "evidence-layers",
+        "claim-ladder",
+        "confidence",
+        "corrections"
+      ]
+    },
+    {
+      "rubric_key": "ukraine",
+      "emoji": "🇺🇦",
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "title_en": "Civilian-harm records have to scale from one victim to a pattern without losing the case",
+      "title_uk": "Записи про шкоду цивільним мають переходити від однієї людини до закономірності, не втрачаючи окремої справи",
+      "source_line_en": "OSCE ODIHR; Reuters Kherson, Kyiv region and Zaporizhzhia reporting; Daily Signal #071, #073–#075; weekend update · 3–8 August 2026",
+      "source_line_uk": "БДІПЛ ОБСЄ; матеріали Reuters із Херсона, Київщини та Запоріжжя; щоденні випуски #071, #073–#075; оновлення вихідних · 3–8 серпня 2026",
+      "what_happened_en": "The week moved across every scale of civilian-harm documentation. ODIHR reported that verified civilian casualties in government-controlled Ukraine from December 2025 through May 2026 were 45% higher than in the same period a year earlier, using interviews, open-source monitoring and institutional information. Reuters then examined individual and repeated incidents: a drone pursued and wounded a vegetable seller in Kherson; ballistic attacks in Kyiv and the surrounding region killed at least 17 people and injured more than 40 while striking a mixture of commercial, industrial, transport and residential objects; Zaporizhzhia officials and residents described repeated FPV and glide-bomb attacks on civilians and public transport. On 8 August, Reuters reported that a Russian drone killed a three-year-old boy and his grandparents in the Kyiv region, while another person was killed during an overnight ballistic attack on the capital.",
+      "what_happened_uk": "Тиждень пройшов усі масштаби документування шкоди цивільним. БДІПЛ повідомило, що перевірена кількість жертв серед цивільних на підконтрольній уряду території України від грудня 2025 до травня 2026 року була на 45 відсотків більшою, ніж за той самий період роком раніше, спираючись на опитування, спостереження за відкритими джерелами та відомості установ. Далі Reuters розглянуло окремі й повторювані події: дрон переслідував і поранив продавця овочів у Херсоні; балістичні удари по Києву й області вбили щонайменше 17 людей і поранили понад 40, уразивши суміш комерційних, виробничих, транспортних і житлових об’єктів; посадовці та мешканці Запоріжжя описали повторювані атаки дронами з відеокеруванням і керованими авіабомбами на цивільних та громадський транспорт. 8 серпня Reuters повідомило, що російський дрон убив трирічного хлопчика та його бабусю з дідусем на Київщині, а ще одна людина загинула під час нічного балістичного удару по столиці.",
+      "why_it_matters_en": "A credible pattern is built upward from person and event records, not downward from a dramatic label. Victim identity and civilian status, event time and place, object function, original media, weapon indicators, nearby military-object checks, attribution basis and later corrections must remain inspectable. Aggregates need inclusion rules and denominators; patterns need explicit feature definitions and contradictory cases. Otherwise a newsroom can count the same event twice, lose a corrected identity, or infer intent from a pattern that was never consistently defined.",
+      "why_it_matters_uk": "Надійна закономірність будується вгору від записів про людину й подію, а не вниз від яскравої назви. Встановлення потерпілої людини та її цивільного статусу, час і місце події, призначення об’єкта, первинні матеріали, ознаки боєприпасу, перевірка військових об’єктів поблизу, підстава для встановлення виконавця та подальші виправлення мають залишатися доступними до перевірки. Загальні числа потребують правил включення й знаменника; закономірності — явного визначення ознак і врахування суперечливих випадків. Інакше редакція може двічі порахувати одну подію, втратити виправлену особу або вивести умисел із закономірності, яку ніхто послідовно не визначив.",
+      "how_to_use_en": "Maintain three linked tables: victim, event and pattern. The victim table should hold a protected identifier, status basis, harm and source history. The event table should hold time, coordinates, object type, original files, witnesses, weapon indicators and attribution state. The pattern table should contain only derived features with explicit inclusion rules: date window, area, object class, flight behaviour, weapon class, casualty outcome, source quality and verification status. Recalculate aggregates and patterns from the underlying records rather than manually editing published totals.",
+      "how_to_use_uk": "Ведіть три пов’язані таблиці: потерпіла людина, подія та закономірність. У таблиці людей зберігайте захищений ідентифікатор, підставу статусу, шкоду та історію джерел. У таблиці подій — час, координати, тип об’єкта, первинні файли, свідчення, ознаки боєприпасу й стан встановлення виконавця. У таблиці закономірностей залишайте лише похідні ознаки з явними правилами включення: часовий проміжок, територію, клас об’єкта, поведінку дрона, клас зброї, наслідки для людей, якість джерел і стан перевірки. Загальні числа й закономірності перераховуйте з первинних записів, а не виправляйте вручну в оприлюднених підсумках.",
+      "limits_en": "Monitoring access is unequal across occupied, frontline and government-controlled territory, and some incidents will remain undocumented. Official accounts and witnesses can identify serious patterns but do not by themselves establish intent, command responsibility or final legal classification. Do not publish protected survivors' current locations, family contacts, medical detail beyond public-interest need, defensive measures or imagery that could assist renewed targeting.",
+      "limits_uk": "Доступ до спостереження нерівний на окупованих, прифронтових і підконтрольних уряду територіях, а частина подій лишиться незадокументованою. Офіційні повідомлення й свідки можуть указувати на серйозну закономірність, але самі не встановлюють умислу, командної відповідальності або остаточної правової кваліфікації. Не публікуйте поточні місця потерпілих, контакти родин, зайві медичні подробиці, захисні заходи чи зображення, здатні допомогти повторному наведенню.",
+      "tags": [
+        "ukraine",
+        "civilian-harm",
+        "case-register",
+        "pattern-analysis",
+        "victim-protection"
+      ]
+    },
+    {
+      "rubric_key": "war-crimes",
+      "emoji": "⚖️",
+      "rubric_en": "War Crimes Verification",
+      "rubric_uk": "Верифікація воєнних злочинів",
+      "title_en": "The claim ladder has to stay reversible from visible feature to legal conclusion",
+      "title_uk": "Сходи висновку мають залишатися зворотними від видимої ознаки до правової кваліфікації",
+      "source_line_en": "Reuters Kherson and Zaporizhzhia; Scientific Reports; Open Source Munitions Portal; Daily Signal #073, #075; Tool Radar #076",
+      "source_line_uk": "Reuters: Херсон і Запоріжжя; Scientific Reports; Open Source Munitions Portal; щоденні випуски #073, #075; Радар інструментів #076",
+      "what_happened_en": "The week's verification material repeatedly separated what could be observed from what could only be inferred later. In the Kherson case, Reuters verified location from buildings, road layout, vegetation and imagery but could not independently establish the recording date. The Scientific Reports method used Sentinel-1 radar and Sentinel-2 optical imagery to screen for conflict-related building damage, with reported performance against a UNOSAT reference set, but the model output remained a damage candidate rather than a casualty or attribution record. The Open Source Munitions Portal organised observable features such as markings, fins, calibre, guidance and condition while explicitly allowing model identification to remain tentative. Zaporizhzhia reporting then showed why repeated incidents must be registered before a pattern is upgraded into a finding about deliberate or indiscriminate conduct.",
+      "what_happened_uk": "Матеріали тижня з верифікації послідовно відокремлювали те, що можна безпосередньо спостерігати, від того, що дозволено вивести лише пізніше. У херсонському випадку Reuters підтвердило місце за будівлями, плануванням дороги, рослинністю та зображеннями, але не змогло незалежно встановити дату знімання. Метод зі Scientific Reports використовував радарні знімки Sentinel-1 та оптичні Sentinel-2 для первинного виявлення пов’язаних із війною руйнувань будівель і повідомляв показники роботи на еталонних даних UNOSAT, але результат моделі лишався кандидатом на руйнування, а не записом про жертву чи відповідальність. Open Source Munitions Portal упорядковував видимі ознаки — маркування, оперення, калібр, наведення та стан — і прямо дозволяв визначенню моделі лишатися попереднім. Матеріал із Запоріжжя показав, чому повторювані події треба реєструвати до того, як закономірність перетвориться на висновок про навмисну або невибіркову поведінку.",
+      "why_it_matters_en": "A war-crimes record becomes fragile when one strong observation drags unsupported conclusions behind it. A geolocated video is not automatically dated. A damaged structure is not automatically civilian or military. A tentative munition family is not an operator. Repeated civilian harm is not automatically proof of intent. The ladder must therefore be reversible: every higher conclusion should name the lower observations it depends on and should be able to fall back if one dependency is corrected.",
+      "why_it_matters_uk": "Запис про можливий воєнний злочин стає крихким, коли одне сильне спостереження тягне за собою непідтверджені висновки. Геолоковане відео не стає автоматично датованим. Пошкоджена споруда не стає автоматично цивільною чи військовою. Попередньо визначена родина боєприпасу не встановлює оператора. Повторювана шкода цивільним не є автоматичним доказом умислу. Тому сходи висновку мають бути зворотними: кожен вищий висновок повинен називати нижчі спостереження, від яких залежить, і повертатися на нижчий рівень після виправлення будь-якої залежності.",
+      "how_to_use_en": "Use controlled levels: observed feature; verified file and source history; geolocated scene; bounded capture time; identified object and protected status; candidate weapon family; corroborated weapon model; operator or launch attribution; intent evidence; legal assessment. Record supporting and contradicting evidence at each level, the reviewer and confidence, and the reason for promotion. For munitions, work from safe photographs and official or trained-source material only. For satellite models, preserve source scene identifiers, thresholds, validation set and later human review.",
+      "how_to_use_uk": "Використовуйте контрольовані рівні: спостережена ознака; перевірений файл та історія джерела; геолокована сцена; обмежений проміжок часу знімання; встановлений об’єкт і захищений статус; можлива родина боєприпасу; підтверджена модель; встановлення оператора або місця пуску; докази умислу; правова оцінка. На кожному рівні фіксуйте підтвердні й суперечливі відомості, перевіряльника, рівень упевненості та причину переходу вище. Боєприпаси досліджуйте лише за безпечними фотографіями від офіційних або підготовлених джерел. Для супутникових моделей зберігайте ідентифікатори сцен, пороги, еталонний матеріал і пізнішу людську перевірку.",
+      "limits_en": "Open-source verification cannot supply every layer. Weather, image compression, missing metadata, access restrictions and damaged remnants can block a conclusion. Never approach unexploded ordnance, expose current military positions or publish technical detail that improves targeting. A final legal finding belongs to competent judicial or investigative bodies and may rely on evidence unavailable in public sources.",
+      "limits_uk": "Відкриті джерела не здатні забезпечити кожен рівень. Погода, стиснення зображень, відсутні метадані, обмеження доступу й пошкоджені уламки можуть зупинити висновок. Ніколи не наближайтеся до нерозірваних боєприпасів, не викривайте чинні військові позиції й не публікуйте технічних подробиць, що покращують наведення. Остаточна правова оцінка належить компетентним слідчим або судовим органам і може спиратися на докази, недоступні у відкритих джерелах.",
+      "tags": [
+        "war-crimes-verification",
+        "claim-ladder",
+        "geolocation",
+        "munitions",
+        "satellite-damage"
+      ]
+    },
+    {
+      "rubric_key": "losses",
+      "emoji": "🕯️",
+      "rubric_en": "Losses, Captivity & Missing",
+      "rubric_uk": "Втрати, полон, зниклі",
+      "title_en": "POW percentages are only as honest as their access conditions and denominators",
+      "title_uk": "Відсотки щодо військовополонених чесні лише настільки, наскільки чесно описані доступ і знаменник",
+      "source_line_en": "UN Human Rights Monitoring Mission in Ukraine; Daily Signal #074 · findings since 2022, published 29 June 2026",
+      "source_line_uk": "Моніторингова місія ООН з прав людини в Україні; щоденний випуск #074 · висновки від 2022 року, оприлюднено 29 червня 2026",
+      "what_happened_en": "The UN Human Rights Monitoring Mission in Ukraine consolidated its findings on prisoners of war held by Russia and Ukraine. By 31 May 2026 it had interviewed 853 released Ukrainian POWs; Russia had not granted independent monitoring access, and more than 96% of the interviewed group reported torture or ill-treatment. The Mission linked 48 deaths in custody to torture, ill-treatment or inadequate medical care and documented 129 executions. It had also interviewed 816 POWs held by Ukraine with full confidential access to official internment sites; more than 54% reported abuse, mainly during initial capture and transit. The two sets of figures therefore emerged from different access conditions and interview settings.",
+      "what_happened_uk": "Моніторингова місія ООН з прав людини в Україні звела свої висновки щодо військовополонених, яких утримували Росія та Україна. Станом на 31 травня 2026 року вона опитала 853 звільнених українських військовополонених; Росія не надала незалежним спостерігачам доступу, а понад 96 відсотків опитаної групи повідомили про катування або жорстоке поводження. Місія пов’язала 48 смертей під вартою з катуваннями, жорстоким поводженням або неналежною медичною допомогою та задокументувала страти 129 полонених. Вона також опитала 816 військовополонених, яких утримувала Україна, маючи повний конфіденційний доступ до офіційних місць; понад 54 відсотки повідомили про порушення переважно під час первинного захоплення та перевезення. Отже, два набори показників виникли за різних умов доступу й опитування.",
+      "why_it_matters_en": "A percentage without its denominator, interview setting and access regime invites a false comparison. Released prisoners interviewed after return, prisoners interviewed confidentially inside official sites, documented executions, deaths in custody and individual allegations are different record classes. Monitoring denial can both conceal violations and reduce independent facility-level verification. The correct comparison is not simply 96 versus 54; it is what was observed, among whom, when, under which access conditions and with what corroboration.",
+      "why_it_matters_uk": "Відсоток без знаменника, умов опитування й режиму доступу провокує хибне порівняння. Звільнені полонені, опитані після повернення, полонені, яких конфіденційно опитували в офіційних місцях, задокументовані страти, смерті під вартою та окремі твердження є різними класами записів. Відмова в доступі може одночасно приховувати порушення й зменшувати можливість незалежної перевірки на рівні конкретного місця. Правильне порівняння — не просто 96 проти 54, а що саме спостерігали, серед кого, коли, за яких умов доступу та з яким підтвердженням.",
+      "how_to_use_en": "For every published POW statistic preserve the cut-off date, denominator, sex and status breakdown where available, interview setting, access conditions, custody stage, geographic scope, definition of torture or abuse used by the source, corroboration standard and underlying report. Keep interview records, facilities, deaths in custody, executions, missing-person cases and family-notification failures as separate linked entities. Version aggregate figures instead of overwriting them when the Mission publishes a later count.",
+      "how_to_use_uk": "Для кожного оприлюдненого показника щодо полонених зберігайте кінцеву дату обліку, знаменник, розподіл за статтю й статусом за наявності, умови опитування, рівень доступу, етап перебування під вартою, територіальне охоплення, визначення катування чи порушення у джерелі, стандарт підтвердження та первинний звіт. Опитування, місця утримання, смерті під вартою, страти, справи зниклих і ненадання інформації родинам ведіть як окремі пов’язані сутності. Нові загальні числа зберігайте окремими версіями, а не перезаписуйте попередні.",
+      "limits_en": "The UN resource is not a complete prisoner list, live locator or substitute for individual case files. Interviewed populations are not every prisoner held. Do not expose current internment locations, family contacts, medical or sexual-violence details, or use aggregate findings to accuse an identifiable guard, commander or official without case-level evidence.",
+      "limits_uk": "Ресурс ООН не є повним переліком полонених, засобом пошуку в реальному часі або заміною індивідуальних справ. Опитані групи не дорівнюють усім утримуваним. Не розкривайте поточні місця утримання, контакти родин, медичні подробиці чи відомості про сексуальне насильство й не використовуйте загальні висновки для звинувачення конкретного охоронця, командира або посадовця без доказів щодо окремої справи.",
+      "tags": [
+        "prisoners-of-war",
+        "torture-documentation",
+        "denominator",
+        "monitoring-access",
+        "family-protection"
+      ]
+    },
+    {
+      "rubric_key": "tradecraft",
+      "emoji": "🧰",
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "title_en": "Candidate generation became the dominant OSINT pattern of the week",
+      "title_uk": "Створення кандидатів стало головною методичною закономірністю тижня",
+      "source_line_en": "GIJN; Scientific Reports; European Commission; OpenAI; Bellingcat; Daily Signal #073–#075; Tool Radar #076",
+      "source_line_uk": "GIJN; Scientific Reports; Європейська комісія; OpenAI; Bellingcat; щоденні випуски #073–#075; Радар інструментів #076",
+      "what_happened_en": "Several of the week's strongest methods were designed to reduce a search space rather than settle a claim. The satellite-damage method ranked places for human review. GIJN's training material argued for defining the investigative hypothesis and evidentiary need before selecting a tool. EU AI transparency marks and OpenAI provenance signals supplied origin or disclosure information that still required substantive verification. Saturday's ShadowFinder produced a band of possible locations; ohsome exposed mapping-history changes; AIS Imagery Search created a shortlist of satellite scenes; the civilian-harm model ranked Telegram posts; and Smart Image Sorter assigned researcher-defined image categories. In each case the useful output was a candidate queue with a reason for inclusion.",
+      "what_happened_uk": "Кілька найсильніших методів тижня були створені для звуження простору пошуку, а не для остаточного вирішення твердження. Супутниковий спосіб виявлення руйнувань упорядковував місця для людської перевірки. Навчальний матеріал GIJN наголошував на формулюванні слідчої гіпотези й доказової потреби до вибору інструмента. Позначення прозорості ЄС і сигнали походження OpenAI давали відомості про джерело або розкриття, але однаково потребували змістовної перевірки. Суботній ShadowFinder створював смугу можливих місць; ohsome показував зміни історії картографування; AIS Imagery Search формував перелік супутникових сцен; модель для шкоди цивільним упорядковувала повідомлення Telegram; Smart Image Sorter призначав зображенням категорії, задані дослідником. У кожному випадку корисним результатом була черга кандидатів із поясненням причини включення.",
+      "why_it_matters_en": "A candidate-first architecture is both faster and more honest than asking one tool for a verdict. It separates recall from proof: automation can maximise the chance of surfacing relevant material, while trained reviewers can apply stricter standards to the smaller queue. It also creates measurable failure modes — false positives, missed items, threshold effects and reviewer disagreements — instead of hiding them behind a polished interface.",
+      "why_it_matters_uk": "Архітектура, де спочатку створюють кандидатів, одночасно швидша й чесніша за спробу отримати вирок від одного інструмента. Вона відділяє повноту пошуку від доведення: автоматизація може збільшувати шанс знайти релевантний матеріал, а підготовлені перевіряльники — застосовувати суворіший стандарт до меншої черги. Вона також робить вимірюваними помилкові спрацьовування, пропущені записи, вплив порога й розбіжності між перевіряльниками замість приховування цих проблем за зручним інтерфейсом.",
+      "how_to_use_en": "Make every automated or assisted stage emit a candidate object with stable ID, input source, tool and version, parameters or threshold, generation time, reason for inclusion, raw output, reviewer, decision, rejection reason and link to any later verified finding. Preserve a random sample of rejected or unflagged material so recall can be audited. Keep discovery, preservation, verification, attribution, legal review and publication as distinct queues with explicit handoff rules.",
+      "how_to_use_uk": "Нехай кожен автоматизований або допоміжний етап створює об’єкт-кандидат зі сталим ідентифікатором, вхідним джерелом, назвою й версією засобу, параметрами або порогом, часом створення, причиною включення, первинним результатом, перевіряльником, рішенням, причиною відхилення та посиланням на пізніший перевірений висновок. Зберігайте випадкову вибірку відхилених або непозначених матеріалів, щоб перевіряти повноту. Розділяйте пошук, збереження, верифікацію, встановлення виконавця, правову перевірку й публікацію на окремі черги з явними правилами переходу.",
+      "limits_en": "Automation bias can make a ranked queue look objective when it reflects training data, label wording, source selection, imagery coverage or threshold choices. Hosted services can log sensitive queries. Models and interfaces change. A candidate system should therefore preserve what it did not surface as well as what it did, avoid unnecessary personal data, and permit a human reviewer to reject the tool's suggestion without losing the original evidence.",
+      "limits_uk": "Упередження автоматизації може надавати впорядкованій черзі вигляду об’єктивності, хоча вона залежить від навчальних даних, формулювання категорій, вибору джерел, покриття знімками або порога. Зовнішні служби можуть журналювати чутливі запити. Моделі й інтерфейси змінюються. Тому система кандидатів має зберігати не лише те, що показала, а й вибірку того, що пропустила, не збирати зайвих персональних даних і дозволяти перевіряльнику відхилити пораду інструмента без втрати первинного доказу.",
+      "tags": [
+        "tradecraft",
+        "candidate-generation",
+        "human-review",
+        "automation",
+        "reproducibility"
+      ]
+    },
+    {
+      "rubric_key": "toolbox",
+      "emoji": "🛠️",
+      "rubric_en": "Tools / Datasets",
+      "rubric_uk": "Інструменти й набори даних",
+      "title_en": "Saturday's strongest tools all exported something a reviewer could inspect",
+      "title_uk": "Найсильніші суботні інструменти залишали результат, який міг перевірити дослідник",
+      "source_line_en": "Saturday Tool Radar #076; official project pages and documentation · 8 August 2026",
+      "source_line_uk": "Суботній радар інструментів #076; офіційні сторінки й документація проєктів · 8 серпня 2026",
+      "what_happened_en": "Saturday's seven selections formed a chain of reviewable outputs. AIS Imagery Search converted user-supplied vessel tracks into a shortlist of Sentinel and Landsat scenes. The Open Source Munitions Portal turned visible characteristics into documented comparison records with tentative model labels. ShadowFinder produced a geographic candidate band from shadow geometry and time. ohsome made OpenStreetMap history and change measurable and exportable. Bellingcat's civilian-harm machine-learning workflow ranked Telegram posts before human verification. OCCRP Aleph linked documents and structured public records while retaining source context. Smart Image Sorter locally assigned researcher-supplied categories and wrote the classification results to CSV.",
+      "what_happened_uk": "Сім суботніх добірок утворили ланцюг результатів, придатних до людської перевірки. AIS Imagery Search перетворював наданий дослідником маршрут судна на перелік сцен Sentinel і Landsat. Open Source Munitions Portal переводив видимі характеристики в документовані записи для порівняння з попередньою назвою моделі. ShadowFinder будував смугу можливих місць за геометрією тіні й часом. ohsome робив історію й зміни OpenStreetMap вимірюваними та придатними до вивантаження. Методика Bellingcat із машинним навчанням упорядковувала повідомлення Telegram до людської перевірки. OCCRP Aleph пов’язував документи й структуровані відкриті записи, зберігаючи контекст джерела. Smart Image Sorter локально призначав зображенням задані дослідником категорії та записував результати в CSV.",
+      "why_it_matters_en": "Auditability was the common feature. The tools did not merely show an answer on screen: they could leave a shortlist, record, band, historical export, ranked queue, source-linked entity relation or classification table that another reviewer could inspect. That makes a tool replaceable. If the interface disappears, the investigation can still preserve what entered the tool, what came out, which version produced it and what human decision followed.",
+      "why_it_matters_uk": "Спільною рисою стала придатність до аудиту. Інструменти не просто показували відповідь на екрані: вони могли залишити перелік, запис, смугу можливих місць, історичне вивантаження, впорядковану чергу, зв’язок сутностей із джерелом або таблицю класифікації, які здатен перевірити інший дослідник. Це робить інструмент замінним. Якщо інтерфейс зникне, розслідування однаково може зберегти, що потрапило на вхід, що вийшло, яка версія це створила та яке людське рішення було далі.",
+      "how_to_use_en": "For every tool in an investigation, define its single role and required export. Preserve tool name and version or repository commit, input file and hash, parameters, account or hosting exposure, output file and hash, reviewer and acceptance or rejection decision. Prefer local processing for sensitive imagery or documents when feasible. Treat directories and newsletters as discovery sources, then verify a candidate tool against its primary project page before adding it to a production workflow or public Toolkit.",
+      "how_to_use_uk": "Для кожного інструмента в розслідуванні визначайте одну роль і обов’язковий результат для збереження. Фіксуйте назву й версію або стан сховища коду, вхідний файл і контрольну суму, параметри, ризик передавання даних через обліковий запис чи зовнішнє розміщення, вихідний файл і контрольну суму, перевіряльника та рішення про прийняття або відхилення. Для чутливих зображень і документів за можливості віддавайте перевагу локальному опрацюванню. Каталоги й розсилки використовуйте лише для пошуку кандидатів, а сам інструмент перевіряйте за первинною сторінкою проєкту до включення в робочий процес або публічний каталог інструментів.",
+      "limits_en": "Exportability is not reliability. AIS can be manipulated, OpenStreetMap edits can lag reality, zero-shot image labels can be wrong, OCR and entity matching can create false links, and a munition catalogue can contain tentative records. Hosted tools may retain queries. Open-source repositories can become unmaintained. Preserve the output as evidence of what the tool produced, not evidence that the underlying claim is true.",
+      "limits_uk": "Можливість вивантажити результат не робить його надійним. AIS можна спотворити, редагування OpenStreetMap може запізнюватися відносно реальності, автоматичні категорії зображень можуть бути помилковими, розпізнавання тексту й зіставлення сутностей — створювати хибні зв’язки, а довідник боєприпасів — містити попередні записи. Зовнішні служби можуть зберігати запити, а відкриті сховища коду — втрачати підтримку. Зберігайте результат як доказ того, що саме видав інструмент, а не як доказ правдивості самого твердження.",
+      "tags": [
+        "tools",
+        "datasets",
+        "auditability",
+        "exports",
+        "tool-radar"
+      ]
+    },
+    {
+      "rubric_key": "risk",
+      "emoji": "⚠️",
+      "rubric_en": "Risk Watch",
+      "rubric_uk": "Межі й ризики",
+      "title_en": "Provenance is not truth, public availability is not permission, and proximity is not attribution",
+      "title_uk": "Походження не є правдивістю, відкрита доступність не є дозволом, а близькість не є встановленням виконавця",
+      "source_line_en": "Daily Signal #073–#075; European Commission; OpenAI; Citizen Lab; ProPublica; OCCRP; Reuters · 3–7 August 2026",
+      "source_line_uk": "Щоденні випуски #073–#075; Європейська комісія; OpenAI; Citizen Lab; ProPublica; OCCRP; Reuters · 3–7 серпня 2026",
+      "what_happened_en": "Three recurring shortcuts defined the week's risk layer. First, provenance was not truth: Google Earth briefly exposed generated overlays in a familiar map interface, EU rules began requiring certain disclosures and machine-readable marks, and OpenAI documented provenance signals that can identify supported origin without proving accuracy or context. Second, accessibility was not permission: ProPublica described a cadastral service that exposed roughly one million Social Security numbers through an unprotected data path, while the public-interest method required minimising rather than operationalising sensitive identifiers. Third, proximity was not attribution: Citizen Lab found forensic traces of Cellebrite use on a Russian opposition activist's seized phone; OCCRP found risk-relevant code and ownership links around Passwork without evidence of malicious code; leaked project records described an FSB surveillance system that was planned but not delivered; and German investigators found an explosive-equipped drone at Leipzig/Halle Airport without yet identifying a suspect.",
+      "what_happened_uk": "Три повторювані скорочення визначили ризиковий шар тижня. По-перше, походження не дорівнювало правдивості: Google Earth ненадовго дозволив синтетичні накладення у звичному картографічному інтерфейсі, правила ЄС почали вимагати певних повідомлень і машиночитних міток, а OpenAI описала сигнали походження, які можуть указати на підтримуване джерело, не доводячи точності чи контексту. По-друге, доступність не дорівнювала дозволу: ProPublica описала кадастровий сервіс, через незахищений шлях якого могли бути відкриті близько мільйона номерів соціального страхування, тоді як суспільно значущий спосіб роботи вимагав мінімізувати, а не використовувати чутливі ідентифікатори. По-третє, близькість не дорівнювала встановленню виконавця: Citizen Lab виявила криміналістичні сліди використання Cellebrite на вилученому телефоні російського опозиційного активіста; OCCRP знайшла важливі для оцінки ризику зв’язки коду й власності навколо Passwork без доказів шкідливого коду; внутрішні матеріали описували заплановану, але не завершену систему стеження ФСБ; а німецькі слідчі знайшли дрон із вибухівкою в аеропорту Лейпциг/Галле, ще не встановивши підозрюваного.",
+      "why_it_matters_en": "These shortcuts look different but share one failure: a property of the evidence is silently upgraded into a property of the world. Metadata becomes truth; visibility becomes authorisation; corporate or geographic connection becomes culpability. The result can be false accusation, privacy harm, unlawful interaction with an exposed system or a security warning that outruns the evidence. A public-interest workflow needs a separate state for provenance, access authority and attribution, each with its own evidence and publication threshold.",
+      "why_it_matters_uk": "Ці скорочення виглядають по-різному, але мають одну помилку: властивість доказу непомітно перетворюється на властивість реального світу. Метадані стають правдою; видимість — дозволом; корпоративний або географічний зв’язок — виною. Наслідком можуть бути хибне звинувачення, шкода приватності, незаконна взаємодія з викритою системою або попередження про безпеку, сильніше за наявні докази. Суспільно значущий процес потребує окремого стану для походження, правомірності доступу та встановлення виконавця, кожен із власними доказами й порогом публікації.",
+      "how_to_use_en": "Add three mandatory checks before publication. Provenance: what does the signal actually establish about file origin, and can it survive transformation? Authorisation: was the information intentionally public, lawfully accessible and necessary to retain, or merely exposed? Attribution: what direct or independently corroborated link connects the act to the person, organisation or state, and what alternative explanations remain? Record the minimum necessary personal data, redact sensitive identifiers, separate current risk from historical architecture, and obtain legal or security review before interacting with exposed systems.",
+      "how_to_use_uk": "Додайте три обов’язкові перевірки перед публікацією. Походження: що саме сигнал встановлює про джерело файла й чи зберігається після перетворень? Дозвіл: відомості були навмисно відкритими, законно доступними й необхідними для зберігання чи лише випадково викритими? Встановлення виконавця: який прямий або незалежно підтверджений зв’язок поєднує дію з людиною, організацією чи державою та які альтернативні пояснення лишаються? Зберігайте мінімально необхідні персональні дані, приховуйте чутливі ідентифікатори, відокремлюйте нинішній ризик від історичного задуму системи й проходьте правову або безпекову перевірку до взаємодії з викритими системами.",
+      "limits_en": "Not every exposed record is unlawful to read, not every corporate link is benign, and not every provenance signal is weak. The point is to avoid automatic inference. Laws vary by jurisdiction and authorisation can be narrower than expected. Do not test credentials, submit forms, probe restricted interfaces, republish unnecessary identifiers, identify private people from weak matches or name a perpetrator from motive and proximity alone.",
+      "limits_uk": "Не кожен викритий запис незаконно читати, не кожен корпоративний зв’язок безпечний і не кожен сигнал походження слабкий. Йдеться про відмову від автоматичного висновку. Правила різняться між юрисдикціями, а дозвіл може бути вужчим, ніж здається. Не перевіряйте дані входу, не надсилайте форм, не досліджуйте закриті інтерфейси, не поширюйте зайві ідентифікатори, не встановлюйте приватних людей за слабким збігом і не називайте виконавця лише за мотивом та близькістю.",
+      "tags": [
+        "risk-watch",
+        "provenance",
+        "authorisation",
+        "attribution",
+        "privacy"
+      ]
+    }
+  ],
+  "compact_sections": [
+    {
+      "rubric_key": "signal",
+      "emoji": "🧾",
+      "title": "Preserve / Зберігати",
+      "short_title": "The evidence layer / Шар доказу",
+      "points": [
+        "Observation, source, time, method, reviewer and confidence / Спостереження, джерело, час, спосіб, перевіряльника й упевненість",
+        "The dependency between each higher and lower conclusion / Залежність кожного вищого висновку від нижчого",
+        "Contradictions, rejection reasons and correction history / Суперечності, причини відхилення та історію виправлень"
+      ]
+    },
+    {
+      "rubric_key": "risk",
+      "emoji": "🚫",
+      "title": "Do not infer / Не виводити",
+      "short_title": "The forbidden jumps / Заборонені стрибки",
+      "points": [
+        "Verified place is not verified date or operator / Підтверджене місце не є підтвердженою датою чи оператором",
+        "Measured damage is not military status; provenance is not truth / Виміряні руйнування не є військовим статусом; походження не є правдивістю",
+        "Public visibility is not permission; proximity is not attribution / Відкрита видимість не є дозволом; близькість не є встановленням виконавця"
+      ]
+    },
+    {
+      "rubric_key": "tradecraft",
+      "emoji": "➡️",
+      "title": "Next week / Наступного тижня",
+      "short_title": "Review queues / Черги перевірки",
+      "points": [
+        "Every automated candidate must end with a human decision / Кожен автоматично створений кандидат має завершуватися людським рішенням",
+        "Audit a sample of rejected and unflagged material / Перевіряти вибірку відхиленого й непозначеного матеріалу",
+        "Keep discovery, verification, attribution and publication as separate states / Зберігати пошук, верифікацію, встановлення виконавця й публікацію як окремі стани"
+      ]
+    }
+  ],
+  "reading_list": [
+    {
+      "title": "OSCE ODIHR: Interim report on violations of international humanitarian and human rights law in Ukraine",
+      "href": "https://odihr.osce.org/odihr/666512",
+      "note": "Case-register logic behind verified civilian-casualty aggregates / Логіка реєстру випадків під перевіреними показниками жертв серед цивільних."
+    },
+    {
+      "title": "Reuters: drone attack on a civilian seller in Kherson",
+      "href": "https://www.reuters.com/world/europe/ukraine-accuses-russia-war-crime-after-video-shows-drone-hunting-market-vendor-2026-08-04/",
+      "note": "Location verification separated from date, operator and legal assessment / Місце відокремлене від дати, оператора й правової оцінки."
+    },
+    {
+      "title": "Reuters: ballistic-missile attacks on Kyiv and the surrounding region",
+      "href": "https://www.reuters.com/world/europe/russian-forces-attack-ukrainian-capital-kyiv-with-ballistic-missiles-mayor-says-2026-08-04/",
+      "note": "Object status, civilian harm and target claims as separate records / Статус об’єкта, шкода цивільним і заяви про ціль як окремі записи."
+    },
+    {
+      "title": "UN Human Rights Monitoring Mission in Ukraine: dedicated website on treatment of prisoners of war",
+      "href": "https://ukraine.ohchr.org/en/node/565",
+      "note": "Access conditions and denominators behind POW findings / Умови доступу й знаменники під висновками щодо військовополонених."
+    },
+    {
+      "title": "Reuters: repeated drone and glide-bomb attacks in Zaporizhzhia",
+      "href": "https://www.reuters.com/world/europe/ukraines-zaporizhzhia-russia-tries-sow-panic-with-safari-strikes-civilians-2026-08-06/",
+      "note": "From individual incidents to a testable pattern / Від окремих подій до перевірної закономірності."
+    },
+    {
+      "title": "Reuters: Russian drones kill a child and grandparents near Kyiv",
+      "href": "https://www.reuters.com/world/europe/three-killed-russian-strikes-kyiv-region-official-says-2026-08-08/",
+      "note": "Weekend case-level update for the civilian-harm ledger / Оновлення вихідних на рівні окремої справи для реєстру шкоди цивільним."
+    },
+    {
+      "title": "Reuters: satellite review of attacks on Wildberries logistics infrastructure",
+      "href": "https://www.reuters.com/world/ukrainian-attacks-wildberries-strike-heart-russia-inc-2026-08-07/",
+      "note": "Measured physical damage separated from military-target status / Виміряні фізичні руйнування відокремлені від військового статусу цілі."
+    },
+    {
+      "title": "European Commission: guidelines on AI Act transparency obligations",
+      "href": "https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems",
+      "note": "Disclosure and machine-readable marking are evidence layers, not authenticity verdicts / Повідомлення й машиночитне позначення є шарами доказу, а не вироком щодо справжності."
+    },
+    {
+      "title": "GIJN: OSINT and visual investigation training quiz",
+      "href": "https://gijn.org/stories/online-osint-visual-investigation-quiz/",
+      "note": "Hypothesis and evidentiary need before tool selection / Гіпотеза й доказова потреба до вибору інструмента."
+    },
+    {
+      "title": "OpenAI: Provenance signals (Content Credentials, SynthID) in OpenAI-generated content",
+      "href": "https://help.openai.com/en/articles/8912793-c2pa-in-images",
+      "note": "Positive or negative provenance results do not establish factual accuracy / Позитивний або негативний результат щодо походження не встановлює фактичної точності."
+    },
+    {
+      "title": "Bellingcat AIS Imagery Search",
+      "href": "https://github.com/bellingcat/ais-imagery-search",
+      "note": "Ship-track data to a reviewable Sentinel/Landsat scene shortlist / Дані маршруту судна до придатного для перевірки переліку сцен Sentinel/Landsat."
+    },
+    {
+      "title": "Open Source Munitions Portal",
+      "href": "https://osmp.ngo/",
+      "note": "Observed munition features separated from tentative model identification / Видимі ознаки боєприпасу відокремлені від попереднього визначення моделі."
+    },
+    {
+      "title": "Bellingcat: machine learning to find civilian-harm reports",
+      "href": "https://www.bellingcat.com/resources/2026/06/25/how-to-use-ai-to-help-find-civilian-harm-conflict-report-monitor-war-machine-learning-telegram/",
+      "note": "Ranking the discovery queue while retaining human verification / Упорядкування черги пошуку зі збереженням людської перевірки."
+    },
+    {
+      "title": "HeiGIT ohsome dashboard",
+      "href": "https://dashboard.ohsome.org/",
+      "note": "OpenStreetMap history as evidence about mapping change, not direct ground truth / Історія OpenStreetMap як доказ зміни карти, а не прямий доказ події на місцевості."
+    }
+  ]
+}
