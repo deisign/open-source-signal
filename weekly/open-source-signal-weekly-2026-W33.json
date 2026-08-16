@@ -1,0 +1,313 @@
+{
+  "issue_number": "W33",
+  "slug": "open-source-signal-weekly-2026-W33",
+  "output_name": "open-source-signal-weekly-2026-W33.html",
+  "date_iso": "2026-08-16",
+  "week_label_en": "10–16 August 2026",
+  "week_label_uk": "10–16 серпня 2026",
+  "title_en": "Open Source Signal Weekly",
+  "title_uk": "Тижневий сигнал відкритих джерел",
+  "subtitle_en": "Sunday editorial synthesis for Ukrainian accountability OSINT.",
+  "subtitle_uk": "Недільний редакційний синтез для української роботи з відкритими джерелами й притягнення до відповідальності.",
+  "dek_en": "A magazine-style synthesis of the week’s strongest public-interest signals: status transitions that must be recorded instead of collapsed into static labels; Black Sea attacks, port disruption and ceasefire diplomacy moving on parallel timelines; civilian-harm cases where observed damage and a belligerent’s military-use claim remain separate; former-prisoner testimony that becomes a pattern only through person, facility, time and corroboration links; a temporal model that distinguishes report date, event time, legal effect, forecast and later verification; Saturday tools whose value lies in inspectable joins, preserved inputs and reviewable outputs; and a risk boundary that recurred across public records, breach data and mobile forensics — public availability, technical possibility and permission are three different things.",
+  "dek_uk": "Журнальний синтез найсильніших суспільно значущих сигналів тижня: переходи між станами, які треба фіксувати замість зведення до статичних ярликів; чорноморські атаки, порушення роботи портів і дипломатія щодо паузи, що рухаються паралельними часовими лініями; випадки шкоди цивільним, де спостережене пошкодження й твердження сторони війни про військове використання об’єкта залишаються окремими; свідчення звільнених полонених, які стають основою для висновку про закономірність лише через зв’язки між людиною, місцем утримання, часом і підтвердженням; часова модель, що розрізняє дату повідомлення, час події, набрання правової чинності, прогноз і пізнішу перевірку; суботні інструменти, цінність яких полягає у видимих зв’язках, збережених вхідних даних і результатах, придатних до перевірки; та межа ризику, що поверталася в роботі з відкритими реєстрами, витоками й мобільною криміналістикою — відкрита доступність, технічна можливість і дозвіл є трьома різними речами.",
+  "editorial_frame": {
+    "what_this_is": "A Sunday weekly magazine that develops the strongest signals from Daily Signal #077–#081, Saturday Tool Radar #082 and material updates through 16 August into seven editorial sections with practical evidence models, publication limits and a reading list.",
+    "what_this_is_not": "A mechanical merge of daily cards, a live-targeting board, a tool-generated verdict, a declaration that every announced measure has taken effect, a replacement for forensic or judicial findings, or permission to access exposed systems, devices or sensitive personal data."
+  },
+  "rubric_map": [
+    "📡 Signal of the Week / Головний сигнал тижня",
+    "🇺🇦 Ukraine Lens / Українська оптика",
+    "⚖️ War Crimes Verification / Верифікація воєнних злочинів",
+    "🕯️ Losses, Captivity & Missing / Втрати, полон, зниклі",
+    "🧰 Tradecraft / Методика",
+    "🛠️ Tools / Datasets / Інструменти й набори даних",
+    "⚠️ Risk Watch / Межі й ризики"
+  ],
+  "editorial_note_en": "The week’s decisive object was status. Nearly every strong story was less about discovering one more object than knowing which state an object, claim or process was actually in — and what event would move it to the next state. A Black Sea proposal transmitted through a third party was not the same thing as formal receipt, acceptance or observed compliance. A Senate vote was not an operative sanctions regime. Cabinet approval was not enacted surveillance authority. A damaged terminal was not automatically a sustained capacity loss. A six-month repair estimate was not a restart date. A vessel flag was not beneficial ownership. A Shahed-family identification was not an exact variant or manufacturer. A procurement notice was not deployed capability. A lawsuit was not judicial relief. The strongest work therefore looked less like a list of labels and more like a versioned transition log: current state, previous state, trigger, source, date, confidence, contradiction, next evidence needed and a path back if later evidence forced correction.",
+  "editorial_note_uk": "Вирішальним об’єктом тижня став стан. Майже в кожній сильній історії важливішим за виявлення ще одного об’єкта було розуміння того, у якому саме стані перебуває об’єкт, твердження чи процес і яка подія справді переводить його до наступного стану. Пропозиція паузи в Чорному морі, передана через третю сторону, не була тотожною формальному отриманню, прийняттю чи фактичному дотриманню. Голосування Сенату не було чинним санкційним режимом. Схвалення урядом не було вже набраними чинності повноваженнями спецслужб. Пошкоджений термінал не означав автоматично тривалої втрати потужності. Прогноз шести місяців ремонту не був датою запуску. Прапор судна не був кінцевим власником. Визначення родини Shahed не було точною модифікацією чи встановленням виробника. Оголошення закупівлі не було розгорнутою спроможністю. Позов не був судовим захистом. Найсильніша робота тому нагадувала не перелік ярликів, а версійований журнал переходів: поточний і попередній стан, подія переходу, джерело, дата, рівень упевненості, суперечність, наступний потрібний доказ і шлях назад, якщо нові дані вимагають виправлення.",
+  "items": [
+    {
+      "rubric_key": "signal",
+      "emoji": "📡",
+      "rubric_en": "Signal of the Week",
+      "rubric_uk": "Головний сигнал тижня",
+      "title_en": "The strongest evidence of the week was a transition log, not a label",
+      "title_uk": "Найсильнішим доказовим об’єктом тижня був журнал переходів, а не ярлик",
+      "source_line_en": "Daily Signal #077–#081; Saturday Tool Radar #082; Reuters Black Sea update · 10–16 August 2026",
+      "source_line_uk": "Щоденні випуски #077–#081; Суботній радар інструментів #082; оновлення Reuters щодо Чорного моря · 10–16 серпня 2026",
+      "what_happened_en": "Across diplomacy, law, infrastructure, sanctions, maritime research and tool use, the week repeatedly exposed the same failure mode: a precursor state was easy to report as if the next state had already happened. Ukraine’s Black Sea proposal was reported as transmitted through a third party while Russia said it had received no formal proposal; on 14 August Moscow publicly dismissed the idea of a Black Sea ceasefire, but that still described a political response rather than an implemented maritime arrangement. The U.S. Senate passed a Russia sanctions bill that still required House action and later implementation. Germany’s cabinet approved expanded intelligence powers that still required parliamentary approval. A CAS filing changed a case record without lifting sporting restrictions. CyberUA closed a software tender without proving any named capability had been deployed. The EU’s 21st sanctions package itself contained immediate, delayed and contingent measures. Infrastructure stories followed the same pattern: Novorossiysk moved from strike to damage to shutdown, while Orsk moved from confirmed shutdown to an official repair estimate whose real restart date remained unknown.",
+      "what_happened_uk": "У дипломатії, праві, інфраструктурі, санкціях, морських дослідженнях і роботі з інструментами весь тиждень повторювалася та сама помилка: попередній стан легко подати так, ніби наступний уже настав. Українську пропозицію паузи в Чорному морі повідомили як передану через третю сторону, тоді як Росія заявляла, що не отримувала формальної пропозиції; 14 серпня Москва публічно відкинула ідею чорноморського перемир’я, але це однаково було політичною реакцією, а не вже запровадженим режимом на морі. Сенат США схвалив санкційний законопроєкт проти Росії, який ще потребував дій Палати представників та подальшого виконання. Уряд Німеччини схвалив розширення повноважень спецслужб, але для набрання чинності був потрібен парламент. Звернення до CAS змінило процесуальний запис, не скасовуючи спортивних обмежень. У CyberUA завершився прийом пропозицій на закупівлю програмних засобів, але це не доводило розгортання конкретної спроможності. Навіть 21-й пакет санкцій ЄС містив негайні, відкладені й залежні від наступних рішень заходи. Інфраструктурні історії мали ту саму форму: Новоросійськ пройшов від удару до пошкодження й зупинки, а Орськ — від підтвердженої зупинки до офіційного прогнозу ремонту, коли реальна дата відновлення лишалася невідомою.",
+      "why_it_matters_en": "Static labels become stale quickly and invite evidence inflation. 'Sanctioned', 'shut down', 'approved', 'appealed', 'agreed', 'deployed' or 'identified' can each conceal a sequence of legally or factually different states. A transition model makes the claim auditable: another researcher can ask what changed, which source observed the change, when it became effective, whether the transition was disputed and what evidence would reverse it. This is especially useful in fast-moving war reporting where yesterday’s accurate state can become today’s error without any source being fraudulent.",
+      "why_it_matters_uk": "Статичні ярлики швидко застарівають і провокують перебільшення доказів. Слова «підсанкційний», «зупинений», «схвалений», «оскаржений», «узгоджений», «розгорнутий» або «ідентифікований» можуть приховувати послідовність фактично чи юридично різних станів. Модель переходів робить твердження придатним до аудиту: інший дослідник може запитати, що саме змінилося, яке джерело зафіксувало зміну, коли вона набула чинності, чи був перехід спірним і який доказ здатен його скасувати. Це особливо важливо у швидкій воєнній журналістиці, де вчорашній коректний стан може стати сьогоднішньою помилкою без жодної недобросовісності джерела.",
+      "how_to_use_en": "For every consequential object or process, store a state-transition record rather than overwriting one status field. At minimum preserve stable object ID; previous state; proposed new state; transition trigger; source and source class; event time; report time; effective time where relevant; reviewer; confidence; contradiction or competing claim; evidence still required; and rollback or correction history. Publication copy should describe the current supported state and, where readers could otherwise be misled, name the transition that has not yet occurred.",
+      "how_to_use_uk": "Для кожного важливого об’єкта чи процесу зберігайте запис переходу замість переписування одного поля «статус». Мінімально фіксуйте сталий ідентифікатор; попередній стан; запропонований новий стан; подію переходу; джерело і клас джерела; час події; час повідомлення; час набрання чинності за потреби; перевіряльника; рівень упевненості; суперечність або конкуруюче твердження; доказ, якого ще бракує; та історію повернення чи виправлення. У публічному тексті описуйте поточний підтверджений стан і, якщо інакше читача можна ввести в оману, прямо називайте перехід, якого ще не сталося.",
+      "limits_en": "Not every investigation fits a neat finite-state model. Some legal states are contested, some operational states are only partly observable, and one object can occupy several states at once for different jurisdictions or functions. The model should expose ambiguity rather than force it into a single value. A transition record also does not improve the underlying evidence; weak or interested sources remain weak or interested sources.",
+      "limits_uk": "Не кожне розслідування вкладається в охайну послідовність станів. Частина правових станів є спірною, частина операційних — лише частково спостережуваною, а один об’єкт може одночасно мати різні стани в різних юрисдикціях або функціях. Модель має показувати неоднозначність, а не насильно стискати її до одного значення. Запис переходу також не покращує первинний доказ: слабке або зацікавлене джерело лишається слабким або зацікавленим.",
+      "tags": [
+        "signal-of-week",
+        "status-transitions",
+        "procedural-status",
+        "versioning",
+        "corrections"
+      ]
+    },
+    {
+      "rubric_key": "ukraine",
+      "emoji": "🇺🇦",
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "title_en": "Black Sea incidents, port operations, diplomacy and grain markets belonged on four parallel timelines",
+      "title_uk": "Чорноморські інциденти, робота портів, дипломатія й зерновий ринок потребували чотирьох паралельних часових ліній",
+      "source_line_en": "Daily Signal #077, #080–#081; Reuters updates · 10–16 August 2026",
+      "source_line_uk": "Щоденні випуски #077, #080–#081; оновлення Reuters · 10–16 серпня 2026",
+      "what_happened_en": "The Black Sea became the clearest Ukrainian example of why related events should not be collapsed into one causal narrative. Earlier reporting documented a wheat-carrying vessel struck in the region. A Ukrainian attack then damaged and temporarily halted grain-terminal operations at Novorossiysk, while Russian attacks had already discouraged calls at ports in southern Ukraine and disrupted Ukrainian exports. On 13 August Reuters reported, through a source familiar with the matter, that Kyiv had sent Moscow via a third party a proposal to halt attacks on civilian targets in the Black Sea. Russian officials said no formal proposal had been received; on 14 August Moscow publicly rejected the idea of a partial Black Sea ceasefire. The same week an attack damaged port infrastructure in Izmail, while a separate aerial target briefly entered Romanian airspace. Grain futures and freight expectations moved around these events, but each market move had multiple possible causes.",
+      "what_happened_uk": "Чорне море стало найвиразнішим українським прикладом того, чому пов’язані події не слід стискати в одну причинну історію. Раніше було задокументовано ураження судна з пшеницею. Згодом українська атака пошкодила й тимчасово зупинила роботу зернового термінала в Новоросійську, тоді як російські удари вже змушували судновласників уникати частини портів півдня України й скорочували український експорт. 13 серпня Reuters із посиланням на поінформоване джерело повідомило, що Київ через третю сторону передав Москві пропозицію припинити атаки на цивільні цілі в Чорному морі. Російські посадовці заявляли, що формальної пропозиції не отримали; 14 серпня Москва публічно відкинула ідею часткового чорноморського перемир’я. Того самого тижня атака пошкодила портову інфраструктуру Ізмаїла, а окрема повітряна ціль ненадовго зайшла в повітряний простір Румунії. Ф’ючерси на зерно й очікування щодо перевезень реагували на ці події, але кожен ринковий рух мав кілька можливих причин.",
+      "why_it_matters_en": "For Ukrainian accountability work, incident evidence, operational capacity, diplomatic status and economic effect answer different questions. A port strike can be verified while the duration of the shutdown remains unknown. A proposal can be reported while its text, formality and receipt are unresolved. A futures move can follow an attack without proving that attack caused the whole move. Keeping the timelines separate prevents both propaganda narratives and well-intentioned analysis from turning correlation into a completed causal chain.",
+      "why_it_matters_uk": "Для української роботи з відповідальністю докази інциденту, операційна спроможність, дипломатичний стан і економічний наслідок відповідають на різні питання. Удар по порту можна підтвердити, коли тривалість зупинки ще невідома. Про пропозицію можна достовірно повідомити, коли її текст, формальність і факт отримання лишаються невирішеними. Рух ф’ючерсів може відбутися після атаки, не доводячи, що саме вона спричинила весь рух. Розділення часових ліній не дає ані пропаганді, ані добросовісному аналізу перетворювати кореляцію на завершений причинний ланцюг.",
+      "how_to_use_en": "Maintain four linked timelines: incident; infrastructure operations; diplomacy; market and logistics. Incident records should hold time, location, object, damage, casualties and attributed attack claims. Operations should hold closure, restart, throughput and rerouting. Diplomacy should hold sender, intermediary, form of message, receipt, response, effective terms and compliance. Market records should hold dated price, freight, insurance and volume changes plus competing explanations. Join them only through explicit event IDs and dated relationships.",
+      "how_to_use_uk": "Ведіть чотири пов’язані часові лінії: інциденти; роботу інфраструктури; дипломатію; ринок і логістику. У записах інцидентів зберігайте час, місце, об’єкт, пошкодження, потерпілих і підписані твердження про напад. В операційних записах — зупинку, відновлення, перевалку й перенаправлення потоків. У дипломатичних — відправника, посередника, форму повідомлення, отримання, відповідь, умови набрання чинності й дотримання. У ринкових — датовані зміни цін, ставок, страхування й обсягів разом з альтернативними поясненнями. Зводьте ці лінії лише через явні ідентифікатори подій і датовані зв’язки.",
+      "limits_en": "The central truce-transmission report relied on an unnamed source, and Russia’s statements addressed formal receipt and political acceptability rather than every possible intermediary communication. Port throughput, cargo volumes and freight data can be delayed or revised. Do not publish current vessel positions, sensitive port layouts or other operational information that could facilitate targeting or evasion.",
+      "limits_uk": "Ключове повідомлення про передавання пропозиції спиралося на неназване джерело, а російські заяви стосувалися формального отримання й політичної прийнятності, а не всіх можливих контактів через посередників. Дані про перевалку, вантажі й ставки можуть надходити із запізненням або переглядатися. Не публікуйте поточні позиції суден, чутливі схеми портів чи іншу оперативну інформацію, здатну допомогти наведенню або ухиленню.",
+      "tags": [
+        "ukraine",
+        "black-sea",
+        "ports",
+        "diplomacy",
+        "grain"
+      ]
+    },
+    {
+      "rubric_key": "war_crimes",
+      "emoji": "⚖️",
+      "rubric_en": "War Crimes Verification",
+      "rubric_uk": "Верифікація воєнних злочинів",
+      "title_en": "Civilian harm and claimed military use needed parallel case files, not a merged verdict",
+      "title_uk": "Шкода цивільним і заявлене військове використання потребували паралельних справ, а не злитого вироку",
+      "source_line_en": "Daily Signal #079; Reuters weekend updates · 11–16 August 2026",
+      "source_line_uk": "Щоденний випуск #079; оновлення Reuters за вихідні · 11–16 серпня 2026",
+      "what_happened_en": "On 11 August Reuters reported Russian claims that strikes on Kyiv logistics facilities and Zaporizhstal targeted sites supporting Ukraine’s war effort, while Ukrainian officials reported six people killed and 20 injured in Zaporizhzhia and fires in Kyiv. The attacker’s stated rationale and the observed civilian consequences were both relevant, but they established different things. On 16 August another Russian missile-and-drone attack on Kyiv caused fires and injuries in the capital and region. The same morning Ukrainian drones struck Moscow region, where the governor reported one civilian killed and damage including at a Wildberries warehouse; Ukraine has previously described Wildberries facilities as handling military-related goods. These incidents should not be made symmetrical by rhetoric or asymmetrical by assumption: each needs its own object-status, victim, attack and legal-evidence record.",
+      "what_happened_uk": "11 серпня Reuters повідомило про російські твердження, що удари по логістичних об’єктах Києва та «Запоріжсталі» були спрямовані на об’єкти, пов’язані з українськими воєнними зусиллями, тоді як українська влада повідомила про шістьох загиблих і 20 поранених у Запоріжжі та пожежі в Києві. Заявлене стороною нападу обґрунтування й спостережені наслідки для цивільних були однаково релевантними, але встановлювали різні речі. 16 серпня нова російська ракетно-дронова атака на Київ спричинила пожежі й поранення у столиці та області. Того самого ранку українські дрони атакували Московську область, де губернатор повідомив про одного загиблого цивільного й пошкодження, зокрема на складі Wildberries; Україна раніше заявляла, що об’єкти Wildberries працюють із товарами військового призначення. Ці інциденти не слід робити симетричними риторикою чи асиметричними припущенням: для кожного потрібні власні записи про статус об’єкта, потерпілих, атаку й правову доказову базу.",
+      "why_it_matters_en": "International humanitarian law questions cannot be answered by the building category alone or by the attacker’s public statement. A warehouse, logistics hub or industrial plant may be civilian, dual-use or a military objective depending on its actual use and the circumstances at the relevant time. Even where military use is established, precautions, expected civilian harm, proportionality, weapon effects and available alternatives remain separate questions. Conversely, a civilian casualty does not by itself establish an unlawful attack.",
+      "why_it_matters_uk": "Питання міжнародного гуманітарного права не вирішуються лише типом будівлі або публічною заявою сторони нападу. Склад, логістичний вузол чи промисловий об’єкт може бути цивільним, подвійного призначення або військовою ціллю залежно від фактичного використання й обставин у відповідний момент. Навіть коли військове використання встановлено, запобіжні заходи, очікувана шкода цивільним, пропорційність, дія зброї та доступні альтернативи залишаються окремими питаннями. І навпаки, сама наявність цивільної жертви ще не встановлює неправомірність атаки.",
+      "how_to_use_en": "Keep four linked records: attack event; physical object and time-bounded status; victim or harm record; belligerent claim and supporting evidence. Add weapon or mechanism assessment only when separately supported. For legal review preserve what was known or reasonably knowable at the relevant time, not only post-strike discoveries. Where possible compare pre-event public descriptions, dated imagery, company or registry records, rescue reports, later site evidence and both sides’ statements. State the highest supported factual layer and leave legal classification to evidence that can carry it.",
+      "how_to_use_uk": "Ведіть чотири пов’язані записи: подію атаки; фізичний об’єкт і його статус у конкретний час; потерпілу людину або шкоду; твердження сторони війни та докази на його підтримку. Оцінку зброї чи механізму додавайте лише за окремого підтвердження. Для правової перевірки зберігайте те, що було відомо або могло бути обґрунтовано відомо у відповідний момент, а не тільки післяударні знахідки. За можливості порівнюйте передподієві описи, датовані знімки, корпоративні або реєстрові записи, повідомлення рятувальників, пізніші матеріали з місця й заяви обох сторін. Публікуйте найвищий підтверджений фактичний шар і не підміняйте ним правову кваліфікацію.",
+      "limits_en": "Open sources often cannot establish intent, precautions, targeting information available to commanders or the full civilian presence at the time of attack. Early casualty counts change. Military-use evidence can be incomplete or classified. Do not expose current defensive positions, protected infrastructure details or tactical vulnerabilities in the name of verification.",
+      "limits_uk": "Відкриті джерела часто не дають змоги встановити умисел, запобіжні заходи, інформацію про ціль, доступну командирам, або повну присутність цивільних у момент атаки. Перші дані про жертви змінюються. Докази військового використання можуть бути неповними або закритими. Не розкривайте актуальні оборонні позиції, захищені подробиці інфраструктури чи тактичні вразливості під приводом верифікації.",
+      "tags": [
+        "war-crimes-verification",
+        "civilian-harm",
+        "target-status",
+        "dual-use",
+        "ihl"
+      ]
+    },
+    {
+      "rubric_key": "pow",
+      "emoji": "🕯️",
+      "rubric_en": "Losses, Captivity & Missing",
+      "rubric_uk": "Втрати, полон, зниклі",
+      "title_en": "A former prisoner’s testimony became stronger when person, facility, time and corroboration stayed separately traceable",
+      "title_uk": "Свідчення звільненого полоненого ставало сильнішим, коли людина, місце утримання, час і підтвердження лишалися окремо простежуваними",
+      "source_line_en": "Daily Signal #078; Reuters and UN testimony · 11 August 2026",
+      "source_line_uk": "Щоденний випуск #078; матеріал Reuters і свідчення в ООН · 11 серпня 2026",
+      "what_happened_en": "Former Ukrainian prisoners told an informal UN Security Council meeting about beatings, electric shocks, sexual abuse and repeated transfers through Russian detention. One former soldier described nearly three years in captivity; activist Leniie Umerova described detention in seven facilities. UN Assistant Secretary-General for Human Rights Claudia Fuentes Julio said torture, including sexual violence, remained prevalent and systematic in Russian detention, while Russia rejected the allegations as politically motivated disinformation. The week’s important methodological point was not to choose between an individual account and an institutional pattern finding. They are different evidence objects that can strengthen each other when linked correctly.",
+      "what_happened_uk": "Звільнені українські полонені на неформальному засіданні Ради Безпеки ООН розповіли про побиття, удари струмом, сексуальне насильство й багаторазові переведення між російськими місцями утримання. Один колишній військовий описав майже три роки полону; активістка Леніє Умерова — утримання у семи установах. Помічниця Генерального секретаря ООН з прав людини Клаудія Фуентес Хуліо заявила, що катування, зокрема сексуальне насильство, залишаються поширеними й систематичними в російських місцях утримання, тоді як Росія відкинула звинувачення як політично вмотивовану дезінформацію. Важливий методичний висновок тижня полягав не у виборі між індивідуальним свідченням та інституційним висновком про закономірність. Це різні доказові об’єкти, які можуть посилювати один одного за коректного зведення.",
+      "why_it_matters_en": "A survivor account may directly establish personal experience while containing several distinct claims about capture, transfers, facility identity, abuse method, alleged perpetrators, medical consequences and other witnesses. A pattern finding asks a different question and depends on multiple cases, access conditions and denominators. If those levels are collapsed, a compelling testimony can be overextended into an unsupported facility-wide statistic; if they are kept separate, convergence across independent accounts becomes measurable.",
+      "why_it_matters_uk": "Свідчення потерпілої людини може безпосередньо встановлювати її особистий досвід і водночас містити кілька окремих тверджень про захоплення, переведення, місце утримання, спосіб насильства, ймовірних виконавців, медичні наслідки та інших свідків. Висновок про закономірність відповідає на інше питання й залежить від багатьох справ, умов доступу та знаменників. Якщо ці рівні змішати, сильне свідчення легко перетягнути в непідтверджену статистику щодо всієї установи; якщо зберегти окремо, збіг незалежних розповідей стає вимірюваним.",
+      "how_to_use_en": "Maintain a protected person record and a separate detention-event sequence for every account. Store capture date or range, transfer sequence, facility identifiers, direct versus inferred location, alleged perpetrators by role unless independently identified, abuse type, medical evidence, witness overlap, contemporaneous records, interview date, consent, corrections and release. Build facility or system pattern findings only from multiple linked cases and preserve the denominator, sampling limits and access conditions behind every published percentage.",
+      "how_to_use_uk": "Для кожного свідчення ведіть захищений запис про людину й окрему послідовність подій утримання. Фіксуйте дату або період захоплення, переведення, ідентифікатори установ, безпосередньо встановлене чи виведене місце, ймовірних виконавців за роллю, якщо особу не підтверджено незалежно, вид насильства, медичні докази, збіг з іншими свідченнями, тогочасні записи, дату опитування, згоду, виправлення та звільнення. Висновки щодо установи або системної закономірності будуйте лише з кількох пов’язаних справ і зберігайте знаменник, обмеження вибірки та умови доступу за кожним оприлюдненим відсотком.",
+      "limits_en": "Trauma, time, repeated transfers and deliberate concealment can affect memory and location certainty. Public testimony may deliberately omit protected details. An institutional description of a systematic practice does not identify every perpetrator or commander. Do not publish private medical details, family contacts, current locations of released prisoners or speculative identities based on resemblance or hearsay.",
+      "limits_uk": "Травма, час, багаторазові переведення та навмисне приховування можуть впливати на пам’ять і впевненість щодо місця. Публічне свідчення може свідомо не містити захищених подробиць. Інституційний опис системної практики не встановлює кожного виконавця чи командира. Не публікуйте приватні медичні подробиці, контакти родин, поточне місце звільнених полонених або спекулятивні імена за схожістю чи переказом.",
+      "tags": [
+        "pow",
+        "detention",
+        "torture-documentation",
+        "testimony",
+        "corroboration"
+      ]
+    },
+    {
+      "rubric_key": "tradecraft",
+      "emoji": "🧰",
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "title_en": "A status claim was incomplete without its clock",
+      "title_uk": "Твердження про стан було неповним без власного часу",
+      "source_line_en": "Daily Signal #078–#081; Tool Radar #082 · 11–15 August 2026",
+      "source_line_uk": "Щоденні випуски #078–#081; Радар інструментів #082 · 11–15 серпня 2026",
+      "what_happened_en": "This week repeatedly showed that one date is not enough. A CAS challenge had a filing date but not the date of any later relief. The U.S. sanctions bill had a Senate-passage date while House action, signature, effective date and executive implementation were still future states. The EU’s 21st package included measures that took effect on different schedules, including delayed and contingent provisions. Germany’s intelligence reforms had a cabinet-approval date but no enacted effective date. CyberUA had a tender deadline, not a deployment date. Russia’s Rassvet system had a current satellite count alongside planned constellation sizes for 2027 and 2035. Orsk had a strike date, shutdown confirmation and an estimate of up to six months for repair, none of which was the eventual restart date. Even forensic and archival tools carried their own clocks: indicator sets, tool versions and capture times determine what a later review can honestly reproduce.",
+      "what_happened_uk": "Цього тижня знову й знову виявлялося, що однієї дати недостатньо. Звернення до CAS мало дату подання, але не дату будь-якого майбутнього судового захисту. Американський санкційний законопроєкт мав дату схвалення Сенатом, тоді як розгляд Палатою представників, підписання, набрання чинності й конкретне виконання лишалися майбутніми станами. 21-й пакет санкцій ЄС містив заходи з різними календарями, включно з відкладеними й залежними від наступних рішень нормами. Німецька реформа спецслужб мала дату схвалення урядом, але не дату набрання чинності законом. CyberUA мало кінцевий строк тендера, а не дату розгортання. Російська система Rassvet мала поточну кількість супутників поруч із плановими розмірами угруповання на 2027 і 2035 роки. Орськ мав дату удару, підтвердження зупинки й прогноз ремонту до шести місяців, але жодна з цих дат не була реальною датою запуску. Навіть криміналістичні й архівні інструменти мають власний час: набір індикаторів, версія засобу й час захоплення визначають, що саме пізніший дослідник здатен чесно відтворити.",
+      "why_it_matters_en": "Temporal ambiguity is one of the easiest ways to make a true sentence misleading. A statement can be accurate about the day it was published and false about the day a reader encounters it. Forecasts can be mistaken for observations; legal adoption for legal effect; publication time for event time; capture time for upload time. A multi-clock model lets investigators preserve these distinctions and update a claim without erasing the history that made the earlier version reasonable.",
+      "why_it_matters_uk": "Часова неоднозначність — один із найпростіших способів зробити правдиве речення оманливим. Твердження може бути точним у день публікації й хибним у день, коли його читають. Прогноз легко сплутати зі спостереженням, ухвалення норми — з її набранням чинності, час публікації — з часом події, час захоплення сторінки — з часом появи матеріалу. Модель кількох часових полів дає змогу зберігати ці відмінності й оновлювати твердження, не стираючи історію, через яку попередня версія була обґрунтованою.",
+      "how_to_use_en": "For consequential records, preserve at least: event_time; source_published_at; first_observed_at; collected_at; effective_from and effective_until where legal or operational status requires them; expected_by for forecasts; verified_at; superseded_at; and correction_at. Store time zone and uncertainty ranges. When a source gives only 'up to six months' or 'by 2027', preserve the statement as a forecast interval rather than manufacturing a precise date. In publication, prefer phrases that expose the clock: 'as of 13 August', 'planned for 2027', 'filed on 10 August', 'not yet in force'.",
+      "how_to_use_uk": "Для важливих записів зберігайте щонайменше: час події; час публікації джерела; час першого спостереження; час збирання; початок і завершення чинності там, де цього потребує правовий або операційний стан; очікуваний строк для прогнозів; час перевірки; час заміни новішим станом; час виправлення. Фіксуйте часовий пояс і діапазон невизначеності. Якщо джерело каже лише «до шести місяців» або «до 2027 року», зберігайте це як прогнозний інтервал, а не вигадуйте точну дату. У публікації віддавайте перевагу формулюванням, що показують часову рамку: «станом на 13 серпня», «заплановано на 2027 рік», «подано 10 серпня», «ще не набрало чинності».",
+      "limits_en": "More timestamps do not resolve a disputed fact automatically. Sources can use different time zones, issue corrections without clear version history or report estimated times. Some legal acts are effective immediately while operational implementation lags. The purpose is not to create false precision but to preserve exactly which clock each claim belongs to.",
+      "limits_uk": "Більша кількість часових полів не вирішує спірний факт автоматично. Джерела можуть використовувати різні часові пояси, виправляти матеріали без зрозумілої історії версій або повідомляти приблизний час. Деякі правові акти набирають чинності одразу, тоді як практичне виконання відстає. Мета полягає не в хибній точності, а в тому, щоб зберегти, до якого саме часу належить кожне твердження.",
+      "tags": [
+        "tradecraft",
+        "temporal-data",
+        "status",
+        "versioning",
+        "forecasts"
+      ]
+    },
+    {
+      "rubric_key": "tools",
+      "emoji": "🛠️",
+      "rubric_en": "Tools / Datasets",
+      "rubric_uk": "Інструменти й набори даних",
+      "title_en": "Saturday’s strongest tools kept the join inspectable and the original evidence intact",
+      "title_uk": "Найсильніші суботні інструменти залишали зв’язок видимим, а первинний доказ — недоторканим",
+      "source_line_en": "Saturday Tool Radar #082; official project pages and documentation · 15 August 2026",
+      "source_line_uk": "Суботній радар інструментів #082; офіційні сторінки й документація проєктів · 15 серпня 2026",
+      "what_happened_en": "Saturday’s seven selections covered different domains but shared the same useful architecture. Global Fishing Watch Vessel Viewer joined vessel identity, historical tracks, port visits and transshipment indicators. Open Supply Hub reconciled production-facility identities while exposing contributor provenance. ICIJ Offshore Leaks Database exposed relationship graphs while explicitly warning that inclusion is not evidence of wrongdoing. ReplayWeb.page replayed preserved WACZ, WARC and related archives without requiring the live site. Amnesty’s Mobile Verification Toolkit extracted and checked consented mobile artefacts against compromise indicators. Google Fact Check Explorer searched prior published fact checks by topic or image. Bellingcat’s Iran Conflict Damage Proxy Map turned Sentinel-1 SAR anomalies into locations for further review. In every case, the useful output was a candidate, relationship, replay, indicator or anomaly that another reviewer could inspect.",
+      "what_happened_uk": "Сім суботніх добірок працювали в різних галузях, але мали спільну корисну архітектуру. Global Fishing Watch Vessel Viewer зводив ідентичність судна, історичні треки, заходи в порти та ознаки перевалки. Open Supply Hub узгоджував ідентичності виробничих об’єктів і показував походження внесених даних. ICIJ Offshore Leaks Database відкривав графи зв’язків і водночас прямо застерігав, що присутність у базі не є доказом правопорушення. ReplayWeb.page відтворював збережені архіви WACZ, WARC та споріднених форматів без залежності від живого сайту. Mobile Verification Toolkit від Amnesty аналізував за згодою артефакти мобільних пристроїв і зіставляв їх з індикаторами компрометації. Google Fact Check Explorer шукав раніше опубліковані фактчеки за темою або зображенням. Iran Conflict Damage Proxy Map від Bellingcat перетворював аномалії Sentinel-1 SAR на місця для подальшої перевірки. У кожному випадку корисним результатом був кандидат, зв’язок, відтворення, індикатор або аномалія, які може перевірити інший дослідник.",
+      "why_it_matters_en": "Inspectability makes a tool replaceable. If a hosted interface changes or disappears, an investigation should still know what entered the tool, what source the result came from, what version or date governed the analysis and what human decision followed. This week’s best tools did not need to be treated as authorities. Their value came from shortening a search or reconciliation task while preserving a path back to the underlying vessel record, facility contribution, offshore node, archive file, device artefact, published fact check or satellite scene.",
+      "why_it_matters_uk": "Придатність до перевірки робить інструмент замінним. Якщо зовнішній інтерфейс зміниться або зникне, розслідування все одно має знати, що потрапило на вхід, з якого джерела виник результат, яка версія чи дата визначала аналіз і яке людське рішення було далі. Найкращі інструменти тижня не потребували статусу авторитетного судді. Їхня цінність полягала в скороченні пошуку чи зіставлення зі збереженням шляху назад до первинного запису судна, внеску про виробничий об’єкт, вузла офшорної бази, архівного файла, артефакту пристрою, опублікованого фактчеку або супутникової сцени.",
+      "how_to_use_en": "For every production tool, keep a tool ledger with purpose, primary project URL, version or access date, input and hash where applicable, parameters, account or hosting exposure, output and hash where possible, reviewer, decision and rejection reason. Keep the original evidence alongside any transformed output. For hosted search or reconciliation services, record enough of the query to reproduce the result without storing unnecessary personal data. Treat a tool’s score, relationship or anomaly as a lead until the underlying evidence is inspected.",
+      "how_to_use_uk": "Для кожного робочого інструмента ведіть журнал із призначенням, первинною сторінкою проєкту, версією або датою доступу, вхідними даними й контрольною сумою за потреби, параметрами, ризиком передавання даних через обліковий запис або зовнішній сервіс, результатом і його контрольною сумою за можливості, перевіряльником, рішенням та причиною відхилення. Первинний доказ зберігайте поруч із будь-яким перетвореним результатом. Для зовнішніх пошукових або зіставлювальних сервісів фіксуйте достатньо запиту для відтворення без збереження зайвих персональних даних. Оцінку, зв’язок чи аномалію інструмента розглядайте як зачіпку до перевірки первинного доказу.",
+      "limits_en": "Exportability and inspectability are not reliability. AIS can be incomplete or manipulated; contributed facility data can be wrong; offshore records can be historical or ambiguous; archives can miss dynamic resources; forensic indicators can be stale; fact-check search is incomplete; SAR anomalies have non-conflict causes. Tool outputs should be preserved as evidence of what the tool produced, not as proof that the underlying claim is true.",
+      "limits_uk": "Можливість зберегти й перевірити результат не дорівнює його надійності. AIS може бути неповним або спотвореним; внесені дані про об’єкти — помилковими; офшорні записи — історичними чи неоднозначними; вебархіви — не захопити динамічні ресурси; криміналістичні індикатори — застаріти; пошук фактчеків — бути неповним; радарні аномалії — мати небойові причини. Результат інструмента слід зберігати як доказ того, що саме він видав, а не як доказ правдивості основного твердження.",
+      "tags": [
+        "tools",
+        "auditability",
+        "provenance",
+        "review-queues",
+        "exports"
+      ]
+    },
+    {
+      "rubric_key": "risk",
+      "emoji": "⚠️",
+      "rubric_en": "Risk Watch",
+      "rubric_uk": "Межі й ризики",
+      "title_en": "Public availability, technical possibility and permission were three different gates",
+      "title_uk": "Відкрита доступність, технічна можливість і дозвіл були трьома різними межами",
+      "source_line_en": "Daily Signal #080–#081; Saturday Tool Radar #082 · 13–15 August 2026",
+      "source_line_uk": "Щоденні випуски #080–#081; Суботній радар інструментів #082 · 13–15 серпня 2026",
+      "what_happened_en": "Three stories made the boundary unusually concrete. Bellingcat’s investigation into exposed Hungarian government credentials used breach data to document institutional risk, while the public card explicitly rejected testing or reusing passwords. Its Kinahan investigation used identity information already present in official U.S. sanctions material to join public UAE immigration records, but the useful method was controlled reconciliation and corroboration, not publication of passport numbers. Saturday’s Mobile Verification Toolkit was useful precisely because its safe scope was consensual examination of a device; technical capacity to extract or inspect artefacts did not create authority to access somebody else’s phone. The Offshore Leaks Database added a fourth reminder: public-interest publication of offshore records does not make every named person culpable or every personal field necessary to republish.",
+      "what_happened_uk": "Три історії зробили цю межу особливо конкретною. Розслідування Bellingcat про відкриті облікові дані угорських держслужбовців використовувало відомості про витоки для документування інституційного ризику, тоді як публічна картка прямо відкидала перевірку чи повторне використання паролів. У справі Kinahan відомості про особу, уже наведені в офіційних санкційних матеріалах США, допомогли зіставити публічні імміграційні записи ОАЕ, але корисною методикою було контрольоване зведення й підтвердження, а не публікація номерів паспортів. Суботній Mobile Verification Toolkit був корисний саме в межах добровільного аналізу пристрою; технічна здатність вилучати або переглядати артефакти не створювала права доступатися до чужого телефона. Offshore Leaks Database додав четверте нагадування: суспільно значуща публікація офшорних записів не робить кожну згадану людину винною й не робить кожне персональне поле необхідним для повторної публікації.",
+      "why_it_matters_en": "OSINT credibility depends not only on whether information can be found but on whether access, processing and publication can be justified. 'It was on the internet' is not a complete ethics or legal test. Different gates answer different questions: lawful or authorised access; necessity and proportionality of collecting the data; reliability of the match; and minimum necessary publication. Treating them as one gate encourages credential abuse, overcollection, unsafe deanonymisation and avoidable harm.",
+      "why_it_matters_uk": "Довіра до роботи з відкритими джерелами залежить не лише від того, чи можна щось знайти, а й від того, чи можна обґрунтувати доступ, опрацювання та публікацію. Формула «це було в інтернеті» не є повною етичною чи правовою перевіркою. Різні межі відповідають на різні питання: законність або наявність дозволу на доступ; необхідність і пропорційність збирання; надійність зіставлення; мінімально необхідний обсяг публікації. Злиття цих меж в одну заохочує зловживання обліковими даними, надмірне збирання, небезпечне встановлення приватних осіб і зайву шкоду.",
+      "how_to_use_en": "Apply four gates before a sensitive workflow: ACCESS — is the material lawfully and ethically available for this purpose? NECESSITY — which fields are actually required to answer the public-interest question? VERIFICATION — what independent source confirms the identity or relationship? PUBLICATION — what is the minimum detail readers need to understand and audit the finding? Keep raw sensitive identifiers in restricted working material where justified, redact them from public screenshots, and document consent for device forensics. If the task fails any gate, redesign it rather than searching for a technical workaround.",
+      "how_to_use_uk": "Перед чутливим робочим процесом застосовуйте чотири перевірки. ДОСТУП — чи матеріал законно й етично доступний саме для цієї мети? НЕОБХІДНІСТЬ — які поля справді потрібні для суспільно значущого питання? ПЕРЕВІРКА — яке незалежне джерело підтверджує особу або зв’язок? ПУБЛІКАЦІЯ — який мінімум подробиць потрібен читачеві для розуміння й аудиту висновку? Виправдані первинні чутливі ідентифікатори тримайте в матеріалах з обмеженим доступом, приховуйте їх на публічних знімках і документуйте згоду для криміналістичного аналізу пристрою. Якщо робочий процес не проходить одну з цих перевірок, змініть його, а не шукайте технічний обхід.",
+      "limits_en": "Law and professional ethics vary by jurisdiction, newsroom and investigative mandate. Public interest can justify publication of some sensitive facts, but it does not eliminate the need for necessity, accuracy and harm assessment. This framework is not legal advice. It is a stopping rule designed to prevent technical curiosity from silently becoming unauthorised access or unnecessary exposure.",
+      "limits_uk": "Право й професійна етика відрізняються залежно від юрисдикції, редакції та мандата розслідування. Суспільний інтерес може виправдовувати публікацію окремих чутливих фактів, але не скасовує перевірки необхідності, точності та можливої шкоди. Ця схема не є юридичною консультацією. Це правило зупинки, покликане не дати технічній цікавості непомітно перетворитися на несанкціонований доступ або зайве розкриття.",
+      "tags": [
+        "risk-watch",
+        "privacy",
+        "consent",
+        "public-records",
+        "data-minimisation"
+      ]
+    }
+  ],
+  "compact_sections": [
+    {
+      "rubric_key": "signal",
+      "emoji": "🧾",
+      "title": "Preserve / Зберігати",
+      "short_title": "The transition record / Запис переходу",
+      "points": [
+        "Previous state, current supported state and the trigger between them / Попередній стан, поточний підтверджений стан і подію переходу між ними",
+        "Event time, publication time, effective time and forecast horizon / Час події, час публікації, час набрання чинності та горизонт прогнозу",
+        "Competing claims, missing evidence and rollback or correction history / Конкуруючі твердження, відсутні докази та історію повернення чи виправлення"
+      ]
+    },
+    {
+      "rubric_key": "risk",
+      "emoji": "🚫",
+      "title": "Do not infer / Не виводити",
+      "short_title": "The unfinished transitions / Незавершені переходи",
+      "points": [
+        "Proposal is not agreement; filing is not relief; cabinet approval is not enacted power / Пропозиція не є угодою; подання не є судовим захистом; схвалення урядом не є чинним повноваженням",
+        "Damage is not sustained shutdown; flag is not ownership; route is not a sanctions violation / Пошкодження не є тривалою зупинкою; прапор не є власністю; маршрут не є порушенням санкцій",
+        "Public availability is not permission; an indicator is not attribution; an anomaly is not confirmed destruction / Відкрита доступність не є дозволом; індикатор не є встановленням виконавця; аномалія не є підтвердженим руйнуванням"
+      ]
+    },
+    {
+      "rubric_key": "tradecraft",
+      "emoji": "➡️",
+      "title": "Next week / Наступний тиждень",
+      "short_title": "Watch the next state / Стежити за наступним станом",
+      "points": [
+        "Black Sea: formal response, any agreed terms and incident-level compliance / Чорне море: формальна відповідь, можливі узгоджені умови та дотримання на рівні окремих інцидентів",
+        "Infrastructure: actual Novorossiysk throughput, Orsk repair milestones and regional fuel availability / Інфраструктура: фактична перевалка Новоросійська, етапи ремонту Орська й доступність пального в регіоні",
+        "Law and capability: German parliamentary amendments, sanctions implementation, Yabloko appeal status and independently observable Rassvet launches / Право й спроможності: німецькі парламентські поправки, виконання санкцій, стан апеляції «Яблока» та незалежно спостережувані запуски Rassvet"
+      ]
+    }
+  ],
+  "reading_list": [
+    {
+      "title": "Reuters: Ukraine offers Russia a Black Sea truce",
+      "href": "https://www.reuters.com/world/europe/ukraine-offers-russia-truce-black-sea-food-supply-fears-mount-source-says-2026-08-13/",
+      "note": "Transmission through a third party is not the same state as formal receipt or acceptance / Передавання через третю сторону не є тим самим станом, що формальне отримання чи прийняття."
+    },
+    {
+      "title": "Reuters: Russia dismisses idea of Black Sea ceasefire",
+      "href": "https://www.reuters.com/world/europe/russia-dismisses-idea-black-sea-ceasefire-2026-08-14/",
+      "note": "A public rejection updates the diplomatic record without itself creating an operational maritime regime / Публічна відмова оновлює дипломатичний запис, але сама не створює операційного режиму на морі."
+    },
+    {
+      "title": "Reuters: Russia attacks Kyiv overnight, injuring three",
+      "href": "https://www.reuters.com/world/europe/russian-missile-attack-kyiv-sparks-fires-injures-one-ukraine-officials-say-2026-08-16/",
+      "note": "Weekend incident update for casualty, damage and object-status records / Оновлення вихідного дня для записів про потерпілих, пошкодження та статус об’єктів."
+    },
+    {
+      "title": "Reuters: Ukrainian drones strike Moscow region, killing one",
+      "href": "https://www.reuters.com/world/ukrainian-drones-strike-moscow-region-killing-one-2026-08-16/",
+      "note": "Civilian harm and a claimed military-use rationale must be assessed in separate evidence layers / Шкоду цивільним і заявлене військове використання потрібно оцінювати в окремих шарах доказів."
+    },
+    {
+      "title": "Reuters: Russia says it hit military-related warehouses and steel works in Ukraine",
+      "href": "https://www.reuters.com/world/europe/russia-says-it-hit-military-related-warehouses-steel-works-overnight-ukraine-2026-08-11/",
+      "note": "Attacker claim, observed damage, casualties and military-object status answer different questions / Твердження сторони нападу, пошкодження, потерпілі та військовий статус об’єкта відповідають на різні питання."
+    },
+    {
+      "title": "Reuters: Ukrainian prisoners recount torture and sexual abuse in Russian detention",
+      "href": "https://www.reuters.com/world/europe/ukrainian-prisoners-recount-torture-sexual-abuse-while-russian-detention-2026-08-11/",
+      "note": "Person-level testimony, facility chronology and institutional pattern findings should remain linked but distinct / Свідчення людини, хронологія установ і висновок про закономірність мають бути пов’язаними, але окремими."
+    },
+    {
+      "title": "Reuters: Novorossiysk grain terminal halts operations after Ukrainian attack",
+      "href": "https://www.reuters.com/world/russias-novorossiysk-grain-terminal-halts-operations-after-ukrainian-drone-2026-08-12/",
+      "note": "Damage, operator confirmation, shutdown and sustained capacity loss are different states / Пошкодження, підтвердження оператора, зупинка й тривала втрата потужності — різні стани."
+    },
+    {
+      "title": "Reuters: Ukrainian attack shuts Russia's Orsk refinery for months",
+      "href": "https://www.reuters.com/business/energy/ukrainian-attack-shuts-russias-orsk-refinery-months-causing-fuel-problems-2026-08-13/",
+      "note": "Official repair estimate is not an observed restart date or exact lost output / Офіційний прогноз ремонту не є спостереженою датою запуску чи точною втратою виробництва."
+    },
+    {
+      "title": "Reuters: Russian attack damages Izmail port infrastructure",
+      "href": "https://www.reuters.com/world/russian-attack-sets-ablaze-ukraines-izmail-port-infrastructure-regional-2026-08-13/",
+      "note": "Port strike and Romanian airspace observation belong in linked but separate geospatial event records / Удар по порту й спостереження в румунському повітряному просторі належать до пов’язаних, але окремих геопросторових записів."
+    },
+    {
+      "title": "Reuters: Ukrainian drone strikes push up Russian trucking costs",
+      "href": "https://www.reuters.com/business/ukrainian-drone-strikes-push-up-russian-trucking-costs-stoking-inflation-2026-08-13/",
+      "note": "Second-order economic effects need a chain from fuel disruption to firm costs, freight rates and inflation / Наслідки другого порядку потребують ланцюга від дефіциту пального до витрат компаній, ставок перевезень та інфляції."
+    },
+    {
+      "title": "European Commission: EU adopts 21st package of sanctions against Russia",
+      "href": "https://finance.ec.europa.eu/news/eu-adopts-21th-package-sanctions-against-russia-2026-07-23_en",
+      "note": "One sanctions package can contain immediate, delayed and contingent legal states / Один санкційний пакет може містити негайні, відкладені й залежні від наступних рішень правові стани."
+    },
+    {
+      "title": "Bellingcat Justice and Accountability Unit: Collection Protocol",
+      "href": "https://www.j-and-a.bellingcat.com/collection-protocol",
+      "note": "Collection, verification and analysis remain distinct evidence stages / Збирання, перевірка й аналіз залишаються різними етапами роботи з доказами."
+    },
+    {
+      "title": "Global Fishing Watch: Vessel Viewer",
+      "href": "https://globalfishingwatch.org/vessel-viewer-tool/",
+      "note": "Vessel identity and historical events can be joined while leaving cargo, ownership and legality for separate verification / Ідентичність судна й історичні події можна звести, залишаючи вантаж, власність і правомірність для окремої перевірки."
+    },
+    {
+      "title": "Bellingcat: Iran Conflict Damage Proxy Map",
+      "href": "https://www.bellingcat.com/resources/2026/04/07/tool-damage-assessment-destruction-sentinel-satellite-imagery-iran-us-gulf/",
+      "note": "Sentinel-1 anomalies create a damage-review queue rather than a building-level verdict / Аномалії Sentinel-1 створюють чергу перевірки можливих руйнувань, а не вирок щодо конкретної будівлі."
+    }
+  ]
+}
