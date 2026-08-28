@@ -7,10 +7,25 @@
   "title_en": "Open Source Signal",
   "title_uk": "Сигнал відкритих джерел",
   "issue_type": "Daily Signal",
+  "language_label": "EN + UKR",
   "subtitle_en": "Bilingual OSINT radar for Ukrainian accountability work, verification, war-crimes documentation, losses, captivity and missing-persons research, maps, platforms, surveillance and researcher safety.",
   "subtitle_uk": "Двомовний радар відкритих джерел для українських розслідувань, верифікації, документування воєнних злочинів, дослідження втрат, полону й зниклих, картографії, аналізу цифрових сервісів, інфраструктури стеження та безпеки дослідника.",
   "dek_en": "Daily issue #093: a possible September Ukraine-Russia-U.S. negotiating round as a diplomatic possibility rather than a scheduled meeting; four EU states' renewed push to use frozen Russian sovereign assets as a policy initiative rather than an adopted legal mechanism; a U.S. senator's expectation that a broad Russia sanctions bill can pass the House next month as legislative advocacy rather than enacted law; the Register of Damage for Ukraine opening category C3.2 for legal persons that lost control of property in temporarily occupied territories as an operative claims category distinct from a compensation award; Bulgaria's approved acquisition of seven minehunters as a procurement decision rather than a delivered fleet; Rheinmetall's €270 million Kassel investment as announced industrial expansion rather than immediately available production capacity; and conflicting public and anonymously sourced accounts of the CIA director's Moscow trip as a source-classification problem.",
   "dek_uk": "Випуск #093: можливий переговорний раунд між Україною, Росією та США у вересні як дипломатична можливість, а не вже призначена зустріч; новий заклик чотирьох держав ЄС використати заморожені російські суверенні активи як політична ініціатива, а не ухвалений правовий механізм; очікування американського сенатора щодо проходження Палатою представників широкого санкційного законопроєкту проти Росії наступного місяця як законодавче просування, а не чинний закон; відкриття Реєстром збитків для України категорії C3.2 для юридичних осіб, які втратили контроль над майном на тимчасово окупованих територіях, як уже доступна категорія заяв, відмінна від присудженої компенсації; схвалене Болгарією придбання семи протимінних кораблів як закупівельне рішення, а не вже переданий флот; інвестиція Rheinmetall у Кассель на 270 мільйонів євро як оголошене розширення промисловості, а не негайно доступна виробнича потужність; і суперечливі публічні та анонімно джерельні версії поїздки директора ЦРУ до Москви як проблема класифікації джерел.",
+  "editorial_frame": {
+    "what_this_is": "A bilingual editorial filter for public-interest OSINT. Each item explains what happened, why it matters, how a reader can use the insight, and where the method or evidence has limits.",
+    "what_this_is_not": "Doxxing, live targeting, stolen-data workflows, private-person deanonymization, credential hunting, revenge calls, unsafe operational guidance or unverified accusations against private people."
+  },
+  "rubric_map": [
+    "📡 Signal One",
+    "💰 Frozen Assets",
+    "⚖️ Legislative Status",
+    "🧾 Claims & Compensation",
+    "🚢 Maritime Security",
+    "🏭 Defence Industry",
+    "🧭 Source Conflict"
+  ],
+  "footer_note": "Generated for Open Source Signal / Сигнал відкритих джерел.",
   "items": [
     {
       "theme": "september-talks-possibility-vs-scheduled-meeting",
@@ -31,13 +46,7 @@
       "how_to_use_uk": "Окремо фіксуйте джерело пропозиції, запропонований період, відповідь іншої сторони, дату, місце, учасників і факт проведення зустрічі.",
       "limits_en": "The report describes a Ukrainian official's expectation, not a confirmed trilateral meeting.",
       "limits_uk": "Матеріал описує очікування українського посадовця, а не підтверджену тристоронню зустріч.",
-      "tags": [
-        "signal-one",
-        "negotiation-status",
-        "ukraine",
-        "russia",
-        "united-states"
-      ]
+      "tags": ["signal-one", "negotiation-status", "ukraine", "russia", "united-states"]
     },
     {
       "theme": "eu-four-states-frozen-assets-policy-push-vs-adopted-mechanism",
@@ -58,13 +67,7 @@
       "how_to_use_uk": "Окремо фіксуйте держави-ініціатори, пропозицію, вид активів, правову основу, відповідь Комісії, стан у Раді та подальше перерахування коштів.",
       "limits_en": "The report does not establish EU-wide agreement or an operative transfer mechanism.",
       "limits_uk": "Матеріал не встановлює загальної згоди ЄС або чинного механізму передавання коштів.",
-      "tags": [
-        "frozen-assets",
-        "eu",
-        "policy-status",
-        "financing",
-        "ukraine"
-      ]
+      "tags": ["frozen-assets", "eu", "policy-status", "financing", "ukraine"]
     },
     {
       "theme": "us-russia-sanctions-bill-expectation-vs-enacted-law",
@@ -85,13 +88,7 @@
       "how_to_use_uk": "Окремо зберігайте номер законопроєкту, останню формальну дію, поправки, ухвалення, підпис і виконання; прогнозовані дати позначайте як очікування.",
       "limits_en": "The statement does not guarantee House passage or final enactment.",
       "limits_uk": "Заява не гарантує голосування Палати представників або остаточного набрання законом чинності.",
-      "tags": [
-        "legislative-status",
-        "united-states",
-        "sanctions",
-        "russia",
-        "bill"
-      ]
+      "tags": ["legislative-status", "united-states", "sanctions", "russia", "bill"]
     },
     {
       "theme": "rd4u-c32-occupied-property-claim-category-vs-compensation-award",
@@ -112,13 +109,7 @@
       "how_to_use_uk": "Окремо фіксуйте заявника, категорію, право на майно, місце, обставини, докази, стан внесення до Реєстру та подальше рішення щодо компенсації.",
       "limits_en": "Opening C3.2 does not guarantee acceptance or payment of any individual claim.",
       "limits_uk": "Відкриття C3.2 не гарантує прийняття чи виплати за конкретною заявою.",
-      "tags": [
-        "claims-compensation",
-        "rd4u",
-        "occupied-territories",
-        "legal-persons",
-        "evidence"
-      ]
+      "tags": ["claims-compensation", "rd4u", "occupied-territories", "legal-persons", "evidence"]
     },
     {
       "theme": "bulgaria-seven-minehunters-procurement-vs-delivery",
@@ -139,13 +130,7 @@
       "how_to_use_uk": "Відстежуйте кожен корабель за країною походження, механізмом передавання, відновленням, навчанням, постачанням і введенням у стрій.",
       "limits_en": "The report describes an approved acquisition package, not completed delivery of all seven ships.",
       "limits_uk": "Матеріал описує схвалений пакет придбання, а не завершене передавання всіх семи кораблів.",
-      "tags": [
-        "maritime-security",
-        "bulgaria",
-        "minehunters",
-        "black-sea",
-        "procurement-status"
-      ]
+      "tags": ["maritime-security", "bulgaria", "minehunters", "black-sea", "procurement-status"]
     },
     {
       "theme": "rheinmetall-kassel-investment-announcement-vs-capacity",
@@ -166,13 +151,7 @@
       "how_to_use_uk": "Окремо відстежуйте оголошену суму, складові проєкту, етапи будівництва, введення в роботу, заявлену потужність і фактичний випуск.",
       "limits_en": "The announcement does not establish that expanded capacity is already operational.",
       "limits_uk": "Повідомлення не встановлює, що розширені потужності вже працюють.",
-      "tags": [
-        "defence-industry",
-        "rheinmetall",
-        "germany",
-        "investment",
-        "capacity"
-      ]
+      "tags": ["defence-industry", "rheinmetall", "germany", "investment", "capacity"]
     },
     {
       "theme": "trump-ratcliffe-moscow-trip-official-vs-anonymous-source-accounts",
@@ -193,13 +172,7 @@
       "how_to_use_uk": "Створюйте паралельні записи тверджень із класом джерела, часом публікації, точною тезою, полями підтвердження та суперечності.",
       "limits_en": "The public record does not resolve every disputed detail of the trip; anonymous-source reporting remains harder to audit.",
       "limits_uk": "Публічні матеріали не розв'язують усі суперечливі деталі поїздки; повідомлення з анонімних джерел важче перевірити.",
-      "tags": [
-        "source-conflict",
-        "united-states",
-        "russia",
-        "intelligence",
-        "attribution"
-      ]
+      "tags": ["source-conflict", "united-states", "russia", "intelligence", "attribution"]
     }
   ],
   "internal_notes": [
