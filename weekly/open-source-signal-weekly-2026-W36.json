@@ -1,0 +1,258 @@
+{
+  "issue_number": "W36",
+  "slug": "open-source-signal-weekly-2026-W36",
+  "output_name": "open-source-signal-weekly-2026-W36.html",
+  "date_iso": "2026-09-06",
+  "week_label_en": "31 August–6 September 2026",
+  "week_label_uk": "31 серпня–6 вересня 2026",
+  "title_en": "Open Source Signal Weekly",
+  "title_uk": "Тижневий сигнал відкритих джерел",
+  "subtitle_en": "Sunday editorial synthesis for Ukrainian accountability OSINT.",
+  "subtitle_uk": "Недільний редакційний синтез для української роботи з відкритими джерелами й притягнення до відповідальності.",
+  "dek_en": "Week 36 was a lesson in preserving boundaries. Leipzig moved from pending attribution to a formal German accusation without becoming a judicial finding. A violent clash between Ukrainian security bodies produced competing accounts, notices of suspicion and an investigation, not a settled narrative. T4P's live war-crimes statistics demonstrated why documented cases are a lower bound rather than a denominator for all crimes. A new parliamentary platform for returning Ukrainian children showed why verified data, advocacy, locating a child, negotiating a return and an actual return are distinct case states. Reuters' visual-verification workflow reinforced corroboration over detector verdicts. Saturday's tools extended the same principle into provenance and archive infrastructure. Maritime traffic data supplied the final warning: what a sensor can see is not the whole physical universe.",
+  "dek_uk": "Тиждень 36 став уроком збереження меж між доказовими станами. Лейпциг перейшов від очікуваної атрибуції до формального звинувачення Росії з боку Німеччини, але не до судового висновку. Збройний конфлікт між українськими силовими структурами породив взаємовиключні версії, повідомлення про підозру та розслідування, а не встановлену картину подій. Поточна статистика T4P показала, чому задокументовані воєнні злочини є нижньою межею, а не знаменником усіх злочинів. Нова парламентська платформа щодо повернення українських дітей нагадала, що перевірені дані, адвокація, встановлення місцеперебування, домовленість про повернення та фактичне повернення — різні стани справи. Методика Reuters з верифікації зображень знову поставила взаємне підтвердження вище за автоматичний вердикт детектора. Суботні інструменти перенесли той самий принцип у перевірку походження файлів та архівну інфраструктуру. А дані морського руху дали останнє застереження: видимий для сенсора світ не тотожний усьому фізичному світу.",
+  "editorial_frame": {
+    "what_this_is": "A Sunday weekly magazine that develops the strongest signals from the week's Daily Signal issues and Saturday Tool Radar into seven editorial sections with practical evidence models, publication limits and a reading list.",
+    "what_this_is_not": "A mechanical merge of daily cards, a breaking-news feed, a live-targeting board, a tool-generated verdict, a replacement for forensic or judicial findings, or permission to access sensitive systems or personal data."
+  },
+  "rubric_map": [
+    "📡 Signal of the Week / Головний сигнал тижня",
+    "🇺🇦 Ukraine Lens / Українська оптика",
+    "⚖️ War Crimes Verification / Верифікація воєнних злочинів",
+    "🕯️ Losses, Captivity & Missing / Втрати, полон, зниклі",
+    "🧰 Tradecraft / Методика",
+    "🛠️ Tools / Datasets / Інструменти й набори даних",
+    "⚠️ Risk Watch / Межі й ризики"
+  ],
+  "editorial_note_en": "The durable pattern this week is an evidence ladder. Observation should not silently become attribution; attribution should not silently become individual guilt; a database count should not become prevalence; an advocacy mechanism should not become an outcome; metadata should not become authenticity; a forensic flag should not become proof; and a sensor-visible count should not become a census. The practical response is versioned, append-only analysis: preserve each source, timestamp, claim, denominator, method and upgrade event separately. That makes later correction possible without rewriting history.",
+  "editorial_note_uk": "Стійкий мотив цього тижня — доказова драбина. Спостереження не повинно непомітно ставати атрибуцією; атрибуція — індивідуальною виною; кількість записів у базі — показником поширеності; адвокаційний механізм — результатом; метадані — автентичністю; криміналістична ознака — доказом; видимий сенсором підрахунок — повним переписом. Практична відповідь — версійований аналіз, у якому записи додаються, а не переписуються: окремо зберігайте кожне джерело, час, твердження, знаменник, метод і подію, що виправдовує зміну статусу. Так виправлення не стиратиме історію.",
+  "items": [
+    {
+      "rubric_key": "signal",
+      "emoji": "📡",
+      "rubric_en": "Signal of the Week",
+      "rubric_uk": "Головний сигнал тижня",
+      "title_en": "Leipzig shows what a real evidence-state transition looks like: pending attribution became formal attribution, not judicial proof",
+      "title_uk": "Лейпциг показав справжній перехід доказового стану: очікувана атрибуція стала формальною, але не судовим доведенням",
+      "source_line_en": "Reuters · 30 August 2026; Associated Press · 1 September 2026",
+      "source_line_uk": "Reuters · 30 серпня 2026; Associated Press · 1 вересня 2026",
+      "what_happened_en": "At the start of the week, Germany was finalising its investigation into the explosives-laden drone found near a Ukrainian Antonov aircraft at Leipzig/Halle airport and had not publicly named a perpetrator. Germany then formally blamed Russia for the attempted August 4 attack and announced countermeasures, including closure of the Russian consulate in Bonn and the Russian House in Berlin. Moscow denied involvement.",
+      "what_happened_uk": "На початку тижня Німеччина завершувала розслідування щодо дрона з вибухівкою, знайденого поблизу українського літака Antonov в аеропорту Лейпциг/Галле, і публічно не називала виконавця. Згодом Німеччина формально поклала на Росію відповідальність за спробу атаки 4 серпня й оголосила заходи у відповідь, зокрема закриття російського консульства в Бонні та Російського дому в Берліні. Москва заперечила причетність.",
+      "why_it_matters_en": "This is exactly why an evidence record should be versioned rather than overwritten. The later government attribution is a material upgrade, but it does not retroactively make the earlier pending state formal and does not itself establish individual criminal responsibility in court.",
+      "why_it_matters_uk": "Саме тому доказовий запис треба версіонувати, а не переписувати. Подальша державна атрибуція є суттєвим підвищенням статусу, але вона не робить попередній невизначений стан формальним заднім числом і сама по собі не встановлює індивідуальної кримінальної відповідальності в суді.",
+      "how_to_use_en": "Keep separate dated fields for incident, physical evidence, investigative status, media attribution, official attribution, stated basis, denial, diplomatic response and any later judicial findings. Never collapse the ladder into a single 'confirmed' flag.",
+      "how_to_use_uk": "Окремо й із датами зберігайте інцидент, фізичні докази, стан розслідування, атрибуцію в медіа, офіційну атрибуцію, заявлену основу, заперечення, дипломатичну відповідь і можливі подальші судові висновки. Не стискайте всю драбину до одного прапорця «підтверджено».",
+      "limits_en": "The German government's attribution is an authoritative state assessment, not a public judicial finding. The public record does not expose all underlying intelligence or forensic material.",
+      "limits_uk": "Атрибуція німецького уряду є авторитетною державною оцінкою, але не публічним судовим висновком. У відкритому доступі немає всього розвідувального чи криміналістичного матеріалу, на якому вона ґрунтується.",
+      "tags": ["weekly", "attribution", "state-transition", "leipzig", "hybrid-threat"]
+    },
+    {
+      "rubric_key": "ukraine",
+      "emoji": "🇺🇦",
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "title_en": "The SBU-HUR clash is a claim-ledger problem: competing accounts, procedural actions and responsibility must stay separate",
+      "title_uk": "Конфлікт СБУ та ГУР — це задача для реєстру тверджень: взаємовиключні версії, процесуальні дії та відповідальність треба розділяти",
+      "source_line_en": "Reuters · 3 September 2026",
+      "source_line_uk": "Reuters · 3 вересня 2026",
+      "what_happened_en": "President Volodymyr Zelenskyy said an investigation was underway after a dispute between the SBU Security Service and HUR military intelligence escalated into a shootout in Kyiv that injured three HUR members. The episode was connected to the disappearance of a Russian nationalist activist fighting for Ukraine. The activist and the SBU gave competing accounts of his detention and the alleged security threat. Two servicemen received notices of suspicion.",
+      "what_happened_uk": "Президент Володимир Зеленський повідомив про розслідування після того, як конфлікт між СБУ та ГУР переріс у стрілянину в Києві, внаслідок якої були поранені троє співробітників ГУР. Епізод був пов'язаний зі зникненням російського націоналістичного активіста, який воює на боці України. Активіст і СБУ дали взаємовиключні версії його затримання та ймовірної загрози безпеці. Двом військовослужбовцям повідомили про підозру.",
+      "why_it_matters_en": "Accountability reporting becomes unreliable when a participant's allegation, an agency account, a notice of suspicion, an internal investigation, prosecution and a court finding are treated as one state. This case makes the separation unusually visible.",
+      "why_it_matters_uk": "Матеріали про відповідальність стають ненадійними, коли твердження учасника, версію відомства, повідомлення про підозру, внутрішнє розслідування, обвинувачення та судовий висновок подають як один стан. У цій справі потреба в розділенні особливо очевидна.",
+      "how_to_use_en": "Build a claim ledger with one row per speaker, allegation and procedural step. Preserve retractions and contradictions. Add responsibility only when the competent process establishes it rather than inferring it from institutional confidence or suspicion notices.",
+      "how_to_use_uk": "Ведіть реєстр тверджень: окремий рядок для кожного джерела, версії та процесуального кроку. Зберігайте відмови від заяв і суперечності. Відповідальність додавайте лише тоді, коли її встановлює компетентна процедура, а не коли відомство впевнене у своїй версії чи комусь повідомлено про підозру.",
+      "limits_en": "The public record is still developing. Reuters did not establish the truth of the activist's allegations or the SBU's account of the alleged plot.",
+      "limits_uk": "Публічний запис ще формується. Reuters не встановило істинність ані тверджень активіста, ані версії СБУ щодо ймовірного плану.",
+      "tags": ["weekly", "ukraine", "accountability", "claim-ledger", "investigation-status"]
+    },
+    {
+      "rubric_key": "war-crimes",
+      "emoji": "⚖️",
+      "rubric_en": "War Crimes Verification",
+      "rubric_uk": "Верифікація воєнних злочинів",
+      "title_en": "T4P's live database makes its own denominator warning explicit: documented probable war crimes are a lower bound, not the full universe",
+      "title_uk": "Поточна база T4P сама формулює застереження про знаменник: задокументовані ймовірні воєнні злочини — нижня межа, а не повна сукупність",
+      "source_line_en": "Tribunal for Putin · live statistics checked 6 September 2026",
+      "source_line_uk": "Tribunal for Putin · поточну статистику перевірено 6 вересня 2026",
+      "what_happened_en": "T4P's live statistics describe one of Ukraine's largest public collections of probable war-crime incidents. On September 6 the site continued to publish regional and category counts while explicitly stating that the database is neither complete nor final and that the true total for some crimes is almost certainly higher than the documented count.",
+      "what_happened_uk": "Поточна статистика T4P описує один із найбільших публічних масивів даних про події ймовірних воєнних злочинів в Україні. 6 вересня сайт продовжував публікувати регіональні та категорійні підрахунки й прямо зазначав, що база не є повною чи остаточною, а реальна кількість деяких злочинів майже напевно перевищує задокументовану.",
+      "why_it_matters_en": "Documented incidents, unique events, victim counts, legal classifications and estimated prevalence have different denominators. A database can be exceptionally valuable without being a census.",
+      "why_it_matters_uk": "Задокументовані записи, унікальні події, кількість потерпілих, правові кваліфікації та оцінка поширеності мають різні знаменники. База може мати надзвичайну цінність, не будучи повним переписом.",
+      "how_to_use_en": "Attach snapshot date, geography, category definition, incident/victim unit and the database's completeness caveat to every exported statistic. Treat changes between snapshots as changes in the documented corpus unless independent evidence supports a claim about real-world incidence.",
+      "how_to_use_uk": "До кожної експортованої цифри додавайте дату зрізу, географію, визначення категорії, одиницю підрахунку — події чи потерпілі — та застереження бази щодо неповноти. Зміну між зрізами вважайте передусім зміною задокументованого масиву, якщо незалежні докази не дозволяють говорити про зміну реальної поширеності.",
+      "limits_en": "Coverage depends on access, reporting, documentation capacity, deduplication and legal coding. Categories can overlap, and live totals change as the corpus is updated.",
+      "limits_uk": "Охоплення залежить від доступу, повідомлень, спроможності документувати, усунення дублів і правової класифікації. Категорії можуть перетинатися, а поточні цифри змінюються разом з оновленням масиву.",
+      "tags": ["weekly", "war-crimes", "documentation", "denominator", "public-data"]
+    },
+    {
+      "rubric_key": "losses",
+      "emoji": "🕯️",
+      "rubric_en": "Losses, Captivity & Missing",
+      "rubric_uk": "Втрати, полон, зниклі",
+      "title_en": "Bring Kids Back UA highlights a case-state ladder: verified information and advocacy are not the same as locating or returning a child",
+      "title_uk": "Bring Kids Back UA показує драбину станів справи: перевірені дані й адвокація не тотожні встановленню місцеперебування чи поверненню дитини",
+      "source_line_en": "Verkhovna Rada of Ukraine · 3 September 2026",
+      "source_line_uk": "Верховна Рада України · 3 вересня 2026",
+      "what_happened_en": "The Verkhovna Rada and the presidential Bring Kids Back UA initiative launched expert briefings for MPs on deportation, forced transfer and other crimes against Ukrainian children. The stated goal is a permanent platform providing verified data, legal assessments, current analysis and tailored material for parliamentary work with international partners.",
+      "what_happened_uk": "Верховна Рада та президентська ініціатива Bring Kids Back UA розпочали експертні зустрічі для депутатів щодо депортації, примусового переміщення та інших злочинів проти українських дітей. Заявлена мета — постійна платформа з перевіреними даними, юридичними оцінками, актуальною аналітикою та підготовленими матеріалами для роботи парламенту з міжнародними партнерами.",
+      "why_it_matters_en": "A verified case record, advocacy action, international contact, located child, agreed return channel and completed return are distinct states. Mixing them can inflate outcome claims and can also expose sensitive child-level information.",
+      "why_it_matters_uk": "Перевірений запис справи, адвокаційна дія, міжнародний контакт, встановлення місцеперебування дитини, погоджений канал повернення та завершене повернення — різні стани. Їх змішування може завищувати показники результату й водночас розкривати чутливі дані на рівні конкретної дитини.",
+      "how_to_use_en": "Maintain child-level case states separately from aggregate advocacy products. Publish only the minimum information required for public interest, and keep location, family and negotiation details restricted unless safe and necessary.",
+      "how_to_use_uk": "Ведіть стани конкретних справ окремо від агрегованих адвокаційних матеріалів. Публікуйте лише мінімум інформації, потрібний у суспільних інтересах, а місцеперебування, дані родини та деталі переговорів обмежуйте, якщо їх розкриття не є безпечним і необхідним.",
+      "limits_en": "The parliamentary announcement describes an information and advocacy platform. It does not provide a new verified total of deported, located or returned children and should not be used to infer one.",
+      "limits_uk": "Парламентське повідомлення описує інформаційно-адвокаційну платформу. Воно не містить нової перевіреної загальної кількості депортованих, знайдених або повернутих дітей, і таку цифру з нього не слід виводити.",
+      "tags": ["weekly", "children", "return", "case-status", "data-minimisation"]
+    },
+    {
+      "rubric_key": "tradecraft",
+      "emoji": "🧰",
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "title_en": "Reuters' visual-verification workflow is strongest as a sequence of corroboration, not a detector stack",
+      "title_uk": "Методика візуальної верифікації Reuters найсильніша як послідовність взаємного підтвердження, а не набір детекторів",
+      "source_line_en": "Reuters · 28 August 2026",
+      "source_line_uk": "Reuters · 28 серпня 2026",
+      "what_happened_en": "Reuters described how its visual-verification team checks user-generated imagery by contacting or assessing creators, inspecting metadata, geolocating scenes, comparing weather and satellite data and using AI-detection tools among other signals. The workflow is designed to corroborate authenticity and context rather than outsource judgment to one automated score.",
+      "what_happened_uk": "Reuters описало роботу своєї команди з верифікації користувацьких зображень: перевірка автора, аналіз метаданих, геолокація сцени, порівняння погодних і супутникових даних та використання засобів виявлення ШІ серед інших ознак. Робочий процес побудований на взаємному підтвердженні автентичності й контексту, а не на передачі рішення одному автоматичному показнику.",
+      "why_it_matters_en": "Each method answers a different question. Creator contact speaks to source history; metadata to embedded claims; geolocation to place; satellite and weather to external consistency; detectors to possible anomalies. Agreement among independent layers is more informative than confidence from one layer.",
+      "why_it_matters_uk": "Кожен метод відповідає на інше питання. Перевірка автора стосується історії джерела; метадані — вбудованих тверджень; геолокація — місця; супутникові й погодні дані — зовнішньої узгодженості; детектори — можливих аномалій. Збіг незалежних шарів інформативніший за впевненість одного шару.",
+      "how_to_use_en": "Write the verification record as a matrix: claim, method, source, result, contradiction and residual uncertainty. Preserve negative results too. A failed reverse search or missing metadata is not evidence of fakery.",
+      "how_to_use_uk": "Оформлюйте перевірку як матрицю: твердження, метод, джерело, результат, суперечність і залишкова невизначеність. Зберігайте й негативні результати. Невдалий зворотний пошук або відсутність метаданих не є доказом підробки.",
+      "limits_en": "Verification quality depends on the available source material and independent reference data. AI detectors are imperfect, metadata can be stripped or altered, and source contact can itself be deceptive.",
+      "limits_uk": "Якість перевірки залежить від доступного вихідного матеріалу та незалежних довідкових даних. Детектори ШІ помиляються, метадані можна видалити чи змінити, а контакт із джерелом сам може бути оманливим.",
+      "tags": ["weekly", "tradecraft", "visual-verification", "corroboration", "provenance"]
+    },
+    {
+      "rubric_key": "toolbox",
+      "emoji": "🛠️",
+      "rubric_en": "Tools / Datasets",
+      "rubric_uk": "Інструменти й набори даних",
+      "title_en": "ChronoVerify and Metawarc point to the same architecture: keep source objects, integrity facts and analytical layers separate",
+      "title_uk": "ChronoVerify і Metawarc підводять до однієї архітектури: відокремлюйте вихідні об'єкти, факти цілісності та аналітичні шари",
+      "source_line_en": "ChronoVerify; ruarxive / Metawarc · official documentation checked 5–6 September 2026",
+      "source_line_uk": "ChronoVerify; ruarxive / Metawarc · офіційну документацію перевірено 5–6 вересня 2026",
+      "what_happened_en": "ChronoVerify separates reproducible file-integrity and provenance information from probabilistic metadata and pixel-forensics signals, explicitly treating anomaly verdicts as triage. Metawarc 2.0 indexes immutable WARC collections into a versioned DuckDB catalogue with bounded querying, metadata extraction, hashes and controlled exports instead of rewriting the source archives.",
+      "what_happened_uk": "ChronoVerify розділяє відтворювані дані про цілісність і походження файла та ймовірнісні сигнали з метаданих і піксельного аналізу, прямо визначаючи аномальні результати як первинну перевірку. Metawarc 2.0 індексує незмінні WARC-колекції у версійований каталог DuckDB із контрольованими запитами, вилученням метаданих, контрольними сумами та керованим експортом замість переписування вихідних архівів.",
+      "why_it_matters_en": "Together they model a defensible evidence stack: immutable source → hash/provenance layer → derived catalogue or forensic signals → human interpretation → publication derivative. Errors in one layer do not need to contaminate the others.",
+      "why_it_matters_uk": "Разом вони утворюють захищувану доказову модель: незмінне джерело → шар контрольних сум і походження → похідний каталог або криміналістичні сигнали → людська інтерпретація → публікаційна версія. Помилка одного шару не повинна заражати інші.",
+      "how_to_use_en": "Preserve evidentiary masters read-only, hash them before analysis, record tool and method versions, keep derived databases rebuildable, and store analyst conclusions separately from machine outputs. For sensitive material, assess processing and confidentiality before sending files to any external service.",
+      "how_to_use_uk": "Зберігайте доказові оригінали лише для читання, хешуйте їх до аналізу, фіксуйте версії інструментів і методик, робіть похідні бази відтворюваними, а висновки аналітика зберігайте окремо від машинних результатів. Для чутливих матеріалів оцінюйте спосіб обробки й конфіденційність до передавання файлів будь-якому зовнішньому сервісу.",
+      "limits_en": "A valid hash proves file identity, not truth. C2PA proves what a valid signer asserted, not that a depicted event occurred. A WARC catalogue improves analysis but inherits the provenance limits of the original capture.",
+      "limits_uk": "Коректна контрольна сума доводить тотожність файла, а не істинність його змісту. C2PA підтверджує те, що заявив валідний підписант, а не факт зображеної події. Каталог WARC покращує аналіз, але успадковує обмеження походження початкового збереження.",
+      "tags": ["weekly", "tools", "provenance", "warc", "evidence-architecture"]
+    },
+    {
+      "rubric_key": "risk",
+      "emoji": "⚠️",
+      "rubric_en": "Risk Watch",
+      "rubric_uk": "Межі й ризики",
+      "title_en": "The observable universe is not the physical universe: AIS traffic makes the coverage problem impossible to ignore",
+      "title_uk": "Спостережувана сукупність не дорівнює фізичній: дані AIS роблять проблему покриття неможливою для ігнорування",
+      "source_line_en": "Reuters / Kpler · 4 September 2026",
+      "source_line_uk": "Reuters / Kpler · 4 вересня 2026",
+      "what_happened_en": "Reuters reported Kpler data showing four commodity vessels transited the Strait of Hormuz on Thursday compared with a 10-day average of 15. Reuters explicitly noted that the count excluded ships operating with Automatic Identification System transponders switched off.",
+      "what_happened_uk": "Reuters повідомило, що за даними Kpler у четвер Ормузькою протокою пройшли чотири товарні судна проти середнього показника 15 за попередні десять днів. Reuters прямо зазначило, що до підрахунку не входили судна з вимкненими транспондерами Автоматичної ідентифікаційної системи.",
+      "why_it_matters_en": "The lesson generalises far beyond maritime OSINT. Platform search results, satellite revisit windows, mobile-phone traces, sanctions databases and casualty datasets all observe subsets shaped by coverage, behaviour and collection rules.",
+      "why_it_matters_uk": "Цей урок значно ширший за морську розвідку з відкритих джерел. Пошук на платформах, періодичність супутникового знімання, сліди мобільних телефонів, санкційні бази та дані про втрати завжди бачать лише підмножини, сформовані покриттям, поведінкою та правилами збору.",
+      "how_to_use_en": "For every quantitative OSINT claim, write down the observation mechanism, inclusion rules, blind spots, comparison baseline and denominator. Phrase conclusions as claims about the observed system unless you have a defensible model for the unseen portion.",
+      "how_to_use_uk": "Для кожного кількісного висновку з відкритих джерел записуйте механізм спостереження, правила включення, сліпі зони, базу порівняння та знаменник. Формулюйте висновок про спостережувану систему, якщо у вас немає обґрунтованої моделі невидимої частини.",
+      "limits_en": "The Kpler count itself is provider-dependent and excludes AIS-dark vessels. It is a measurement-boundary example, not a complete account of all physical movement through Hormuz.",
+      "limits_uk": "Сам підрахунок Kpler залежить від покриття постачальника й не охоплює судна з вимкненим AIS. Це приклад меж вимірювання, а не повний опис усіх фізичних переходів через Ормузьку протоку.",
+      "tags": ["weekly", "risk-watch", "coverage", "ais", "denominator"]
+    }
+  ],
+  "compact_sections": [
+    {
+      "rubric_key": "signal",
+      "emoji": "📌",
+      "title": "Evidence model",
+      "short_title": "Version states; do not overwrite them",
+      "points": [
+        "Observation → attribution → legal responsibility are separate upgrades.",
+        "Preserve the timestamp and source that justified each transition.",
+        "A later confirmation does not erase the uncertainty of the earlier record."
+      ]
+    },
+    {
+      "rubric_key": "tradecraft",
+      "emoji": "🧪",
+      "title": "Weekly workflow",
+      "short_title": "Record the denominator before the number",
+      "points": [
+        "Define what is counted: incidents, victims, vessels, records or unique entities.",
+        "Store coverage and exclusion rules beside every quantitative claim.",
+        "Treat live-database growth as corpus growth unless real-world incidence is independently established."
+      ]
+    },
+    {
+      "rubric_key": "risk",
+      "emoji": "🛡️",
+      "title": "Safety line",
+      "short_title": "Keep the evidentiary master separate",
+      "points": [
+        "Use read-only originals and hashed masters before analysis or redaction.",
+        "Publish derivatives with only the minimum personal or operational detail required.",
+        "External tool privacy claims do not remove the need for a confidentiality assessment."
+      ]
+    }
+  ],
+  "reading_list": [
+    {
+      "title": "Germany blames Russia for the attempted Leipzig/Halle airport drone attack",
+      "href": "https://apnews.com/article/fa3deebe59f81baadc821c743fb26814",
+      "note": "The week's clearest transition from pending attribution to formal state attribution."
+    },
+    {
+      "title": "Zelenskyy says investigation underway after SBU-HUR clash",
+      "href": "https://www.reuters.com/world/ukraines-zelenskiy-says-investigation-underway-after-clash-between-two-security-2026-09-03/",
+      "note": "A strong example of why allegations, suspicion notices and final responsibility must remain distinct."
+    },
+    {
+      "title": "T4P live war-crimes statistics",
+      "href": "https://t4pua.org/en/stat",
+      "note": "A public database that explicitly states its own completeness limits and therefore models denominator discipline."
+    },
+    {
+      "title": "Verkhovna Rada and Bring Kids Back UA establish a parliamentary advocacy platform",
+      "href": "https://www.rada.gov.ua/en/news/News/top_news/275102.html",
+      "note": "Useful for separating verified case information, advocacy and actual return outcomes."
+    },
+    {
+      "title": "Reuters explains its visual-verification workflow",
+      "href": "https://www.reuters.com/business/media-telecom/what-is-visual-verification-why-does-reuters-practice-it-2026-08-28/",
+      "note": "Creator checks, metadata, geolocation, weather, satellite data and detectors used as corroborating layers."
+    },
+    {
+      "title": "ChronoVerify method and limits",
+      "href": "https://chronoverify.com/method",
+      "note": "Explicit separation of reproducible integrity facts from probabilistic image-forensics verdicts."
+    },
+    {
+      "title": "Metawarc 2.0",
+      "href": "https://github.com/ruarxive/metawarc",
+      "note": "Versioned WARC indexing that keeps immutable source archives separate from derived query and analysis layers."
+    },
+    {
+      "title": "Hormuz traffic remains below recent average, Kpler data shows",
+      "href": "https://www.reuters.com/world/middle-east/gulf-shipping-traffic-via-hormuz-keeps-below-10-day-average-data-shows-2026-09-04/",
+      "note": "A concise reminder that AIS-visible traffic is not a census of all physical traffic."
+    }
+  ],
+  "editorial_notes_internal": [
+    "EDITORIAL NOTES — INTERNAL",
+    "Week covered: 31 August–6 September 2026. Daily Signal issues #095–#099 and Saturday Tool Radar #100 were reviewed.",
+    "Weekly is editorial synthesis, not mechanical merge. Seven sections follow the canonical weekly order and use cross-day state transitions where useful.",
+    "Signal of the Week: Leipzig. It is the strongest genuine state transition in the corpus: pending German attribution on 30 August, formal attribution on 1 September, with judicial responsibility still separate.",
+    "Ukraine Lens: SBU-HUR selected because it directly serves the project's accountability focus and demands careful separation of competing accounts from procedural status.",
+    "War Crimes Verification: T4P selected over a strike card because the database's explicit lower-bound caveat provides a reusable methodology lesson. Live page rechecked on 6 September 2026.",
+    "Losses/Captivity/Missing: Bring Kids Back UA selected as the strongest case-state example available this week. No child-level identities, locations or negotiation details are reproduced.",
+    "Tradecraft: Reuters visual-verification explainer rechecked and used as the week’s practical corroboration model.",
+    "Tools/Datasets: ChronoVerify and Metawarc were retained from Saturday because both independently support layered evidence architecture. Original documentation was checked rather than relying on tool directories.",
+    "Risk Watch: Hormuz AIS selected for the generalisable observation-boundary lesson. No live vessel identities or locations are included.",
+    "Source hierarchy: primary official sources for T4P and Verkhovna Rada; original project documentation for ChronoVerify and Metawarc; Reuters/AP for reported events and methodology.",
+    "Safety: no live targeting, sensitive military coordinates, private-person contact data, child-level case details, credentials, unauthorised-access guidance or stolen-data workflows.",
+    "Language audit: Ukrainian text uses editorial adaptation and avoids unnecessary English jargon; Latin-script names are retained only where they are proper names or established acronyms.",
+    "Weekly deep-dive candidates: claim-ledger design for contested institutional accounts; database denominator discipline; evidence-stack architecture from immutable master to publication derivative.",
+    "Do not publish or commit this weekly issue without a separate explicit user request."
+  ]
+}
