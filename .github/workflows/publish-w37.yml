@@ -1,0 +1,51 @@
+name: Publish Weekly W37 payload
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tmp/w37/**'
+      - '.github/workflows/publish-w37.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Rebuild and verify W37
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat tmp/w37/part*.txt > /tmp/w37.b64
+          base64 -d /tmp/w37.b64 > weekly/open-source-signal-weekly-2026-W37.json
+          python - <<'PY'
+          import hashlib, json, pathlib
+          p = pathlib.Path('weekly/open-source-signal-weekly-2026-W37.json')
+          b = p.read_bytes()
+          got = hashlib.sha256(b).hexdigest()
+          want = '81ed232b4587a1f6ac36226dc9f20c4f7ebe7f726d53fd73300a549429fedeb5'
+          assert got == want, (got, want)
+          d = json.loads(b.decode('utf-8'))
+          assert d['issue_number'] == 'W37'
+          assert d['date_iso'] == '2026-09-13'
+          assert [x['rubric_key'] for x in d['items']] == ['signal','ukraine','war-crimes','losses','tradecraft','toolbox','risk']
+          print('W37 SHA256/UTF8/JSON/schema OK:', got)
+          PY
+
+      - name: Commit exact W37 and cleanup transport
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf tmp/w37
+          rm -f .github/workflows/publish-w37.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A tmp/w37 .github/workflows/publish-w37.yml weekly/open-source-signal-weekly-2026-W37.json
+          git commit -m 'Publish Weekly W37'
+          git push
