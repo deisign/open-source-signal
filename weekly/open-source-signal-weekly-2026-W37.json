@@ -1,0 +1,301 @@
+{
+  "issue_number": "W37",
+  "slug": "open-source-signal-weekly-2026-W37",
+  "output_name": "open-source-signal-weekly-2026-W37.html",
+  "date_iso": "2026-09-13",
+  "week_label_en": "7–13 September 2026",
+  "week_label_uk": "7–13 вересня 2026",
+  "title_en": "Open Source Signal Weekly",
+  "title_uk": "Тижневий сигнал відкритих джерел",
+  "subtitle_en": "Sunday editorial synthesis for Ukrainian accountability OSINT.",
+  "subtitle_uk": "Недільний редакційний синтез для української роботи з відкритими джерелами й притягнення до відповідальності.",
+  "dek_en": "Week 37 was about state transitions that looked similar on the surface but required different evidence. Diplomacy moved from exploratory contact toward preparations for possible October talks without yet becoming resumed negotiations. Ukraine's captivity system exposed a richer ladder than a binary confirmed/unconfirmed flag. Civilian-harm reporting showed why corrections belong in the evidence record. Amnesty's research separated documented recruitment practice from legal assessment and criminal liability. Supply-chain datasets and oil-output estimates showed that provenance includes methodology as well as source. Sanctions policy supplied the final warning: coordination, proposal, legal adoption, designation and enforcement are not interchangeable.",
+  "dek_uk": "Тиждень 37 був про переходи між станами, які зовні можуть здаватися однаковими, але потребують різних доказів. Дипломатія пройшла від відновлених контактів до підготовки можливих жовтневих переговорів, але самі переговори ще не відновилися. Українська система роботи з полоненими показала складнішу драбину, ніж прапорець «підтверджено/не підтверджено». Дані про шкоду цивільним нагадали, що виправлення треба зберігати в доказовій історії. Дослідження Amnesty відокремило задокументовану практику вербування від правової оцінки та кримінальної відповідальності. Набори про ланцюги постачання й оцінки нафтовидобутку показали, що походження даних включає і методику. Санкційна політика дала останнє застереження: координація, пропозиція, юридичне ухвалення, включення до списку та правозастосування не є взаємозамінними.",
+  "editorial_frame": {
+    "what_this_is": "A Sunday weekly magazine that develops the strongest signals from the week's Daily Signal issues and weekend source checks into seven editorial sections with practical evidence models, publication limits and a reading list.",
+    "what_this_is_not": "A mechanical merge of daily cards, a substitute Saturday Tool Radar, a breaking-news feed, a live-targeting board, a tool-generated verdict, or a replacement for forensic or judicial findings."
+  },
+  "rubric_map": [
+    "📡 Signal of the Week / Головний сигнал тижня",
+    "🇺🇦 Ukraine Lens / Українська оптика",
+    "⚖️ War Crimes Verification / Верифікація воєнних злочинів",
+    "🕯️ Losses, Captivity & Missing / Втрати, полон, зниклі",
+    "🧰 Tradecraft / Методика",
+    "🛠️ Tools / Datasets / Інструменти й набори даних",
+    "⚠️ Risk Watch / Межі й ризики"
+  ],
+  "editorial_note_en": "The practical lesson of Week 37 is that evidence quality is not just a confidence score. It is a state machine. A claim becomes useful when source class, method, date, procedural status and upgrade rule are explicit. Negotiations can move from contact to roadmap to meeting; a missing-person case from family report to witness lead to interagency verification; a number can be corrected; a component can move from observed marking to manufacturer attribution to sanctions status; a policy idea can move from discussion to law and enforcement. None of those transitions should be backdated. Preserve the path.",
+  "editorial_note_uk": "Практичний урок 37-го тижня: якість доказу — це не просто рівень упевненості. Це машина станів. Твердження стає придатним до роботи, коли явно зафіксовані тип джерела, метод, дата, процесуальний стан і правило переходу. Переговори можуть рухатися від контакту до дорожньої карти й зустрічі; справа про зниклу людину — від повідомлення родини до свідчення й міжвідомчої перевірки; число може бути виправлене; компонент — перейти від маркування до атрибуції виробника й санкційного статусу; політична ідея — від обговорення до закону та правозастосування. Не датуйте переходи заднім числом. Зберігайте шлях.",
+  "items": [
+    {
+      "rubric_key": "signal",
+      "emoji": "📡",
+      "rubric_en": "Signal of the Week",
+      "rubric_uk": "Головний сигнал тижня",
+      "title_en": "The peace-talk track advanced from a reopened channel to October preparations — but it still has not become resumed negotiations",
+      "title_uk": "Переговорний трек пройшов від відновленого каналу до підготовки жовтневого раунду — але самі переговори ще не відновилися",
+      "source_line_en": "President of Ukraine · 7 September; Reuters · 9 and 12 September 2026",
+      "source_line_uk": "Президент України · 7 вересня; Reuters · 9 та 12 вересня 2026",
+      "what_happened_en": "The week began with President Volodymyr Zelenskyy saying U.S. envoys Steve Witkoff and Jared Kushner had discussed restarting negotiations after contacts in Moscow. By September 9, the Kremlin said it wanted U.S.-mediated talks to resume but no direct Russia-Ukraine negotiations had restarted. On September 12, Kyrylo Budanov said Kyiv was preparing for possible trilateral talks with Russia and the United States in October, while Moscow still said it was too early to confirm details.",
+      "what_happened_uk": "На початку тижня Президент Володимир Зеленський повідомив, що американські представники Стів Віткофф і Джаред Кушнер обговорювали можливість відновлення переговорів після контактів у Москві. До 9 вересня Кремль заявив про бажання відновити переговори за посередництва США, однак прямі переговори ще не почалися. 12 вересня Кирило Буданов заявив, що Київ готується до можливих тристоронніх переговорів із Росією та США у жовтні, тоді як Москва ще не підтвердила деталі.",
+      "why_it_matters_en": "Contact, willingness, roadmap work, preparation, agreed participants, scheduled meeting, session, negotiated text and settlement are different diplomatic states. The sequence progressed materially this week, but not to the point where 'talks resumed' is accurate.",
+      "why_it_matters_uk": "Контакт, заявлена готовність, робота над дорожньою картою, підготовка, погоджені учасники, призначена зустріч, засідання, узгоджений текст і угода — різні дипломатичні стани. Послідовність просунулася, але ще не до рівня, коли коректно писати «переговори відновилися».",
+      "how_to_use_en": "Maintain one dated record per transition and require an explicit trigger for each upgrade: confirmed participants, date and format, evidence that a session occurred, and a separate record for any negotiated text.",
+      "how_to_use_uk": "Зберігайте окремий датований запис для кожного переходу та вимагайте явного тригера: підтверджених учасників, дати й формату, доказу фактичного засідання та окремого запису для узгодженого тексту.",
+      "limits_en": "As of the weekend, no new trilateral session had taken place and Moscow had not confirmed a date or format.",
+      "limits_uk": "Станом на вихідні нової тристоронньої зустрічі не відбулося, а Москва не підтвердила дату чи формат.",
+      "tags": [
+        "weekly",
+        "diplomacy",
+        "negotiation-status",
+        "state-machine",
+        "ukraine"
+      ]
+    },
+    {
+      "rubric_key": "ukraine",
+      "emoji": "🇺🇦",
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "title_en": "Russia's pressure on Ukraine increasingly appears through infrastructure and daily-life disruption — impact can be measured more reliably than intent",
+      "title_uk": "Російський тиск на Україну дедалі частіше проявляється через інфраструктуру та повсякденне життя — наслідки виміряти надійніше, ніж намір",
+      "source_line_en": "Reuters · 5, 11 and 12 September 2026",
+      "source_line_uk": "Reuters · 5, 11 та 12 вересня 2026",
+      "what_happened_en": "Reuters documented repeated attacks affecting Kyiv, petrol stations, residential areas, transport, power and water services, and broader economic infrastructure. By September 12, Ukrainian officials were describing a wider economic effect as strikes increasingly reached beyond the front.",
+      "what_happened_uk": "Reuters документувало повторні атаки, що впливали на Київ, автозаправні станції, житлові квартали, транспорт, електро- й водопостачання та ширшу економічну інфраструктуру. До 12 вересня українські посадовці вже описували ширший економічний ефект на тлі посилення ударів поза лінією фронту.",
+      "why_it_matters_en": "Facility damage, service interruption, civilian harm, recovery time and downstream economic effects can often be documented directly. Strategic intent is a different claim and should remain attributed unless independently demonstrated.",
+      "why_it_matters_uk": "Пошкодження об'єкта, перебій послуги, шкода цивільним, час відновлення та подальший економічний ефект часто можна документувати безпосередньо. Стратегічний намір — інше твердження.",
+      "how_to_use_en": "Build an impact chain: incident → facility or service → immediate damage → outage or capacity change → restoration → downstream effect. Put purpose or strategy in a separate attributed field.",
+      "how_to_use_uk": "Будуйте ланцюг: інцидент → об'єкт або послуга → безпосередня шкода → перебій чи зміна потужності → відновлення → подальший ефект. Мету чи стратегію зберігайте окремим атрибутованим полем.",
+      "limits_en": "Narrative reports are not complete outage or damage databases, and national economic estimates can mix direct damage with modelling assumptions.",
+      "limits_uk": "Репортажі не є повними базами відключень чи пошкоджень, а загальнонаціональні економічні оцінки можуть поєднувати пряму шкоду з модельними припущеннями.",
+      "tags": [
+        "weekly",
+        "ukraine-lens",
+        "infrastructure",
+        "civilian-impact",
+        "intent-vs-effect"
+      ]
+    },
+    {
+      "rubric_key": "war-crimes",
+      "emoji": "⚖️",
+      "rubric_en": "War Crimes Verification",
+      "rubric_uk": "Верифікація воєнних злочинів",
+      "title_en": "Amnesty's foreign-recruitment research shows how to preserve the gap between documented conduct, legal characterisation and criminal liability",
+      "title_uk": "Дослідження Amnesty про іноземних рекрутів показує межу між задокументованою поведінкою, правовою кваліфікацією та кримінальною відповідальністю",
+      "source_line_en": "Amnesty International · 10 September 2026",
+      "source_line_uk": "Amnesty International · 10 вересня 2026",
+      "what_happened_en": "Amnesty documented deceptive, coercive and exploitative recruitment of foreign nationals into Russia's armed forces using interviews from multiple countries, including some conducted in Ukrainian POW camps, plus relatives, lawyers, activists and journalists. Amnesty assessed that many documented cases meet the Palermo Protocol definition of human trafficking.",
+      "what_happened_uk": "Amnesty задокументувала обманні, примусові та експлуатаційні практики вербування іноземців до російських збройних сил на основі інтерв'ю з людьми з кількох країн, зокрема частини інтерв'ю в українських таборах для військовополонених, а також розмов із родичами, юристами, активістами й журналістами. Amnesty оцінила, що багато випадків відповідають визначенню торгівлі людьми за Палермським протоколом.",
+      "why_it_matters_en": "Testimony, corroborated recruitment practice, organisational pattern, legal characterisation and individual criminal responsibility are different evidentiary layers.",
+      "why_it_matters_uk": "Свідчення, підтверджена практика вербування, організаційна модель, правова кваліфікація та індивідуальна кримінальна відповідальність — різні доказові шари.",
+      "how_to_use_en": "Record testimony context, recruitment mechanism, corroboration, the organisation making the legal assessment and the exact legal category. Keep named-person culpability out unless competent proceedings establish it.",
+      "how_to_use_uk": "Фіксуйте контекст свідчення, механізм вербування, підтвердження, організацію, що робить правову оцінку, та точну правову категорію. Не записуйте індивідуальну вину без компетентної процедури.",
+      "limits_en": "Amnesty's assessment is not a criminal conviction, and access restrictions inside Russia constrain the investigation.",
+      "limits_uk": "Оцінка Amnesty не є кримінальним вироком, а обмеження доступу всередині Росії звужують можливості розслідування.",
+      "tags": [
+        "weekly",
+        "war-crimes",
+        "human-trafficking",
+        "legal-assessment",
+        "foreign-recruitment"
+      ]
+    },
+    {
+      "rubric_key": "losses",
+      "emoji": "🕯️",
+      "rubric_en": "Losses, Captivity & Missing",
+      "rubric_uk": "Втрати, полон, зниклі",
+      "title_en": "Ukraine's captivity system is not binary: 'other sources', ICRC confirmation and off-register search belong to one case-state ladder",
+      "title_uk": "Українська система обліку полону не бінарна: «інші джерела», підтвердження МКЧХ і пошук поза офіційним обліком утворюють одну драбину станів",
+      "source_line_en": "ICRC · end-August snapshot; Coordination Headquarters · 8 and 10 September 2026",
+      "source_line_uk": "МКЧХ · зріз на кінець серпня; Координаційний штаб · 8 та 10 вересня 2026",
+      "what_happened_en": "The ICRC's end-August tracing snapshot reported 274,000 people still missing in its Russia-Ukraine workload. Ukraine's Coordination Headquarters clarified that 'Captivity (other sources)' is a verified Ukrainian status used when captivity is established from released defenders, intelligence or identifiable media but is not officially confirmed through the ICRC channel. A later meeting described witness debriefing, photo collections and interagency reconstruction for people who may be held outside official accounting systems.",
+      "what_happened_uk": "У зрізі МКЧХ на кінець серпня було зазначено 274 тисячі людей, які залишаються зниклими в його масиві. Координаційний штаб пояснив, що «Полон (інші джерела)» — це перевірений Україною статус для випадків, коли полон встановлено за свідченнями звільнених, розвідданими або придатними до ідентифікації матеріалами, але не підтверджено через канал МКЧХ. Пізніша зустріч описала опитування свідків, фототеки та міжвідомчу реконструкцію для людей, яких можуть утримувати поза офіційним обліком.",
+      "why_it_matters_en": "Family report, witness lead, visual identification, intelligence lead, Ukrainian interagency verification, ICRC-channel confirmation, release and repatriation each answer a different question.",
+      "why_it_matters_uk": "Повідомлення родини, свідчення, візуальна ідентифікація, розвідувальна зачіпка, українська міжвідомча перевірка, підтвердження через МКЧХ, звільнення та репатріація відповідають на різні питання.",
+      "how_to_use_en": "Model cases as append-only transitions with source class, verifier, date and upgrade trigger. Keep the ICRC denominator separate from national registries and confirmed captivity counts.",
+      "how_to_use_uk": "Моделюйте справи як переходи, що додаються, а не переписуються: тип джерела, орган перевірки, дата й тригер зміни статусу. Не змішуйте знаменник МКЧХ із національними реєстрами та кількістю підтверджених полонених.",
+      "limits_en": "Public pages explain institutional categories and workflow, not individual-case evidence. The 274,000 figure is a tracing-workload figure, not a national census.",
+      "limits_uk": "Публічні сторінки пояснюють інституційні категорії й процес, а не доказову базу конкретних справ. Показник 274 тисячі — цифра розшукового масиву, а не загальнонаціональний перепис.",
+      "tags": [
+        "weekly",
+        "pow",
+        "missing-persons",
+        "case-state",
+        "provenance"
+      ]
+    },
+    {
+      "rubric_key": "tradecraft",
+      "emoji": "🧰",
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "title_en": "Corrections and competing estimates are not noise: preserve them as evidence about how a number was produced",
+      "title_uk": "Виправлення й конкуруючі оцінки — не шум: зберігайте їх як докази того, як саме було отримано число",
+      "source_line_en": "Reuters · Sumy correction, 9 September; IEA/OPEC estimates, 11 September 2026",
+      "source_line_uk": "Reuters · виправлення даних у Сумах, 9 вересня; оцінки МЕА/OPEC, 11 вересня 2026",
+      "what_happened_en": "After the Sumy shopping-centre strike, the regional governor initially reported three deaths and later corrected the toll to two. Later, Reuters reported materially different August Russian crude-output estimates from the IEA and OPEC, produced under different methodologies.",
+      "what_happened_uk": "Після удару по торговельному центру в Сумах голова області спочатку повідомив про трьох загиблих, а згодом виправив цифру до двох. Пізніше Reuters навело помітно різні оцінки серпневого російського нафтовидобутку від МЕА та OPEC, отримані за різними методиками.",
+      "why_it_matters_en": "Corrections reveal claim history; competing estimates reveal the measurement model. Silently replacing a value or averaging unlike series erases evidence.",
+      "why_it_matters_uk": "Виправлення показує історію твердження; різні оцінки показують модель вимірювання. Непомітна заміна значення або усереднення несумісних рядів стирає докази.",
+      "how_to_use_en": "Store value, unit, scope, source, timestamp, method, revision relation and confidence. Plot incompatible measurement series separately unless a documented crosswalk exists.",
+      "how_to_use_uk": "Зберігайте значення, одиницю, охоплення, джерело, час, метод, зв'язок із попередньою версією та рівень упевненості. Несумісні ряди показуйте окремо, якщо немає задокументованого способу зіставлення.",
+      "limits_en": "Not every correction indicates bad reporting, and disagreement between models is not necessarily an error.",
+      "limits_uk": "Не кожне виправлення означає погану роботу, а розбіжність між моделями не обов'язково є помилкою.",
+      "tags": [
+        "weekly",
+        "tradecraft",
+        "versioning",
+        "measurement",
+        "corrections"
+      ]
+    },
+    {
+      "rubric_key": "toolbox",
+      "emoji": "🛠️",
+      "rubric_en": "Tools / Datasets",
+      "rubric_uk": "Інструменти й набори даних",
+      "title_en": "War & Sanctions and Ukraine's versioned missing-person data show two useful dataset patterns — if attribution and privacy remain visible",
+      "title_uk": "War & Sanctions і версійований український набір про зниклих показують дві корисні моделі даних — якщо не приховувати атрибуцію та ризики приватності",
+      "source_line_en": "Data.gov.ua · snapshot updated 6 September; Defence Intelligence / War & Sanctions · 10 September 2026",
+      "source_line_uk": "Data.gov.ua · зріз оновлено 6 вересня; ГУР / War & Sanctions · 10 вересня 2026",
+      "what_happened_en": "Ukraine's open-data portal exposes dated JSON snapshots and file hashes for a missing-person resource. Later, Defence Intelligence published an RM-48U page with a 3D model, 114 identified electronic components and a production-network map covering 63 enterprises.",
+      "what_happened_uk": "Український портал відкритих даних публікує датовані JSON-зрізи та контрольні суми файла для ресурсу про зниклих безвісти. Пізніше ГУР опублікувало сторінку РМ-48У з 3D-моделлю, 114 ідентифікованими електронними компонентами та картою виробничої мережі з 63 підприємствами.",
+      "why_it_matters_en": "Snapshot time, file hash, source authority, component marking and claimed producer are provenance fields. Public availability does not erase privacy risk or convert intelligence attribution into legal fact.",
+      "why_it_matters_uk": "Час зрізу, контрольна сума файла, орган-джерело, маркування компонента та заявлений виробник — поля походження. Публічна доступність не скасовує ризиків приватності й не перетворює розвідувальну атрибуцію на юридичний факт.",
+      "how_to_use_en": "Archive URL, timestamp, hash, schema and local transform hash before analysis. Corroborate corporate and sanctions status independently; publish aggregates for person-level datasets when identity is unnecessary.",
+      "how_to_use_uk": "Перед аналізом архівуйте адресу, час, контрольну суму, схему та контрольну суму локального перетворення. Корпоративний і санкційний статус перевіряйте незалежно; для наборів про людей публікуйте агрегати, якщо особистість не потрібна.",
+      "limits_en": "The missing-person resource is not automatically a complete national denominator. War & Sanctions inclusion does not itself establish sanctions status, intent or criminal responsibility.",
+      "limits_uk": "Ресурс про зниклих не є автоматично повним загальнонаціональним знаменником. Включення до War & Sanctions саме по собі не встановлює санкційний статус, умисел чи кримінальну відповідальність.",
+      "tags": [
+        "weekly",
+        "datasets",
+        "provenance",
+        "war-sanctions",
+        "privacy"
+      ]
+    },
+    {
+      "rubric_key": "risk",
+      "emoji": "⚠️",
+      "rubric_en": "Risk Watch",
+      "rubric_uk": "Межі й ризики",
+      "title_en": "Policy pipelines create false positives when discussion, authorisation, designation and enforcement collapse into one 'active' flag",
+      "title_uk": "Політичні процеси створюють хибні спрацювання, коли обговорення, дозвіл, включення до списку й правозастосування стискають до одного прапорця «чинне»",
+      "source_line_en": "Kyiv Sanctions Forum · 10–11 September; RD4U · 8 September; U.S. sanctions bill reporting · 11 September 2026",
+      "source_line_uk": "Київський санкційний форум · 10–11 вересня; RD4U · 8 вересня; повідомлення про санкційний законопроєкт США · 11 вересня 2026",
+      "what_happened_en": "Kyiv hosted sanctions coordinators from 22 countries and the EU to exchange proposals on energy, components, finance and maritime restrictions. RD4U opened its final four individual claim categories without creating compensation awards. In the United States, the House was preparing to consider a Russia sanctions bill that had already passed the Senate.",
+      "what_happened_uk": "У Києві зібралися санкційні координатори 22 країн та ЄС для обміну пропозиціями щодо енергетики, компонентів, фінансів і морських обмежень. RD4U відкрив останні чотири категорії заяв для фізичних осіб без автоматичного присудження компенсацій. У США Палата представників готувалася розглядати законопроєкт про санкції проти Росії, який уже пройшов Сенат.",
+      "why_it_matters_en": "A proposal is not law, an open claim category is not an award, and a coordination forum is not a designation list. These small prose errors become severe false positives when automated.",
+      "why_it_matters_uk": "Пропозиція не є законом, відкрита категорія заяв не є присудженою компенсацією, а координаційний форум не є санкційним списком. У автоматизації такі помилки стають системними.",
+      "how_to_use_en": "Use explicit status enums: discussion, proposal, approved, enacted, effective, designated, enforced, expired or superseded. Populate sanctions tables only from operative legal instruments.",
+      "how_to_use_uk": "Використовуйте явні статуси: обговорення, пропозиція, схвалено, ухвалено, набрало чинності, включено до списку, застосовано, завершено або замінено. Санкційні таблиці наповнюйте лише з чинних правових актів.",
+      "limits_en": "Different jurisdictions use different procedures and terminology; even 'approved' can refer to different legal stages.",
+      "limits_uk": "Різні юрисдикції мають різні процедури й термінологію; навіть слово «схвалено» може означати різні правові стадії.",
+      "tags": [
+        "weekly",
+        "risk-watch",
+        "sanctions",
+        "legal-status",
+        "policy-pipeline"
+      ]
+    }
+  ],
+  "compact_sections": [
+    {
+      "rubric_key": "evidence-model",
+      "emoji": "🧭",
+      "title": "Evidence model / Модель доказів",
+      "short_title": "State machine, not confidence flag",
+      "points": [
+        "Define allowed states before collecting cases.",
+        "Attach source class, method, date and upgrade trigger to every transition.",
+        "Never backdate a later confirmation into an earlier record."
+      ]
+    },
+    {
+      "rubric_key": "weekly-workflow",
+      "emoji": "🗂️",
+      "title": "Weekly workflow / Робочий процес",
+      "short_title": "Keep correction and method history",
+      "points": [
+        "Preserve superseded values instead of silently replacing them.",
+        "Keep incompatible measurement series separate.",
+        "Archive source snapshots and hashes before local transformation."
+      ]
+    },
+    {
+      "rubric_key": "safety-line",
+      "emoji": "🛡️",
+      "title": "Safety line / Межа безпеки",
+      "short_title": "Public data does not mean unrestricted republication",
+      "points": [
+        "Minimise person-level identifiers in missing-person and captivity work.",
+        "Do not expose witness, family, biometric or detention-location leads.",
+        "Do not convert intelligence inclusion into personal culpability."
+      ]
+    }
+  ],
+  "reading_list": [
+    {
+      "href": "https://www.president.gov.ua/en/news/vidnovlennya-peregovornogo-procesu-ye-vazhlivim-i-ukrayina-v-106273",
+      "title": "President of Ukraine — restarting the negotiation process",
+      "note": "Official Ukrainian readout from 7 September."
+    },
+    {
+      "href": "https://www.reuters.com/world/kyiv-preparing-talks-resume-october-senior-ukrainian-official-says-2026-09-12/",
+      "title": "Reuters — Kyiv preparing for possible October talks",
+      "note": "Weekend transition from willingness to preparation, without a confirmed session."
+    },
+    {
+      "href": "https://www.amnesty.org/en/latest/news/2026/09/russia-recruitment-foreign-nationals-human-trafficking/",
+      "title": "Amnesty International — foreign recruitment and trafficking assessment",
+      "note": "Primary human-rights research and legal assessment."
+    },
+    {
+      "href": "https://koordshtab.gov.ua/posts/shcho-oznachaye-status-%C2%ABpolon-inshi-dzherela%C2%BB-v-informatsiyniy-systemi-koordynatsiynoho-shtabu-3724",
+      "title": "Coordination Headquarters — what 'Captivity (other sources)' means",
+      "note": "Primary explanation of captivity-status provenance."
+    },
+    {
+      "href": "https://koordshtab.gov.ua/posts/dmytro-usov-zustrivsya-z-rodynamy-oborontsiv-iz-riznykh-bryhad-3731",
+      "title": "Coordination Headquarters — searching outside official accounting",
+      "note": "Witness debriefing and identification workflow."
+    },
+    {
+      "href": "https://www.icrc.org/en/document/central-tracing-agency-missing-persons-ukraine",
+      "title": "ICRC Central Tracing Agency — missing-persons snapshot",
+      "note": "Tracing-workload figures and family-contact statistics."
+    },
+    {
+      "href": "https://gur.gov.ua/en/content/warsanctions-hur-mo-rozkryvaie-budovu-komponentnu-bazu-ta-pidpryiemstva-kooperatsii-z-vyrobnytstva-udarnykh-raket-rm48u",
+      "title": "Defence Intelligence / War & Sanctions — RM-48U component map",
+      "note": "Intelligence-led supply-chain dataset and 3D model."
+    },
+    {
+      "href": "https://www.reuters.com/business/energy/iea-further-cuts-russian-oil-output-forecasts-ukrainian-attacks-2026-09-11/",
+      "title": "Reuters — IEA cuts Russian oil-output forecast",
+      "note": "Useful for comparing measurement sources and revisions."
+    },
+    {
+      "href": "https://www.president.gov.ua/en/news/predstavniki-22-krayin-ta-yevrosoyuzu-obgovoryuyut-sankciyi-106305",
+      "title": "Office of the President — Kyiv sanctions forum",
+      "note": "Policy coordination, not an operative sanctions package."
+    }
+  ],
+  "editorial_notes_internal": [
+    "EDITORIAL NOTES — INTERNAL. Weekly W37 covers 7–13 September 2026.",
+    "The planned Saturday Tool Radar for 12 September was not published. Do not invent or backfill a Saturday issue in the public weekly.",
+    "Weekly W37 is built from published Daily Signals #101–#105 plus verified weekend source checks.",
+    "#105 remains the latest sequential Daily/Tool Radar issue as of this build. Do not consume #106 for the missed Saturday unless a retrospective issue is explicitly commissioned.",
+    "Seven canonical weekly rubrics are present in the same order as W36.",
+    "Editorial thesis: evidence quality is modelled as explicit state transitions, not a single confidence flag.",
+    "Signal-of-week uses the 12 September Reuters update to extend the negotiation-state sequence while preserving that no new session had occurred.",
+    "Tools/Datasets is editorial analysis of datasets encountered during the week; it is not represented as a substitute Saturday Tool Radar.",
+    "T4P live statistics checked for 12 September remain background only because W36 already used the denominator lesson.",
+    "Safety: no live targeting coordinates, private witness details, detention-location leads or unnecessary person-level data are included.",
+    "Repository policy: do not publish or commit this weekly issue without a separate explicit request from the user."
+  ]
+}
