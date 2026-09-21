@@ -1,0 +1,292 @@
+{
+  "issue_number": "W38",
+  "slug": "open-source-signal-weekly-2026-W38",
+  "output_name": "open-source-signal-weekly-2026-W38.html",
+  "date_iso": "2026-09-20",
+  "week_label_en": "14–20 September 2026",
+  "week_label_uk": "14–20 вересня 2026",
+  "title_en": "Open Source Signal Weekly",
+  "title_uk": "Тижневий сигнал відкритих джерел",
+  "subtitle_en": "Sunday editorial synthesis for Ukrainian accountability OSINT.",
+  "subtitle_uk": "Недільний редакційний синтез для української роботи з відкритими джерелами й притягнення до відповідальності.",
+  "dek_en": "Week 38 was about authoritative transitions. A proposed energy-strike truce did not become an operative ceasefire, while a U.S. sanctions bill became signed law and Ukraine's prosecutor-general process moved from resignation and suspension to dismissal and an acting replacement. OHCHR's new conflict-related sexual-violence report showed how pattern claims become stronger when methodology, evidentiary standard and access limits are explicit. Repatriation of 252 bodies showed the same discipline at case level: transfer, claimed identity, forensic identification and family notification are distinct states. The practical rule is to upgrade a record when an authoritative trigger arrives without erasing the earlier state.",
+  "dek_uk": "38-й тиждень був про авторитетні переходи між станами. Запропоноване перемир'я щодо ударів по енергетиці не стало чинним режимом, тоді як американський санкційний закон став підписаним законом, а процедура щодо генпрокурора України пройшла від заяви та відсторонення до звільнення й виконувача обов'язків. Новий звіт OHCHR про сексуальне насильство, пов'язане з конфліктом, показав, як посилюється висновок про патерн, коли явно описані методика, доказовий стандарт і межі доступу. Репатріація 252 тіл показала ту саму дисципліну на рівні справи: передача, заявлена належність, судово-медична ідентифікація та повідомлення родини — різні стани. Практичне правило: підвищуйте статус запису після авторитетного тригера, не стираючи попередній стан.",
+  "editorial_frame": {
+    "what_this_is": "A delayed Sunday weekly magazine for Week 38, published on Monday without changing the covered period. It develops Daily #106–#110, Saturday Tool Radar #111 and weekend checks into seven editorial sections.",
+    "what_this_is_not": "A mechanical merge, a breaking-news feed, a substitute Tool Radar, live targeting, or a reason to backdate evidence transitions."
+  },
+  "rubric_map": [
+    "📡 Signal of the Week / Головний сигнал тижня",
+    "🇺🇦 Ukraine Lens / Українська оптика",
+    "⚖️ War Crimes Verification / Верифікація воєнних злочинів",
+    "🕯️ Losses, Captivity & Missing / Втрати, полон, зниклі",
+    "🧰 Tradecraft / Методика",
+    "🛠️ Tools / Datasets / Інструменти й набори даних",
+    "⚠️ Risk Watch / Межі й ризики"
+  ],
+  "editorial_note_en": "Week 38 makes the case for an append-only evidence ledger. A bill can become law and a dismissal can become final; an announced ceasefire can remain only a proposal; a repatriated body can remain unidentified until forensic work is complete; a confirmed death can leave mechanism and attribution unresolved. Store the transition, trigger and timestamp. Never rewrite an earlier record as if the later fact had always been known.",
+  "editorial_note_uk": "38-й тиждень показує цінність журналу доказів, у якому нові стани додаються. Законопроєкт може стати законом, а звільнення — остаточним; оголошене перемир'я може лишитися пропозицією; репатрійоване тіло — неідентифікованим до завершення експертиз; підтверджена смерть може залишати механізм та атрибуцію невирішеними. Зберігайте перехід, тригер і час. Не переписуйте ранній запис так, ніби пізніший факт був відомий завжди.",
+  "items": [
+    {
+      "rubric_key": "signal",
+      "emoji": "📡",
+      "rubric_en": "Signal of the Week",
+      "rubric_uk": "Головний сигнал тижня",
+      "title_en": "The week was defined by evidence upgrades — and by stories that still did not qualify for one",
+      "title_uk": "Тиждень визначали доказові переходи — і сюжети, які все ще не давали підстав підвищувати статус",
+      "source_line_en": "Reuters · 14–20 September; Office of the President of Ukraine · 15 and 20 September 2026",
+      "source_line_uk": "Reuters · 14–20 вересня; Офіс Президента України · 15 та 20 вересня 2026",
+      "what_happened_en": "Ukraine's prosecutor-general sequence advanced from resignation and suspension to parliamentary consent, a presidential dismissal decree and an acting replacement. The U.S. Russia-Iran sanctions bill moved from House passage to presidential signature on September 18. By contrast, the proposed energy-strike truce remained non-operative as attacks continued. On September 20 Zelenskyy and Trump agreed to meet in New York, a scheduling transition but not a negotiated outcome.",
+      "what_happened_uk": "Процес щодо генпрокурора України пройшов від заяви та відсторонення до парламентської згоди, президентського указу про звільнення й появи виконувача обов'язків. Американський санкційний закон пройшов від голосування Палати представників до підпису президента 18 вересня. Натомість запропоноване енергетичне перемир'я не стало чинним режимом, оскільки атаки тривали. 20 вересня Зеленський і Трамп погодили зустріч у Нью-Йорку — це перехід до запланованої зустрічі, але не до узгодженого результату.",
+      "why_it_matters_en": "Later authoritative facts should supersede earlier states without erasing them.",
+      "why_it_matters_uk": "Пізніший авторитетний факт має замінювати попередній стан, але не стирати його.",
+      "how_to_use_en": "Store each transition as a dated event with an authoritative trigger and a pointer to the previous state.",
+      "how_to_use_uk": "Зберігайте кожен перехід як датовану подію з авторитетним тригером і посиланням на попередній стан.",
+      "limits_en": "Procedural terminology differs across systems and later acts can themselves be superseded.",
+      "limits_uk": "Процедурна термінологія різниться, а пізніші акти також можуть бути замінені.",
+      "tags": [
+        "weekly",
+        "state-transitions",
+        "versioning",
+        "legal-status",
+        "diplomacy"
+      ]
+    },
+    {
+      "rubric_key": "ukraine",
+      "emoji": "🇺🇦",
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "title_en": "Civilian and infrastructure harm should be measured as an impact chain, not collapsed into a claim about intent",
+      "title_uk": "Шкоду цивільним та інфраструктурі треба вимірювати як ланцюг наслідків, а не стискати до твердження про намір",
+      "source_line_en": "Reuters · 15–20 September; OHCHR · 16 September 2026",
+      "source_line_uk": "Reuters · 15–20 вересня; OHCHR · 16 вересня 2026",
+      "what_happened_en": "The UN considered moving aid supplies underground after ten aid warehouses had been hit in 2026. Ukraine's rail operator said more than 1,700 railway facilities had been attacked this year. OHCHR reported at least 372 civilians killed and 2,349 injured in August, with long-range weapons accounting for 47% of casualties. On September 20 local authorities said a Russian drone attack in Kyiv region killed four civilians, including three children.",
+      "what_happened_uk": "ООН розглядала перенесення гуманітарних запасів під землю після ударів по десяти складах допомоги у 2026 році. «Укрзалізниця» повідомила про понад 1 700 атакованих залізничних об'єктів цього року. OHCHR зафіксувало щонайменше 372 загиблих і 2 349 поранених цивільних у серпні; далекобійні засоби спричинили 47% жертв. 20 вересня місцева влада повідомила про загибель чотирьох цивільних, зокрема трьох дітей, унаслідок російської дронової атаки на Київщину.",
+      "why_it_matters_en": "Facility hit, service disruption, casualties, recovery and adaptation are observable layers; strategic purpose is a separate claim.",
+      "why_it_matters_uk": "Влучання, перебій послуги, жертви, відновлення й адаптація — спостережувані шари; стратегічна мета — окреме твердження.",
+      "how_to_use_en": "Record incident → object → damage → service/capacity effect → civilian effect → recovery → adaptation, with attribution and intent separate.",
+      "how_to_use_uk": "Фіксуйте інцидент → об'єкт → шкоду → вплив на послугу/потужність → наслідки для цивільних → відновлення → адаптацію, а атрибуцію й намір — окремо.",
+      "limits_en": "Narrative reports and OHCHR monthly verification use different denominators and time windows.",
+      "limits_uk": "Репортажні дані й щомісячна верифікація OHCHR мають різні знаменники й часові вікна.",
+      "tags": [
+        "weekly",
+        "ukraine-lens",
+        "civilian-harm",
+        "infrastructure",
+        "impact-chain"
+      ]
+    },
+    {
+      "rubric_key": "war-crimes",
+      "emoji": "⚖️",
+      "rubric_en": "War Crimes Verification",
+      "rubric_uk": "Верифікація воєнних злочинів",
+      "title_en": "OHCHR's new sexual-violence report shows how to make a pattern claim without hiding the denominator or access limits",
+      "title_uk": "Новий звіт OHCHR про сексуальне насильство показує, як формулювати висновок про патерн, не приховуючи знаменник і межі доступу",
+      "source_line_en": "OHCHR Human Rights Monitoring Mission in Ukraine · 18 September 2026",
+      "source_line_uk": "Моніторингова місія ООН з прав людини в Україні · 18 вересня 2026",
+      "what_happened_en": "OHCHR documented 1,004 cases of conflict-related sexual violence for the report period, with 89% of verified cases attributed to Russian Federation authorities and 11% to Ukrainian authorities. It says the findings are representative rather than comprehensive, applies a 'reasonable grounds to believe' standard, relies primarily on confidential interviews plus records and open sources, and is constrained by Russia's refusal to grant access to occupied territory and people it holds.",
+      "what_happened_uk": "OHCHR задокументувало 1 004 випадки сексуального насильства, пов'язаного з конфліктом; 89% перевірених випадків атрибутовано органам РФ, 11% — українським органам. Звіт називає висновки репрезентативними, а не повними, застосовує стандарт «достатні підстави вважати», спирається передусім на конфіденційні інтерв'ю, документи й відкриті джерела та має обмеження через відмову Росії надати доступ до окупованих територій і людей, яких вона утримує.",
+      "why_it_matters_en": "Pattern, prevalence, attribution and individual criminal responsibility are different claims.",
+      "why_it_matters_uk": "Патерн, поширеність, атрибуція та індивідуальна кримінальна відповідальність — різні твердження.",
+      "how_to_use_en": "Preserve unit of analysis, methodology, access limits, consent rules and legal standard.",
+      "how_to_use_uk": "Зберігайте одиницю аналізу, методику, межі доступу, правила згоди й правовий стандарт.",
+      "limits_en": "OHCHR explicitly says the figures significantly underrepresent the actual number of survivors.",
+      "limits_uk": "OHCHR прямо зазначає, що цифри суттєво недооцінюють фактичну кількість постраждалих.",
+      "tags": [
+        "weekly",
+        "war-crimes",
+        "sexual-violence",
+        "ohchr",
+        "methodology"
+      ]
+    },
+    {
+      "rubric_key": "losses",
+      "emoji": "🕯️",
+      "rubric_en": "Losses, Captivity & Missing",
+      "rubric_uk": "Втрати, полон, зниклі",
+      "title_en": "Repatriation is not identification: 252 returned bodies entered a forensic process",
+      "title_uk": "Репатріація не дорівнює ідентифікації: 252 повернуті тіла увійшли до судово-медичного процесу",
+      "source_line_en": "Coordination Headquarters / Ministry of Internal Affairs · 17 September 2026",
+      "source_line_uk": "Координаційний штаб / МВС · 17 вересня 2026",
+      "what_happened_en": "Ukraine received 252 bodies in a repatriation operation. The Russian side claimed they were Ukrainian citizens, including servicemembers, while Ukrainian investigators and forensic institutions will conduct examinations and identification.",
+      "what_happened_uk": "Україна повернула 252 тіла в межах репатріаційних заходів. Російська сторона заявила про їхню належність громадянам України, зокрема військовослужбовцям, тоді як українські слідчі та експертні установи мають провести експертизи й ідентифікацію.",
+      "why_it_matters_en": "Transfer, claimed identity, forensic custody, DNA comparison, identification and family notification are distinct states.",
+      "why_it_matters_uk": "Передача, заявлена належність, судово-медичний процес, порівняння ДНК, ідентифікація та повідомлення родини — різні стани.",
+      "how_to_use_en": "Use append-only case states and never publish a name solely from the transferring side's identity claim.",
+      "how_to_use_uk": "Використовуйте послідовні стани справи й не публікуйте ім'я лише на підставі заяви сторони, що передала тіло.",
+      "limits_en": "The public notice provides no individual forensic results.",
+      "limits_uk": "Публічне повідомлення не містить індивідуальних результатів експертиз.",
+      "tags": [
+        "weekly",
+        "repatriation",
+        "identification",
+        "dna",
+        "missing-persons"
+      ]
+    },
+    {
+      "rubric_key": "tradecraft",
+      "emoji": "🧰",
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "title_en": "Corroboration should upgrade only the field it actually confirms",
+      "title_uk": "Підтвердження має підвищувати статус лише того поля, яке воно справді підтверджує",
+      "source_line_en": "Reuters · 13 and 16 September 2026",
+      "source_line_uk": "Reuters · 13 та 16 вересня 2026",
+      "what_happened_en": "A suspected drone over Lithuania was reclassified as birds after NATO visual confirmation. Separately, a Russian commander confirmed Major General Anton Grunis's death but did not confirm the Ukrainian account of the strike circumstances.",
+      "what_happened_uk": "Підозрюваний дрон над Литвою після візуальної перевірки НАТО перекласифікували як птахів. Окремо російський командир підтвердив смерть генерал-майора Антона Груніса, але не підтвердив українську версію обставин удару.",
+      "why_it_matters_en": "Identity, event occurrence, time, location, mechanism and attribution are separate claim components.",
+      "why_it_matters_uk": "Ідентичність, факт події, час, місце, механізм та атрибуція — окремі компоненти твердження.",
+      "how_to_use_en": "Use a claim matrix and apply corroboration at field level.",
+      "how_to_use_uk": "Використовуйте матрицю тверджень і застосовуйте підтвердження на рівні поля.",
+      "limits_en": "Corroboration strength depends on source independence and access.",
+      "limits_uk": "Сила підтвердження залежить від незалежності джерел та їхнього доступу.",
+      "tags": [
+        "weekly",
+        "tradecraft",
+        "corroboration",
+        "claim-matrix",
+        "classification"
+      ]
+    },
+    {
+      "rubric_key": "toolbox",
+      "emoji": "🛠️",
+      "rubric_en": "Tools / Datasets",
+      "rubric_uk": "Інструменти й набори даних",
+      "title_en": "Manufacturing datasets become more useful when equipment provenance is kept separate from supplier intent",
+      "title_uk": "Виробничі набори стають кориснішими, коли походження обладнання зберігають окремо від наміру постачальника",
+      "source_line_en": "Defence Intelligence / War & Sanctions · 15 and 17 September 2026",
+      "source_line_uk": "ГУР / War & Sanctions · 15 та 17 вересня 2026",
+      "what_happened_en": "War & Sanctions added 54 KRET enterprises and later published 20 pieces of foreign technological equipment used at Alabuga in Geran UAV production.",
+      "what_happened_uk": "War & Sanctions додав 54 підприємства КРЕТ, а згодом опублікував 20 одиниць іноземного технологічного обладнання, що використовується в Алабузі для виробництва БпЛА «Герань».",
+      "why_it_matters_en": "Observed equipment, manufacturer identity, export route, sanctions status and proof of intentional military supply are different layers.",
+      "why_it_matters_uk": "Зафіксоване обладнання, виробник, маршрут експорту, санкційний статус і доказ навмисного військового постачання — різні шари.",
+      "how_to_use_en": "Preserve portal attribution and publication date, then corroborate corporate, export-control and sanctions status independently.",
+      "how_to_use_uk": "Зберігайте атрибуцію порталу й дату публікації, а корпоративний, експортний і санкційний статус перевіряйте незалежно.",
+      "limits_en": "Dataset inclusion is not by itself evidence of culpability or knowing participation by a manufacturer.",
+      "limits_uk": "Включення до набору саме по собі не доводить вину чи свідому участь виробника.",
+      "tags": [
+        "weekly",
+        "datasets",
+        "manufacturing",
+        "war-sanctions",
+        "provenance"
+      ]
+    },
+    {
+      "rubric_key": "risk",
+      "emoji": "⚠️",
+      "rubric_en": "Risk Watch",
+      "rubric_uk": "Межі й ризики",
+      "title_en": "Legal and funding pipelines need separate verbs: extended, passed, signed, approved, disbursed and delivered are not synonyms",
+      "title_uk": "Правові й фінансові процеси потребують різних дієслів: продовжено, проголосовано, підписано, схвалено, виплачено й поставлено — не синоніми",
+      "source_line_en": "Reuters · 14–18 September; U.S. DFC · 16 September 2026",
+      "source_line_uk": "Reuters · 14–18 вересня; U.S. DFC · 16 вересня 2026",
+      "what_happened_en": "EU envoys temporarily extended individual Russia sanctions for seven days while debating renewal. The U.S. House passed a Russia-Iran sanctions bill, which President Trump signed on September 18. DFC approved financing for a 200MW/400MWh Ukrainian battery portfolio, while a separate EU package moved €3.3 billion to disbursement for missiles and drones.",
+      "what_happened_uk": "Посли ЄС тимчасово продовжили персональні санкції проти Росії на сім днів. Палата представників США ухвалила санкційний законопроєкт щодо Росії та Ірану, який президент Трамп підписав 18 вересня. DFC схвалила фінансування українського портфеля батарей 200 МВт/400 МВт·год, а окремий пакет ЄС перейшов до виплати €3,3 млрд на ракети й дрони.",
+      "why_it_matters_en": "Status compression creates false positives in compliance, procurement and project tracking.",
+      "why_it_matters_uk": "Стиснення статусів створює хибні спрацювання в комплаєнсі, закупівлях і відстеженні проєктів.",
+      "how_to_use_en": "Use explicit statuses for proposed, passed, signed, effective, funded, disbursed, contracted, delivered and operational.",
+      "how_to_use_uk": "Використовуйте явні статуси: запропоновано, проголосовано, підписано, набрало чинності, профінансовано, виплачено, законтрактовано, поставлено, введено в експлуатацію.",
+      "limits_en": "Meaning differs by jurisdiction and instrument; tie every status to the source act.",
+      "limits_uk": "Значення залежить від юрисдикції та інструмента; прив'язуйте статус до конкретного акта.",
+      "tags": [
+        "weekly",
+        "risk-watch",
+        "sanctions",
+        "funding",
+        "status-pipeline"
+      ]
+    }
+  ],
+  "compact_sections": [
+    {
+      "rubric_key": "evidence-model",
+      "emoji": "🧭",
+      "title": "Evidence model / Модель доказів",
+      "short_title": "Append transitions; do not rewrite history",
+      "points": [
+        "Store old state, new state, authoritative trigger and timestamp.",
+        "Let corroboration upgrade only the field it confirms.",
+        "Keep claimed identity, forensic identification and legal responsibility separate."
+      ]
+    },
+    {
+      "rubric_key": "weekly-workflow",
+      "emoji": "🗂️",
+      "title": "Weekly workflow / Робочий процес",
+      "short_title": "Use state-specific verbs",
+      "points": [
+        "Say passed, signed, effective, disbursed, delivered and operational only when supported.",
+        "Preserve revision and supersession links.",
+        "Keep denominators and methodology with casualty and infrastructure series."
+      ]
+    },
+    {
+      "rubric_key": "safety-line",
+      "emoji": "🛡️",
+      "title": "Safety line / Межа безпеки",
+      "short_title": "Do not expose people to make a dataset feel complete",
+      "points": [
+        "Do not infer identities within repatriation batches before forensic confirmation.",
+        "Omit survivor and witness details that could enable identification or retaliation.",
+        "Do not convert intelligence attribution into personal culpability."
+      ]
+    }
+  ],
+  "reading_list": [
+    {
+      "href": "https://www.reuters.com/business/energy/kremlin-welcomes-trumps-idea-energy-truce-with-ukraine-calls-sanctions-removal-2026-09-15/",
+      "title": "Reuters — proposed energy truce",
+      "note": "Proposal versus operative agreement."
+    },
+    {
+      "href": "https://www.president.gov.ua/documents/9322026-61673",
+      "title": "President of Ukraine — Decree No. 932/2026",
+      "note": "Final dismissal act."
+    },
+    {
+      "href": "https://www.reuters.com/world/us/trump-signs-russia-sanctions-bill-into-law-2026-09-18/",
+      "title": "Reuters — U.S. sanctions bill signed",
+      "note": "Upgrade from passage to law."
+    },
+    {
+      "href": "https://www.president.gov.ua/en/news/prezidenti-ukrayini-ta-ssha-domovilis-pro-zustrich-u-nyu-jor-106477",
+      "title": "President of Ukraine — New York meeting agreed",
+      "note": "Scheduling transition."
+    },
+    {
+      "href": "https://ukraine.ohchr.org/sites/default/files/2026-09/OHCHR%20Sexual%20Violence%20in%20the%20Context%20of%20the%20Russian%20Federation%20Full-Scale%20Armed%20Attack.pdf",
+      "title": "OHCHR — conflict-related sexual violence",
+      "note": "Methodology, standard and access limits."
+    },
+    {
+      "href": "https://ukraine.ohchr.org/en/Protection-of-Civilians-in-Armed-Conflict-August-2026",
+      "title": "OHCHR — Protection of Civilians, August 2026",
+      "note": "Verified monthly casualty denominator."
+    },
+    {
+      "href": "https://koordshtab.gov.ua/posts/za-rezultatamy-provedenykh-repatriatsiynykh-zakhodiv-v-ukrayinu-povernuly-tila-252-zahyblykh-3755",
+      "title": "Coordination Headquarters — 252 bodies repatriated",
+      "note": "Transfer followed by forensic identification."
+    },
+    {
+      "href": "https://war-sanctions.gur.gov.ua/tools",
+      "title": "War & Sanctions — foreign manufacturing equipment",
+      "note": "Manufacturing provenance."
+    }
+  ],
+  "editorial_notes_internal": [
+    "EDITORIAL NOTES — INTERNAL. W38 covers 14–20 September 2026 and is published one day late on 21 September without changing issue date.",
+    "Source base: Daily #106–#110, Tool Radar #111 and weekend checks through 20 September.",
+    "Canonical seven-rubric order preserved.",
+    "Thesis: append-only evidence transitions; later facts supersede rather than erase earlier states.",
+    "OHCHR section preserves reasonable-grounds standard, underreporting caveat and access limits.",
+    "Repatriation section separates Russian identity claims from Ukrainian forensic identification.",
+    "No private witness, survivor, family, biometric or detention-location data."
+  ]
+}
