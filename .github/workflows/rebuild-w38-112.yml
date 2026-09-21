@@ -1,0 +1,56 @@
+name: Rebuild W38 and Daily 112
+
+on:
+  push:
+    branches:
+      - publish-w38-and-112
+    paths:
+      - ".github/workflows/rebuild-w38-112.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v4
+
+      - name: Rebuild and verify files
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p weekly issues
+          cat tmp/w38-112/w38-*.txt | base64 -d > weekly/open-source-signal-weekly-2026-W38.json
+          cat tmp/w38-112/d112-*.txt | base64 -d > issues/2026-09-21.json
+
+          echo "1077aa05869f0fdd9ed426a5ef0ab9c20545b64cd825c5391caf194c7a51dc12  weekly/open-source-signal-weekly-2026-W38.json" | sha256sum -c -
+          echo "5871f99c2d02cff94214a311fa669e4aa0e689315ef42cd47b5197f52f3d4ff1  issues/2026-09-21.json" | sha256sum -c -
+
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          w=json.loads(Path("weekly/open-source-signal-weekly-2026-W38.json").read_text(encoding="utf-8"))
+          d=json.loads(Path("issues/2026-09-21.json").read_text(encoding="utf-8"))
+          assert w["issue_number"]=="W38"
+          assert w["date_iso"]=="2026-09-20"
+          assert [x["rubric_key"] for x in w["items"]]==["signal","ukraine","war-crimes","losses","tradecraft","toolbox","risk"]
+          assert len(w["items"])==7
+          assert d["issue_number"]=="112"
+          assert d["date_iso"]=="2026-09-21"
+          assert d["issue_type"]=="Daily Signal"
+          assert len(d["items"])==6
+          PY
+
+      - name: Commit reconstructed files and cleanup transport
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add weekly/open-source-signal-weekly-2026-W38.json issues/2026-09-21.json
+          git rm -r tmp/w38-112
+          git rm .github/workflows/rebuild-w38-112.yml
+          git commit -m "Prepare Weekly W38 and Daily #112"
+          git push
