@@ -54,3 +54,5 @@ jobs:
           git rm .github/workflows/rebuild-w38-112.yml
           git commit -m "Prepare Weekly W38 and Daily #112"
           git push
+
+# retry after checksum transport fix
