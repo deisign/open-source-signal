@@ -1,0 +1,291 @@
+{
+  "issue_number": "W39",
+  "slug": "open-source-signal-weekly-2026-W39",
+  "output_name": "open-source-signal-weekly-2026-W39.html",
+  "date_iso": "2026-09-27",
+  "week_label_en": "21–27 September 2026",
+  "week_label_uk": "21–27 вересня 2026",
+  "title_en": "Open Source Signal Weekly",
+  "title_uk": "Тижневий сигнал відкритих джерел",
+  "subtitle_en": "Sunday editorial synthesis for Ukrainian accountability OSINT.",
+  "subtitle_uk": "Недільний редакційний синтез для української роботи з відкритими джерелами й притягнення до відповідальності.",
+  "dek_en": "Week 39 was a lesson in scale. A named list of roughly 259,000 Russian military deaths is a documented floor, not a complete total; a 60% interception estimate for jet-powered Shaheds describes one changing threat class, not air defence as a whole; more than 3,000 EU sanctions listings moved from expiry risk to an operative three-year extension, while a separate nearly €3 billion Ukraine Facility payment remained at the approval stage. UN investigators separated attacks on energy infrastructure, militarised education in occupied territory and deceptive recruitment of foreign nationals into distinct evidence tracks. The practical rule for the week is simple: every number needs a population, a time window, a source and a status.",
+  "dek_uk": "39-й тиждень був уроком масштабу. Іменний список приблизно 259 тисяч загиблих російських військових є задокументованою нижньою межею, а не повним підсумком; оцінка близько 60% перехоплення реактивних Shahed описує один клас загрози, а не ППО загалом; понад 3 000 персональних санкційних записів ЄС перейшли від ризику завершення дії до чинного продовження на три роки, тоді як окрема виплата майже €3 млрд у межах Ukraine Facility лишилася на стадії схвалення. Розслідувачі ООН розвели удари по енергетичній інфраструктурі, мілітаризовану освіту на окупованих територіях і обманне вербування іноземців у різні доказові напрями. Практичне правило тижня просте: кожне число потребує популяції, часового вікна, джерела й статусу.",
+  "editorial_frame": {
+    "what_this_is": "A Sunday weekly magazine for Week 39, developing Daily #112–#116 and Saturday Tool Radar #117 into seven editorial sections.",
+    "what_this_is_not": "A mechanical merge, a political ranking, a battlefield targeting product, or a claim that database inclusion equals legal responsibility."
+  },
+  "rubric_map": [
+    "📡 Signal of the Week / Головний сигнал тижня",
+    "🇺🇦 Ukraine Lens / Українська оптика",
+    "⚖️ War Crimes Verification / Верифікація воєнних злочинів",
+    "🕯️ Losses, Captivity & Missing / Втрати, полон, зниклі",
+    "🧰 Tradecraft / Методика",
+    "🛠️ Tools / Datasets / Інструменти й набори даних",
+    "⚠️ Risk Watch / Межі й ризики"
+  ],
+  "editorial_note_en": "Every quantitative claim should carry four fields beside it: population or denominator, time window, source and status. A named death list is not total mortality. An interception percentage is not a universal system score. A sanctions list is not a conviction. An approved payment is not cash received.",
+  "editorial_note_uk": "Біля кожного кількісного твердження мають стояти чотири поля: популяція або знаменник, часовий проміжок, джерело та статус. Іменний список загиблих не є повною смертністю. Відсоток перехоплення не є універсальною оцінкою системи. Санкційний список не є вироком. Схвалена виплата не є отриманими коштами.",
+  "items": [
+    {
+      "rubric_key": "signal",
+      "emoji": "📡",
+      "rubric_en": "Signal of the Week",
+      "rubric_uk": "Головний сигнал тижня",
+      "title_en": "The week's strongest evidence all came with a denominator — and weakened when the denominator disappeared",
+      "title_uk": "Найсильніші докази тижня мали знаменник — і слабшали, щойно знаменник зникав",
+      "source_line_en": "Mediazona · 21 September; Reuters / Ukrainian Air Force · 22 September; Council of the EU · 22 and 24 September 2026",
+      "source_line_uk": "Mediazona · 21 вересня; Reuters / Повітряні сили України · 22 вересня; Рада ЄС · 22 та 24 вересня 2026",
+      "what_happened_en": "Mediazona put its verified named list of Russian military deaths at roughly 259,000 while leak matching suggested substantial undercounting among mobilised personnel. The Ukrainian Air Force told Reuters it was intercepting about 60% of jet-powered Shaheds, versus more than 90% of earlier propeller-driven variants. The EU extended more than 3,000 individual Russia-related listings for 36 months, while separately approving nearly €3 billion under the Ukraine Facility for payment to follow.",
+      "what_happened_uk": "Mediazona довела свій перевірений іменний список загиблих російських військових приблизно до 259 тисяч, водночас зіставлення витоків указало на значний недооблік серед мобілізованих. Повітряні сили України повідомили Reuters про близько 60% перехоплення реактивних Shahed проти понад 90% ранніх гвинтових варіантів. ЄС продовжив більш як 3 000 персональних санкційних записів, пов'язаних із Росією, на 36 місяців, а окремо схвалив майже €3 млрд у межах Ukraine Facility.",
+      "why_it_matters_en": "The numbers are valid only inside their defined populations and states.",
+      "why_it_matters_uk": "Ці числа коректні лише всередині визначеної популяції та стану.",
+      "how_to_use_en": "Store population/denominator, time window, source, method and state with every quantitative field.",
+      "how_to_use_uk": "Зберігайте популяцію/знаменник, часовий проміжок, джерело, метод і стан разом із кожним кількісним полем.",
+      "limits_en": "These examples come from different domains; the common lesson is methodological, not statistical.",
+      "limits_uk": "Приклади походять із різних доменів; спільний висновок методологічний, а не статистичний.",
+      "tags": [
+        "weekly",
+        "denominator",
+        "measurement",
+        "status"
+      ]
+    },
+    {
+      "rubric_key": "ukraine",
+      "emoji": "🇺🇦",
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "title_en": "Civilian harm and economic disruption are converging into one measurable impact chain",
+      "title_uk": "Шкода цивільним і економічні перебої сходяться в один вимірюваний ланцюг наслідків",
+      "source_line_en": "OHCHR · 24 September; Kyiv authorities · 24–25 September; ArcelorMittal · 25 September 2026",
+      "source_line_uk": "OHCHR · 24 вересня; влада Києва · 24–25 вересня; ArcelorMittal · 25 вересня 2026",
+      "what_happened_en": "OHCHR said that from September 1 through 24 it had recorded at least 200 civilians killed and 1,234 injured in Ukraine, stressing that the figures were preliminary. Kyiv suffered repeated missile and drone attacks with civilian deaths, injuries and damage to a maternity hospital, data centres and other sites. ArcelorMittal said four missile strikes in five weeks had killed five employees, injured 17 and left its Kryvyi Rih operation unable to restart safely and sustainably.",
+      "what_happened_uk": "OHCHR повідомило, що з 1 по 24 вересня зафіксувало в Україні щонайменше 200 загиблих і 1 234 поранених цивільних, наголосивши на попередньому характері цифр. Київ пережив повторні ракетні й дронові атаки із загиблими, пораненими та пошкодженням пологового будинку, дата-центрів та інших об'єктів. ArcelorMittal заявив, що чотири ракетні удари за п'ять тижнів убили п'ятьох працівників, поранили 17 і зробили перезапуск комбінату в Кривому Розі небезпечним і несталим.",
+      "why_it_matters_en": "The useful unit is strike → physical damage → service or production interruption → civilian or labour effect → recovery decision.",
+      "why_it_matters_uk": "Корисна одиниця аналізу: удар → фізичне пошкодження → перебій послуги чи виробництва → наслідок для цивільних або працівників → рішення про відновлення.",
+      "how_to_use_en": "Link casualty, infrastructure and business-continuity records by incident and date while preserving source class.",
+      "how_to_use_uk": "Пов'язуйте записи про жертви, інфраструктуру та безперервність роботи за інцидентом і датою, зберігаючи клас джерела.",
+      "limits_en": "OHCHR's figures were preliminary; company statements describe company-level effects, not national industrial output.",
+      "limits_uk": "Дані OHCHR були попередніми; заява компанії описує наслідок для конкретного підприємства, а не для промисловості країни загалом.",
+      "tags": [
+        "weekly",
+        "ukraine-lens",
+        "civilian-harm",
+        "industrial-impact"
+      ]
+    },
+    {
+      "rubric_key": "war-crimes",
+      "emoji": "⚖️",
+      "rubric_en": "War Crimes Verification",
+      "rubric_uk": "Верифікація воєнних злочинів",
+      "title_en": "UN investigators split broad allegations into evidence tracks — energy, occupied schooling and foreign recruitment",
+      "title_uk": "Розслідувачі ООН розклали широкі звинувачення на доказові напрями — енергетика, освіта в окупації та вербування іноземців",
+      "source_line_en": "UN Independent International Commission of Inquiry on Ukraine · 21 September; OHCHR · September 2026",
+      "source_line_uk": "Незалежна міжнародна комісія ООН з розслідування щодо України · 21 вересня; OHCHR · вересень 2026",
+      "what_happened_en": "The UN Commission described separate investigative strands: repeated Russian attacks on energy infrastructure and their humanitarian effects; Russian curricula and military training imposed in occupied territory, including training from age 14; and cases in which foreign nationals were allegedly deceived with civilian-job offers or coerced into Russian military service.",
+      "what_happened_uk": "Комісія ООН описала окремі напрями розслідування: повторні російські удари по енергетичній інфраструктурі та їхні гуманітарні наслідки; російські навчальні програми й військову підготовку, нав'язані на окупованих територіях, включно з підготовкою з 14 років; а також випадки, коли іноземців, за даними Комісії, заманювали цивільною роботою або примушували до служби в російських силах.",
+      "why_it_matters_en": "A broad narrative becomes investigable when decomposed into acts, affected populations, policy documents, recruitment pathways and evidentiary standards.",
+      "why_it_matters_uk": "Широкий наратив стає придатним до розслідування, коли його розкладено на дії, постраждалі групи, документи, шляхи вербування й доказові стандарти.",
+      "how_to_use_en": "Keep attack incidents, policy/curriculum evidence and recruitment cases in separate schemas, including what the Commission found, is still investigating or could not investigate.",
+      "how_to_use_uk": "Тримайте удари, політики/навчальні документи й випадки вербування в окремих схемах, фіксуючи, що Комісія встановила, ще досліджує або не змогла дослідити.",
+      "limits_en": "The Commission said access and information constraints prevented it from investigating some reported Ukrainian attacks on infrastructure in Russia and Russian-controlled areas.",
+      "limits_uk": "Комісія зазначила, що обмеження доступу та інформації не дозволили їй дослідити частину повідомлень про українські удари по інфраструктурі в Росії та на контрольованих Росією територіях.",
+      "tags": [
+        "weekly",
+        "war-crimes",
+        "un",
+        "occupied-territories",
+        "recruitment"
+      ]
+    },
+    {
+      "rubric_key": "losses",
+      "emoji": "🕯️",
+      "rubric_en": "Losses, Captivity & Missing",
+      "rubric_uk": "Втрати, полон, зниклі",
+      "title_en": "A named death list is a floor; captivity, missing status and transfer are different states again",
+      "title_uk": "Іменний список загиблих — це нижня межа; полон, зникнення й передача — ще інші стани",
+      "source_line_en": "Mediazona / BBC Russian · 21 September; Ukrainian authorities · 24–25 September 2026",
+      "source_line_uk": "Mediazona / BBC Russian · 21 вересня; українські органи влади · 24–25 вересня 2026",
+      "what_happened_en": "Mediazona's verified named list of Russian military deaths reached roughly 259,000. Its matching of leaked datasets for mobilised personnel showed obituary-based public records can miss a substantial share of deaths and misclassify recruitment status. Ukraine also said two captured North Korean soldiers had been transferred to South Korea, while Ukrainian officials reported 2,363 children as missing as of September 25.",
+      "what_happened_uk": "Перевірений іменний список загиблих російських військових Mediazona сягнув приблизно 259 тисяч. Зіставлення витоків щодо мобілізованих показало, що публічні списки на основі некрологів можуть пропускати значну частину смертей і помилятися в категорії набору. Україна також повідомила про передачу двох полонених північнокорейських військових Південній Кореї, а українські посадовці — про 2 363 дітей зі статусом зниклих безвісти станом на 25 вересня.",
+      "why_it_matters_en": "Loss, missing-person, captivity, transfer and identification databases measure different states; merging them creates double counts and false conclusions.",
+      "why_it_matters_uk": "Бази втрат, зниклих, полону, передачі та ідентифікації вимірюють різні стани; їхнє змішування створює подвійний облік і хибні висновки.",
+      "how_to_use_en": "Maintain person-level state transitions with provenance and preserve uncertainty rather than forcing terminal outcomes.",
+      "how_to_use_uk": "Ведіть зміни стану на рівні людини з походженням даних і зберігайте невизначеність замість примусового остаточного статусу.",
+      "limits_en": "Mediazona treats its list as a conservative floor; the leaked cohort is not a random national sample.",
+      "limits_uk": "Mediazona трактує свій список як консервативну нижню межу; вибірка з витоків не є випадковою загальнонаціональною вибіркою.",
+      "tags": [
+        "weekly",
+        "losses",
+        "missing-persons",
+        "captivity",
+        "undercount"
+      ]
+    },
+    {
+      "rubric_key": "tradecraft",
+      "emoji": "🧰",
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "title_en": "Store four fields beside every number: population, time window, source and status",
+      "title_uk": "Зберігайте біля кожного числа чотири поля: популяцію, часовий проміжок, джерело та статус",
+      "source_line_en": "Cross-issue method derived from Daily #112–#116 and Tool Radar #117",
+      "source_line_uk": "Наскрізний метод із Daily #112–#116 та Tool Radar #117",
+      "what_happened_en": "This week's strongest records fail predictably when stripped of context: refinery nameplate capacity can be mistaken for national output loss; 590,000 UAV orders for deliveries; 1,468 vessel records in War & Sanctions for sanctions designations; 13 million destroyed books for damaged heritage sites; and a 60% interception estimate for a universal air-defence rate.",
+      "what_happened_uk": "Найсильніші записи тижня передбачувано ламаються без контексту: паспортну потужність НПЗ можна сплутати з втратою національного випуску; 590 тисяч замовлених БпЛА — з поставками; 1 468 записів суден у War & Sanctions — із санкційними рішеннями; 13 млн знищених книжок — із пошкодженими пам'ятками; 60% перехоплення — з універсальною ефективністю ППО.",
+      "why_it_matters_en": "The error is usually not the number itself but the loss of its scope during copying, aggregation or visualisation.",
+      "why_it_matters_uk": "Помилка зазвичай не в самому числі, а у втраті його масштабу під час копіювання, агрегації чи візуалізації.",
+      "how_to_use_en": "Make `population`, `time_window`, `source` and `status` mandatory quantitative fields; add method and confidence for estimates.",
+      "how_to_use_uk": "Зробіть `population`, `time_window`, `source` і `status` обов'язковими полями; для оцінок додавайте метод і впевненість.",
+      "limits_en": "The rule does not solve source bias or sampling error; it makes them easier to audit.",
+      "limits_uk": "Правило не усуває упередження джерела чи похибку вибірки; воно робить їх придатнішими до аудиту.",
+      "tags": [
+        "weekly",
+        "tradecraft",
+        "quantitative-osint",
+        "metadata"
+      ]
+    },
+    {
+      "rubric_key": "toolbox",
+      "emoji": "🛠️",
+      "rubric_en": "Tools / Datasets",
+      "rubric_uk": "Інструменти й набори даних",
+      "title_en": "A practical verification stack is layered: discovery, authoritative identity, sensor lead and reproducible capture",
+      "title_uk": "Практичний стек перевірки має шари: пошук, авторитетна ідентичність, сенсорна зачіпка та відтворюване збереження",
+      "source_line_en": "Bellingcat Toolkit; SEC EDGAR; Companies House; NASA FIRMS; OpenSky; Zotero · checked 26 September 2026",
+      "source_line_uk": "Bellingcat Toolkit; SEC EDGAR; Companies House; NASA FIRMS; OpenSky; Zotero · перевірено 26 вересня 2026",
+      "what_happened_en": "Saturday's Tool Radar produced a complementary stack rather than one 'best' tool: Bellingcat for discovery; SEC EDGAR and Companies House for company identity and filings; NASA FIRMS and OpenSky for sensor-derived leads; Zotero for ordinary-source metadata, PDFs and snapshots.",
+      "what_happened_uk": "Суботній Tool Radar дав не один «найкращий» інструмент, а взаємодоповнювальний стек: Bellingcat для пошуку; SEC EDGAR і Companies House для ідентичності компаній та звітності; NASA FIRMS і OpenSky для сенсорних зачіпок; Zotero для метаданих, PDF і знімків звичайних джерел.",
+      "why_it_matters_en": "Discovery catalogues do not validate entries; registries record filings rather than ground truth; sensor detections are observations rather than causal explanations; snapshots preserve context without becoming forensic authentication.",
+      "why_it_matters_uk": "Каталоги не верифікують кожен запис; реєстри зберігають подані відомості, а не абсолютну істину; сенсорні спостереження не пояснюють причину; знімки зберігають контекст, але не є судовою автентифікацією.",
+      "how_to_use_en": "Build workflows by evidence function: discover → identify → observe → corroborate → preserve.",
+      "how_to_use_uk": "Будуйте процес за функцією доказу: знайти → ідентифікувати → спостерігати → підтвердити → зберегти.",
+      "limits_en": "Coverage, authentication, rate limits and licensing vary by service; none is universally complete.",
+      "limits_uk": "Покриття, автентифікація, ліміти та ліцензування відрізняються; жоден сервіс не є універсально повним.",
+      "tags": [
+        "weekly",
+        "tools",
+        "datasets",
+        "verification-stack"
+      ]
+    },
+    {
+      "rubric_key": "risk",
+      "emoji": "⚠️",
+      "rubric_en": "Risk Watch",
+      "rubric_uk": "Межі й ризики",
+      "title_en": "Status inflation remains the fastest way to turn a correct source into a false claim",
+      "title_uk": "Роздування статусу лишається найшвидшим способом перетворити правильне джерело на хибне твердження",
+      "source_line_en": "Council of the EU · 22 and 24 September; Ministry of Finance of Ukraine · 22 September; War & Sanctions · 21 and 23 September 2026",
+      "source_line_uk": "Рада ЄС · 22 та 24 вересня; Мінфін України · 22 вересня; War & Sanctions · 21 та 23 вересня 2026",
+      "what_happened_en": "EU individual sanctions moved from an unresolved expiry deadline to an operative 36-month extension. Separately, the Council approved nearly €3 billion under the Ukraine Facility, with payment to follow. Ukraine's Finance Ministry said $841 million had already been attracted through the World Bank PEACE project under Canada's guarantee. War & Sanctions added finance and maritime entities as intelligence-attribution records, not sanctions decisions or court findings.",
+      "what_happened_uk": "Персональні санкції ЄС перейшли від невирішеного дедлайну завершення дії до чинного продовження на 36 місяців. Окремо Рада схвалила майже €3 млрд у межах Ukraine Facility, після чого має відбутися виплата. Мінфін України повідомив, що $841 млн уже залучено через проєкт PEACE Світового банку під гарантію Канади. War & Sanctions додав фінансові та морські сутності як записи розвідувальної атрибуції, а не як санкційні рішення чи судові висновки.",
+      "why_it_matters_en": "Approved, received, listed, sanctioned, convicted and attributed are not stylistic variants; each word changes the factual claim.",
+      "why_it_matters_uk": "«Схвалено», «отримано», «внесено до бази», «під санкціями», «засуджено» та «атрибутовано» — не стилістичні варіанти; кожне слово змінює фактичне твердження.",
+      "how_to_use_en": "Use controlled status vocabularies and change state only after a source-side trigger: legal act, receipt, court decision, registry change or documented transfer.",
+      "how_to_use_uk": "Використовуйте контрольований словник статусів і змінюйте стан лише після тригера в джерелі: правового акта, надходження коштів, судового рішення, зміни реєстру чи документованої передачі.",
+      "limits_en": "Institutions use different procedural language; map it carefully instead of assuming identical categories.",
+      "limits_uk": "Інституції мають різну процедурну мову; зіставляйте її обережно, не вдаючи тотожності категорій.",
+      "tags": [
+        "weekly",
+        "risk-watch",
+        "status-inflation",
+        "sanctions",
+        "funding"
+      ]
+    }
+  ],
+  "compact_sections": [
+    {
+      "rubric_key": "evidence-model",
+      "emoji": "🧭",
+      "title": "Evidence model / Модель доказів",
+      "short_title": "Every number needs scope",
+      "points": [
+        "Attach population/denominator, time window, source and status.",
+        "Treat named lists as floors unless completeness is demonstrated.",
+        "Do not turn class-specific performance into a system-wide metric."
+      ]
+    },
+    {
+      "rubric_key": "weekly-workflow",
+      "emoji": "🗂️",
+      "title": "Weekly workflow / Робочий процес",
+      "short_title": "Separate state from magnitude",
+      "points": [
+        "Track legal, financial and investigative transitions as events.",
+        "Link incident → damage → service/production effect → civilian effect → recovery.",
+        "Keep portal attribution, sanctions status and judicial findings separate."
+      ]
+    },
+    {
+      "rubric_key": "safety-line",
+      "emoji": "🛡️",
+      "title": "Safety line / Межа безпеки",
+      "short_title": "Do not manufacture certainty from aggregation",
+      "points": [
+        "Do not infer missing-person outcomes from aggregate casualty data.",
+        "Do not expose sensitive individual details to complete a record.",
+        "Do not turn intelligence, registry or sanctions inclusion into personal culpability without the evidentiary step."
+      ]
+    }
+  ],
+  "reading_list": [
+    {
+      "href": "https://en.zona.media/article/2026/09/21/mobilised",
+      "title": "Mediazona — mobilised losses and undercount",
+      "note": "Named-list coverage and cohort matching."
+    },
+    {
+      "href": "https://www.reuters.com/business/aerospace-defense/jet-powered-russian-drones-strain-ukraines-air-defences-2026-09-22/",
+      "title": "Reuters — jet-powered Shaheds and interception",
+      "note": "Variant-specific performance estimate."
+    },
+    {
+      "href": "https://ukraine.un.org/en/323052-un-commission-concerned-about-human-impact-russia%E2%80%99s-systematic-targeting-energy",
+      "title": "UN Commission of Inquiry — energy, education and recruitment",
+      "note": "Separate investigative tracks and access limits."
+    },
+    {
+      "href": "https://ukraine.ohchr.org/en/node/582",
+      "title": "OHCHR — September civilian-harm update",
+      "note": "Preliminary 1–24 September casualty window."
+    },
+    {
+      "href": "https://www.consilium.europa.eu/en/press/press-releases/2026/09/22/ukraine-s-territorial-integrity-eu-extends-individual-listings-for-further-three-years/",
+      "title": "Council of the EU — sanctions extension",
+      "note": "Operative legal-state transition."
+    },
+    {
+      "href": "https://www.consilium.europa.eu/en/press/press-releases/2026/09/24/ukraine-support-council-approves-payment-of-nearly-3-billion-and-welcomes-norway-s-financial-contribution/",
+      "title": "Council of the EU — Ukraine Facility approval",
+      "note": "Approval is not yet receipt."
+    },
+    {
+      "href": "https://www.eurojust.europa.eu/publication/inter-state-case-ukraine-and-netherlands-v-russia",
+      "title": "Eurojust — ECtHR and open-source evidence",
+      "note": "Practical evidence-category reading."
+    },
+    {
+      "href": "https://bellingcat.gitbook.io/toolkit",
+      "title": "Bellingcat Online Investigation Toolkit",
+      "note": "Maintained discovery layer from Tool Radar #117."
+    }
+  ],
+  "editorial_notes_internal": [
+    "EDITORIAL NOTES — INTERNAL. W39 covers 21–27 September 2026.",
+    "Source base: Daily #112–#116, Saturday Tool Radar #117, plus Sunday verification of OHCHR and EU primary-source status.",
+    "Canonical seven-rubric order preserved.",
+    "Central thesis: population/denominator + time window + source + status are mandatory metadata for quantitative claims.",
+    "Ukraine Lens preserves OHCHR's preliminary wording.",
+    "War Crimes section preserves UN Commission access limitations.",
+    "Losses section treats Mediazona's named-death count as a conservative floor.",
+    "Risk Watch distinguishes sanctions extension, payment approval, receipt and intelligence attribution.",
+    "No live targeting coordinates, private identifiers, survivor identities or sensitive detention-location data.",
+    "Repository policy: draft only. Do not publish, commit, deploy or send Telegram without a separate explicit request."
+  ]
+}
