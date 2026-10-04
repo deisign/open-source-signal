@@ -1,0 +1,254 @@
+{
+  "issue_number": "W40",
+  "slug": "open-source-signal-weekly-2026-W40",
+  "output_name": "open-source-signal-weekly-2026-W40.html",
+  "date_iso": "2026-10-04",
+  "week_label_en": "28 September–4 October 2026",
+  "week_label_uk": "28 вересня–4 жовтня 2026",
+  "title_en": "Open Source Signal Weekly",
+  "title_uk": "Тижневий сигнал відкритих джерел",
+  "subtitle_en": "Sunday editorial synthesis for Ukrainian accountability OSINT.",
+  "subtitle_uk": "Недільний редакційний синтез для української роботи з відкритими джерелами й притягнення до відповідальності.",
+  "dek_en": "Week 40 was about state transitions. Ukraine's Coordination Headquarters showed how witness testimony from released defenders becomes structured POW/MIA records; the Defence Ministry separately showed why identification material is not the same as a legally operative death status; BBC Russian and Mediazona demonstrated how a large monthly increase in a casualty database can be retrospective backfill rather than current-period deaths. Across strikes, child-return statistics, infrastructure damage and file provenance, the same rule held: event, observation, confirmation, registry update and public disclosure are different states with different clocks.",
+  "dek_uk": "40-й тиждень був про переходи між статусами. Координаційний штаб показав, як свідчення звільнених захисників перетворюються на структуровані записи про полонених і зниклих; Міноборони окремо показало, чому матеріали про впізнання не тотожні юридично чинному статусу смерті; Російська служба BBC і «Медіазона» продемонстрували, як великий місячний приріст бази втрат може бути ретроспективним backfill, а не смертями поточного періоду. В ударах, статистиці повернення дітей, інфраструктурній шкоді й provenance файлів діяло те саме правило: подія, спостереження, підтвердження, зміна реєстру та публічне розкриття — різні стани з різними часовими шкалами.",
+  "editorial_frame": {
+    "what_this_is": "A Sunday weekly magazine for Week 40, developing Daily #118–#122 and Saturday Tool Radar #123 into seven editorial sections.",
+    "what_this_is_not": "A mechanical merge, battlefield targeting product, private-person deanonymization workflow, or permission to turn one witness, database row, sanction, video frame or metadata field into a final factual or legal status."
+  },
+  "rubric_map": [
+    "📡 Signal of the Week / Головний сигнал тижня",
+    "🇺🇦 Ukraine Lens / Українська оптика",
+    "⚖️ War Crimes Verification / Верифікація воєнних злочинів",
+    "🕯️ Losses, Captivity & Missing / Втрати, полон, зниклі",
+    "🧰 Tradecraft / Методика",
+    "🛠️ Tools / Datasets / Інструменти й набори даних",
+    "⚠️ Risk Watch / Межі й ризики"
+  ],
+  "editorial_note_en": "The week's core rule is to model verification as a chain of state transitions. Preserve event time, observation time, confirmation time and ingest time separately; preserve the source-side trigger for every status change; and never let a later, stronger state silently erase the evidence path that produced it.",
+  "editorial_note_uk": "Головне правило тижня — моделювати верифікацію як ланцюг переходів між станами. Окремо зберігайте час події, час спостереження, час підтвердження та час внесення до системи; фіксуйте джерельний тригер кожної зміни статусу; не дозволяйте пізнішому сильнішому стану непомітно стирати доказовий шлях, який до нього привів.",
+  "items": [
+    {
+      "rubric_key": "signal",
+      "emoji": "📡",
+      "rubric_en": "Signal of the Week",
+      "rubric_uk": "Головний сигнал тижня",
+      "title_en": "The strongest OSINT this week came from tracking state transitions, not collecting more facts",
+      "title_uk": "Найсильніший OSINT цього тижня виникав із відстеження переходів між статусами, а не з накопичення фактів",
+      "source_line_en": "Coordination Headquarters for the Treatment of Prisoners of War · 29 September and 1 October; Ministry of Defence of Ukraine · 28 September; BBC Russian / Mediazona · 2 October 2026",
+      "source_line_uk": "Координаційний штаб з питань поводження з військовополоненими · 29 вересня та 1 жовтня; Міноборони України · 28 вересня; Російська служба BBC / «Медіазона» · 2 жовтня 2026",
+      "what_happened_en": "Ukraine's Coordination Headquarters described POW/MIA verification as a process built from released-prisoner testimony, ICRC data, military units, state institutions and later evidence. Its August interviews with 113 released defenders produced 1,062 new structured records, including confirmations, corrections and first-time location findings. Separately, the Defence Ministry instructed military units not to stop family payments merely because a body had been identified; a legally relevant status-changing record was still required. BBC Russian and Mediazona then showed the same problem in casualty data: 22,358 names were added in a month, but 18,657 were long-missing personnel whose bodies were found later rather than newly killed troops from that month.",
+      "what_happened_uk": "Коордштаб описав верифікацію полону й зникнення як процес, побудований зі свідчень звільнених, даних МКЧХ, військових частин, державних установ і пізніших доказів. Серпневі опитування 113 звільнених захисників дали 1 062 нові структуровані записи, включно з підтвердженнями, виправленнями та вперше встановленими місцями. Окремо Міноборони зобов'язало військові частини не припиняти виплати родинам лише через впізнання тіла: для зміни юридично значущого статусу потрібен відповідний запис. Російська служба BBC і «Медіазона» показали ту саму проблему в даних про втрати: за місяць додалося 22 358 імен, але 18 657 із них були військовими, які давно числилися зниклими й чиї тіла знайшли пізніше, а не загиблими саме в цьому місяці.",
+      "why_it_matters_en": "The recurring analytical error is status inflation: a lead becomes a confirmation, a confirmation becomes a legal status, or a database ingest date becomes an event date.",
+      "why_it_matters_uk": "Повторювана аналітична помилка — роздування статусу: зачіпка стає підтвердженням, підтвердження — юридичним статусом, а дата внесення до бази — датою самої події.",
+      "how_to_use_en": "Model each change as an event: old state → new state, with trigger source, event time, observation time, confirmation time, ingest time and confidence.",
+      "how_to_use_uk": "Моделюйте кожну зміну як подію: старий стан → новий стан, із джерелом-тригером, часом події, спостереження, підтвердження, внесення до системи та confidence.",
+      "limits_en": "Different institutions use different legal and operational vocabularies; the transition model is a workflow discipline, not a claim that all systems share identical categories.",
+      "limits_uk": "Різні установи використовують різні юридичні й операційні словники; модель переходів — це дисципліна workflow, а не твердження про тотожність категорій у всіх системах.",
+      "tags": ["weekly", "status-transitions", "temporal-semantics", "verification-chain"]
+    },
+    {
+      "rubric_key": "ukraine",
+      "emoji": "🇺🇦",
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "title_en": "From strike to outage: infrastructure impact became a measurable chain rather than one headline",
+      "title_uk": "Від удару до відключення: інфраструктурний вплив став вимірюваним ланцюгом, а не одним заголовком",
+      "source_line_en": "Reuters / Ukrainian authorities · 27 September–1 October; Kyivstar; Ukrainian energy and municipal authorities",
+      "source_line_uk": "Reuters / українські органи влади · 27 вересня–1 жовтня; Kyivstar; українські енергетичні та міські служби",
+      "what_happened_en": "The week began with strikes on Kyivstar's headquarters and data-centre and communications infrastructure, alongside reported outages affecting about 100,000 households from attacks during the preceding week. September 30 strikes killed three people, including a child, and injured seven in Kyiv and the surrounding region. On October 1 a drone hit a Kyiv school while more than 100 pupils were in shelter; Reuters said it verified CCTV of the impact. Emergency power cuts, public-transport disruption and lower water pressure after the September 30 attack showed how physical damage propagated into service effects.",
+      "what_happened_uk": "Тиждень почався з ударів по штаб-квартирі Kyivstar та інфраструктурі дата-центрів і зв'язку, на тлі повідомлень про перебої приблизно для 100 000 домогосподарств унаслідок атак попереднього тижня. Удари 30 вересня вбили трьох людей, серед них дитину, і поранили сімох у Києві та області. 1 жовтня дрон влучив у київську школу, коли понад 100 учнів перебували в укритті; Reuters повідомив, що перевірив CCTV моменту удару. Екстрені відключення електроенергії, перебої громадського транспорту та зниження тиску води після атаки 30 вересня показали, як фізичне пошкодження переходить у сервісний ефект.",
+      "why_it_matters_en": "The useful analytical unit is incident → physical damage → operator or facility status → service degradation → affected population → restoration.",
+      "why_it_matters_uk": "Корисна аналітична одиниця: інцидент → фізичне пошкодження → стан оператора чи об'єкта → деградація послуги → постраждала популяція → відновлення.",
+      "how_to_use_en": "Keep each incident and service layer separate, with geography and timestamps. Do not infer national or citywide outage from a strike on one operator or site.",
+      "how_to_use_uk": "Ведіть кожен інцидент і сервісний шар окремо, з географією та часовими мітками. Не виводьте загальнонаціональний чи міський outage з удару по одному оператору або об'єкту.",
+      "limits_en": "Early casualty and damage assessments can change; some strike details remain dependent on official Ukrainian reporting even when visible impact is independently verified.",
+      "limits_uk": "Ранні оцінки жертв і пошкоджень можуть змінюватися; частина деталей ударів залежить від офіційних українських повідомлень навіть тоді, коли видимий наслідок незалежно перевірено.",
+      "tags": ["weekly", "ukraine-lens", "infrastructure", "civilian-harm", "service-impact"]
+    },
+    {
+      "rubric_key": "war-crimes",
+      "emoji": "⚖️",
+      "rubric_en": "War Crimes Verification",
+      "rubric_uk": "Верифікація воєнних злочинів",
+      "title_en": "Occurrence, attribution and legal responsibility stayed separate even when the evidence became stronger",
+      "title_uk": "Факт події, атрибуція та юридична відповідальність лишалися окремими навіть тоді, коли докази ставали сильнішими",
+      "source_line_en": "Council of the European Union · 28 September; T4P database · September 2026; Reuters · 1 October 2026",
+      "source_line_uk": "Рада Європейського Союзу · 28 вересня; база T4P · вересень 2026; Reuters · 1 жовтня 2026",
+      "what_happened_en": "The EU added sanctions against 10 people and 17 entities it says are responsible for the unlawful deportation, forcible transfer and forced assimilation of Ukrainian children. T4P's public database passed 121,000 documented probable war-crime incidents while explicitly warning that its coverage is incomplete. Reuters' verification of CCTV from the October 1 Kyiv-school strike independently strengthened the occurrence evidence for that event while still leaving intended target, weapon attribution and legal classification as separate questions.",
+      "what_happened_uk": "ЄС запровадив санкції проти 10 осіб і 17 організацій, яких вважає відповідальними за незаконну депортацію, примусове переміщення та асиміляцію українських дітей. Публічна база T4P перевищила 121 тисячу задокументованих імовірних інцидентів воєнних злочинів, прямо попереджаючи про неповноту охоплення. Верифікація Reuters CCTV удару по київській школі 1 жовтня незалежно посилила доказ самого факту події, але задуману ціль, атрибуцію засобу ураження та юридичну кваліфікацію лишила окремими питаннями.",
+      "why_it_matters_en": "A sanctions listing is a legal measure, a database record is an investigative record, verified video is occurrence evidence, and a criminal judgment is something else again.",
+      "why_it_matters_uk": "Санкційний запис є правовим заходом, запис у базі — слідом розслідування, перевірене відео — доказом факту події, а кримінальний вирок — ще іншим станом.",
+      "how_to_use_en": "Store evidence class and authority beside every record; increase the strength of a claim only when the relevant evidentiary or legal threshold has actually changed.",
+      "how_to_use_uk": "Зберігайте клас доказу та компетентний орган поруч із кожним записом; посилюйте твердження лише тоді, коли реально змінився відповідний доказовий або юридичний поріг.",
+      "limits_en": "Large incident databases are not complete censuses, and sanctions do not substitute for judicial findings.",
+      "limits_uk": "Великі бази інцидентів не є повним переписом, а санкції не замінюють судового висновку.",
+      "tags": ["weekly", "war-crimes", "sanctions", "t4p", "evidence-class"]
+    },
+    {
+      "rubric_key": "losses",
+      "emoji": "🕯️",
+      "rubric_en": "Losses, Captivity & Missing",
+      "rubric_uk": "Втрати, полон, зниклі",
+      "title_en": "POW, MIA and casualty records are timelines, not labels",
+      "title_uk": "Записи про полонених, зниклих і загиблих — це часові лінії, а не ярлики",
+      "source_line_en": "Coordination Headquarters for the Treatment of Prisoners of War · 29 September and 1 October; Ministry of Defence of Ukraine · 28 September; BBC Russian / Mediazona · 2 October 2026",
+      "source_line_uk": "Коордштаб · 29 вересня та 1 жовтня; Міноборони України · 28 вересня; Російська служба BBC / «Медіазона» · 2 жовтня 2026",
+      "what_happened_en": "Released-prisoner testimony generated measurable record changes: 608 location-related entries, 416 confirmed detention locations, 155 clarified or changed locations, 37 locations established for the first time and 125 health-status records. Ukraine's Defence Ministry separately distinguished body-identification documentation from the official record required to change payment status for a missing service member. On the Russian side, BBC Russian and Mediazona put their named list at 266,032 deaths; 18,657 of the 22,358 names added in the previous month were retrospective cases of long-missing troops whose bodies were found later. In a sample of 10,000 such cases, remains were found on average 150 days after death and documentary registration followed on average 236 days after death.",
+      "what_happened_uk": "Свідчення звільнених дали вимірювані зміни записів: 608 записів про місця перебування, 416 підтверджених місць утримання, 155 уточнених або змінених місць, 37 місць, встановлених уперше, та 125 записів про стан здоров'я. Міноборони України окремо розвело документи про впізнання тіла й офіційний запис, потрібний для зміни статусу виплат щодо зниклого військовослужбовця. З російського боку BBC Russian і «Медіазона» довели поіменний список до 266 032 загиблих; 18 657 із 22 358 імен, доданих за попередній місяць, були ретроспективними випадками давно зниклих, чиї тіла знайшли пізніше. У вибірці з 10 тисяч таких випадків останки знаходили в середньому через 150 днів після смерті, а документальна реєстрація відбувалася в середньому через 236 днів.",
+      "why_it_matters_en": "Monthly database growth is an ingest metric unless the underlying event dates are aligned. The same distinction applies to captivity, missing-person and death status.",
+      "why_it_matters_uk": "Місячний приріст бази є метрикою внесення записів, доки не узгоджено дати самих подій. Те саме стосується статусів полону, зникнення та смерті.",
+      "how_to_use_en": "Preserve the full status history and separate event date, recovery date, witness date, legal registration date and database-ingest date.",
+      "how_to_use_uk": "Зберігайте повну історію статусу й розділяйте дату події, виявлення останків, свідчення, юридичної реєстрації та внесення до бази.",
+      "limits_en": "Named open-source casualty lists are documented floors rather than complete mortality totals; witness-derived records also require corroboration and competent status change.",
+      "limits_uk": "Поіменні списки за відкритими джерелами є задокументованою нижньою межею, а не повною смертністю; записи зі свідчень також потребують corroboration і компетентної зміни статусу.",
+      "tags": ["weekly", "pow", "mia", "casualties", "backfill", "status-history"]
+    },
+    {
+      "rubric_key": "tradecraft",
+      "emoji": "🧰",
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "title_en": "Build a status ledger instead of silently overwriting the latest value",
+      "title_uk": "Будуйте журнал статусів замість тихого перезапису останнього значення",
+      "source_line_en": "Method derived from Daily #119–#122 and the verification patterns documented by Ukrainian institutions and open-source casualty projects",
+      "source_line_uk": "Метод виведено з Daily #119–#122 та патернів верифікації, описаних українськими установами й проєктами обліку втрат за відкритими джерелами",
+      "what_happened_en": "Across missing-person payments, POW testimony, casualty backfill, child-return figures, strike verification and infrastructure effects, the week repeatedly exposed the weakness of storing only one current value. A record becomes auditable when each transition retains the old state, new state, trigger source, evidence type, relevant timestamps and uncertainty.",
+      "what_happened_uk": "У виплатах родинам зниклих, свідченнях про полон, backfill втрат, статистиці повернення дітей, верифікації ударів та інфраструктурних наслідках тиждень постійно показував слабкість моделі, де зберігається лише одне поточне значення. Запис стає придатним до аудиту, коли кожен перехід зберігає старий стан, новий стан, джерело-тригер, тип доказу, релевантні часові мітки та невизначеність.",
+      "why_it_matters_en": "A final status without its path hides contradictions, delays and source changes — exactly where many OSINT errors originate.",
+      "why_it_matters_uk": "Остаточний статус без шляху до нього приховує суперечності, затримки та зміни джерел — саме там часто виникають OSINT-помилки.",
+      "how_to_use_en": "Recommended minimum transition object: entity or incident ID; old state; new state; event time; observation time; confirmation time; ingest time; trigger source; evidence class; confidence; reviewer note.",
+      "how_to_use_uk": "Рекомендований мінімальний об'єкт переходу: ID особи або інциденту; старий стан; новий стан; час події; спостереження; підтвердження; внесення; джерело-тригер; клас доказу; confidence; примітка reviewer-а.",
+      "limits_en": "This is an editorial data model, not a substitute for institution-specific legal procedure or evidentiary rules.",
+      "limits_uk": "Це редакційна модель даних, а не заміна процедур і правил доказування конкретної установи.",
+      "tags": ["weekly", "tradecraft", "status-ledger", "audit-trail", "provenance"]
+    },
+    {
+      "rubric_key": "tools",
+      "emoji": "🛠️",
+      "rubric_en": "Tools / Datasets",
+      "rubric_uk": "Інструменти й набори даних",
+      "title_en": "The best tools this week exposed evidence and uncertainty instead of manufacturing a verdict",
+      "title_uk": "Найкращі інструменти тижня показували докази й невизначеність замість виробляти вердикт",
+      "source_line_en": "Saturday Tool Radar #123 · Web-Check 2.3.0; Waypoint; ArchiveBox 0.9.71; Archive Scout; Origin",
+      "source_line_uk": "Saturday Tool Radar #123 · Web-Check 2.3.0; Waypoint; ArchiveBox 0.9.71; Archive Scout; Origin",
+      "what_happened_en": "Web-Check 2.3.0 expanded self-hosted website inspection and added provenance and SBOM attestations to its own container image. Waypoint exposed ranked geolocation candidates, confidence and intermediate evidence instead of one opaque coordinate. ArchiveBox preserved live sources into multiple local formats for later audit. Archive Scout focused on resumable public Wayback discovery and scanning. Origin read C2PA Content Credentials entirely in-browser while explicitly separating signer claims, cryptographic integrity and trust status.",
+      "what_happened_uk": "Web-Check 2.3.0 розширив self-hosted аналіз сайтів і додав provenance та SBOM attestations до власного контейнерного образу. Waypoint показує ранжованих кандидатів геолокації, confidence та проміжні докази замість однієї непрозорої координати. ArchiveBox зберігає живі джерела в кількох локальних форматах для подальшого аудиту. Archive Scout орієнтований на відновлюваний пошук і сканування публічних копій Wayback. Origin читає C2PA Content Credentials повністю в браузері й явно розділяє заяви підписанта, криптографічну цілісність і статус довіри.",
+      "why_it_matters_en": "Analyst-controlled tools fit the week's evidence model: candidate, snapshot, credential and infrastructure indicator are intermediate states, not truth labels.",
+      "why_it_matters_uk": "Інструменти під контролем аналітика відповідають доказовій моделі тижня: candidate, snapshot, credential та інфраструктурний індикатор є проміжними станами, а не ярликами істини.",
+      "how_to_use_en": "Preserve raw outputs, timestamps, tool version and provenance. Require an independent corroboration step before promoting a tool result into a factual claim.",
+      "how_to_use_uk": "Зберігайте сирі результати, часові мітки, версію інструмента та provenance. Перед перетворенням результату інструмента на фактичне твердження вимагайте незалежної corroboration.",
+      "limits_en": "Tool confidence, valid metadata or a signed credential cannot by themselves prove the underlying event, identity, location or narrative.",
+      "limits_uk": "Confidence інструмента, валідні метадані чи підписаний credential самі по собі не доводять подію, особу, місце або наратив.",
+      "tags": ["weekly", "tools", "provenance", "geolocation", "archiving", "c2pa"]
+    },
+    {
+      "rubric_key": "risk",
+      "emoji": "⚠️",
+      "rubric_en": "Risk Watch",
+      "rubric_uk": "Межі й ризики",
+      "title_en": "Verification does not create permission to disclose",
+      "title_uk": "Верифікація не створює автоматичного дозволу на розкриття",
+      "source_line_en": "Reuters · 30 September and 2 October; OpenOSINT 2.29.1 · 1 October 2026",
+      "source_line_uk": "Reuters · 30 вересня та 2 жовтня; OpenOSINT 2.29.1 · 1 жовтня 2026",
+      "what_happened_en": "South Korea and Ukraine publicly disputed whether the transfer of two North Korean POWs was covered by a confidentiality understanding. Seoul also said it made no military-aid pledge in exchange for receiving the two men. The case showed that physical transfer, an alleged quid pro quo, confidentiality, consent and safe public disclosure are separate questions. Separately, OpenOSINT 2.29.1 fixed a web-UI weakness showing that localhost tooling still belongs inside the investigator's threat model because another website open in the same browser could previously drive requests to the local server.",
+      "what_happened_uk": "Південна Корея та Україна публічно сперечалися, чи була передача двох північнокорейських військовополонених охоплена домовленістю про конфіденційність. Сеул також заявив, що не обіцяв військової допомоги в обмін на прийняття цих двох людей. Кейс показав, що фізична передача, alleged quid pro quo, конфіденційність, згода людини та безпечний рівень публічного розкриття — різні питання. Окремо OpenOSINT 2.29.1 виправив уразливість web-інтерфейсу, нагадавши, що localhost-інструменти теж входять до threat model дослідника: раніше інший сайт, відкритий у тому самому браузері, міг керувати запитами до локального сервера.",
+      "why_it_matters_en": "Public-interest verification answers whether a claim is supported; it does not automatically answer whether every supported detail should be published.",
+      "why_it_matters_uk": "Верифікація в суспільному інтересі відповідає на питання, чи підтверджене твердження; вона не відповідає автоматично, чи слід публікувати кожну підтверджену деталь.",
+      "how_to_use_en": "Apply data minimisation and a disclosure threshold after verification. Keep identity, destination, timing, family risk and operational sensitivity as separate publication decisions.",
+      "how_to_use_uk": "Після верифікації застосовуйте мінімізацію даних і окремий disclosure threshold. Особу, місце призначення, час, ризики для родини та операційну чутливість оцінюйте як окремі рішення про публікацію.",
+      "limits_en": "The existence of a confidentiality agreement in the North Korean POW case remained disputed by Seoul and Kyiv; the weekly does not resolve that dispute.",
+      "limits_uk": "Існування домовленості про конфіденційність у справі північнокорейських полонених лишалося предметом спору між Сеулом і Києвом; Weekly не вирішує цю суперечку.",
+      "tags": ["weekly", "risk-watch", "privacy", "pow", "opsec", "data-minimisation"]
+    }
+  ],
+  "compact_sections": [
+    {
+      "rubric_key": "evidence-model",
+      "emoji": "🧭",
+      "title": "Evidence model / Модель доказів",
+      "short_title": "Separate event time from record time",
+      "points": [
+        "Track event, observation, confirmation and ingest timestamps separately.",
+        "Treat witness statements, database rows and tool outputs as typed evidence states.",
+        "Promote status only on an explicit source-side trigger."
+      ]
+    },
+    {
+      "rubric_key": "weekly-workflow",
+      "emoji": "🗂️",
+      "title": "Weekly workflow / Робочий процес",
+      "short_title": "Preserve the chain, not only the latest value",
+      "points": [
+        "Store old state → new state with source, evidence class and confidence.",
+        "Never rewrite ingest growth as current-period event growth without date alignment.",
+        "Archive raw source and tool output before interpretation."
+      ]
+    },
+    {
+      "rubric_key": "safety-line",
+      "emoji": "🛡️",
+      "title": "Safety line / Межа безпеки",
+      "short_title": "Verification is not permission to disclose",
+      "points": [
+        "Apply data minimisation after verification, not before it.",
+        "Do not publish sensitive person-level fields merely because they are known.",
+        "Do not turn tool confidence, sanctions, registry inclusion or witness evidence into culpability or final status without the missing evidentiary step."
+      ]
+    }
+  ],
+  "reading_list": [
+    {
+      "href": "https://koordshtab.gov.ua/posts/rezultaty-roboty-z-vyzvolenymy-u-serpni-2026-roku-3802",
+      "title": "Coordination Headquarters — results of work with defenders released in August",
+      "note": "Structured witness-derived POW/MIA record changes."
+    },
+    {
+      "href": "https://www.bbc.com/russian/articles/cjr4v4dlexqwo",
+      "title": "BBC Russian / Mediazona — casualty backfill and missing-person lag",
+      "note": "Why database growth is not period mortality."
+    },
+    {
+      "href": "https://www.reuters.com/world/europe/russian-air-strikes-injure-two-ukraines-kyiv-odesa-officials-say-2026-10-01/",
+      "title": "Reuters — Kyiv school strike and verified CCTV",
+      "note": "Occurrence evidence separated from intent and legal classification."
+    },
+    {
+      "href": "https://childrenofwar.gov.ua/",
+      "title": "Children of War — current Ukrainian child-status snapshot",
+      "note": "Aggregated indicators from different institutional processes."
+    },
+    {
+      "href": "https://www.reuters.com/world/asia-pacific/south-koreas-lee-threatens-action-against-ukraine-over-transfer-north-korean-2026-10-02/",
+      "title": "Reuters — South Korea–Ukraine dispute over North Korean POW disclosure",
+      "note": "Confidentiality and minimum-necessary disclosure."
+    },
+    {
+      "href": "https://github.com/KillaMeep/waypoint-osint",
+      "title": "Waypoint — local image-geolocation candidate pipeline",
+      "note": "Ranked candidates and uncertainty rather than one opaque answer."
+    },
+    {
+      "href": "https://pypi.org/project/archivebox/0.9.71/",
+      "title": "ArchiveBox 0.9.71",
+      "note": "Reproducible local source capture."
+    },
+    {
+      "href": "https://github.com/swanca/content-origin",
+      "title": "Origin — browser-local C2PA verifier",
+      "note": "Separates signer claim, cryptographic integrity and trust state."
+    }
+  ],
+  "editorial_notes_internal": [
+    "EDITORIAL NOTES — INTERNAL. W40 covers 28 September–4 October 2026.",
+    "Source base: Daily #118–#122 and Saturday Tool Radar #123.",
+    "Canonical seven-rubric order preserved.",
+    "Central thesis: verification is a chain of state transitions, and each state has its own clock and authority.",
+    "Signal and Losses sections distinguish witness evidence, administrative/legal status and database-ingest timing.",
+    "Ukraine Lens separates incident, physical damage, service impact and affected population.",
+    "War Crimes section distinguishes sanctions, investigative databases, verified occurrence evidence and judicial findings.",
+    "Tools section preserves analyst control and treats tool output as intermediate evidence rather than a verdict.",
+    "Risk Watch separates verification from disclosure permission and keeps the Seoul–Kyiv confidentiality dispute unresolved.",
+    "No live targeting coordinates, private identifiers, survivor identities, sensitive detention locations, credential hunting or deanonymization workflow.",
+    "Publication explicitly requested by user on 4 October 2026."
+  ]
+}
