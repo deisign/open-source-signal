@@ -37,7 +37,7 @@
       "source_date_label_en": "2 October 2026",
       "source_date_label_uk": "2 жовтня 2026",
       "what_happened_en": "Web-Check 2.3.0 was released on October 2. The release adds a tracker check, verified social statistics for websites, fixes the WHOIS OpenAPI parameter, improves self-hosting options, and attaches provenance and SBOM attestations to the published container image. The project is designed as a broad website-inspection surface rather than a single-purpose lookup tool.",
-      "what_happened_uk": "Web-Check 2.3.0 вийшов 2 жовтня. Реліз додає перевірку трекерів, верифіковану соціальну статистику для сайтів, виправляє параметр WHOIS в OpenAPI, покращує self-hosting і додає provenance та SBOM attestations до опублікованого контейнерного образу. Проєкт працює як широкий інтерфейс аналізу сайту, а не як один окремий lookup-сервіс.",
+      "what_happened_uk": "Web-Check 2.3.0 вийшов 2 жовтня. Реліз додає перевірку трекерів, верифіковану соціальну статистику для сайтів, виправляє параметр WHOIS в OpenAPI, покращує self-hosting і додає provenance та SBOM attestations до опублікованого контейнерного образу. Проєкт працює як широкий інтерфейс аналізу сайту, а не як один окремний lookup-сервіс.",
       "why_it_matters_en": "Website research often mixes DNS, WHOIS, TLS, technology fingerprints, headers, archives and social signals. A single self-hosted interface can reduce collection friction, while attestations on the tool's own image improve confidence about what software was actually published.",
       "why_it_matters_uk": "Дослідження сайтів часто змішує DNS, WHOIS, TLS, технологічні відбитки, headers, архіви й соціальні сигнали. Єдиний self-hosted інтерфейс зменшує тертя під час збору, а attestations для власного образу інструмента підвищують довіру до того, яке саме ПЗ було опубліковано.",
       "how_to_use_en": "Treat each module as a separate observation layer. Preserve timestamps and raw values for DNS, certificates, redirects and trackers; do not infer common ownership from one shared infrastructure indicator alone.",
@@ -131,11 +131,11 @@
       "tags": ["c2pa", "content-credentials", "provenance", "image-verification", "origin", "browser-local"]
     }
   ],
-  "internal_notes": {
-    "duplicate_audit": "Excluded tools recently covered in Daily Signal or the previous Saturday radar: Mobile Verification Toolkit, FileGrail, Azimut, OpenOSINT, Bellingcat Online Investigation Toolkit, SEC EDGAR, Companies House, OpenAerialMap, NASA FIRMS, OpenSky Network and Zotero.",
-    "editorial_exclusions": "user-scanner was excluded because its current positioning makes bulk account discovery and protection-bypass workflows too easy to repurpose for private-person deanonymization or intrusive reconnaissance. VGraph was reviewed and excluded after primary-source verification showed it is a vector grid-drawing application rather than a link-analysis graph tool.",
-    "source_discipline": "Primary project repositories, release pages and PyPI were preferred. Tool output is treated as evidence or a lead, not an automatic factual verdict.",
-    "safety": "No live targeting, stalking, credential hunting, unauthorised access, private-person deanonymization or bulk account reconnaissance workflow is included.",
-    "publication_status": "Publication requested by user on 4 October 2026 for the Saturday 3 October 2026 issue."
-  }
+  "internal_notes": [
+    "Duplicate audit: excluded tools recently covered in Daily Signal or the previous Saturday radar: Mobile Verification Toolkit, FileGrail, Azimut, OpenOSINT, Bellingcat Online Investigation Toolkit, SEC EDGAR, Companies House, OpenAerialMap, NASA FIRMS, OpenSky Network and Zotero.",
+    "Editorial exclusions: user-scanner was excluded because its current positioning makes bulk account discovery and protection-bypass workflows too easy to repurpose for private-person deanonymization or intrusive reconnaissance. VGraph was reviewed and excluded after primary-source verification showed it is a vector grid-drawing application rather than a link-analysis graph tool.",
+    "Source discipline: primary project repositories, release pages and PyPI were preferred. Tool output is treated as evidence or a lead, not an automatic factual verdict.",
+    "Safety: no live targeting, stalking, credential hunting, unauthorised access, private-person deanonymization or bulk account reconnaissance workflow is included.",
+    "Publication status: publication requested by user on 4 October 2026 for the Saturday 3 October 2026 issue."
+  ]
 }
