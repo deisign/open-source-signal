@@ -131,11 +131,13 @@
       "tags": ["humanitarian-verification", "oleshky", "aid", "access", "repeatability", "safety"]
     }
   ],
-  "internal_notes": {
-    "duplicate_audit": "Excluded the 60th Mechanized Brigade Coordination Headquarters item because its POW/MIA evidence-chain methodology substantially repeats Daily #120 and #121. Also avoided repeating BBC/Mediazona casualty backfill, North Korean POW disclosure, OpenOSINT, Web-Check, Waypoint, ArchiveBox, Archive Scout and Origin from #122-#123 and W40.",
-    "editorial_frame": "delta != transition; successful event != persistent state; confirmation of A != confirmation of B.",
-    "source_discipline": "Primary Ukrainian institutional sources and Reuters were preferred. Public dashboard deltas are reported as visible counter changes, not inferred person-level transitions.",
-    "safety": "No live targeting coordinates, sensitive aid routes, private identifiers, credentials or private-person deanonymization workflows are included.",
-    "publication_status": "Publication requested by user on 5 October 2026."
-  }
+  "internal_notes": [
+    "EDITORIAL NOTES — INTERNAL. Daily #124 covers 5 October 2026.",
+    "Duplicate audit: excluded the 60th Mechanized Brigade Coordination Headquarters item because its POW/MIA evidence-chain methodology substantially repeats Daily #120 and #121.",
+    "Also avoided repeating BBC/Mediazona casualty backfill, North Korean POW disclosure, OpenOSINT, Web-Check, Waypoint, ArchiveBox, Archive Scout and Origin from #122-#123 and W40.",
+    "Editorial frame: delta != transition; successful event != persistent state; confirmation of A != confirmation of B.",
+    "Source discipline: primary Ukrainian institutional sources and Reuters were preferred. Public dashboard deltas are reported as visible counter changes, not inferred person-level transitions.",
+    "Safety: no live targeting coordinates, sensitive aid routes, private identifiers, credentials or private-person deanonymization workflows are included.",
+    "Publication requested by user on 5 October 2026."
+  ]
 }
