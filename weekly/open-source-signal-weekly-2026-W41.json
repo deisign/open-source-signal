@@ -1,0 +1,287 @@
+{
+  "issue_number": "W41",
+  "slug": "open-source-signal-weekly-2026-W41",
+  "output_name": "open-source-signal-weekly-2026-W41.html",
+  "date_iso": "2026-10-11",
+  "week_label_en": "5–11 October 2026",
+  "week_label_uk": "5–11 жовтня 2026",
+  "title_en": "Open Source Signal Weekly",
+  "title_uk": "Тижневий сигнал відкритих джерел",
+  "subtitle_en": "Sunday editorial synthesis for Ukrainian accountability OSINT.",
+  "subtitle_uk": "Недільний редакційний синтез для української роботи з відкритими джерелами й притягнення до відповідальності.",
+  "dek_en": "Week 41 was about preserving disagreement instead of forcing premature consensus. Port strikes, drone attribution, fuel-trade interpretation and a multilingual disinformation network all showed why a confirmed event does not automatically confirm every attached explanation. Accountability and loss datasets showed the same rule: preserve provenance, timestamps and unresolved fields.",
+  "dek_uk": "41-й тиждень був про збереження суперечності замість передчасного консенсусу. Удари по портах, атрибуція дронів, інтерпретація паливної торгівлі та багатомовна дезінформаційна мережа показали, чому підтверджена подія не підтверджує автоматично всі пояснення. Дані про відповідальність і втрати вимагали того самого: зберігати походження, часові поля й невирішені питання.",
+  "editorial_frame": {
+    "what_this_is": "A Sunday weekly magazine for Week 41, developing Daily #124–#128 and Saturday Tool Radar #129 into seven editorial sections.",
+    "what_this_is_not": "A mechanical merge, a majority-vote truth engine, a political ranking, a battlefield targeting product, or a reason to discard source disagreement."
+  },
+  "rubric_map": [
+    "📡 Signal of the Week / Головний сигнал тижня",
+    "🇺🇦 Ukraine Lens / Українська оптика",
+    "⚖️ War Crimes Verification / Верифікація воєнних злочинів",
+    "🕯️ Losses, Captivity & Missing / Втрати, полон, зниклі",
+    "🧰 Tradecraft / Методика",
+    "🛠️ Tools / Datasets / Інструменти й набори даних",
+    "⚠️ Risk Watch / Межі й ризики"
+  ],
+  "editorial_note_en": "Contradiction is not noise to delete. Record competing claims, their timestamps, evidence bases and later corrections. Replication is not corroboration; provenance is not trustworthiness; a confirmed event does not automatically confirm every attached explanation.",
+  "editorial_note_uk": "Суперечність — не шум, який треба видалити. Фіксуйте конкурентні твердження, їхній час, доказову базу й подальші виправлення. Тиражування не є незалежним підтвердженням; походження не є синонімом достовірності; підтверджена подія не підтверджує автоматично всі пояснення.",
+  "items": [
+    {
+      "rubric_key": "signal",
+      "emoji": "📡",
+      "rubric_en": "Signal of the Week",
+      "rubric_uk": "Головний сигнал тижня",
+      "title_en": "Disagreement is an evidence state — do not collapse it into a single answer",
+      "title_uk": "Незгода джерел — це доказовий стан; не стискайте її до однієї відповіді",
+      "source_line_en": "Reuters · 5–8 October; DFRLab / StopFake · October 2026",
+      "source_line_uk": "Reuters · 5–8 жовтня; DFRLab / StopFake · жовтень 2026",
+      "what_happened_en": "A strike on Odesa-region port infrastructure was confirmed while Russia's claim about military cargo remained unverified. Bulgaria said a drone's origin was not established while Ukraine said a joint investigation confirmed Russian involvement. South Korea disputed Ukraine's interpretation that Korean exports eased Russia's fuel crisis. A fabricated Politico story spread through 18 languages in 29 hours: replication without independent corroboration.",
+      "what_happened_uk": "Удар по портовій інфраструктурі Одещини був підтверджений, але російське твердження про військовий вантаж лишилося неперевіреним. Болгарія заявила, що походження дрона не встановлено, тоді як Україна повідомила про підтвердження російської причетності спільним розслідуванням. Південна Корея заперечила українську інтерпретацію щодо впливу корейського експорту на паливну кризу в Росії. Сфабрикована історія Politico розійшлася 18 мовами за 29 годин: тиражування без незалежної кореляції.",
+      "why_it_matters_en": "Source disagreement is information about evidentiary state and unresolved fields.",
+      "why_it_matters_uk": "Розбіжність між джерелами сама по собі є інформацією про доказовий стан і невирішені поля.",
+      "how_to_use_en": "Store claim A, claim B, source, timestamp, evidence offered and current resolution separately.",
+      "how_to_use_uk": "Зберігайте окремо твердження A, твердження B, джерело, час, наведені докази й поточний стан вирішення.",
+      "limits_en": "Disagreement does not mean all interpretations are equally supported; weight evidence but preserve the record.",
+      "limits_uk": "Незгода не означає однакової доказової сили всіх версій; зважуйте докази, але зберігайте запис про розбіжність.",
+      "tags": [
+        "weekly",
+        "claim-state",
+        "contradiction",
+        "corroboration",
+        "provenance"
+      ]
+    },
+    {
+      "rubric_key": "ukraine",
+      "emoji": "🇺🇦",
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "title_en": "Civilian harm became a chain from strike to outage, casualty and resilience response",
+      "title_uk": "Шкода цивільним склалася в ланцюг: удар → відключення → жертви → заходи стійкості",
+      "source_line_en": "OHCHR · 8–9 October; Reuters / Ukrainian authorities · 7–9 October 2026",
+      "source_line_uk": "OHCHR · 8–9 жовтня; Reuters / українські органи влади · 7–9 жовтня 2026",
+      "what_happened_en": "UN Human Rights Chief Volker Türk said that from Monday through October 8 at least 85 civilians had reportedly been killed and 346 injured in Russian strikes across Ukraine. OHCHR also pointed to widespread outages after attacks on substations and power generation. Ukraine meanwhile hardened filling stations with blast barriers, shelters and backup power.",
+      "what_happened_uk": "Верховний комісар ООН з прав людини Фолькер Тюрк повідомив, що від понеділка до 8 жовтня внаслідок російських ударів по Україні, за повідомленнями, загинули щонайменше 85 цивільних, ще 346 були поранені. OHCHR також вказало на масштабні відключення після ударів по підстанціях та генерації. Україна водночас посилювала захист АЗС бар'єрами, укриттями й резервним живленням.",
+      "why_it_matters_en": "Strike, damage, outage, civilian effect, mitigation installed, service restored and mitigation tested are different states.",
+      "why_it_matters_uk": "Удар, пошкодження, відключення, наслідок для цивільних, встановлений захист, відновлення й перевірка захисту — різні стани.",
+      "how_to_use_en": "Link incidents to infrastructure components, outage duration, casualty records and recovery measures.",
+      "how_to_use_uk": "Пов'язуйте інциденти з компонентами інфраструктури, тривалістю відключень, жертвами й заходами відновлення.",
+      "limits_en": "The OHCHR figure was a rolling multi-day count, not a final monthly total.",
+      "limits_uk": "Цифра OHCHR була ковзним багатоденним підрахунком, а не остаточним місячним показником.",
+      "tags": [
+        "weekly",
+        "ukraine-lens",
+        "civilian-harm",
+        "energy",
+        "resilience"
+      ]
+    },
+    {
+      "rubric_key": "war-crimes",
+      "emoji": "⚖️",
+      "rubric_en": "War Crimes Verification",
+      "rubric_uk": "Верифікація воєнних злочинів",
+      "title_en": "Monitoring material is not automatically prosecution evidence",
+      "title_uk": "Матеріали моніторингу не стають автоматично доказами обвинувачення",
+      "source_line_en": "Georgetown Law ICJI · 6 October; Bring Kids Back UA / Prosecutor General's Office · 3 October 2026",
+      "source_line_uk": "Georgetown Law ICJI · 6 жовтня; Bring Kids Back UA / Офіс Генерального прокурора · 3 жовтня 2026",
+      "what_happened_en": "Georgetown Law's ICJI published an interim analysis of the indoctrination and militarisation of Ukrainian children under Russian occupation. It explicitly reserves questions including individual criminal responsibility and evidentiary standards, and says much existing material was assembled for monitoring and advocacy. Ukrainian institutions and NGOs also described closer coordination in documenting deportation, forcible transfer, militarisation and indoctrination of children.",
+      "what_happened_uk": "ICJI Georgetown Law опублікувала проміжний аналіз індоктринації та мілітаризації українських дітей під російською окупацією. Документ прямо залишає для подальшої роботи питання індивідуальної кримінальної відповідальності й доказових стандартів та зазначає, що значна частина матеріалів збиралася для моніторингу й адвокації. Українські інституції та НУО також описали тіснішу координацію документування депортації, примусового переміщення, мілітаризації та індоктринації дітей.",
+      "why_it_matters_en": "The gap between well documented and prosecution ready is a workflow requirement: authentication, element-by-element proof, chain of custody and linkage.",
+      "why_it_matters_uk": "Розрив між «добре задокументовано» і «готово для обвинувачення» — це вимога процесу: автентифікація, доказування елементів, ланцюг збереження та зв'язок.",
+      "how_to_use_en": "Tag material as monitoring, lead, corroboration, authenticated exhibit, linkage evidence or legal analysis.",
+      "how_to_use_uk": "Маркуйте матеріали як моніторинг, зачіпку, кореляцію, автентифікований експонат, доказ зв'язку або правовий аналіз.",
+      "limits_en": "The Georgetown publication is an interim analysis, not a judgment.",
+      "limits_uk": "Публікація Georgetown є проміжним аналізом, а не судовим рішенням.",
+      "tags": [
+        "weekly",
+        "war-crimes",
+        "children",
+        "evidence-conversion",
+        "accountability"
+      ]
+    },
+    {
+      "rubric_key": "losses",
+      "emoji": "🕯️",
+      "rubric_en": "Losses, Captivity & Missing",
+      "rubric_uk": "Втрати, полон, зниклі",
+      "title_en": "A 17,000-name jump did not mean 17,000 recent deaths",
+      "title_uk": "Стрибок на 17 тисяч імен не означав 17 тисяч недавніх смертей",
+      "source_line_en": "Mediazona / BBC Russian · 9 October; Coordination Headquarters for the Treatment of Prisoners of War · 5 October 2026",
+      "source_line_uk": "Mediazona / BBC Russian · 9 жовтня; Координаційний штаб з питань поводження з військовополоненими · 5 жовтня 2026",
+      "what_happened_en": "Mediazona and BBC Russian updated their named list to 276,000 confirmed Russian military deaths by October 9. Mediazona said more than 17,000 names had been added since September 21 largely because missing-person cases were being resolved through official state registries, not because those deaths occurred in the latest period. Ukraine separately said more than 300 detention sites holding Ukrainians lacked ICRC access.",
+      "what_happened_uk": "Mediazona та BBC Russian оновили іменний список до 276 тисяч підтверджених загиблих російських військових станом на 9 жовтня. Mediazona пояснила, що понад 17 тисяч імен, доданих із 21 вересня, з'явилися переважно через опрацювання справ зниклих за державними реєстрами, а не тому, що ці люди загинули саме в останній період. Україна окремо заявила про понад 300 місць утримання українців без доступу МКЧХ.",
+      "why_it_matters_en": "Publication date, confirmation date and date of death are different timestamps; backlog resolution can create sharp jumps without a contemporaneous battlefield spike.",
+      "why_it_matters_uk": "Дата публікації, дата підтвердження та дата смерті — різні часові поля; опрацювання накопиченого масиву може створювати стрибок без одночасного стрибка бойової смертності.",
+      "how_to_use_en": "Store event_date, first_reported, confirmed_at and source_updated_at separately.",
+      "how_to_use_uk": "Зберігайте окремо event_date, first_reported, confirmed_at і source_updated_at.",
+      "limits_en": "Mediazona states the named list is not exhaustive and recent months are especially incomplete.",
+      "limits_uk": "Mediazona прямо зазначає, що іменний список неповний, а останні місяці особливо недообліковані.",
+      "tags": [
+        "weekly",
+        "losses",
+        "missing",
+        "captivity",
+        "registry-backfill"
+      ]
+    },
+    {
+      "rubric_key": "tradecraft",
+      "emoji": "🧰",
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "title_en": "Build a contradiction matrix before you build a verdict",
+      "title_uk": "Спочатку будуйте матрицю суперечностей, а вже потім висновок",
+      "source_line_en": "Method derived from Daily #124–#128",
+      "source_line_uk": "Метод, виведений із Daily #124–#128",
+      "what_happened_en": "The week repeatedly produced partially compatible claims: event confirmed / mechanism disputed; trade observed / market effect disputed; warning recorded / later attack occurred; software provenance attested / trustworthiness unknown; one false narrative repeated across languages / no independent corroboration.",
+      "what_happened_uk": "Тиждень раз по раз давав частково сумісні твердження: подію підтверджено / механізм спірний; торгівлю зафіксовано / ринковий ефект оспорюється; попередження зафіксовано / атака відбулася пізніше; походження ПЗ підтверджене / надійність невідома; один фейковий наратив повторено різними мовами / незалежної кореляції немає.",
+      "why_it_matters_en": "Binary labels often collapse multiple claim components and erase where uncertainty lives.",
+      "why_it_matters_uk": "Бінарні ярлики часто стискають кілька компонентів твердження й стирають саме місце невизначеності.",
+      "how_to_use_en": "Create rows for claim components and columns for sources; record support, contradiction, silence, independence, timestamp and evidence type.",
+      "how_to_use_uk": "Створюйте рядки для компонентів твердження, стовпці для джерел і фіксуйте підтримку, заперечення, мовчання, незалежність, час і тип доказу.",
+      "limits_en": "A contradiction matrix organises evidence; it does not determine credibility automatically.",
+      "limits_uk": "Матриця суперечностей організує докази, але не визначає автоматично надійність джерел.",
+      "tags": [
+        "weekly",
+        "tradecraft",
+        "claim-matrix",
+        "contradiction"
+      ]
+    },
+    {
+      "rubric_key": "toolbox",
+      "emoji": "🛠️",
+      "rubric_en": "Tools / Datasets",
+      "rubric_uk": "Інструменти й набори даних",
+      "title_en": "The best tools exposed provenance and failure states instead of hiding them behind a verdict",
+      "title_uk": "Найкращі інструменти показували походження й стани помилки, а не ховали їх за готовим вердиктом",
+      "source_line_en": "Saturday Tool Radar #129 · geo-sleuth; Birdbrain; C2PA Conformance Tool; Crush Forensics; BloomRepo",
+      "source_line_uk": "Saturday Tool Radar #129 · geo-sleuth; Birdbrain; C2PA Conformance Tool; Crush Forensics; BloomRepo",
+      "what_happened_en": "geo-sleuth exposes an evidence chain behind agentic image geolocation; Birdbrain packages captured webpages for local verification; the C2PA Conformance Tool exports verifier state; Crush keeps complex evidence sources read-only and links parsed values back to bytes; BloomRepo provides a passive preflight before unfamiliar GitHub code enters an investigative environment.",
+      "what_happened_uk": "geo-sleuth показує ланцюг доказів за агентною геолокацією; Birdbrain пакує захоплені вебсторінки для локальної перевірки; C2PA Conformance Tool експортує стан перевірки; Crush тримає складні джерела в режимі read-only і прив'язує значення до вихідних байтів; BloomRepo дає пасивний preflight перед запуском незнайомого GitHub-коду.",
+      "why_it_matters_en": "Tools are more auditable when they expose intermediate states, source bytes and failure modes.",
+      "why_it_matters_uk": "Інструменти придатніші до аудиту, коли показують проміжні стани, вихідні байти й режими помилки.",
+      "how_to_use_en": "Prefer tools that preserve inputs and outputs; treat agent conclusions as annotations over evidence.",
+      "how_to_use_uk": "Віддавайте перевагу інструментам, що зберігають входи й виходи; трактуйте висновки агентів як анотації поверх доказів.",
+      "limits_en": "Transparency does not guarantee correctness, security or evidentiary admissibility.",
+      "limits_uk": "Прозорість не гарантує правильності, безпеки чи процесуальної допустимості.",
+      "tags": [
+        "weekly",
+        "tools",
+        "provenance",
+        "chain-of-custody",
+        "auditability"
+      ]
+    },
+    {
+      "rubric_key": "risk",
+      "emoji": "⚠️",
+      "rubric_en": "Risk Watch",
+      "rubric_uk": "Межі й ризики",
+      "title_en": "\"Sanctions\" is not one legal object",
+      "title_uk": "«Санкції» — не один юридичний об'єкт",
+      "source_line_en": "UK Government · 8 October; Council of the European Union · 8 October 2026",
+      "source_line_uk": "Уряд Великої Британії · 8 жовтня; Рада Європейського Союзу · 8 жовтня 2026",
+      "what_happened_en": "The UK announced 38 new designations spanning oil companies, 12 shadow-fleet tankers, crypto exchanges, payment platforms, individuals and suppliers. Separately, the EU prolonged its hybrid-threat restrictive-measures framework until October 9, 2027. The UK also said oil-company designations now cover more than 90% of Russia's oil-production capacity — a coverage statement, not measured output loss.",
+      "what_happened_uk": "Велика Британія оголосила 38 нових санкційних призначень: нафтові компанії, 12 танкерів тіньового флоту, криптобіржі, платіжні платформи, фізичні особи та постачальники. Окремо ЄС продовжив до 9 жовтня 2027 року режим обмежувальних заходів щодо гібридної діяльності Росії. Британія також заявила, що санкції проти нафтових компаній охоплюють понад 90% нафтовидобувної потужності РФ — це показник охоплення, а не виміряне падіння видобутку.",
+      "why_it_matters_en": "A tanker listing, asset freeze, travel ban, company designation and sectoral restriction are not interchangeable units.",
+      "why_it_matters_uk": "Внесення танкера до списку, замороження активів, заборона на в'їзд, санкція проти компанії та секторальне обмеження — не взаємозамінні одиниці.",
+      "how_to_use_en": "Normalise sanctions by jurisdiction, legal instrument, subject type, measure type, effective date and current status.",
+      "how_to_use_uk": "Нормалізуйте санкції за юрисдикцією, правовим актом, типом суб'єкта, типом заходу, датою набрання чинності й статусом.",
+      "limits_en": "Government descriptions of sanctions impact are policy claims unless supported by later trade, production or financial data.",
+      "limits_uk": "Опис урядом ефекту санкцій є політичним твердженням, доки його не підтвердять подальші торговельні, виробничі чи фінансові дані.",
+      "tags": [
+        "weekly",
+        "risk-watch",
+        "sanctions",
+        "legal-objects"
+      ]
+    }
+  ],
+  "compact_sections": [
+    {
+      "rubric_key": "evidence-model",
+      "emoji": "🧭",
+      "title": "Evidence model / Модель доказів",
+      "short_title": "Preserve contradiction",
+      "points": [
+        "Record competing claims instead of overwriting one with the other.",
+        "Separate occurrence, mechanism, attribution, intent and legal consequence.",
+        "Treat correction as a state transition, not erasure of the earlier record."
+      ]
+    },
+    {
+      "rubric_key": "weekly-workflow",
+      "emoji": "🗂️",
+      "title": "Weekly workflow / Робочий процес",
+      "short_title": "Track evidence by function",
+      "points": [
+        "Separate monitoring, leads, corroboration, exhibits and legal analysis.",
+        "Store event date, first report, confirmation date and source-update date separately.",
+        "Make source independence visible before counting repetition as corroboration."
+      ]
+    },
+    {
+      "rubric_key": "safety-line",
+      "emoji": "🛡️",
+      "title": "Safety line / Межа безпеки",
+      "short_title": "Uncertainty is safer than invented certainty",
+      "points": [
+        "Do not infer identity, detention status or culpability from aggregates.",
+        "Do not expose sensitive children, detainees, witnesses or relatives to complete a record.",
+        "Do not turn intelligence, sanctions or advocacy attribution into a criminal finding."
+      ]
+    }
+  ],
+  "reading_list": [
+    {
+      "href": "https://ukraine.ohchr.org/en/Comment-by-UN-Human-Rights-Chief-Volker-T%C3%BCrk-on-deadly-strikes-in-Ukraine",
+      "title": "OHCHR — deadly strikes in Ukraine, 8–9 October",
+      "note": "Rolling civilian-harm and energy-outage picture."
+    },
+    {
+      "href": "https://en.zona.media/article/2026/10/09/casualties_eng-trl",
+      "title": "Mediazona — Russian losses, updated 9 October",
+      "note": "276,000 named deaths and registry-driven backlog update."
+    },
+    {
+      "href": "https://www.law.georgetown.edu/icji/blog/indoctrination-and-militarization-of-ukrainian-children-by-the-russian-federation-an-analysis-under-international-law/",
+      "title": "Georgetown ICJI — indoctrination and militarisation of Ukrainian children",
+      "note": "Monitoring material versus prosecution-ready evidence."
+    },
+    {
+      "href": "https://www.bringkidsback.org.ua/en/news/prosecutor-generals-office-and-law-enforcement-agencies-ffsbsm4",
+      "title": "Bring Kids Back UA — documentation coordination",
+      "note": "State/NGO evidence-system coordination."
+    },
+    {
+      "href": "https://www.stopfake.org/en/russia-banned-armenian-tomatoes-a-fake-politico-story-blamed-europe/",
+      "title": "StopFake / DFRLab — 18-language replication network",
+      "note": "Replication is not independent corroboration."
+    },
+    {
+      "href": "https://www.gov.uk/government/news/new-uk-sanctions-hit-the-money-oil-and-supply-chains-fuelling-russias-war",
+      "title": "UK Government — 38 Russia-related designations",
+      "note": "Different legal object types inside one package."
+    },
+    {
+      "href": "https://github.com/Oldcircle/geo-sleuth",
+      "title": "geo-sleuth",
+      "note": "Evidence-traced geolocation from Tool Radar #129."
+    }
+  ],
+  "editorial_notes_internal": [
+    "EDITORIAL NOTES — INTERNAL. W41 covers 5–11 October 2026.",
+    "Source base: Daily #124–#128, Saturday Tool Radar #129, plus Sunday checks of OHCHR, Mediazona, Georgetown ICJI, UK and EU sources.",
+    "Canonical seven-rubric order preserved.",
+    "Central thesis: preserve contradiction, provenance and state transitions instead of forcing premature consensus.",
+    "Ukraine Lens uses OHCHR's rolling October 8 casualty figure, not a final monthly total.",
+    "War Crimes preserves Georgetown's distinction between monitoring material and prosecution-ready evidence.",
+    "Losses records Mediazona's October 9 total of 276,000 named deaths and separates death date from confirmation date.",
+    "No live targeting coordinates, private identifiers, child identities or detention locations are included.",
+    "Repository policy: draft only. Do not publish without explicit request."
+  ]
+}
