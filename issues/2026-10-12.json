@@ -1,0 +1,222 @@
+{
+  "issue_number": "130",
+  "date_iso": "2026-10-12",
+  "date_label_en": "12 October 2026",
+  "date_label_uk": "12 жовтня 2026",
+  "slug": "open-source-signal",
+  "title_en": "Open Source Signal",
+  "title_uk": "Сигнал відкритих джерел",
+  "issue_type": "Daily Signal",
+  "language_label": "EN + UKR",
+  "subtitle_en": "Claims, procedural updates, captivity sources and defensive verification.",
+  "subtitle_uk": "Перевірка заяв, процесуальні оновлення, джерела про полон і безпека дослідника.",
+  "dek_en": "Daily #130 separates an energy-ceasefire announcement from acceptance and compliance; treats a recruitment interview with care for a minor; tracks a new suspicion notice concerning a 2024 attack; checks the age of statistics behind a new captivity-publication announcement; and reviews civilian cameras as a defensive security concern.",
+  "dek_uk": "Daily #130 розрізняє оголошення енергетичного перемир’я, згоду та виконання; обережно працює з інтерв’ю про вербування неповнолітнього; фіксує нову підозру щодо удару 2024 року; перевіряє вік даних за свіжим анонсом видання про полон і розглядає цивільні камери як питання захисту.",
+  "editorial_frame": {
+    "what_this_is": "An edited bilingual issue. Facts are attributed; practical interpretations are explicitly editorial. Sources prioritised from 9–12 October, with one marked 6 October procedural update.",
+    "what_this_is_not": "Not a legal verdict, operational targeting product or a new estimate of losses or detention."
+  },
+  "rubric_map": [
+    "📡 Signal One / Головний сигнал",
+    "🇺🇦 Ukraine Lens / Українська оптика",
+    "⚖️ War Crimes Verification / Верифікація воєнних злочинів",
+    "🕯️ Losses, Captivity & Missing / Втрати, полон, зниклі",
+    "🛡️ Investigator OPSEC / Безпека дослідника"
+  ],
+  "footer_note": "Prepared for Open Source Signal / Сигнал відкритих джерел.",
+  "items": [
+    {
+      "theme": "energy-ceasefire-claim-state",
+      "emoji": "📡",
+      "rubric_en": "Signal One",
+      "rubric_uk": "Головний сигнал",
+      "title_en": "An announced energy ceasefire still needs evidence of agreement and compliance",
+      "title_uk": "Оголошення енергетичного перемир’я потребує підтвердження домовленості й виконання",
+      "source_name": "ABC News; Associated Press",
+      "source_url": "https://www.abc.net.au/news/2026-10-12/ukraine-trump-zelenskyy-elections/107254072",
+      "source_date_label_en": "12 October 2026; events 11–12 October",
+      "source_date_label_uk": "12 жовтня 2026; події 11–12 жовтня",
+      "what_happened_en": "ABC reports that Trump announced an immediate energy ceasefire, while Zelenskyy said he had not been informed and would support a reciprocal halt. AP reports continued Russian energy strikes, citing Ukrainian officials. These are statements and attributed incident reports, not proof of an implemented agreement.",
+      "what_happened_uk": "ABC повідомляє: Трамп оголосив негайне енергетичне перемир’я, тоді як Зеленський заявив, що не був поінформований, і підтримав би взаємне припинення ударів. AP передає повідомлення українських посадовців про продовження російських атак на енергетику. Це заяви й атрибутовані повідомлення про інциденти, а не доказ виконаної домовленості.",
+      "why_it_matters_en": "Editorial assessment: announcement, acceptance, agreed scope, start time and observed compliance should be separate fields.",
+      "why_it_matters_uk": "Редакційна оцінка: оголошення, згода сторін, межі домовленості, час початку й зафіксоване виконання мають бути окремими полями.",
+      "how_to_use_en": "Build a timestamped claim log. For each reported incident, retain the original source, event time and verification status before comparing it with any stated ceasefire start.",
+      "how_to_use_uk": "Ведіть журнал заяв із часом. Для кожного повідомленого інциденту зберігайте першоджерело, час події та стан перевірки, перш ніж зіставляти його з оголошеним початком перемир’я.",
+      "limits_en": "Coverage is evolving. A statement about a violation does not itself establish the exact terms of a mutually accepted agreement; silence is not consent.",
+      "limits_uk": "Повідомлення змінюються. Заява про порушення сама по собі не встановлює точних умов погодженої сторонами угоди; мовчання не є згодою.",
+      "tags": [
+        "energy",
+        "claim-verification",
+        "ceasefire",
+        "timestamps"
+      ],
+      "source_type": "reputable_secondary",
+      "verification_status": "attributed_reports",
+      "evidence_level": "reported_statements",
+      "risk_flags": [
+        "evolving_story"
+      ],
+      "supporting_sources": [
+        {
+          "url": "https://apnews.com/article/russia-ukraine-energy-strikes-trump-ceasefire-6fdef6ff4d033b379c74e1d62183d078",
+          "date": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "theme": "teen-recruitment-source-handling",
+      "emoji": "🇺🇦",
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "title_en": "A recruitment account needs attribution and protection of a minor",
+      "title_uk": "Свідчення про вербування потребують атрибуції та захисту неповнолітнього",
+      "source_name": "Слідство.Інфо / Каріна Бугайченко",
+      "source_url": "https://www.slidstvo.info/news/80-tysiach-hryven-za-bombu-iak-rosiia-zaverbuvala-kharkivskoho-pidlitka/",
+      "source_date_label_en": "10 October 2026, 06:00",
+      "source_date_label_uk": "10 жовтня 2026, 06:00",
+      "what_happened_en": "Slidstvo.Info interviewed a teenager serving a sentence for terrorism. He described recruitment through Telegram, payments and pressure from handlers whom the outlet identifies as Russian. His name was changed at his mother's request. The article reports a three-year sentence.",
+      "what_happened_uk": "«Слідство.Інфо» опублікувало інтерв’ю з підлітком, який відбуває покарання за тероризм. Він описує вербування через Telegram, оплату та тиск кураторів, яких видання називає російськими. Ім’я змінено на прохання матері. У статті повідомлено про трирічний строк покарання.",
+      "why_it_matters_en": "Editorial assessment: a recorded interview, a participant's account, the outlet's attribution and a judicial finding are different evidence objects.",
+      "why_it_matters_uk": "Редакційна оцінка: запис інтерв’ю, розповідь учасника, атрибуція редакції та встановлені судом обставини — різні доказові об’єкти.",
+      "how_to_use_en": "Record separately who says what, which records could corroborate the account and what the judgment establishes. Keep the published pseudonym and omit technical instructions, contact details and identifying clues.",
+      "how_to_use_uk": "Окремо фіксуйте, хто що стверджує, які записи можуть підтвердити розповідь і що встановлює вирок. Зберігайте опублікований псевдонім; не переносіть технічні інструкції, контакти та ознаки, що розкривають особу.",
+      "limits_en": "The linked report is not the full court file or an independently authenticated message archive. Do not infer the handlers' identities from the interview alone.",
+      "limits_uk": "Матеріал за посиланням не є повним судовим провадженням або незалежно автентифікованим архівом листування. Самого інтерв’ю недостатньо для встановлення осіб кураторів.",
+      "tags": [
+        "ukraine",
+        "recruitment",
+        "children",
+        "telegram",
+        "source-attribution"
+      ],
+      "source_type": "investigative",
+      "verification_status": "interview_and_outlet_report",
+      "evidence_level": "reported_testimony",
+      "risk_flags": [
+        "minor",
+        "sensitive_testimony"
+      ],
+      "public_interest": "Document recruitment while protecting a minor."
+    },
+    {
+      "theme": "pinchuk-suspicion-status",
+      "emoji": "⚖️",
+      "rubric_en": "War Crimes Verification",
+      "rubric_uk": "Верифікація воєнних злочинів",
+      "title_en": "A new suspicion notice concerns a 2024 attack",
+      "title_uk": "Нова підозра стосується удару 2024 року",
+      "source_name": "Security Service of Ukraine / СБУ",
+      "source_url": "https://ssu.gov.ua/en/novyny/sbu-ta-prokuratura-zaochno-povidomyly-pro-pidozru-admiralu-rf-yakyi-u-lypni-2024-roku-nakazav-udaryty-kalibramy-po-bahatopoverkhivtsi-u-kyievi",
+      "source_date_label_en": "6 October 2026, 16:30; attack 8 July 2024",
+      "source_date_label_uk": "6 жовтня 2026, 16:30; удар 8 липня 2024 року",
+      "what_happened_en": "The SSU announced an in-absentia notice of suspicion to Russian admiral Serhiy Pinchuk over the 8 July 2024 strike on a Kyiv residential building. It alleges that he signed the relevant combat order. The press release attributes 13 deaths, including five children, to the attack.",
+      "what_happened_uk": "СБУ оголосила про заочне повідомлення про підозру російському адміралу Сергію Пінчуку щодо удару по житловому будинку в Києві 8 липня 2024 року. За версією слідства, він підписав відповідний бойовий наказ. У повідомленні цьому удару приписано загибель 13 людей, зокрема п’ятьох дітей.",
+      "why_it_matters_en": "Editorial assessment: this is a procedural development in an older incident, not a newly occurring attack or a conviction.",
+      "why_it_matters_uk": "Редакційна оцінка: це процесуальне оновлення щодо давнішнього інциденту, а не новий удар чи обвинувальний вирок.",
+      "how_to_use_en": "Link the notice to the existing incident record. Keep attack date, announcement date and legal status separate; identify the signed order as an allegation requiring access to the underlying evidence.",
+      "how_to_use_uk": "Прив’яжіть повідомлення до наявного запису інциденту. Розділяйте дату удару, дату оголошення та процесуальний статус; позначайте підписаний наказ як твердження слідства, для перевірки якого потрібні самі докази.",
+      "limits_en": "The SSU is the investigating authority. Its public notice does not reproduce the complete evidence file and is not a court judgment. Included under the seven-day window, not presented as today's news.",
+      "limits_uk": "СБУ є органом розслідування. Публічне повідомлення не містить повного доказового масиву й не є судовим рішенням. Матеріал відібрано в межах семиденного вікна; це не новина сьогоднішнього дня.",
+      "tags": [
+        "war-crimes",
+        "suspect",
+        "legal-status",
+        "historical-incident",
+        "ukraine"
+      ],
+      "source_type": "primary_official",
+      "verification_status": "official_notice_verified",
+      "evidence_level": "investigating_authority_statement",
+      "risk_flags": [
+        "criminal_allegation"
+      ],
+      "public_interest": "Track accountability proceedings without implying conviction."
+    },
+    {
+      "theme": "captivity-magazine-publication-dates",
+      "emoji": "🕯️",
+      "rubric_en": "Losses, Captivity & Missing",
+      "rubric_uk": "Втрати, полон, зниклі",
+      "title_en": "A new captivity publication can link to older data",
+      "title_uk": "Новий анонс про полон може вести до давніших даних",
+      "source_name": "Координаційний штаб; The Ukrainian Review",
+      "source_url": "https://koordshtab.gov.ua/posts/vyyshov-spetsvypusk-the-ukrainian-review-prysvyachenyy-ukrayintsyam-u-rosiyskomu-poloni-3831",
+      "source_date_label_en": "Announcement 9 October 2026; linked interview 16 May 2026",
+      "source_date_label_uk": "Анонс 9 жовтня 2026; пов’язане інтерв’ю 16 травня 2026",
+      "what_happened_en": "The Coordination Headquarters announced a special issue of The Ukrainian Review on Ukrainian POWs, missing people and unlawfully detained civilians, intended for international distribution. Its link leads to a spokesperson interview dated 16 May 2026. The announcement and the interview therefore have different reference dates.",
+      "what_happened_uk": "Коордштаб анонсував спецвипуск The Ukrainian Review про українських військовополонених, зниклих безвісти та незаконно утримуваних цивільних для міжнародного поширення. Посилання веде до інтерв’ю речника від 16 травня 2026 року. Отже, анонс і саме інтерв’ю мають різні часові прив’язки.",
+      "why_it_matters_en": "Editorial assessment: a fresh announcement does not refresh every statistic in the material it promotes.",
+      "why_it_matters_uk": "Редакційна оцінка: свіжий анонс не робить актуальними всі цифри в матеріалі, на який він посилається.",
+      "how_to_use_en": "Use the issue as a reading lead. Label each interview and figure with its own date, and distinguish POWs, missing people and detained civilians rather than combining them into one total.",
+      "how_to_use_uk": "Використовуйте спецвипуск як джерело для подальшого читання. Позначайте кожне інтерв’ю й число власною датою та розрізняйте військовополонених, зниклих і утримуваних цивільних замість об’єднання в одну цифру.",
+      "limits_en": "The announcement is not a new casualty or detention dataset. The May interview's counts are not October totals; the complete special issue was not reviewed.",
+      "limits_uk": "Анонс не є новим набором даних про втрати чи утримання. Показники травневого інтерв’ю не є жовтневими; повний спецвипуск не перевірено.",
+      "tags": [
+        "captivity",
+        "missing",
+        "civilian-detainees",
+        "publication-date",
+        "reading-list"
+      ],
+      "source_type": "primary_official",
+      "verification_status": "announcement_and_link_dates_verified",
+      "evidence_level": "publication_notice",
+      "risk_flags": [
+        "stale_linked_statistics"
+      ],
+      "supporting_sources": [
+        {
+          "url": "https://theukrainianreview.info/coordination-headquarters-for-the-treatment-of-prisoners-of-war-official-comments-on-pow-rights-by-petro-yatsenko-headquarters-spokesperson/",
+          "date": "2026-05-16"
+        }
+      ]
+    },
+    {
+      "theme": "civilian-cameras-defensive-opsec",
+      "emoji": "🛡️",
+      "rubric_en": "Investigator OPSEC",
+      "rubric_uk": "Безпека дослідника",
+      "title_en": "Civilian cameras belong in a defensive risk review",
+      "title_uk": "Цивільні камери варто включати до перевірки безпеки",
+      "source_name": "The Wall Street Journal / Daniel Michaels, Anat Peled, Milàn Czerny",
+      "source_url": "https://www.wsj.com/tech/cybersecurity/video-cameras-webcams-hacked-war-b00b8a24",
+      "source_date_label_en": "11 October 2026 online; 12 October print edition",
+      "source_date_label_uk": "11 жовтня 2026 онлайн; друкований випуск 12 жовтня",
+      "what_happened_en": "A WSJ investigation describes internet-connected civilian cameras being compromised for wartime surveillance. The accessible extract describes an Israeli case and a defensive response.",
+      "what_happened_uk": "Розслідування WSJ описує компрометацію цивільних інтернет-камер для воєнного стеження. Доступний фрагмент містить ізраїльський приклад і захисні заходи.",
+      "why_it_matters_en": "Editorial assessment: assess the information a device can expose, as well as who can administer it.",
+      "why_it_matters_uk": "Редакційна оцінка: перевіряйте і те, яку інформацію пристрій може розкрити, і те, хто має доступ до керування ним.",
+      "how_to_use_en": "For devices you own or are authorised to manage, review accounts, updates, remote access and the field of view. Keep sensitive routines outside recordings and consult the manufacturer's security guidance.",
+      "how_to_use_uk": "Для власних пристроїв або тих, якими маєте право керувати, перевірте облікові записи, оновлення, віддалений доступ і поле огляду. Не залишайте чутливі повсякденні дії в записах; звіряйтеся з рекомендаціями виробника.",
+      "limits_en": "Only the accessible extract was reviewed. It does not support a Ukraine-specific attribution or compromise rate. This card provides defensive editorial guidance, not access methods.",
+      "limits_uk": "Перевірено лише доступний фрагмент. Він не підтверджує атрибуцію окремого українського випадку або частку зламаних камер. Картка містить захисні редакційні рекомендації, а не способи доступу.",
+      "tags": [
+        "opsec",
+        "surveillance",
+        "cameras",
+        "defensive-security"
+      ],
+      "source_type": "investigative",
+      "verification_status": "partial_source_read",
+      "evidence_level": "accessible_report_extract",
+      "risk_flags": [
+        "partial_access"
+      ],
+      "public_interest": "Defensive review only; no camera locations or access instructions."
+    }
+  ],
+  "internal_notes": [
+    "EDITORIAL NOTES — INTERNAL. Daily #130, 12 October 2026. Publication explicitly authorised by the user.",
+    "Worked today: Signal One, Ukraine Lens, War Crimes Verification, Losses/Captivity/Missing, Investigator OPSEC.",
+    "Freshness: 10–12 October prioritised; Coordination announcement is 9 October (slightly outside 72 hours); SSU 6 October included under explicit seven-day extension for core accountability coverage.",
+    "Duplicate audit against 5–10 October issues: no identical selected source URLs. Ceasefire is a new 11–12 October development, not a repetition of the prior fuel-trade dispute.",
+    "Best sources: SSU procedural notice and Coordination announcement as primary institutional records; Slidstvo.Info as original interview reporting. Each has role-dependent limits.",
+    "Weekly deep dives: compare announcement/acceptance/compliance states; distinguish procedural publication dates from incident dates; audit stale statistics in captivity advocacy material.",
+    "Weak/excluded: social-media leads without independent corroboration; old Bellingcat vessel investigation (25 August); search matches with current dates only in related-story widgets; CISA advisory full text inaccessible; Washington Post story excluded from detailed adaptation because of restrictive extract limits.",
+    "WSJ: only accessible extract read. Camera guidance is our defensive editorial recommendation; do not infer Ukraine-specific cases from the extract.",
+    "Safety: no minor's identity, explosive-making details, private contacts, detention locations, sensitive coordinates or camera-access methods.",
+    "Follow-up: original ceasefire terms if released; authenticated incident documentation; public court records for the recruitment case and the SSU notice; full special issue and original manufacturer camera guidance.",
+    "Tool Radar: no tool promoted today; continue discovery via OSINT Newsletter and verify against original project pages.",
+    "Weekly Magazine: evidence-status distinctions and source-date audit are suitable; the journal announcement is a reading lead, not a new detention dataset."
+  ]
+}
