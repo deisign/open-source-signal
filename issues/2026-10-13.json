@@ -1,0 +1,220 @@
+{
+  "issue_number": "131",
+  "date_iso": "2026-10-13",
+  "date_label_en": "13 October 2026",
+  "date_label_uk": "13 жовтня 2026",
+  "slug": "open-source-signal",
+  "title_en": "Open Source Signal",
+  "title_uk": "Сигнал відкритих джерел",
+  "issue_type": "Daily Signal",
+  "language_label": "EN + UKR",
+  "subtitle_en": "Evidence chains, source dates, loss categories, captivity verification and publication safety.",
+  "subtitle_uk": "Доказові зв’язки, дати джерел, категорії втрат, верифікація полону та безпека публікації.",
+  "dek_en": "Daily #131 follows a new Changan investigation without conflating sponsorship and military end use; distinguishes today's reporting from a September court ruling; preserves the category of an official Russian personnel-loss estimate; separates captivity leads, testimony and identification; and documents a Telegram-distribution allegation without amplifying sensitive imagery.",
+  "dek_uk": "Daily #131 розглядає нове розслідування про Changan без змішування спонсорства й військового використання; розрізняє сьогоднішню публікацію та вересневу постанову суду; зберігає категорію офіційної оцінки втрат особового складу РФ; відокремлює зачіпки щодо полону, свідчення й ідентифікацію та описує заяву про поширення через Telegram без повторного розголошення чутливих зображень.",
+  "editorial_frame": {
+    "what_this_is": "A bilingual editorial issue based on five publications dated 13 October. Older corporate and court records are explicitly dated as supporting context. Ukrainian reporting is adapted for international readers.",
+    "what_this_is_not": "A criminal verdict, operational targeting aid or independently verified total of Russian deaths."
+  },
+  "rubric_map": [
+    "📡 Signal One / Головний сигнал",
+    "🇺🇦 Ukraine Lens / Українська оптика",
+    "🕯️ Losses, Captivity & Missing / Втрати, полон, зниклі",
+    "🗂️ Tradecraft / Методика",
+    "🛡️ Investigator OPSEC / Безпека дослідника"
+  ],
+  "footer_note": "Prepared for Open Source Signal / Сигнал відкритих джерел.",
+  "items": [
+    {
+      "theme": "changan-evidence-chain",
+      "emoji": "📡",
+      "rubric_en": "Signal One",
+      "rubric_uk": "Головний сигнал",
+      "title_en": "Changan investigation: separate sponsorship, imports and military end use",
+      "title_uk": "Розслідування про Changan: розділяйте спонсорство, імпорт і військове використання",
+      "source_name": "Слідство.Інфо; Changan Automobile",
+      "source_url": "https://www.slidstvo.info/articles/futbolni-milyony-ta-rosiyski-drony-iak-sponsor-zbirnoi-portuhalii-dopomahaie-rf-atakuvaty-ukrainu/",
+      "source_date_label_en": "Investigation 13 October 2026, 06:00; company statement 25 May 2026",
+      "source_date_label_uk": "Розслідування 13 жовтня 2026, 06:00; заява компанії 25 травня 2026",
+      "what_happened_en": "Slidstvo.Info links Changan Hunter vehicles to Russian military use through footage, customs records and contact with the Russian subsidiary. Changan's own May statement independently confirms the Portuguese football partnership. The outlet reports that the federation defended its compliance checks; Changan did not answer its requests.",
+      "what_happened_uk": "«Слідство.Інфо» пов’язує Changan Hunter із використанням російськими військовими через відео, митні записи та спілкування з російською дочірньою компанією. Травнева заява самого Changan окремо підтверджує футбольне партнерство з Португалією. За матеріалом, федерація послалася на перевірку комплаєнсу; Changan не відповіла на запити.",
+      "why_it_matters_en": "Editorial assessment: these are distinct links in an accountability chain. Confirming a commercial relationship does not establish knowledge of every end user.",
+      "why_it_matters_uk": "Редакційна оцінка: це окремі зв’язки в ланцюгу відповідальності. Підтвердження комерційного партнерства не встановлює обізнаності щодо кожного кінцевого користувача.",
+      "how_to_use_en": "Create separate records for the parent company, subsidiary, commercial relationship, import record and observed end use. Attach evidence to each link and retain responses or non-responses as such.",
+      "how_to_use_uk": "Створюйте окремі записи для материнської компанії, дочірньої структури, партнерства, імпортного запису й зафіксованого використання. До кожного зв’язку додавайте власні докази; відповіді та відсутність відповідей фіксуйте окремо.",
+      "limits_en": "The underlying customs dataset and original footage were not independently authenticated for this digest. A procurement conversation is not proof of a completed delivery or criminal complicity.",
+      "limits_uk": "Для цього випуску вихідний митний масив та оригінальні відео незалежно не автентифіковано. Розмова про закупівлю не доводить виконаної поставки або кримінальної співучасті.",
+      "tags": [
+        "ukraine",
+        "supply-chain",
+        "corporate-accountability",
+        "end-use",
+        "source-linkage"
+      ],
+      "source_type": "investigative_with_primary_corroboration",
+      "evidence_level": "outlet_report_plus_company_statement",
+      "verification_status": "sponsorship_cross_checked_other_links_attributed",
+      "risk_flags": [
+        "corporate_allegation"
+      ],
+      "supporting_sources": [
+        {
+          "url": "https://www.globalchangan.com/newsroom/Changan_Automobile_Announces_Global_Strategic_Partnership_with_the_Portugal_National_Football_Team.html",
+          "date": "2026-05-25",
+          "role": "Confirms sponsorship only"
+        }
+      ],
+      "public_interest": "Corporate accountability; no operational launch details or procurement instructions."
+    },
+    {
+      "theme": "appeal-source-publication-date",
+      "emoji": "🇺🇦",
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "title_en": "A new report on prior restraint concerns a September ruling",
+      "title_uk": "Новий матеріал про заборону публікації стосується вересневої постанови",
+      "source_name": "Слідство.Інфо",
+      "source_url": "https://www.slidstvo.info/news/vtruchanniam-u-svobodu-slova-nazvav-apeliatsiynyy-sud-zaboronu-publikuvaty-material-pro-143-kvartyry-brata-dyrektora-dbr/",
+      "source_date_label_en": "13 October 2026, 11:00; cited ruling 24 September 2026",
+      "source_date_label_uk": "13 жовтня 2026, 11:00; згадана постанова 24 вересня 2026",
+      "what_happened_en": "Slidstvo.Info reports that the Kyiv Court of Appeal overturned a pre-publication restriction on its property investigation and criticised prior restraint. Today's article cites a ruling dated 24 September. The publication date is therefore not the date of the judicial development.",
+      "what_happened_uk": "«Слідство.Інфо» повідомляє, що Київський апеляційний суд скасував заборону публікації розслідування про нерухомість та розкритикував попереднє обмеження поширення інформації. Сьогоднішня стаття посилається на постанову від 24 вересня. Дата публікації не є датою процесуальної події.",
+      "why_it_matters_en": "Editorial assessment: reporting restrictions affect the availability of public-interest evidence. A source timeline should distinguish the restriction, appeal, decision and later reporting.",
+      "why_it_matters_uk": "Редакційна оцінка: обмеження публікацій впливають на доступність суспільно важливих доказів. Хронологія джерела має розділяти заборону, апеляцію, рішення та подальше висвітлення.",
+      "how_to_use_en": "Retain the reported ruling date and seek the full decision before quoting legal reasoning in detail. Preserve the investigation's original publication and later corrections separately.",
+      "how_to_use_uk": "Зберігайте повідомлену дату постанови та шукайте повний текст рішення перед докладним цитуванням мотивів суду. Окремо зберігайте первинну публікацію розслідування й подальші виправлення.",
+      "limits_en": "The full ruling was not retrieved. This card attributes the account to the outlet and does not determine the merits of the property allegations or give legal advice.",
+      "limits_uk": "Повний текст постанови не отримано. Виклад атрибутовано виданню; картка не встановлює обґрунтованості звинувачень щодо нерухомості та не є юридичною порадою.",
+      "tags": [
+        "ukraine",
+        "journalism",
+        "public-interest",
+        "prior-restraint",
+        "chronology"
+      ],
+      "source_type": "original_outlet_report",
+      "evidence_level": "reported_judicial_reasoning",
+      "verification_status": "article_read_ruling_not_retrieved",
+      "risk_flags": [
+        "legal_source_not_retrieved"
+      ]
+    },
+    {
+      "theme": "russian-losses-estimate-category",
+      "emoji": "🕯️",
+      "rubric_en": "Losses, Captivity & Missing",
+      "rubric_uk": "Втрати, полон, зниклі",
+      "title_en": "Keep the official personnel-loss estimate in its own category",
+      "title_uk": "Зберігайте офіційну оцінку втрат особового складу в окремій категорії",
+      "source_name": "Міністерство оборони України / Генеральний штаб ЗСУ",
+      "source_url": "https://mod.gov.ua/news/bojovi-vtrati-voroga-na-13-zhovtnya-2026-roku",
+      "source_date_label_en": "13 October 2026, 06:49; cumulative since 24 February 2022",
+      "source_date_label_uk": "13 жовтня 2026, 06:49; сукупно від 24 лютого 2022 року",
+      "what_happened_en": "Ukraine's Defence Ministry, citing the General Staff, publishes an approximate Russian personnel-loss total of 1,555,700, with an increase of 1,390. The page explicitly describes the overall figures as estimates and says they are being updated.",
+      "what_happened_uk": "Міноборони України з посиланням на Генштаб оприлюднило орієнтовний сукупний показник втрат особового складу РФ — 1 555 700, приріст — 1 390. Сторінка прямо визначає загальні показники як орієнтовні та зазначає, що інформацію уточнюють.",
+      "why_it_matters_en": "Editorial assessment: this aggregate and a named death register measure different things. Their totals should not be merged or presented as interchangeable.",
+      "why_it_matters_uk": "Редакційна оцінка: цей агрегований показник та іменний реєстр загиблих мають різні одиниці обліку. Їхні підсумки не можна зливати або подавати як взаємозамінні.",
+      "how_to_use_en": "Store the exact source category, estimated status, reporting date, coverage start and revision history. Keep named KIA, POW and MIA datasets separate.",
+      "how_to_use_uk": "Зберігайте точну категорію джерела, статус оцінки, дату повідомлення, початок охопленого періоду та історію уточнень. Іменні масиви загиблих, полонених і зниклих ведіть окремо.",
+      "limits_en": "The page does not provide a case-level list or a transparent method for dividing the personnel total by outcome. The daily increase is a reported aggregate increment, not independently verified named deaths.",
+      "limits_uk": "Сторінка не містить поособового переліку чи відкритої методики поділу загальної цифри за наслідками. Добовий приріст є приростом повідомленого агрегату, а не незалежно підтвердженими поіменними смертями.",
+      "tags": [
+        "russian-losses",
+        "official-estimate",
+        "data-categories",
+        "revision-history"
+      ],
+      "source_type": "primary_official",
+      "evidence_level": "belligerent_official_estimate",
+      "verification_status": "publication_verified_total_not_independently_verified",
+      "risk_flags": [
+        "aggregate_not_named_deaths"
+      ],
+      "public_interest": "Preserve provenance and prevent misleading comparisons."
+    },
+    {
+      "theme": "captivity-verification-family-meeting",
+      "emoji": "🗂️",
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "title_en": "Witness accounts, captivity verification and DNA identification need separate records",
+      "title_uk": "Свідчення, верифікація полону та ДНК-ідентифікація потребують окремих записів",
+      "source_name": "Координаційний штаб з питань поводження з військовополоненими",
+      "source_url": "https://koordshtab.gov.ua/posts/koordshtab-proviv-zustrich-z-rodynamy-biytsiv-111-oyi-okremoyi-bryhady-terytorialnoyi-oborony-3844",
+      "source_date_label_en": "13 October 2026, 13:57",
+      "source_date_label_uk": "13 жовтня 2026, 13:57",
+      "what_happened_en": "The Coordination Headquarters reports a meeting with relatives of the 111th Territorial Defence Brigade. Topics included captivity-data verification, accounts from released service members, searching for missing people, repatriation and DNA examinations.",
+      "what_happened_uk": "Коордштаб повідомив про зустріч із родинами бійців 111-ї бригади ТрО. Серед тем — верифікація даних про полон, свідчення звільнених військових, пошук зниклих, репатріація та ДНК-експертизи.",
+      "why_it_matters_en": "Editorial assessment: a witness account can support a lead without resolving a person's present status. Administrative status, sighting and identification are different records.",
+      "why_it_matters_uk": "Редакційна оцінка: свідчення може підтримати зачіпку, не встановлюючи нинішнього статусу людини. Обліковий статус, повідомлення про зустріч і результат ідентифікації — різні записи.",
+      "how_to_use_en": "Record who supplied information, when the observation occurred, when it was reported and what corroborates it. Send sensitive case material through authorised channels, keeping it out of the public digest.",
+      "how_to_use_uk": "Фіксуйте, хто надав інформацію, коли відбулося спостереження, коли його повідомили та чим воно підтверджене. Чутливі матеріали справ передавайте уповноваженими каналами, не включаючи їх до публічного дайджесту.",
+      "limits_en": "This is a meeting report, not an announced exchange or individual status confirmation. Its anomalous year range is omitted rather than silently corrected; no chronology is inferred from it.",
+      "limits_uk": "Це повідомлення про зустріч, а не оголошення обміну чи підтвердження статусу конкретної людини. Аномальний діапазон років у джерелі пропущено без мовчазного виправлення; хронологію з нього не виводимо.",
+      "tags": [
+        "captivity",
+        "missing",
+        "witness-accounts",
+        "dna",
+        "verification"
+      ],
+      "source_type": "primary_official",
+      "evidence_level": "meeting_report",
+      "verification_status": "publication_verified_no_case_outcome_claimed",
+      "risk_flags": [
+        "source_chronology_anomaly"
+      ],
+      "public_interest": "Explain evidence handling without exposing families or detainees."
+    },
+    {
+      "theme": "telegram-redistribution-opsec",
+      "emoji": "🛡️",
+      "rubric_en": "Investigator OPSEC",
+      "rubric_uk": "Безпека дослідника",
+      "title_en": "Do not amplify sensitive military imagery while documenting its circulation",
+      "title_uk": "Не поширюйте чутливі військові зображення, документуючи їхню циркуляцію",
+      "source_name": "Служба безпеки України",
+      "source_url": "https://ssu.gov.ua/novyny/sbu-vykryla-shche-odnu-kyianku-yaka-zasvityla-pozytsii-stolychnoi-ppo-u-telehrami-video",
+      "source_date_label_en": "13 October 2026, 13:00",
+      "source_date_label_uk": "13 жовтня 2026, 13:00",
+      "what_happened_en": "The SSU reports detaining a Kyiv resident and notifying her of suspicion over dissemination of air-defence imagery. It says the photographs reached a local Telegram administrator and were then used by Russian propagandists.",
+      "what_happened_uk": "СБУ повідомила про затримання мешканки Києва та повідомлення їй про підозру через поширення зображень ППО. За версією СБУ, фото потрапили до адміністратора місцевого Telegram-каналу, а згодом їх використали російські пропагандисти.",
+      "why_it_matters_en": "Editorial assessment: tracing a repost chain does not require a digest to republish the sensitive image or identify the private person.",
+      "why_it_matters_uk": "Редакційна оцінка: щоб описати ланцюг перепублікацій, дайджесту не потрібно повторно поширювати чутливе зображення або встановлювати особу приватної людини.",
+      "how_to_use_en": "For a public account, record the source statement, dates and distribution stages in text. Keep any authorised evidentiary copies restricted and omit positions, landmarks and operational imagery from publication.",
+      "how_to_use_uk": "У публічному викладі фіксуйте текстом заяву джерела, дати й етапи поширення. Правомірно збережені доказові копії обмежуйте в доступі; не публікуйте позиції, орієнтири чи зображення бойової роботи.",
+      "limits_en": "This is an investigating-authority account and a suspicion notice, not a conviction. The underlying expert assessment and repost chain were not independently examined.",
+      "limits_uk": "Це виклад органу розслідування та повідомлення про підозру, а не вирок. Вихідний експертний висновок і ланцюг перепублікацій незалежно не досліджено.",
+      "tags": [
+        "opsec",
+        "telegram",
+        "sensitive-imagery",
+        "legal-status",
+        "redistribution"
+      ],
+      "source_type": "primary_official",
+      "evidence_level": "investigating_authority_statement",
+      "verification_status": "official_notice_verified_allegations_attributed",
+      "risk_flags": [
+        "criminal_allegation",
+        "sensitive_military_imagery"
+      ],
+      "public_interest": "Prevent amplification; no private identity or military locations."
+    }
+  ],
+  "internal_notes": [
+    "EDITORIAL NOTES — INTERNAL. Daily #131 for Tuesday 13 October 2026. Publication explicitly authorised by the user.",
+    "Worked today: Signal One, Ukraine Lens, Losses/Captivity/Missing, Tradecraft and Investigator OPSEC. No forced tool or war-crimes card without a strong new source.",
+    "Freshness: all five main publications dated 13 October; corporate release is 25 May supporting context; court ruling is 24 September as reported by the outlet. Do not call either older record a new event today.",
+    "Strongest item: Slidstvo.Info Changan investigation. Sponsorship independently corroborated by original company statement. Original customs records, videos and undercover call not independently authenticated; attribution preserved.",
+    "Core data distinction: General Staff estimate published by MoD is not a named KIA list. Do not derive a killed/wounded split or add to Mediazona figures.",
+    "Coordination Headquarters article contains anomalous '2002–2005' period. Omitted without guessing correction. Its meeting agenda is not proof of a completed exchange, confirmed captivity or DNA result.",
+    "Court source: article read; full ruling not retrieved. Avoid exact legal quotations or independent legal conclusions. This is new reporting on a September decision.",
+    "Safety: no private suspect name, military positions, imagery, coordinates, vehicle identifiers or procurement instructions. Source URLs remain reading links, not endorsements of all source content.",
+    "Weekly deep dives: chain-of-evidence model for corporate end use; reporting date vs decision date; aggregate estimates vs named records; captivity witness information vs confirmed status.",
+    "Best sources: original investigation plus corporate confirmation for a narrow fact; institutional notices with clear provenance. Weak/excluded: undated community leads, stale search matches, repeated ceasefire and recruitment stories, old OHCHR items already covered, generic methodology SEO pages.",
+    "Follow-up: original customs extracts, public corporate responses, full appellate ruling, corrected Coordination Headquarters chronology and independently documented legal outcomes.",
+    "Tool Radar: no new tool recommended today. OSINT Newsletter and Reddit remain discovery leads requiring original-project verification.",
+    "Weekly Magazine candidates: Changan accountability chain and loss-category comparison; OPSEC redistribution case only as a redacted defensive lesson."
+  ]
+}
