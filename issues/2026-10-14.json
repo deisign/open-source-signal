@@ -1,0 +1,238 @@
+{
+  "issue_number": "132",
+  "date_iso": "2026-10-14",
+  "date_label_en": "14 October 2026",
+  "date_label_uk": "14 жовтня 2026",
+  "slug": "open-source-signal",
+  "title_en": "Open Source Signal",
+  "title_uk": "Сигнал відкритих джерел",
+  "issue_type": "Daily Signal",
+  "language_label": "EN + UKR",
+  "subtitle_en": "Accountability institutions, charging status, wound documentation, AI validation and infrastructure risk.",
+  "subtitle_uk": "Інституції відповідальності, статус обвинувачень, документування поранень, перевірка ШІ та інфраструктурні ризики.",
+  "dek_en": "Daily #132 tracks Ukraine's new Human Rights Council term, a reported procedural update involving an Akhmat commander, a standardised Ukrainian wound record, different validation stages of NATO–Ukraine AI projects and the exact licence scope accompanying sanctions on the ICC. Each item separates an announcement or allegation from an observed outcome.",
+  "dek_uk": "Daily #132 відстежує новий термін України в Раді ООН з прав людини, повідомлене процесуальне оновлення щодо командира «Ахмату», уніфікацію документування поранень, різні стадії перевірки ШІ-розробок НАТО й України та межі ліцензій при санкціях проти МКС. У кожному матеріалі оголошення чи версію слідства відділено від підтвердженого результату.",
+  "editorial_frame": {
+    "what_this_is": "A bilingual editorial issue for 14 October 2026. Four items are based on 12–13 October publications; the ICC source is explicitly included under the seven-day extension. Practical assessments are editorial.",
+    "what_this_is_not": "A criminal judgment, tactical guide, personal legal or medical advice, or claim of independently measured AI performance."
+  },
+  "rubric_map": [
+    "📡 Signal One / Головний сигнал",
+    "⚖️ War Crimes Verification / Верифікація воєнних злочинів",
+    "🗂️ Tradecraft / Методика",
+    "🤖 AI Verification / ШІ та верифікація",
+    "⚠️ Risk Watch / Межі й ризики"
+  ],
+  "footer_note": "Prepared for Open Source Signal / Сигнал відкритих джерел.",
+  "items": [
+    {
+      "theme": "ukraine-hrc-2027-2029",
+      "emoji": "📡",
+      "rubric_en": "Signal One",
+      "rubric_uk": "Головний сигнал",
+      "title_en": "Ukraine's new Human Rights Council term creates an accountability agenda to track",
+      "title_uk": "Новий термін України в Раді ООН з прав людини створює порядок денний для відстеження",
+      "source_name": "Global Centre for the Responsibility to Protect",
+      "source_url": "https://www.globalr2p.org/publications/un-human-rights-council-elections-for-2027-2029-and-the-responsibility-to-protect/",
+      "source_date_label_en": "13 October 2026; term 2027–2029",
+      "source_date_label_uk": "13 жовтня 2026; термін 2027–2029",
+      "what_happened_en": "The Global Centre for R2P reports Ukraine's election to the UN Human Rights Council for 2027–2029. Its accompanying analysis urges members to sustain investigative mandates, protect participation by affected communities and follow up on documented violations.",
+      "what_happened_uk": "Global Centre for R2P повідомляє про обрання України до Ради ООН з прав людини на 2027–2029 роки. У супровідному аналізі організація закликає підтримувати розслідувальні мандати, захищати участь постраждалих громад і забезпечувати подальші дії щодо задокументованих порушень.",
+      "why_it_matters_en": "Editorial assessment: election is a governance event. Its accountability value should be assessed through subsequent mandates, resources and follow-up rather than assumed from membership.",
+      "why_it_matters_uk": "Редакційна оцінка: обрання — інституційна подія. Його значення для відповідальності варто оцінювати за подальшими мандатами, ресурсами й виконанням рекомендацій, а не припускати з самого членства.",
+      "how_to_use_en": "Track dated commitments, resolutions, mandate renewals and published reports concerning Ukraine. Link each institutional action to the evidence or recommendations it addresses.",
+      "how_to_use_uk": "Відстежуйте датовані зобов’язання, резолюції, продовження мандатів і звіти щодо України. Пов’язуйте кожну інституційну дію з доказами або рекомендаціями, яких вона стосується.",
+      "limits_en": "The analysis is an advocacy organisation's assessment, not a UN decision text. Election does not establish individual guilt or guarantee implementation. Official UN and MFA full pages were inaccessible; the opened analysis is the main source.",
+      "limits_uk": "Аналіз є позицією правозахисної організації, а не текстом рішення ООН. Обрання не встановлює індивідуальної вини й не гарантує виконання. Повні сторінки ООН і МЗС недоступні; основне джерело — прочитаний аналіз.",
+      "tags": [
+        "ukraine",
+        "human-rights-council",
+        "accountability",
+        "mandates"
+      ],
+      "source_type": "reputable_secondary_and_advocacy",
+      "evidence_level": "institutional_event_report",
+      "verification_status": "analysis_read_official_full_text_unavailable",
+      "risk_flags": [
+        "advocacy_interpretation"
+      ],
+      "supporting_sources": [
+        {
+          "url": "https://press.un.org/en/2026/ga12795.doc.htm",
+          "date": "2026-10-13",
+          "role": "Official indexed corroboration; full page unavailable"
+        }
+      ]
+    },
+    {
+      "theme": "akhmat-investigation-charge-distinction",
+      "emoji": "⚖️",
+      "rubric_en": "War Crimes Verification",
+      "rubric_uk": "Верифікація воєнних злочинів",
+      "title_en": "The alleged attacks and the reported criminal charge are different fields",
+      "title_uk": "Опис імовірних атак і повідомлена кваліфікація обвинувачення — різні поля",
+      "source_name": "Апостроф; UA.NEWS, citing prosecutors",
+      "source_url": "https://apostrophe.ua/society/nakazuvav-obstriljuvati-sumshchinu-rozsliduvannja-shchodo-komandira-roti-akhmat-zavershili.html",
+      "source_date_label_en": "13 October 2026, 18:04",
+      "source_date_label_uk": "13 жовтня 2026, 18:04",
+      "what_happened_en": "Reports citing prosecutors say a special pre-trial investigation concerning an Akhmat company commander has concluded. The allegations describe orders for drone attacks on civilian infrastructure in Sumy region. The reported legal classification is high treason under Article 111(2) of Ukraine's Criminal Code.",
+      "what_happened_uk": "За повідомленнями з посиланням на прокуратуру, завершено спеціальне досудове розслідування щодо командира роти «Ахмату». Описана версія слідства стосується наказів атакувати цивільну інфраструктуру Сумщини дронами. Повідомлена правова кваліфікація — державна зрада за ч. 2 ст. 111 КК України.",
+      "why_it_matters_en": "Editorial assessment: an allegation involving attacks on civilians should not be silently relabelled as a conviction for war crimes or as a charge under a different article.",
+      "why_it_matters_uk": "Редакційна оцінка: версію про атаки на цивільних не слід непомітно перетворювати на вирок за воєнні злочини або обвинувачення за іншою статтею.",
+      "how_to_use_en": "Keep alleged conduct, charging provision, procedural stage and adjudicated findings separate. Seek the indictment and court record before adding a trial date, verdict or additional offence.",
+      "how_to_use_uk": "Розділяйте інкриміновані дії, статтю обвинувачення, стадію провадження та встановлені судом обставини. Перед додаванням дати суду, вироку чи іншого злочину перевіряйте обвинувальний акт і судовий запис.",
+      "limits_en": "The original prosecutor post and indictment were not retrieved. Both media reports derive from the same authority and do not constitute independent corroboration of the alleged attacks. No conviction is reported here.",
+      "limits_uk": "Оригінальний допис прокуратури й обвинувальний акт не отримано. Обидва медіа спираються на один орган і не є незалежним підтвердженням імовірних атак. Про вирок у цій картці не йдеться.",
+      "tags": [
+        "war-crimes-verification",
+        "allegations",
+        "high-treason",
+        "procedural-status"
+      ],
+      "source_type": "secondary_attributed_to_prosecutors",
+      "evidence_level": "reported_procedural_update",
+      "verification_status": "two_reports_read_common_source_not_independent",
+      "risk_flags": [
+        "criminal_allegation",
+        "primary_unavailable"
+      ],
+      "supporting_sources": [
+        {
+          "url": "https://ua.news/en/war-vs-rf/komandira-rosiiskogo-pidrozdilu-akhmat-suditimut-za-ataki-na-tsivilnu-infrastrukturu-sumshchini",
+          "date": "2026-10-13"
+        }
+      ]
+    },
+    {
+      "theme": "wound-record-standardisation",
+      "emoji": "🗂️",
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "title_en": "A standard wound order links an incident to supporting records",
+      "title_uk": "Єдиний наказ про поранення пов’язує подію з підтвердними документами",
+      "source_name": "Міністерство оборони України",
+      "source_url": "https://mod.gov.ua/news/u-zsu-zaprovadyly-yedynyi-zrazok-nakazu-pro-otrymannia-poranennia",
+      "source_date_label_en": "12 October 2026, 13:05",
+      "source_date_label_uk": "12 жовтня 2026, 13:05",
+      "what_happened_en": "The Defence Ministry announces a standard order for recording injuries to Ukrainian service members. Fields cover the event, duties, care, evacuation, witnesses and supporting documents. The ministry states a five-day period from the event or receipt of information, with separate circumstances recorded for each person.",
+      "what_happened_uk": "Міноборони повідомило про єдиний зразок наказу для фіксації поранень українських військових. Поля охоплюють подію, завдання, допомогу, евакуацію, свідків і підтвердні документи. Вказано п’ятиденний строк від події або отримання інформації; обставини кожної людини фіксують окремо.",
+      "why_it_matters_en": "Editorial assessment: a structured incident record improves traceability between an event and later administrative documents. It is not a public casualty dataset.",
+      "why_it_matters_uk": "Редакційна оцінка: структурований запис поліпшує простежуваність між подією та подальшими адміністративними документами. Це не публічний набір даних про втрати.",
+      "how_to_use_en": "For documentation analysis, distinguish event date, notification date, order date and later certificate. Record which evidence supports each field; keep medical information, witnesses and locations restricted.",
+      "how_to_use_uk": "Під час аналізу документування розрізняйте дату події, отримання інформації, наказу та подальшої довідки. Фіксуйте докази для кожного поля; медичні відомості, дані свідків і місця обмежуйте в доступі.",
+      "limits_en": "This is an official explanation of a Ukrainian administrative change, not a medical assessment or guarantee of payments. The amended instruction and individual application were not independently examined.",
+      "limits_uk": "Це офіційне пояснення української адміністративної зміни, а не медичний висновок чи гарантія виплат. Змінену інструкцію та її застосування в окремих справах незалежно не досліджено.",
+      "tags": [
+        "wounded",
+        "documentation",
+        "incident-record",
+        "provenance",
+        "ukraine"
+      ],
+      "source_type": "primary_official",
+      "evidence_level": "official_process_announcement",
+      "verification_status": "announcement_read_not_implementation_audit",
+      "risk_flags": [
+        "sensitive_medical_records"
+      ],
+      "public_interest": "Evidence structure, without individual legal or medical advice."
+    },
+    {
+      "theme": "jatec-ai-validation-stages",
+      "emoji": "🤖",
+      "rubric_en": "AI Verification",
+      "rubric_uk": "ШІ та верифікація",
+      "title_en": "Two announced AI models are at different validation stages",
+      "title_uk": "Дві оголошені ШІ-моделі перебувають на різних стадіях перевірки",
+      "source_name": "Міністерство оборони України / JATEC",
+      "source_url": "https://mod.gov.ua/news/ukraina-i-nato-rozrobyly-shi-modeli-prohnozuvannia-atak-bpla-ta-planuvannia-artyleriiskykh-operatsii",
+      "source_date_label_en": "13 October 2026, 18:18",
+      "source_date_label_uk": "13 жовтня 2026, 18:18",
+      "what_happened_en": "Ukraine's Defence Ministry reports two NATO–Ukraine AI developments presented through JATEC. It describes one model as tested on real data and ready for integration, while the other remains a prototype supplied for testing and validation.",
+      "what_happened_uk": "Міноборони повідомило про дві ШІ-розробки НАТО й України, представлені за участі JATEC. Одну модель описано як перевірену на реальних даних і готову до інтеграції; інша залишається прототипом, переданим для випробувань і валідації.",
+      "why_it_matters_en": "Editorial assessment: prototype, tested model, integration readiness and deployment are distinct statuses. An institutional announcement is not a published performance benchmark.",
+      "why_it_matters_uk": "Редакційна оцінка: прототип, перевірена модель, готовність до інтеграції та впровадження — різні статуси. Інституційне оголошення не є опублікованим тестом якості.",
+      "how_to_use_en": "When reviewing AI claims, ask for the evaluation period, held-out test design, error rates, calibration and independent review. Record unavailable metrics explicitly rather than substituting confidence language.",
+      "how_to_use_uk": "Перевіряючи заяви про ШІ, шукайте період оцінювання, дизайн окремої тестової вибірки, частоти помилок, калібрування та незалежний аудит. Недоступні показники позначайте прямо, не замінюючи їх словами про впевненість.",
+      "limits_en": "The announcement provides no numerical performance metrics, reproducible benchmark or independent evaluation. This card addresses validation claims only and gives no operational use instructions.",
+      "limits_uk": "Оголошення не містить числових метрик якості, відтворюваного тесту чи незалежного оцінювання. Картка стосується лише заяв про валідацію й не дає інструкцій бойового застосування.",
+      "tags": [
+        "ai-verification",
+        "validation",
+        "benchmarks",
+        "readiness",
+        "jatec"
+      ],
+      "source_type": "primary_official",
+      "evidence_level": "developer_partner_announcement",
+      "verification_status": "stated_status_verified_performance_unverified",
+      "risk_flags": [
+        "no_public_benchmark"
+      ],
+      "public_interest": "Audit claims about AI, without tactical or targeting details."
+    },
+    {
+      "theme": "icc-sanctions-licence-scope",
+      "emoji": "⚠️",
+      "rubric_en": "Risk Watch",
+      "rubric_uk": "Межі й ризики",
+      "title_en": "ICC sanctions: the listing and the licences must be read together",
+      "title_uk": "Санкції проти МКС: внесення до списку та ліцензії треба читати разом",
+      "source_name": "OFAC / U.S. Treasury",
+      "source_url": "https://ofac.treasury.gov/recent-actions/20261009",
+      "source_date_label_en": "9 October 2026; seven-day window; checked 14 October",
+      "source_date_label_uk": "9 жовтня 2026; семиденне вікно; перевірено 14 жовтня",
+      "what_happened_en": "OFAC added the International Criminal Court to its sanctions list on 9 October and issued related licences. Licence 13 covers specified maintenance or wind-down transactions through 12:01 a.m. EDT on 7 April 2027. Licence 14 separately addresses telecommunications and enterprise software, subject to exclusions.",
+      "what_happened_uk": "9 жовтня OFAC внесло Міжнародний кримінальний суд до санкційного списку та видало пов’язані ліцензії. Ліцензія №13 охоплює визначені операції підтримки або згортання діяльності до 00:01 EDT 7 квітня 2027 року. №14 окремо стосується телекомунікацій і корпоративного ПЗ з установленими винятками.",
+      "why_it_matters_en": "Editorial assessment: a headline about sanctions cannot establish that every service is prohibited or already stopped. Legal scope and observed service continuity need separate evidence.",
+      "why_it_matters_uk": "Редакційна оцінка: заголовок про санкції не встановлює, що всі послуги заборонені або вже припинені. Правові межі й фактична безперервність сервісів потребують окремих доказів.",
+      "how_to_use_en": "For an accountability-infrastructure risk register, link each service category to the exact instrument, date, exceptions and observed provider action. Seek qualified advice before making compliance decisions.",
+      "how_to_use_uk": "У реєстрі ризиків інфраструктури правосуддя пов’язуйте категорію сервісу з точним документом, датою, винятками й зафіксованою дією постачальника. Рішення щодо дотримання санкцій потребують фахової консультації.",
+      "limits_en": "The licences include exclusions and do not override other requirements. This is a dated source map, not advice authorising a transaction or proof that any particular provider has cut access.",
+      "limits_uk": "Ліцензії містять винятки й не скасовують інших вимог. Це датована карта джерел, а не дозвіл на операцію чи доказ, що конкретний постачальник уже припинив доступ.",
+      "tags": [
+        "icc",
+        "accountability",
+        "sanctions",
+        "licences",
+        "service-continuity"
+      ],
+      "source_type": "primary_legal",
+      "evidence_level": "official_listing_and_licence_texts",
+      "verification_status": "listing_and_gl13_gl14_read",
+      "risk_flags": [
+        "scope_sensitive_legal_text"
+      ],
+      "supporting_sources": [
+        {
+          "url": "https://ofac.treasury.gov/media/937186/download?inline=",
+          "date": "2026-10-09",
+          "role": "General Licence 13; text read"
+        },
+        {
+          "url": "https://ofac.treasury.gov/media/937191/download?inline=",
+          "date": "2026-10-09",
+          "role": "General Licence 14; text read"
+        }
+      ]
+    }
+  ],
+  "internal_notes": [
+    "EDITORIAL NOTES — INTERNAL. Daily #132, Wednesday 14 October 2026. Publication explicitly authorised by the user.",
+    "Rubrics: Signal One; War Crimes Verification; Tradecraft; AI Verification; Risk Watch. No filler Tool Radar or repeated daily loss number.",
+    "Freshness: main election analysis and alleged Akhmat case 13 October; JATEC announcement 13 October; wound documentation 12 October. OFAC 9 October explicitly uses seven-day extension due to accountability-infrastructure relevance.",
+    "Core focus: Ukraine's investigative mechanisms and a Russian unit accountability case; administrative evidence handling and public validation claims provide methods. Wound documentation concerns Ukrainian service members and is intentionally a methodological comparator, not Russian casualty data.",
+    "Source quality: full Global Centre R2P analysis read; official UN page and MFA full statement unavailable. Election supported by indexed official material; no vote count used.",
+    "Akhmat: two media reports read, both citing prosecutors; original social post unavailable. Common source means no independent corroboration of alleged attacks. Reported charge Article 111(2), not a silently substituted war-crime article. No private-person identification or conviction.",
+    "MoD wound announcement read; amended instruction not retrieved. Five-day period preserves both triggering alternatives: event or receipt of information. No entitlement guarantee.",
+    "JATEC: official source describes differing readiness stages. No numerical benchmark supplied. All tactical planning details excluded; only validation-state distinction adapted.",
+    "OFAC listing and General Licences 13 and 14 fully read as text. GL13 deadline is 7 April 2027 at 00:01 EDT; do not substitute press shorthand 'six months' or a different April date. No transaction authorisation advice.",
+    "Duplicate audit against recent issues: exclude Changan, prior-restraint case, air-defence imagery case, recruitment interview, captivity magazine and official loss snapshot. Selected source URLs not previously used in October.",
+    "Weekly deep dives: institutional support for investigative mandates; allegation/charging/article/status distinction; AI validation documentation; service continuity under sanctions.",
+    "Best sources: original OFAC instruments and official MoD announcements for what they actually state. Weak sources/excluded: Telegram-only strike attribution; speculative data-centre identification; repeated family-meeting agendas; stale search results; inaccessible statements not treated as fully read.",
+    "Follow-up: original indictment/court docket, official UN results, amended wound-documentation instruction, independent AI evaluation, observed ICC provider continuity and later licence updates.",
+    "Tool Radar: no new tool promoted. Discover through OSINT Newsletter/Reddit, verify original repositories, and require reproducible outputs.",
+    "Safety: no military coordinates, operational routes, launch procedures, tactical model inputs, personal medical records, witness identities or unnecessary private identifiers.",
+    "Weekly Magazine candidates: mandate-to-outcome tracking and sanctions-with-exceptions source map. Keep legal interpretation and institutional policy claims clearly attributed."
+  ]
+}
