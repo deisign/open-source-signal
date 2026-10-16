@@ -1,0 +1,274 @@
+{
+  "issue_number": "134",
+  "date_iso": "2026-10-16",
+  "date_label_en": "16 October 2026",
+  "date_label_uk": "16 жовтня 2026",
+  "slug": "open-source-signal",
+  "title_en": "Open Source Signal",
+  "title_uk": "Сигнал відкритих джерел",
+  "issue_type": "Daily Signal",
+  "language_label": "EN + UKR",
+  "subtitle_en": "War-crime proceedings, civilian detention, occupation records, humanitarian access, satellite change and AI evidence.",
+  "subtitle_uk": "Провадження щодо воєнних злочинів, утримання цивільних, документи окупації, гуманітарний доступ, супутникові зміни та докази ШІ.",
+  "dek_en": "Daily #134: seven cards on a Kharkiv case update, civilian abductions, property seizures, AI evidence proposals, humanitarian access scoring, civilian service failures under occupation and dated satellite comparison. Each preserves source scope and uncertainty.",
+  "dek_uk": "Daily #134: сім карток про справу на Харківщині, викрадення цивільних, вилучення майна, проєкти правил щодо доказів ШІ, оцінювання гуманітарного доступу, збої послуг в окупації та датоване порівняння супутникових знімків. Межі й невизначеність джерел збережено.",
+  "editorial_frame": {
+    "what_this_is": "Seven-card bilingual editorial draft for Friday 16 October 2026. Publication dates, event dates and observation periods remain distinct. Recommendations are editorial assessments.",
+    "what_this_is_not": "A published issue, judicial finding, independent dataset audit or announcement of an enacted US evidence rule."
+  },
+  "rubric_map": [
+    "📡 Signal One / Головний сигнал",
+    "🕊️ Losses, Captivity & Missing / Втрати, полон, зниклі",
+    "🇺🇦 Ukraine Lens / Українська оптика",
+    "🤖 AI Verification / ШІ та верифікація",
+    "🗺️ Map Room / Картографічна кімната",
+    "🏘️ Infrastructure Signals / Інфраструктурні сигнали",
+    "🔎 Tradecraft / Методика"
+  ],
+  "footer_note": "Prepared for Open Source Signal / Сигнал відкритих джерел.",
+  "items": [
+    {
+      "theme": "kharkiv-suspicion-438",
+      "emoji": "📡",
+      "rubric_en": "Signal One",
+      "rubric_uk": "Головний сигнал",
+      "title_en": "Kharkiv killings: a formal suspicion, an investigation still open",
+      "title_uk": "Убивства на Харківщині: повідомлення про підозру, слідство триває",
+      "source_name": "Security Service of Ukraine",
+      "source_url": "https://ssu.gov.ua/novyny/sbu-povidomyla-pro-pidozru-rashystu-yakyi-rozstriliav-piatokh-ukrainskykh-viiskovykh-ta-odnoho-tsyvilnoho-na-kharkivshchyni",
+      "source_date_label_en": "15 October 2026; alleged killings 13 October",
+      "source_date_label_uk": "15 жовтня 2026; імовірні вбивства 13 жовтня",
+      "what_happened_en": "Ukraine's Security Service reports notifying a detained Russian serviceman of suspicion under Article 438(2), concerning war crimes causing deaths. Investigators allege he killed five unarmed Ukrainian servicemen and a civilian on 13 October; detention followed on 14 October.",
+      "what_happened_uk": "СБУ повідомила затриманому російському військовому про підозру за ч. 2 ст. 438 КК України — воєнні злочини, що спричинили загибель людей. За версією слідства, 13 жовтня він убив п’ятьох беззбройних українських військових і цивільного; затримання відбулося 14 жовтня.",
+      "why_it_matters_en": "Editorial assessment: the dated procedural update provides a starting point for tracking evidence and subsequent court decisions.",
+      "why_it_matters_uk": "Редакційна оцінка: датоване процесуальне оновлення дає основу для відстеження доказів і подальших рішень суду.",
+      "how_to_use_en": "Separate incident, detention and suspicion dates; attribute the account to investigators and track later rulings.",
+      "how_to_use_uk": "Розділяйте дати події, затримання та повідомлення про підозру; атрибутуйте версію слідству й відстежуйте подальші ухвали.",
+      "limits_en": "The investigation continues. This is an official allegation, not a verdict. Victim status and legal characterisation require case evidence; civilian clothing alone is not our legal test.",
+      "limits_uk": "Досудове слідство триває. Це офіційна підозра, а не вирок. Статус потерпілих і правова кваліфікація потребують матеріалів справи; цивільний одяг сам собою не є нашим правовим критерієм.",
+      "source_type": "primary_investigative_statement",
+      "tags": [
+        "kharkiv-suspicion-438",
+        "accountability",
+        "verification"
+      ],
+      "evidence_level": "primary_investigative_statement",
+      "verification_status": "full_source_read_claims_attributed",
+      "risk_flags": [
+        "scope_and_attribution_sensitive"
+      ],
+      "public_interest": "Public-interest documentation, evidence preservation and accountability."
+    },
+    {
+      "theme": "civilian-detention-patterns",
+      "emoji": "🕊️",
+      "rubric_en": "Losses, Captivity & Missing",
+      "rubric_uk": "Втрати, полон, зниклі",
+      "title_en": "Civilian abductions: a named-case minimum and a wider pattern",
+      "title_uk": "Викрадення цивільних: мінімум установлених випадків і ширша практика",
+      "source_name": "ZMINA",
+      "source_url": "https://zmina.ua/event/yelyzaveta-sokurenko-pid-chas-varshavskoyi-konferencziyi-z-lyudskogo-vymiru-pryvernula-uvagu-obsye-do-peresliduvan-rf-czyvilnyh-ukrayincziv/",
+      "source_date_label_en": "15 October 2026; event 14 October",
+      "source_date_label_uk": "15 жовтня 2026; захід 14 жовтня",
+      "what_happened_en": "ZMINA reports a Warsaw discussion of civilian detention. A Ukrainian Archive/Mnemonic researcher presented at least 230 established abduction cases linked to Crimea since 2014, including people taken there from other occupied territories; the count covers identified victims.",
+      "what_happened_uk": "ZMINA повідомила про варшавську дискусію щодо утримання цивільних. Дослідник Українського архіву Mnemonic представив щонайменше 230 установлених випадків викрадень, пов’язаних із Кримом від 2014 року, зокрема вивезення туди з інших окупованих територій; підрахунок охоплює встановлених потерпілих.",
+      "why_it_matters_en": "Editorial assessment: case counts become useful only with a clear inclusion rule and geographic scope.",
+      "why_it_matters_uk": "Редакційна оцінка: підрахунок випадків корисний за чітких критеріїв включення й географічних меж.",
+      "how_to_use_en": "Keep abduction location, subsequent detention location, source and last verified status in separate fields.",
+      "how_to_use_uk": "Окремо фіксуйте місце викрадення, подальшого утримання, джерело та останній перевірений статус.",
+      "limits_en": "The dataset was presented at an event, not independently audited here. It is a minimum, not the total or today's detention population. Crimes-against-humanity classification requires additional legal elements.",
+      "limits_uk": "Масив представили на заході; незалежного аудиту тут немає. Це мінімум, а не загальна кількість чи число утримуваних сьогодні. Кваліфікація злочину проти людяності потребує додаткових правових елементів.",
+      "source_type": "primary_event_report",
+      "tags": [
+        "civilian-detention-patterns",
+        "accountability",
+        "verification"
+      ],
+      "evidence_level": "primary_event_report",
+      "verification_status": "full_source_read_claims_attributed",
+      "risk_flags": [
+        "scope_and_attribution_sensitive"
+      ],
+      "public_interest": "Public-interest documentation, evidence preservation and accountability."
+    },
+    {
+      "theme": "occupation-property-records",
+      "emoji": "🇺🇦",
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "title_en": "Property seizures under occupation: trace the administrative chain",
+      "title_uk": "Вилучення майна в окупації: простежуйте адміністративний ланцюг",
+      "source_name": "ZMINA / JustTalk discussion",
+      "source_url": "https://zmina.ua/event/rosiya-systemno-vyluchaye-majno-na-okupovanyh-terytoriyah-onysiya-synyuk-pro-pravovi-mehanizmy-ta-vidpovidalnist-pid-chas-dyskusiyi-justtalk/",
+      "source_date_label_en": "12 October 2026; discussion 9 October",
+      "source_date_label_uk": "12 жовтня 2026; дискусія 9 жовтня",
+      "what_happened_en": "ZMINA's report on a JustTalk discussion describes property-seizure mechanisms under Russian occupation: purported nationalisation, forced re-registration, ownerless-property designations and occupation-court decisions.",
+      "what_happened_uk": "У повідомленні ZMINA про дискусію JustTalk описано механізми вилучення власності під російською окупацією: так звану націоналізацію, примусову перереєстрацію, оголошення майна безхазяйним і рішення окупаційних судів.",
+      "why_it_matters_en": "Editorial assessment: tracing successive documents can reveal how a seizure was implemented and which bodies participated.",
+      "why_it_matters_uk": "Редакційна оцінка: послідовне зіставлення документів допомагає з’ясувати механізм вилучення й участь різних органів.",
+      "how_to_use_en": "Preserve dated public notices, decisions and auction records; distinguish an owner, a legal entity and a property object. Keep private identifiers out of publication.",
+      "how_to_use_uk": "Зберігайте датовані публічні оголошення, рішення й записи торгів; розрізняйте власника, юридичну особу та об’єкт. Не публікуйте приватних ідентифікаторів.",
+      "limits_en": "Included within the seven-day window. The event report is not an audit of every seizure or individual compensation advice; underlying ownership documents need separate verification.",
+      "limits_uk": "Матеріал у межах семиденного вікна. Повідомлення про дискусію не є аудитом усіх вилучень чи індивідуальною порадою щодо компенсації; документи про власність потребують окремої перевірки.",
+      "source_type": "primary_event_report",
+      "tags": [
+        "occupation-property-records",
+        "accountability",
+        "verification"
+      ],
+      "evidence_level": "primary_event_report",
+      "verification_status": "full_source_read_claims_attributed",
+      "risk_flags": [
+        "scope_and_attribution_sensitive"
+      ],
+      "public_interest": "Public-interest documentation, evidence preservation and accountability.",
+      "supporting_sources": [
+        {
+          "url": "https://justtalk.com.ua/post/vlasnist-pid-okupatsieyu-vid-nezakonnogo-viluchennya-do-vidpovidalnosti-discussion-paper",
+          "date": "2026-10-09",
+          "role": "Linked discussion paper landing page; not treated as independently audited case records"
+        }
+      ]
+    },
+    {
+      "theme": "ai-evidence-rule-proposals",
+      "emoji": "🤖",
+      "rubric_en": "AI Verification",
+      "rubric_uk": "ШІ та верифікація",
+      "title_en": "AI evidence: authenticity and analytical reliability are separate questions",
+      "title_uk": "Докази й ШІ: автентичність та надійність аналізу — окремі питання",
+      "source_name": "US Advisory Committee on Evidence Rules",
+      "source_url": "https://www.uscourts.gov/sites/default/files/document/2026-10-evidence-rules-agenda-book.pdf",
+      "source_date_label_en": "Materials for the 15 October 2026 meeting; pre-circulated agenda",
+      "source_date_label_uk": "Матеріали до засідання 15 жовтня 2026; попередньо оприлюднений порядок денний",
+      "what_happened_en": "The US committee's meeting materials schedule separate discussions of deepfake authenticity and AI-generated evidence, including proposed Rule 707. The agenda describes the earlier proposal's withdrawal for further study and a modified draft.",
+      "what_happened_uk": "Матеріали засідання американського комітету передбачають окреме обговорення автентичності дипфейків і доказів, створених ШІ, зокрема проєкту Rule 707. Порядок денний описує відкликання попереднього проєкту для доопрацювання та змінену редакцію.",
+      "why_it_matters_en": "Editorial assessment: proving a file's origin does not establish the accuracy of an analytical conclusion derived from it.",
+      "why_it_matters_uk": "Редакційна оцінка: встановлення походження файла не підтверджує точності аналітичного висновку, зробленого на його основі.",
+      "how_to_use_en": "Keep originals, transformation logs, model/version details and independent checks of conclusions.",
+      "how_to_use_uk": "Зберігайте оригінали, журнал перетворень, дані про модель і версію та незалежні перевірки висновків.",
+      "limits_en": "These are proposals and meeting materials, not enacted rules or confirmed meeting outcomes. The date is the meeting date, not a claim of release yesterday. US procedure does not determine Ukrainian admissibility.",
+      "limits_uk": "Це проєкти й матеріали засідання, а не чинні нові правила чи підтверджені підсумки. Дата стосується засідання, а не нібито вчорашнього релізу. Процедура США не визначає допустимості доказів в Україні.",
+      "source_type": "primary_rulemaking_materials",
+      "tags": [
+        "ai-evidence-rule-proposals",
+        "accountability",
+        "verification"
+      ],
+      "evidence_level": "primary_rulemaking_materials",
+      "verification_status": "full_source_read_claims_attributed",
+      "risk_flags": [
+        "scope_and_attribution_sensitive"
+      ],
+      "public_interest": "Public-interest documentation, evidence preservation and accountability."
+    },
+    {
+      "theme": "acaps-access-may-august",
+      "emoji": "🗺️",
+      "rubric_en": "Map Room",
+      "rubric_uk": "Картографічна кімната",
+      "title_en": "A lower access score can conceal worsening danger",
+      "title_uk": "Нижчий бал обмежень може приховувати зростання небезпеки",
+      "source_name": "ACAPS",
+      "source_url": "https://www.acaps.org/fileadmin/Data_Product/Main_media/20261015_ACAPS_Ukraine_May-August_2026_humanitarian_access_update_.pdf",
+      "what_happened_en": "ACAPS' 15 October report compares humanitarian access in May–August with January–April 2026. It cautions that lower scores partly reflect the absence of winter constraints, despite intensified attacks. The analysis combines secondary data with seven responder interviews.",
+      "what_happened_uk": "Звіт ACAPS від 15 жовтня порівнює гуманітарний доступ у травні–серпні та січні–квітні 2026 року. Автори застерігають: нижчі бали частково зумовлені відсутністю зимових обмежень попри посилення атак. Аналіз поєднує вторинні дані із сімома інтерв’ю з гуманітарними працівниками.",
+      "why_it_matters_en": "Editorial assessment: a composite score needs its components and seasonal context before it becomes a trend headline.",
+      "why_it_matters_uk": "Редакційна оцінка: перед висновком про тенденцію зведений бал слід розкласти на компоненти та врахувати сезонність.",
+      "how_to_use_en": "Compare the same geographic units and component scores; retain reporting periods, model definitions and coverage gaps.",
+      "how_to_use_uk": "Порівнюйте ті самі територіальні одиниці й компоненти; зберігайте періоди, визначення моделі та прогалини покриття.",
+      "limits_en": "The period ends on 31 August. Sparse reporting can understate restrictions in occupied areas. These are retrospective access assessments, not present-day safe-route recommendations.",
+      "limits_uk": "Період закінчується 31 серпня. Брак повідомлень може занижувати оцінку обмежень в окупації. Це ретроспективний аналіз доступу, а не рекомендації безпечних маршрутів сьогодні.",
+      "source_type": "primary_thematic_report",
+      "source_date_label_en": "15 October 2026",
+      "source_date_label_uk": "15 жовтня 2026",
+      "tags": [
+        "acaps-access-may-august",
+        "verification"
+      ],
+      "evidence_level": "primary_thematic_report",
+      "verification_status": "primary_text_read_limits_retained",
+      "risk_flags": [
+        "retrospective_observation"
+      ],
+      "public_interest": "Civilian protection and reproducible public-interest research."
+    },
+    {
+      "theme": "occupied-services-civilian-impact",
+      "emoji": "🏘️",
+      "rubric_en": "Infrastructure Signals",
+      "rubric_uk": "Інфраструктурні сигнали",
+      "title_en": "Occupied Ukraine: document service failure beyond visible damage",
+      "title_uk": "Окупована Україна: документуйте збої послуг, а не лише видимі руйнування",
+      "source_name": "The Kyiv Independent — Yuliia Taradiuk",
+      "source_url": "https://kyivindependent.com/from-oleshky-to-mariupol-the-deepening-humanitarian-crisis-across-ukraines-occupied-territories/",
+      "what_happened_en": "The Kyiv Independent's 15 October overview describes water and electricity disruption, medical staffing shortages and deteriorating municipal services across occupied Ukrainian regions. It draws on interviews, earlier reporting and public statements; conditions differ by region.",
+      "what_happened_uk": "Огляд Kyiv Independent від 15 жовтня описує перебої водо- й електропостачання, брак медиків та погіршення комунальних послуг на окупованих територіях України. Джерела — інтерв’ю, попередні матеріали й публічні заяви; умови різняться між регіонами.",
+      "why_it_matters_en": "Editorial assessment: visible infrastructure and actual civilian access are different things to measure.",
+      "why_it_matters_uk": "Редакційна оцінка: наявність інфраструктури та фактичний доступ цивільних до послуг — різні показники.",
+      "how_to_use_en": "Build a dated service log with location at a safe level of detail, source, outage duration and independent corroboration.",
+      "how_to_use_uk": "Ведіть датований журнал послуг із безпечною деталізацією місця, джерелом, тривалістю перебою та незалежним підтвердженням.",
+      "limits_en": "This is a synthesis, not simultaneous field inspection. Some underlying observations predate October and some rely on Telegram; verify each before using it as standalone evidence. An outage alone does not establish cause.",
+      "limits_uk": "Це узагальнення, а не одночасна польова перевірка. Частина спостережень старша за жовтень, частина походить із Telegram; перевіряйте їх перед окремим доказовим використанням. Сам перебій не встановлює причини.",
+      "source_type": "original_reporting_and_synthesis",
+      "source_date_label_en": "15 October 2026",
+      "source_date_label_uk": "15 жовтня 2026",
+      "tags": [
+        "occupied-services-civilian-impact",
+        "verification"
+      ],
+      "evidence_level": "original_reporting_and_synthesis",
+      "verification_status": "primary_text_read_limits_retained",
+      "risk_flags": [
+        "retrospective_observation"
+      ],
+      "public_interest": "Civilian protection and reproducible public-interest research."
+    },
+    {
+      "theme": "bellingcat-dc-tree-change",
+      "emoji": "🔎",
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "title_en": "Before-and-after imagery: show the change, preserve the correction",
+      "title_uk": "Знімки до і після: покажіть зміну та збережіть виправлення",
+      "source_name": "Bellingcat — Jake Godin and Eoghan Macguire",
+      "source_url": "https://www.bellingcat.com/news/us-canada/2026/10/15/satellite-images-show-extent-of-trump-admins-tree-felling-at-dc-golf-course/",
+      "what_happened_en": "Bellingcat compares Planet Labs images from 8 and 13 October showing tree removal at Washington's East Potomac Golf Links. A 15 October correction distinguishes prior notice to the court from the court's permission.",
+      "what_happened_uk": "Bellingcat зіставляє знімки Planet Labs за 8 і 13 жовтня, які показують вирубку на East Potomac Golf Links у Вашингтоні. Виправлення від 15 жовтня розмежовує попереднє повідомлення суду та дозвіл суду.",
+      "why_it_matters_en": "Editorial assessment: imagery establishes observable change; legal wording needs its own documentary check.",
+      "why_it_matters_uk": "Редакційна оцінка: зображення встановлюють видиму зміну; правові формулювання потребують окремої документальної перевірки.",
+      "how_to_use_en": "Record acquisition dates and comparable image areas. Preserve article revisions and distinguish image observations from reported counts and legal claims.",
+      "how_to_use_uk": "Фіксуйте дати знімання й порівнювані ділянки. Зберігайте редакції публікації та розділяйте спостереження на знімках, повідомлені підрахунки й правові твердження.",
+      "limits_en": "The images bracket change within an interval; they do not alone prove an exact time, tree count or legal breach. This issue does not independently measure the cleared area.",
+      "limits_uk": "Знімки обмежують зміну часовим інтервалом; самі собою не доводять точного часу, числа дерев чи правопорушення. Площу вирубки для цього випуску незалежно не вимірювали.",
+      "source_type": "original_osint_investigation",
+      "source_date_label_en": "15 October 2026",
+      "source_date_label_uk": "15 жовтня 2026",
+      "tags": [
+        "bellingcat-dc-tree-change",
+        "verification"
+      ],
+      "evidence_level": "original_osint_investigation",
+      "verification_status": "primary_text_read_limits_retained",
+      "risk_flags": [
+        "retrospective_observation"
+      ],
+      "public_interest": "Civilian protection and reproducible public-interest research."
+    }
+  ],
+  "internal_notes": [
+    "EDITORIAL NOTES — INTERNAL. Daily #134, Friday 16 October 2026. Revised seven-card draft. Not published.",
+    "Civilian detention: full ZMINA participant report read. Event14October/publication15October. Mnemonic-linked230 cases cover named victims linked toCrimea since2014, including transfers from elsewhere; not230 presently held, not all occupied-territory abductions, not POW total. Raw case dataset not audited. Persecution as crimes against humanity requires additional elements.",
+    "Property: full ZMINA event report read; JustTalk paper landing page opened. Avoid uncertain aggregate counts, money totals and unverifiable completeness. Administrative evidence preservation is editorial recommendation. No private property identifiers.",
+    "AI: official agendaPDF read; page5 visually inspected. Rule707 withdrew original published proposal for further study; modified proposal remains a proposal. Authenticity panel and analytic-reliability panel distinct. No claim outcome occurred or any rule entered force. Ukrainian admissibility not inferred.",
+    "Tool Radar: no new tool recommendation today. Exclude stale events, generic SEOOSINT pages, unsupported aggregators and tactical launch-site mapping. Look for original repositories and reproducible outputs for Saturday.",
+    "Safety: no precise military locations, operational routes, family data, witness identities, personal documents, doxxing, stolen data or targeting guidance. Public editorial advice remains separated from source claims.",
+    "Internal section must never render on issue pages; bilingual completeness and links must pass before delivery.",
+    "Rubrics: Signal One; Losses, Captivity & Missing; Ukraine Lens; AI Verification; Map Room; Infrastructure Signals; Tradecraft. Seven selected source URLs checked against October issues.",
+    "ACAPS: original15October PDF downloaded from official country-page link; overview, methodology and limitations read. May–August compared with January–April; seven September interviews. Lower score is partly seasonal; sparse occupied-area reporting can understate constraints. Do not publish route details or tactical maps.",
+    "Kyiv Independent: original15October synthesis read in full. Focus civilian service verification; older observations and Telegram-derived subclaims remain leads requiring corroboration. No totalpopulation, territorypercentages or operational infrastructure details reproduced.",
+    "Bellingcat: original15October analysis read including correction. Planet8/13October brackets change; reported treecounts not measured here. Prior notice differs from court approval. No asserted court breach from imagery alone.",
+    "Source mix: SSU, ZMINA(two distinct event reports), official US committee, ACAPS original thematic report, Kyiv Independent reporting, Bellingcat original imagery analysis. No independence implied between reused underlying reports.",
+    "Weekly candidates: access score decomposition and reporting bias; public services versus physical infrastructure; image chronology and correction tracking. No fresh software tool recommended."
+  ]
+}
