@@ -382,8 +382,14 @@ footer { padding: 60px 0 90px; color: #4f493f; font-family: JetBrains Mono, mono
     </section>
 
     <section class="weekly-note">
-      <h2>Editorial note</h2>
-      <p>{{ weekly["editorial_note_en"] }}</p>
+      <div class="lang-panel en">
+        <h2>Editorial note</h2>
+        <p>{{ weekly["editorial_note_en"] }}</p>
+      </div>
+      <div class="lang-panel uk">
+        <h2>Редакційна колонка</h2>
+        <p>{{ weekly["editorial_note_uk"] }}</p>
+      </div>
     </section>
 
     <section class="issue-section">
