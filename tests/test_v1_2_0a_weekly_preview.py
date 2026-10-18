@@ -2,7 +2,10 @@ from __future__ import annotations
 
 import subprocess
 import sys
+import json
 from pathlib import Path
+
+from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -38,6 +41,13 @@ def test_weekly_preview_renderer_creates_html(tmp_path: Path) -> None:
     assert "theme-losses" in html
     assert "language-toggle" in html
     assert 'data-lang="both"' in html
+
+    issue = json.loads((ROOT / "weekly" / "open-source-signal-weekly-2026-W20.json").read_text(encoding="utf-8"))
+    note = BeautifulSoup(html, "html.parser").select_one(".weekly-note")
+    for language in ("en", "uk"):
+        panel = note.select_one(f".lang-panel.{language}")
+        assert panel is not None
+        assert issue[f"editorial_note_{language}"] in panel.get_text()
 
 
 def test_weekly_template_avoids_jinja_dict_method_collisions() -> None:
