@@ -1,0 +1,328 @@
+{
+  "issue_number": "W42",
+  "slug": "open-source-signal-weekly-2026-W42",
+  "output_name": "open-source-signal-weekly-2026-W42.html",
+  "date_iso": "2026-10-18",
+  "week_label_en": "12–18 October 2026",
+  "week_label_uk": "12–18 жовтня 2026",
+  "title_en": "Open Source Signal Weekly",
+  "title_uk": "Тижневий сигнал відкритих джерел",
+  "subtitle_en": "From collected material to a conclusion someone else can check.",
+  "subtitle_uk": "Від зібраного матеріалу до висновку, який може перевірити інша людина.",
+  "dek_en": "Week 42 connected accountability to the work between collection and conclusion: safe testimony, dated court procedure, honest civilian-harm denominators, distinct missing-person statuses and inspectable document tools. New IWPR and OHCHR publications and a Kharkiv remand update deepen the week's reporting. Seven editorial sections explain what can be established, what remains open and what should stay out of public view.",
+  "dek_uk": "42-й тиждень поєднав відповідальність із роботою між збиранням і висновком: безпечними свідченнями, датованою судовою процедурою, коректними показниками шкоди цивільним, різними статусами зниклих і перевірюваними документальними інструментами. Нові публікації IWPR та OHCHR і оновлення справи на Харківщині поглиблюють матеріали тижня. Сім редакційних розділів пояснюють, що можна встановити, що лишається відкритим і що має залишитися поза публікацією.",
+  "editorial_frame": {
+    "what_this_is": "A bilingual Sunday editorial magazine for ISO Week42,12–18October2026. Develops Daily130–134 and ToolRadar135 with16October courtroom, IWPR and OHCHR source updates. Practical conclusions are editorial assessments.",
+    "what_this_is_not": "A mechanical merge, a published issue, independent forensic or dataset audit, tested software stack or judicial finding."
+  },
+  "rubric_map": [
+    "📡 Signal of the Week / Головний сигнал тижня",
+    "🇺🇦 Ukraine Lens / Українська оптика",
+    "⚖️ War Crimes Verification / Верифікація воєнних злочинів",
+    "🕯️ Losses, Captivity & Missing / Втрати, полон, зниклі",
+    "🧰 Tradecraft / Методика",
+    "🛠️ Tools / Datasets / Інструменти й набори даних",
+    "⚠️ Risk Watch / Межі й ризики"
+  ],
+  "editorial_note_en": "This week's common thread is the work that makes a conclusion reviewable. A recording needs consent and controlled access; a case update needs its procedural date; a number needs a population and observation period; a parser needs checks against the page. The same discipline also tells us when to withhold a detail. Public visibility is valuable when it serves accountability without sacrificing the people whose experiences make documentation possible.",
+  "editorial_note_uk": "Наскрізна тема тижня — робота, завдяки якій висновок можна перевірити. Запис потребує згоди й контрольованого доступу; справа — дати процесуальної дії; число — визначеної сукупності й періоду; парсер — звіряння зі сторінкою. Та сама дисципліна підказує, коли деталь слід не оприлюднювати. Публічність цінна, коли допомагає відповідальності, не жертвуючи людьми, завдяки досвіду яких можливе документування.",
+  "items": [
+    {
+      "rubric_key": "signal",
+      "emoji": "📡",
+      "rubric_en": "Signal of the Week",
+      "rubric_uk": "Головний сигнал тижня",
+      "title_en": "Accountability needs a protected path from testimony to public knowledge",
+      "title_uk": "Від свідчення до суспільного знання потрібен захищений шлях",
+      "source_line_en": "IWPR · 16 October; UNDP · 14 October 2026",
+      "source_line_uk": "IWPR · 16 жовтня; ПРООН · 14 жовтня 2026",
+      "what_happened_en": "IWPR's new account of cooperation between journalists, civil society and investigators puts a practical question at the centre: when does publication help accountability, and when can it harm a survivor or a case? The report includes a newsroom decision to withhold sensitive findings and pass them to accountability bodies. Separately, UNDP announced recording equipment for eight prosecutor interviewing rooms. Together these developments connect two parts of the same editorial problem: collecting a usable record and deciding who should see it.",
+      "what_happened_uk": "Новий матеріал IWPR про співпрацю журналістів, громадських організацій і слідчих ставить практичне питання: коли публікація допомагає відповідальності, а коли загрожує постраждалому чи справі? Серед прикладів — рішення редакції не оприлюднювати чутливі результати, а передати їх органам документування та розслідування. Окремо ПРООН повідомила про обладнання для запису у восьми кімнатах допиту прокуратури. Ці події поєднують дві частини редакційної роботи: отримати придатний запис і визначити, кому його можна показати.",
+      "why_it_matters_en": "Editorial assessment: visibility is one possible outcome of documentation. Safe preservation and appropriate referral can also be valuable outcomes.",
+      "why_it_matters_uk": "Редакційна оцінка: публічність — один із можливих результатів документування. Безпечне збереження та передавання за належністю теж можуть бути важливим результатом.",
+      "how_to_use_en": "Before an interview or publication, record purpose, informed consent, access permissions and a review decision. Preserve originals separately from public adaptations. Make room for refusal and a later decision to stop participating.",
+      "how_to_use_uk": "До інтерв’ю чи публікації зафіксуйте мету, поінформовану згоду, права доступу й рішення про перегляд. Зберігайте оригінали окремо від публічних адаптацій. Залишайте людині можливість відмовитися та згодом припинити участь.",
+      "limits_en": "IWPR reports participants' experiences; it does not audit every partnership. Equipment provision alone does not establish interview quality, reduced trauma or admissibility.",
+      "limits_uk": "IWPR передає досвід учасників, а не аудит усієї співпраці. Надане обладнання саме собою не доводить якості допиту, зниження травматизації чи допустимості доказів.",
+      "tags": [
+        "weekly",
+        "accountability",
+        "signal"
+      ]
+    },
+    {
+      "rubric_key": "ukraine",
+      "emoji": "🇺🇦",
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "title_en": "A fresh publication can describe an earlier month — and a better score can hide danger",
+      "title_uk": "Свіжа публікація може описувати минулий місяць, а кращий бал — приховувати небезпеку",
+      "source_line_en": "OHCHR / UN Ukraine · 16 October; ACAPS · 15 October 2026",
+      "source_line_uk": "OHCHR / ООН в Україні · 16 жовтня; ACAPS · 15 жовтня 2026",
+      "what_happened_en": "OHCHR's September update, published on the UN Ukraine portal on 16 October, records at least 328 civilians killed and 2,105 injured during September. These are September observations, not an October weekly toll. ACAPS' report released the previous day covers May–August: lower access-constraint scores partly reflect the absence of winter restrictions, while attacks remained a serious threat. These publications strengthen the week's civilian-impact picture but use different periods, populations and measures.",
+      "what_happened_uk": "Вересневе зведення OHCHR, оприлюднене на порталі ООН в Україні 16 жовтня, фіксує щонайменше 328 загиблих і 2 105 поранених цивільних за вересень. Це вересневі спостереження, а не жовтневі втрати за тиждень. Звіт ACAPS, що вийшов днем раніше, охоплює травень–серпень: нижчі оцінки обмежень доступу частково пояснюються відсутністю зимових чинників, хоча атаки залишалися серйозною загрозою. Обидві публікації уточнюють картину шкоди цивільним, але мають різні періоди, сукупності та показники.",
+      "why_it_matters_en": "Editorial assessment: a dashboard needs an observation window and a definition beside every number. Publication recency cannot replace either.",
+      "why_it_matters_uk": "Редакційна оцінка: поряд із кожним числом мають бути період спостереження та визначення показника. Свіжість публікації їх не замінює.",
+      "how_to_use_en": "Keep killed and injured separate; distinguish verified counts from reported allegations. Compare access-model components before interpreting the total. Record coverage gaps explicitly for occupied territories.",
+      "how_to_use_uk": "Розділяйте загиблих і поранених, перевірені підрахунки й повідомлені твердження. Перед інтерпретацією загального бала порівнюйте компоненти моделі доступу. Явно позначайте прогалини покриття окупованих територій.",
+      "limits_en": "OHCHR's verified figures are not exhaustive. ACAPS warns that sparse information can understate restrictions. Neither source provides a present-day safe-route assessment; their counts must not be added together.",
+      "limits_uk": "Перевірені цифри OHCHR не є вичерпними. ACAPS застерігає, що брак інформації може занижувати оцінку обмежень. Жодне джерело не визначає безпечних маршрутів сьогодні; їхні показники не можна додавати.",
+      "tags": [
+        "weekly",
+        "accountability",
+        "ukraine"
+      ]
+    },
+    {
+      "rubric_key": "war-crimes",
+      "emoji": "⚖️",
+      "rubric_en": "War Crimes Verification",
+      "rubric_uk": "Верифікація воєнних злочинів",
+      "title_en": "Kharkiv case update: remand changes procedure, not the evidentiary burden",
+      "title_uk": "Оновлення справи на Харківщині: арешт змінює процедуру, а не доказовий обов’язок",
+      "source_line_en": "SSU · 15 October; Gwara Media and Suspilne · 16 October 2026",
+      "source_line_uk": "СБУ · 15 жовтня; Ґвара Медіа та Суспільне · 16 жовтня 2026",
+      "what_happened_en": "Friday's Daily recorded a formal suspicion under Article 438(2) over the alleged killing of five Ukrainian servicemen and a civilian. There is a subsequent procedural development: Gwara's courtroom reporter says the Saltivskyi District Court ordered 60 days in custody without bail on 16 October, counting from detention on 14 October. Suspilne separately reports the prosecutor describing witnesses and further forensic work still required. The weekly record therefore moves beyond the initial announcement while keeping the investigation open.",
+      "what_happened_uk": "П’ятничний Daily зафіксував повідомлення про підозру за ч. 2 ст. 438 щодо ймовірного вбивства п’ятьох українських військових і цивільного. Відтоді з’явилося процесуальне оновлення: за повідомленням журналістки Ґвари із суду, 16 жовтня Салтівський районний суд обрав 60 діб тримання під вартою без застави, рахуючи від затримання 14 жовтня. Суспільне окремо передає слова прокурора про свідків і необхідні експертизи. Тижневий запис виходить за межі початкового оголошення, зберігаючи статус незавершеного слідства.",
+      "why_it_matters_en": "Editorial assessment: a useful case timeline records each procedural act without upgrading it into a verdict.",
+      "why_it_matters_uk": "Редакційна оцінка: корисна хронологія фіксує кожну процесуальну дію, не перетворюючи її на вирок.",
+      "how_to_use_en": "Maintain separate entries for alleged conduct, detention, suspicion, remand and later decisions. Attach the source and document date to each entry. Track what evidence is described and what remains outstanding.",
+      "how_to_use_uk": "Окремо фіксуйте ймовірне діяння, затримання, підозру, запобіжний захід і подальші рішення. До кожного запису додавайте джерело та дату документа. Відстежуйте описані докази й незавершені дії.",
+      "limits_en": "The remand order itself was not retrieved; the update relies on courtroom reporting. Custody is not conviction. The legal status of victims cannot be inferred solely from clothing or lack of a weapon.",
+      "limits_uk": "Саму ухвалу не отримано; оновлення спирається на репортаж із суду. Тримання під вартою не є засудженням. Правового статусу потерпілих не можна виводити лише з одягу чи відсутності зброї.",
+      "tags": [
+        "weekly",
+        "accountability",
+        "war-crimes"
+      ]
+    },
+    {
+      "rubric_key": "losses",
+      "emoji": "🕯️",
+      "rubric_en": "Losses, Captivity & Missing",
+      "rubric_uk": "Втрати, полон, зниклі",
+      "title_en": "Count cases without erasing the different questions families need answered",
+      "title_uk": "Рахуйте випадки, не стираючи різних питань, на які родинам потрібна відповідь",
+      "source_line_en": "ZMINA · 15 October; Coordination Headquarters · 14 October 2026",
+      "source_line_uk": "ZMINA · 15 жовтня; Координаційний штаб · 14 жовтня 2026",
+      "what_happened_en": "At the Warsaw event reported by ZMINA, a Ukrainian Archive/Mnemonic researcher presented at least 230 established civilian-abduction cases linked to Crimea since 2014, including transfers from other occupied territories. This is a minimum based on identified victims, not a current headcount of detainees. A separate Coordination Headquarters meeting with military families discussed judicial declarations of death, DNA identification and repatriation. The two records concern different populations, but both expose the cost of collapsing distinct statuses into one number.",
+      "what_happened_uk": "На варшавському заході, про який повідомила ZMINA, дослідник Українського архіву Mnemonic представив щонайменше 230 установлених випадків викрадень цивільних, пов’язаних із Кримом від 2014 року, зокрема перевезення з інших окупованих територій. Це мінімум за встановленими потерпілими, а не поточна кількість утримуваних. Окрема зустріч Коордштабу з родинами військових стосувалася судового оголошення померлим, ідентифікації за ДНК та репатріації. Сукупності різні, але обидва матеріали показують ціну злиття різних статусів в одну цифру.",
+      "why_it_matters_en": "Editorial assessment: an aggregate helps describe scale; a family's question requires a dated, source-specific status record.",
+      "why_it_matters_uk": "Редакційна оцінка: узагальнений показник описує масштаб; питання родини потребує датованого статусу з конкретним джерелом.",
+      "how_to_use_en": "Separate person, incident and administrative act. Record abduction location, later detention information, last verification and identification evidence independently. Never treat a death declaration as a DNA identification or a return of remains.",
+      "how_to_use_uk": "Розділяйте людину, інцидент та адміністративну дію. Незалежно фіксуйте місце викрадення, подальші дані про утримання, останню перевірку й докази ідентифікації. Не прирівнюйте оголошення померлим до ДНК-ідентифікації чи повернення останків.",
+      "limits_en": "The 230-case dataset was not independently audited here. A family-meeting agenda confirms no individual's fate or exchange. Civilian detention figures and military-family records must not be merged.",
+      "limits_uk": "Масив із 230 випадків тут незалежно не аудитували. Порядок денний зустрічі не підтверджує долі конкретної людини чи обміну. Дані про цивільних і записи щодо родин військових не можна об’єднувати.",
+      "tags": [
+        "weekly",
+        "accountability",
+        "losses"
+      ]
+    },
+    {
+      "rubric_key": "tradecraft",
+      "emoji": "🧰",
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "title_en": "A document trail explains an act; imagery constrains when visible change occurred",
+      "title_uk": "Ланцюг документів пояснює дію; знімки обмежують час видимої зміни",
+      "source_line_en": "ZMINA / JustTalk · 12 October; Bellingcat · 15 October 2026",
+      "source_line_uk": "ZMINA / JustTalk · 12 жовтня; Bellingcat · 15 жовтня 2026",
+      "what_happened_en": "The property-seizure discussion reported by ZMINA points to administrative mechanisms such as re-registration, ownerless-property designations and occupation decisions. Bellingcat's unrelated Washington investigation offers a complementary method: compare dated satellite images, then check the legal wording separately. Its correction distinguishes notifying a court from receiving its permission. The common lesson is to assemble different evidence types around the same question without asking any one type to prove everything.",
+      "what_happened_uk": "Дискусія про вилучення майна, описана ZMINA, вказує на адміністративні механізми: перереєстрацію, оголошення майна безхазяйним та окупаційні рішення. Непов’язане вашингтонське розслідування Bellingcat показує доповнювальний метод: зіставити датовані супутникові знімки, а правові формулювання перевірити окремо. Виправлення розмежовує повідомлення суду та отримання дозволу. Спільний урок — поєднувати різні типи доказів навколо одного питання, не вимагаючи від одного типу довести все.",
+      "why_it_matters_en": "Editorial assessment: observed change, administrative authorisation, implementation and legal responsibility deserve separate evidence fields.",
+      "why_it_matters_uk": "Редакційна оцінка: видима зміна, адміністративне рішення, виконання та правова відповідальність потребують окремих доказових полів.",
+      "how_to_use_en": "For a public-interest case, build a chronology of notices, decisions and later records. Add image acquisition dates where useful; preserve the initial publication and its correction, with a clear indication of which is current.",
+      "how_to_use_uk": "Для суспільно важливої справи будуйте хронологію оголошень, рішень і подальших записів. За потреби додавайте дати знімання; зберігайте початкову публікацію та виправлення, явно вказуючи чинну редакцію.",
+      "limits_en": "Satellite comparison brackets a visible change; it does not alone establish motive, exact timing or a legal breach. The property event report does not verify ownership in any individual case.",
+      "limits_uk": "Супутникове порівняння обмежує видиму зміну інтервалом, але саме не встановлює мотиву, точного часу чи правопорушення. Повідомлення про майнову дискусію не перевіряє власності в окремій справі.",
+      "tags": [
+        "weekly",
+        "accountability",
+        "tradecraft"
+      ]
+    },
+    {
+      "rubric_key": "toolbox",
+      "emoji": "🛠️",
+      "rubric_en": "Tools / Datasets",
+      "rubric_uk": "Інструменти й набори даних",
+      "title_en": "The research stack should preserve what each transformation can lose",
+      "title_uk": "Дослідницький набір має зберігати те, що може загубитися під час перетворень",
+      "source_line_en": "Saturday Tool Radar #135 · 17 October 2026; original project documentation",
+      "source_line_uk": "Saturday Tool Radar #135 · 17 жовтня 2026; оригінальна документація проєктів",
+      "what_happened_en": "Saturday's selection separates roles that are often hidden inside one research application. Docling represents document structure; ParseBench evaluates parsing failures; Datashare searches a collection; Atlos supports collaborative media verification; FollowTheMoney structures entities. Topic Watch adds a different risk by asking a model whether a development is new. SecureDrop addresses a separate intake boundary. The weekly synthesis is not to install everything, but to decide which transformations must remain inspectable.",
+      "what_happened_uk": "Суботня добірка розділяє ролі, які часто ховаються в одному дослідницькому застосунку. Docling представляє структуру документа, ParseBench оцінює помилки парсингу, Datashare шукає в колекції, Atlos підтримує спільну верифікацію медіа, FollowTheMoney структурує сутності. Topic Watch додає інший ризик: модель вирішує, чи є розвиток новим. SecureDrop відокремлює приймання матеріалів. Тижневий висновок — визначити, які перетворення мають залишатися доступними для перевірки.",
+      "why_it_matters_en": "Editorial assessment: a clean answer can conceal a damaged table, mistaken entity match or suppressed correction.",
+      "why_it_matters_uk": "Редакційна оцінка: охайна відповідь може приховувати пошкоджену таблицю, хибне зіставлення людей чи пропущене виправлення.",
+      "how_to_use_en": "Use a small authorised corpus with known answers. Track originals, derived text, extraction settings, search results and reviewer decisions. Include difficult tables, Ukrainian scans, ambiguous names and a correction that must generate a new alert.",
+      "how_to_use_uk": "Використайте невеликий дозволений корпус із відомими відповідями. Відстежуйте оригінали, похідний текст, налаштування, пошукові результати та рішення рецензента. Додайте складні таблиці, українські скани, неоднозначні імена й виправлення, яке має спричинити нове сповіщення.",
+      "limits_en": "The tools were reviewed through documentation, not run or benchmarked. They are not a tested integrated stack. Atlos and FollowTheMoney were explicitly established-project references, not new releases that week.",
+      "limits_uk": "Інструменти оглянуто за документацією, без запуску чи бенчмарків. Це не випробуваний інтегрований набір. Atlos і FollowTheMoney явно подавалися як приклади усталених проєктів, а не нові релізи тижня.",
+      "tags": [
+        "weekly",
+        "accountability",
+        "toolbox"
+      ]
+    },
+    {
+      "rubric_key": "risk",
+      "emoji": "⚠️",
+      "rubric_en": "Risk Watch",
+      "rubric_uk": "Межі й ризики",
+      "title_en": "Authenticity, analytical reliability and permission to publish are three checks",
+      "title_uk": "Автентичність, надійність аналізу та дозвіл на публікацію — три перевірки",
+      "source_line_en": "US Evidence Rules Committee · materials for 15 October; editorial synthesis of the week's sources",
+      "source_line_uk": "Комітет США з правил доказування · матеріали до 15 жовтня; редакційний синтез джерел тижня",
+      "what_happened_en": "The US committee's agenda separates deepfake authenticity from AI-generated analytical evidence and proposed Rule 707. These are rulemaking materials, not proof of an enacted rule or a meeting outcome. The same separation is useful beyond court procedure: a file may have a traceable origin while an extracted conclusion is wrong, and an accurate record may still contain material that should not be published. The week's testimony, detention and software sources give concrete reasons to keep all three reviews.",
+      "what_happened_uk": "Порядок денний американського комітету розділяє автентичність дипфейків і аналітичні докази ШІ, зокрема проєкт Rule 707. Це матеріали нормотворення, а не підтвердження чинності нової норми чи результату засідання. Таке розділення корисне й поза судом: походження файла може бути простежуваним, але висновок — хибним; точний запис може містити те, що не варто публікувати. Матеріали тижня про свідчення, утримання та програмні інструменти дають конкретні підстави для трьох перевірок.",
+      "why_it_matters_en": "Editorial assessment: origin, meaning and publication risk answer different questions. Passing one check cannot substitute for the others.",
+      "why_it_matters_uk": "Редакційна оцінка: походження, зміст і ризик публікації відповідають на різні питання. Проходження однієї перевірки не замінює решти.",
+      "how_to_use_en": "Keep separate review decisions for source authenticity, analytical correctness and disclosure. Require a human decision before exposing witnesses, detainees, relatives or confidential submissions. Document withheld details without leaking them into public notes.",
+      "how_to_use_uk": "Ведіть окремі рішення щодо автентичності, правильності аналізу та розкриття. Потрібне людське рішення перед оприлюдненням даних свідків, утримуваних, родичів чи конфіденційних звернень. Документуйте вилучення деталей, не переносячи їх у публічні нотатки.",
+      "limits_en": "US procedural proposals do not establish Ukrainian admissibility. No source here provides an anonymity guarantee, and a technical workflow cannot replace legal, ethical or survivor-informed judgment.",
+      "limits_uk": "Проєкти процедур США не визначають допустимості доказів в Україні. Жодне джерело тут не гарантує анонімності; технічний процес не замінює правового, етичного та чутливого до досвіду постраждалих рішення.",
+      "tags": [
+        "weekly",
+        "accountability",
+        "risk"
+      ]
+    }
+  ],
+  "compact_sections": [
+    {
+      "rubric_key": "editorial-test",
+      "emoji": "🔍",
+      "title": "Editorial test / Редакційна перевірка",
+      "short_title": "Make the conclusion reviewable / Зробіть висновок перевірюваним",
+      "points": [
+        "What is observed, who reports it, and what remains inferred? / Що спостерігали, хто повідомив і що є припущенням?",
+        "Which event, source and publication dates apply? / Які дати події, джерела та публікації?",
+        "Can another reviewer return to the original? / Чи може інший рецензент повернутися до оригіналу?"
+      ]
+    },
+    {
+      "rubric_key": "weekly-workflow",
+      "emoji": "🗂️",
+      "title": "Weekly workflow / Робочий процес",
+      "short_title": "Separate records before counting / Розділіть записи перед підрахунком",
+      "points": [
+        "Person, incident, administrative act and source are distinct records. / Людина, інцидент, адміністративна дія та джерело — різні записи.",
+        "Preserve originals and label derived text and model outputs. / Зберігайте оригінали та позначайте похідний текст і результати моделі.",
+        "Log corrections without hiding the earlier version. / Фіксуйте виправлення, не приховуючи попередньої версії."
+      ]
+    },
+    {
+      "rubric_key": "safety-line",
+      "emoji": "🛡️",
+      "title": "Safety line / Межа безпеки",
+      "short_title": "Check disclosure separately / Окремо перевірте розкриття",
+      "points": [
+        "No witness, family or detention details merely to complete a public record. / Жодних даних свідків, родин чи місць утримання лише задля повноти публічного запису.",
+        "A survivor may refuse to speak. / Постраждала людина може відмовитися говорити.",
+        "Confidential intake is separate from public-source monitoring. / Конфіденційне приймання відокремлене від моніторингу відкритих джерел."
+      ]
+    }
+  ],
+  "reading_list": [
+    {
+      "href": "https://iwpr.net/global-voices/war-crimes-justice-ukraine",
+      "title": "IWPR — War Crimes Justice in Ukraine / Правосуддя щодо воєнних злочинів",
+      "note": "16 October. Cooperation, survivor choice and publication decisions / Співпраця, вибір постраждалих і рішення про публікацію."
+    },
+    {
+      "href": "https://www.undp.org/ukraine/press-releases/undp-and-japan-support-trauma-informed-justice-system-ukraine",
+      "title": "UNDP — trauma-informed justice / правосуддя з урахуванням травми",
+      "note": "14 October publication; 13 October visit. Equipment for eight rooms / Публікація 14 жовтня, візит 13 жовтня; обладнання для восьми кімнат."
+    },
+    {
+      "href": "https://ukraine.un.org/en/324561-protection-civilians-armed-conflict-%E2%80%94-september-2026",
+      "title": "OHCHR — September civilian protection update / захист цивільних у вересні",
+      "note": "UN portal dated 16 October. Observation period: September / Портал ООН: 16 жовтня; період спостереження — вересень."
+    },
+    {
+      "href": "https://www.acaps.org/fileadmin/Data_Product/Main_media/20261015_ACAPS_Ukraine_May-August_2026_humanitarian_access_update_.pdf",
+      "title": "ACAPS — May–August humanitarian access / гуманітарний доступ у травні–серпні",
+      "note": "15 October. Seasonal components and reporting limitations / Сезонні компоненти й обмеження інформації."
+    },
+    {
+      "href": "https://gwaramedia.com/sud-obrav-zapobizhnij-zahid-rosiyaninu-yakogo-pidozryuyut-u-vbivstvi-vijskovih-i-czivilnogo-na-harkivshhini/",
+      "title": "Gwara — Kharkiv remand hearing / запобіжний захід у Харкові",
+      "note": "16 October courtroom reporting; remand is not conviction / Репортаж із суду; арешт не є вироком."
+    },
+    {
+      "href": "https://suspilne.media/amp/kharkiv/1429685-e-svidki-ta-ti-hto-viziv-ak-dali-pracuvatime-prokuratura-u-spravi-pro-vbivstvo-patoh-vijskovih-na-harkivsini/",
+      "title": "Suspilne — investigation still at an early stage / слідство на початковій стадії",
+      "note": "16 October. Prosecutor on witnesses and outstanding work / Прокурор про свідків і незавершені дії."
+    },
+    {
+      "href": "https://ssu.gov.ua/novyny/sbu-povidomyla-pro-pidozru-rashystu-yakyi-rozstriliav-piatokh-ukrainskykh-viiskovykh-ta-odnoho-tsyvilnoho-na-kharkivshchyni",
+      "title": "SSU — formal suspicion / повідомлення про підозру",
+      "note": "15 October. Initial procedural announcement / Початкове процесуальне повідомлення."
+    },
+    {
+      "href": "https://zmina.ua/event/yelyzaveta-sokurenko-pid-chas-varshavskoyi-konferencziyi-z-lyudskogo-vymiru-pryvernula-uvagu-obsye-do-peresliduvan-rf-czyvilnyh-ukrayincziv/",
+      "title": "ZMINA — civilian detention research / дослідження утримання цивільних",
+      "note": "15 October report of 14 October event. Scope of the 230-case minimum / Звіт про захід; межі мінімуму з 230 випадків."
+    },
+    {
+      "href": "https://koordshtab.gov.ua/posts/koordynatsiynyy-shtab-proviv-zustrich-z-rodynamy-viyskovosluzhbovtsiv-57-oyi-okremoyi-motopikhotnoyi-bryhady-imeni-koshovoho-otamana-kostya-hordiyenka-3849",
+      "title": "Coordination Headquarters — family meeting / зустріч із родинами",
+      "note": "14 October. Legal death status, identification and repatriation / Правовий статус, ідентифікація та репатріація."
+    },
+    {
+      "href": "https://zmina.ua/event/rosiya-systemno-vyluchaye-majno-na-okupovanyh-terytoriyah-onysiya-synyuk-pro-pravovi-mehanizmy-ta-vidpovidalnist-pid-chas-dyskusiyi-justtalk/",
+      "title": "ZMINA / JustTalk — property under occupation / власність в окупації",
+      "note": "12 October publication; 9 October discussion / Публікація 12 жовтня, дискусія 9 жовтня."
+    },
+    {
+      "href": "https://www.bellingcat.com/news/us-canada/2026/10/15/satellite-images-show-extent-of-trump-admins-tree-felling-at-dc-golf-course/",
+      "title": "Bellingcat — imagery and a legal-wording correction / знімки й виправлення правового формулювання",
+      "note": "15 October. Notice to court differs from court approval / Повідомлення суду відрізняється від дозволу."
+    },
+    {
+      "href": "https://www.uscourts.gov/sites/default/files/document/2026-10-evidence-rules-agenda-book.pdf",
+      "title": "US Evidence Rules Committee — AI and authenticity / ШІ та автентичність",
+      "note": "Pre-circulated materials for 15 October; proposals, not enacted law / Попередні матеріали до 15 жовтня; проєкти, а не нові чинні норми."
+    },
+    {
+      "href": "https://github.com/docling-project/docling",
+      "title": "Docling",
+      "note": "Document structure and original-page checks / Структура документа та звіряння з оригіналом."
+    },
+    {
+      "href": "https://github.com/run-llama/ParseBench",
+      "title": "ParseBench",
+      "note": "Evaluation dimensions; not an endorsement of vendor rankings / Виміри оцінювання, без підтримки рейтингу постачальника."
+    },
+    {
+      "href": "https://github.com/ICIJ/datashare",
+      "title": "ICIJ Datashare",
+      "note": "Search and OCR over an authorised corpus / Пошук і OCR у дозволеному корпусі."
+    },
+    {
+      "href": "https://osintsignal.org/issues/open-source-signal-2026-10-17.html",
+      "title": "Saturday Tool Radar #135 / Суботній радар №135",
+      "note": "Seven documentation reviews, limitations and original repository links / Сім оглядів документації, обмеження й посилання на репозиторії."
+    }
+  ],
+  "editorial_notes_internal": [
+    "EDITORIAL NOTES — INTERNAL. W42, Sunday18October2026, covers12–18October. Draft only. No publishing or messaging authorised.",
+    "Canonical structure retained: editorial note; seven sections in order Signal/Ukraine/WarCrimes/Losses/Tradecraft/Tools/Risk; compact boxes; bilingual ReadingList.",
+    "Weekly synthesis from Daily130–134 and Saturday135, not copy-paste. New source developments: IWPR16October; OHCHRSeptember report on UN portal16October; Gwara16October remand and Suspilneprosecutor interview. EarlierDaily134 had remand pending.",
+    "Signal uses IWPR participant report with rights to silence and publication withholding, paired with UNDP eight-room equipment announcement. No direct quotes; no private victim/family details or original withheld episode identifiers reproduced. No institutional politics claims from IWPR repeated.",
+    "OHCHR exact September figures328killed/2105injured. Do not label them October/week42 casualties. UNportal date16October retained; HRMMUsearch has15October report index, so no assertion of a single universal release timestamp. No unverified occupied-territory/Russia incident counts added to verified totals.",
+    "ACAPS15October report periodMay–August; underlying seven September interviews. Seasonal absence of winter constraints can lower score despite danger. No route maps or operational detail. Methodology/limitations previously read from official PDF.",
+    "Kharkiv SSU15October formal suspicion438(2), Gwara16October courtroom update60days/noBail from14October, Suspilne16October prosecutor on witnesses/furtherwork. Courtorder itself not retrieved. Remand not verdict; no automatic civilian-status assertion from clothing/weapons.",
+    "Losses distinguishes civilian case-minimum230linkedCrimeasince2014 from current detention population and military-family legal/forensic/return processes. No new fate/release claim. Underlying dataset not audited.",
+    "Tradecraft pairs distinct property-administration and USimagery cases for method, never implies shared incident or legal rule. Bellingcat15October correction priornotice versus approval retained; no treecount measured.",
+    "Tools: documentation review only; no runtime/benchmark/securityaudits. No installed integratedstack. TopicWatch novelty and silentfailure test are editorial evaluation proposals. Atlos/FollowTheMoney oldreference dates remain clear in linkedSaturday.",
+    "Risk: pre-circulated UScommittee15October agenda, no enactedRule707 or meetingresult claimed. No Ukrainian admissibility inference. Authenticity,analysis,disclosure are editor-defined separate checks.",
+    "User exclusion honoured: no advocacy article concerning AntiCorruptionActionCentre included or resurrected. No unrelated political advocacy filler.",
+    "Best sources: original UN/OHCHR,UNDP,ACAPS,UScommittee and source-repository docs; Gwara original courtroom reporter. Weakspots: no formal courtorder; no independent dataset/codeaudit; ZMINA participant reports not independent judicial findings.",
+    "Followup: actual remandorder/latercaseacts; Mnemonicdataset/methodology; inspection-ready publicpropertyrecord sample; UScommitteeminutes; reproducible Ukrainian documentcorpus evaluation.",
+    "ToolRadar/nextSaturday: eight reserves from GitRadar already discussed, not promoted as tested or fresh by this issue. No change to24October planning.",
+    "Safety: omit militarycoordinates, routes, victim/witness/family identities, sensitive submissions and raw personalrecords. No public-source collection blended with confidential intake.",
+    "QA must verify seven bilingualsections,readinglinks,correctW42range,date18October,editorialnotes hidden. Draft belongs outside weekly/public directory until explicit publication request."
+  ]
+}
