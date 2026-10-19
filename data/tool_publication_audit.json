@@ -1,0 +1,3839 @@
+{
+  "checked_at": "2026-10-19",
+  "daily_issue_files": 137,
+  "weekly_issue_files": 23,
+  "previous_entries": 66,
+  "added_entries": 108,
+  "public_entries": 171,
+  "tools": [
+    {
+      "id": "wayback_machine",
+      "name": "Wayback Machine",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-06-20.json",
+          "item_index": 2,
+          "href": "issues/open-source-signal-2026-06-20.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "2026-10-03.json",
+          "item_index": 3,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-10-03.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W25.json",
+          "item_index": 6,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W25.html"
+        }
+      ]
+    },
+    {
+      "id": "archive_today",
+      "name": "archive.today / archive.ph",
+      "public": true,
+      "coverage_status": "mentioned_only",
+      "publication_refs": [],
+      "mention_refs": [
+        {
+          "issue": "2026-06-11.json",
+          "item_index": 4,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-06-11.html"
+        }
+      ]
+    },
+    {
+      "id": "perma_cc",
+      "name": "Perma.cc",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "google_earth",
+      "name": "Google Earth",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-10-10.json",
+          "item_index": 5,
+          "href": "issues/open-source-signal-2026-10-10.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "2026-07-25.json",
+          "item_index": 2,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-07-25.html"
+        },
+        {
+          "issue": "2026-08-05.json",
+          "item_index": 2,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-08-05.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W32.json",
+          "item_index": 6,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W32.html"
+        }
+      ]
+    },
+    {
+      "id": "sentinel_hub_eo_browser",
+      "name": "Sentinel Hub EO Browser",
+      "public": true,
+      "coverage_status": "mentioned_only",
+      "publication_refs": [],
+      "mention_refs": [
+        {
+          "issue": "2026-07-25.json",
+          "item_index": 1,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-07-25.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W30.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W30.html"
+        }
+      ]
+    },
+    {
+      "id": "copernicus_browser",
+      "name": "Copernicus Browser",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-05-30.json",
+          "item_index": 0,
+          "href": "issues/open-source-signal-2026-05-30.html"
+        },
+        {
+          "issue": "2026-07-11.json",
+          "item_index": 0,
+          "href": "issues/open-source-signal-2026-07-11.html"
+        },
+        {
+          "issue": "2026-07-25.json",
+          "item_index": 1,
+          "href": "issues/open-source-signal-2026-07-25.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W22.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W22.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W28.json",
+          "item_index": 6,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W28.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W30.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W30.html"
+        }
+      ]
+    },
+    {
+      "id": "nasa_worldview",
+      "name": "NASA Worldview",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-08-29.json",
+          "item_index": 2,
+          "href": "issues/open-source-signal-2026-08-29.html"
+        }
+      ],
+      "mention_refs": []
+    },
+    {
+      "id": "qgis",
+      "name": "QGIS",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-06-10.json",
+          "item_index": 4,
+          "href": "issues/open-source-signal-2026-06-10.html"
+        },
+        {
+          "issue": "2026-06-27.json",
+          "item_index": 0,
+          "href": "issues/open-source-signal-2026-06-27.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "2026-05-23.json",
+          "item_index": 4,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-05-23.html"
+        },
+        {
+          "issue": "2026-06-13.json",
+          "item_index": 5,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-06-13.html"
+        },
+        {
+          "issue": "2026-09-05.json",
+          "item_index": 2,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-09-05.html"
+        },
+        {
+          "issue": "2026-09-05.json",
+          "item_index": 3,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-09-05.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W26.json",
+          "item_index": 6,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W26.html"
+        }
+      ]
+    },
+    {
+      "id": "google_earth_engine_data_catalog",
+      "name": "Google Earth Engine Data Catalog",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "geoseer",
+      "name": "GeoSeer",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "openstreetmap",
+      "name": "OpenStreetMap",
+      "public": true,
+      "coverage_status": "mentioned_only",
+      "publication_refs": [],
+      "mention_refs": [
+        {
+          "issue": "2026-05-13.json",
+          "item_index": 2,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-05-13.html"
+        },
+        {
+          "issue": "2026-05-16.json",
+          "item_index": 3,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-05-16.html"
+        },
+        {
+          "issue": "2026-06-20.json",
+          "item_index": 3,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-06-20.html"
+        },
+        {
+          "issue": "2026-07-04.json",
+          "item_index": 4,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-07-04.html"
+        },
+        {
+          "issue": "2026-07-04.json",
+          "item_index": 5,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-07-04.html"
+        },
+        {
+          "issue": "2026-07-18.json",
+          "item_index": 4,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-07-18.html"
+        },
+        {
+          "issue": "2026-07-18.json",
+          "item_index": 5,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-07-18.html"
+        },
+        {
+          "issue": "2026-08-01.json",
+          "item_index": 0,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-08-01.html"
+        },
+        {
+          "issue": "2026-08-01.json",
+          "item_index": 1,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-08-01.html"
+        },
+        {
+          "issue": "2026-08-08.json",
+          "item_index": 3,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-08-08.html"
+        },
+        {
+          "issue": "2026-10-10.json",
+          "item_index": 0,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-10-10.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W25.json",
+          "item_index": 6,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W25.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W27.json",
+          "item_index": 6,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W27.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W29.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W29.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W31.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W31.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W32.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W32.html"
+        }
+      ]
+    },
+    {
+      "id": "geonames",
+      "name": "GeoNames",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "overpass_turbo",
+      "name": "Overpass Turbo",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-06-20.json",
+          "item_index": 3,
+          "href": "issues/open-source-signal-2026-06-20.html"
+        },
+        {
+          "issue": "2026-07-04.json",
+          "item_index": 5,
+          "href": "issues/open-source-signal-2026-07-04.html"
+        },
+        {
+          "issue": "2026-07-18.json",
+          "item_index": 4,
+          "href": "issues/open-source-signal-2026-07-18.html"
+        },
+        {
+          "issue": "2026-08-01.json",
+          "item_index": 0,
+          "href": "issues/open-source-signal-2026-08-01.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "2026-05-13.json",
+          "item_index": 2,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-05-13.html"
+        },
+        {
+          "issue": "2026-08-01.json",
+          "item_index": 1,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-08-01.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W25.json",
+          "item_index": 6,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W25.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W27.json",
+          "item_index": 6,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W27.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W29.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W29.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W31.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W31.html"
+        }
+      ]
+    },
+    {
+      "id": "bellingcat_openstreetmap_search",
+      "name": "Bellingcat OpenStreetMap Search",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-05-16.json",
+          "item_index": 3,
+          "href": "issues/open-source-signal-2026-05-16.html"
+        },
+        {
+          "issue": "2026-07-18.json",
+          "item_index": 5,
+          "href": "issues/open-source-signal-2026-07-18.html"
+        },
+        {
+          "issue": "2026-08-01.json",
+          "item_index": 1,
+          "href": "issues/open-source-signal-2026-08-01.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W29.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W29.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W31.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W31.html"
+        }
+      ]
+    },
+    {
+      "id": "mapillary",
+      "name": "Mapillary",
+      "public": true,
+      "coverage_status": "mentioned_only",
+      "publication_refs": [],
+      "mention_refs": [
+        {
+          "issue": "2026-05-16.json",
+          "item_index": 3,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-05-16.html"
+        },
+        {
+          "issue": "2026-10-03.json",
+          "item_index": 1,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-10-03.html"
+        }
+      ]
+    },
+    {
+      "id": "kartaview",
+      "name": "KartaView",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "suncalc",
+      "name": "SunCalc",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "gpx_studio",
+      "name": "gpx.studio",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "nasa_firms",
+      "name": "NASA FIRMS",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-05-30.json",
+          "item_index": 1,
+          "href": "issues/open-source-signal-2026-05-30.html"
+        },
+        {
+          "issue": "2026-07-11.json",
+          "item_index": 5,
+          "href": "issues/open-source-signal-2026-07-11.html"
+        },
+        {
+          "issue": "2026-09-26.json",
+          "item_index": 4,
+          "href": "issues/open-source-signal-2026-09-26.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "2026-08-31.json",
+          "item_index": 4,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-08-31.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W22.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W22.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W28.json",
+          "item_index": 6,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W28.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W39.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W39.html"
+        }
+      ]
+    },
+    {
+      "id": "openrailwaymap",
+      "name": "OpenRailwayMap",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "global_fishing_watch",
+      "name": "Global Fishing Watch",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-07-11.json",
+          "item_index": 3,
+          "href": "issues/open-source-signal-2026-07-11.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "2026-08-15.json",
+          "item_index": 0,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-08-15.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W28.json",
+          "item_index": 6,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W28.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W33.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W33.html"
+        }
+      ]
+    },
+    {
+      "id": "marinetraffic",
+      "name": "MarineTraffic",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "vesselfinder",
+      "name": "VesselFinder",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "flightradar24",
+      "name": "Flightradar24",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "flightaware",
+      "name": "FlightAware",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "plane_finder",
+      "name": "Plane Finder",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "opensky_network",
+      "name": "OpenSky Network",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-09-26.json",
+          "item_index": 5,
+          "href": "issues/open-source-signal-2026-09-26.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W39.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W39.html"
+        }
+      ]
+    },
+    {
+      "id": "openinframap",
+      "name": "OpenInfraMap",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "google_lens",
+      "name": "Google Lens",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "tineye",
+      "name": "TinEye",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "invid_weverify",
+      "name": "InVID / WeVerify",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-08-29.json",
+          "item_index": 0,
+          "href": "issues/open-source-signal-2026-08-29.html"
+        }
+      ],
+      "mention_refs": []
+    },
+    {
+      "id": "exiftool",
+      "name": "ExifTool",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-05-23.json",
+          "item_index": 2,
+          "href": "issues/open-source-signal-2026-05-23.html"
+        },
+        {
+          "issue": "2026-07-04.json",
+          "item_index": 3,
+          "href": "issues/open-source-signal-2026-07-04.html"
+        },
+        {
+          "issue": "2026-09-19.json",
+          "item_index": 5,
+          "href": "issues/open-source-signal-2026-09-19.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "2026-09-19.json",
+          "item_index": 1,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-09-19.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W21.json",
+          "item_index": 7,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W21.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W27.json",
+          "item_index": 6,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W27.html"
+        }
+      ]
+    },
+    {
+      "id": "forensically",
+      "name": "Forensically",
+      "public": true,
+      "coverage_status": "mentioned_only",
+      "publication_refs": [],
+      "mention_refs": [
+        {
+          "issue": "2026-08-10.json",
+          "item_index": 6,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-08-10.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W31.json",
+          "item_index": 0,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W31.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W31.json",
+          "item_index": 3,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W31.html"
+        }
+      ]
+    },
+    {
+      "id": "youstitch_it",
+      "name": "YouStitch.it",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "fact_check_database_imagewhisperer",
+      "name": "Fact-Check Database / ImageWhisperer",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "whois",
+      "name": "Whois",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-08-22.json",
+          "item_index": 5,
+          "href": "issues/open-source-signal-2026-08-22.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "2026-10-03.json",
+          "item_index": 0,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-10-03.html"
+        }
+      ]
+    },
+    {
+      "id": "ripestat",
+      "name": "RIPEstat",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "crtsh",
+      "name": "crt.sh",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "securitytrails",
+      "name": "SecurityTrails",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "dnsdumpster",
+      "name": "DNSDumpster",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "viewdns_info",
+      "name": "ViewDNS.info",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "urlscan_io",
+      "name": "urlscan.io",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-07-25.json",
+          "item_index": 6,
+          "href": "issues/open-source-signal-2026-07-25.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W30.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W30.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W30.json",
+          "item_index": 6,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W30.html"
+        }
+      ]
+    },
+    {
+      "id": "censys_search",
+      "name": "Censys Search",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "bgp_tools",
+      "name": "bgp.tools",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "greynoise",
+      "name": "GreyNoise",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "abuseipdb",
+      "name": "AbuseIPDB",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "checkshorturl",
+      "name": "CheckShortURL",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "builtwith",
+      "name": "BuiltWith",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "wappalyzer",
+      "name": "Wappalyzer",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "gdelt",
+      "name": "GDELT",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-05-16.json",
+          "item_index": 5,
+          "href": "issues/open-source-signal-2026-05-16.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "2026-05-27.json",
+          "item_index": 2,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-05-27.html"
+        }
+      ]
+    },
+    {
+      "id": "media_cloud",
+      "name": "Media Cloud",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "ukraine_war_unmanned_systems_tracker",
+      "name": "Ukraine War Unmanned Systems Tracker",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "visualping",
+      "name": "Visualping",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-07-18.json",
+          "item_index": 3,
+          "href": "issues/open-source-signal-2026-07-18.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W29.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W29.html"
+        }
+      ]
+    },
+    {
+      "id": "meaningfully",
+      "name": "Meaningfully",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-07-18.json",
+          "item_index": 2,
+          "href": "issues/open-source-signal-2026-07-18.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W29.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W29.html"
+        }
+      ]
+    },
+    {
+      "id": "semantra",
+      "name": "Semantra",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "query_forge",
+      "name": "Query Forge",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "links_overseer",
+      "name": "Links Overseer",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "gitleak",
+      "name": "GitLeak",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "gitrecon",
+      "name": "Gitrecon",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "gitfive",
+      "name": "GitFive",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "gitleaks",
+      "name": "Gitleaks",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "trufflehog",
+      "name": "TruffleHog",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-06-06.json",
+          "item_index": 3,
+          "href": "issues/open-source-signal-2026-06-06.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W23.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W23.html"
+        }
+      ]
+    },
+    {
+      "id": "gephi",
+      "name": "Gephi",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "datasette",
+      "name": "Datasette",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-06-13.json",
+          "item_index": 4,
+          "href": "issues/open-source-signal-2026-06-13.html"
+        },
+        {
+          "issue": "2026-07-04.json",
+          "item_index": 2,
+          "href": "issues/open-source-signal-2026-07-04.html"
+        },
+        {
+          "issue": "2026-07-25.json",
+          "item_index": 5,
+          "href": "issues/open-source-signal-2026-07-25.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W24.json",
+          "item_index": 4,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W24.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W24.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W24.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W27.json",
+          "item_index": 6,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W27.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W30.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W30.html"
+        }
+      ]
+    },
+    {
+      "id": "rawgraphs",
+      "name": "RAWGraphs",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "obsidian",
+      "name": "Obsidian",
+      "public": true,
+      "coverage_status": "not_covered",
+      "publication_refs": [],
+      "mention_refs": []
+    },
+    {
+      "id": "auto_archiver",
+      "name": "Auto Archiver",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-05-16.json",
+          "item_index": 2,
+          "href": "issues/open-source-signal-2026-05-16.html"
+        },
+        {
+          "issue": "2026-07-25.json",
+          "item_index": 3,
+          "href": "issues/open-source-signal-2026-07-25.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W30.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W30.html"
+        }
+      ]
+    },
+    {
+      "id": "geospy",
+      "name": "GeoSpy",
+      "public": false,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-05-16.json",
+          "item_index": 6,
+          "href": "issues/open-source-signal-2026-05-16.html"
+        }
+      ],
+      "mention_refs": []
+    },
+    {
+      "id": "browsertrix_crawler",
+      "name": "Browsertrix Crawler",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-05-23.json",
+          "item_index": 0,
+          "href": "issues/open-source-signal-2026-05-23.html"
+        }
+      ],
+      "mention_refs": []
+    },
+    {
+      "id": "dangerzone",
+      "name": "Dangerzone",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-05-23.json",
+          "item_index": 1,
+          "href": "issues/open-source-signal-2026-05-23.html"
+        },
+        {
+          "issue": "2026-07-25.json",
+          "item_index": 4,
+          "href": "issues/open-source-signal-2026-07-25.html"
+        },
+        {
+          "issue": "2026-08-22.json",
+          "item_index": 6,
+          "href": "issues/open-source-signal-2026-08-22.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W21.json",
+          "item_index": 7,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W21.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W30.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W30.html"
+        }
+      ]
+    },
+    {
+      "id": "geosearch",
+      "name": "GeoSearch",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-05-23.json",
+          "item_index": 3,
+          "href": "issues/open-source-signal-2026-05-23.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W21.json",
+          "item_index": 12,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W21.html"
+        }
+      ]
+    },
+    {
+      "id": "ames_stereo_pipeline",
+      "name": "Ames Stereo Pipeline",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-05-23.json",
+          "item_index": 4,
+          "href": "issues/open-source-signal-2026-05-23.html"
+        }
+      ],
+      "mention_refs": []
+    },
+    {
+      "id": "c2patool",
+      "name": "c2patool",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-05-23.json",
+          "item_index": 5,
+          "href": "issues/open-source-signal-2026-05-23.html"
+        },
+        {
+          "issue": "2026-08-22.json",
+          "item_index": 2,
+          "href": "issues/open-source-signal-2026-08-22.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "2026-06-17.json",
+          "item_index": 3,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-06-17.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W21.json",
+          "item_index": 12,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W21.html"
+        }
+      ]
+    },
+    {
+      "id": "ooni_probe",
+      "name": "OONI Probe",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-05-30.json",
+          "item_index": 2,
+          "href": "issues/open-source-signal-2026-05-30.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "2026-06-17.json",
+          "item_index": 4,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-06-17.html"
+        }
+      ]
+    },
+    {
+      "id": "ooni_explorer",
+      "name": "OONI Explorer",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-05-30.json",
+          "item_index": 2,
+          "href": "issues/open-source-signal-2026-05-30.html"
+        },
+        {
+          "issue": "2026-07-11.json",
+          "item_index": 1,
+          "href": "issues/open-source-signal-2026-07-11.html"
+        },
+        {
+          "issue": "2026-08-22.json",
+          "item_index": 1,
+          "href": "issues/open-source-signal-2026-08-22.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W28.json",
+          "item_index": 6,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W28.html"
+        }
+      ]
+    },
+    {
+      "id": "telegago",
+      "name": "Telegago",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-05-30.json",
+          "item_index": 3,
+          "href": "issues/open-source-signal-2026-05-30.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W22.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W22.html"
+        }
+      ]
+    },
+    {
+      "id": "turnstone",
+      "name": "Turnstone",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-05-30.json",
+          "item_index": 4,
+          "href": "issues/open-source-signal-2026-05-30.html"
+        },
+        {
+          "issue": "2026-07-25.json",
+          "item_index": 0,
+          "href": "issues/open-source-signal-2026-07-25.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W22.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W22.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W30.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W30.html"
+        }
+      ]
+    },
+    {
+      "id": "misp",
+      "name": "MISP",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-06-06.json",
+          "item_index": 0,
+          "href": "issues/open-source-signal-2026-06-06.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "2026-06-06.json",
+          "item_index": 2,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-06-06.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W23.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W23.html"
+        }
+      ]
+    },
+    {
+      "id": "opencti",
+      "name": "OpenCTI",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-06-06.json",
+          "item_index": 1,
+          "href": "issues/open-source-signal-2026-06-06.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W23.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W23.html"
+        }
+      ]
+    },
+    {
+      "id": "misp_stix",
+      "name": "misp-stix",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-06-06.json",
+          "item_index": 2,
+          "href": "issues/open-source-signal-2026-06-06.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W23.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W23.html"
+        }
+      ]
+    },
+    {
+      "id": "opensanctions",
+      "name": "OpenSanctions",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-06-06.json",
+          "item_index": 4,
+          "href": "issues/open-source-signal-2026-06-06.html"
+        },
+        {
+          "issue": "2026-06-20.json",
+          "item_index": 4,
+          "href": "issues/open-source-signal-2026-06-20.html"
+        },
+        {
+          "issue": "2026-07-04.json",
+          "item_index": 6,
+          "href": "issues/open-source-signal-2026-07-04.html"
+        },
+        {
+          "issue": "2026-08-22.json",
+          "item_index": 3,
+          "href": "issues/open-source-signal-2026-08-22.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "2026-09-19.json",
+          "item_index": 1,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-09-19.html"
+        },
+        {
+          "issue": "2026-10-17.json",
+          "item_index": 4,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-10-17.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W23.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W23.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W25.json",
+          "item_index": 6,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W25.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W27.json",
+          "item_index": 6,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W27.html"
+        }
+      ]
+    },
+    {
+      "id": "anci_oiv_resolver",
+      "name": "anci-oiv-resolver",
+      "public": false,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-06-06.json",
+          "item_index": 5,
+          "href": "issues/open-source-signal-2026-06-06.html"
+        }
+      ],
+      "mention_refs": []
+    },
+    {
+      "id": "yt_dlp",
+      "name": "yt-dlp",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-06-13.json",
+          "item_index": 0,
+          "href": "issues/open-source-signal-2026-06-13.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W24.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W24.html"
+        }
+      ]
+    },
+    {
+      "id": "safe_ioc",
+      "name": "Safe-IOC",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-06-13.json",
+          "item_index": 1,
+          "href": "issues/open-source-signal-2026-06-13.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W24.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W24.html"
+        }
+      ]
+    },
+    {
+      "id": "cyberchef",
+      "name": "CyberChef",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-06-13.json",
+          "item_index": 2,
+          "href": "issues/open-source-signal-2026-06-13.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W24.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W24.html"
+        }
+      ]
+    },
+    {
+      "id": "subtitle_edit",
+      "name": "Subtitle Edit",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-06-13.json",
+          "item_index": 3,
+          "href": "issues/open-source-signal-2026-06-13.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W24.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W24.html"
+        }
+      ]
+    },
+    {
+      "id": "geolibre",
+      "name": "GeoLibre",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-06-13.json",
+          "item_index": 5,
+          "href": "issues/open-source-signal-2026-06-13.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W24.json",
+          "item_index": 4,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W24.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W24.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W24.html"
+        }
+      ]
+    },
+    {
+      "id": "geoserver",
+      "name": "GeoServer",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-06-13.json",
+          "item_index": 6,
+          "href": "issues/open-source-signal-2026-06-13.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W24.json",
+          "item_index": 4,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W24.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W24.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W24.html"
+        }
+      ]
+    },
+    {
+      "id": "openroundup",
+      "name": "OpenRoundup",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-06-20.json",
+          "item_index": 0,
+          "href": "issues/open-source-signal-2026-06-20.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W25.json",
+          "item_index": 6,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W25.html"
+        }
+      ]
+    },
+    {
+      "id": "archiveweb_page",
+      "name": "ArchiveWeb.page",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-06-20.json",
+          "item_index": 1,
+          "href": "issues/open-source-signal-2026-06-20.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W25.json",
+          "item_index": 6,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W25.html"
+        }
+      ]
+    },
+    {
+      "id": "deportation_data_project",
+      "name": "Deportation Data Project",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-06-20.json",
+          "item_index": 5,
+          "href": "issues/open-source-signal-2026-06-20.html"
+        },
+        {
+          "issue": "2026-08-01.json",
+          "item_index": 2,
+          "href": "issues/open-source-signal-2026-08-01.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W25.json",
+          "item_index": 6,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W25.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W31.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W31.html"
+        }
+      ]
+    },
+    {
+      "id": "smdt",
+      "name": "SMDT",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-06-20.json",
+          "item_index": 6,
+          "href": "issues/open-source-signal-2026-06-20.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W25.json",
+          "item_index": 6,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W25.html"
+        }
+      ]
+    },
+    {
+      "id": "gdal",
+      "name": "GDAL",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-06-27.json",
+          "item_index": 1,
+          "href": "issues/open-source-signal-2026-06-27.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "2026-09-05.json",
+          "item_index": 3,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-09-05.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W26.json",
+          "item_index": 6,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W26.html"
+        }
+      ]
+    },
+    {
+      "id": "opendronemap",
+      "name": "OpenDroneMap",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-06-27.json",
+          "item_index": 2,
+          "href": "issues/open-source-signal-2026-06-27.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W26.json",
+          "item_index": 6,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W26.html"
+        }
+      ]
+    },
+    {
+      "id": "tropy",
+      "name": "Tropy",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-06-27.json",
+          "item_index": 3,
+          "href": "issues/open-source-signal-2026-06-27.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W26.json",
+          "item_index": 6,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W26.html"
+        }
+      ]
+    },
+    {
+      "id": "zotero",
+      "name": "Zotero",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-06-27.json",
+          "item_index": 4,
+          "href": "issues/open-source-signal-2026-06-27.html"
+        },
+        {
+          "issue": "2026-09-26.json",
+          "item_index": 6,
+          "href": "issues/open-source-signal-2026-09-26.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W26.json",
+          "item_index": 6,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W26.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W39.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W39.html"
+        }
+      ]
+    },
+    {
+      "id": "omeka_s",
+      "name": "Omeka S",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-06-27.json",
+          "item_index": 5,
+          "href": "issues/open-source-signal-2026-06-27.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W26.json",
+          "item_index": 6,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W26.html"
+        }
+      ]
+    },
+    {
+      "id": "ushahidi",
+      "name": "Ushahidi",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-06-27.json",
+          "item_index": 6,
+          "href": "issues/open-source-signal-2026-06-27.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W26.json",
+          "item_index": 6,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W26.html"
+        }
+      ]
+    },
+    {
+      "id": "browsertrix",
+      "name": "Browsertrix",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-07-04.json",
+          "item_index": 0,
+          "href": "issues/open-source-signal-2026-07-04.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "2026-05-23.json",
+          "item_index": 0,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-05-23.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W21.json",
+          "item_index": 7,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W21.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W27.json",
+          "item_index": 6,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W27.html"
+        }
+      ]
+    },
+    {
+      "id": "openrefine",
+      "name": "OpenRefine",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-07-04.json",
+          "item_index": 1,
+          "href": "issues/open-source-signal-2026-07-04.html"
+        },
+        {
+          "issue": "2026-08-29.json",
+          "item_index": 4,
+          "href": "issues/open-source-signal-2026-08-29.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "2026-08-29.json",
+          "item_index": 3,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-08-29.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W27.json",
+          "item_index": 6,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W27.html"
+        }
+      ]
+    },
+    {
+      "id": "umap",
+      "name": "uMap",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-07-04.json",
+          "item_index": 4,
+          "href": "issues/open-source-signal-2026-07-04.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W27.json",
+          "item_index": 6,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W27.html"
+        }
+      ]
+    },
+    {
+      "id": "aleph",
+      "name": "Aleph",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-07-11.json",
+          "item_index": 2,
+          "href": "issues/open-source-signal-2026-07-11.html"
+        },
+        {
+          "issue": "2026-08-08.json",
+          "item_index": 5,
+          "href": "issues/open-source-signal-2026-08-08.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "2026-10-17.json",
+          "item_index": 4,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-10-17.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W28.json",
+          "item_index": 6,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W28.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W32.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W32.html"
+        }
+      ]
+    },
+    {
+      "id": "opencorporates",
+      "name": "OpenCorporates",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-07-11.json",
+          "item_index": 4,
+          "href": "issues/open-source-signal-2026-07-11.html"
+        },
+        {
+          "issue": "2026-08-29.json",
+          "item_index": 3,
+          "href": "issues/open-source-signal-2026-08-29.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W28.json",
+          "item_index": 6,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W28.html"
+        }
+      ]
+    },
+    {
+      "id": "wikidata_query_service",
+      "name": "Wikidata Query Service",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-07-11.json",
+          "item_index": 6,
+          "href": "issues/open-source-signal-2026-07-11.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W28.json",
+          "item_index": 6,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W28.html"
+        }
+      ]
+    },
+    {
+      "id": "tools_of_war",
+      "name": "Tools of War",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-07-18.json",
+          "item_index": 0,
+          "href": "issues/open-source-signal-2026-07-18.html"
+        },
+        {
+          "issue": "2026-08-01.json",
+          "item_index": 5,
+          "href": "issues/open-source-signal-2026-08-01.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W29.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W29.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W31.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W31.html"
+        }
+      ]
+    },
+    {
+      "id": "project_salt_box",
+      "name": "Project Salt Box",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-07-18.json",
+          "item_index": 1,
+          "href": "issues/open-source-signal-2026-07-18.html"
+        },
+        {
+          "issue": "2026-08-01.json",
+          "item_index": 4,
+          "href": "issues/open-source-signal-2026-08-01.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W29.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W29.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W31.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W31.html"
+        }
+      ]
+    },
+    {
+      "id": "shadohdorks",
+      "name": "SHADOHDORKS",
+      "public": false,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-07-18.json",
+          "item_index": 6,
+          "href": "issues/open-source-signal-2026-07-18.html"
+        },
+        {
+          "issue": "2026-08-01.json",
+          "item_index": 6,
+          "href": "issues/open-source-signal-2026-08-01.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W29.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W29.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W31.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W31.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W31.json",
+          "item_index": 6,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W31.html"
+        }
+      ]
+    },
+    {
+      "id": "search_grid_generator",
+      "name": "Search Grid Generator",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-07-25.json",
+          "item_index": 2,
+          "href": "issues/open-source-signal-2026-07-25.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W30.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W30.html"
+        }
+      ]
+    },
+    {
+      "id": "illicit_finance_data_lab",
+      "name": "Illicit Finance Data Lab",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-08-01.json",
+          "item_index": 3,
+          "href": "issues/open-source-signal-2026-08-01.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W31.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W31.html"
+        }
+      ]
+    },
+    {
+      "id": "ais_imagery_search",
+      "name": "AIS Imagery Search",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-08-08.json",
+          "item_index": 0,
+          "href": "issues/open-source-signal-2026-08-08.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W32.json",
+          "item_index": 4,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W32.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W32.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W32.html"
+        }
+      ]
+    },
+    {
+      "id": "osmp",
+      "name": "OSMP",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-08-08.json",
+          "item_index": 1,
+          "href": "issues/open-source-signal-2026-08-08.html"
+        }
+      ],
+      "mention_refs": []
+    },
+    {
+      "id": "shadowfinder",
+      "name": "ShadowFinder",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-08-08.json",
+          "item_index": 2,
+          "href": "issues/open-source-signal-2026-08-08.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W32.json",
+          "item_index": 4,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W32.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W32.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W32.html"
+        }
+      ]
+    },
+    {
+      "id": "ohsome",
+      "name": "ohsome",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-08-08.json",
+          "item_index": 3,
+          "href": "issues/open-source-signal-2026-08-08.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W32.json",
+          "item_index": 4,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W32.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W32.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W32.html"
+        }
+      ]
+    },
+    {
+      "id": "bellingcat_civilian_harm_classifier",
+      "name": "Bellingcat civilian-harm classifier",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-08-08.json",
+          "item_index": 4,
+          "href": "issues/open-source-signal-2026-08-08.html"
+        }
+      ],
+      "mention_refs": []
+    },
+    {
+      "id": "smart_image_sorter",
+      "name": "Smart Image Sorter",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-08-08.json",
+          "item_index": 6,
+          "href": "issues/open-source-signal-2026-08-08.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W32.json",
+          "item_index": 4,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W32.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W32.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W32.html"
+        }
+      ]
+    },
+    {
+      "id": "vessel_viewer",
+      "name": "Vessel Viewer",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-08-15.json",
+          "item_index": 0,
+          "href": "issues/open-source-signal-2026-08-15.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W33.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W33.html"
+        }
+      ]
+    },
+    {
+      "id": "open_supply_hub",
+      "name": "Open Supply Hub",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-08-15.json",
+          "item_index": 1,
+          "href": "issues/open-source-signal-2026-08-15.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W33.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W33.html"
+        }
+      ]
+    },
+    {
+      "id": "icij_offshore_leaks_database",
+      "name": "ICIJ Offshore Leaks Database",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-08-15.json",
+          "item_index": 2,
+          "href": "issues/open-source-signal-2026-08-15.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W33.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W33.html"
+        }
+      ]
+    },
+    {
+      "id": "replayweb_page",
+      "name": "ReplayWeb.page",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-08-15.json",
+          "item_index": 3,
+          "href": "issues/open-source-signal-2026-08-15.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "2026-06-20.json",
+          "item_index": 1,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-06-20.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W33.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W33.html"
+        }
+      ]
+    },
+    {
+      "id": "mobile_verification_toolkit",
+      "name": "Mobile Verification Toolkit",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-08-15.json",
+          "item_index": 4,
+          "href": "issues/open-source-signal-2026-08-15.html"
+        },
+        {
+          "issue": "2026-09-29.json",
+          "item_index": 5,
+          "href": "issues/open-source-signal-2026-09-29.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "2026-08-05.json",
+          "item_index": 6,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-08-05.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W33.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W33.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W33.json",
+          "item_index": 6,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W33.html"
+        }
+      ]
+    },
+    {
+      "id": "fact_check_explorer",
+      "name": "Fact Check Explorer",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-08-15.json",
+          "item_index": 5,
+          "href": "issues/open-source-signal-2026-08-15.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W33.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W33.html"
+        }
+      ]
+    },
+    {
+      "id": "iran_conflict_damage_proxy_map",
+      "name": "Iran Conflict Damage Proxy Map",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-08-15.json",
+          "item_index": 6,
+          "href": "issues/open-source-signal-2026-08-15.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "2026-05-14.json",
+          "item_index": 4,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-05-14.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W33.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W33.html"
+        }
+      ]
+    },
+    {
+      "id": "open_measures",
+      "name": "Open Measures",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-08-22.json",
+          "item_index": 0,
+          "href": "issues/open-source-signal-2026-08-22.html"
+        }
+      ],
+      "mention_refs": []
+    },
+    {
+      "id": "google_pinpoint",
+      "name": "Google Pinpoint",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-08-22.json",
+          "item_index": 4,
+          "href": "issues/open-source-signal-2026-08-22.html"
+        }
+      ],
+      "mention_refs": []
+    },
+    {
+      "id": "asf_vertex",
+      "name": "ASF Vertex",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-08-29.json",
+          "item_index": 1,
+          "href": "issues/open-source-signal-2026-08-29.html"
+        }
+      ],
+      "mention_refs": []
+    },
+    {
+      "id": "ocrmypdf",
+      "name": "OCRmyPDF",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-08-29.json",
+          "item_index": 5,
+          "href": "issues/open-source-signal-2026-08-29.html"
+        }
+      ],
+      "mention_refs": []
+    },
+    {
+      "id": "timesketch",
+      "name": "Timesketch",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-08-29.json",
+          "item_index": 6,
+          "href": "issues/open-source-signal-2026-08-29.html"
+        }
+      ],
+      "mention_refs": []
+    },
+    {
+      "id": "chronoverify",
+      "name": "ChronoVerify",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-09-05.json",
+          "item_index": 0,
+          "href": "issues/open-source-signal-2026-09-05.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W36.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W36.html"
+        }
+      ]
+    },
+    {
+      "id": "metawarc",
+      "name": "Metawarc",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-09-05.json",
+          "item_index": 1,
+          "href": "issues/open-source-signal-2026-09-05.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W36.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W36.html"
+        }
+      ]
+    },
+    {
+      "id": "iconem_historical_satellite",
+      "name": "Iconem Historical Satellite",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-09-05.json",
+          "item_index": 2,
+          "href": "issues/open-source-signal-2026-09-05.html"
+        }
+      ],
+      "mention_refs": []
+    },
+    {
+      "id": "iconem_terrain_viewer",
+      "name": "Iconem Terrain Viewer",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-09-05.json",
+          "item_index": 3,
+          "href": "issues/open-source-signal-2026-09-05.html"
+        }
+      ],
+      "mention_refs": []
+    },
+    {
+      "id": "videomasker",
+      "name": "VideoMasker",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-09-05.json",
+          "item_index": 4,
+          "href": "issues/open-source-signal-2026-09-05.html"
+        }
+      ],
+      "mention_refs": []
+    },
+    {
+      "id": "singlefile_cli",
+      "name": "SingleFile CLI",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-09-05.json",
+          "item_index": 5,
+          "href": "issues/open-source-signal-2026-09-05.html"
+        }
+      ],
+      "mention_refs": []
+    },
+    {
+      "id": "tella",
+      "name": "Tella",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-09-05.json",
+          "item_index": 6,
+          "href": "issues/open-source-signal-2026-09-05.html"
+        }
+      ],
+      "mention_refs": []
+    },
+    {
+      "id": "openosint",
+      "name": "OpenOSINT",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-09-19.json",
+          "item_index": 0,
+          "href": "issues/open-source-signal-2026-09-19.html"
+        },
+        {
+          "issue": "2026-10-02.json",
+          "item_index": 2,
+          "href": "issues/open-source-signal-2026-10-02.html"
+        },
+        {
+          "issue": "2026-10-08.json",
+          "item_index": 4,
+          "href": "issues/open-source-signal-2026-10-08.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "2026-10-17.json",
+          "item_index": 4,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-10-17.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W40.json",
+          "item_index": 6,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W40.html"
+        }
+      ]
+    },
+    {
+      "id": "osint_dev",
+      "name": "OSINT.dev",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-09-19.json",
+          "item_index": 1,
+          "href": "issues/open-source-signal-2026-09-19.html"
+        }
+      ],
+      "mention_refs": []
+    },
+    {
+      "id": "gleif_api",
+      "name": "GLEIF API",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-09-19.json",
+          "item_index": 2,
+          "href": "issues/open-source-signal-2026-09-19.html"
+        }
+      ],
+      "mention_refs": []
+    },
+    {
+      "id": "common_crawl_cdx",
+      "name": "Common Crawl CDX",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-09-19.json",
+          "item_index": 3,
+          "href": "issues/open-source-signal-2026-09-19.html"
+        }
+      ],
+      "mention_refs": []
+    },
+    {
+      "id": "openhistoricalmap",
+      "name": "OpenHistoricalMap",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-09-19.json",
+          "item_index": 4,
+          "href": "issues/open-source-signal-2026-09-19.html"
+        }
+      ],
+      "mention_refs": []
+    },
+    {
+      "id": "hunchly",
+      "name": "Hunchly",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-09-19.json",
+          "item_index": 6,
+          "href": "issues/open-source-signal-2026-09-19.html"
+        }
+      ],
+      "mention_refs": []
+    },
+    {
+      "id": "bellingcat_online_investigation_toolkit",
+      "name": "Bellingcat Online Investigation Toolkit",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-09-26.json",
+          "item_index": 0,
+          "href": "issues/open-source-signal-2026-09-26.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "2026-07-18.json",
+          "item_index": 5,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-07-18.html"
+        }
+      ]
+    },
+    {
+      "id": "sec_edgar_apis",
+      "name": "SEC EDGAR APIs",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-09-26.json",
+          "item_index": 1,
+          "href": "issues/open-source-signal-2026-09-26.html"
+        }
+      ],
+      "mention_refs": []
+    },
+    {
+      "id": "companies_house_api",
+      "name": "Companies House API",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-09-26.json",
+          "item_index": 2,
+          "href": "issues/open-source-signal-2026-09-26.html"
+        }
+      ],
+      "mention_refs": []
+    },
+    {
+      "id": "openaerialmap",
+      "name": "OpenAerialMap",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-09-26.json",
+          "item_index": 3,
+          "href": "issues/open-source-signal-2026-09-26.html"
+        }
+      ],
+      "mention_refs": []
+    },
+    {
+      "id": "web_check",
+      "name": "Web-Check",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-10-03.json",
+          "item_index": 0,
+          "href": "issues/open-source-signal-2026-10-03.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W40.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W40.html"
+        }
+      ]
+    },
+    {
+      "id": "waypoint",
+      "name": "Waypoint",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-10-03.json",
+          "item_index": 1,
+          "href": "issues/open-source-signal-2026-10-03.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W40.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W40.html"
+        }
+      ]
+    },
+    {
+      "id": "archivebox",
+      "name": "ArchiveBox",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-10-03.json",
+          "item_index": 2,
+          "href": "issues/open-source-signal-2026-10-03.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W40.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W40.html"
+        }
+      ]
+    },
+    {
+      "id": "archive_scout",
+      "name": "Archive Scout",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-10-03.json",
+          "item_index": 3,
+          "href": "issues/open-source-signal-2026-10-03.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W40.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W40.html"
+        }
+      ]
+    },
+    {
+      "id": "origin",
+      "name": "Origin",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-10-03.json",
+          "item_index": 4,
+          "href": "issues/open-source-signal-2026-10-03.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "2026-05-20.json",
+          "item_index": 4,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-05-20.html"
+        },
+        {
+          "issue": "2026-05-23.json",
+          "item_index": 5,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-05-23.html"
+        },
+        {
+          "issue": "2026-05-29.json",
+          "item_index": 3,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-05-29.html"
+        },
+        {
+          "issue": "2026-06-04.json",
+          "item_index": 0,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-06-04.html"
+        },
+        {
+          "issue": "2026-06-05.json",
+          "item_index": 1,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-06-05.html"
+        },
+        {
+          "issue": "2026-06-26.json",
+          "item_index": 1,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-06-26.html"
+        },
+        {
+          "issue": "2026-07-09.json",
+          "item_index": 4,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-07-09.html"
+        },
+        {
+          "issue": "2026-07-14.json",
+          "item_index": 2,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-07-14.html"
+        },
+        {
+          "issue": "2026-07-15.json",
+          "item_index": 5,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-07-15.html"
+        },
+        {
+          "issue": "2026-07-20.json",
+          "item_index": 2,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-07-20.html"
+        },
+        {
+          "issue": "2026-08-04.json",
+          "item_index": 2,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-08-04.html"
+        },
+        {
+          "issue": "2026-08-04.json",
+          "item_index": 6,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-08-04.html"
+        },
+        {
+          "issue": "2026-08-05.json",
+          "item_index": 0,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-08-05.html"
+        },
+        {
+          "issue": "2026-08-06.json",
+          "item_index": 4,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-08-06.html"
+        },
+        {
+          "issue": "2026-08-07.json",
+          "item_index": 5,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-08-07.html"
+        },
+        {
+          "issue": "2026-08-10.json",
+          "item_index": 1,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-08-10.html"
+        },
+        {
+          "issue": "2026-08-11.json",
+          "item_index": 4,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-08-11.html"
+        },
+        {
+          "issue": "2026-08-12.json",
+          "item_index": 2,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-08-12.html"
+        },
+        {
+          "issue": "2026-08-13.json",
+          "item_index": 3,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-08-13.html"
+        },
+        {
+          "issue": "2026-08-17.json",
+          "item_index": 2,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-08-17.html"
+        },
+        {
+          "issue": "2026-08-17.json",
+          "item_index": 3,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-08-17.html"
+        },
+        {
+          "issue": "2026-08-17.json",
+          "item_index": 6,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-08-17.html"
+        },
+        {
+          "issue": "2026-08-18.json",
+          "item_index": 1,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-08-18.html"
+        },
+        {
+          "issue": "2026-08-18.json",
+          "item_index": 2,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-08-18.html"
+        },
+        {
+          "issue": "2026-08-20.json",
+          "item_index": 3,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-08-20.html"
+        },
+        {
+          "issue": "2026-08-21.json",
+          "item_index": 0,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-08-21.html"
+        },
+        {
+          "issue": "2026-08-21.json",
+          "item_index": 1,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-08-21.html"
+        },
+        {
+          "issue": "2026-08-27.json",
+          "item_index": 2,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-08-27.html"
+        },
+        {
+          "issue": "2026-08-27.json",
+          "item_index": 4,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-08-27.html"
+        },
+        {
+          "issue": "2026-09-02.json",
+          "item_index": 3,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-09-02.html"
+        },
+        {
+          "issue": "2026-09-03.json",
+          "item_index": 4,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-09-03.html"
+        },
+        {
+          "issue": "2026-09-08.json",
+          "item_index": 3,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-09-08.html"
+        },
+        {
+          "issue": "2026-09-08.json",
+          "item_index": 5,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-09-08.html"
+        },
+        {
+          "issue": "2026-09-17.json",
+          "item_index": 0,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-09-17.html"
+        },
+        {
+          "issue": "2026-09-30.json",
+          "item_index": 4,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-09-30.html"
+        },
+        {
+          "issue": "2026-10-02.json",
+          "item_index": 2,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-10-02.html"
+        },
+        {
+          "issue": "2026-10-06.json",
+          "item_index": 2,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-10-06.html"
+        },
+        {
+          "issue": "2026-10-07.json",
+          "item_index": 0,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-10-07.html"
+        },
+        {
+          "issue": "2026-10-08.json",
+          "item_index": 2,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-10-08.html"
+        },
+        {
+          "issue": "2026-10-08.json",
+          "item_index": 4,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-10-08.html"
+        },
+        {
+          "issue": "2026-10-16.json",
+          "item_index": 3,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-10-16.html"
+        },
+        {
+          "issue": "2026-08-23.json",
+          "item_index": 4,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W34.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W32.json",
+          "item_index": 0,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W32.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W32.json",
+          "item_index": 4,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W32.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W32.json",
+          "item_index": 6,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W32.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W40.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W40.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W41.json",
+          "item_index": 0,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W41.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W42.json",
+          "item_index": 6,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W42.html"
+        }
+      ]
+    },
+    {
+      "id": "geo_sleuth",
+      "name": "geo-sleuth",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-10-10.json",
+          "item_index": 0,
+          "href": "issues/open-source-signal-2026-10-10.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W41.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W41.html"
+        }
+      ]
+    },
+    {
+      "id": "birdbrain",
+      "name": "Birdbrain",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-10-10.json",
+          "item_index": 1,
+          "href": "issues/open-source-signal-2026-10-10.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W41.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W41.html"
+        }
+      ]
+    },
+    {
+      "id": "c2pa_conformance_tool",
+      "name": "C2PA Conformance Tool",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-10-10.json",
+          "item_index": 2,
+          "href": "issues/open-source-signal-2026-10-10.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W41.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W41.html"
+        }
+      ]
+    },
+    {
+      "id": "crush",
+      "name": "Crush",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-10-10.json",
+          "item_index": 3,
+          "href": "issues/open-source-signal-2026-10-10.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W41.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W41.html"
+        }
+      ]
+    },
+    {
+      "id": "bloomrepo",
+      "name": "BloomRepo",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-10-10.json",
+          "item_index": 4,
+          "href": "issues/open-source-signal-2026-10-10.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W41.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W41.html"
+        }
+      ]
+    },
+    {
+      "id": "docling",
+      "name": "Docling",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-10-17.json",
+          "item_index": 0,
+          "href": "issues/open-source-signal-2026-10-17.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W42.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W42.html"
+        }
+      ]
+    },
+    {
+      "id": "parsebench",
+      "name": "ParseBench",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-10-17.json",
+          "item_index": 1,
+          "href": "issues/open-source-signal-2026-10-17.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W42.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W42.html"
+        }
+      ]
+    },
+    {
+      "id": "datashare",
+      "name": "Datashare",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-10-17.json",
+          "item_index": 2,
+          "href": "issues/open-source-signal-2026-10-17.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W42.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W42.html"
+        }
+      ]
+    },
+    {
+      "id": "atlos",
+      "name": "Atlos",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-10-17.json",
+          "item_index": 3,
+          "href": "issues/open-source-signal-2026-10-17.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W42.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W42.html"
+        }
+      ]
+    },
+    {
+      "id": "followthemoney",
+      "name": "FollowTheMoney",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-10-17.json",
+          "item_index": 4,
+          "href": "issues/open-source-signal-2026-10-17.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "2026-08-08.json",
+          "item_index": 5,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-08-08.html"
+        },
+        {
+          "issue": "2026-09-19.json",
+          "item_index": 0,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-09-19.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W42.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W42.html"
+        }
+      ]
+    },
+    {
+      "id": "topic_watch",
+      "name": "Topic Watch",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-10-17.json",
+          "item_index": 5,
+          "href": "issues/open-source-signal-2026-10-17.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W42.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W42.html"
+        }
+      ]
+    },
+    {
+      "id": "securedrop",
+      "name": "SecureDrop",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-10-17.json",
+          "item_index": 6,
+          "href": "issues/open-source-signal-2026-10-17.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W42.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W42.html"
+        }
+      ]
+    },
+    {
+      "id": "markitdown",
+      "name": "MarkItDown",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-06-09.json",
+          "item_index": 4,
+          "href": "issues/open-source-signal-2026-06-09.html"
+        }
+      ],
+      "mention_refs": []
+    },
+    {
+      "id": "eyes_on_russia_map",
+      "name": "Eyes on Russia Map",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-06-10.json",
+          "item_index": 3,
+          "href": "issues/open-source-signal-2026-06-10.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "2026-05-21.json",
+          "item_index": 2,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-05-21.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W21.json",
+          "item_index": 7,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W21.html"
+        }
+      ]
+    },
+    {
+      "id": "changedetection_io",
+      "name": "changedetection.io",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-06-11.json",
+          "item_index": 4,
+          "href": "issues/open-source-signal-2026-06-11.html"
+        }
+      ],
+      "mention_refs": []
+    },
+    {
+      "id": "filegrail",
+      "name": "FileGrail",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-09-30.json",
+          "item_index": 4,
+          "href": "issues/open-source-signal-2026-09-30.html"
+        }
+      ],
+      "mention_refs": []
+    },
+    {
+      "id": "azimut",
+      "name": "Azimut",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-10-01.json",
+          "item_index": 4,
+          "href": "issues/open-source-signal-2026-10-01.html"
+        }
+      ],
+      "mention_refs": []
+    },
+    {
+      "id": "agentcrawl",
+      "name": "AgentCrawl",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-10-06.json",
+          "item_index": 5,
+          "href": "issues/open-source-signal-2026-10-06.html"
+        }
+      ],
+      "mention_refs": []
+    },
+    {
+      "id": "trace_labs_osint_vm",
+      "name": "Trace Labs OSINT VM",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-10-15.json",
+          "item_index": 4,
+          "href": "issues/open-source-signal-2026-10-15.html"
+        }
+      ],
+      "mention_refs": []
+    },
+    {
+      "id": "google_bigquery",
+      "name": "Google BigQuery",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-05-16.json",
+          "item_index": 5,
+          "href": "issues/open-source-signal-2026-05-16.html"
+        }
+      ],
+      "mention_refs": []
+    },
+    {
+      "id": "iuu_db",
+      "name": "IUU+DB",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-07-06.json",
+          "item_index": 5,
+          "href": "issues/open-source-signal-2026-07-06.html"
+        }
+      ],
+      "mention_refs": []
+    },
+    {
+      "id": "flare_ai",
+      "name": "FLARE-AI",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-07-08.json",
+          "item_index": 2,
+          "href": "issues/open-source-signal-2026-07-08.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "open-source-signal-weekly-2026-W28.json",
+          "item_index": 4,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W28.html"
+        }
+      ]
+    },
+    {
+      "id": "t4p_war_crimes_database",
+      "name": "T4P war-crimes database",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-09-02.json",
+          "item_index": 6,
+          "href": "issues/open-source-signal-2026-09-02.html"
+        }
+      ],
+      "mention_refs": []
+    },
+    {
+      "id": "war_sanctions",
+      "name": "War & Sanctions",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-09-11.json",
+          "item_index": 2,
+          "href": "issues/open-source-signal-2026-09-11.html"
+        }
+      ],
+      "mention_refs": [
+        {
+          "issue": "2026-05-21.json",
+          "item_index": 0,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-05-21.html"
+        },
+        {
+          "issue": "2026-05-21.json",
+          "item_index": 1,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-05-21.html"
+        },
+        {
+          "issue": "2026-09-02.json",
+          "item_index": 5,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-09-02.html"
+        },
+        {
+          "issue": "2026-09-09.json",
+          "item_index": 3,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-09-09.html"
+        },
+        {
+          "issue": "2026-09-15.json",
+          "item_index": 2,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-09-15.html"
+        },
+        {
+          "issue": "2026-09-17.json",
+          "item_index": 0,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-09-17.html"
+        },
+        {
+          "issue": "2026-09-21.json",
+          "item_index": 0,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-09-21.html"
+        },
+        {
+          "issue": "2026-09-23.json",
+          "item_index": 0,
+          "section": "issues",
+          "href": "issues/open-source-signal-2026-09-23.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W21.json",
+          "item_index": 3,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W21.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W37.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W37.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W38.json",
+          "item_index": 5,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W38.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W39.json",
+          "item_index": 4,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W39.html"
+        },
+        {
+          "issue": "open-source-signal-weekly-2026-W39.json",
+          "item_index": 6,
+          "section": "weekly",
+          "href": "weekly/open-source-signal-weekly-2026-W39.html"
+        }
+      ]
+    },
+    {
+      "id": "air_alert_map",
+      "name": "Air Alert map",
+      "public": true,
+      "coverage_status": "reviewed",
+      "publication_refs": [
+        {
+          "issue": "2026-10-19.json",
+          "item_index": 6,
+          "href": "issues/open-source-signal-2026-10-19.html"
+        }
+      ],
+      "mention_refs": []
+    }
+  ]
+}
