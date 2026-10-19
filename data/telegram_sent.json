@@ -1320,6 +1320,17 @@
         "text_file": "dist/telegram-open-source-signal-2026-10-17.uk.txt"
       }
     },
+    "2026-10-19.json": {
+      "uk": {
+        "github_run_id": "39215191086",
+        "github_run_url": "https://github.com/deisign/open-source-signal/actions/runs/39215191086",
+        "issue": "2026-10-19.json",
+        "issue_url": "https://osintsignal.org/issues/open-source-signal-2026-10-19.html",
+        "lang": "uk",
+        "sent_at": "2026-10-19T07:19:19Z",
+        "text_file": "dist/telegram-open-source-signal-2026-10-19.uk.txt"
+      }
+    },
     "open-source-signal-weekly-2026-W42.json": {
       "uk": {
         "github_run_id": "39123868683",
