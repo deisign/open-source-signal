@@ -1,0 +1,266 @@
+{
+  "issue_number": "136",
+  "date_iso": "2026-10-19",
+  "date_label_en": "19 October 2026",
+  "date_label_uk": "19 жовтня 2026",
+  "slug": "open-source-signal",
+  "title_en": "Open Source Signal",
+  "title_uk": "Сигнал відкритих джерел",
+  "issue_type": "Daily Signal",
+  "language_label": "EN + UKR",
+  "subtitle_en": "Alleged POW killings, missing-person records, recruitment claims and the limits of public maps.",
+  "subtitle_uk": "Імовірне вбивство полонених, документи про зниклих, дані про вербування та межі публічних карт.",
+  "dek_en": "Seven cards on preserving the distinction between an allegation and a finding, a witness account and confirmed status, an operational count and an incident count, and a public warning map and a complete record.",
+  "dek_uk": "Сім карток про різницю між заявою та встановленим фактом, свідченням і підтвердженим статусом, кількістю виїздів і кількістю подій, публічною картою попереджень і повним обліком.",
+  "editorial_frame": {
+    "what_this_is": "Bilingual editorial draft for Monday 19 October 2026. Sources dated 15–17 October; wider seven-day window used after weekend. Practical suggestions are editorial assessments.",
+    "what_this_is_not": "A verdict, independent incident reconstruction, population estimate or legal advice."
+  },
+  "rubric_map": [
+    "📡 Signal One / Головний сигнал",
+    "🇺🇦 Ukraine Lens / Українська оптика",
+    "🕊️ Losses, Captivity & Missing / Втрати, полон, зниклі",
+    "🔎 Tradecraft / Методика",
+    "🏘️ Infrastructure Signals / Інфраструктурні сигнали",
+    "📋 War Crimes Verification / Верифікація воєнних злочинів",
+    "🗺️ Map Room / Картографічна кімната"
+  ],
+  "footer_note": "Prepared for Open Source Signal / Сигнал відкритих джерел.",
+  "items": [
+    {
+      "theme": "zaporizhzhia-pow-investigation",
+      "emoji": "📡",
+      "rubric_en": "Signal One",
+      "rubric_uk": "Головний сигнал",
+      "title_en": "Reported POW killings: an investigation, with attribution unresolved",
+      "title_uk": "Повідомлення про вбивство полонених: розслідування триває",
+      "source_name": "Ukrainska Pravda / military spokesperson; prosecutor update",
+      "source_url": "https://www.pravda.com.ua/eng/news/2026/10/17/8058504/",
+      "source_date_label_en": "17 October 2026; incident described as several days earlier",
+      "source_date_label_uk": "17 жовтня 2026; подія, за повідомленням, сталася кількома днями раніше",
+      "what_happened_en": "Ukrainska Pravda reports a military allegation of Ukrainian POW killings on the Huliaipole front. Its update says prosecutors opened an Article 438(2) investigation and are examining military-supplied recordings.",
+      "what_happened_uk": "УП повідомила заяву військових про вбивство українських полонених на Гуляйпільському напрямку. В оновленні йдеться про розслідування за ч. 2 ст. 438 КК і перевірку переданих військовими записів.",
+      "why_it_matters_en": "Editorial assessment: preserving the source chain matters before assigning individual or command responsibility.",
+      "why_it_matters_uk": "Редакційна оцінка: перед встановленням особистої чи командної відповідальності важливо зберегти походження матеріалів.",
+      "how_to_use_en": "Keep the reporting date separate from the incident date; log original files, edits and provenance when lawfully available.",
+      "how_to_use_uk": "Розділяйте дату повідомлення й події; за законного доступу фіксуйте оригінали, монтаж і походження файлів.",
+      "limits_en": "No original recording was independently authenticated here. Victim count and attribution remain under investigation; this is not a judicial finding.",
+      "limits_uk": "Оригінал запису тут незалежно не автентифіковано. Кількість потерпілих і причетність осіб перевіряє слідство; судового висновку немає.",
+      "tags": [
+        "zaporizhzhia-pow-investigation",
+        "verification",
+        "ukraine"
+      ],
+      "source_type": "reputable_secondary_with_direct_official_comment",
+      "evidence_level": "reputable_secondary_with_direct_official_comment",
+      "verification_status": "full_source_read_claims_attributed",
+      "risk_flags": [
+        "scope_and_attribution_sensitive"
+      ],
+      "public_interest": "Accountability, safe documentation and accurate interpretation of public records."
+    },
+    {
+      "theme": "missing-records-partial-access",
+      "emoji": "🇺🇦",
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "title_en": "Restricted information does not automatically close the whole document",
+      "title_uk": "Обмеження окремих даних не закриває весь документ",
+      "source_name": "Ministry of Defence of Ukraine",
+      "source_url": "https://mod.gov.ua/explanation/zakryta-informatsiia-yaki-vidomosti-ne-mozhut-otrymaty-rodyny-znyklykh-polonenykh-i-zahyblykh-viiskovykh",
+      "source_date_label_en": "15 October 2026",
+      "source_date_label_uk": "15 жовтня 2026",
+      "what_happened_en": "MoD explains that families may receive permitted extracts about missing, captured or deceased servicemen even when underlying operational documents contain restricted information. Requests require individual assessment.",
+      "what_happened_uk": "МОУ пояснює: родина може отримати дозволені витяги про зниклого, полоненого чи загиблого військового, навіть якщо первинні бойові документи містять обмежені дані. Кожне звернення оцінюють окремо.",
+      "why_it_matters_en": "Editorial assessment: the distinction supports precise requests without seeking sensitive operational details.",
+      "why_it_matters_uk": "Редакційна оцінка: це допомагає точно сформулювати запит без вимоги розкрити чутливі оперативні дані.",
+      "how_to_use_en": "Ask which recorded circumstances concern the relative and whether a permitted extract or certificate can be provided; retain the written response.",
+      "how_to_use_uk": "Уточнюйте, які зафіксовані обставини стосуються близької людини та чи можна надати дозволений витяг або довідку; зберігайте письмову відповідь.",
+      "limits_en": "This is a ministry explanation, not a new blanket access right or a guarantee of disclosure. Do not publish unit locations, routes or unrelated personal data.",
+      "limits_uk": "Це роз’яснення міністерства, а не нове безумовне право доступу чи гарантія надання. Не публікуйте позицій, маршрутів та сторонніх персональних даних.",
+      "tags": [
+        "missing-records-partial-access",
+        "verification",
+        "ukraine"
+      ],
+      "source_type": "primary_official_explainer",
+      "evidence_level": "primary_official_explainer",
+      "verification_status": "full_source_read_claims_attributed",
+      "risk_flags": [
+        "scope_and_attribution_sensitive"
+      ],
+      "public_interest": "Accountability, safe documentation and accurate interpretation of public records."
+    },
+    {
+      "theme": "naval-missing-testimony",
+      "emoji": "🕊️",
+      "rubric_en": "Losses, Captivity & Missing",
+      "rubric_uk": "Втрати, полон, зниклі",
+      "title_en": "Naval families: testimony needs a confirmation trail",
+      "title_uk": "Родини моряків: свідчення потребують перевірки",
+      "source_name": "Coordination Headquarters for the Treatment of POWs",
+      "source_url": "https://koordshtab.gov.ua/posts/u-koordynatsiynomu-shtabi-vidbulasya-zustrich-z-predstavnykamy-ho-%C2%ABobyednani-morem%C2%BB-3863",
+      "source_date_label_en": "16 October 2026",
+      "source_date_label_uk": "16 жовтня 2026",
+      "what_happened_en": "At a meeting with naval families, the Headquarters discussed processing released prisoners’ accounts, confirming captivity information and searching for missing personnel in water-related settings. Remote underwater searches were discussed.",
+      "what_happened_uk": "На зустрічі з родинами моряків Коордштаб обговорив опрацювання свідчень звільнених, підтвердження відомостей про полон і пошуки зниклих на воді. Розглядали дистанційне підводне обстеження.",
+      "why_it_matters_en": "Editorial assessment: an account, a search proposal and confirmed status belong in separate records.",
+      "why_it_matters_uk": "Редакційна оцінка: свідчення, пропозиція пошуку та підтверджений статус мають бути окремими записами.",
+      "how_to_use_en": "Record when an account was received, what period it describes and who can confirm it through authorised channels. Share sensitive details privately.",
+      "how_to_use_uk": "Фіксуйте дату отримання свідчення, період, якого воно стосується, та можливість підтвердження через уповноважені канали. Чутливі подробиці передавайте приватно.",
+      "limits_en": "The meeting report announces no completed underwater recovery or newly confirmed individual status. Do not infer death or captivity from a search discussion.",
+      "limits_uk": "У повідомленні немає результату завершеної підводної операції чи нового підтвердженого статусу конкретної людини. Обговорення пошуку не доводить загибелі або полону.",
+      "tags": [
+        "naval-missing-testimony",
+        "verification",
+        "ukraine"
+      ],
+      "source_type": "primary_meeting_report",
+      "evidence_level": "primary_meeting_report",
+      "verification_status": "full_source_read_claims_attributed",
+      "risk_flags": [
+        "scope_and_attribution_sensitive"
+      ],
+      "public_interest": "Accountability, safe documentation and accurate interpretation of public records."
+    },
+    {
+      "theme": "foreign-recruitment-denominator",
+      "emoji": "🔎",
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "title_en": "Foreign recruitment: retain the date and the population counted",
+      "title_uk": "Вербування іноземців: зберігайте дату й межі підрахунку",
+      "source_name": "Coordination Headquarters / OSCE PA side event",
+      "source_url": "https://koordshtab.gov.ua/posts/koordshtab-predstavyv-stoprussianrecruitersorg-na-zakhodi-parlamentskoyi-asambleyi-obsye-3858",
+      "source_date_label_en": "16 October 2026; stated count as of end-2025",
+      "source_date_label_uk": "16 жовтня 2026; наведений підрахунок станом на кінець 2025 року",
+      "what_happened_en": "The Headquarters presented StopRussianRecruiters.org and cited at least 28,500 foreign citizens who had signed Russian military contracts by the end of the previous year.",
+      "what_happened_uk": "Коордштаб представив StopRussianRecruiters.org і навів щонайменше 28,5 тисячі іноземців, які підписали контракти з РФ станом на кінець попереднього року.",
+      "why_it_matters_en": "Editorial assessment: a cumulative recruitment claim cannot serve as a current strength, POW or casualty count.",
+      "why_it_matters_uk": "Редакційна оцінка: накопичений показник вербування не є поточною чисельністю, кількістю полонених чи втрат.",
+      "how_to_use_en": "Label the figure as the Headquarters’ claim through end-2025. Seek counting criteria and deduplication methods before comparing datasets.",
+      "how_to_use_uk": "Позначайте число як дані Коордштабу до кінця 2025 року. Перед порівнянням масивів з’ясовуйте критерії включення та усунення дублів.",
+      "limits_en": "The event report supplies no auditable underlying dataset. The platform is presented as an information resource, not a verified register of individual culpability.",
+      "limits_uk": "Повідомлення не містить первинного масиву для аудиту. Платформу представлено як інформаційний ресурс, а не перевірений реєстр особистої вини.",
+      "tags": [
+        "foreign-recruitment-denominator",
+        "verification",
+        "ukraine"
+      ],
+      "source_type": "primary_official_event_report",
+      "evidence_level": "primary_official_event_report",
+      "verification_status": "full_source_read_claims_attributed",
+      "risk_flags": [
+        "scope_and_attribution_sensitive"
+      ],
+      "public_interest": "Accountability, safe documentation and accurate interpretation of public records."
+    },
+    {
+      "theme": "winter-displacement-risk",
+      "emoji": "🏘️",
+      "rubric_en": "Infrastructure Signals",
+      "rubric_uk": "Інфраструктурні сигнали",
+      "title_en": "Winter displacement: distinguish intentions from observed departures",
+      "title_uk": "Зимове переміщення: відрізняйте наміри від фактичних виїздів",
+      "source_name": "IOM / UN Geneva briefing",
+      "source_url": "https://www.unognewsroom.org/story/en/3296/un-geneva-press-briefing-16-october-2026/0/WjnegYbwZ1",
+      "source_date_label_en": "16 October 2026",
+      "source_date_label_uk": "16 жовтня 2026",
+      "what_happened_en": "IOM warned that damaged homes, heating costs and energy attacks could displace returnees again. The briefing says intentions to leave were highest among those who had returned within the preceding three months.",
+      "what_happened_uk": "МОМ попередила: пошкоджене житло, вартість опалення й удари по енергетиці можуть знову змусити людей виїжджати. За брифінгом, намір виїхати найчастіше мали ті, хто повернувся протягом попередніх трьох місяців.",
+      "why_it_matters_en": "Editorial assessment: service disruption can explain vulnerability without proving that a household has already moved.",
+      "why_it_matters_uk": "Редакційна оцінка: збої послуг пояснюють вразливість, але не доводять, що родина вже переїхала.",
+      "how_to_use_en": "Keep reported intentions, actual movement, housing damage and service outages as distinct observations; date each and protect household identities.",
+      "how_to_use_uk": "Розділяйте повідомлені наміри, фактичний переїзд, пошкодження житла та перебої послуг; датуйте кожне спостереження й захищайте дані родин.",
+      "limits_en": "This is a risk warning, not a forecast of an inevitable displacement total. The briefing summary does not provide the full survey instrument or sampling methodology.",
+      "limits_uk": "Це попередження про ризик, а не прогноз неминучої кількості переміщених. У підсумку брифінгу немає повної анкети та методики вибірки.",
+      "tags": [
+        "winter-displacement-risk",
+        "verification",
+        "ukraine"
+      ],
+      "source_type": "primary_institutional_briefing",
+      "evidence_level": "primary_institutional_briefing",
+      "verification_status": "full_source_read_claims_attributed",
+      "risk_flags": [
+        "scope_and_attribution_sensitive"
+      ],
+      "public_interest": "Accountability, safe documentation and accurate interpretation of public records."
+    },
+    {
+      "theme": "response-counts-not-incidents",
+      "emoji": "📋",
+      "rubric_en": "War Crimes Verification",
+      "rubric_uk": "Верифікація воєнних злочинів",
+      "title_en": "Response totals are not an incident database",
+      "title_uk": "Кількість виїздів — не база окремих обстрілів",
+      "source_name": "National Police of Ukraine / Interior Ministry statement",
+      "source_url": "https://npu.gov.ua/news/ivan-vyhivskyi-ponad-800-vyizdiv-na-likvidatsiiu-naslidkiv-rosiiskykh-obstriliv-zdiisnyly-nashi-pidrozdily-vid-pochatku-tsoho-tyzhnia",
+      "source_date_label_en": "17 October 2026; week-to-date statement",
+      "source_date_label_uk": "17 жовтня 2026; дані від початку тижня до повідомлення",
+      "what_happened_en": "The police portal published an Interior Ministry statement reporting over 800 response deployments since the start of the week, with 148 civilians rescued and nearly 900 receiving psychological assistance.",
+      "what_happened_uk": "Портал поліції опублікував повідомлення МВС про понад 800 виїздів від початку тижня, 148 урятованих цивільних і майже 900 людей, які отримали психологічну допомогу.",
+      "why_it_matters_en": "Editorial assessment: deployments, people assisted and attacks measure different things.",
+      "why_it_matters_uk": "Редакційна оцінка: виїзди, отримувачі допомоги та обстріли — різні одиниці обліку.",
+      "how_to_use_en": "For an incident ledger, seek dated local incident records and reconcile repeat updates. Store response figures separately from casualty and attack totals.",
+      "how_to_use_uk": "Для реєстру подій шукайте датовані місцеві повідомлення та зіставляйте повторні оновлення. Відокремлюйте показники реагування від кількості обстрілів і потерпілих.",
+      "limits_en": "This is an attributed official aggregate, not an independently audited list of unique attacks. Its reporting cut-off is 17 October, not the full week ending 18 October.",
+      "limits_uk": "Це атрибутований офіційний підсумок, а не незалежно перевірений перелік унікальних атак. Межа звіту — 17 жовтня, а не повний тиждень до 18 жовтня.",
+      "tags": [
+        "response-counts-not-incidents",
+        "verification",
+        "ukraine"
+      ],
+      "source_type": "primary_official_statement",
+      "evidence_level": "primary_official_statement",
+      "verification_status": "full_source_read_claims_attributed",
+      "risk_flags": [
+        "scope_and_attribution_sensitive"
+      ],
+      "public_interest": "Accountability, safe documentation and accurate interpretation of public records."
+    },
+    {
+      "theme": "air-alert-map-limits",
+      "emoji": "🗺️",
+      "rubric_en": "Map Room",
+      "rubric_uk": "Картографічна кімната",
+      "title_en": "The public air-threat map shows an incomplete, approximate picture",
+      "title_uk": "Публічна карта загроз показує приблизну й неповну картину",
+      "source_name": "Ministry of Defence of Ukraine",
+      "source_url": "https://mod.gov.ua/news/u-zastosunku-povitryana-trivoga-z-yavilas-karta-pribliznogo-ruhu-povitryanih-czilej",
+      "source_date_label_en": "17 October 2026",
+      "source_date_label_uk": "17 жовтня 2026",
+      "what_happened_en": "MoD announced approximate air-threat markers in the Air Alert app. Data are preprocessed, may be delayed and omit ballistic missiles and other targets travelling above 2,000 km/h.",
+      "what_happened_uk": "МОУ повідомило про приблизні позначки повітряних загроз у застосунку «Повітряна тривога». Дані попередньо обробляються, можуть затримуватися та не охоплюють балістичних ракет й інших цілей зі швидкістю понад 2000 км/год.",
+      "why_it_matters_en": "Editorial assessment: an absent marker cannot establish an absent threat or disprove a reported attack.",
+      "why_it_matters_uk": "Редакційна оцінка: відсутність позначки не доводить відсутності загрози й не спростовує повідомлення про атаку.",
+      "how_to_use_en": "Follow official alerts: enter shelter on an alert and remain until the all-clear. For retrospective research, record the display time and the map’s stated limitations.",
+      "how_to_use_uk": "Дотримуйтеся офіційних сигналів: під час тривоги йдіть в укриття та залишайтеся до відбою. Для ретроспективного аналізу фіксуйте час перегляду й заявлені обмеження карти.",
+      "limits_en": "Not a complete flight log, precise coordinate feed or real-time tracking system. A disappearing marker is not an all-clear.",
+      "limits_uk": "Це не повний журнал польотів, потік точних координат чи система відстеження в реальному часі. Зникнення позначки не є відбоєм.",
+      "tags": [
+        "air-alert-map-limits",
+        "verification",
+        "ukraine"
+      ],
+      "source_type": "primary_official_product_explainer",
+      "evidence_level": "primary_official_product_explainer",
+      "verification_status": "full_source_read_claims_attributed",
+      "risk_flags": [
+        "scope_and_attribution_sensitive"
+      ],
+      "public_interest": "Accountability, safe documentation and accurate interpretation of public records."
+    }
+  ],
+  "internal_notes": [
+    "EDITORIAL NOTES — INTERNAL",
+    "Seven cards; sources 15–17 October 2026. No separate Sunday Daily. Issue136 follows Saturday135 and WeeklyW42.",
+    "All primary URLs checked against issues/weekly: no exact prior appearances found; related captivity and OPSEC themes recur with distinct sources and developments.",
+    "Best sources: MoD precise limitations, Coordination Headquarters meeting records, IOM in UN Geneva briefing. UP has direct military comment, but underlying prosecutor link is Telegram; do not promote it to independently verified evidence.",
+    "Weekly follow-up: original POW case materials and subsequent prosecutor/court updates; safe confirmation chains for naval missing.",
+    "No underlying recruitment dataset, survey audit or independent recording authentication; no named suspects, victim identifiers, tactical details or graphic imagery republished.",
+    "Weak candidates excluded: undated tool roundups, old material surfaced by crawl dates, previously used OHCHR September totals, and the excluded CПК advocacy material.",
+    "Tool Radar reserve for24October remains untouched. No new tool card needed today.",
+    "Publication not authorised by assembly request. Render preview only."
+  ]
+}
