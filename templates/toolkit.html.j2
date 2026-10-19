@@ -197,6 +197,7 @@
     <h1>OSINT Signal Toolkit</h1>
     <p class="ua-title">Інструментарій відкритих джерел</p>
     <p class="lead">This is a curated verification-oriented toolkit, not a dump of all OSINT links. Tools are included when they support preservation, geolocation, visual checks, passive infrastructure context, media monitoring, data explanation, or safer research workflow.</p>
+    <p>Publication history checked through 19 October 2026. An archive review does not imply a current runtime or security test.<br>Історію публікацій перевірено до 19 жовтня 2026. Архівний огляд не означає актуального тестування роботи чи безпеки.</p>
   </header>
   <main class="wrap">
     {% for group in grouped_categories %}
@@ -210,18 +211,35 @@
       </summary>
       <div class="tool-grid">
         {% for tool in group.tools %}
-        <article class="tool-card">
+        <article class="tool-card" id="{{ tool.id }}">
           <h3>{{ tool.name }}</h3>
           <a class="tool-url" href="{{ tool.url }}">{{ tool.url }}</a>
           <div class="tag-row">
+            {% if tool.access_details_verified is not defined or tool.access_details_verified %}
             <span class="tag">{{ tool.access }}</span>
             <span class="tag">{{ 'Login required' if tool.requires_login else 'No login' }}</span>
             <span class="tag">{{ 'API available' if tool.api_available else 'No API' }}</span>
+            {% else %}<span class="tag">Archive review · access not rechecked / Умови доступу не перевірено повторно</span>{% endif %}
             <span class="tag">Risk {{ tool.legal_risk }}</span>
             <span class="tag">Evidence {{ tool.evidence_value }}</span>
             <span class="tag">{{ tool.tested_status }}</span>
           </div>
+          <section class="field-section coverage">
+            <h4 class="field-title">In the journal / У журналі</h4>
+            {% if tool.publication_refs %}
+            <p>Reviewed / Є огляд:</p>
+            <ul>{% for ref in tool.publication_refs %}<li><a href="../{{ ref.href }}">{{ ref.issue[:-5] }}</a></li>{% endfor %}</ul>
+            {% elif tool.mention_refs %}<p>Mentioned only; no dedicated review / Лише згадка; окремого огляду немає.</p>
+            {% else %}<p>No coverage found through 19 October 2026 / До 19 жовтня 2026 публікації не знайдено.</p>{% endif %}
+            {% if tool.mention_refs %}<details><summary>Other mentions / Інші згадки ({{ tool.mention_refs|length }})</summary><ul>{% for ref in tool.mention_refs %}<li><a href="../{{ ref.href }}">{{ ref.issue[:-5] }}</a></li>{% endfor %}</ul></details>{% endif %}
+          </section>
           <div class="tool-fields">
+            {% if tool.archive_review %}
+            <section class="field-section"><h4 class="field-title">Published review / Опублікований огляд</h4>
+            <div class="lang-block"><span class="lang-label">EN:</span><p>{{ tool.review_summary_en }}</p><p>{{ tool.review_workflow_en }}</p></div>
+            <div class="lang-block"><span class="lang-label">UK:</span><p>{{ tool.review_summary_uk }}</p><p>{{ tool.review_workflow_uk }}</p></div>
+            </section>
+            {% else %}
             <section class="field-section">
               <h4 class="field-title">Best for / Для чого</h4>
               <div class="lang-block">
@@ -271,6 +289,7 @@
                 </ul>
               </div>
             </section>
+            {% endif %}
             <section class="field-section">
               <h4 class="field-title">Notes / Примітки</h4>
               <div class="lang-block">
