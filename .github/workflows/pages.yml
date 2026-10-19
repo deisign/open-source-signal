@@ -36,6 +36,9 @@ jobs:
       - name: Build static site
         run: python build_site.py --issues issues --templates templates --out dist --config site.json
 
+      - name: Build toolkit
+        run: python scripts/build_toolkit.py --out dist --config site.json
+
       - name: Build weekly section
         run: python build_weekly_site.py --weekly weekly --templates templates --out dist --config site.json
 
