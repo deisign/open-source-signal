@@ -1,0 +1,281 @@
+{
+  "issue_number": "137",
+  "date_iso": "2026-10-20",
+  "date_label_en": "20 October 2026",
+  "date_label_uk": "20 жовтня 2026",
+  "slug": "open-source-signal",
+  "title_en": "Open Source Signal",
+  "title_uk": "Сигнал відкритих джерел",
+  "issue_type": "Daily Signal",
+  "language_label": "EN + UKR",
+  "subtitle_en": "Grain-export allegations, corrected civilian-harm figures, returns from occupation and protected research records.",
+  "subtitle_uk": "Підозра щодо вивезення зерна, уточнення цивільних втрат, повернення з окупації та захист дослідницьких матеріалів.",
+  "dek_en": "Seven cards from 19 October reporting: a new procedural step for historical grain shipments; corrected park-strike figures; a mixed-age return group; an evacuation-crew account; a data-centre loss with backup services; disputed intelligence-sharing statements; and an official publication-risk update.",
+  "dek_uk": "Сім карток за повідомленнями 19 жовтня: новий процесуальний крок щодо давніх рейсів із зерном; уточнені дані про удар по парку; повернення групи різного віку; свідчення про атаку на евакуаційний екіпаж; втрата датацентру за роботи резервних сервісів; суперечливі заяви про обмін розвідданими; оновлення щодо ризиків публікації.",
+  "editorial_frame": {
+    "what_this_is": "Bilingual editorial draft for Tuesday 20 October 2026. Sources published 19 October, checked on the morning of 20 October Kyiv time. Suggestions are editorial assessments; claims remain attributed.",
+    "what_this_is_not": "A published issue, judicial finding, independently authenticated incident reconstruction or audit of classified intelligence and private infrastructure."
+  },
+  "rubric_map": [
+    "📡 Signal One / Головний сигнал",
+    "📋 War Crimes Verification / Верифікація воєнних злочинів",
+    "🇺🇦 Ukraine Lens / Українська оптика",
+    "🚑 Casefile / Розбір кейсу",
+    "🏘️ Infrastructure Signals / Інфраструктурні сигнали",
+    "🔎 Tradecraft / Методика",
+    "🛡️ Investigator OPSEC / Безпека дослідника"
+  ],
+  "footer_note": "Prepared for Open Source Signal / Сигнал відкритих джерел.",
+  "items": [
+    {
+      "theme": "grain-captain-suspicion",
+      "emoji": "📡",
+      "source_name": "Security Service of Ukraine / Prosecutor General’s Office",
+      "source_url": "https://www.ssu.gov.ua/novyny/sbu-ta-ohp-povidomyly-pro-pidozru-kapitanu-sudna-yakyi-vyviz-iz-ukrainy-ponad-54-tys-tonn-ukradenoho-zerna",
+      "tags": [
+        "grain-captain-suspicion",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "primary_investigative_statement",
+      "evidence_level": "primary_investigative_statement",
+      "verification_status": "full_source_read_claims_attributed",
+      "risk_flags": [
+        "source_scope_sensitive"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Signal One",
+      "rubric_uk": "Головний сигнал",
+      "title_en": "Grain shipments: a new suspicion concerns 2022–2023 voyages",
+      "title_uk": "Вивезення зерна: нова підозра стосується рейсів 2022–2023 років",
+      "source_date_label_en": "19 October 2026; voyages in 2022 and January 2023",
+      "source_date_label_uk": "19 жовтня 2026; рейси 2022 року та січня 2023-го",
+      "what_happened_en": "SSU reports an in-absentia suspicion against the captain of MATROS POZYNICH, including Article 438(1). Investigators allege two shipments of over 54,000 tonnes of unlawfully seized Ukrainian wheat from occupied Sevastopol to Syria.",
+      "what_happened_uk": "СБУ повідомила про заочну підозру капітану MATROS POZYNICH, зокрема за ч. 1 ст. 438 КК. Слідство стверджує, що двома рейсами з окупованого Севастополя до Сирії вивезли понад 54 тисячі тонн незаконно вилученої української пшениці.",
+      "why_it_matters_en": "Editorial assessment: movement, cargo origin and individual participation require linked evidence.",
+      "why_it_matters_uk": "Редакційна оцінка: рух судна, походження вантажу та особиста участь потребують пов’язаних доказів.",
+      "how_to_use_en": "Separate voyage dates from the suspicion date; link lawful historical port, cargo and ownership records without inferring cargo ownership from a vessel track alone.",
+      "how_to_use_uk": "Розділяйте дати рейсів і підозри; зіставляйте законно отримані історичні портові, вантажні та майнові записи. Сам трек судна не встановлює власника зерна.",
+      "limits_en": "An investigative allegation, not a verdict. Underlying cargo files were not independently audited here.",
+      "limits_uk": "Це версія слідства, а не вирок. Первинних вантажних документів тут незалежно не перевіряли."
+    },
+    {
+      "theme": "nova-vodolaha-correction",
+      "emoji": "📋",
+      "source_name": "National Police of Ukraine / Kharkiv police",
+      "source_url": "https://npu.gov.ua/news/piatero-liudei-zahynuly-sered-iakykh-dvoie-ditei-shche-15-otrymaly-poranennia-politsiia-dokumentuie-naslidky-vorozhoho-obstrilu-kharkivskoho-raionu",
+      "tags": [
+        "nova-vodolaha-correction",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "primary_incident_update",
+      "evidence_level": "primary_incident_update",
+      "verification_status": "full_source_read_claims_attributed",
+      "risk_flags": [
+        "source_scope_sensitive"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "War Crimes Verification",
+      "rubric_uk": "Верифікація воєнних злочинів",
+      "title_en": "Nova Vodolaha: use the correction, preserve the earlier version",
+      "title_uk": "Нова Водолага: беріть уточнення, зберігайте попередню версію",
+      "source_date_label_en": "19 October 2026, 19:50; updated text checked 20 October",
+      "source_date_label_uk": "19 жовтня 2026, 19:50; оновлений текст перевірено 20 жовтня",
+      "what_happened_en": "Police’s updated account of the 19 October park strike records six dead: two children and four adults. The headline and earlier body still say five. The report lists 15 injured and an Article 438 investigation.",
+      "what_happened_uk": "Уточнення поліції щодо удару по парку 19 жовтня вказує шістьох загиблих: двох дітей і чотирьох дорослих. Заголовок і початковий текст досі містять число п’ять. Повідомлено про 15 постраждалих і розслідування за ст. 438.",
+      "why_it_matters_en": "Editorial assessment: inconsistent fields within one page must not silently become one supposedly final record.",
+      "why_it_matters_uk": "Редакційна оцінка: суперечливі поля однієї сторінки не можна непомітно звести в нібито остаточний запис.",
+      "how_to_use_en": "Save the page and retrieval time; quote the explicit correction and keep earlier figures in a version log.",
+      "how_to_use_uk": "Збережіть сторінку й час отримання; посилайтеся на явне уточнення, попередні числа залишайте в журналі версій.",
+      "limits_en": "The update has no separate timestamp. ZMINA’s 19 October report says three children; we follow the explicit police correction. No independent casualty audit.",
+      "limits_uk": "Окремого часу уточнення немає. У ZMINA за 19 жовтня зазначено трьох дітей; тут використано явне уточнення поліції. Незалежного аудиту втрат немає.",
+      "supporting_sources": [
+        {
+          "name": "ZMINA — conflicting child subtotal",
+          "url": "https://zmina.info/news/rosiyany-vdaryly-dronom-po-parku-na-harkivshhyni-zagynuly-shestero-lyudej-sered-nyh-troye-ditej/"
+        }
+      ]
+    },
+    {
+      "theme": "occupation-return-mixed-ages",
+      "emoji": "🇺🇦",
+      "source_name": "Save Ukraine",
+      "source_url": "https://saveukraine.org/ua/news/23-dytyny-ta-pidlitka-vriatuvaly-z-tot-mynuloho-tyzhnia/",
+      "tags": [
+        "occupation-return-mixed-ages",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "primary_humanitarian_organisation_report",
+      "evidence_level": "primary_humanitarian_organisation_report",
+      "verification_status": "full_source_read_claims_attributed",
+      "risk_flags": [
+        "source_scope_sensitive"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "title_en": "A reported return of 23 people is not a count of 23 minors",
+      "title_uk": "Повернення 23 людей — не підрахунок 23 неповнолітніх",
+      "source_date_label_en": "19 October 2026; returns described as the previous week",
+      "source_date_label_uk": "19 жовтня 2026; повернення, за повідомленням, відбулися попереднього тижня",
+      "what_happened_en": "Save Ukraine reports returning 23 people from occupied territory under Bring Kids Back UA. Although its headline calls them children and teenagers, the account includes a 20-year-old. It describes coercion and school militarisation and says the group is receiving recovery support.",
+      "what_happened_uk": "Save Ukraine повідомила про повернення 23 людей з окупації в межах Bring Kids Back UA. Хоча заголовок називає їх дітьми й підлітками, серед описаних людей є 20-річна. Організація розповідає про примус і мілітаризацію освіти та надання допомоги групі.",
+      "why_it_matters_en": "Editorial assessment: age categories matter when comparing returns with national child-protection totals.",
+      "why_it_matters_uk": "Редакційна оцінка: вікові категорії важливі для порівняння з державними показниками повернення дітей.",
+      "how_to_use_en": "Keep the group total and verified age categories separate. Attribute experiences to the organisation; omit names, routes and identifying details.",
+      "how_to_use_uk": "Відділяйте загальне число від перевірених вікових категорій. Атрибутуйте досвід організації; не повторюйте імен, маршрутів та ідентифікувальних подробиць.",
+      "limits_en": "No complete age breakdown or independent case-file verification is available here. Do not add this group mechanically to another running total.",
+      "limits_uk": "Повної вікової розбивки й незалежної перевірки справ тут немає. Не додавайте цю групу механічно до іншого накопиченого показника."
+    },
+    {
+      "theme": "evacuation-crew-attack",
+      "emoji": "🚑",
+      "source_name": "ZMINA — direct comment from the Coordination Humanitarian Centre",
+      "source_url": "https://zmina.info/news/na-donechchyni-rosijski-vijskovi-atakuvaly-evakuaczijnyj-ekipazh-volonteriv-konsorcziumu-steel/",
+      "tags": [
+        "evacuation-crew-attack",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "reputable_secondary_direct_witness_comment",
+      "evidence_level": "reputable_secondary_direct_witness_comment",
+      "verification_status": "full_source_read_claims_attributed",
+      "risk_flags": [
+        "source_scope_sensitive"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Casefile",
+      "rubric_uk": "Розбір кейсу",
+      "title_en": "An evacuation-crew account needs incident evidence and source protection",
+      "title_uk": "Свідчення про атаку на евакуаційний екіпаж потребує доказів і захисту джерел",
+      "source_date_label_en": "19 October 2026; reported attack that morning",
+      "source_date_label_uk": "19 жовтня 2026; повідомлено про атаку того ж ранку",
+      "what_happened_en": "ZMINA’s direct interview reports an attack on a STEEL evacuation vehicle in Donetsk region. The humanitarian coordinator says everyone inside survived; the consortium says the vehicle carried humanitarian markings.",
+      "what_happened_uk": "ZMINA з прямого коментаря повідомила про атаку на евакуаційне авто STEEL на Донеччині. За словами гуманітарного координатора, усі всередині вижили; консорціум заявляє про гуманітарне маркування машини.",
+      "why_it_matters_en": "Editorial assessment: mission, markings, observed damage and attacker knowledge are separate evidentiary questions.",
+      "why_it_matters_uk": "Редакційна оцінка: завдання, маркування, пошкодження й обізнаність нападника — окремі доказові питання.",
+      "how_to_use_en": "With consent, preserve original damage images, mission records and witness accounts privately; publish only details needed to explain the incident.",
+      "how_to_use_uk": "За згодою приватно зберігайте оригінали зображень пошкоджень, документи місії та свідчення; публікуйте лише потрібні для пояснення події дані.",
+      "limits_en": "No independent reconstruction or legal finding here. Humanitarian markings alone do not establish intent. Withhold routes, schedules and personal identifiers.",
+      "limits_uk": "Незалежної реконструкції чи правового висновку тут немає. Саме маркування не встановлює умислу. Приховуйте маршрути, графіки та персональні ідентифікатори."
+    },
+    {
+      "theme": "datagroup-facility-service",
+      "emoji": "🏘️",
+      "source_name": "ZMINA / Datagroup statement; Interfax-Ukraine corroboration",
+      "source_url": "https://zmina.info/news/unaslidok-nichnoyi-ataky-rf-povnistyu-zrujnovanyj-dataczentr-datagrup/",
+      "tags": [
+        "datagroup-facility-service",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "reputable_secondary_operator_statement",
+      "evidence_level": "reputable_secondary_operator_statement",
+      "verification_status": "full_source_read_claims_attributed",
+      "risk_flags": [
+        "source_scope_sensitive"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Infrastructure Signals",
+      "rubric_uk": "Інфраструктурні сигнали",
+      "title_en": "A destroyed data centre does not establish the loss of every service or dataset",
+      "title_uk": "Знищення датацентру не доводить втрати всіх сервісів чи даних",
+      "source_date_label_en": "19 October 2026",
+      "source_date_label_uk": "19 жовтня 2026",
+      "what_happened_en": "ZMINA reports Datagroup’s statement that a data centre was put beyond recovery by the overnight attack. The company says staff were unharmed and customer services continue from backup sites. Interfax-Ukraine reports the same CEO statement.",
+      "what_happened_uk": "ZMINA передає заяву «Датагруп»: після нічної атаки один датацентр не підлягає відновленню. Компанія повідомляє, що працівники не постраждали, а сервіси для клієнтів працюють із резервних майданчиків. Ту саму заяву CEO передав Інтерфакс-Україна.",
+      "why_it_matters_en": "Editorial assessment: physical loss, availability, data integrity and confidentiality need separate checks.",
+      "why_it_matters_uk": "Редакційна оцінка: фізична втрата, доступність, цілісність і конфіденційність даних потребують окремих перевірок.",
+      "how_to_use_en": "Use public status notices and authorised restore checks for your own records; keep timestamps and backup results.",
+      "how_to_use_uk": "Використовуйте публічні повідомлення про стан і дозволені перевірки відновлення власних матеріалів; зберігайте час і результат перевірки копій.",
+      "limits_en": "Neither report is an independent technical audit. They do not prove a breach, complete data loss or unaffected performance for every client. Do not map backup locations.",
+      "limits_uk": "Жодне повідомлення не є незалежним технічним аудитом. Вони не доводять витоку, повної втрати даних чи незмінної роботи кожного клієнта. Не картографуйте резервних локацій.",
+      "supporting_sources": [
+        {
+          "name": "Interfax-Ukraine",
+          "url": "https://interfax.com.ua/news/telecom/1222333-amp.html"
+        }
+      ]
+    },
+    {
+      "theme": "intelligence-sharing-contested",
+      "emoji": "🔎",
+      "source_name": "Reuters, republished by Business Recorder",
+      "source_url": "https://www.brecorder.com/news/amp/40444920",
+      "tags": [
+        "intelligence-sharing-contested",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "reputable_secondary_conflicting_official_statements",
+      "evidence_level": "reputable_secondary_conflicting_official_statements",
+      "verification_status": "full_source_read_claims_attributed",
+      "risk_flags": [
+        "source_scope_sensitive"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "title_en": "Conflicting intelligence-sharing claims remain a contested source record",
+      "title_uk": "Суперечливі заяви про розвіддані залишаються спірним записом джерел",
+      "source_date_label_en": "19 October 2026; Zelenskyy interview 18 October",
+      "source_date_label_uk": "19 жовтня 2026; інтерв’ю Зеленського 18 жовтня",
+      "what_happened_en": "Reuters reports that Marco Rubio denied any US intelligence-sharing pause. Volodymyr Zelenskyy had said on Sunday that sharing was briefly interrupted and then restored. The accounts conflict.",
+      "what_happened_uk": "Reuters повідомляє: Марко Рубіо заперечив паузу в обміні розвідданими зі США. Володимир Зеленський у неділю заявив про коротке припинення й подальше відновлення. Ці версії суперечать одна одній.",
+      "why_it_matters_en": "Editorial assessment: an absent warning cannot by itself identify a policy decision or the stage where information failed.",
+      "why_it_matters_uk": "Редакційна оцінка: відсутність попередження сама собою не встановлює політичного рішення чи етапу інформаційного збою.",
+      "how_to_use_en": "Log speaker, statement time, claimed period and scope separately. Keep both positions attributed until independent evidence resolves the disagreement.",
+      "how_to_use_uk": "Окремо фіксуйте мовця, час заяви, заявлений період та обсяг. Зберігайте атрибуцію обох позицій до появи незалежних доказів.",
+      "limits_en": "Public statements do not expose classified delivery logs or settle actual service continuity. We make no finding about a specific missed attack warning.",
+      "limits_uk": "Публічні заяви не розкривають секретних журналів передавання й не встановлюють фактичної безперервності обміну. Висновку щодо конкретного пропущеного попередження немає."
+    },
+    {
+      "theme": "publication-convictions-suspicions",
+      "emoji": "🛡️",
+      "source_name": "Security Service of Ukraine",
+      "source_url": "https://www.ssu.gov.ua/novyny/za-materialamy-sbu-z-pochatku-roku-75-osib-otrymaly-sudovi-vyroky-za-poshyrennia-foto-i-video-vorozhykh-obstriliv",
+      "tags": [
+        "publication-convictions-suspicions",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "primary_official_enforcement_report",
+      "evidence_level": "primary_official_enforcement_report",
+      "verification_status": "full_source_read_claims_attributed",
+      "risk_flags": [
+        "source_scope_sensitive"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Investigator OPSEC",
+      "rubric_uk": "Безпека дослідника",
+      "title_en": "SSU’s 75-person verdict tally and three new suspects are different records",
+      "title_uk": "Дані СБУ про вироки 75 особам і трьох нових підозрюваних — різні записи",
+      "source_date_label_en": "19 October 2026; year-to-date tally",
+      "source_date_label_uk": "19 жовтня 2026; накопичений показник від початку року",
+      "what_happened_en": "SSU says 75 people received verdicts in 2026 over publication of sensitive defence-related imagery. It separately reports three Kyiv residents as suspects under Article 114-2 after alleged disclosure of air-defence positions.",
+      "what_happened_uk": "СБУ повідомляє про вироки 75 особам у 2026 році за поширення чутливих зображень, пов’язаних із Силами оборони. Окремо троє киян мають статус підозрюваних за ст. 114-2 після ймовірного розкриття позицій ППО.",
+      "why_it_matters_en": "Editorial assessment: preservation for verification and public redistribution require separate decisions.",
+      "why_it_matters_uk": "Редакційна оцінка: збереження для перевірки й публічне поширення потребують окремих рішень.",
+      "how_to_use_en": "Restrict access to sensitive originals and review proposed extracts for military positions, identifiable personnel and operational details before publication.",
+      "how_to_use_uk": "Обмежуйте доступ до чутливих оригіналів і перед публікацією перевіряйте фрагменти на позиції військових, упізнаваних людей та оперативні подробиці.",
+      "limits_en": "This is an SSU aggregate; individual judgments and appeal status were not audited. Three suspicions are not three convictions and must not be added to the 75.",
+      "limits_uk": "Це сукупні дані СБУ; окремих вироків і стану оскарження не перевіряли. Три підозри не є трьома вироками й не додаються до 75."
+    }
+  ],
+  "internal_notes": [
+    "EDITORIAL NOTES — INTERNAL",
+    "Issue137 for20October; all seven main sources published19October. Cutoff: morning20October Kyiv. No publication authorised by assembly request.",
+    "Rubrics: Signal One, War Crimes Verification, Ukraine Lens, Casefile, Infrastructure Signals, Tradecraft, Investigator OPSEC. No filler tool and no separate captivity-meeting repetition.",
+    "Important correction: NPU old headline5 and body5; explicit correction6=2children+4adults. ZMINA6with3children conflicts; use NPU correction and disclose mismatch. NPU correction time unspecified.",
+    "Save Ukraine headline23children/teens conflicts with included20-year-old. Use23people/children-and-young-people; no child identifiers or exact routes. Publication19Oct refers previous-week returns.",
+    "Best sources: SSU primary suspicion and enforcement update; NPU explicit correction; SaveUkraine primary account. Reuters full syndicated article read, not BusinessRecorder AI Overview.",
+    "Datagroup originalFacebook statement not accessible here; ZMINA and Interfax carry operator/CEO attribution. No independent audit; September data-preservation statement not promoted toOctober proof.",
+    "STEEL primary-on-record comment toZMINA; no dronefootage authentication, intent finding or tactical detail. Generic public-interest evidence workflow only.",
+    "Weekly follow-up: cargo provenance and responsibility, civilian-harm corrections, infrastructure continuity, private versus published evidence.",
+    "Excluded: Sumyfamilymeeting repeats recent DNA/status framework; appointment instructions are useful but weaker than final seven; no new unsupported claims about POW execution already covered19Oct. Excluded ЦПК advocacy remains excluded.",
+    "Tool Radar24October reserve unchanged; Toolkit coverage audit remains separate. No tool added in this issue.",
+    "AllmainURLs checked for exact duplicates against issues+weekly; semanticcomparison againstOctober issues. Sensitive names/identifiers/locations omitted."
+  ]
+}
