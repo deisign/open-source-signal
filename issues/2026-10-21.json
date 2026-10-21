@@ -1,0 +1,298 @@
+{
+  "issue_number": "138",
+  "date_iso": "2026-10-21",
+  "date_label_en": "21 October 2026",
+  "date_label_uk": "21 жовтня 2026",
+  "slug": "open-source-signal",
+  "title_en": "Open Source Signal",
+  "title_uk": "Сигнал відкритих джерел",
+  "issue_type": "Daily Signal",
+  "language_label": "EN + UKR",
+  "subtitle_en": "Religious persecution, recruitment-data reconciliation, linked missing-person cases and documentation gaps.",
+  "subtitle_uk": "Релігійні переслідування, звірка даних про вербування, пов’язані справи зниклих і прогалини документування.",
+  "dek_en": "Seven cards follow the evidence from a new Melitopol suspicion and a recruitment table with an unexplained mismatch to linked missing-person records, Crimea’s shrinking reporting space, detention documentation, conditional shipping compensation and a reported railway-sabotage verdict.",
+  "dek_uk": "Сім карток простежують докази: від нової підозри щодо Мелітополя й таблиці вербування з непоясненим розходженням до пов’язаних справ зниклих, звуження інформаційного простору Криму, документування в місцях несвободи, умовної компенсації суднам і повідомлення про вирок у справі залізничної диверсії.",
+  "editorial_frame": {
+    "what_this_is": "A bilingual editorial issue for Wednesday 21 October 2026. Sources dated 16–20 October; older records are explicitly dated. Calculations and workflow suggestions are editorial analysis.",
+    "what_this_is_not": "A judicial finding, independent audit of recruitment records, European Commission assessment or confirmation that compensation has been paid."
+  },
+  "rubric_map": [
+    "📡 Signal One / Головний сигнал",
+    "🔎 Tradecraft / Методика",
+    "🕊️ Losses, Captivity & Missing / Втрати, полон, зниклі",
+    "🇺🇦 Ukraine Lens / Українська оптика",
+    "🧾 War Crimes Verification / Верифікація воєнних злочинів",
+    "🚢 Infrastructure Signals / Інфраструктурні сигнали",
+    "⚖️ Casefile / Розбір кейсу"
+  ],
+  "footer_note": "Prepared for Open Source Signal / Сигнал відкритих джерел.",
+  "items": [
+    {
+      "theme": "melitopol-religious-persecution",
+      "emoji": "📡",
+      "source_name": "Security Service of Ukraine; Kyiv Independent",
+      "source_url": "https://www.ssu.gov.ua/novyny/sbu-zaochno-povidomyla-pro-pidozru-dovirenii-osobi-putina-u-tymchasovo-okupovanomu-melitopoli",
+      "tags": [
+        "melitopol-religious-persecution",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "primary_suspicion_and_original_newsroom_reporting",
+      "evidence_level": "primary_suspicion_and_original_newsroom_reporting",
+      "verification_status": "full_source_read_claims_attributed",
+      "risk_flags": [
+        "source_scope_sensitive"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Signal One",
+      "rubric_uk": "Головний сигнал",
+      "title_en": "Melitopol: a new suspicion follows earlier reporting on religious persecution",
+      "title_uk": "Мелітополь: нова підозра після давнішого розслідування релігійних переслідувань",
+      "source_date_label_en": "20 October 2026; earlier documentary released May 2025",
+      "source_date_label_uk": "20 жовтня 2026; попередній документальний фільм вийшов у травні 2025 року",
+      "what_happened_en": "SSU reports an in-absentia suspicion under Article 438(1) against occupation official Artem Sharlai over alleged persecution of religious communities. Kyiv Independent says it investigated his role in its May 2025 documentary No God But Theirs.",
+      "what_happened_uk": "СБУ повідомила про заочну підозру за ч. 1 ст. 438 КК окупаційному посадовцю Артему Шарлаю щодо ймовірних переслідувань релігійних громад. Kyiv Independent зазначає, що досліджувала його роль у фільмі No God But Theirs, випущеному в травні 2025 року.",
+      "why_it_matters_en": "Editorial assessment: earlier journalism and the later procedural step form a timeline, not interchangeable proof.",
+      "why_it_matters_uk": "Редакційна оцінка: давніше розслідування й пізніший процесуальний крок утворюють хронологію, але не є взаємозамінними доказами.",
+      "how_to_use_en": "Keep reported acts, witness accounts, institutional roles and the suspicion notice distinct. Preserve source dates; omit parishioner lists and identifying victim details.",
+      "how_to_use_uk": "Розділяйте описані дії, свідчення, інституційні ролі та повідомлення про підозру. Зберігайте дати; не відтворюйте списків парафіян та ідентифікувальних даних потерпілих.",
+      "limits_en": "The investigation continues; no verdict is reported. The two publications do not establish which journalistic materials entered the case file.",
+      "limits_uk": "Слідство триває; про вирок не повідомлено. Дві публікації не встановлюють, які журналістські матеріали долучено до справи.",
+      "supporting_sources": [
+        {
+          "name": "Kyiv Independent",
+          "url": "https://kyivindependent.com/russian-occupation-official-exposed-in-kyiv-independent-documentary-charged-with-war-crimes/"
+        }
+      ]
+    },
+    {
+      "theme": "recruitment-table-mismatch",
+      "emoji": "🔎",
+      "source_name": "Coordination Headquarters / I Want to Live project",
+      "source_url": "https://koordshtab.gov.ua/posts/45-959-inozemtsiv-zi-151-krayiny-pidpysaly-kontrakty-zi-zbroynymy-sylamy-rf-3870",
+      "tags": [
+        "recruitment-table-mismatch",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "primary_official_dataset_summary",
+      "evidence_level": "primary_official_dataset_summary",
+      "verification_status": "full_source_read_claims_attributed",
+      "risk_flags": [
+        "source_scope_sensitive"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "title_en": "Recruitment figures: the published annual rows do not equal the headline total",
+      "title_uk": "Дані про вербування: річні рядки не дорівнюють загальному підсумку",
+      "source_date_label_en": "20 October 2026; snapshot as of 1 October 2026",
+      "source_date_label_uk": "20 жовтня 2026; дані станом на 1 жовтня 2026",
+      "what_happened_en": "The Headquarters reports 45,959 identified foreign contract signatories. Its published rows are 94 for 2022, 4,067 for 2023, 8,877 for 2024, 16,085 for 2025 and 16,168 for January–September 2026. Our sum is 45,291: 668 below the headline.",
+      "what_happened_uk": "Коордштаб повідомляє про 45 959 установлених іноземців, які підписали контракти. Наведені рядки: 94 за 2022-й, 4067 за 2023-й, 8877 за 2024-й, 16 085 за 2025-й і 16 168 за січень–вересень 2026-го. Наш підсумок — 45 291: на 668 менше загального числа.",
+      "why_it_matters_en": "Editorial assessment: the discrepancy requires clarification before combining the figures.",
+      "why_it_matters_uk": "Редакційна оцінка: перед поєднанням показників потрібне пояснення розходження.",
+      "how_to_use_en": "Preserve both values and the snapshot. Ask about inclusion rules and revisions. Keep POW-survey percentages separate from recruitment counts.",
+      "how_to_use_uk": "Зберігайте обидва значення й дату зрізу. Уточнюйте критерії включення та перегляди. Відділяйте відсотки опитування полонених від підрахунку завербованих.",
+      "limits_en": "The source gives no explanation or underlying dataset. This is not a current-force or casualty count. A difference is not proof of fabrication.",
+      "limits_uk": "Джерело не пояснює розходження й не надає первинного масиву. Це не поточна чисельність або втрати. Різниця не доводить фальсифікації.",
+      "editorial_calculation": {
+        "annual_rows": [
+          94,
+          4067,
+          8877,
+          16085,
+          16168
+        ],
+        "sum": 45291,
+        "headline_total": 45959,
+        "unexplained_difference": 668
+      }
+    },
+    {
+      "theme": "linked-missing-cases",
+      "emoji": "🕊️",
+      "source_name": "Coordination Headquarters / meeting with Krok Dii and border-guard families",
+      "source_url": "https://koordshtab.gov.ua/posts/koordynatsiynyy-shtab-proviv-zustrich-z-predstavnykamy-ho-%C2%ABkrok-diyi%C2%BB-3871",
+      "tags": [
+        "linked-missing-cases",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "primary_official_meeting_report",
+      "evidence_level": "primary_official_meeting_report",
+      "verification_status": "full_source_read_claims_attributed",
+      "risk_flags": [
+        "source_scope_sensitive"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Losses, Captivity & Missing",
+      "rubric_uk": "Втрати, полон, зниклі",
+      "title_en": "People missing in the same incident still need individual status records",
+      "title_uk": "Зниклі в одній події все одно потребують індивідуальних записів статусу",
+      "source_date_label_en": "20 October 2026",
+      "source_date_label_uk": "20 жовтня 2026",
+      "what_happened_en": "A Headquarters meeting discussed investigations involving servicemen who disappeared simultaneously, interagency record reconciliation and checking reported detention locations. Released-prisoner testimony was discussed as one source of information.",
+      "what_happened_uk": "На зустрічі Коордштабу обговорили справи військових, які зникли одночасно, міжвідомчу звірку записів і перевірку повідомлень про місця утримання. Свідчення звільнених розглядали як одне з джерел відомостей.",
+      "why_it_matters_en": "Editorial assessment: a shared incident can connect cases without proving a shared subsequent fate.",
+      "why_it_matters_uk": "Редакційна оцінка: спільна подія пов’язує справи, але не доводить однакової подальшої долі.",
+      "how_to_use_en": "Link people to a common incident record while retaining separate dated evidence and status fields for each. Send sensitive corrections through authorised private channels.",
+      "how_to_use_uk": "Пов’язуйте людей зі спільним записом події, зберігаючи окремі датовані докази й статус кожного. Чутливі уточнення передавайте приватно уповноваженим органам.",
+      "limits_en": "A meeting report supplies no newly verified individual outcomes. A discussed detention location is not confirmation that a particular person is held there.",
+      "limits_uk": "Повідомлення про зустріч не містить нових перевірених результатів щодо конкретних людей. Обговорене місце утримання не підтверджує перебування там певної особи."
+    },
+    {
+      "theme": "crimea-reporting-gaps",
+      "emoji": "🇺🇦",
+      "source_name": "ZMINA / Crimean Tatar Resource Centre press conference",
+      "source_url": "https://zmina.info/news/peresliduvannya-zhurnalistiv-u-krymu-stalo-instrumentom-informaczijnogo-kontrolyu-rf-pravozahysnyky/",
+      "tags": [
+        "crimea-reporting-gaps",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "reputable_secondary_original_event_reporting",
+      "evidence_level": "reputable_secondary_original_event_reporting",
+      "verification_status": "full_source_read_claims_attributed",
+      "risk_flags": [
+        "source_scope_sensitive"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "title_en": "Crimea’s reporting gaps need a source-risk explanation",
+      "title_uk": "Прогалини повідомлень із Криму потребують пояснення ризиків для джерел",
+      "source_date_label_en": "20 October 2026",
+      "source_date_label_uk": "20 жовтня 2026",
+      "what_happened_en": "ZMINA reports a press conference describing media closures, searches and prosecution of professional and citizen journalists in occupied Crimea. The Crimean Tatar Resource Centre links this repression to information control.",
+      "what_happened_uk": "ZMINA повідомляє з пресконференції про закриття медіа, обшуки й переслідування професійних та громадянських журналістів в окупованому Криму. Кримськотатарський Ресурсний Центр пов’язує репресії з інформаційним контролем.",
+      "why_it_matters_en": "Editorial assessment: fewer visible reports may reflect danger to reporters rather than fewer abuses.",
+      "why_it_matters_uk": "Редакційна оцінка: менша кількість видимих повідомлень може пояснюватися небезпекою для авторів, а не зменшенням порушень.",
+      "how_to_use_en": "Record source availability and coverage limitations alongside incident counts. Use already public, safely archived reporting; do not pressure people under occupation for new proof.",
+      "how_to_use_uk": "Фіксуйте доступність джерел та межі висвітлення поруч із підрахунками подій. Користуйтеся вже оприлюдненими безпечно збереженими матеріалами; не тисніть на людей в окупації заради нових доказів.",
+      "limits_en": "The conference report is an attributed assessment, not a census of every persecuted journalist or independent review of every prosecution.",
+      "limits_uk": "Повідомлення про пресконференцію є атрибутованою оцінкою, а не переписом усіх переслідуваних журналістів чи незалежним аналізом кожної справи."
+    },
+    {
+      "theme": "detention-injury-documentation",
+      "emoji": "🧾",
+      "source_name": "Civil-society coalition coordinated by ALI / ZMINA — Shadow Report 2026, pp.395–396",
+      "source_url": "https://zmina.ua/wp-content/uploads/sites/2/2026/10/ali_shadowreport_chapters23_24_eng.pdf",
+      "tags": [
+        "detention-injury-documentation",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "primary_civil_society_report",
+      "evidence_level": "primary_civil_society_report",
+      "verification_status": "full_source_read_claims_attributed",
+      "risk_flags": [
+        "source_scope_sensitive"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "War Crimes Verification",
+      "rubric_uk": "Верифікація воєнних злочинів",
+      "title_en": "An injury form is only one link in a detention-documentation chain",
+      "title_uk": "Форма фіксації ушкоджень — лише одна ланка документування в місцях несвободи",
+      "source_date_label_en": "Report published 19 October 2026; main monitoring September 2025–July 2026",
+      "source_date_label_uk": "Звіт оприлюднено 19 жовтня 2026; основний моніторинг — вересень 2025 — липень 2026",
+      "what_happened_en": "The coalition’s English report says new injury-documentation forms have not ensured adequate photographs, complete records or notification of law enforcement in Ukrainian places of detention. It calls for effective implementation of the Istanbul Protocol.",
+      "what_happened_uk": "Англомовний звіт коаліції зазначає: нові форми фіксації ушкоджень не забезпечили належних фотографій, повного обліку та інформування правоохоронців в українських місцях несвободи. Автори закликають ефективно впроваджувати Стамбульський протокол.",
+      "why_it_matters_en": "Editorial assessment: a new form does not by itself prove that the full documentation process works.",
+      "why_it_matters_uk": "Редакційна оцінка: нова форма сама собою не доводить працездатності всього процесу документування.",
+      "how_to_use_en": "Check whether a record preserves the account, examination date, consent, secure attachments and authorised referral. Keep medical evidence access-controlled; use qualified professionals.",
+      "how_to_use_uk": "Перевіряйте наявність свідчення, дати огляду, згоди, захищених додатків і дозволеного направлення. Обмежуйте доступ до медичних доказів; залучайте кваліфікованих фахівців.",
+      "limits_en": "This is the authors’ NGO assessment, not an EU finding or an October 2026 prevalence survey. It concerns Ukrainian detention settings; it must not be relabelled as evidence about Russian POW facilities.",
+      "limits_uk": "Це оцінка авторів НКО, а не висновок ЄС чи дослідження поширеності за жовтень 2026-го. Йдеться про українські місця несвободи; не подавайте це як докази щодо російських місць утримання полонених.",
+      "supporting_sources": [
+        {
+          "name": "Publication page and scope",
+          "url": "https://zmina.ua/publication/tinovyj-zvit-do-rozdilu-23-pravosuddya-ta-fundamentalni-prava-ta-rozdilu-24-yustycziya-svoboda-ta-bezpeka-zvitu-yevropejskoyi-komisiyi-shhodo-ukrayiny-u-2025-roczi/"
+        }
+      ]
+    },
+    {
+      "theme": "shipping-compensation-records",
+      "emoji": "🚢",
+      "source_name": "Ministry of Restoration, Infrastructure and Transport; Kyiv Independent",
+      "source_url": "https://mininfra.gov.ua/news/uriad-zaprovadzhuie-mekhanizm-kompensatsii-voiennykh-ryzykiv-dlia-sudnovlasnykiv",
+      "tags": [
+        "shipping-compensation-records",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "primary_policy_announcement",
+      "evidence_level": "primary_policy_announcement",
+      "verification_status": "full_source_read_claims_attributed",
+      "risk_flags": [
+        "source_scope_sensitive"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Infrastructure Signals",
+      "rubric_uk": "Інфраструктурні сигнали",
+      "title_en": "A shipping-compensation mechanism is not a payment record",
+      "title_uk": "Механізм компенсації суднам — не запис про виплату",
+      "source_date_label_en": "Ministry 16 October 2026; English report 19 October 2026",
+      "source_date_label_uk": "Міністерство — 16 жовтня 2026; англомовне повідомлення — 19 жовтня 2026",
+      "what_happened_en": "The ministry announced possible compensation of up to 80% of damage from Russian aggression to vessels and related losses where insurers do not cover the risks. It describes a 180-day application period. Kyiv Independent reported the mechanism on 19 October.",
+      "what_happened_uk": "Міністерство повідомило про можливість компенсації до 80% шкоди суднам та пов’язаних втрат від російської агресії, якщо ризики не покриває страховик. Зазначено 180 днів для звернення. Kyiv Independent описала механізм 19 жовтня.",
+      "why_it_matters_en": "Editorial assessment: rules, submitted claims, assessed losses, awards and payments are different records.",
+      "why_it_matters_uk": "Редакційна оцінка: правила, подані заяви, оцінена шкода, призначені суми та виплати — різні записи.",
+      "how_to_use_en": "For incident research, preserve lawful damage assessments and distinguish cargo loss, vessel loss and rescue costs. Verify the governing act and decisions before making entitlement claims.",
+      "how_to_use_uk": "Для дослідження подій зберігайте законно отримані оцінки шкоди; розділяйте втрати вантажу, судна й рятувальні витрати. Перед висновком про право на виплату перевіряйте нормативний акт і рішення.",
+      "limits_en": "Included within the seven-day window. An announcement is not proof of an approved claim, budget allocation or payment. This card does not determine any applicant’s eligibility.",
+      "limits_uk": "У межах семиденного вікна. Оголошення не доводить схвалення заяви, бюджетного фінансування чи виплати. Картка не встановлює права конкретного заявника.",
+      "supporting_sources": [
+        {
+          "name": "Kyiv Independent,19 October",
+          "url": "https://kyivindependent.com/ukraine-to-compensate-damaged-cargo-ships-as-russia-rejects-black-sea-proposal/"
+        }
+      ]
+    },
+    {
+      "theme": "railway-verdict-source-status",
+      "emoji": "⚖️",
+      "source_name": "Security Service of Ukraine",
+      "source_url": "https://www.ssu.gov.ua/novyny/za-materialamy-sbu-15-rokiv-tiurmy-otrymav-ahent-fsb-yakyi-hotuvav-pidryv-kolii-pered-vantazhnym-potiahom-na-rivnenshchyni",
+      "tags": [
+        "railway-verdict-source-status",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "primary_official_verdict_report",
+      "evidence_level": "primary_official_verdict_report",
+      "verification_status": "full_source_read_claims_attributed",
+      "risk_flags": [
+        "source_scope_sensitive"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Casefile",
+      "rubric_uk": "Розбір кейсу",
+      "title_en": "Railway-sabotage case: a verdict reported now concerns an earlier arrest",
+      "title_uk": "Справа залізничної диверсії: повідомлений зараз вирок стосується давнішого затримання",
+      "source_date_label_en": "20 October 2026; arrest reported as January 2025",
+      "source_date_label_uk": "20 жовтня 2026; затримання, за повідомленням, — січень 2025",
+      "what_happened_en": "SSU reports a 15-year sentence with confiscation for treason and sabotage in a Rivne-region railway case. Its account dates the arrest to January 2025 and says the planned attack was intercepted before execution.",
+      "what_happened_uk": "СБУ повідомила про 15 років ув’язнення з конфіскацією за державну зраду й диверсію у справі щодо залізниці на Рівненщині. Затримання датовано січнем 2025-го; за повідомленням, атаку попередили до виконання.",
+      "why_it_matters_en": "Editorial assessment: a new sentencing announcement must not become a claim that a fresh attack occurred.",
+      "why_it_matters_uk": "Редакційна оцінка: нове повідомлення про вирок не повинно перетворюватися на твердження про нову здійснену атаку.",
+      "how_to_use_en": "Track arrest, verdict, publication and appeal dates separately. Seek the court record before detailed legal analysis; omit operational locations and methods.",
+      "how_to_use_uk": "Окремо відстежуйте затримання, вирок, публікацію та оскарження. Перед детальним правовим аналізом шукайте судове рішення; вилучайте оперативні локації й методи.",
+      "limits_en": "The original judgment, verdict date and appeal status were not independently obtained here. Attribute the sentence and case account to SSU.",
+      "limits_uk": "Оригіналу рішення, дати вироку й стану оскарження тут незалежно не отримано. Атрибутуйте покарання та опис справи СБУ."
+    }
+  ],
+  "internal_notes": [
+    "EDITORIAL NOTES — INTERNAL",
+    "Daily 138,21 October 2026. Assembly only; publication awaits separate instruction. Mostmain sources 20 Oct;report 19 Oct;ministry 16 Oct within 7 days,Englishcoverage 19 Oct.",
+    "Worked rubrics: SignalOne,Tradecraft,Losses,UkraineLens,WarCrimesVerification,InfrastructureSignals,Casefile. No filler tool or reuse of reserved 24 October tool slate.",
+    "Recruitment update is substantively new versus 19 Oct issue 136: exact snapshot 1 Oct,annual breakdown and arithmetic discrepancy. Sum 94+4067+8877+16085+16168=45291; headline 45959; difference 668. No explanation inferred. POWsamplepercentages omitted; not generalisable to all foreign recruits.",
+    "Missing-person meeting uses distinct simultaneous-disappearance/group-linking angle; do not infer a shared fate or disclose unit positions. No specific detention-location confirmation is claimed.",
+    "FullEnglishShadowReportPDF downloaded and pp 395–396 plus methodology read. PDF main scopeSeptember 2025–July 2026 withAugustannex;landingpage looselysaysSeptember 2025–August 2026. UsePDFmethodology. NGOassessment, notECfinding. Medicaldocumentationdiscussion is editorial workflow, not clinical diagnosis.",
+    "Strong sources: SSUoriginal suspicion andverdict,Koordoriginals,fullEnglishcoalitionPDF,originalministryannouncement. KIprovidesoriginalnewsroomcontext;ZMINAeventreport attributed. Sourceconcentration 2 SSU+2 Koord acknowledged; cards concern different evidence objects.",
+    "Hospitalcandidateexcluded: most accessiblereports reproducedofficialTelegramstatement; no independentprimaryverification sufficient forour lead-only rule. Other weak/rejected: workshopads, stale/repeatedchildreturns,exhibitionportraits ofPOWs, speculationaboutfamilys guiltbyassociation.",
+    "NoЦПКadvocacymaterial; reportcardlimitedtoinjurydocumentation inUkrainiandetentionsettings,notbroadcoalitionadvocacy. No graphicdetails,survivorIDs,parishionerlists,POWportraits,railcoordinates,explosivemethods.",
+    "Weeklydeepdive: reconciling officialtables; journalists-to-caseproceduralchains;documentationform versusimplementation. Followup: sourceclarification 668; originalcourtjudgment/appeal; governingcompensationact andactualawardrecords.",
+    "ToolRadarreserve 24 Octunchanged. Toolkitnotmodified: thisissuefeaturesnocatalogtool. All mainURLs checked againstpublishedissuesandweekly,excludingdrafts."
+  ]
+}
