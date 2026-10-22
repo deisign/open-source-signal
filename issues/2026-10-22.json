@@ -1,0 +1,290 @@
+{
+  "issue_number": "139",
+  "date_iso": "2026-10-22",
+  "date_label_en": "22 October 2026",
+  "date_label_uk": "22 жовтня 2026",
+  "slug": "open-source-signal",
+  "title_en": "Open Source Signal",
+  "title_uk": "Сигнал відкритих джерел",
+  "issue_type": "Daily Signal",
+  "language_label": "EN + UKR",
+  "subtitle_en": "Oleshky reporting, civilian privacy, captivity records and the status of evidence.",
+  "subtitle_uk": "Розслідування про Олешки, приватність цивільних, облік полону та статус доказів.",
+  "dek_en": "Seven cards examine a recorded response in an Oleshky investigation, exposed civilian data, health information in captivity work, Crimean sentences, occupation property claims, a rescue-romance scam and a new cassation proceeding.",
+  "dek_uk": "Сім карток: зафіксована відповідь у розслідуванні про Олешки, розголошення даних цивільних, медичні відомості в роботі щодо полону, вироки кримським татарам, майно в окупації, шахрайство під виглядом порятунку та нове касаційне провадження.",
+  "editorial_frame": {
+    "what_this_is": "A bilingual editorial issue for Thursday 22 October 2026. Sources dated 16–21 October; source dates and procedural stages are distinguished. Workflow suggestions are editorial analysis.",
+    "what_this_is_not": "A finding of individual criminal responsibility, a legal opinion, an independent audit of occupation statistics or an authentication of private profiles."
+  },
+  "rubric_map": [
+    "📡 Signal One / Головний сигнал",
+    "🛡️ Investigator OPSEC / Безпека дослідника",
+    "🕊️ Losses, Captivity & Missing / Втрати, полон, зниклі",
+    "🇺🇦 Ukraine Lens / Українська оптика",
+    "🧾 War Crimes Verification / Верифікація воєнних злочинів",
+    "🔎 Tradecraft / Методика",
+    "⚖️ Casefile / Розбір кейсу"
+  ],
+  "footer_note": "Prepared for Open Source Signal / Сигнал відкритих джерел.",
+  "items": [
+    {
+      "theme": "oleshky-response-record",
+      "emoji": "📡",
+      "source_name": "Slidstvo.Info / Sofiia Afonina",
+      "source_url": "https://www.slidstvo.info/news/navishcho-vy-taki-slova-hovoryte-predstavnyka-komanduvannia-rf-oburyly-pytannia-zhurnalistky-slidstva-info-pro-okupovani-oleshky/",
+      "tags": [
+        "oleshky-response-record",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "original_newsroom_interview",
+      "evidence_level": "original_newsroom_interview",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "allegations_not_judicial_findings",
+        "operational_detail_omitted"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Signal One",
+      "rubric_uk": "Головний сигнал",
+      "title_en": "Oleshky: a recorded response adds to the reporting trail",
+      "title_uk": "Олешки: зафіксована відповідь доповнює хронологію розслідування",
+      "source_date_label_en": "21 October 2026",
+      "source_date_label_uk": "21 жовтня 2026",
+      "what_happened_en": "Slidstvo.Info publishes an exchange with a man it identifies as a Russian deputy regimental commander. Asked about mined roads and food supplies in occupied Oleshky, he declines to discuss them without his superior’s permission.",
+      "what_happened_uk": "«Слідство.Інфо» опублікувало розмову з чоловіком, якого ідентифікує як заступника командира російського полку. На запитання про заміновані дороги й постачання їжі в окуповані Олешки він відмовляється відповідати без дозволу начальства.",
+      "why_it_matters_en": "Editorial assessment: a response, a role attribution and an alleged act are separate evidence objects.",
+      "why_it_matters_uk": "Редакційна оцінка: відповідь, встановлення посади та інкримінована дія — окремі доказові об’єкти.",
+      "how_to_use_en": "Preserve the published exchange and its context. Build a dated role history from independent public records; connect alleged acts to separate incident evidence.",
+      "how_to_use_uk": "Зберігайте опубліковану розмову з контекстом. Будуйте датовану історію посад за незалежними відкритими записами; для кожної інкримінованої дії шукайте окремі докази події.",
+      "limits_en": "The newsroom’s identification is attributed here. Refusal to answer does not establish an order, effective control or criminal responsibility. No contact details or operational locations are reproduced.",
+      "limits_uk": "Ідентифікацію атрибутовано редакції. Відмова відповідати не встановлює наказу, ефективного контролю чи кримінальної відповідальності. Контакти й оперативні локації не відтворюємо."
+    },
+    {
+      "theme": "civilian-data-minimisation",
+      "emoji": "🛡️",
+      "source_name": "DII-Ukraine / Cluster of Relocated Media; ZMINA",
+      "source_url": "https://dii.dn.ua/zayava-medijnykiv-uchasnykiv-klasteru-relokovanyh-media-shhodo-sytuatsiyi-z-oprylyudnennyam-personalnyh-danyh-gromadyan-ukrayiny-yaki-prozhyvayut-na-tymchasovo-okupovanyh-terytoriyah-ukrayiny-ta-zvynu/",
+      "tags": [
+        "civilian-data-minimisation",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "primary_public_statement",
+      "evidence_level": "primary_public_statement",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "civilian_personal_data",
+        "children",
+        "no_exposed_lists"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Investigator OPSEC",
+      "rubric_uk": "Безпека дослідника",
+      "title_en": "Civilian border-crossing records need protection and context",
+      "title_uk": "Дані про перетин кордону цивільними потребують захисту й контексту",
+      "source_date_label_en": "Statement: 19 October; ZMINA coverage: 21 October 2026",
+      "source_date_label_uk": "Заява: 19 жовтня; публікація ZMINA: 21 жовтня 2026",
+      "what_happened_en": "A relocated-media coalition says Myrotvorets published residents’ personal data, including children’s, and accused them on the basis of border crossings. It requests removal and an institutional assessment.",
+      "what_happened_uk": "Коаліція релокованих медіа заявляє, що «Миротворець» оприлюднив дані мешканців окупації, зокрема дітей, і висунув звинувачення на підставі перетину кордону. Вона просить видалення даних та інституційного реагування.",
+      "why_it_matters_en": "Editorial assessment: a movement record alone cannot establish a person’s motive or support for occupation.",
+      "why_it_matters_uk": "Редакційна оцінка: сам запис про переміщення не встановлює мотиву людини чи підтримки окупації.",
+      "how_to_use_en": "Document the publication practice through redacted examples and source descriptions. Exclude passport numbers, addresses and children’s identities from public evidence packages.",
+      "how_to_use_uk": "Документуйте практику публікації через знеособлені приклади й опис джерел. Вилучайте паспортні номери, адреси та дані дітей із публічних доказових пакетів.",
+      "limits_en": "These are the coalition’s allegations and legal arguments, not a court ruling. This digest neither reproduces nor links to the exposed lists.",
+      "limits_uk": "Це твердження та правова позиція коаліції, а не судове рішення. Дайджест не відтворює розголошених списків і не веде до них.",
+      "supporting_sources": [
+        {
+          "name": "ZMINA, 21 October",
+          "url": "https://zmina.info/news/myrotvorecz-oprylyudnyv-personalni-dani-ukrayincziv-z-tot-medijnyky-vymagayut-yih-vydalyty/"
+        }
+      ]
+    },
+    {
+      "theme": "captivity-health-records",
+      "emoji": "🕊️",
+      "source_name": "Coordination Headquarters for the Treatment of Prisoners of War",
+      "source_url": "https://koordshtab.gov.ua/posts/koordynatsiynyy-shtab-proviv-zustrich-iz-rodynamy-31-ombr-3881",
+      "tags": [
+        "captivity-health-records",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "primary_official_meeting_summary",
+      "evidence_level": "primary_official_meeting_summary",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "medical_privacy",
+        "pow_privacy"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Losses, Captivity & Missing",
+      "rubric_uk": "Втрати, полон, зниклі",
+      "title_en": "Captivity work: health records require their own update trail",
+      "title_uk": "Робота щодо полону: медичні відомості потребують окремої історії оновлень",
+      "source_date_label_en": "21 October 2026, 17:28",
+      "source_date_label_uk": "21 жовтня 2026, 17:28",
+      "what_happened_en": "At a family meeting, the Headquarters discussed serious and chronic illnesses among POWs, updating medical information and records where captivity testimony exists without Russian official confirmation.",
+      "what_happened_uk": "На зустрічі з родинами Коордштаб обговорив тяжкі й хронічні захворювання полонених, оновлення медичних відомостей та облік випадків, коли є свідчення про полон без офіційного підтвердження РФ.",
+      "why_it_matters_en": "Editorial assessment: a health update and a captivity-status decision have different sources and dates.",
+      "why_it_matters_uk": "Редакційна оцінка: оновлення стану здоров’я та рішення про обліковий статус мають різні джерела й дати.",
+      "how_to_use_en": "For authorised casework, record each document’s date, origin and superseded version. Share health information through protected institutional channels; keep it out of public search posts.",
+      "how_to_use_uk": "В уповноваженій роботі фіксуйте дату, походження й попередню версію документа. Передавайте медичні відомості захищеними інституційними каналами; не додавайте їх до публічних пошукових дописів.",
+      "limits_en": "A meeting summary establishes no individual diagnosis, status change or return priority. It reports discussion, not a newly adopted procedure.",
+      "limits_uk": "Підсумок зустрічі не встановлює індивідуального діагнозу, зміни статусу чи черговості повернення. Це повідомлення про обговорення, а не новий затверджений порядок."
+    },
+    {
+      "theme": "bakhchysarai-sentences",
+      "emoji": "🇺🇦",
+      "source_name": "Suspilne Crimea",
+      "source_url": "https://suspilne.media/crimea/1432783-sud-rf-zasudiv-do-15-19-rokiv-uvaznenna-sistoh-figurantiv-patoi-bahcisarajskoi-grupi-spravi-hizb-ut-tahrir/",
+      "tags": [
+        "bakhchysarai-sentences",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "original_newsroom_court_reporting",
+      "evidence_level": "original_newsroom_court_reporting",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "political_prosecution",
+        "family_privacy"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "title_en": "Bakhchysarai group: record sentences alongside the defendants’ account",
+      "title_uk": "Бахчисарайська група: фіксуйте вироки разом із позицією підсудних",
+      "source_date_label_en": "Reported 21 October 2026",
+      "source_date_label_uk": "Повідомлено 21 жовтня 2026",
+      "what_happened_en": "Suspilne reports sentences of 15–19 years for six Crimean Tatars in the fifth Bakhchysarai Hizb ut-Tahrir case, citing relatives at the hearing and rights sources. Defendants rejected the charges as politically motivated.",
+      "what_happened_uk": "Суспільне повідомляє про 15–19 років ув’язнення для шістьох кримських татар у п’ятій бахчисарайській «справі Хізб ут-Тахрір», посилаючись на рідних на засіданні та правозахисні джерела. Підсудні відкинули звинувачення як політично мотивовані.",
+      "why_it_matters_en": "Editorial assessment: the imposed sentence, prosecution narrative and defence account must remain distinguishable.",
+      "why_it_matters_uk": "Редакційна оцінка: призначене покарання, версія обвинувачення та позиція захисту мають залишатися розрізненими.",
+      "how_to_use_en": "Maintain one procedural timeline per defendant. Seek judgment and appeal records; preserve reported final statements without publishing relatives’ identifying information.",
+      "how_to_use_uk": "Ведіть окрему процесуальну хронологію для кожного підсудного. Шукайте рішення й відомості про оскарження; зберігайте позицію захисту без ідентифікувальних даних рідних.",
+      "limits_en": "The full judgments and appeal status were not independently obtained here. The Russian court’s terrorism label is an attributed charge, not this digest’s description of the men.",
+      "limits_uk": "Повних рішень і стану оскарження тут незалежно не отримано. Російська кваліфікація «тероризм» — атрибутоване обвинувачення, а не характеристика людей від редакції."
+    },
+    {
+      "theme": "occupation-property-flags",
+      "emoji": "🧾",
+      "source_name": "ZMINA; Luhansk Information Centre interview (occupation-controlled source)",
+      "source_url": "https://zmina.info/news/na-okupovanij-luganshhyni-upravlyayucha-kompaniya-vyyavyla-ponad-2-tysyachi-bezhazyajnyh-kvartyr/",
+      "tags": [
+        "occupation-property-flags",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "newsroom_report_checked_against_occupation_statement",
+      "evidence_level": "newsroom_report_checked_against_occupation_statement",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "occupation_propaganda_source",
+        "property_owner_privacy"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "War Crimes Verification",
+      "rubric_uk": "Верифікація воєнних злочинів",
+      "title_en": "Luhansk property records: a flagged flat is not a completed confiscation",
+      "title_uk": "Майнові записи Луганщини: позначена квартира ще не означає завершеного вилучення",
+      "source_date_label_en": "Original interview summary: 20 October; ZMINA: 21 October 2026",
+      "source_date_label_uk": "Первинний виклад інтерв’ю: 20 жовтня; ZMINA: 21 жовтня 2026",
+      "what_happened_en": "An occupation-appointed housing manager claims more than 2,000 flats have been flagged since 2025 as potentially “ownerless.” His account distinguishes identifying flats from referring records to municipal administrations.",
+      "what_happened_uk": "Окупаційний керівник житлової компанії заявляє, що з 2025 року понад 2 тисячі квартир позначили як імовірно «безхазяйні». В його описі виявлення квартири та передання відомостей муніципальній адміністрації — окремі етапи.",
+      "why_it_matters_en": "Editorial assessment: a cumulative administrative claim cannot stand in for a verified count of dispossessions.",
+      "why_it_matters_uk": "Редакційна оцінка: сукупне адміністративне твердження не замінює перевіреного підрахунку вилучень.",
+      "how_to_use_en": "Distinguish flagging, notice, status decision and transfer of possession. Preserve dated public notices and ownership evidence privately; publish only necessary, redacted details.",
+      "how_to_use_uk": "Розділяйте позначення, повідомлення, рішення про статус і передання володіння. Зберігайте датовані оголошення та документи власності приватно; публікуйте лише необхідні знеособлені відомості.",
+      "limits_en": "The figure is an unverified claim by an occupation-controlled source. No property-level list or completed-transfer count is established here; the imposed label does not resolve ownership.",
+      "limits_uk": "Число — неперевірене твердження окупаційного джерела. Пооб’єктного списку чи кількості завершених передань тут не встановлено; нав’язана назва не вирішує питання власності.",
+      "supporting_sources": [
+        {
+          "name": "Occupation-controlled LIC, 20 October — source of the attributed claim",
+          "url": "https://lug-info.ru/news/euk-vyjavila-v-lnr-bolee-dvuh-tys.-kvartir-s-priznakami-beshozjajnogo-imuschestva/"
+        }
+      ]
+    },
+    {
+      "theme": "rescue-romance-scam",
+      "emoji": "🔎",
+      "source_name": "Kyiv Independent / Linda Hourani",
+      "source_url": "https://kyivindependent.com/investigation-how-scammers-exploit-ukraines-occupation-to-deceive-foreign-men-2/",
+      "tags": [
+        "rescue-romance-scam",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "original_newsroom_investigation",
+      "evidence_level": "original_newsroom_investigation",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "identity_misuse",
+        "selection_bias",
+        "no_face_search_workflow"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "title_en": "A rescue-romance scam tests the evidence behind a compelling story",
+      "title_uk": "Шахрайство під виглядом порятунку: перевіряйте докази переконливої історії",
+      "source_date_label_en": "16 October 2026; included within the seven-day window",
+      "source_date_label_uk": "16 жовтня 2026; у межах семиденного вікна",
+      "what_happened_en": "Kyiv Independent examined 58 cases referred by Helping to Leave. It describes profiles soliciting money to “escape” occupation, using reused photographs, forged documents and manipulated imagery; some cases could not be verified.",
+      "what_happened_uk": "Kyiv Independent дослідила 58 випадків, переданих Helping to Leave. Редакція описує профілі, що просили гроші на «виїзд» з окупації, використовуючи чужі фото, підроблені документи й змінені зображення; частину випадків перевірити не вдалося.",
+      "why_it_matters_en": "Editorial assessment: an emotionally coherent narrative still needs independent evidence for identity, location and payment purpose.",
+      "why_it_matters_uk": "Редакційна оцінка: емоційно переконлива історія потребує незалежної перевірки особи, місця та призначення платежу.",
+      "how_to_use_en": "Check claims through independently reached aid organisations. Keep consent-based case records, preserve originals and corroborate image findings. Do not infer guilt from a reused photograph.",
+      "how_to_use_uk": "Перевіряйте твердження через організації допомоги, контакти яких знайшли незалежно. Ведіть справи за згодою, зберігайте оригінали й підтверджуйте висновки щодо зображень. Чуже використане фото не доводить провини зображеної людини.",
+      "limits_en": "This is a referred case series, not a prevalence estimate. We do not recommend the article’s face-search or blacklist services, reproduce documents, or treat an AI detector as proof.",
+      "limits_uk": "Це добірка переданих випадків, а не оцінка поширеності. Ми не рекомендуємо сервіси пошуку облич чи чорних списків зі статті, не відтворюємо документів і не вважаємо ШІ-детектор доказом."
+    },
+    {
+      "theme": "cassation-procedural-status",
+      "emoji": "⚖️",
+      "source_name": "ZMINA / report citing a Supreme Court order",
+      "source_url": "https://zmina.info/news/verhovnyj-sud-vidkryv-kasaczijne-provadzhennya-u-spravi-yusufa-mamesheva-yakogo-ranishe-dvichi-vypravdaly/",
+      "tags": [
+        "cassation-procedural-status",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "newsroom_report_citing_unretrieved_court_record",
+      "evidence_level": "newsroom_report_citing_unretrieved_court_record",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "court_record_access_limit",
+        "presumption_of_innocence"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Casefile",
+      "rubric_uk": "Розбір кейсу",
+      "title_en": "Opening cassation proceedings does not overturn an acquittal",
+      "title_uk": "Відкриття касаційного провадження не скасовує виправдувального вироку",
+      "source_date_label_en": "21 October 2026; acquittal: 20 May; appeal decision: July 2026",
+      "source_date_label_uk": "21 жовтня 2026; виправдання: 20 травня; апеляційне рішення: липень 2026",
+      "what_happened_en": "ZMINA reports that Ukraine’s Supreme Court opened cassation proceedings on a prosecution appeal in Yusuf Mameshev’s case. His May acquittal was upheld in July; no cassation hearing date was reported.",
+      "what_happened_uk": "ZMINA повідомляє, що Верховний Суд відкрив касаційне провадження за скаргою прокуратури у справі Юсуфа Мамешева. Травневий виправдувальний вирок у липні залишили без змін; дату касаційного розгляду не повідомлено.",
+      "why_it_matters_en": "Editorial assessment: procedural acceptance and a decision on the merits must occupy different fields in a case database.",
+      "why_it_matters_uk": "Редакційна оцінка: прийняття скарги до розгляду та рішення по суті мають бути різними полями бази справ.",
+      "how_to_use_en": "Track each instance, decision type and operative result separately. Retain the acquittal in the timeline and update its status only against a subsequent decision.",
+      "how_to_use_uk": "Окремо фіксуйте інстанцію, вид рішення та резолютивний результат. Залишайте виправдувальний вирок у хронології; змінюйте його статус лише за наступним рішенням.",
+      "limits_en": "The linked court record could not be retrieved independently; attribution remains to ZMINA. No cancellation of the acquittal or conclusion on the underlying allegations is established here.",
+      "limits_uk": "Пов’язаний судовий запис незалежно отримати не вдалося; джерелом лишається ZMINA. Скасування виправдання чи висновку щодо первинних обвинувачень тут не встановлено."
+    }
+  ],
+  "internal_notes": [
+    "EDITORIAL NOTES — INTERNAL",
+    "Daily 139, Thursday 22 October 2026. Draft only; publication requires the next instruction. Five main news sources are dated 21 October; privacy statement is 19 October, occupation interview 20 October, KI investigation 16 October.",
+    "Worked rubrics: Signal One, Investigator OPSEC, Losses/Captivity/Missing, Ukraine Lens, War Crimes Verification, Tradecraft, Casefile. Ukrainian-only sources adapted into English; KI original English adapted into Ukrainian.",
+    "New versus archive: Oleshky card is about the 21 October direct-response record, not a recycled humanitarian-access claim; property card is about a new dated administrative count and its stages, distinct from the general 16 October property-seizure discussion; captivity card focuses on medical version histories, distinct from earlier testimony/status and group-linkage cards.",
+    "Source concentration: three main ZMINA links; privacy grounded in the original DII statement, property checked against the original occupation-media interview. Suspilne court report has its own family/rights sources. No assertion of independent access to full judgments.",
+    "Court record linked by ZMINA was attempted and unavailable. Mameshev card is confined to procedural status; no advocacy narrative, no disputed substantive accusations or ЦПК material included.",
+    "KI scam investigation contains face-search methods, private identities, forged IDs and blacklist references. Do not reproduce these or recommend such services. Reused photos do not establish the pictured person controls the account. Omit route advice and disputed broad claims about shelling in occupied cities.",
+    "Privacy statement dated 19 October despite ZMINA coverage on 21 October. Never link exposed lists, open individual profiles or copy child/passport/address data. Legal positions are attributed to signatories, not pronounced as adjudicated violations.",
+    "Oleshky newsroom identification and interview response attributed; neither silence nor a claimed command role establishes effective control, an order or liability. Operational details and private contacts omitted.",
+    "Occupation property number remains an adversarial-source claim. More than 2,000 flagged flats is not 2,000 proven confiscations. Primary summary 20 October 14:10; ZMINA 21 October. No return-to-occupation advice.",
+    "Weekly deep dives: response records in accountability reporting; evidence minimisation in rescue and missing-person workflows; administrative stages of property dispossession. Follow up with original judgments/appeals, independent role history and property-level decisions obtained lawfully.",
+    "Rejected: repeating 20 October evacuation-crew case with a second analogous strike; generic arrests/comment tallies; older Bellingcat guides outside seven days; police tags sourced from private contact databases. No tools added as filler. Reserved 24 October Tool Radar slate untouched."
+  ]
+}
