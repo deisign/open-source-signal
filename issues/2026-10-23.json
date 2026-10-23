@@ -1,0 +1,289 @@
+{
+  "issue_number": "140",
+  "date_iso": "2026-10-23",
+  "date_label_en": "23 October 2026",
+  "date_label_uk": "23 жовтня 2026",
+  "slug": "open-source-signal",
+  "title_en": "Open Source Signal",
+  "title_uk": "Сигнал відкритих джерел",
+  "issue_type": "Daily Signal",
+  "language_label": "EN + UKR",
+  "subtitle_en": "Repatriation, concealed detention, civilian-harm records and the durability of evidence.",
+  "subtitle_uk": "Репатріація, приховане утримання, облік шкоди цивільним і збереження доказів.",
+  "dek_en": "Seven cards connect a new repatriation announcement and an estimate of concealed detention with Lozova’s changing casualty reports, gaps in open data, tested archive recovery, a Crimean court case and institutional support for the ICC.",
+  "dek_uk": "Сім карток поєднують нову репатріацію й оцінку прихованого утримання зі змінними зведеннями про Лозову, прогалинами відкритих даних, перевіркою відновлення архівів, кримською судовою справою та інституційною підтримкою МКС.",
+  "editorial_frame": {
+    "what_this_is": "A bilingual editorial issue for Friday 23 October 2026. Publications dated 22–23 October; underlying events and snapshots are separately dated. Practical workflows are editorial suggestions.",
+    "what_this_is_not": "An identification of repatriated individuals, a UN or ICRC finding, a final casualty register, an independent audit of government datasets or a judicial assessment of disputed allegations."
+  },
+  "rubric_map": [
+    "📡 Signal One / Головний сигнал",
+    "🕊️ Losses, Captivity & Missing / Втрати, полон, зниклі",
+    "🧾 War Crimes Verification / Верифікація воєнних злочинів",
+    "🔎 Tradecraft / Методика",
+    "💾 Infrastructure Signals / Інфраструктурні сигнали",
+    "⚖️ Casefile / Розбір кейсу",
+    "🇪🇺 Ukraine Lens / Українська оптика"
+  ],
+  "footer_note": "Prepared for Open Source Signal / Сигнал відкритих джерел.",
+  "items": [
+    {
+      "theme": "repatriation-252-identification",
+      "emoji": "📡",
+      "source_name": "Coordination Headquarters for the Treatment of Prisoners of War",
+      "source_url": "https://koordshtab.gov.ua/posts/repatriatsiya-v-ukrayini-povernuly-tila-252-zahyblykh-3884",
+      "tags": [
+        "repatriation-252-identification",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "primary_official_repatriation_notice",
+      "evidence_level": "primary_official_repatriation_notice",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "identification_pending",
+        "bereaved_family_privacy"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Signal One",
+      "rubric_uk": "Головний сигнал",
+      "title_en": "252 repatriated dead: preserve the identification caveat",
+      "title_uk": "Репатріація 252 загиблих: збережіть застереження щодо ідентифікації",
+      "source_date_label_en": "22 October 2026, 14:06",
+      "source_date_label_uk": "22 жовтня 2026, 14:06",
+      "what_happened_en": "The Headquarters reports the return of 252 deceased people. It explicitly attributes the claim that they are Ukrainian servicemembers to the Russian side and says identification work will follow.",
+      "what_happened_uk": "Коордштаб повідомив про повернення 252 загиблих. Твердження, що це українські військовослужбовці, прямо атрибутоване російській стороні; ідентифікаційні заходи ще мають провести.",
+      "why_it_matters_en": "Editorial assessment: the transfer total is a batch record; a verified identity requires its own evidence trail.",
+      "why_it_matters_uk": "Редакційна оцінка: кількість переданих — запис про партію; підтверджена особа потребує власного ланцюга доказів.",
+      "how_to_use_en": "Keep transfer, examination, identification and family notification as separate dated steps. Link a person to the batch only through authorised records.",
+      "how_to_use_uk": "Окремо датуйте передання, експертизу, ідентифікацію та сповіщення родини. Пов’язуйте людину з цією репатріацією лише через уповноважені записи.",
+      "limits_en": "The announcement establishes neither 252 confirmed identities nor dates of death. Do not infer missing-to-dead transitions from the aggregate.",
+      "limits_uk": "Повідомлення не встановлює 252 підтверджених особи чи дат смерті. Сукупне число не доводить переходу конкретних зниклих до категорії загиблих."
+    },
+    {
+      "theme": "detention-confirmation-gap-1500",
+      "emoji": "🕊️",
+      "source_name": "Coordination Headquarters / account of a UN side event",
+      "source_url": "https://koordshtab.gov.ua/posts/blyzko-1500-ukrayintsiv-zaznayut-nezakonnoho-kryminalnoho-peresliduvannya-ne-mayuchy-ofitsiynoho-pidtverdzhennya-polonu-cherez-mkchkh-3885",
+      "tags": [
+        "detention-confirmation-gap-1500",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "primary_official_statement_at_international_event",
+      "evidence_level": "primary_official_statement_at_international_event",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "missing_person_privacy",
+        "estimate_not_census"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Losses, Captivity & Missing",
+      "rubric_uk": "Втрати, полон, зниклі",
+      "title_en": "About 1,500: retain the speaker, population and confirmation gap",
+      "title_uk": "Близько 1500: збережіть автора оцінки, охоплення й прогалину підтвердження",
+      "source_date_label_en": "Published 22 October; event held 19 October 2026",
+      "source_date_label_uk": "Опубліковано 22 жовтня; захід відбувся 19 жовтня 2026",
+      "what_happened_en": "At an event at UN headquarters, representative Petro Yatsenko said about 1,500 people known to the Headquarters face unlawful prosecution in Russia or occupied Ukraine without captivity confirmation through the ICRC.",
+      "what_happened_uk": "На заході в штаб-квартирі ООН представник Коордштабу Петро Яценко заявив про близько 1500 відомих установі людей, яких незаконно переслідують у РФ або в окупованій Україні без підтвердження полону через МКЧХ.",
+      "why_it_matters_en": "Editorial assessment: an absent confirmation field must not become a conclusion that detention did not occur.",
+      "why_it_matters_uk": "Редакційна оцінка: порожнє поле підтвердження не повинно ставати висновком, що утримання не було.",
+      "how_to_use_en": "Track testimony, court-related records and institutional confirmations separately, with source and date. Keep civilian and military categories distinct unless the underlying records establish otherwise.",
+      "how_to_use_uk": "Окремо обліковуйте свідчення, судові записи та інституційні підтвердження, зазначаючи джерело й дату. Не змішуйте цивільні й військові категорії без належних підстав у записах.",
+      "limits_en": "This is the Headquarters’ estimate, not a UN or ICRC finding or the total number missing. No person-level dataset or counting method is supplied.",
+      "limits_uk": "Це оцінка Коордштабу, а не висновок ООН чи МКЧХ і не загальна кількість зниклих. Поіменного масиву та методики підрахунку не наведено."
+    },
+    {
+      "theme": "lozova-casualty-version-chain",
+      "emoji": "🧾",
+      "source_name": "National Police of Ukraine; Gwara Media",
+      "source_url": "https://npu.gov.ua/news/dvi-liudyny-zahynuly-shche-34-postrazhdaly-vnaslidok-obstrilu-lozovoi-politsiia-dokumentuie-zlochyn-okupantiv",
+      "tags": [
+        "lozova-casualty-version-chain",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "primary_police_snapshot_with_attributed_later_news_update",
+      "evidence_level": "primary_police_snapshot_with_attributed_later_news_update",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "provisional_casualties",
+        "later_update_not_independently_verified"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "War Crimes Verification",
+      "rubric_uk": "Верифікація воєнних злочинів",
+      "title_en": "Lozova: preserve the sequence of casualty updates",
+      "title_uk": "Лозова: зберігайте послідовність уточнень про потерпілих",
+      "source_date_label_en": "Police: 22 October, 15:20; later report: 23 October 2026, 09:44",
+      "source_date_label_uk": "Поліція: 22 жовтня, 15:20; пізніше повідомлення: 23 жовтня 2026, 09:44",
+      "what_happened_en": "Police reported two killed and 34 affected in the 22 October market strike. On 23 October, Gwara reported a third death, citing the regional governor. These are successive attributed records, not additive totals.",
+      "what_happened_uk": "Поліція повідомила про двох загиблих і 34 постраждалих від удару по ринку 22 жовтня. Вранці 23-го «Ґвара» повідомила про третю смерть із посиланням на очільника ОВА. Це послідовні атрибутовані записи, а не числа для додавання.",
+      "why_it_matters_en": "Editorial assessment: a casualty database needs version history and category definitions, not just its latest headline.",
+      "why_it_matters_uk": "Редакційна оцінка: базі потерпілих потрібні історія версій і визначення категорій, а не лише останній заголовок.",
+      "how_to_use_en": "Preserve each timestamp and the source’s exact category. Distinguish physical injury, acute stress and death; do not subtract or reclassify individuals without case records.",
+      "how_to_use_uk": "Зберігайте час і точну категорію джерела. Розділяйте поранення, гостру реакцію на стрес і смерть; не віднімайте та не перекласифіковуйте людей без індивідуальних записів.",
+      "limits_en": "The later death report cites an official Telegram statement; no independent medical confirmation was obtained here. Totals remain provisional. The police investigation is not a final legal finding.",
+      "limits_uk": "Пізніше повідомлення про смерть спирається на офіційну заяву в Telegram; незалежного медичного підтвердження тут не отримано. Числа попередні. Поліцейське провадження не є остаточним правовим висновком.",
+      "supporting_sources": [
+        {
+          "name": "Gwara Media / Arina Rybalchenko, 23 October, 09:44",
+          "url": "https://gwaramedia.com/u-likarni-pomerla-postrazhdala-vnaslidok-udaru-po-rinku-v-lozovij/"
+        }
+      ]
+    },
+    {
+      "theme": "open-data-freshness-snapshot",
+      "emoji": "🔎",
+      "source_name": "ZMINA / report on Nadiia Babynska’s conference presentation",
+      "source_url": "https://zmina.info/news/ministerstva-publikuyut-lyshe-polovynu-naboriv-danyh-yaki-mayut-buty-vidkryti-dlya-gromadskosti-nadiya-babynska/",
+      "tags": [
+        "open-data-freshness-snapshot",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "newsroom_report_of_expert_monitoring",
+      "evidence_level": "newsroom_report_of_expert_monitoring",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "sample_scope",
+        "audit_not_reproduced"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "title_en": "Open-data monitoring: check both availability and freshness",
+      "title_uk": "Моніторинг відкритих даних: перевіряйте доступність і свіжість",
+      "source_date_label_en": "Report: 22 October; presentation: 21 October; snapshot: 1 October 2026",
+      "source_date_label_uk": "Публікація: 22 жовтня; виступ: 21 жовтня; зріз: 1 жовтня 2026",
+      "what_happened_en": "ZMINA reports Babynska’s monitoring of ministries and the State Tax Service: about half of 347 expected datasets were accessible as of 1 October. She reported an average 760 days since update and 40 datasets updated within 30 days.",
+      "what_happened_uk": "ZMINA передає результати моніторингу Бабинської щодо міністерств і ДПС: на 1 жовтня доступна приблизно половина з 347 очікуваних наборів. За її оцінкою, середній час від оновлення — 760 днів, за 30 днів оновили 40 наборів.",
+      "why_it_matters_en": "Editorial assessment: an accessible download may still describe an obsolete state of the world.",
+      "why_it_matters_uk": "Редакційна оцінка: доступний для завантаження файл може описувати вже застарілий стан.",
+      "how_to_use_en": "Record publisher, coverage period, metadata update and actual resource changes. Distinguish missing, inaccessible, stale and recently updated datasets; preserve the monitoring date.",
+      "how_to_use_uk": "Фіксуйте розпорядника, період охоплення, оновлення метаданих і фактичні зміни ресурсу. Розрізняйте відсутні, недоступні, застарілі й оновлені набори; зберігайте дату моніторингу.",
+      "limits_en": "The underlying audit was not independently reproduced. Its stated institutional sample must not be extrapolated to every Ukrainian public dataset.",
+      "limits_uk": "Первинний аудит незалежно не відтворено. Зазначену інституційну вибірку не можна поширювати на всі відкриті набори України."
+    },
+    {
+      "theme": "newsroom-archive-recovery",
+      "emoji": "💾",
+      "source_name": "ZMINA / Liudmyla Tiahnyriadno, interview with Pavlo Bielousov",
+      "source_url": "https://zmina.info/articles/yak-rosijski-udary-po-data-czentrah-vplyvayut-na-media-i-shho-mozhe-dopomogty-zberegty-redakczijni-arhivy/",
+      "tags": [
+        "newsroom-archive-recovery",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "original_newsroom_expert_interview",
+      "evidence_level": "original_newsroom_expert_interview",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "confidential_sources",
+        "recovery_not_tested_by_digest"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Infrastructure Signals",
+      "rubric_uk": "Інфраструктурні сигнали",
+      "title_en": "Editorial archives: verify that a backup can restore the work",
+      "title_uk": "Редакційні архіви: перевірте, чи резервна копія відновлює роботу",
+      "source_date_label_en": "22 October 2026; infrastructure incidents discussed include September 2026",
+      "source_date_label_uk": "22 жовтня 2026; серед описаних інфраструктурних подій — вересень 2026",
+      "what_happened_en": "ZMINA’s original interview examines media continuity after data-centre attacks. The expert recommends testing recovery on a separate site and distinguishes stored website content from live broadcasts that may never have been recorded.",
+      "what_happened_uk": "В оригінальному інтерв’ю ZMINA йдеться про безперервність роботи медіа після атак на дата-центри. Експерт радить перевіряти відновлення на окремому майданчику та розділяє збережені матеріали сайту й трансляції, які могли не записуватися.",
+      "why_it_matters_en": "Editorial assessment: preserving a source includes preserving the ability to retrieve and interpret it later.",
+      "why_it_matters_uk": "Редакційна оцінка: зберегти джерело означає також зберегти можливість пізніше отримати й прочитати його.",
+      "how_to_use_en": "Test restoration of files, database and attachments in isolation. Record the last recoverable publication time, recovery duration and who can authorise access; protect confidential source material.",
+      "how_to_use_uk": "Перевіряйте ізольоване відновлення файлів, бази й вкладень. Фіксуйте час останньої відновлюваної публікації, тривалість відновлення та відповідального за доступ; захищайте конфіденційні джерела.",
+      "limits_en": "This is preparedness guidance, not an audit of any newsroom’s backups or proof that a particular archive was lost. September incidents are not presented as new attacks.",
+      "limits_uk": "Це поради щодо готовності, а не аудит резервів редакцій чи доказ втрати конкретного архіву. Вересневі події не подано як нові атаки."
+    },
+    {
+      "theme": "ananyev-evidence-separation",
+      "emoji": "⚖️",
+      "source_name": "Mediazona; RFE/RL / Crimea.Realities",
+      "source_url": "https://zona.media/news/2026/10/22/ananiev",
+      "tags": [
+        "ananyev-evidence-separation",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "original_newsroom_court_report_with_secondary_status_check",
+      "evidence_level": "original_newsroom_court_report_with_secondary_status_check",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "disputed_evidence",
+        "judgment_not_obtained"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Casefile",
+      "rubric_uk": "Розбір кейсу",
+      "title_en": "Ananyev case: record the defence’s evidence objections separately",
+      "title_uk": "Справа Ананьєва: окремо фіксуйте заперечення захисту щодо доказів",
+      "source_date_label_en": "22 October 2026; trial began February 2025",
+      "source_date_label_uk": "22 жовтня 2026; розгляд справи почався в лютому 2025",
+      "what_happened_en": "Mediazona reports an 18-year sentence for 77-year-old Crimean activist Volodymyr Ananyev. It records defence objections concerning an unexamined camera and absent forensic testing of a package; RFE/RL says the verdict was not yet in force.",
+      "what_happened_uk": "«Медіазона» повідомляє про 18 років ув’язнення для 77-річного кримського активіста Володимира Ананьєва. Вона передає заперечення захисту щодо неоглянутої камери й відсутніх експертиз пакета; Радіо Свобода зазначає, що вирок ще не набрав чинності.",
+      "why_it_matters_en": "Editorial assessment: an allegation, a reported examination and a defence challenge need separate entries.",
+      "why_it_matters_uk": "Редакційна оцінка: твердження обвинувачення, повідомлення про дослідження та заперечення захисту потребують окремих записів.",
+      "how_to_use_en": "Build an evidence matrix showing who claims what was seized, examined or omitted, and which original records support it. Keep charges distinct from established acts.",
+      "how_to_use_uk": "Будуйте матрицю доказів: хто стверджує про вилучення, дослідження чи пропуск і які первинні записи це підтверджують. Розділяйте обвинувачення та встановлені дії.",
+      "limits_en": "The full judgment and exhibits were not obtained independently. The defence objections remain attributed claims; procedural status is as reported on 22 October.",
+      "limits_uk": "Повного рішення й речових доказів незалежно не отримано. Заперечення захисту лишаються атрибутованими твердженнями; процесуальний статус наведено за повідомленням 22 жовтня.",
+      "supporting_sources": [
+        {
+          "name": "RFE/RL / Crimea.Realities, 22 October",
+          "url": "https://www.radiosvoboda.org/amp/news-sud-rosia-krymchanyn-vyrok/33881546.html"
+        }
+      ]
+    },
+    {
+      "theme": "icc-sakharov-announcement",
+      "emoji": "🇪🇺",
+      "source_name": "European Parliament / official audiovisual record I-296445",
+      "source_url": "https://audiovisual.ec.europa.eu/en/media/video/I-296445",
+      "tags": [
+        "icc-sakharov-announcement",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "primary_institutional_audiovisual_publication",
+      "evidence_level": "primary_institutional_audiovisual_publication",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "automatic_transcript",
+        "award_not_legal_change"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "title_en": "ICC Sakharov Prize: preserve the scope of the institutional decision",
+      "title_uk": "Премія Сахарова для МКС: збережіть межі інституційного рішення",
+      "source_date_label_en": "22 October 2026",
+      "source_date_label_uk": "22 жовтня 2026",
+      "what_happened_en": "The official record of Parliament President Roberta Metsola’s announcement names the International Criminal Court and its officials as the collective recipients of the 2026 Sakharov Prize.",
+      "what_happened_uk": "Офіційна публікація оголошення президентки Європарламенту Роберти Мецоли називає Міжнародний кримінальний суд та його посадовців колективними лауреатами премії Сахарова 2026 року.",
+      "why_it_matters_en": "Editorial assessment: institutional support for accountability is worth tracking alongside concrete court and sanctions developments.",
+      "why_it_matters_uk": "Редакційна оцінка: інституційну підтримку підзвітності варто відстежувати поряд із конкретними судовими та санкційними кроками.",
+      "how_to_use_en": "Record the awarding body, recipients, announcement date and decision type. Link changes affecting investigations or service access only to their own legal or operational records.",
+      "how_to_use_uk": "Фіксуйте орган, лауреатів, дату оголошення й вид рішення. Зміни, що впливають на слідство чи доступ до послуг, підтверджуйте окремими правовими або операційними записами.",
+      "limits_en": "The award does not itself change sanctions, jurisdiction or an individual case. The page warns that its transcript is automatic; the card uses only the clear recipient announcement.",
+      "limits_uk": "Премія сама собою не змінює санкцій, юрисдикції чи окремої справи. Сторінка попереджає про автоматичну транскрипцію; картка використовує лише однозначне оголошення лауреатів."
+    }
+  ],
+  "internal_notes": [
+    "EDITORIAL NOTES — INTERNAL",
+    "Daily 140, Friday 23 October 2026. Assembly only, not published. Main publications 22 October, Lozova update 23 October. UN event date 19 October; data monitoring snapshot 1 October, presentation 21 October; archives story concerns older September incidents.",
+    "Worked rubrics: Signal One, Losses/Captivity/Missing, War Crimes Verification, Tradecraft, Infrastructure Signals, Casefile, Ukraine Lens. Ukrainian sources adapted into English; English institutional source adapted into Ukrainian.",
+    "Repatriation: 252 is an official batch count. Ukrainian servicemember identity explicitly a Russian-side assertion; identification pending. Do not infer identities, individual deaths or death dates.",
+    "1,500 statement by Petro Yatsenko published 22 October about 19 October side event hosted by Ukraine/Poland missions at UN headquarters. Not a UN finding, ICRC estimate, full missing-person count or necessarily POW-only population. Omit age subgroups because denominators/overlap unclear.",
+    "Lozova source version chain: NPU 22 October 15:20 says 2 killed, 34 affected. Reports later mention 36, while Gwara 23 October 09:44 says third death and 34 injured plus 3 acute stress. Do not combine or subtract these numbers. Later death relies on official Telegram, not independently verified clinical evidence; explicitly provisional/attributed. NPU gives independent institutional documentation of the attack and investigation, not confirmation of the later death. No graphic imagery or victim identities.",
+    "Open data: 347 expected sets concerns ministries and State Tax Service; snapshot 1 October. 760 days is reported average age since update, not all datasets exactly 760 days old. 40 updated within 30 days; no percentage invented. Original audit not reproduced; no claim to have audited portal or watched conference video.",
+    "Archives story is a new original expert interview, distinct from Daily 137 physical data-centre destruction card. Focus on restore testing and live-stream recording, not repeating generic outage-versus-loss framing. No actual newsroom backup test performed.",
+    "Ananyev: Mediazona original court reporting read, including defence objections. RFE/RL says verdict not in force on 22 October. Do not reproduce surveillance methods, addresses, medical histories, family details or infer guilt from technical objects. Full judgment/exhibits unavailable independently.",
+    "ICC: EP press-release endpoints returned thin/challenge pages. Official EU audiovisual publication gives date, body, recipients and transcript clearly; cite this usable primary source instead. No new sanctions analysis or presumption that award lifts restrictions.",
+    "Rejected: Slidstvo Oleshky 23 October unit roster overlaps yesterday’s investigation and carries current operational details; Myla compensation feature actually 15 October, outside seven days despite new headline; Ananyev Telegram-only summary replaced by original Mediazona reporting; generic arrest/agitator tally and award applications omitted.",
+    "Weekly deep dives: repatriation-to-identification evidence chain; hidden detention and confirmation gaps; sustainable preservation of accountability archives; missing-versus-stale public data. Followups: original audit export, original Ananyev judgment/appeal, independently corroborated Lozova casualty updates.",
+    "Tool Radar 24 October reserved candidates untouched. No catalog tools featured; toolkit unchanged. No ЦПК advocacy, private-person databases, live targeting or speculative identities. Main-source URLs and themes checked against published daily and weekly archive before delivery."
+  ]
+}
