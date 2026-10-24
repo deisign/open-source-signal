@@ -1,0 +1,370 @@
+{
+  "issue_number": "141",
+  "date_iso": "2026-10-24",
+  "date_label_en": "24 October 2026",
+  "date_label_uk": "24 жовтня 2026",
+  "slug": "open-source-signal",
+  "title_en": "Open Source Signal",
+  "title_uk": "Сигнал відкритих джерел",
+  "issue_type": "Saturday Tool Radar",
+  "language_label": "EN + UKR",
+  "subtitle_en": "Seven reserved tools for finding, collecting, monitoring and organising investigative material.",
+  "subtitle_uk": "Сім відкладених інструментів для пошуку, збирання, моніторингу й організації матеріалів розслідувань.",
+  "dek_en": "From the GitRadar reserve: Hister searches a chosen collection; Crawl4AI extracts pages; Maxun records collection workflows; Scoutpost organises monitoring leads; OpenFOIA links documents to findings; OpenRegistry provides a route to company filings; Datakit structures repeatable projects. Reviewed against original repositories on 24 October. These are documented capabilities, not seven new releases or seven installation tests.",
+  "dek_uk": "Із резерву GitRadar: Hister шукає у вибраній колекції; Crawl4AI витягує сторінки; Maxun записує сценарії збирання; Scoutpost організує сигнали моніторингу; OpenFOIA пов’язує документи з висновками; OpenRegistry дає доступ до корпоративних документів; Datakit структурує повторювані проєкти. Звірено з оригінальними репозиторіями 24 жовтня. Це задокументовані можливості, а не сім нових релізів чи сім тестових установлень.",
+  "editorial_frame": {
+    "what_this_is": "A bilingual Saturday issue assembled from the previously reserved GitRadar candidates. Original repository snapshots and documentation reviewed on 24 October 2026. Practical workflows are editorial proposals. Established projects may fall outside the daily news window.",
+    "what_this_is_not": "An installation benchmark, independent security audit, guarantee of service coverage or assertion that extracted data and AI-generated findings are verified evidence."
+  },
+  "rubric_map": [
+    "🔍 Toolbox / Інструментарій",
+    "🕸️ Toolbox / Інструментарій",
+    "🎛️ Tool Radar / Інструментальний радар",
+    "📡 Platform Watch / Платформний радар",
+    "📄 Tradecraft / Методика",
+    "🏢 Ukraine Lens / Українська оптика",
+    "🗂️ Tradecraft / Методика"
+  ],
+  "footer_note": "Prepared for Open Source Signal / Сигнал відкритих джерел.",
+  "items": [
+    {
+      "theme": "hister-research-collection",
+      "emoji": "🔍",
+      "source_name": "Hister project / README and privacy documentation",
+      "source_url": "https://github.com/asciimoo/hister",
+      "tags": [
+        "hister-research-collection",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "primary_repository_and_project_documentation",
+      "evidence_level": "primary_repository_and_project_documentation",
+      "verification_status": "documentation_and_repository_metadata_review_only",
+      "risk_flags": [
+        "local_sensitive_collection",
+        "optional_remote_embeddings"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Toolbox",
+      "rubric_uk": "Інструментарій",
+      "title_en": "Hister: search the content you chose to keep",
+      "title_uk": "Hister: шукайте у вмісті, який вирішили зберегти",
+      "source_date_label_en": "Reviewed 24 October 2026; repository snapshot, not a release announcement",
+      "source_date_label_uk": "Перевірено 24 жовтня 2026; знімок репозиторію, не анонс релізу",
+      "what_happened_en": "Hister documents full-text search across selected web pages and local files, with browser-extension ingestion and web, terminal, API and MCP access. Semantic search is optional.",
+      "what_happened_uk": "Hister документує повнотекстовий пошук у вибраних вебсторінках і локальних файлах, збирання через браузерне розширення та доступ через веб, термінал, API й MCP. Семантичний пошук — опція.",
+      "why_it_matters_en": "Editorial use: recover a source by a remembered phrase and keep a deliberately scoped research collection.",
+      "why_it_matters_uk": "Редакційне застосування: знаходити джерело за фразою, що запам’яталася, і вести свідомо обмежену дослідницьку колекцію.",
+      "how_to_use_en": "Pilot with public pages and non-sensitive files. Compare extension capture with a history import: the latter fetches the current page, not its historical contents. Retain originals separately.",
+      "how_to_use_uk": "Почніть із публічних сторінок і нечутливих файлів. Порівняйте захоплення розширенням з імпортом історії: останній завантажує нинішню сторінку, а не її давній вміст. Оригінали зберігайте окремо.",
+      "limits_en": "Documentation review only. Hister does not encrypt its stored index; optional remote embeddings receive document text. Set exclusions and access controls before indexing a working browser.",
+      "limits_uk": "Лише перевірка документації. Hister не шифрує збережений індекс; віддалений сервіс ембедингів отримує текст документів. Перед індексуванням робочого браузера налаштуйте винятки й контроль доступу.",
+      "supporting_sources": [
+        {
+          "name": "Hister privacy and browser-ingestion distinction",
+          "url": "https://hister.org/docs/intro"
+        }
+      ],
+      "repository_snapshot": {
+        "repo": "asciimoo/hister",
+        "sha": "5f04dd9352cdeefdc9602f0dba14045aad710a11",
+        "branch": "master",
+        "readme_path": "README.md",
+        "pushed_at": "2026-10-23T17:47:29Z",
+        "archived": false,
+        "license": "AGPL-3.0",
+        "reviewed_at": "2026-10-24",
+        "readme_permalink": "https://github.com/asciimoo/hister/blob/5f04dd9352cdeefdc9602f0dba14045aad710a11/README.md"
+      }
+    },
+    {
+      "theme": "crawl4ai-controlled-extraction",
+      "emoji": "🕸️",
+      "source_name": "Crawl4AI project / README",
+      "source_url": "https://github.com/unclecode/crawl4ai",
+      "tags": [
+        "crawl4ai-controlled-extraction",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "primary_repository_documentation",
+      "evidence_level": "primary_repository_documentation",
+      "verification_status": "documentation_and_repository_metadata_review_only",
+      "risk_flags": [
+        "extraction_loss",
+        "optional_external_model"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Toolbox",
+      "rubric_uk": "Інструментарій",
+      "title_en": "Crawl4AI: define the extraction before feeding the model",
+      "title_uk": "Crawl4AI: визначте правила витягання перед переданням моделі",
+      "source_date_label_en": "Reviewed 24 October 2026; README lists v0.9.5 dated 14 October",
+      "source_date_label_uk": "Перевірено 24 жовтня 2026; README зазначає v0.9.5 від 14 жовтня",
+      "what_happened_en": "The project documents browser-based collection to Markdown and structured extraction using CSS, XPath or regex without an LLM, alongside optional model-based extraction. It distinguishes the local library, a self-hosted server and its hosted service.",
+      "what_happened_uk": "Проєкт документує браузерне збирання в Markdown і структуроване витягання через CSS, XPath або regex без LLM, а також опціональне модельне витягання. Розрізняються локальна бібліотека, власний сервер і розміщений сервіс.",
+      "why_it_matters_en": "Editorial use: turn a small, known set of public pages into a consistent collection with checkable fields.",
+      "why_it_matters_uk": "Редакційне застосування: перетворити невеликий відомий набір публічних сторінок на послідовну колекцію з перевірюваними полями.",
+      "how_to_use_en": "Start with a fixed URL list and deterministic fields. Preserve source URL, capture time and original page; compare extracted tables and dates against the originals. Log failed pages explicitly.",
+      "how_to_use_uk": "Почніть із фіксованого списку URL і детермінованих полів. Зберігайте адресу, час захоплення й оригінальну сторінку; звіряйте таблиці та дати. Явно обліковуйте невдалі завантаження.",
+      "limits_en": "Not run here. Markdown can omit context; selectors can break. Local and hosted capabilities differ, and configured external model providers receive supplied text. A successful crawl does not authenticate a claim.",
+      "limits_uk": "Тут не запускали. Markdown може втратити контекст, селектори — зламатися. Локальний і розміщений варіанти відрізняються; зовнішні моделі отримують переданий текст. Успішне завантаження не засвідчує правдивості твердження.",
+      "repository_snapshot": {
+        "repo": "unclecode/crawl4ai",
+        "sha": "30165f1ee1fb61f6cce1477feed2acc5e2181e25",
+        "branch": "main",
+        "readme_path": "README.md",
+        "pushed_at": "2026-10-22T19:03:10Z",
+        "archived": false,
+        "license": "Apache-2.0",
+        "reviewed_at": "2026-10-24",
+        "readme_permalink": "https://github.com/unclecode/crawl4ai/blob/30165f1ee1fb61f6cce1477feed2acc5e2181e25/README.md"
+      }
+    },
+    {
+      "theme": "maxun-recorded-collection",
+      "emoji": "🎛️",
+      "source_name": "Maxun project / README and installation documentation",
+      "source_url": "https://github.com/getmaxun/maxun",
+      "tags": [
+        "maxun-recorded-collection",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "primary_repository_and_installation_documentation",
+      "evidence_level": "primary_repository_and_installation_documentation",
+      "verification_status": "documentation_and_repository_metadata_review_only",
+      "risk_flags": [
+        "browser_session_privacy",
+        "deployment_feature_variation"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Tool Radar",
+      "rubric_uk": "Інструментальний радар",
+      "title_en": "Maxun: record a repeatable collection workflow",
+      "title_uk": "Maxun: запишіть повторюваний сценарій збирання",
+      "source_date_label_en": "Reviewed 24 October 2026; default develop-branch snapshot",
+      "source_date_label_uk": "Перевірено 24 жовтня 2026; знімок типової гілки develop",
+      "what_happened_en": "Maxun documents a recorder that turns browser actions into extraction robots, plus scraping, crawling and change monitoring. Its installation guide provides a Docker Compose route for running the application yourself.",
+      "what_happened_uk": "Maxun документує записувач браузерних дій, який створює сценарії витягання, а також збирання сторінок, обхід сайтів і моніторинг змін. Інструкція містить варіант самостійного розгортання через Docker Compose.",
+      "why_it_matters_en": "Editorial use: make a recurring public-table collection inspectable by someone who did not write a scraper.",
+      "why_it_matters_uk": "Редакційне застосування: зробити регулярне збирання публічної таблиці зрозумілим колезі, який не писав скрейпер.",
+      "how_to_use_en": "Record a short flow on a permitted public source. Compare two runs, preserve raw outputs and review missing rows. Use the deployment’s documented secret configuration and restrict access to the recorder.",
+      "how_to_use_uk": "Запишіть короткий сценарій для дозволеного публічного джерела. Порівняйте два запуски, збережіть сирі результати й перевірте пропущені рядки. Налаштуйте секрети за інструкцією та обмежте доступ до записувача.",
+      "limits_en": "Not installed or benchmarked. Layout changes and session state may change results. Check feature availability for the chosen deployment; an open-source licence does not make hosting or external AI services cost-free.",
+      "limits_uk": "Не встановлювали й не вимірювали. Зміни верстки та стан сесії можуть змінити результат. Перевіряйте доступність функцій у вибраному розгортанні; відкрита ліцензія не робить хостинг чи зовнішній ШІ безкоштовними.",
+      "supporting_sources": [
+        {
+          "name": "Maxun Docker Compose setup",
+          "url": "https://docs.maxun.dev/installation/docker"
+        }
+      ],
+      "repository_snapshot": {
+        "repo": "getmaxun/maxun",
+        "sha": "9634a0cd2fe17140f4a870cd6520273e73cbff57",
+        "branch": "develop",
+        "readme_path": "README.md",
+        "pushed_at": "2026-10-24T14:01:34Z",
+        "archived": false,
+        "license": "AGPL-3.0",
+        "reviewed_at": "2026-10-24",
+        "readme_permalink": "https://github.com/getmaxun/maxun/blob/9634a0cd2fe17140f4a870cd6520273e73cbff57/README.md"
+      }
+    },
+    {
+      "theme": "scoutpost-editorial-leads",
+      "emoji": "📡",
+      "source_name": "Buried Signals / Scoutpost OS README",
+      "source_url": "https://github.com/buriedsignals/scoutpost-os",
+      "tags": [
+        "scoutpost-editorial-leads",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "primary_repository_documentation",
+      "evidence_level": "primary_repository_documentation",
+      "verification_status": "documentation_and_repository_metadata_review_only",
+      "risk_flags": [
+        "external_ai_processing",
+        "alerts_are_leads"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Platform Watch",
+      "rubric_uk": "Платформний радар",
+      "title_en": "Scoutpost OS: route scheduled monitoring into a review inbox",
+      "title_uk": "Scoutpost OS: спрямовуйте регулярний моніторинг у чергу перевірки",
+      "source_date_label_en": "Reviewed 24 October 2026; repository documentation snapshot",
+      "source_date_label_uk": "Перевірено 24 жовтня 2026; знімок документації репозиторію",
+      "what_happened_en": "Scoutpost documents scheduled page, beat and civic monitoring that produces source-linked, deduplicated leads. Page archiving is optional and can combine MHTML, screenshots and timestamping. The README explicitly keeps human verification in the loop.",
+      "what_happened_uk": "Scoutpost документує регулярне відстеження сторінок, тем і місцевих публічних документів із формуванням прив’язаних до джерел, дедуплікованих сигналів. Архівування сторінок опціональне: MHTML, знімок екрана й часове засвідчення. Передбачено перевірку людиною.",
+      "why_it_matters_en": "Editorial use: separate collection, deduplication, verification and publication instead of treating an alert as a finished story.",
+      "why_it_matters_uk": "Редакційне застосування: розвести збирання, дедуплікацію, верифікацію та публікацію, зберігаючи сигнал проміжним результатом.",
+      "how_to_use_en": "Pilot a public council page. Specify the change worth reviewing, inspect merged duplicates, enable archiving deliberately and check whether snapshot URLs remain retrievable.",
+      "how_to_use_uk": "Почніть із публічної сторінки місцевої ради. Визначте суттєву зміну, перевірте злиті дублікати, свідомо ввімкніть архівування та перевірте доступність знімків.",
+      "limits_en": "Not deployed here. The documented stack uses external model and extraction services; self-hosting does not imply offline processing. A tamper-evident snapshot supports preservation, not the truth of its contents.",
+      "limits_uk": "Тут не розгортали. Описаний стек використовує зовнішні модельні сервіси й сервіси витягання; власне розгортання не означає автономної обробки. Захист знімка від непомітних змін стосується збереження, а не правдивості вмісту.",
+      "repository_snapshot": {
+        "repo": "buriedsignals/scoutpost-os",
+        "sha": "c38bf7cad0fbf6570412465cbdfd346b0b073dd7",
+        "branch": "master",
+        "readme_path": "README.md",
+        "pushed_at": "2026-10-23T11:20:16Z",
+        "archived": false,
+        "license": "AGPL-3.0",
+        "reviewed_at": "2026-10-24",
+        "readme_permalink": "https://github.com/buriedsignals/scoutpost-os/blob/c38bf7cad0fbf6570412465cbdfd346b0b073dd7/README.md"
+      }
+    },
+    {
+      "theme": "openfoia-cited-document-work",
+      "emoji": "📄",
+      "source_name": "OpenFOIA project / README",
+      "source_url": "https://github.com/JordanCoin/openfoia",
+      "tags": [
+        "openfoia-cited-document-work",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "primary_repository_documentation",
+      "evidence_level": "primary_repository_documentation",
+      "verification_status": "documentation_and_repository_metadata_review_only",
+      "risk_flags": [
+        "ai_entity_errors",
+        "external_integrations",
+        "jurisdiction_limits"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "title_en": "OpenFOIA: connect each finding to a document and page",
+      "title_uk": "OpenFOIA: прив’язуйте кожен висновок до документа й сторінки",
+      "source_date_label_en": "Reviewed 24 October 2026; documentation review",
+      "source_date_label_uk": "Перевірено 24 жовтня 2026; огляд документації",
+      "what_happened_en": "OpenFOIA documents local document ingestion, entity extraction and case findings with document/page citations. Its workflow distinguishes sourced statements, inference and speculation; records-search and request-tracking features focus on US public-records systems.",
+      "what_happened_uk": "OpenFOIA документує локальне приймання документів, витягання сутностей і висновки зі вказанням документа та сторінки. Сценарій розрізняє твердження джерела, умовивід і припущення; пошук записів та облік запитів орієнтовані на систему США.",
+      "why_it_matters_en": "Editorial use: keep the interpretive step visible when moving from a document collection to a case narrative.",
+      "why_it_matters_uk": "Редакційне застосування: зробити видимим крок інтерпретації між колекцією документів і викладом справи.",
+      "how_to_use_en": "Try non-sensitive public documents with a local extraction backend. Check every citation and entity merge. Review destinations before enabling an AI assistant, external search or request delivery.",
+      "how_to_use_uk": "Спробуйте нечутливі публічні документи з локальним витяганням. Перевірте кожне посилання та злиття сутностей. Перед увімкненням ШІ-асистента, зовнішнього пошуку чи надсилання запитів перевірте одержувачів даних.",
+      "limits_en": "Not run or security-audited. External integrations can transmit data; AI graphs can invent links. US request clocks are not Ukrainian legal deadlines. Encryption and secure-deletion claims were not independently tested.",
+      "limits_uk": "Не запускали й не проводили аудит безпеки. Зовнішні інтеграції можуть передавати дані; ШІ-графи — вигадувати зв’язки. Строки запитів США не є українськими правовими строками. Шифрування й заяви про безпечне видалення незалежно не перевіряли.",
+      "repository_snapshot": {
+        "repo": "JordanCoin/openfoia",
+        "sha": "2da00f75b85ad7e39537d17bce946b036dda7dd4",
+        "branch": "main",
+        "readme_path": "README.md",
+        "pushed_at": "2026-10-23T18:02:09Z",
+        "archived": false,
+        "license": "NOASSERTION",
+        "reviewed_at": "2026-10-24",
+        "readme_permalink": "https://github.com/JordanCoin/openfoia/blob/2da00f75b85ad7e39537d17bce946b036dda7dd4/README.md"
+      }
+    },
+    {
+      "theme": "openregistry-source-filings",
+      "emoji": "🏢",
+      "source_name": "Sophymarine / OpenRegistry README",
+      "source_url": "https://github.com/sophymarine/openregistry",
+      "tags": [
+        "openregistry-source-filings",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "primary_hosted_service_repository_documentation",
+      "evidence_level": "primary_hosted_service_repository_documentation",
+      "verification_status": "documentation_and_repository_metadata_review_only",
+      "risk_flags": [
+        "third_party_query_disclosure",
+        "upstream_data_terms",
+        "no_guilt_by_association"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "title_en": "OpenRegistry: follow company records back to the registry",
+      "title_uk": "OpenRegistry: повертайтеся від корпоративних записів до реєстру",
+      "source_date_label_en": "Reviewed 24 October 2026; hosted-service documentation",
+      "source_date_label_uk": "Перевірено 24 жовтня 2026; документація розміщеного сервісу",
+      "what_happened_en": "OpenRegistry presents a hosted MCP/API interface to company registries, including company search and filing retrieval. Its examples distinguish UK persons with significant control from shareholders recorded in filings.",
+      "what_happened_uk": "OpenRegistry пропонує розміщений MCP/API-інтерфейс до реєстрів компаній, зокрема пошук і отримання документів. Приклади розрізняють британських осіб зі значним контролем та акціонерів, зазначених у документах.",
+      "why_it_matters_en": "Editorial use: investigate a documented corporate chain relevant to accountability while preserving jurisdiction and source identifiers.",
+      "why_it_matters_uk": "Редакційне застосування: досліджувати документовану корпоративну структуру, важливу для підзвітності, зберігаючи юрисдикцію та ідентифікатори джерела.",
+      "how_to_use_en": "Start with a known public company. Compare returned fields and filing bytes with the official portal; preserve retrieval time and document date. Distinguish ownership, control and officer roles.",
+      "how_to_use_uk": "Почніть із відомої публічної компанії. Звірте поля й отриманий документ з офіційним порталом; збережіть час отримання та дату документа. Розділяйте власність, контроль і посадові ролі.",
+      "limits_en": "No live query or coverage test was performed. This is a third-party hosted route, with access tiers and upstream data restrictions. Registry entries and AI chain summaries do not by themselves establish wrongdoing.",
+      "limits_uk": "Живих запитів і тесту покриття не проводили. Це сторонній розміщений сервіс із рівнями доступу й обмеженнями первинних даних. Реєстрові записи та ШІ-підсумки структури самі собою не доводять правопорушення.",
+      "repository_snapshot": {
+        "repo": "sophymarine/openregistry",
+        "sha": "0c2d3f853f1b207d94cb4c74efa07a2157a11420",
+        "branch": "main",
+        "readme_path": "README.md",
+        "pushed_at": "2026-10-16T12:41:10Z",
+        "archived": false,
+        "license": "Apache-2.0",
+        "reviewed_at": "2026-10-24",
+        "readme_permalink": "https://github.com/sophymarine/openregistry/blob/0c2d3f853f1b207d94cb4c74efa07a2157a11420/README.md"
+      }
+    },
+    {
+      "theme": "datakit-reproducible-projects",
+      "emoji": "🗂️",
+      "source_name": "Associated Press / Datakit Core README",
+      "source_url": "https://github.com/associatedpress/datakit-core",
+      "tags": [
+        "datakit-reproducible-projects",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "primary_repository_documentation",
+      "evidence_level": "primary_repository_documentation",
+      "verification_status": "documentation_and_repository_metadata_review_only",
+      "risk_flags": [
+        "plugin_dependencies",
+        "older_external_docs"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "title_en": "Datakit Core: give recurring analysis a project structure",
+      "title_uk": "Datakit Core: надайте регулярному аналізу структуру проєкту",
+      "source_date_label_en": "Reviewed 24 October 2026; established project, latest repository push 30 July",
+      "source_date_label_uk": "Перевірено 24 жовтня 2026; усталений проєкт, останній push репозиторію — 30 липня",
+      "what_happened_en": "Datakit Core is AP’s pluggable command-line framework for data-project workflows. Project scaffolding and data operations come through separately installed plugins; the current README describes common configuration and verification commands.",
+      "what_happened_uk": "Datakit Core — модульний CLI-фреймворк Associated Press для роботи з проєктами даних. Створення структури й операції з даними забезпечують окремі плагіни; актуальний README описує спільні команди налаштування та перевірки конфігурації.",
+      "why_it_matters_en": "Editorial use: give repeated casualty, procurement or document analysis the same visible starting structure.",
+      "why_it_matters_uk": "Редакційне застосування: забезпечити однакову видиму вихідну структуру для регулярного аналізу втрат, закупівель чи документів.",
+      "how_to_use_en": "Pilot a template on demonstration data. Pin core and plugin versions, record input sources and separate raw material from transformations. Confirm that a colleague can reproduce the output.",
+      "how_to_use_uk": "Перевірте шаблон на демонстраційних даних. Зафіксуйте версії ядра й плагінів, джерела входів; розділіть сирі матеріали та перетворення. Перевірте відтворення результату колегою.",
+      "limits_en": "Not installed here. Core alone does not supply the complete workflow or validate an analysis. The linked Read the Docs site shows older 0.3.1 material; prefer the reviewed repository README for current setup.",
+      "limits_uk": "Тут не встановлювали. Саме ядро не забезпечує повного сценарію й не перевіряє аналіз. Пов’язаний сайт Read the Docs показує старі матеріали 0.3.1; актуальне налаштування звіряйте з перевіреним README репозиторію.",
+      "repository_snapshot": {
+        "repo": "associatedpress/datakit-core",
+        "sha": "d0bd898a2548f42c113140af8eed851f8138904b",
+        "branch": "main",
+        "readme_path": "README.rst",
+        "pushed_at": "2026-07-30T18:54:01Z",
+        "archived": false,
+        "license": "ISC",
+        "reviewed_at": "2026-10-24",
+        "readme_permalink": "https://github.com/associatedpress/datakit-core/blob/d0bd898a2548f42c113140af8eed851f8138904b/README.rst"
+      }
+    }
+  ],
+  "internal_notes": [
+    "EDITORIAL NOTES — INTERNAL",
+    "Saturday Tool Radar 141, 24 October 2026. Draft only; publication awaits separate instruction. Seven of eight previously reserved GitRadar candidates selected. Flowsint remains reserved for a graph/investigation-workspace edition.",
+    "All eight candidate repository strings searched against every published daily and weekly JSON: no matches. Seven selected projects checked at current default-branch commit SHA; README bytes and metadata saved in radar141-sources. Per-card repository_snapshot stores immutable README link. Source dates are review dates, not release dates.",
+    "Worked rubrics: Toolbox, Tool Radar, Platform Watch, Tradecraft, Ukraine Lens. Coherent sequence: research memory, deterministic extraction, recorded collection, monitored leads, cited document findings, registry records, reproducible project structure.",
+    "No project installed, no service queried, no private browser history imported, no requests sent, no third-party MCP connected and no security audit performed. Website rendering/tests do not validate tool runtime capabilities. Avoid any such claim.",
+    "Hister: no mandatory cloud or telemetry per project; index not encrypted by Hister. Embedding endpoint may receive texts. Browser extension captures rendered pages; history imports fetch current URLs. Avoid obsolete getting-started Go1.16/import command examples surfaced in search.",
+    "Crawl4AI: README lists0.9.5 released14October. Not a new-release story. Local library/selfhost/Cloud separated; CSS/XPath/regex optional non-LLM path. No hosted credit/pricing promises, bypass instructions or guarantee that any website can be collected.",
+    "Maxun: current default branch develop, SHA pinned; no claim to have tested a stable release. Review feature parity for selected deployment. Selfhosting has dependencies and secret configuration; recorder can hold sensitive sessions.",
+    "Scoutpost: public civic/Page/Beat focus only. Exclude live Fleet and personal Social monitoring workflows. Snapshot optional, human verification required. README describes external AI/extraction and database infrastructure; do not equate selfhost with offline/local-only. A timestamp does not prove content true.",
+    "OpenFOIA: README contains sweeping local-only, portable, purge and legal claims; these are not independently endorsed. Optional external AI/assistant/search/request delivery alters data exposure. US request clocks not Ukraine legal advice. No wipe commands, surveillance or identity-matching workflow reproduced.",
+    "OpenRegistry: hosted third-party interface, not claimed to be an official government service or a complete selfhosted registry stack. README/API examples and About disagree on coverage counts (80+/90+); omit exact coverage. Free/paid tiers exist; avoid quotas and pricing promises. PSC, shareholder and officer roles differ; protect unnecessary personal data.",
+    "Datakit: deliberate established-project exception to7day daily-news window; latest repo pushed30July2026. Current README uses plugin discovery/sharedconfiguration, external docs still0.3.1. Core is thinframework, not end-to-end reproducibility guarantee.",
+    "Strongest sources: original README at pinnedSHA, Hister privacy/ingestion docs, Maxun installation docs. Weak sources: search snippets with older releases, star-count ranking, mirrored documentation. No popularity-based quality claims.",
+    "Weekly deep dive: a collection is not an evidence archive; data-flow map for local versus hosted/AI tools; reliability of extraction and deduplication; source-linked corporate records. Followups: controlled public-data pilot for first four, OpenRegistry known-company comparison, Datakit plugin/template pilot.",
+    "Toolkit: re-check selected tools against current catalog on publication and add any genuinely missing published tools with accurate publication references; do not mark draft as published. No toolkit mutation during assembly."
+  ]
+}
