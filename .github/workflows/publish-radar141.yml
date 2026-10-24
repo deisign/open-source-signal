@@ -1,0 +1,173 @@
+name: Publish Tool Radar 141 Telegram announcement
+
+on:
+  push:
+    paths: [".github/workflows/publish-radar141.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Update toolkit from published Tool Radar
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          import yaml
+          p=Path('data/osint_tools.yaml')
+          tools=yaml.safe_load(p.read_text())
+          issue=json.loads(Path('issues/2026-10-24.json').read_text())
+          names=['Hister','Crawl4AI','Maxun','Scoutpost OS','OpenFOIA','OpenRegistry','Datakit Core']
+          ids=['hister','crawl4ai','maxun','scoutpost_os','openfoia','openregistry','datakit_core']
+          cats=['data_analysis_monitoring','data_analysis_monitoring','data_analysis_monitoring','news_media_monitoring','workflow_methods','data_analysis_monitoring','workflow_methods']
+          added=0
+          for n,(item,name,tid,cat) in enumerate(zip(issue['items'],names,ids,cats)):
+           ref={'issue':'2026-10-24.json','item_index':n,'href':'issues/open-source-signal-2026-10-24.html'}
+           existing=next((t for t in tools if t['url'].rstrip('/').lower()==item['source_url'].rstrip('/').lower()),None)
+           if existing is None:
+            assert not any(t['id']==tid for t in tools),tid
+            existing={'id':tid,'name':name,'url':item['source_url'],'category':cat,
+             'use_cases':[item['title_en']],'use_cases_uk':[item['title_uk']],
+             'input':'See the linked review for the selected workflow and supported inputs.',
+             'output':'See the linked review for documented outputs and limitations.',
+             'input_uk':['Підтримувані входи та вибраний сценарій описано в пов’язаному огляді.'],
+             'output_uk':['Задокументовані результати й обмеження описано в пов’язаному огляді.'],
+             'access':'mixed','requires_login':False,'api_available':False,'access_details_verified':False,
+             'opsec_level':'medium','legal_risk':'medium','evidence_value':'medium','automation_value':'medium',
+             'learning_cost':'medium','tested_status':'situational','public':True,
+             'project_fit':'Reviewed for public-interest collection, monitoring or reproducible research.',
+             'notes':item['limits_en']+' Repository documentation reviewed 24 October 2026; runtime and access conditions not re-tested.',
+             'notes_uk':item['limits_uk']+' Документацію перевірено 24 жовтня 2026; роботу й умови доступу не тестували.',
+             'archive_review':True,'publication_refs':[],'mention_refs':[],
+             'review_summary_en':item['what_happened_en'],'review_summary_uk':item['what_happened_uk'],
+             'review_workflow_en':item['how_to_use_en'],'review_workflow_uk':item['how_to_use_uk']}
+            tools.append(existing);added+=1
+           existing.setdefault('publication_refs',[])
+           if ref not in existing['publication_refs']:existing['publication_refs'].append(ref)
+           existing['coverage_status']='reviewed';existing['coverage_checked_at']='2026-10-24'
+          p.write_text(yaml.safe_dump(tools,allow_unicode=True,sort_keys=False,width=100))
+          print('Toolkit entries added:',added,'; total:',len(tools))
+          PY
+
+      - name: Run tests
+        run: python -m pytest -q
+
+      - name: Build static site
+        run: python build_site.py --issues issues --templates templates --out dist --config site.json
+
+      - name: Render Telegram announcement
+        id: render
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          ISSUE_PATH="issues/2026-10-24.json"
+
+          if [ ! -f "$ISSUE_PATH" ]; then
+            echo "Issue JSON not found: $ISSUE_PATH" >&2
+            exit 1
+          fi
+
+          ISSUE_URL="https://osintsignal.org/issues/open-source-signal-2026-10-24.html"
+
+          if [ -z "$ISSUE_URL" ]; then
+            ISSUE_URL=$(python - "$ISSUE_PATH" <<'PY'
+          import json
+          import sys
+          from pathlib import Path
+          from render_issue import load_issue, output_filename
+
+          issue_path = Path(sys.argv[1])
+          issue = load_issue(issue_path)
+
+          config_path = Path("site.json")
+          config = json.loads(config_path.read_text(encoding="utf-8")) if config_path.exists() else {}
+
+          base_url = str(config.get("base_url") or "https://osintsignal.org").rstrip("/")
+          print(f"{base_url}/issues/{output_filename(issue)}")
+          PY
+          )
+          fi
+
+          TEXT_FILE=$(python telegram_digest.py "$ISSUE_PATH" \
+            --lang "uk" \
+            --url "$ISSUE_URL" \
+            --out dist \
+            --max-items "7")
+
+          python -c 'import sys; from pathlib import Path; p=Path(sys.argv[1]); p.write_text(p.read_text().replace("Daily Signal #141","Saturday Tool Radar #141"))' "$TEXT_FILE"
+
+          echo "text_file=$TEXT_FILE" >> "$GITHUB_OUTPUT"
+          echo "issue_url=$ISSUE_URL" >> "$GITHUB_OUTPUT"
+
+          echo "Rendered $TEXT_FILE"
+          cat "$TEXT_FILE"
+
+      - name: Check duplicate Telegram announcement
+        id: duplicate
+        run: |
+          python telegram_sent_log.py check \
+            --sent-log data/telegram_sent.json \
+            --issue "2026-10-24.json" \
+            --lang "uk" \
+            --force "false"
+
+      - name: Send Telegram announcement
+        if: steps.duplicate.outputs.should_send == 'true'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python send_telegram.py \
+            --text-file "${{ steps.render.outputs.text_file }}" \
+            --disable-preview
+
+      - name: Record Telegram send
+        if: steps.duplicate.outputs.should_send == 'true'
+        run: |
+          python telegram_sent_log.py record \
+            --sent-log data/telegram_sent.json \
+            --issue "2026-10-24.json" \
+            --lang "uk" \
+            --issue-url "${{ steps.render.outputs.issue_url }}" \
+            --text-file "${{ steps.render.outputs.text_file }}" \
+            --run-id "${{ github.run_id }}" \
+            --run-url "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+
+      - name: Commit Telegram sent log
+        if: steps.duplicate.outputs.should_send == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add data/telegram_sent.json data/osint_tools.yaml
+
+          if git diff --cached --quiet; then
+            echo "No sent-log changes to commit."
+          else
+            git commit -m "Record Telegram announcement for 2026-10-24.json (uk)"
+            git push
+          fi
+
+      - name: Skip duplicate notice
+        if: steps.duplicate.outputs.should_send != 'true'
+        run: |
+          echo "Telegram announcement was already sent. Nothing posted. Use force=true to resend."
