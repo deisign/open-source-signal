@@ -750,6 +750,7 @@ footer .trust-links a:hover {
           <section class="lang-panel en">
             <h2>{{ item['title_en'] }}</h2>
             <p class="source-line"><strong>Source:</strong> <a href="{{ item['source_url'] }}" target="_blank" rel="noopener noreferrer">{{ item['source_name'] }}</a> · {{ item['source_date_label_en'] }}</p>
+            {% if item.get("supporting_sources") %}<p class="source-line"><strong>Supporting sources:</strong> {% for source in item["supporting_sources"] %}<a href="{{ source['url'] }}" target="_blank" rel="noopener noreferrer">{{ source['name'] }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p>{% endif %}
             <div class="field"><h3>What happened</h3><p>{{ item['what_happened_en'] }}</p></div>
             <div class="field"><h3>Why it matters</h3><p>{{ item['why_it_matters_en'] }}</p></div>
             <div class="field use"><h3>How to use it</h3><p>{{ item['how_to_use_en'] }}</p></div>
@@ -759,6 +760,7 @@ footer .trust-links a:hover {
           <section class="lang-panel uk">
             <h2>{{ item['title_uk'] }}</h2>
             <p class="source-line"><strong>Джерело:</strong> <a href="{{ item['source_url'] }}" target="_blank" rel="noopener noreferrer">{{ item['source_name'] }}</a> · {{ item['source_date_label_uk'] }}</p>
+            {% if item.get("supporting_sources") %}<p class="source-line"><strong>Додаткові джерела:</strong> {% for source in item["supporting_sources"] %}<a href="{{ source['url'] }}" target="_blank" rel="noopener noreferrer">{{ source['name'] }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p>{% endif %}
             <div class="field"><h3>Що сталося</h3><p>{{ item['what_happened_uk'] }}</p></div>
             <div class="field"><h3>Чому це важливо</h3><p>{{ item['why_it_matters_uk'] }}</p></div>
             <div class="field use"><h3>Як це застосувати</h3><p>{{ item['how_to_use_uk'] }}</p></div>
