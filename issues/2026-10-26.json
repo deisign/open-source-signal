@@ -1,0 +1,303 @@
+{
+  "issue_number": "142",
+  "date_iso": "2026-10-26",
+  "date_label_en": "26 October 2026",
+  "date_label_uk": "26 жовтня 2026",
+  "slug": "open-source-signal",
+  "title_en": "Open Source Signal",
+  "title_uk": "Сигнал відкритих джерел",
+  "issue_type": "Daily Signal",
+  "language_label": "EN + UKR",
+  "subtitle_en": "Hybrid-incident mapping, POW accountability, sanctions records and civilian infrastructure.",
+  "subtitle_uk": "Карта гібридних інцидентів, відповідальність за поводження з полоненими, санкційні записи й цивільна інфраструктура.",
+  "dek_en": "Seven cards examine a European hybrid-incident map, a new suspicion concerning a Russian judge, the dates behind a POW visit, sanctions documents, a corrected Kherson casualty report, transport under attack and the limits of occupation propaganda as evidence.",
+  "dek_uk": "Сім карток: європейська карта гібридних інцидентів, нова підозра російському судді, дати візиту до полонених, санкційні документи, уточнення втрат у Херсоні, транспорт під атаками та межі окупаційної пропаганди як джерела.",
+  "editorial_frame": {
+    "what_this_is": "A bilingual Monday issue for 26 October 2026. Main publications dated 23–25 October; an occupation-source item of 20 October and a Vatican report of 2 October are explicitly dated context for 25 October coverage. Practical workflows are editorial analysis.",
+    "what_this_is_not": "A complete incident register, independent authentication of each allegation, a finding of individual guilt or an assessment of the safety of current transport routes."
+  },
+  "rubric_map": [
+    "📡 Signal One / Головний сигнал",
+    "⚖️ War Crimes Verification / Верифікація воєнних злочинів",
+    "🕊️ Losses, Captivity & Missing / Втрати, полон, зниклі",
+    "🔎 Tradecraft / Методика",
+    "🧾 Casefile / Розбір кейсу",
+    "🚎 Infrastructure Signals / Інфраструктурні сигнали",
+    "🛡️ Investigator OPSEC / Безпека дослідника"
+  ],
+  "footer_note": "Prepared for Open Source Signal / Сигнал відкритих джерел.",
+  "items": [
+    {
+      "theme": "hybrid-map-attribution",
+      "emoji": "📡",
+      "source_name": "BR / EBU News Spotlight",
+      "source_url": "https://www.br.de/nachrichten/deutschland-welt/interaktive-karte-hier-gab-es-hybride-angriffe-in-europa,VYmMcaI",
+      "tags": [
+        "hybrid-map-attribution",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "primary_collaborative_newsroom_methodology",
+      "evidence_level": "primary_collaborative_newsroom_methodology",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "attribution_varies",
+        "non_exhaustive_dataset"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Signal One",
+      "rubric_uk": "Головний сигнал",
+      "title_en": "Europe’s hybrid-incident map: a point is not always one attack",
+      "title_uk": "Карта гібридних інцидентів Європи: точка не завжди означає одну атаку",
+      "source_date_label_en": "BR: 23 October; ZMINA coverage: 25 October 2026",
+      "source_date_label_uk": "BR: 23 жовтня; публікація ZMINA: 25 жовтня 2026",
+      "what_happened_en": "BR presents a collaborative map of physical hybrid incidents assembled by 17 public broadcasters. Its coverage runs from early April to mid-October. Attribution ranges from official findings to reported suspicion, and one map point may group several incidents.",
+      "what_happened_uk": "BR представляє спільну карту фізичних гібридних інцидентів, зібрану 17 суспільними мовниками. Вона охоплює період від початку квітня до середини жовтня. Атрибуція варіюється від офіційних висновків до повідомлених підозр; одна точка може об’єднувати кілька подій.",
+      "why_it_matters_en": "Editorial assessment: source diversity does not make all attribution equally certain. Counting points would misstate the unit of analysis.",
+      "why_it_matters_uk": "Редакційна оцінка: різноманітність джерел не робить усю атрибуцію однаково певною. Підрахунок точок підмінить одиницю аналізу.",
+      "how_to_use_en": "Open each relevant entry, retain its source and attribution wording, and distinguish a grouped entry from an individual incident. Record the observation period before comparing places.",
+      "how_to_use_uk": "Відкривайте потрібний запис, зберігайте джерело та формулювання атрибуції, розділяйте груповий запис і окрему подію. Перед порівнянням територій фіксуйте період спостереження.",
+      "limits_en": "The map is non-exhaustive and excludes cyberattacks and disinformation. It is a reporting aid, not proof that every listed event was directed by Russia. No underlying cases were independently re-investigated here.",
+      "limits_uk": "Карта неповна й не охоплює кібератак та дезінформації. Це допомога досліднику, а не доказ керування Росією кожною подією. Первинні випадки тут незалежно не розслідувалися.",
+      "supporting_sources": [
+        {
+          "name": "ZMINA,25October",
+          "url": "https://zmina.info/news/porushennya-povitryanogo-prostoru-dyversiyi-ta-pidpaly-u-yevropi-stvoryly-kartu-gibrydnyh-atak-povyazanyh-z-rf/"
+        }
+      ]
+    },
+    {
+      "theme": "pow-judge-suspicion",
+      "emoji": "⚖️",
+      "source_name": "SSU / Office of the Prosecutor General",
+      "source_url": "https://www.ssu.gov.ua/novyny/za-materialamy-sbu-ta-ohp-zaochnu-pidozru-otrymav-shche-odyn-suddia-rf-yakyi-nezakonno-uviazniuie-ukrainskykh-polonenykh",
+      "tags": [
+        "pow-judge-suspicion",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "primary_investigative_announcement",
+      "evidence_level": "primary_investigative_announcement",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "allegations_not_judicial_findings",
+        "pow_privacy"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "War Crimes Verification",
+      "rubric_uk": "Верифікація воєнних злочинів",
+      "title_en": "A Russian judge receives a formal suspicion over POW imprisonment",
+      "title_uk": "Російському судді повідомили про підозру щодо ув’язнення полонених",
+      "source_date_label_en": "23 October 2026, 16:30",
+      "source_date_label_uk": "23 жовтня 2026, 16:30",
+      "what_happened_en": "The SSU reports an in-absentia suspicion against Russian military-court judge Oleg Terentyev over alleged unlawful imprisonment of Ukrainian POWs. The announcement cites Article 438(1) of Ukraine’s Criminal Code and Article 99 of the Third Geneva Convention.",
+      "what_happened_uk": "СБУ повідомляє про заочну підозру судді російського військового суду Олегу Терентьєву через імовірне незаконне ув’язнення українських військовополонених. Повідомлення посилається на частину 1 статті 438 КК України та статтю 99 Третьої Женевської конвенції.",
+      "why_it_matters_en": "Editorial assessment: accountability for judicial conduct needs the specific decision, prohibited conduct and applicable legal protection connected in one dated case trail.",
+      "why_it_matters_uk": "Редакційна оцінка: відповідальність за суддівські дії потребує зв’язку конкретного рішення, забороненої поведінки та відповідної правової гарантії в датованій справі.",
+      "how_to_use_en": "Record the authority, date, alleged acts and suspicion stage. Seek the underlying judgments and procedural documents before describing individual prosecutions in greater detail.",
+      "how_to_use_uk": "Зафіксуйте орган, дату, інкриміновані дії та стадію підозри. Перш ніж детальніше описувати окремі переслідування, шукайте первинні вироки й процесуальні документи.",
+      "limits_en": "This is an investigative announcement, not a conviction of the judge. The underlying Russian judgments were not independently obtained. POW status does not create blanket immunity from prosecution for actual war crimes.",
+      "limits_uk": "Це повідомлення слідства, а не вирок судді. Первинні російські рішення незалежно не отримано. Статус військовополоненого не дає загального імунітету від переслідування за вчинені воєнні злочини."
+    },
+    {
+      "theme": "pow-visit-chronology",
+      "emoji": "🕊️",
+      "source_name": "Vatican News; ZMINA citing Ukraine’s Ombudsman",
+      "source_url": "https://www.vaticannews.va/en/vatican-city/news/2026-10/zuppi-in-russia-strengthen-and-speed-up-checks-to-reunite.html",
+      "tags": [
+        "pow-visit-chronology",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "primary_humanitarian_visit_report",
+      "evidence_level": "primary_humanitarian_visit_report",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "event_date_not_publication_date",
+        "access_scope_unverified"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Losses, Captivity & Missing",
+      "rubric_uk": "Втрати, полон, зниклі",
+      "title_en": "The 25 October POW-visit story concerns a visit on 30 September",
+      "title_uk": "Новина 25 жовтня про візит до полонених стосується 30 вересня",
+      "source_date_label_en": "Vatican News: 2 October; ZMINA: 25 October; visit: 30 September 2026",
+      "source_date_label_uk": "Vatican News: 2 жовтня; ZMINA: 25 жовтня; візит: 30 вересня 2026",
+      "what_happened_en": "ZMINA’s 25 October account of humanitarian contacts highlights Cardinal Matteo Zuppi’s access to Ukrainian POWs in Russia. Vatican News had already reported the visit on 2 October, dating it to Wednesday, 30 September. The later coverage should not reset the event date.",
+      "what_happened_uk": "Матеріал ZMINA від 25 жовтня про гуманітарні контакти наголошує на доступі кардинала Маттео Дзуппі до українських полонених у Росії. Vatican News повідомила про візит ще 2 жовтня, датувавши його середою, 30 вересня. Пізніша публікація не змінює дати події.",
+      "why_it_matters_en": "Editorial assessment: a dated visit is a specific access event; it cannot establish the conditions or coverage of continuing detention monitoring.",
+      "why_it_matters_uk": "Редакційна оцінка: датований візит — конкретна подія доступу; він не встановлює умов чи охоплення постійного моніторингу утримання.",
+      "how_to_use_en": "Keep event, original publication and later-report dates separately. Attribute claims about unprecedented access to the speaker and seek the scope of the visit before generalising.",
+      "how_to_use_uk": "Окремо фіксуйте дату події, первинної публікації та пізнішого повідомлення. Твердження про безпрецедентний доступ атрибутуйте мовцю; перед узагальненням уточнюйте обсяг візиту.",
+      "limits_en": "The older Vatican report is explicitly background for the new coverage. No claim of a new visit on 25 October, universal access, confidential interviewing or regular ICRC access is established.",
+      "limits_uk": "Давніший матеріал Ватикану — явно позначений контекст нової публікації. Новий візит 25 жовтня, загальний доступ, конфіденційні розмови чи регулярний доступ МКЧХ не встановлено.",
+      "supporting_sources": [
+        {
+          "name": "ZMINA,25October",
+          "url": "https://zmina.info/news/ukrayina-ta-rosiya-prodovzhat-gumanitarnu-vzayemodiyu-shhodo-vijskovopolonenyh-i-czyvilnyh-lubinecz/"
+        }
+      ]
+    },
+    {
+      "theme": "sanctions-document-chain",
+      "emoji": "🔎",
+      "source_name": "President of Ukraine / Decree 1058/2026",
+      "source_url": "https://www.president.gov.ua/documents/10582026-62173",
+      "tags": [
+        "sanctions-document-chain",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "primary_legal_instrument",
+      "evidence_level": "primary_legal_instrument",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "sanctions_not_conviction",
+        "entity_resolution_required"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "title_en": "New sanctions: connect the announcement to the decree and annex",
+      "title_uk": "Нові санкції: пов’яжіть повідомлення з указом і додатком",
+      "source_date_label_en": "Decision:22 October; decree and announcement:24 October 2026",
+      "source_date_label_uk": "Рішення:22 жовтня; указ і повідомлення:24 жовтня 2026",
+      "what_happened_en": "A presidential announcement describes sanctions against suppliers to Russian weapons production. Decree 1058/2026 enacts a 22 October NSDC decision, with separate annexes for individuals and legal entities. The announcement discusses more than one list, so its figures need to remain attached to the corresponding package.",
+      "what_happened_uk": "Президентське повідомлення описує санкції проти постачальників російського виробництва зброї. Указ №1058/2026 вводить у дію рішення РНБО від 22 жовтня з окремими додатками для фізичних і юридичних осіб. Повідомлення охоплює кілька списків, тому числа слід пов’язувати з відповідним пакетом.",
+      "why_it_matters_en": "Editorial assessment: a precise corporate match requires an identifier and the exact legal record, beyond a similar name in a news summary.",
+      "why_it_matters_uk": "Редакційна оцінка: точне зіставлення компанії потребує ідентифікатора й конкретного правового запису, крім схожої назви в новині.",
+      "how_to_use_en": "Save the decree, decision and applicable annex together. Check identifiers, measures and duration in the annex before joining to corporate records. Track later amendments as new versions.",
+      "how_to_use_uk": "Зберігайте разом указ, рішення й відповідний додаток. До зв’язування з реєстровими записами перевірте ідентифікатори, заходи та строк у додатку. Ведіть подальші зміни як нові версії.",
+      "limits_en": "The annex rows were not independently audited here; no entity match is asserted. Listing is not a criminal conviction, and the announcement does not demonstrate that supply chains have been disrupted.",
+      "limits_uk": "Рядки додатків тут незалежно не перевірялися; конкретних зіставлень не заявляємо. Санкційний запис не є кримінальним вироком, а повідомлення не доводить припинення ланцюгів постачання.",
+      "supporting_sources": [
+        {
+          "name": "Presidential announcement,24October",
+          "url": "https://president.gov.ua/news/prezident-uviv-u-diyu-sankciyi-proti-subyektiv-ta-osib-yaki-107021"
+        }
+      ]
+    },
+    {
+      "theme": "kherson-bus-casualty-update",
+      "emoji": "🧾",
+      "source_name": "Suspilne Kherson / city military administration",
+      "source_url": "https://suspilne.media/kherson/1436579-u-hersoni-u-likarni-pomer-colovik-tazko-poranenij-cerez-udar-drona-po-marsrutci/",
+      "tags": [
+        "kherson-bus-casualty-update",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "newsroom_reporting_with_official_attribution",
+      "evidence_level": "newsroom_reporting_with_official_attribution",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "casualty_updates",
+        "civilian_privacy"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Casefile",
+      "rubric_uk": "Розбір кейсу",
+      "title_en": "Kherson bus attack: a later death changes the early injury report",
+      "title_uk": "Удар по маршрутці в Херсоні: пізніша смерть змінює раннє зведення",
+      "source_date_label_en": "25 October 2026: initial report 16:13; death update 17:01",
+      "source_date_label_uk": "25 жовтня 2026: перше повідомлення 16:13; оновлення про смерть 17:01",
+      "what_happened_en": "A man wounded in the 25 October drone attack on a Kherson minibus later died in hospital, Suspilne reports citing the city administration. An earlier report described six people wounded in the same attack; the later death updates that group.",
+      "what_happened_uk": "Один із поранених від удару дрона по маршрутці в Херсоні 25 жовтня згодом помер у лікарні, повідомляє Суспільне з посиланням на міську адміністрацію. Раніше йшлося про шістьох поранених у цій атаці; пізніша смерть уточнює дані про цю групу.",
+      "why_it_matters_en": "Editorial assessment: the death is an update within the initially reported group, not evidence of an additional seventh casualty.",
+      "why_it_matters_uk": "Редакційна оцінка: смерть — оновлення в межах первинно повідомленої групи, а не свідчення сьомого постраждалого.",
+      "how_to_use_en": "Link both reports to one incident record, retaining their times and attribution. Keep subsequent condition changes versioned and avoid victim identifiers in public comparison tables.",
+      "how_to_use_uk": "Пов’яжіть обидва повідомлення з одним записом події, зберігши час та атрибуцію. Версіонуйте подальші зміни стану; не додавайте ідентифікаторів потерпілих у публічні таблиці.",
+      "limits_en": "These are attributed reports, not a final independently verified casualty register or a finding on intent. No exact vehicle route, passenger identity or tactical detail is reproduced.",
+      "limits_uk": "Це атрибутовані повідомлення, а не остаточний незалежно перевірений реєстр чи висновок про намір. Точний маршрут, особи пасажирів і тактичні деталі не відтворюємо.",
+      "supporting_sources": [
+        {
+          "name": "Suspilne initial report,25October16:13",
+          "url": "https://suspilne.media/kherson/1436553-dron-vluciv-u-marsrutku-v-centralnomu-rajoni-hersona-sestero-poranenih/"
+        }
+      ]
+    },
+    {
+      "theme": "kherson-transport-service-loss",
+      "emoji": "🚎",
+      "source_name": "Suspilne Kherson / original reporting",
+      "source_url": "https://suspilne.media/kherson/1434701-poizdki-mistom-skladnij-ta-nebezpecnij-kvest-ak-pracue-gromadskij-transport-u-prifrontovomu-hersoni/",
+      "tags": [
+        "kherson-transport-service-loss",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "original_newsroom_interviews",
+      "evidence_level": "original_newsroom_interviews",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "operational_detail_omitted",
+        "testimony_attributed"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Infrastructure Signals",
+      "rubric_uk": "Інфраструктурні сигнали",
+      "title_en": "Transport damage also changes access to everyday services",
+      "title_uk": "Пошкодження транспорту змінює й доступ до повсякденних послуг",
+      "source_date_label_en": "24 October 2026; interviews describe conditions inOctober",
+      "source_date_label_uk": "24 жовтня 2026; інтерв’ю описують умови жовтня",
+      "what_happened_en": "Suspilne’s original reporting brings together residents, drivers and a municipal operator describing reduced transport and difficult journeys under repeated attacks. It documents the service consequences of damage alongside experiences of the people who still depend on transport.",
+      "what_happened_uk": "Оригінальний репортаж Суспільного поєднує свідчення мешканців, водіїв і комунального перевізника про скорочення транспорту та складні поїздки під повторними атаками. Він документує наслідки пошкоджень для послуг і досвід людей, які досі залежать від транспорту.",
+      "why_it_matters_en": "Editorial assessment: a damaged-asset count alone misses interrupted access to work, care and essential appointments.",
+      "why_it_matters_uk": "Редакційна оцінка: сам підрахунок пошкодженої техніки не охоплює перерваний доступ до роботи, догляду й необхідних установ.",
+      "how_to_use_en": "Maintain separate records for damaged assets, service availability and reported civilian effects. Attribute testimony and operator figures, retaining their observation periods without republishing current routes or schedules.",
+      "how_to_use_uk": "Ведіть окремі записи пошкоджених об’єктів, доступності послуг і повідомлених наслідків для цивільних. Атрибутуйте свідчення й числа перевізника та зберігайте періоди спостереження без перевидання поточних маршрутів і розкладів.",
+      "limits_en": "Interviews do not constitute a citywide mobility survey. This report does not assess safe travel, establish a cause for every service change or verify every reported attack independently.",
+      "limits_uk": "Інтерв’ю не є загальноміським дослідженням мобільності. Матеріал не оцінює безпечність поїздок, не встановлює причину кожної зміни послуг і не перевіряє незалежно кожну повідомлену атаку."
+    },
+    {
+      "theme": "occupation-children-source-limits",
+      "emoji": "🛡️",
+      "source_name": "Zaporizhzhia News Agency (occupation-controlled); ZMINA",
+      "source_url": "https://zmina.info/news/shkolyariv-z-tot-zaporizkoyi-oblasti-zmusyly-pysaty-vitalni-lysty-okupantam/",
+      "tags": [
+        "occupation-children-source-limits",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "occupation_source_read_with_secondary_reporting",
+      "evidence_level": "occupation_source_read_with_secondary_reporting",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "children_privacy",
+        "propaganda_not_independent_confirmation"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Investigator OPSEC",
+      "rubric_uk": "Безпека дослідника",
+      "title_en": "Occupation propaganda records a publication, not a child’s consent",
+      "title_uk": "Окупаційна пропаганда фіксує публікацію, а не згоду дитини",
+      "source_date_label_en": "Occupation source:20 October 17:34; ZMINA:25 October 2026",
+      "source_date_label_uk": "Окупаційне джерело:20 жовтня 17:34; ZMINA:25 жовтня 2026",
+      "what_happened_en": "ZMINA reports schoolchildren’s involvement in letters and aid for Russian soldiers. The underlying occupation-controlled 20 October item says a youth movement passed on schoolchildren’s letters and supplies. It establishes the published claim and promotional framing; it does not independently establish each child’s willingness or coercion.",
+      "what_happened_uk": "ZMINA повідомляє про залучення школярів до листів і допомоги російським військовим. Первинний окупаційний допис 20 жовтня заявляє, що молодіжний рух передав дитячі листи й допомогу. Він фіксує оприлюднене твердження та пропагандистське подання, але незалежно не встановлює добровільності чи примусу щодо кожної дитини.",
+      "why_it_matters_en": "Editorial assessment: documenting the organisers’ public message can serve accountability without turning children into public evidence exhibits.",
+      "why_it_matters_uk": "Редакційна оцінка: документування публічного повідомлення організаторів може допомагати відповідальності без перетворення дітей на публічні доказові експонати.",
+      "how_to_use_en": "Record the source date, publisher and organisational claim. Preserve only necessary material with access controls; remove children’s faces, names and school identifiers from public outputs. Seek safe, independent corroboration.",
+      "how_to_use_uk": "Фіксуйте дату, видавця та організаційне твердження. Зберігайте лише необхідне з контролем доступу; вилучайте обличчя, імена дітей та ідентифікатори школи з публікацій. Шукайте безпечне незалежне підтвердження.",
+      "limits_en": "A propaganda source is evidence of what its publisher says, not a reliable account of children’s views. No child is contacted or identified here, and the secondary headline’s coercion claim remains attributed.",
+      "limits_uk": "Пропагандистське джерело свідчить про заяви видавця, а не надійно передає погляди дітей. Дітей тут не ідентифікуємо й не контактуємо з ними; твердження вторинного заголовка про примус залишається атрибутованим.",
+      "supporting_sources": [
+        {
+          "name": "Occupation-controlled original,20October2026",
+          "url": "https://zonews.ru/news/molodezhka-narodnogo-fronta-pozdravila-voennosluzhaschih-s-dnem-svjazista/"
+        }
+      ]
+    }
+  ],
+  "internal_notes": [
+    "Monday142,26October; published afterW43. Seven distinct new selections checked against136–141 source URLs.",
+    "MapBR23October,not25launch. Noncompletephysicalonly,groupedpoints,variableattribution. No unqualifiedRussianresponsibility.",
+    "SSU23Oct16:30suspicion438(1),Geneva99. Nojudgeconviction,originaljudgmentsunobtained.",
+    "Vatican2October explicitlyoldercontext:visit30September. Do notassertnew25Octoberfirstevervisit orcontinuingICRCaccess.",
+    "Sanctionsprimary24October,decree1058/2026/NSDC22October,annexlinksreadnotrowaudited. Noaggregateacrosspackages/entitymatching/effectsassertion.",
+    "Kherson25OctoberSuspline16:13sixwounded→17:01oneofgroupdied; noadding7,noexactrouteorvictimidentifiers.",
+    "Kherson24Octoberoriginalinterviewsforserviceconsequences; notmobilitysurvey. Noevasiontactics/routes/schedules.",
+    "Occupationoriginal20October17:34readthroughZMINA25October. Claimofcoercionnotindependentlyestablished; nochildfaces/names/schoolnumberreproduced.",
+    "UserCPKadvocacyexclusionhonoured. NoTelegram-onlyitem acceptedwithoutpublicnewsroom/primarycontext."
+  ]
+}
