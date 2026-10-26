@@ -1,0 +1,306 @@
+{
+  "issue_number": "W43",
+  "slug": "open-source-signal-weekly-2026-W43",
+  "output_name": "open-source-signal-weekly-2026-W43.html",
+  "date_iso": "2026-10-25",
+  "week_label_en": "19–25 October 2026",
+  "week_label_uk": "19–25 жовтня 2026",
+  "title_en": "Open Source Signal Weekly",
+  "title_uk": "Тижневий сигнал відкритих джерел",
+  "subtitle_en": "Count people carefully. Keep the evidence behind each status.",
+  "subtitle_uk": "Рахувати людей уважно. Зберігати докази кожного статусу.",
+  "dek_en": "The return of 270 Ukrainians on 23 October closes a week of reporting on captivity, repatriation and missing people. Seven sections connect these distinct records with procedural developments, changing civilian-harm reports, gaps in public data, archive tools and the cost of exposing personal information.",
+  "dek_uk": "Повернення 270 українців 23 жовтня завершує тиждень матеріалів про полон, репатріацію та зниклих. Сім розділів поєднують ці різні обліки з процесуальними змінами, уточненнями шкоди цивільним, прогалинами відкритих даних, інструментами архівування та ціною розголошення персональних відомостей.",
+  "editorial_frame": {
+    "what_this_is": "A bilingual Sunday magazine dated 25 October, covering ISO Week 43, 19–25 October 2026. Published on Monday 26 October. Develops Daily 136–140 and Tool Radar 141; practical conclusions are editorial analysis.",
+    "what_this_is_not": "A unified register of losses, an identification result, an independent dataset audit or a judicial finding."
+  },
+  "rubric_map": [
+    "📡 Signal of the Week / Головний сигнал тижня",
+    "🇺🇦 Ukraine Lens / Українська оптика",
+    "⚖️ War Crimes Verification / Верифікація воєнних злочинів",
+    "🕯️ Losses, Captivity & Missing / Втрати, полон, зниклі",
+    "🧰 Tradecraft / Методика",
+    "🛠️ Tools / Datasets / Інструменти й набори даних",
+    "⚠️ Risk Watch / Межі й ризики"
+  ],
+  "editorial_note_en": "This Sunday issue is published on Monday, 26 October. Its reporting window remains 19–25 October. The week ended with people returning home: that outcome deserves a precise record, without turning a release cohort into an estimate of everyone still held. Across the other stories, the same editorial task recurs: preserve the event, its source, its date and the uncertainty that belongs to it. A corrected number or a newly issued suspicion changes a record; it does not erase the earlier reporting or complete the investigation.",
+  "editorial_note_uk": "Цей недільний журнал виходить у понеділок, 26 жовтня. Період огляду залишається 19–25 жовтня. Тиждень завершився поверненням людей додому: цей результат потребує точного запису, без перетворення групи звільнених на оцінку всіх, хто ще утримується. В інших історіях повторюється та сама редакційна робота: зберегти подію, джерело, дату й властиву їм невизначеність. Уточнене число або нова підозра змінює запис, але не стирає попередні повідомлення й не завершує розслідування.",
+  "items": [
+    {
+      "rubric_key": "signal",
+      "emoji": "📡",
+      "rubric_en": "Signal of the Week",
+      "rubric_uk": "Головний сигнал тижня",
+      "tags": [
+        "weekly",
+        "accountability",
+        "signal"
+      ],
+      "title_en": "270 people returned: keep release, repatriation and confirmation separate",
+      "title_uk": "270 людей повернулися: звільнення, репатріація й підтвердження — різні записи",
+      "source_line_en": "Coordination Headquarters · 22–23 October 2026",
+      "source_line_uk": "Координаційний штаб · 22–23 жовтня 2026",
+      "what_happened_en": "On 23 October, the Coordination Headquarters announced the return of 261 service members and nine civilians. The previous day it reported the repatriation of 252 dead, with identification still ahead. A separate publication described an estimated group facing unlawful prosecution without ICRC confirmation of captivity. These records answer different questions: who came home alive, what was returned for identification, and where confirmation is lacking.",
+      "what_happened_uk": "23 жовтня Коордштаб повідомив про повернення 261 військовослужбовця та дев’ятьох цивільних. Напередодні — про репатріацію 252 загиблих, ідентифікація яких ще має відбутися. Окрема публікація описувала оцінену групу людей під незаконним переслідуванням без підтвердження полону через МКЧХ. Це відповіді на різні питання: хто повернувся живим, що повернуто для ідентифікації та де бракує підтвердження.",
+      "why_it_matters_en": "Editorial assessment: adding these figures would create a total with no coherent population or meaning.",
+      "why_it_matters_uk": "Редакційна оцінка: складання цих чисел створило б суму без єдиної сукупності та змісту.",
+      "how_to_use_en": "Maintain separate event records for release and repatriation, and dated status records for individuals in protected systems. Record the source of a confirmation and the status of identification.",
+      "how_to_use_uk": "Ведіть окремі записи подій звільнення й репатріації та датовані статуси людей у захищених системах. Фіксуйте джерело підтвердження та стан ідентифікації.",
+      "limits_en": "Official announcements are attributed to the Headquarters. Repatriation does not establish an individual identity or cause of death. No combined balance of missing people is calculated.",
+      "limits_uk": "Офіційні повідомлення атрибутовано Коордштабу. Репатріація не встановлює індивідуальної особи чи причини смерті. Спільного балансу зниклих не обчислюємо."
+    },
+    {
+      "rubric_key": "ukraine",
+      "emoji": "🇺🇦",
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "tags": [
+        "weekly",
+        "accountability",
+        "ukraine"
+      ],
+      "title_en": "A new procedural act needs its own evidence trail",
+      "title_uk": "Нова процесуальна дія потребує власного доказового сліду",
+      "source_line_en": "SSU · 20 October; Slidstvo.Info · 21 October",
+      "source_line_uk": "СБУ · 20 жовтня; «Слідство.Інфо» · 21 жовтня",
+      "what_happened_en": "The Melitopol religious-persecution story acquired a formal suspicion announcement after earlier investigative reporting. In the Oleshky investigation, a published conversation added a response by a man the newsroom identifies as a Russian commander. One development concerns procedural status; the other adds reported source material. Both can advance an investigation timeline without establishing individual guilt.",
+      "what_happened_uk": "Історія релігійних переслідувань у Мелітополі отримала повідомлення про підозру після попереднього журналістського розслідування. У матеріалах про Олешки опублікована розмова додала відповідь чоловіка, якого редакція ідентифікує як російського командира. Перше стосується процесуального статусу, друге додає джерельний матеріал. Обидва оновлюють хронологію, не встановлюючи індивідуальної вини.",
+      "why_it_matters_en": "Editorial assessment: a newsroom attribution, an official allegation and an adjudicated finding carry different evidential weight.",
+      "why_it_matters_uk": "Редакційна оцінка: журналістська атрибуція, офіційне обвинувачення та судове встановлення мають різну доказову вагу.",
+      "how_to_use_en": "Link the earlier report to the dated official announcement. Keep role attribution, alleged conduct, response and procedural stage in separate fields. Seek the underlying case documents.",
+      "how_to_use_uk": "Пов’язуйте попередній матеріал із датованим офіційним повідомленням. Окремо фіксуйте посаду, інкриміновану дію, відповідь і процесуальний етап. Шукайте первинні документи справи.",
+      "limits_en": "A refusal to answer does not establish an order or effective control. The digest has not independently authenticated the recorded speaker or obtained the complete case files.",
+      "limits_uk": "Відмова відповідати не встановлює наказу чи ефективного контролю. Дайджест незалежно не автентифікував співрозмовника й не отримав повних матеріалів справ."
+    },
+    {
+      "rubric_key": "war-crimes",
+      "emoji": "⚖️",
+      "rubric_en": "War Crimes Verification",
+      "rubric_uk": "Верифікація воєнних злочинів",
+      "tags": [
+        "weekly",
+        "accountability",
+        "war-crimes"
+      ],
+      "title_en": "Lozova: a casualty record must allow later corrections",
+      "title_uk": "Лозова: облік постраждалих має допускати подальші уточнення",
+      "source_line_en": "National Police · 22 October; Gwara · 23 October",
+      "source_line_uk": "Національна поліція · 22 жовтня; «Ґвара» · 23 жовтня",
+      "what_happened_en": "Police reported two dead and 34 people affected by the 22 October strike on Lozova’s market. On 23 October, Gwara reported a third death. This is a sequence of dated reports about one incident, not three interchangeable snapshots of a final casualty total. The later report changes what editors can responsibly say while the previous version remains part of the record.",
+      "what_happened_uk": "Поліція повідомила про двох загиблих і 34 постраждалих від удару по ринку Лозової 22 жовтня. 23 жовтня «Ґвара» повідомила про третю смерть. Це послідовність датованих повідомлень про одну подію, а не взаємозамінні знімки остаточного підсумку. Пізніше повідомлення змінює коректне формулювання, але попередня версія залишається частиною обліку.",
+      "why_it_matters_en": "Editorial assessment: traceable corrections make an incident record more useful than a number detached from its update history.",
+      "why_it_matters_uk": "Редакційна оцінка: простежувані уточнення роблять запис про інцидент кориснішим за число без історії оновлень.",
+      "how_to_use_en": "Use one incident identifier, preserve each source version and timestamp, and distinguish fatalities from other affected people. Keep victim identities out of public comparison sheets.",
+      "how_to_use_uk": "Використовуйте один ідентифікатор події, зберігайте версії джерел і час оновлення, розділяйте загиблих та інших постраждалих. Не вносьте імена потерпілих у публічні таблиці порівняння.",
+      "limits_en": "This is a publication history, not an independently verified final register or a finding on intent, weapon or perpetrator responsibility.",
+      "limits_uk": "Це історія повідомлень, а не незалежно перевірений остаточний реєстр чи висновок про намір, зброю та відповідальність виконавців."
+    },
+    {
+      "rubric_key": "losses",
+      "emoji": "🕯️",
+      "rubric_en": "Losses, Captivity & Missing",
+      "rubric_uk": "Втрати, полон, зниклі",
+      "tags": [
+        "weekly",
+        "accountability",
+        "losses"
+      ],
+      "title_en": "The exchange table describes the people released in this exchange",
+      "title_uk": "Таблиця обміну описує саме групу звільнених",
+      "source_line_en": "Coordination Headquarters · exchange statistics, 23 October, 16:26",
+      "source_line_uk": "Коордштаб · статистика обміну, 23 жовтня, 16:26",
+      "what_happened_en": "The published table covers 270 returnees: 262 had ICRC confirmation and eight had another form of confirmation; 210 had a Personal Cabinet record and 60 did not. These are two different breakdowns of the same release cohort. The publication does not cross-tabulate the categories or describe the population of everyone still held.",
+      "what_happened_uk": "Опублікована таблиця охоплює 270 повернених: 262 мали підтвердження МКЧХ, восьмеро — інше; 210 мали запис в Особистому кабінеті, 60 — ні. Це два різні розподіли однієї групи звільнених. Публікація не перетинає ці категорії й не описує всіх, хто ще утримується.",
+      "why_it_matters_en": "Editorial assessment: missing documentation in a service is not equivalent to an unknown fate. A successful release cohort cannot estimate confirmation coverage among all prisoners.",
+      "why_it_matters_uk": "Редакційна оцінка: відсутність запису в сервісі не тотожна невідомій долі. Група успішно звільнених не дає оцінки охоплення підтвердженнями серед усіх полонених.",
+      "how_to_use_en": "Attach the cohort definition to every exported figure. Keep confirmation channel and service registration as separate dimensions; do not infer their intersection.",
+      "how_to_use_uk": "Додавайте визначення групи до кожного експортованого числа. Ведіть канал підтвердження та реєстрацію в сервісі як окремі виміри; не виводьте їхній перетин.",
+      "limits_en": "The Headquarters is the source; individual records were not audited. No names, health details or family contact data are reproduced.",
+      "limits_uk": "Джерело — Коордштаб; індивідуальні записи не перевірялися. Імен, медичних відомостей і контактів родин не відтворюємо."
+    },
+    {
+      "rubric_key": "tradecraft",
+      "emoji": "🧰",
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "tags": [
+        "weekly",
+        "accountability",
+        "tradecraft"
+      ],
+      "title_en": "A numerical mismatch and a stale dataset need different explanations",
+      "title_uk": "Числове розходження й застарілий набір потребують різних пояснень",
+      "source_line_en": "Coordination Headquarters · 19 October; ZMINA / Nadiia Babynska · 23 October",
+      "source_line_uk": "Коордштаб · 19 жовтня; ZMINA / Надія Бабинська · 23 жовтня",
+      "what_happened_en": "The foreign-recruitment publication’s annual rows sum to 45,291, while its headline gives 45,959: an unexplained difference of 668. Separately, open-data monitoring reported gaps in both publication and freshness. The first problem asks whether categories reconcile; the second asks whether the records are available and current. Neither can be fixed by copying the most prominent number.",
+      "what_happened_uk": "Річні рядки публікації про іноземне вербування дають 45 291, тоді як заголовок — 45 959: непояснена різниця 668. Окремий моніторинг відкритих даних показав прогалини доступності й актуальності. Перша проблема — узгодженість категорій, друга — наявність і свіжість записів. Копіювання найпомітнішого числа не розв’язує жодної.",
+      "why_it_matters_en": "Editorial assessment: reconciliation, completeness and update delay are distinct quality checks.",
+      "why_it_matters_uk": "Редакційна оцінка: узгодженість, повнота й затримка оновлення — різні перевірки якості.",
+      "how_to_use_en": "Save the dated table and calculation. Ask the publisher to explain the mismatch; keep any reply. For datasets, record expected coverage, last update and the monitoring snapshot date.",
+      "how_to_use_uk": "Збережіть датовану таблицю й розрахунок. Попросіть видавця пояснити розходження та збережіть відповідь. Для наборів фіксуйте очікуване охоплення, останнє оновлення й дату моніторингового зрізу.",
+      "limits_en": "The 668 difference is arithmetic, not evidence of fraud or a corrected recruitment total. The open-data findings are attributed monitoring results, not this magazine’s independent audit.",
+      "limits_uk": "Різниця 668 — арифметичний результат, а не доказ шахрайства чи виправлений підсумок вербування. Висновки про відкриті дані — атрибутовані результати моніторингу, а не незалежний аудит журналу."
+    },
+    {
+      "rubric_key": "toolbox",
+      "emoji": "🛠️",
+      "rubric_en": "Tools / Datasets",
+      "rubric_uk": "Інструменти й набори даних",
+      "tags": [
+        "weekly",
+        "accountability",
+        "toolbox"
+      ],
+      "title_en": "Search, capture and extraction should leave different outputs",
+      "title_uk": "Пошук, збереження й витягування мають залишати різні результати",
+      "source_line_en": "Tool Radar 141 · 24 October; ZMINA archive reporting · 22 October",
+      "source_line_uk": "Tool Radar №141 · 24 жовтня; ZMINA про архіви · 22 жовтня",
+      "what_happened_en": "Saturday’s documentation reviews covered local search, crawling, visual extraction, screenshot archiving, information-request and registry workflows, and structured data work. Hister’s search index, Crawl4AI’s derived text and Scoutpost OS’s captures serve different purposes. Paired with the week’s reporting on editorial archives, the useful question is what survives an outage, a changed page or a mistaken extraction.",
+      "what_happened_uk": "Суботні огляди документації охопили локальний пошук, краулінг, візуальне витягування, архівування знімків, інформаційні запити, реєстрові процеси та роботу зі структурованими даними. Пошуковий індекс Hister, похідний текст Crawl4AI та збереження Scoutpost OS виконують різні завдання. Поруч із матеріалом про редакційні архіви постає питання: що переживе збій, змінену сторінку чи помилку витягування?",
+      "why_it_matters_en": "Editorial assessment: a searchable result is useful when a reviewer can recover the source and inspect the transformation.",
+      "why_it_matters_uk": "Редакційна оцінка: пошуковий результат корисний, коли рецензент може відновити джерело й перевірити перетворення.",
+      "how_to_use_en": "Test a small authorised corpus. Keep originals, capture times, derived files and settings separately; verify a restore from backup and compare extracted tables with source pages. Review external model and service destinations before use.",
+      "how_to_use_uk": "Перевірте невеликий дозволений корпус. Окремо зберігайте оригінали, час фіксації, похідні файли й налаштування; перевірте відновлення з резервної копії та звірте таблиці зі сторінками. До використання перевіряйте зовнішні моделі й сервіси.",
+      "limits_en": "These were documentation reviews, not runtime tests or security audits. The seven projects are not a tested integrated stack; a screenshot alone does not preserve every property of a page.",
+      "limits_uk": "Це огляди документації без запуску й аудиту безпеки. Сім проєктів не є випробуваним інтегрованим набором; сам знімок не зберігає всіх властивостей сторінки."
+    },
+    {
+      "rubric_key": "risk",
+      "emoji": "⚠️",
+      "rubric_en": "Risk Watch",
+      "rubric_uk": "Межі й ризики",
+      "tags": [
+        "weekly",
+        "accountability",
+        "risk"
+      ],
+      "title_en": "A public record can still put a civilian at risk",
+      "title_uk": "Відкритий запис може створювати ризик для цивільного",
+      "source_line_en": "Relocated-media coalition / DII · 19 October; Coordination Headquarters · 21 October",
+      "source_line_uk": "Коаліція релокованих медіа / DII · 19 жовтня; Коордштаб · 21 жовтня",
+      "what_happened_en": "A relocated-media coalition challenged the publication of occupied-territory residents’ personal data and accusations based on border crossings. A separate family meeting addressed health information in captivity work. Together they show why a useful confidential record and an appropriate public account have different contents. Movement data alone does not establish motive; medical information needs a defined purpose and controlled access.",
+      "what_happened_uk": "Коаліція релокованих медіа виступила проти оприлюднення персональних даних мешканців окупації та звинувачень на підставі перетину кордону. Окрема зустріч із родинами стосувалася медичних відомостей у роботі щодо полону. Корисний конфіденційний запис і належна публікація мають різний зміст. Дані переміщень самі собою не встановлюють мотиву; медичні відомості потребують визначеної мети й контрольованого доступу.",
+      "why_it_matters_en": "Editorial assessment: preserving evidence does not require reproducing every personal detail in a public digest or third-party tool.",
+      "why_it_matters_uk": "Редакційна оцінка: збереження доказів не вимагає відтворювати кожну персональну деталь у відкритому дайджесті чи сторонньому інструменті.",
+      "how_to_use_en": "Publish redacted examples and the verification method. Keep family correspondence and medical records in authorised channels with restricted access. Review exports and model inputs for unnecessary personal data.",
+      "how_to_use_uk": "Публікуйте знеособлені приклади й метод перевірки. Залишайте листування родин і медичні записи в належних каналах з обмеженим доступом. Перевіряйте експорт та вхідні дані моделей на зайві персональні відомості.",
+      "limits_en": "The coalition’s allegations remain attributed; this is not an audit of a named database. No exposed records are linked or reproduced, and no software anonymity guarantee is implied.",
+      "limits_uk": "Твердження коаліції залишаються атрибутованими; це не аудит названої бази. Розкриті записи не відтворюємо й не посилаємося на них; гарантій анонімності програм не заявляємо."
+    }
+  ],
+  "compact_sections": [
+    {
+      "rubric_key": "counting",
+      "emoji": "🔢",
+      "title": "Before adding / Перед додаванням",
+      "short_title": "Define the population / Визначте сукупність",
+      "points": [
+        "People, remains, cases and confirmations are different units. / Люди, останки, справи та підтвердження — різні одиниці.",
+        "A release cohort does not represent everyone still held. / Група звільнених не представляє всіх, хто ще утримується.",
+        "Keep source and observation dates next to every figure. / Зберігайте дати джерела й спостереження поруч із числом."
+      ]
+    },
+    {
+      "rubric_key": "corrections",
+      "emoji": "🗂️",
+      "title": "Correction trail / Слід уточнень",
+      "short_title": "Preserve the earlier version / Збережіть попередню версію",
+      "points": [
+        "One incident identifier, multiple dated reports. / Один ідентифікатор події, кілька датованих повідомлень.",
+        "Link new procedural acts to earlier reporting. / Пов’язуйте нові процесуальні дії з попередніми матеріалами.",
+        "Test that a backup restores a usable original. / Перевіряйте, чи відновлює резервна копія придатний оригінал."
+      ]
+    },
+    {
+      "rubric_key": "disclosure",
+      "emoji": "🛡️",
+      "title": "Publication review / Перевірка перед публікацією",
+      "short_title": "Protect the people in the record / Захистіть людей у записі",
+      "points": [
+        "Remove unnecessary identifiers from public exports. / Вилучайте зайві ідентифікатори з публічного експорту.",
+        "Keep medical and family records in authorised channels. / Залишайте медичні й родинні записи в належних каналах.",
+        "Review external AI and service destinations. / Перевіряйте зовнішні ШІ та сервіси."
+      ]
+    }
+  ],
+  "reading_list": [
+    {
+      "href": "https://koordshtab.gov.ua/posts/dovhoochikuvanyy-obmin-dodomu-povertayutsya-270-ukrayintsiv-3890",
+      "title": "Coordination Headquarters — 270 returned / Коордштаб — 270 повернених",
+      "note": "23 October, 14:59. 261 service members and nine civilians / 261 військовослужбовець і дев’ятеро цивільних."
+    },
+    {
+      "href": "https://koordshtab.gov.ua/posts/ofitsiyni-statystychni-dani-za-rezultatamy-obminu-23-zhovtnya-2026-roku-3892",
+      "title": "Exchange statistics / Статистика обміну",
+      "note": "23 October, 16:26. Release cohort only; separate breakdowns / Лише група звільнених; окремі розподіли."
+    },
+    {
+      "href": "https://www.ssu.gov.ua/novyny/sbu-zaochno-povidomyla-pro-pidozru-dovirenii-osobi-putina-u-tymchasovo-okupovanomu-melitopoli",
+      "title": "Security Service of Ukraine; Kyiv Independent",
+      "note": "20 October 2026; earlier documentary released May 2025 / 20 жовтня 2026; попередній документальний фільм вийшов у травні 2025 року"
+    },
+    {
+      "href": "https://koordshtab.gov.ua/posts/45-959-inozemtsiv-zi-151-krayiny-pidpysaly-kontrakty-zi-zbroynymy-sylamy-rf-3870",
+      "title": "Coordination Headquarters / I Want to Live project",
+      "note": "20 October 2026; snapshot as of 1 October 2026 / 20 жовтня 2026; дані станом на 1 жовтня 2026"
+    },
+    {
+      "href": "https://www.slidstvo.info/news/navishcho-vy-taki-slova-hovoryte-predstavnyka-komanduvannia-rf-oburyly-pytannia-zhurnalistky-slidstva-info-pro-okupovani-oleshky/",
+      "title": "Slidstvo.Info / Sofiia Afonina",
+      "note": "21 October 2026 / 21 жовтня 2026"
+    },
+    {
+      "href": "https://dii.dn.ua/zayava-medijnykiv-uchasnykiv-klasteru-relokovanyh-media-shhodo-sytuatsiyi-z-oprylyudnennyam-personalnyh-danyh-gromadyan-ukrayiny-yaki-prozhyvayut-na-tymchasovo-okupovanyh-terytoriyah-ukrayiny-ta-zvynu/",
+      "title": "DII-Ukraine / Cluster of Relocated Media; ZMINA",
+      "note": "Statement: 19 October; ZMINA coverage: 21 October 2026 / Заява: 19 жовтня; публікація ZMINA: 21 жовтня 2026"
+    },
+    {
+      "href": "https://koordshtab.gov.ua/posts/koordynatsiynyy-shtab-proviv-zustrich-iz-rodynamy-31-ombr-3881",
+      "title": "Coordination Headquarters for the Treatment of Prisoners of War",
+      "note": "21 October 2026, 17:28 / 21 жовтня 2026, 17:28"
+    },
+    {
+      "href": "https://koordshtab.gov.ua/posts/repatriatsiya-v-ukrayini-povernuly-tila-252-zahyblykh-3884",
+      "title": "Coordination Headquarters for the Treatment of Prisoners of War",
+      "note": "22 October 2026, 14:06 / 22 жовтня 2026, 14:06"
+    },
+    {
+      "href": "https://koordshtab.gov.ua/posts/blyzko-1500-ukrayintsiv-zaznayut-nezakonnoho-kryminalnoho-peresliduvannya-ne-mayuchy-ofitsiynoho-pidtverdzhennya-polonu-cherez-mkchkh-3885",
+      "title": "Coordination Headquarters / account of a UN side event",
+      "note": "Published 22 October; event held 19 October 2026 / Опубліковано 22 жовтня; захід відбувся 19 жовтня 2026"
+    },
+    {
+      "href": "https://gwaramedia.com/u-likarni-pomerla-postrazhdala-vnaslidok-udaru-po-rinku-v-lozovij/",
+      "title": "Gwara — Lozova update / уточнення щодо Лозової",
+      "note": "23 October, 09:44. Report of a third death / Повідомлення про третю смерть."
+    },
+    {
+      "href": "https://npu.gov.ua/news/dvi-liudyny-zahynuly-shche-34-postrazhdaly-vnaslidok-obstrilu-lozovoi-politsiia-dokumentuie-zlochyn-okupantiv",
+      "title": "National Police of Ukraine; Gwara Media",
+      "note": "Police: 22 October, 15:20; later report: 23 October 2026, 09:44 / Поліція: 22 жовтня, 15:20; пізніше повідомлення: 23 жовтня 2026, 09:44"
+    },
+    {
+      "href": "https://zmina.info/news/ministerstva-publikuyut-lyshe-polovynu-naboriv-danyh-yaki-mayut-buty-vidkryti-dlya-gromadskosti-nadiya-babynska/",
+      "title": "ZMINA / report on Nadiia Babynska’s conference presentation",
+      "note": "Report: 22 October; presentation: 21 October; snapshot: 1 October 2026 / Публікація: 22 жовтня; виступ: 21 жовтня; зріз: 1 жовтня 2026"
+    },
+    {
+      "href": "https://zmina.info/articles/yak-rosijski-udary-po-data-czentrah-vplyvayut-na-media-i-shho-mozhe-dopomogty-zberegty-redakczijni-arhivy/",
+      "title": "ZMINA / Liudmyla Tiahnyriadno, interview with Pavlo Bielousov",
+      "note": "22 October 2026; infrastructure incidents discussed include September 2026 / 22 жовтня 2026; серед описаних інфраструктурних подій — вересень 2026"
+    },
+    {
+      "href": "https://osintsignal.org/issues/open-source-signal-2026-10-24.html",
+      "title": "Tool Radar 141 / Радар інструментів №141",
+      "note": "24 October. Seven documentation reviews and original repository links / Сім оглядів документації та первинні репозиторії."
+    }
+  ],
+  "editorial_notes_internal": [
+    "W43, 19–25 October, edition dated25October and published26October. User authorised release of both weekly and Monday in order.",
+    "New23October exchange and statistics read from primaryKoord pages. No cohort extrapolation or cross-tab inference.",
+    "Weekly synthesis ofDaily136–140 andRadar141; no copy of entire dailycards. Source dates retained. No operational unit roster or personal details.",
+    "Recruitment mismatch calculated45291vs45959=668; no correctedtotal/fraudassertion.",
+    "Software docs only; no runtime/securityguarantees. User exclusion ofCPKadvocacy honoured."
+  ]
+}
