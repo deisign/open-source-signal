@@ -1,0 +1,321 @@
+{
+  "issue_number": "143",
+  "date_iso": "2026-10-27",
+  "date_label_en": "27 October 2026",
+  "date_label_uk": "27 жовтня 2026",
+  "slug": "open-source-signal",
+  "title_en": "Open Source Signal",
+  "title_uk": "Сигнал відкритих джерел",
+  "issue_type": "Daily Signal",
+  "language_label": "EN + UKR",
+  "subtitle_en": "Energy attacks, captivity corrections, grain provenance and the evidence behind public records.",
+  "subtitle_uk": "Удари по енергетиці, уточнення щодо полону, походження зерна та докази за публічними записами.",
+  "dek_en": "Seven cards follow the UN commission’s new energy-attack findings, the Olenivka families’ correction, a reported Balakliia conviction, grain-origin verification, newly published equipment records, IMI’s media monitoring and today’s announced humanitarian ceasefire around Oleshky.",
+  "dek_uk": "Сім карток: нові висновки комісії ООН про удари по енергетиці, уточнення від родин Оленівки, повідомлення про вирок у справі Балаклії, верифікація походження зерна, нові записи про обладнання, моніторинг ІМІ та сьогоднішнє оголошення гуманітарного режиму тиші біля Олешок.",
+  "editorial_frame": {
+    "what_this_is": "A bilingual editorial issue for Tuesday 27 October 2026. Main sources dated 26–27 October; the 24 October Olenivka interview and 22 October grain announcement are separately dated. Practical workflows are editorial analysis.",
+    "what_this_is_not": "A judicial ruling by the UN commission, a final casualty register, independent validation of classified evidence, a laboratory performance audit or confirmation that the Oleshky mission has been completed."
+  },
+  "rubric_map": [
+    "📡 Signal One / Головний сигнал",
+    "🕊️ Losses, Captivity & Missing / Втрати, полон, зниклі",
+    "⚖️ War Crimes Verification / Верифікація воєнних злочинів",
+    "🔎 Tradecraft / Методика",
+    "🗂️ Ukraine Lens / Українська оптика",
+    "🛡️ Investigator OPSEC / Безпека дослідника",
+    "🕊️ Risk Watch / Межі й ризики"
+  ],
+  "footer_note": "Prepared for Open Source Signal / Сигнал відкритих джерел.",
+  "items": [
+    {
+      "theme": "un-energy-commission-findings",
+      "emoji": "📡",
+      "source_name": "UN News / United Nations Office at Geneva",
+      "source_url": "https://www.ungeneva.org/en/news-media/news/2026/10/124187/ukraine-investigators-find-russia-committed-war-crimes-targeting",
+      "tags": [
+        "un-energy-commission-findings",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "primary_un_institutional_account",
+      "evidence_level": "primary_un_institutional_account",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "commission_not_court",
+        "survivor_privacy"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Signal One",
+      "rubric_uk": "Головний сигнал",
+      "title_en": "UN commission finds energy attacks constitute war crimes and crimes against humanity",
+      "title_uk": "Комісія ООН кваліфікує удари по енергетиці як воєнні злочини та злочини проти людяності",
+      "source_date_label_en": "26 October 2026; findings examine winter 2025–26 and the wider attack pattern",
+      "source_date_label_uk": "26 жовтня 2026; висновки стосуються зими 2025–2026 та ширшої системи атак",
+      "what_happened_en": "The UN commission’s new findings connect attacks on civilian energy infrastructure with prolonged loss of essential services and civilian suffering. UN News describes the panel’s conclusions on war crimes and crimes against humanity, drawing on accounts from 255 people, authorities, doctors and civil society.",
+      "what_happened_uk": "Нові висновки комісії ООН пов’язують атаки на цивільну енергетичну інфраструктуру з тривалим позбавленням основних послуг і стражданнями цивільних. UN News викладає висновки про воєнні злочини та злочини проти людяності, спираючись на свідчення 255 людей, органів влади, лікарів і громадських організацій.",
+      "why_it_matters_en": "Editorial assessment: the documentation question extends from a damaged facility to the services civilians lost, the duration and the resulting harm.",
+      "why_it_matters_uk": "Редакційна оцінка: документування має охоплювати не лише пошкоджений об’єкт, а й втрачені цивільними послуги, тривалість перебоїв та завдану шкоду.",
+      "how_to_use_en": "Link dated incident evidence to service-outage records and appropriately protected accounts of civilian effects. Keep observed damage, consequences and evidence supporting intent or policy as distinct elements.",
+      "how_to_use_uk": "Пов’язуйте датовані докази інциденту із записами перебоїв послуг і належно захищеними свідченнями про наслідки для цивільних. Розділяйте спостережувані пошкодження, наслідки й докази наміру або політики.",
+      "limits_en": "These are findings of an independent investigative commission, not convictions of individuals. This card reviews the UN’s published account; underlying interviews and case files were not independently audited.",
+      "limits_uk": "Це висновки незалежної слідчої комісії, а не обвинувальні вироки конкретним особам. Картка спирається на опублікований виклад ООН; первинні інтерв’ю та матеріали справ незалежно не перевірялися.",
+      "supporting_sources": [
+        {
+          "name": "OHCHR report landing page — A/81/440,26October2026",
+          "url": "https://www.ohchr.org/en/hr-bodies/hrc/iicihr-ukraine/reports/report-independent-international-commission-inquiry-ukraine-un-general-assembly-a81440"
+        }
+      ]
+    },
+    {
+      "theme": "olenivka-public-message-correction",
+      "emoji": "🕊️",
+      "source_name": "Espreso / interview with Olenivka Community; ZMINA",
+      "source_url": "https://espreso.tv/olenivka-tse-duzhe-divna-informatsiya-chomu-rodini-postrazhdalikh-v-olenivtsi-obureni-zayavoyu-zelenskogo-pro-obmin",
+      "tags": [
+        "olenivka-public-message-correction",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "original_newsroom_interview",
+      "evidence_level": "original_newsroom_interview",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "contested_public_wording",
+        "family_privacy"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Losses, Captivity & Missing",
+      "rubric_uk": "Втрати, полон, зниклі",
+      "title_en": "Olenivka families challenge the claim that five returnees had been considered dead",
+      "title_uk": "Родини Оленівки спростовують твердження, що п’ятьох повернених вважали загиблими",
+      "source_date_label_en": "Original interview: 24 October 15:40; ZMINA coverage: 26 October 2026; exchange: 23 October",
+      "source_date_label_uk": "Первинне інтерв’ю: 24 жовтня 15:40; публікація ZMINA: 26 жовтня 2026; обмін: 23 жовтня",
+      "what_happened_en": "Olenivka Community head Oleksandra Mazur tells Espreso that the families knew the five released survivors were alive. She describes official wording being changed from people considered dead to people who survived the attack. ZMINA revisits the correction on 26 October.",
+      "what_happened_uk": "Голова «Спільноти Оленівки» Олександра Мазур розповідає Еспресо, що родини знали: п’ятеро звільнених, які пережили атаку, живі. Вона описує зміну офіційного формулювання з людей, яких вважали загиблими, на тих, хто пережив теракт. 26 жовтня ZMINA повернулася до цього уточнення.",
+      "why_it_matters_en": "Editorial assessment: a mistaken public message must not become an unverified change in a person’s death, missing or identification status.",
+      "why_it_matters_uk": "Редакційна оцінка: помилкове публічне повідомлення не має перетворюватися на неперевірену зміну статусу загибелі, зникнення чи ідентифікації людини.",
+      "how_to_use_en": "Preserve source versions and the correction’s provenance. Record the family organisation’s account separately from an official registry entry; seek a documented explanation before adjusting a status or aggregate.",
+      "how_to_use_uk": "Зберігайте версії джерела та походження виправлення. Окремо фіксуйте повідомлення організації родин і запис офіційного реєстру; до зміни статусу чи загального числа шукайте документоване пояснення.",
+      "limits_en": "The interview is attributed testimony; no death register or earlier administrative decision was inspected. We do not recalculate the Olenivka death toll or reproduce names and family records.",
+      "limits_uk": "Інтерв’ю — атрибутоване свідчення; реєстр загиблих чи попередні адміністративні рішення не перевірялися. Кількість загиблих в Оленівці не перераховуємо; імен і родинних записів не відтворюємо.",
+      "supporting_sources": [
+        {
+          "name": "ZMINA,26October2026",
+          "url": "https://zmina.info/news/vlada-pomylkovo-nazvala-pyatokh-zvilnenykh-viys%CA%B9kovykh-zahyblymy-v-olenivtsi-rodyny-vymahayut-poyasnen/"
+        },
+        {
+          "name": "Coordination Headquarters — current exchange announcement,23October",
+          "url": "https://koordshtab.gov.ua/posts/dovhoochikuvanyy-obmin-dodomu-povertayutsya-270-ukrayintsiv-3890"
+        }
+      ]
+    },
+    {
+      "theme": "balakliia-in-absentia-verdict",
+      "emoji": "⚖️",
+      "source_name": "ZMINA reporting the Office of the Prosecutor General",
+      "source_url": "https://zmina.info/news/rosijskogo-vijskovogo-zaochno-zasudyly-do-12-rokiv-za-zgvaltuvannya-zhinky-pid-chas-okupacziyi-balakliyi/",
+      "tags": [
+        "balakliia-in-absentia-verdict",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "newsroom_report_of_prosecutorial_announcement",
+      "evidence_level": "newsroom_report_of_prosecutorial_announcement",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "sexual_violence_survivor_privacy",
+        "court_order_not_obtained"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "War Crimes Verification",
+      "rubric_uk": "Верифікація воєнних злочинів",
+      "title_en": "Balakliia: prosecutors report a 12-year in-absentia sentence for sexual violence",
+      "title_uk": "Балаклія: прокуратура повідомляє про 12 років заочно за сексуальне насильство",
+      "source_date_label_en": "Publication: 26 October 2026; offence:April 2022",
+      "source_date_label_uk": "Публікація: 26 жовтня 2026; злочин: квітень 2022",
+      "what_happened_en": "ZMINA reports that a Russian serviceman received a 12-year in-absentia sentence under Article 438(1) of Ukraine’s Criminal Code for raping a civilian during the occupation of Balakliia. The report attributes the announcement to the Office of the Prosecutor General.",
+      "what_happened_uk": "ZMINA повідомляє про заочний вирок російському військовому — 12 років позбавлення волі за частиною 1 статті 438 КК України за зґвалтування цивільної під час окупації Балаклії. Джерело повідомлення — Офіс генерального прокурора.",
+      "why_it_matters_en": "Editorial assessment: a reported conviction updates a case’s procedural history, while finality, appeal and enforcement remain separate questions.",
+      "why_it_matters_uk": "Редакційна оцінка: повідомлення про вирок оновлює процесуальну історію справи; набрання чинності, оскарження та виконання залишаються окремими питаннями.",
+      "how_to_use_en": "Record the reported offence, legal provision, sentence and in-absentia procedure. Seek the judgment and appeal status through appropriate public records without searching for or exposing the survivor’s identity.",
+      "how_to_use_uk": "Зафіксуйте повідомлені злочин, норму, покарання та заочну процедуру. Шукайте вирок і стан оскарження в належних відкритих записах без встановлення чи розголошення особи постраждалої.",
+      "limits_en": "The judgment itself and its finality were not independently obtained. A sentence announced now does not establish that the offender is in custody. Identifying and graphic details are omitted.",
+      "limits_uk": "Сам вирок і набрання ним чинності незалежно не перевірено. Нинішнє повідомлення про покарання не встановлює перебування засудженого під вартою. Ідентифікаційні та графічні деталі вилучено."
+    },
+    {
+      "theme": "grain-origin-verification",
+      "emoji": "🔎",
+      "source_name": "European Pravda / on-site reporting; Ukrainian Agriculture Ministry",
+      "source_url": "https://www.eurointegration.com.ua/news/2026/10/26/7248609/",
+      "tags": [
+        "grain-origin-verification",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "original_newsroom_reporting_and_primary_government_announcement",
+      "evidence_level": "original_newsroom_reporting_and_primary_government_announcement",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "origin_not_ownership",
+        "method_not_independently_validated"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "title_en": "Grain provenance: Lithuania presses for checks as laboratory cooperation expands",
+      "title_uk": "Походження зерна: Литва наполягає на перевірках на тлі розширення лабораторної співпраці",
+      "source_date_label_en": "Reporting: 26 October 17:00; government announcement: 22 October; memorandum signed: 21 October 2026",
+      "source_date_label_uk": "Репортаж: 26 жовтня 17:00; урядове повідомлення: 22 жовтня; меморандум підписано: 21 жовтня 2026",
+      "what_happened_en": "European Pravda reports Lithuania’s call for practical grain-origin checks at the EU agriculture meeting. A separately dated Ukrainian government announcement describes the Ukraine–UK–Latvia memorandum and GVS: isotope and chemical analysis against a reference database of known-origin grain.",
+      "what_happened_uk": "Європейська правда повідомляє про заклик Литви до практичних перевірок походження зерна на зустрічі аграрної Ради ЄС. Окреме датоване урядове повідомлення описує меморандум України, Британії та Латвії й GVS: ізотопний та хімічний аналіз зі звірянням з еталонною базою зерна підтвердженого походження.",
+      "why_it_matters_en": "Editorial assessment: a vessel’s voyage, a cargo’s declared origin and an analytical finding are different evidence objects in a suspected theft investigation.",
+      "why_it_matters_uk": "Редакційна оцінка: рейс судна, заявлене походження вантажу та аналітичний висновок — різні доказові об’єкти в розслідуванні ймовірного викрадення.",
+      "how_to_use_en": "Connect authorised sampling records, laboratory findings and shipment documents through a dated custody trail. Record the limits of the reference database and distinguish geographical origin from ownership and the legality of export.",
+      "how_to_use_uk": "Пов’язуйте записи належного відбору зразків, лабораторні висновки й документи партії датованим ланцюгом зберігання. Фіксуйте межі еталонної бази; розділяйте географічне походження, право власності та законність вивезення.",
+      "limits_en": "A call for implementation is not a new EU-wide rule. No laboratory validation, error rate or positive cargo result was independently inspected here. GVS access is described for authorised bodies, not as an open public tool.",
+      "limits_uk": "Заклик до впровадження не є новим загальноєвропейським правилом. Лабораторної валідації, частоти помилок чи позитивного результату партії тут незалежно не перевіряли. Доступ до GVS описано для уповноважених органів, а не як до відкритого інструмента.",
+      "supporting_sources": [
+        {
+          "name": "Agriculture Ministry via Cabinet portal,22October2026",
+          "url": "https://www.kmu.gov.ua/news/minahropolityky-latviia-pereviriatyme-pokhodzhennia-zerna-dlia-vyiavlennia-vykradenoi-rosiieiu-ukrainskoi-ahroproduktsii-pidpysano-trystoronnii-memorandum"
+        }
+      ]
+    },
+    {
+      "theme": "equipment-public-evidence-boundary",
+      "emoji": "🗂️",
+      "source_name": "GUR / War & Sanctions — portal news and equipment catalogue",
+      "source_url": "https://war-sanctions.gur.gov.ua/en/news",
+      "tags": [
+        "equipment-public-evidence-boundary",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "primary_official_catalogue_with_restricted_evidence",
+      "evidence_level": "primary_official_catalogue_with_restricted_evidence",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "official_attribution",
+        "restricted_evidence",
+        "no_operational_locations"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "title_en": "War & Sanctions adds 30 equipment records; some supporting evidence is restricted",
+      "title_uk": "War & Sanctions додає 30 записів про обладнання; частина підтверджень має обмежений доступ",
+      "source_date_label_en": "Announcement and catalogue update: 26 October 2026",
+      "source_date_label_uk": "Повідомлення й оновлення каталогу: 26 жовтня 2026",
+      "what_happened_en": "War & Sanctions announces 30 pieces of foreign-made equipment linked to Russian ballistic-weapons production. The public catalogue is updated 26 October. In a sampled record, evidence of use is marked classified and described as available on request to relevant partner-country authorities.",
+      "what_happened_uk": "War & Sanctions повідомляє про 30 одиниць іноземного обладнання, пов’язаного з російським виробництвом балістичного озброєння. Каталог оновлено 26 жовтня. У переглянутому записі докази використання позначено як закриті й доступні за запитом відповідних органів країн-партнерів.",
+      "why_it_matters_en": "Editorial assessment: public discovery metadata and independently inspectable proof provide different levels of verification. The distinction should travel with every exported claim.",
+      "why_it_matters_uk": "Редакційна оцінка: публічні пошукові відомості та докази, доступні для незалежної перевірки, дають різні рівні верифікації. Це розрізнення має супроводжувати кожне експортоване твердження.",
+      "how_to_use_en": "Retain the publication date, record identifier and source’s attribution. Mark whether supporting material is public, restricted or unavailable. Seek independent dated trade and corporate records before asserting a supply chain or supplier knowledge.",
+      "how_to_use_uk": "Зберігайте дату публікації, ідентифікатор запису й атрибуцію джерела. Позначайте підтвердження як відкриті, обмежені чи недоступні. До тверджень про ланцюг постачання або обізнаність виробника шукайте незалежні датовані торговельні й корпоративні записи.",
+      "limits_en": "The 30-item announcement is not a count of new deliveries. Restricted evidence was not accessed; this is not an independent audit or finding that a named manufacturer knowingly violated sanctions.",
+      "limits_uk": "Повідомлення про 30 позицій не є підрахунком нових поставок. Закриті докази не отримувалися; це не незалежний аудит і не встановлення свідомого порушення санкцій названим виробником.",
+      "supporting_sources": [
+        {
+          "name": "Public catalogue — Instruments of War,updated26October",
+          "url": "https://war-sanctions.gur.gov.ua/en/tools"
+        },
+        {
+          "name": "Sample record — evidence-access notice",
+          "url": "https://war-sanctions.gur.gov.ua/en/tools/1633"
+        }
+      ]
+    },
+    {
+      "theme": "imi-monthly-media-monitoring",
+      "emoji": "🛡️",
+      "source_name": "Institute of Mass Information / original monitoring",
+      "source_url": "https://imi.org.ua/monitorings/za-chotyry-roky-j-visim-misyatsiv-povnomasshtabnoyi-vijny-rf-skoyila-989-zlochyniv-proty-zhurnalistiv-i-media",
+      "tags": [
+        "imi-monthly-media-monitoring",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "primary_civil_society_monitoring",
+      "evidence_level": "primary_civil_society_monitoring",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "monitoring_not_convictions",
+        "different_populations",
+        "journalist_safety"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Investigator OPSEC",
+      "rubric_uk": "Безпека дослідника",
+      "title_en": "IMI’s new monitoring update separates incidents, deaths and reporting periods",
+      "title_uk": "Нове зведення ІМІ розділяє інциденти, загиблих і звітні періоди",
+      "source_date_label_en": "26 October 2026, 10:15; latest observation period: 24 September–24 October",
+      "source_date_label_uk": "26 жовтня 2026, 10:15; останній звітний період: 24 вересня–24 жовтня",
+      "what_happened_en": "IMI reports 989 documented crimes against media since the full-scale invasion and 12 new cases in its latest reporting period. It separately records 143 media workers killed, 15 while performing professional duties. The update includes attacks on crews, damaged newsrooms and disrupted broadcasting.",
+      "what_happened_uk": "ІМІ повідомляє про 989 задокументованих злочинів проти медіа від початку повномасштабного вторгнення та 12 нових випадків за останній звітний період. Окремо обліковує 143 загиблих медійників, 15 — під час виконання професійних обов’язків. Оновлення охоплює атаки на знімальні групи, пошкодження редакцій і перебої мовлення.",
+      "why_it_matters_en": "Editorial assessment: an incident total, a death count and a subset killed at work cannot substitute for one another. News of a death can arrive long after the death itself.",
+      "why_it_matters_uk": "Редакційна оцінка: число інцидентів, кількість загиблих і підгрупа загиблих за роботою не взаємозамінні. Звістка про загибель може надійти значно пізніше самої події.",
+      "how_to_use_en": "Keep monitoring categories and observation dates in exports. Separate event date from confirmation date, and link infrastructure incidents to continuity planning without publishing crews’ current movements or office security details.",
+      "how_to_use_uk": "Зберігайте категорії моніторингу й дати спостереження в експорті. Розділяйте дату події та підтвердження; пов’язуйте інфраструктурні інциденти з плануванням безперервності без розкриття поточних переміщень команд чи захисту редакцій.",
+      "limits_en": "These are IMI’s monitoring classifications, not 989 court convictions or a claim that 143 people died on assignment. The 15 are a subset, and newly confirmed deaths are not necessarily deaths occurring this month.",
+      "limits_uk": "Це класифікація моніторингу ІМІ, а не 989 судових вироків чи твердження про 143 загиблих за роботою. 15 — підгрупа; нові підтвердження не обов’язково означають загибель цього місяця."
+    },
+    {
+      "theme": "oleshky-humanitarian-status",
+      "emoji": "🕊️",
+      "source_name": "Radio Svoboda / reporting statements by both sides",
+      "source_url": "https://www.radiosvoboda.org/a/news-oleshky-rezhym-tyshi/33884988.html",
+      "tags": [
+        "oleshky-humanitarian-status",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "newsroom_reporting_of_attributed_bilateral_announcements",
+      "evidence_level": "newsroom_reporting_of_attributed_bilateral_announcements",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "announcements_not_observed_outcomes",
+        "rapidly_changing",
+        "civilian_privacy"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Risk Watch",
+      "rubric_uk": "Межі й ризики",
+      "title_en": "Oleshky: the announced ceasefire is a preparatory step, not a completed mission",
+      "title_uk": "Олешки: оголошений режим тиші — підготовчий етап, а не завершена місія",
+      "source_date_label_en": "27 October 2026; announced ceasefire: 27 October; mission planned for 29 October",
+      "source_date_label_uk": "27 жовтня 2026; оголошений режим тиші: 27 жовтня; місію заплановано на 29 жовтня",
+      "what_happened_en": "Radio Svoboda reports that Ukraine’s Ombudsman announced the start of a humanitarian ceasefire around Oleshky on 27 October; Russia’s Defence Ministry also announced it. The report separately dates the planned aid-delivery and evacuation mission to 29 October.",
+      "what_happened_uk": "Радіо Свобода повідомляє: омбудсман України оголосив про початок гуманітарного режиму тиші біля Олешок 27 жовтня; про нього також заявило Міноборони РФ. Окремо матеріал датує заплановану місію доставки допомоги й евакуації 29 жовтня.",
+      "why_it_matters_en": "Editorial assessment: agreement, declared implementation, independently observed access, delivery and evacuation are distinct stages. A promise of access cannot be reported as its completed outcome.",
+      "why_it_matters_uk": "Редакційна оцінка: домовленість, оголошене виконання, незалежно спостережуваний доступ, доставка та евакуація — різні етапи. Обіцяний доступ не можна подавати як завершений результат.",
+      "how_to_use_en": "Maintain a dated status timeline and update it only with attributable evidence. For later outcomes, record who verified access and what was delivered or completed. Keep civilian lists and requests in authorised confidential channels.",
+      "how_to_use_uk": "Ведіть датовану хронологію статусів і оновлюйте її лише за атрибутованими доказами. Для результатів фіксуйте, хто перевірив доступ, що доставлено або завершено. Залишайте списки цивільних і звернення в належних конфіденційних каналах.",
+      "limits_en": "The parties’ statements do not independently verify adherence on the ground. No successful evacuation, delivery total or safe route is established here. Mission routes, movement times and residents’ identifying details are omitted.",
+      "limits_uk": "Заяви сторін не є незалежною перевіркою дотримання на місці. Успішну евакуацію, обсяг доставки чи безпечність маршруту тут не встановлено. Маршрути місії, час переміщень та ідентифікатори мешканців вилучено.",
+      "supporting_sources": [
+        {
+          "name": "Ukrainska Pravda,27October2026,03:20",
+          "url": "https://www.pravda.com.ua/news/2026/10/27/8059843/"
+        }
+      ]
+    }
+  ],
+  "internal_notes": [
+    "EDITORIAL NOTES — INTERNAL. Tuesday143,27October2026. Publication and Telegram announcement authorised by user.",
+    "Worked rubrics: Signal/UNenergy; Losses/Olenivkacorrection; WarCrimes/Balakliia; Tradecraft/GVS; UkraineLens/GURequipment; OPSEC/IMImonitoring; Risk/Oleshky. Seven source-distinct cards, not an exchange recap.",
+    "UN official UNGeneva/UNNews26October account fully read with urllib because webrobots blocked. OHCHR reportlanding/pressrelease403; fullreportA/81/440 notread. Do not claim fullreport or underlyingfiles independentlyreviewed.255witnessaccounts,notcasualties; commissionnotcourt. 2025–26winter notOctoberobservationperiod.",
+    "UNreport foreignrecruitment29countries is a strongWeekly followup but notanextra card thisissue. Distinguish trafficking findings from priorKoord45959/151recruitmentaggregate; no numericalcomparison acrosspopulations.",
+    "Olenivka primaryEspreso interview24October15:40 versusZMINArepublication26October. CurrentKoordannouncementpreviouslyread23October saysfive survived; nooriginaleditedposthistoryindependentlyauthenticated. Mazuraccountattributed. No revisedOlenivkadeathtotal, noformalregistrydeathstatusassertion. Source47/48/59disputesexcluded.",
+    "Balakliia sourceZMINA26October attributesOGP. Nojudgmentorappealfinalityread; noindependentfinalverdictdateassertion. No survivorname,age,locationbelowcity,unitnumber,graphicdetail orprivatewitnessrecords reproduced. No use ofbroadCRSVstatistics411vs1004withdifferentpopulations.",
+    "Grain originalEuropeanPravdacorrespondent26October17:00read; MinistryCabinet22October15:43fullyread, memorandum21October. Isotopic/chemicalcomparisonreferencebaseisofficialdescription, notindependentaccuracyvalidation. Noactualpositivecargoresult orEUruleadoptionclaimed. GVS isrestrictedofficialmechanism, notpublictoolkitsoftware.",
+    "GUR portalnews26October confirms30equipmententries; publiccatalogue26October andsample1633read. Sampleevidenceclassifiedandavailabletopartnerauthorities, notopenproof. No manufacturelocations,coordinates,capabilityquantification,targeting,technicalweapondesign details orsanctionviolationfindings. Do notgeneraliseoneclassifiedsampletoallrecords.",
+    "IMIprimary26October10:15read.989cumulativecases,12new24Sep–24Oct,143deadmediaworkers15onassignment. Distinguishnewconfirmationdatesfromdeathdates; noaddingsubsets. No currentcrewroute/securitysystemdetails.",
+    "Oleshky RadioSvoboda27October andUP03:20read. Bothsidesannouncedceasefire27October, missionplanned29October. UnderlyingTGstatementslead; cardlimitsclaimstoattributedannouncements, notindependentfieldverification. No corridor map,route,timeofmovement,evacueelist orprivatecontactdetails. Refreshbeforepublishing ifnewoutcomearrives.",
+    "Bestprimarysources:UNinstitutionalaccount,IMI,Cabinet/GVS,GURpublicportal. Weaknesses: noBalakliiacourtorder; restrictedGURevidence; noindependentOleshkyfieldverification; officialpostedittrailnotauthenticated.",
+    "Excluded:Slidstvo21OctoberburialstoryreliesonleakedprivateDB/borderrecordsandfamilycontactworkflow; no reproduction. FourreturneescourtcasesUP24Octoberreadbutnotused: secondaryZMINA26headlinerange27–29inconsistentwithbody20years; avoidcopying. NoCPKadvocacy.",
+    "ToolRadar: no newsoftwareintroduced; GVS isauthorisedmechanism,WarSanctionsisdataset/source,notcatalog-as-tool. Followup:publicevidenceaccessmetadataandprovenanceexports; noinstallation/benchmarkclaims.",
+    "Weekly:UNenergyharmchain;Olenivkacorrectionhistory;grainlabcustodyvsownership;GURpublicclaims/restrictedproof;IMIeventvsconfirmationdate;Oleshkyannouncedstagesvsverifiedoutcomes.",
+    "QA: seven bilingual cards. Generic WarSanctions/newsURL appears in earlier archive; verify topic and26Octoberupdate separately, do not treat URLmatchalone asduplicate. Seven supportingreferencesrendered twice forEN/UK. Internalnotesmustremainhidden. Draftonly.",
+    "Prepublication27Octoberrefresh found statements ofceasefire,notcompletedmission; originalattributionand29Octoberplannedmissionretained."
+  ]
+}
