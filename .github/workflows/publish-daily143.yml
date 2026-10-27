@@ -1,0 +1,130 @@
+name: Publish Daily 143 Telegram announcement
+
+on:
+  push:
+    paths: [".github/workflows/publish-daily143.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run tests
+        run: python -m pytest -q
+
+      - name: Build static site
+        run: python build_site.py --issues issues --templates templates --out dist --config site.json
+
+      - name: Render Telegram announcement
+        id: render
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          ISSUE_PATH="issues/2026-10-27.json"
+
+          if [ ! -f "$ISSUE_PATH" ]; then
+            echo "Issue JSON not found: $ISSUE_PATH" >&2
+            exit 1
+          fi
+
+          ISSUE_URL="https://osintsignal.org/issues/open-source-signal-2026-10-27.html"
+
+          if [ -z "$ISSUE_URL" ]; then
+            ISSUE_URL=$(python - "$ISSUE_PATH" <<'PY'
+          import json
+          import sys
+          from pathlib import Path
+          from render_issue import load_issue, output_filename
+
+          issue_path = Path(sys.argv[1])
+          issue = load_issue(issue_path)
+
+          config_path = Path("site.json")
+          config = json.loads(config_path.read_text(encoding="utf-8")) if config_path.exists() else {}
+
+          base_url = str(config.get("base_url") or "https://osintsignal.org").rstrip("/")
+          print(f"{base_url}/issues/{output_filename(issue)}")
+          PY
+          )
+          fi
+
+          TEXT_FILE=$(python telegram_digest.py "$ISSUE_PATH" \
+            --lang "uk" \
+            --url "$ISSUE_URL" \
+            --out dist \
+            --max-items "7")
+
+          echo "text_file=$TEXT_FILE" >> "$GITHUB_OUTPUT"
+          echo "issue_url=$ISSUE_URL" >> "$GITHUB_OUTPUT"
+
+          echo "Rendered $TEXT_FILE"
+          cat "$TEXT_FILE"
+
+      - name: Check duplicate Telegram announcement
+        id: duplicate
+        run: |
+          python telegram_sent_log.py check \
+            --sent-log data/telegram_sent.json \
+            --issue "2026-10-27.json" \
+            --lang "uk" \
+            --force "false"
+
+      - name: Send Telegram announcement
+        if: steps.duplicate.outputs.should_send == 'true'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python send_telegram.py \
+            --text-file "${{ steps.render.outputs.text_file }}" \
+            --disable-preview
+
+      - name: Record Telegram send
+        if: steps.duplicate.outputs.should_send == 'true'
+        run: |
+          python telegram_sent_log.py record \
+            --sent-log data/telegram_sent.json \
+            --issue "2026-10-27.json" \
+            --lang "uk" \
+            --issue-url "${{ steps.render.outputs.issue_url }}" \
+            --text-file "${{ steps.render.outputs.text_file }}" \
+            --run-id "${{ github.run_id }}" \
+            --run-url "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+
+      - name: Commit Telegram sent log
+        if: steps.duplicate.outputs.should_send == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add data/telegram_sent.json
+
+          if git diff --cached --quiet; then
+            echo "No sent-log changes to commit."
+          else
+            git commit -m "Record Telegram announcement for 2026-10-27.json (uk)"
+            git push
+          fi
+
+      - name: Skip duplicate notice
+        if: steps.duplicate.outputs.should_send != 'true'
+        run: |
+          echo "Telegram announcement was already sent. Nothing posted. Use force=true to resend."
