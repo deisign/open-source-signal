@@ -1,0 +1,300 @@
+{
+  "issue_number": "144",
+  "date_iso": "2026-10-28",
+  "date_label_en": "28 October 2026",
+  "date_label_uk": "28 жовтня 2026",
+  "slug": "open-source-signal",
+  "title_en": "Open Source Signal",
+  "title_uk": "Сигнал відкритих джерел",
+  "issue_type": "Daily Signal",
+  "language_label": "EN + UKR",
+  "subtitle_en": "Mariupol’s evidence transfer, child-transfer allegations, missing-person verification and protected information.",
+  "subtitle_uk": "Передавання доказів Маріуполя, підозра щодо переміщення дітей, перевірка зникнення та захищена інформація.",
+  "dek_en": "Seven cards examine Mariupol’s RD4U data agreement, a new child-transfer suspicion, a reported attack on rescuers, today’s family meeting and identification work, the UN’s foreign-recruitment findings, Sweden’s AI access rules and damage to a Ukrainian publisher’s warehouse.",
+  "dek_uk": "Сім карток: угода Маріуполя про дані для RD4U, нова підозра щодо переміщення дітей, повідомлення про удар по рятувальниках, сьогоднішня зустріч із родинами й робота з ідентифікації, висновки ООН про вербування іноземців, правила доступу до ШІ у Швеції та пошкодження складу українського видавництва.",
+  "editorial_frame": {
+    "what_this_is": "A bilingual editorial issue for Wednesday 28 October 2026. Main sources dated 26–28 October. Swedish original reporting of 23–24 October describes restrictions effective from 26 October. Source, event and procedural dates are distinguished; practical workflows are editorial analysis.",
+    "what_this_is_not": "An award of compensation, a conviction in the new child-transfer case, independent forensic identification, verification of every reported strike or a security certification for an AI product."
+  },
+  "rubric_map": [
+    "📡 Signal One / Головний сигнал",
+    "⚖️ War Crimes Verification / Верифікація воєнних злочинів",
+    "🧾 Casefile / Розбір кейсу",
+    "🕊️ Losses, Captivity & Missing / Втрати, полон, зниклі",
+    "🌍 Ukraine Lens / Українська оптика",
+    "🛡️ Investigator OPSEC / Безпека дослідника",
+    "📚 Infrastructure Signals / Інфраструктурні сигнали"
+  ],
+  "footer_note": "Prepared for Open Source Signal / Сигнал відкритих джерел.",
+  "items": [
+    {
+      "theme": "mariupol-rd4u-evidence-transfer",
+      "emoji": "📡",
+      "source_name": "Mariupol City Council / official announcement",
+      "source_url": "https://mariupolrada.gov.ua/news/dokazi-mariupolja-pro-zbitki-peredadut-do-mizhnarodnogo-reestru-i-majbutnoi-komisii-z-kompensacij",
+      "tags": [
+        "mariupol-rd4u-evidence-transfer",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "primary_local_authority_announcement",
+      "evidence_level": "primary_local_authority_announcement",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "reported_value_not_award",
+        "personal_data_protection"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Signal One",
+      "rubric_uk": "Головний сигнал",
+      "title_en": "Mariupol and RD4U agree on electronic evidence transfer",
+      "title_uk": "Маріуполь і RD4U погодили електронне передавання доказів",
+      "source_date_label_en": "27 October 2026, 10:14",
+      "source_date_label_uk": "27 жовтня 2026, 10:14",
+      "what_happened_en": "Mariupol’s administration and the Register of Damage for Ukraine signed a data-exchange agreement and a cooperation memorandum. The council reports 125,000 damage notifications worth €4 billion collected through Mariupol Justice, with 31,000 already transferred to the Register. It also describes planned assistance for applicants.",
+      "what_happened_uk": "Адміністрація Маріуполя та Реєстр збитків для України підписали угоду про обмін даними й меморандум про співпрацю. Міськрада повідомляє про 125 тисяч повідомлень щодо збитків на €4 мільярди, зібраних через Mariupol Justice; 31 тисячу вже передано Реєстру. Також описує заплановану підтримку заявників.",
+      "why_it_matters_en": "Editorial assessment: transferring evidence creates a traceable connection between a local collection and an international mechanism. It does not decide the merits or value of an individual claim.",
+      "why_it_matters_uk": "Редакційна оцінка: передавання доказів створює простежуваний зв’язок між місцевою колекцією та міжнародним механізмом. Воно не визначає обґрунтованості чи суми окремої вимоги.",
+      "how_to_use_en": "Preserve original files, collection dates, permissions and transfer receipts. Map local identifiers to the receiving system without assuming a one-to-one relation between notifications, people, properties and claims. Record consent and access restrictions.",
+      "how_to_use_uk": "Зберігайте первинні файли, дати збирання, дозволи та підтвердження передавання. Зіставляйте місцеві ідентифікатори із системою отримувача, не припускаючи відповідності один до одного між повідомленнями, людьми, об’єктами й заявами. Фіксуйте згоду та обмеження доступу.",
+      "limits_en": "The figures are the council’s account, not independently audited totals or compensation awards. Data transfer is distinct from claim registration, evidential assessment and payment. No underlying personal records were accessed.",
+      "limits_uk": "Числа наведено за міськрадою; це не незалежно перевірені підсумки чи присуджена компенсація. Передавання даних відрізняється від реєстрації заяви, оцінки доказів і виплати. Первинних персональних записів не отримували."
+    },
+    {
+      "theme": "saldo-child-transfer-suspicion",
+      "emoji": "⚖️",
+      "source_name": "Security Service of Ukraine / Office of the Prosecutor General",
+      "source_url": "https://ssu.gov.ua/novyny/sbu-ta-ohp-zaochno-povidomyly-pro-pidozru-hauliaiteru-saldo-za-nezakonne-peremishchennia-ukrainskykh-ditei-pid-chas-okupatsii-pravoberezhzhia-khersona",
+      "tags": [
+        "saldo-child-transfer-suspicion",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "primary_investigative_announcement",
+      "evidence_level": "primary_investigative_announcement",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "allegations_not_judicial_findings",
+        "children_privacy"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "War Crimes Verification",
+      "rubric_uk": "Верифікація воєнних злочинів",
+      "title_en": "A new Saldo suspicion concerns children transferred from Kherson in 2022",
+      "title_uk": "Нова підозра Сальдо стосується переміщення дітей із Херсона у 2022 році",
+      "source_date_label_en": "Announcement: 26 October 2026, 13:00; alleged transfer: 7 October 2022",
+      "source_date_label_uk": "Повідомлення: 26 жовтня 2026, 13:00; інкриміноване переміщення: 7 жовтня 2022",
+      "what_happened_en": "The SSU reports in-absentia suspicions against occupation official Volodymyr Saldo and two others over the alleged unlawful transfer of children from Kherson to occupied Crimea. Investigators also allege falsification of school records to conceal the transfer. The announcement cites Articles 28(2) and 438(1) of Ukraine’s Criminal Code.",
+      "what_happened_uk": "СБУ повідомляє про заочні підозри окупаційному посадовцю Володимиру Сальдо та ще двом особам щодо ймовірного незаконного переміщення дітей із Херсона до окупованого Криму. Слідство також заявляє про внесення неправдивих даних до освітніх документів для приховування переміщення. У повідомленні вказано частину 2 статті 28 та частину 1 статті 438 КК України.",
+      "why_it_matters_en": "Editorial assessment: alleged alteration of administrative records makes document provenance part of the incident investigation, alongside evidence about the transfer itself.",
+      "why_it_matters_uk": "Редакційна оцінка: ймовірна зміна адміністративних записів робить походження документів частиною розслідування, поряд із доказами самого переміщення.",
+      "how_to_use_en": "Keep separate records for the alleged act, each person’s attributed role and the procedural announcement. Compare authorised document versions and provenance; protect children’s identities and avoid publishing school rosters or family details.",
+      "how_to_use_uk": "Окремо фіксуйте інкриміновану дію, приписувану роль кожної особи та процесуальне повідомлення. Зіставляйте належно отримані версії документів і їхнє походження; захищайте особи дітей, не публікуйте шкільних списків чи даних родин.",
+      "limits_en": "This is a suspicion announcement, not a conviction in this case. The underlying school records and case file were not inspected. A prior sentence in another proceeding does not establish guilt in the new allegations.",
+      "limits_uk": "Це повідомлення про підозру, а не вирок у цій справі. Первинні освітні документи й матеріали провадження не перевірялися. Попередній вирок в іншому провадженні не встановлює вини за новими підозрами."
+    },
+    {
+      "theme": "kramatorsk-rescue-vehicle-strike",
+      "emoji": "🧾",
+      "source_name": "ZMINA reporting the State Emergency Service",
+      "source_url": "https://zmina.info/news/rosiyany-atakuvaly-ryatuvalnykiv-u-kramatorsku-ta-obstrilyaly-slovyansk/",
+      "tags": [
+        "kramatorsk-rescue-vehicle-strike",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "newsroom_report_of_emergency_service_account",
+      "evidence_level": "newsroom_report_of_emergency_service_account",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "incident_not_independently_verified",
+        "responder_safety"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Casefile",
+      "rubric_uk": "Розбір кейсу",
+      "title_en": "Kramatorsk: emergency service reports a strike on a fire engine during firefighting",
+      "title_uk": "Краматорськ: ДСНС повідомляє про удар по автоцистерні під час гасіння",
+      "source_date_label_en": "27 October 2026",
+      "source_date_label_uk": "27 жовтня 2026",
+      "what_happened_en": "ZMINA, citing Ukraine’s State Emergency Service, reports that a Russian drone struck a fire engine while rescuers were extinguishing a fire in Kramatorsk’s residential sector on 27 October. The service reported no injuries among the rescuers.",
+      "what_happened_uk": "ZMINA з посиланням на ДСНС повідомляє: 27 жовтня російський дрон влучив у пожежну автоцистерну, коли рятувальники гасили пожежу в житловому секторі Краматорська. За повідомленням служби, рятувальники не постраждали.",
+      "why_it_matters_en": "Editorial assessment: documenting a strike during a rescue response requires the sequence of events, not merely two images of damage. The absence of injuries does not erase the reported incident.",
+      "why_it_matters_uk": "Редакційна оцінка: документування удару під час рятувальної роботи потребує послідовності подій, а не лише двох знімків пошкоджень. Відсутність поранених не скасовує повідомленого інциденту.",
+      "how_to_use_en": "Link the initial fire, arrival and work of responders, and later reported impact through dated sources. Preserve original media with source attribution; keep current rescue movements, precise operational locations and personnel details out of public exports.",
+      "how_to_use_uk": "Пов’язуйте первинну пожежу, прибуття й роботу рятувальників та подальше повідомлене влучання датованими джерелами. Зберігайте оригінальні медіа з атрибуцією; не додавайте поточних переміщень, точних робочих локацій і персональних даних у публічний експорт.",
+      "limits_en": "The card attributes the account to the emergency service through ZMINA. It does not independently establish timing, weapon identity, deliberate targeting of responders or an individual perpetrator’s responsibility.",
+      "limits_uk": "Картка атрибутує повідомлення ДСНС через ZMINA. Вона незалежно не встановлює точного часу, типу зброї, умисного націлювання на рятувальників чи відповідальності конкретного виконавця."
+    },
+    {
+      "theme": "family-media-forensic-records",
+      "emoji": "🕊️",
+      "source_name": "Coordination Headquarters; National Police / Volyn communications",
+      "source_url": "https://koordshtab.gov.ua/posts/zustrich-z-rodynamy-viyskovosluzhbovtsiv-100-okremoyi-mekhanizovanoyi-bryhady-3901",
+      "tags": [
+        "family-media-forensic-records",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "primary_official_family_meeting_and_forensic_explainer",
+      "evidence_level": "primary_official_family_meeting_and_forensic_explainer",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "family_privacy",
+        "status_not_inferred",
+        "biometric_data"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Losses, Captivity & Missing",
+      "rubric_uk": "Втрати, полон, зниклі",
+      "title_en": "Missing-person work: families discuss photos, testimony and identification",
+      "title_uk": "Пошук зниклих: фото, свідчення та ідентифікація на зустрічі з родинами",
+      "source_date_label_en": "Family-meeting report: 28 October 2026, 09:22; police explainer: 27 October, 17:15",
+      "source_date_label_uk": "Повідомлення про зустріч: 28 жовтня 2026, 09:22; пояснення поліції: 27 жовтня, 17:15",
+      "what_happened_en": "The Headquarters’ new family-meeting account addresses submission of photos, videos and testimony, checks of possible captivity and questions about identification. Separately, police describe documenting repatriated remains and using DNA and information supplied by relatives. These are complementary processes, with different evidential questions.",
+      "what_happened_uk": "Нове повідомлення Коордштабу про зустріч із родинами охоплює передавання фото, відео й свідчень, перевірку можливого полону та питання ідентифікації. Окремо поліція описує документування репатрійованих останків, ДНК-дослідження та відомості родичів. Це взаємодоповнювальні процеси з різними доказовими питаннями.",
+      "why_it_matters_en": "Editorial assessment: a visual lead, a custody confirmation and a forensic identification should remain distinguishable throughout the record’s history.",
+      "why_it_matters_uk": "Редакційна оцінка: візуальна зачіпка, підтвердження полону та судово-експертна ідентифікація мають залишатися відмінними протягом усієї історії запису.",
+      "how_to_use_en": "Preserve a submitted file’s original form, source and date; keep the family’s account separate from a reviewer’s interpretation. Send sensitive material through authorised channels and record receipt and subsequent status updates without exposing relatives or biometric details.",
+      "how_to_use_uk": "Зберігайте первинний файл, його джерело й дату; відокремлюйте повідомлення родини від інтерпретації рецензента. Передавайте чутливе належними каналами та фіксуйте отримання й подальші зміни статусу без розкриття родичів чи біометричних деталей.",
+      "limits_en": "Neither publication confirms a particular person’s fate or provides an identification deadline. A family meeting is not evidence that every concern was resolved. No private images, DNA records or individual medical information are reproduced.",
+      "limits_uk": "Жодна публікація не підтверджує долі конкретної людини й не встановлює строку ідентифікації. Зустріч із родинами не доводить розв’язання всіх питань. Приватні зображення, ДНК-записи та індивідуальні медичні дані не відтворюємо.",
+      "supporting_sources": [
+        {
+          "name": "National Police, 27 October 2026 — identification work",
+          "url": "https://npu.gov.ua/news/tse-misiia-iaku-my-povynni-vykonuvaty-politsiia-dopomahaie-povernuty-zahyblykh-zakhysnykiv-ikhnim-rodynam"
+        }
+      ]
+    },
+    {
+      "theme": "foreign-recruitment-trafficking-findings",
+      "emoji": "🌍",
+      "source_name": "UN Commission of Inquiry / United Nations in Ukraine",
+      "source_url": "https://ukraine.un.org/en/325200-russian-authorities-committed-crimes-against-humanity-through-attacks-ukraine%E2%80%99s-energy",
+      "tags": [
+        "foreign-recruitment-trafficking-findings",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "primary_un_findings_with_separate_official_context",
+      "evidence_level": "primary_un_findings_with_separate_official_context",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "commission_not_court",
+        "pow_public_curiosity_risk",
+        "different_populations"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "title_en": "UN commission finds trafficking into Russia’s armed forces involving people from 29 countries",
+      "title_uk": "Комісія ООН встановила торгівлю людьми для російської армії щодо вихідців із 29 країн",
+      "source_date_label_en": "26 October 2026; related Headquarters publication: 27 October",
+      "source_date_label_uk": "26 жовтня 2026; пов’язана публікація Коордштабу: 27 жовтня",
+      "what_happened_en": "A separate finding in the commission’s 26 October publication concerns trafficking people from 29 countries into Russian military service through deception and coercion. It describes forced signing of Russian-language contracts after arrival. On 27 October, the Headquarters published a separate account concerning foreign POWs and an appeal ahead of the Russia–Africa summit.",
+      "what_happened_uk": "Окремий висновок публікації комісії від 26 жовтня стосується торгівлі людьми з 29 країн для служби в російській армії шляхом обману й примусу. Описано примус до підписання російськомовних контрактів після прибуття. 27 жовтня Коордштаб опублікував окремий матеріал про іноземних військовополонених і звернення перед самітом Росія–Африка.",
+      "why_it_matters_en": "Editorial assessment: nationality, recruitment circumstances, contract signature and POW status answer different questions. An aggregate recruitment count cannot determine an individual’s consent or experience.",
+      "why_it_matters_uk": "Редакційна оцінка: громадянство, обставини вербування, підписання контракту та статус військовополоненого відповідають на різні питання. Загальне число завербованих не встановлює індивідуальної згоди чи досвіду.",
+      "how_to_use_en": "Build a source-attributed chronology of the offer, travel, contract and later service using lawfully obtained records. Keep allegations of deception separate from verified documents. Protect interviewees and preserve the distinction between their testimony and official findings.",
+      "how_to_use_uk": "Будуйте атрибутовану хронологію пропозиції, поїздки, контракту та подальшої служби за правомірно отриманими записами. Відокремлюйте твердження про обман від перевірених документів. Захищайте співрозмовників і розділяйте їхні свідчення та офіційні висновки.",
+      "limits_en": "These are commission findings, not individual court judgments or proof that all foreign recruits were trafficked. The two publications describe different populations. No POW video, face, name or family details are reproduced or authenticated here.",
+      "limits_uk": "Це висновки комісії, а не індивідуальні судові рішення чи доказ примусу щодо всіх іноземних рекрутів. Дві публікації описують різні сукупності. Відео полонених, обличчя, імена й дані родин не відтворюємо та не автентифікуємо.",
+      "supporting_sources": [
+        {
+          "name": "Coordination Headquarters, 27 October 2026 — separate foreign-POW publication",
+          "url": "https://koordshtab.gov.ua/posts/afrykanski-viyskovopoloneni-zvernulysya-do-uchasnykiv-samitu-rosiya-afryka-3897"
+        }
+      ]
+    },
+    {
+      "theme": "sweden-ai-access-governance",
+      "emoji": "🛡️",
+      "source_name": "Sveriges Radio Ekot; SVT / Government Offices written response",
+      "source_url": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet",
+      "tags": [
+        "sweden-ai-access-governance",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "original_newsroom_reporting_with_institutional_written_response",
+      "evidence_level": "original_newsroom_reporting_with_institutional_written_response",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "institution_specific_policy",
+        "confidential_data",
+        "no_product_security_guarantee"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Investigator OPSEC",
+      "rubric_uk": "Безпека дослідника",
+      "title_en": "Sweden’s Government Offices restrict browser AI access but retain approved channels",
+      "title_uk": "Урядова канцелярія Швеції обмежує браузерний доступ до ШІ",
+      "source_date_label_en": "Ekot: 23 October 2026; SVT updated: 24 October; restriction effective: 26 October",
+      "source_date_label_uk": "Ekot: 23 жовтня 2026; оновлення SVT: 24 жовтня; обмеження діє з 26 жовтня",
+      "what_happened_en": "Ekot reports a block on ChatGPT and Claude from Government Offices work computers. SVT’s written response from the institution specifies browser interfaces from 26 October, while access to the models remains through the internal Intric platform. Approved Microsoft Copilot access is also retained.",
+      "what_happened_uk": "Ekot повідомляє про блокування ChatGPT і Claude на робочих комп’ютерах Урядової канцелярії. У письмовій відповіді установи SVT уточнено: з 26 жовтня обмежено браузерні інтерфейси, а доступ до моделей зберігається через внутрішню платформу Intric. Також залишається погоджений доступ до Microsoft Copilot.",
+      "why_it_matters_en": "Editorial assessment: the interface, contract and permitted data use can matter as much as the model name when handling confidential research material.",
+      "why_it_matters_uk": "Редакційна оцінка: інтерфейс, договірні умови й дозволене використання даних можуть бути не менш важливими за назву моделі під час роботи з конфіденційними матеріалами.",
+      "how_to_use_en": "Document which service, account and integration an organisation permits, for which material and under which conditions. Review disclosure and retention terms before processing witness, family or unpublished case data. Keep human review of generated conclusions.",
+      "how_to_use_uk": "Фіксуйте дозволені організацією сервіс, обліковий запис та інтеграцію, категорії матеріалів і умови роботи. Перевіряйте умови розкриття й зберігання до оброблення даних свідків, родин чи неопублікованих справ. Залишайте людську перевірку згенерованих висновків.",
+      "limits_en": "This is an institutional access policy, not a nationwide ban on models or evidence that any named product is universally safe. The internal configuration and contracts were not independently inspected. No software or security comparison was performed.",
+      "limits_uk": "Це політика доступу установи, а не загальнодержавна заборона моделей чи доказ загальної безпечності названого продукту. Внутрішні налаштування й договори незалежно не перевірялися. Порівняння програм чи їхньої безпеки не проводилося.",
+      "supporting_sources": [
+        {
+          "name": "SVT, updated 24 October — written institutional clarification",
+          "url": "https://www.svt.se/nyheter/inrikes/ai-tjanster-sparras-pa-regeringskansliet"
+        }
+      ]
+    },
+    {
+      "theme": "ksd-warehouse-loss-estimation",
+      "emoji": "📚",
+      "source_name": "ZMINA reporting publisher KSD’s statement",
+      "source_url": "https://zmina.info/news/rosiya-vdaryla-po-skladu-vydavnycztva-ksd-na-harkivshhyni-vyhid-novyh-knyzhok-mozhut-vidklasty/",
+      "tags": [
+        "ksd-warehouse-loss-estimation",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "newsroom_report_of_publisher_statement",
+      "evidence_level": "newsroom_report_of_publisher_statement",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "preliminary_damage_account",
+        "operational_locations_omitted"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Infrastructure Signals",
+      "rubric_uk": "Інфраструктурні сигнали",
+      "title_en": "KSD reports a warehouse strike and possible delays to new books",
+      "title_uk": "КСД повідомляє про удар по складу та можливі затримки нових книжок",
+      "source_date_label_en": "27 October 2026; the statement concerns that morning’s attack",
+      "source_date_label_uk": "27 жовтня 2026; заява стосується ранкової атаки цього дня",
+      "what_happened_en": "KSD says its warehouse in Kharkiv region was hit on 27 October and no team members were injured, ZMINA reports. The publisher’s account says access was restricted and damage had not yet been fully assessed; planned November releases could be affected.",
+      "what_happened_uk": "КСД повідомляє про влучання у склад на Харківщині 27 жовтня та відсутність постраждалих у команді, пише ZMINA. У повідомленні видавництва зазначено: доступ обмежений, повного оцінювання пошкоджень ще немає; це може вплинути на заплановані листопадові видання.",
+      "why_it_matters_en": "Editorial assessment: physical damage, lost stock, business interruption and delays to cultural production need separate records and may become measurable at different times.",
+      "why_it_matters_uk": "Редакційна оцінка: фізичні пошкодження, втрати запасів, перерва роботи й затримки культурного виробництва потребують окремих записів та можуть стати вимірюваними в різний час.",
+      "how_to_use_en": "Keep the original dated statement and later assessments as versions. Compare authorised inventories, damage documentation and actual schedule changes after access is restored. Avoid publishing warehouse addresses, stock locations or recovery movements.",
+      "how_to_use_uk": "Зберігайте первинну датовану заяву й подальші оцінки як версії. Після відновлення доступу зіставляйте належно отримані інвентарні відомості, документування пошкоджень та фактичні зміни планів. Не публікуйте адреси складів, розміщення запасів чи переміщення під час відновлення.",
+      "limits_en": "This is an attributed publisher account, not an independent site inspection or final inventory. No number of destroyed books, monetary loss or deliberate targeting of publishing activity is established here.",
+      "limits_uk": "Це атрибутоване повідомлення видавництва, а не незалежний огляд місця чи остаточна інвентаризація. Кількість знищених книжок, грошову суму втрат чи навмисне націлювання на видавничу діяльність тут не встановлено."
+    }
+  ],
+  "internal_notes": [
+    "EDITORIAL NOTES — INTERNAL. Wednesday144,28October2026. User authorised publication and Telegram announcement.",
+    "Seven cards: MariupolRD4U;Saldochildren;Kramrescuers;family28+NPUforensic27combined;UNtrafficking26withKoord27context;Sweden23/24effective26;KSDwarehouse27. URLs and topic overlap must be checked against archive.",
+    "Mariupol primarycouncil27October10:14fullyread.125000notifications/4bnEUR collected,31000transferred perCouncil; notaward,acceptedclaimsoruniquepersons. Consentandtransferpermissionsretained. No underlyingdatasetaccess.",
+    "SSU26October13:00primaryread; alleges7October2022childtransfer andfalsifiedschoolrecords. Suspicion28(2)/438(1),notconvictionnewcase. Previoussentenceisotherproceeding. Omitchildrennames,schoolnameandroutes. No originalrecordsorfullcasefile independentlyread.",
+    "KramZMINA27October citesDSNS; originalFBfetchthrottled. Clearlyattributednotindependentgeolocationorweapon/intentfinding. Noresponderinjuriesreported; noexactlocation/movements. Historicaldoubletapstatisticsnotrepeated.",
+    "FamilyKoord28October09:22primaryread; NPU27October17:15originalforensicexplainerread. Combinedonecardtoavoidtwoequivalentfamily/repatriationitems. Newsourceupdatebutnoindividualfateorchangedlegalruleassertion. No privateDNA/medicaldata; noexplosivehandlinginstructions.",
+    "UNUkraineofficial26Octoberpressreleasefullyread. NewanglefromsameUNreportasDaily143energy: traffickedpersons29countries, deception/coercion/forcedcontracts. No duplicateenergycard. Koord27October10:18sourceofseparatePOWappeal; video notviewed/embedded/authenticated. No59/18cohortmergewith29/151recruitmentcounts. No namedPOW orfamilydetails. Findingsnotindividualcourtjudgments.",
+    "SwedenoriginalEkot23October12:20andSVT23/updated24October16:21read. SVTinstitutionalemailexplicitbrowserinterfacesblocked26October, modelsretainedthroughIntric; Copilotapproved. No nationwideban and no productsecurityendorsement. Internalconfiguration/contractsnotread.",
+    "KS DZMINA27Octoberreportingpublisherstatementread. FBsourcefetchthrottled. No independentinspection,lossvaluationorintentaudit. PublicationdatefutureNovember5notguaranteedchangedrelease. Nocurrentwarehouseaddress,accessrouteorworkeridentity.",
+    "Excluded staleZMINA27Octoberwarcrimecaseload/victimsupport: linkedoriginalTheSun published18October11:56/updated19October12:24, outside7daywindow. Do notpresent6000–9000/month,2500victims/487witnessesasfresh27Octoberinterview. Sensational/graphicdetailsomitted.",
+    "Excluded: CP Kadvocacy, donationpromotions, rawpersonalrecords; no repetitiveOleshkyceasefireorUNenergyrecap. ODIHR25–26programreadbutnoeventoutcomeverifiedandnotusedasfiller. KSDreplacestrainingannouncementforcivilianinfrastructurecoverage.",
+    "Best sources: MariupolCouncil,SSU,Koord,NPU,UNofficialrelease,Ekot/SVToriginalreporting. Weaknesses: twoZMINAofficial/corporatestatementreports,FBoriginalsunread; noMariupoldataset; noSSUcasefile; noSwedishpolicytextbeyondinstitutionalemail.",
+    "Weekly:local-to-internationalevidenceprovenance;documentfalsificationandchildtransfer;rescueincidentsequence;photo/DNA/statusboundaries;traffickingandPOWcohortdefinitions;AIaccesscontract/interface;physicalstockvsbusinessinterruption.",
+    "ToolRadar:no newtool orcatalogadded; Intric/Copilotmentionedaspolicycontext,notreviewedorrecommended. No install/runtime/benchmark/securityauditclaims.",
+    "Followup:RD4Uagreementtextandtransferreceipts;childtransferproceduralacts;DSNSoriginalincidentmedia;NPUprotectedidentificationprocedures;UNreportmethodology;Swedenofficialpolicywithscope;KSDlaterdamageassessment. Userpublicationinstructionrequired before movingdraftintoissues/."
+  ]
+}
