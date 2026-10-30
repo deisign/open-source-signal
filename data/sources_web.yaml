@@ -3,6 +3,18 @@
 # A listed source is not automatically publication-ready evidence.
 
 international_osint:
+  - name: Hindsight Foundry / Ryan Benson
+    url: https://hindsig.ht/
+    blog_url: https://hindsig.ht/blog/
+    feed_url: https://hindsig.ht/rss.xml
+    roles: [primary, methodology, source_pointer]
+    language: en
+    primary_rubrics:
+      - Tradecraft / Методика
+      - Toolbox / Інструментарій
+      - Tool Radar / Інструментальний радар
+      - Investigator OPSEC / Безпека дослідника
+    note: Original browser-forensics research, URL and identifier analysis, timestamp interpretation, and Hindsight/Unfurl release notes. Include in the regular source review. Verify each method against its stated versions, limitations and original project documentation; distinguish public URL analysis from examination of browser artifacts requiring authorised access. The site itself is a source, not a toolkit entry.
   - name: Bellingcat
     url: https://www.bellingcat.com/
     roles: [investigative, methodology]
