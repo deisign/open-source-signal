@@ -1,0 +1,305 @@
+{
+  "issue_number": "146",
+  "date_iso": "2026-10-30",
+  "date_label_en": "30 October 2026",
+  "date_label_uk": "30 жовтня 2026",
+  "slug": "open-source-signal",
+  "title_en": "Open Source Signal",
+  "title_uk": "Сигнал відкритих джерел",
+  "issue_type": "Daily Signal",
+  "language_label": "EN + UKR",
+  "subtitle_en": "Cultural-heritage accountability, missing-person records, updated casualty reports and satellite availability.",
+  "subtitle_uk": "Відповідальність за удар по культурній спадщині, записи про зниклих, оновлення втрат і доступність супутникових даних.",
+  "dek_en": "Seven cards: the Skovoroda museum indictment, discrepancies in missing-person records, Abdulgaziiev’s reported release and return, an attack on an evacuation team, Dnipro’s updated death toll, Sentinel publication delays and the ICC prosecutor election timetable.",
+  "dek_uk": "Сім карток: обвинувальний акт щодо музею Сковороди, розбіжності в документах про зниклих, повідомлення про звільнення й повернення Абдулгазієва, удар по евакуаційній групі, оновлені дані про загиблих у Дніпрі, затримки публікації Sentinel та календар обрання прокурора МКС.",
+  "editorial_frame": {
+    "what_this_is": "A bilingual editorial issue for Friday 30 October 2026. Sources dated 27–30 October; original police report on the evacuation team dated 28 October. Event, procedural and publication dates are distinguished. Practical research suggestions are editorial analysis.",
+    "what_this_is_not": "A conviction in the museum case, an individual missing-person status determination, an independent medical assessment, a final casualty inventory, an independent reproduction of satellite analysis or an announcement that an ICC prosecutor has been elected."
+  },
+  "rubric_map": [
+    "📡 Signal One / Головний сигнал",
+    "🕊️ Losses, Captivity & Missing / Втрати, полон, зниклі",
+    "⚖️ Ukraine Lens / Українська оптика",
+    "🚑 War Crimes Verification / Верифікація воєнних злочинів",
+    "🕯️ Casefile / Розбір кейсу",
+    "🛰️ Map Room / Картографічна кімната",
+    "🏛️ Risk Watch / Межі й ризики"
+  ],
+  "footer_note": "Prepared for Open Source Signal / Сигнал відкритих джерел.",
+  "items": [
+    {
+      "theme": "skovoroda-museum-indictment",
+      "emoji": "📡",
+      "source_name": "Ukrinform reporting the Prosecutor General’s Office",
+      "source_url": "https://www.ukrinform.ua/amp/rubric-culture/4179263-nakazav-zavdati-udaru-po-muzeu-skovorodi-u-voennomu-zlocini-obvinuvacuut-rosijskogo-generallejtenanta.html",
+      "tags": [
+        "skovoroda-museum-indictment",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "news_agency_report_of_prosecution_update",
+      "evidence_level": "news_agency_report_of_prosecution_update",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "indictment_not_conviction",
+        "underlying_case_unread"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Signal One",
+      "rubric_uk": "Головний сигнал",
+      "title_en": "Prosecutors approve an indictment over the 2022 strike on the Skovoroda museum",
+      "title_uk": "Прокурори затвердили обвинувальний акт щодо удару 2022 року по музею Сковороди",
+      "source_date_label_en": "29 October 2026, 10:10; indictment approved: 23 October; strike: 6 May 2022",
+      "source_date_label_uk": "29 жовтня 2026, 10:10; акт затверджено: 23 жовтня; удар: 6 травня 2022",
+      "what_happened_en": "Ukrinform reports that prosecutors approved an indictment against a Russian lieutenant general on 23 October over an alleged order to strike the Skovoroda museum in May 2022. Investigators describe an order chain through subordinate commanders. The new development is the indictment, rather than a new attack or conviction.",
+      "what_happened_uk": "Укрінформ повідомляє: 23 жовтня прокурори затвердили обвинувальний акт щодо російського генерал-лейтенанта за ймовірний наказ ударити по музею Сковороди у травні 2022 року. Слідство описує ланцюг наказу через підлеглих командирів. Новий етап — обвинувальний акт, а не новий удар чи вирок.",
+      "why_it_matters_en": "Editorial assessment: documenting damage to a cultural site and establishing who ordered it require different, connected bodies of evidence.",
+      "why_it_matters_uk": "Редакційна оцінка: документування пошкоджень культурного об’єкта та встановлення того, хто наказав його атакувати, потребують різних, пов’язаних масивів доказів.",
+      "how_to_use_en": "Maintain separate records for the site, dated damage evidence, alleged command links and procedural acts. Preserve the distinction between an investigator’s reconstruction and evidence independently available for review.",
+      "how_to_use_uk": "Ведіть окремі записи про об’єкт, датовані докази пошкоджень, імовірні командні зв’язки та процесуальні акти. Розрізняйте реконструкцію слідства й докази, незалежно доступні для перевірки.",
+      "limits_en": "The official PGO page returned an access error; the agency’s attributed report was read. The indictment and underlying case file were not obtained. The alleged order and intent remain prosecution claims subject to judicial examination.",
+      "limits_uk": "Офіційна сторінка ОГП повернула помилку доступу; прочитано атрибутований матеріал агентства. Сам акт і матеріали справи не отримано. Наказ та умисел залишаються твердженнями обвинувачення, які має досліджувати суд.",
+      "supporting_sources": [
+        {
+          "name": "Prosecutor General’s Office — original announcement linked by Ukrinform",
+          "url": "https://gp.gov.ua/ua/posts/nakazav-zavdati-raketnogo-udaru-po-muzeyu-grigoriya-skovorodi-rosiiskogo-general-leitenanta-obvinuvacuyut-u-vojennomu-zlocini"
+        }
+      ]
+    },
+    {
+      "theme": "missing-person-document-discrepancies",
+      "emoji": "🕊️",
+      "source_name": "Coordination Headquarters / family-meeting account",
+      "source_url": "https://koordshtab.gov.ua/posts/koordynatsiynyy-shtab-proviv-zustrich-iz-rodynamy-viyskovosluzhbovtsiv-184-navchalnoho-tsentru-3911",
+      "tags": [
+        "missing-person-document-discrepancies",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "primary_official_family_meeting",
+      "evidence_level": "primary_official_family_meeting",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "family_privacy",
+        "biometric_data",
+        "status_not_inferred"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Losses, Captivity & Missing",
+      "rubric_uk": "Втрати, полон, зниклі",
+      "title_en": "Families raise discrepancies in official records and questions about DNA samples",
+      "title_uk": "Родини порушили питання розбіжностей у документах та відібраних ДНК-зразків",
+      "source_date_label_en": "29 October 2026, 15:47",
+      "source_date_label_uk": "29 жовтня 2026, 15:47",
+      "what_happened_en": "The Headquarters reports a meeting with families of personnel from the 184th training centre. Questions included internal inquiry materials, discrepancies in official documents, personal belongings and checks concerning collected DNA samples. The account records concerns raised; it does not confirm that each discrepancy was resolved.",
+      "what_happened_uk": "Коордштаб повідомляє про зустріч із родинами військовослужбовців 184-го навчального центру. Серед питань — матеріали службових розслідувань, розбіжності в офіційних документах, особисті речі та перевірка відомостей про відібрані ДНК-зразки. Повідомлення фіксує звернення, але не підтверджує усунення кожної розбіжності.",
+      "why_it_matters_en": "Editorial assessment: conflicting records should remain traceable instead of being merged into a falsely certain account of a person’s fate.",
+      "why_it_matters_uk": "Редакційна оцінка: суперечливі записи мають залишатися простежуваними, замість злиття у хибно певну версію долі людини.",
+      "how_to_use_en": "Keep each document’s issuer, date, version and disputed field. Log correction requests and replies through authorised channels. Track whether a sample was collected, received or analysed as separate states, without publishing biometric data.",
+      "how_to_use_uk": "Зберігайте автора документа, дату, версію та спірне поле. Фіксуйте запити на виправлення й відповіді належними каналами. Розрізняйте відібраний, отриманий та досліджений зразок, не публікуючи біометричних даних.",
+      "limits_en": "No individual captivity, death or identification is established by this meeting report. Private records and sample histories were not reviewed. No locations of disappearance, relatives’ identities or genetic information are reproduced.",
+      "limits_uk": "Це повідомлення про зустріч не встановлює полону, загибелі чи ідентифікації конкретної людини. Приватні документи та історії зразків не досліджувалися. Місця зникнення, особи родичів і генетичні відомості не відтворюємо."
+    },
+    {
+      "theme": "abdulgaziiev-release-return-distinction",
+      "emoji": "⚖️",
+      "source_name": "Ukrinform / Refat Chubarov; Suspilne Crimea / human-rights sources",
+      "source_url": "https://www.ukrinform.ua/rubric-regions/4179401-politvazen-tofik-abdulgaziev-povernuvsa-do-krimu-pisla-zvilnenna-za-stanom-zdorova.html",
+      "tags": [
+        "abdulgaziiev-release-return-distinction",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "news_agency_statement_with_separate_newsroom_reporting",
+      "evidence_level": "news_agency_statement_with_separate_newsroom_reporting",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "medical_privacy",
+        "release_not_acquittal",
+        "reported_restrictions"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "title_en": "Abdulgaziiev’s release on health grounds and return to Crimea are reported as separate developments",
+      "title_uk": "Про звільнення Абдулгазієва за станом здоров’я та повернення до Криму повідомляють як про окремі події",
+      "source_date_label_en": "Ukrinform: 29 October 2026, 15:00; release: 26 October; return reported on 29 October",
+      "source_date_label_uk": "Укрінформ: 29 жовтня 2026, 15:00; звільнення: 26 жовтня; про повернення повідомлено 29 жовтня",
+      "what_happened_en": "Ukrinform, citing Refat Chubarov, reports that Crimean Tatar political prisoner Tofik Abdulgaziiev was released on health grounds on 26 October and returned to occupied Crimea. Suspilne Crimea separately reports the return through human-rights sources. Chubarov also reports restrictions on leaving his residence.",
+      "what_happened_uk": "Укрінформ із посиланням на Рефата Чубарова повідомляє: кримськотатарського політв’язня Тофіка Абдулгазієва звільнили за станом здоров’я 26 жовтня, після чого він повернувся до окупованого Криму. Суспільне Крим окремо повідомляє про повернення за джерелами серед правозахисників. Чубаров також заявляє про обмеження на залишення місця проживання.",
+      "why_it_matters_en": "Editorial assessment: a release decision, physical departure and later restrictions describe different parts of a person’s legal and practical situation.",
+      "why_it_matters_uk": "Редакційна оцінка: рішення про звільнення, фактичне вибуття та подальші обмеження описують різні складові правового й практичного становища людини.",
+      "how_to_use_en": "Maintain a source-attributed chronology of the decision, release and subsequent reporting. Confirm the scope of any continuing restrictions against an accessible legal act before characterising them more broadly.",
+      "how_to_use_uk": "Ведіть атрибутовану хронологію рішення, звільнення та наступних повідомлень. Перед ширшими висновками перевіряйте обсяг подальших обмежень за доступним правовим актом.",
+      "limits_en": "The release order, medical records and restriction documents were not independently obtained. Reported health grounds are not a medical assessment by this publication; release does not establish acquittal or freedom from all restrictions. Addresses, travel details and extensive diagnoses are omitted.",
+      "limits_uk": "Рішення про звільнення, медичні записи та документи про обмеження незалежно не отримано. Повідомлена медична підстава не є нашим медичним висновком; звільнення не встановлює виправдання чи відсутності всіх обмежень. Адреси, деталі пересування й докладні діагнози опущено.",
+      "supporting_sources": [
+        {
+          "name": "Suspilne Crimea — separately sourced report on the return",
+          "url": "https://suspilne.media/crimea/1436951-krimskij-politvazen-tofik-abdulgaziev-povernuvsa-u-krim-jogo-zvilnili-z-uvaznenna-za-stanom-zdorova/"
+        }
+      ]
+    },
+    {
+      "theme": "kupiansk-evacuation-team-attack",
+      "emoji": "🚑",
+      "source_name": "National Police / Kharkiv regional communications",
+      "source_url": "https://npu.gov.ua/news/na-kharkivshchyni-rosiiskyi-dron-atakuvav-evakuatsiinu-hrupu-politsii-bili-ianholy-poraneno-dvokh-pravookhorontsiv",
+      "tags": [
+        "kupiansk-evacuation-team-attack",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "primary_police_incident_account",
+      "evidence_level": "primary_police_incident_account",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "incident_not_independently_verified",
+        "evacuation_safety",
+        "red_cross_entities_distinct"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "War Crimes Verification",
+      "rubric_uk": "Верифікація воєнних злочинів",
+      "title_en": "Police report two officers wounded in an attack on an evacuation team",
+      "title_uk": "Поліція повідомляє про двох поранених правоохоронців після удару по евакуаційній групі",
+      "source_date_label_en": "28 October 2026, 16:00; attack reported that morning; secondary coverage: 29 October",
+      "source_date_label_uk": "28 жовтня 2026, 16:00; повідомлено про ранковий удар цього дня; вторинне висвітлення: 29 жовтня",
+      "what_happened_en": "Police say an FPV drone struck a White Angels armoured vehicle during an evacuation mission in Kupiansk district on 28 October. Two officers were wounded; a vehicle of the accompanying Ukrainian Red Cross Society was also damaged. The police report documenting the incident.",
+      "what_happened_uk": "За повідомленням поліції, 28 жовтня FPV-дрон уразив броньоване авто «Білих янголів» під час евакуаційної місії в Куп’янському районі. Поранено двох правоохоронців; також пошкоджено авто Товариства Червоного Хреста України, представники якого супроводжували групу. Поліція повідомляє про документування події.",
+      "why_it_matters_en": "Editorial assessment: a vehicle’s humanitarian role, visible damage and an attacker’s intent require separate evidential support.",
+      "why_it_matters_uk": "Редакційна оцінка: гуманітарна роль автомобіля, видимі пошкодження й умисел атакувальника потребують окремого доказового підтвердження.",
+      "how_to_use_en": "Preserve original incident media and its provenance. Record the source of each claim about the vehicle’s task, damage and casualties. Seek corroboration while protecting crews and people awaiting evacuation.",
+      "how_to_use_uk": "Зберігайте первинні медіа події та їхнє походження. Фіксуйте джерело кожного твердження про завдання авто, пошкодження й постраждалих. Шукайте підтвердження із захистом екіпажів та людей, які очікують евакуації.",
+      "limits_en": "This is the police account, not independent geolocation, weapon verification or a judicial finding of intent. The Ukrainian Red Cross Society and the ICRC are distinct organisations. Exact routes, pickup locations and operating times are omitted.",
+      "limits_uk": "Це повідомлення поліції, а не незалежна геолокація, перевірка зброї чи судовий висновок про умисел. Товариство Червоного Хреста України та МКЧХ — різні організації. Точні маршрути, місця збору й час роботи опущено."
+    },
+    {
+      "theme": "dnipro-station-death-toll-update",
+      "emoji": "🕯️",
+      "source_name": "Ukrinform reporting Dnipropetrovsk regional administration; earlier National Police report",
+      "source_url": "https://www.ukrinform.ua/rubric-regions/4179589-u-dnipri-kilkist-zagiblih-cerez-udar-rf-po-zaliznicnomu-vokzalu-zrosla-do-15.html",
+      "tags": [
+        "dnipro-station-death-toll-update",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "news_agency_official_update_with_primary_earlier_account",
+      "evidence_level": "news_agency_official_update_with_primary_earlier_account",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "provisional_casualty_totals",
+        "versioned_updates",
+        "victim_privacy"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Casefile",
+      "rubric_uk": "Розбір кейсу",
+      "title_en": "Dnipro station death toll rises to 15 in the 30 October update",
+      "title_uk": "За оновленням від 30 жовтня, кількість загиблих через удар по вокзалу Дніпра зросла до 15",
+      "source_date_label_en": "30 October 2026, 07:34; earlier police account: 29 October, 12:45; strike: 29 October",
+      "source_date_label_uk": "30 жовтня 2026, 07:34; раннє повідомлення поліції: 29 жовтня, 12:45; удар: 29 жовтня",
+      "what_happened_en": "Ukrinform reports the regional administration’s update to 15 deaths after a wounded man died in hospital following the 29 October station attack. The earlier police publication recorded 13 deaths and 10 wounded. Later reporting had given 14 deaths: these are successive updates, not separate casualty groups.",
+      "what_happened_uk": "Укрінформ передає оновлення ОВА: після смерті пораненого в лікарні кількість загиблих через удар 29 жовтня по вокзалу зросла до 15. Раннє повідомлення поліції містило 13 загиблих і 10 поранених. Згодом повідомляли про 14 загиблих: це послідовні оновлення, а не окремі групи втрат.",
+      "why_it_matters_en": "Editorial assessment: casualty records need a timestamp and revision history, especially when people die of injuries after the initial announcement.",
+      "why_it_matters_uk": "Редакційна оцінка: облік втрат потребує часу актуальності та історії змін, особливо коли люди помирають від поранень після першого оголошення.",
+      "how_to_use_en": "Store the original report and every update separately, with a link explaining the change. Deduplicate by incident; do not add successive death totals together or derive a current wounded count by arithmetic alone.",
+      "how_to_use_uk": "Зберігайте початкове повідомлення й кожне оновлення окремо, зі зв’язком, що пояснює зміну. Прибирайте дублювання за подією; не складайте послідовні числа загиблих і не виводьте актуальне число поранених лише арифметично.",
+      "limits_en": "The latest figure here is attributed to the administration through Ukrinform, not an independently audited or final inventory. Its underlying individual records were not reviewed. No victim identities, graphic imagery or assignment of individual criminal responsibility are included.",
+      "limits_uk": "Найновіше число тут атрибутовано ОВА через Укрінформ; це не незалежно перевірений чи остаточний реєстр. Індивідуальні записи не досліджувалися. Імена жертв, графічні зображення та висновки про індивідуальну кримінальну відповідальність не наводяться.",
+      "supporting_sources": [
+        {
+          "name": "National Police, 29 October 2026, 12:45 — earlier incident account",
+          "url": "https://npu.gov.ua/news/politseiski-pratsiuiut-na-mistsi-ataky-na-terytorii-zaliznychnoho-vokzalu-u-dnipri"
+        }
+      ]
+    },
+    {
+      "theme": "sentinel-capture-publication-delay",
+      "emoji": "🛰️",
+      "source_name": "Bellingcat / Logan Williams",
+      "source_url": "https://www.bellingcat.com/news/2026/10/29/eu-satellite-imagery-delayed-over-gaza-and-parts-of-west-bank-by-24-hours/",
+      "tags": [
+        "sentinel-capture-publication-delay",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "primary_investigation_and_institutional_response",
+      "evidence_level": "primary_investigation_and_institutional_response",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "regional_scope",
+        "availability_not_event_absence",
+        "analysis_not_reproduced"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Map Room",
+      "rubric_uk": "Картографічна кімната",
+      "title_en": "Bellingcat identifies a 24-hour publication delay affecting Sentinel imagery over Gaza and parts of the West Bank",
+      "title_uk": "Bellingcat виявив добову затримку публікації знімків Sentinel над Газою та частиною Західного берега",
+      "source_date_label_en": "29 October 2026; the reported regional delay began on 28 March 2026",
+      "source_date_label_uk": "29 жовтня 2026; за аналізом, регіональна затримка почалася 28 березня 2026",
+      "what_happened_en": "Bellingcat reports a 24-hour delay affecting publication of Sentinel-1 and Sentinel-2 imagery over Gaza and parts of the West Bank. Its method compares capture and publication timestamps. The EU spokesperson attributes restrictions to regional security concerns. This is new reporting on an existing delay, not a worldwide shutdown.",
+      "what_happened_uk": "Bellingcat повідомляє про добову затримку публікації знімків Sentinel-1 та Sentinel-2 над Газою й частиною Західного берега. Метод зіставляє час знімання та публікації. Речник ЄС пояснює обмеження регіональними безпековими ризиками. Це новий матеріал про чинну затримку, а не глобальне припинення доступу.",
+      "why_it_matters_en": "Editorial assessment: an unavailable recent image is a gap in observation, not evidence that nothing happened.",
+      "why_it_matters_uk": "Редакційна оцінка: недоступний свіжий знімок є прогалиною спостереження, а не доказом відсутності події.",
+      "how_to_use_en": "Record acquisition time, publication time, retrieval time and product identity separately. State the observation window in retrospective verification and preserve uncertainty where image coverage is missing.",
+      "how_to_use_uk": "Окремо фіксуйте час знімання, публікації, отримання та ідентифікатор продукту. У ретроспективній перевірці зазначайте вікно спостереження й зберігайте невизначеність там, де знімків бракує.",
+      "limits_en": "We read Bellingcat’s analysis but did not reproduce its global catalogue audit. A nominal policy delay is not the entire end-to-end latency. No finding about Ukrainian coverage follows from this regional case, and no method for bypassing restrictions is provided.",
+      "limits_uk": "Ми прочитали аналіз Bellingcat, але не відтворювали глобальний аудит каталогу. Номінальна політична затримка не дорівнює всьому часу до доступності. Цей регіональний кейс не дає висновку про покриття України; способів обходу обмежень не наводимо."
+    },
+    {
+      "theme": "icc-prosecutor-election-timetable",
+      "emoji": "🏛️",
+      "source_name": "ICC Assembly of States Parties / official press release",
+      "source_url": "https://www.icc-cpi.int/news/bureau-assembly-states-parties-launches-procedure-election-fourth-prosecutor-icc",
+      "tags": [
+        "icc-prosecutor-election-timetable",
+        "ukraine",
+        "verification"
+      ],
+      "source_type": "primary_official_release_indexed_text",
+      "evidence_level": "primary_official_release_indexed_text",
+      "verification_status": "source_read_claims_attributed",
+      "risk_flags": [
+        "future_timetable",
+        "selection_not_case_outcome"
+      ],
+      "public_interest": "Accountability, civilian protection and accurate evidence handling.",
+      "rubric_en": "Risk Watch",
+      "rubric_uk": "Межі й ризики",
+      "title_en": "ICC prosecutor selection procedure launches; applications open on 31 October",
+      "title_uk": "Розпочато процедуру обрання прокурора МКС; заявки відкриваються 31 жовтня",
+      "source_date_label_en": "Official release: 27 October 2026; procedure launched: 26 October; applications: 31 October 2026–31 January 2027",
+      "source_date_label_uk": "Офіційний реліз: 27 жовтня 2026; запуск процедури: 26 жовтня; заявки: 31 жовтня 2026–31 січня 2027",
+      "what_happened_en": "The Assembly’s Bureau has launched the procedure to elect the ICC’s fourth prosecutor. Applications open on 31 October and close on 31 January; qualified applications are to be published in February 2027, with assessment and due diligence. The announced election timetable points to December 2027 and may change.",
+      "what_happened_uk": "Бюро Асамблеї розпочало процедуру обрання четвертого прокурора МКС. Приймання заявок відкривається 31 жовтня й завершується 31 січня; заявки кваліфікованих кандидатів мають оприлюднити в лютому 2027 року з подальшим оцінюванням і перевіркою доброчесності. Оголошений календар передбачає вибори в грудні 2027 року й може змінюватися.",
+      "why_it_matters_en": "Editorial assessment: an institutional selection timetable should not be mistaken for a change in the status of a particular investigation or case.",
+      "why_it_matters_uk": "Редакційна оцінка: інституційний календар добору не слід сприймати як зміну статусу конкретного розслідування чи справи.",
+      "how_to_use_en": "Track the official vacancy, published applications, due-diligence notices and election decision as distinct documents. Date each update and avoid interpreting candidate rumours as an official shortlist.",
+      "how_to_use_uk": "Відстежуйте офіційну вакансію, оприлюднені заявки, повідомлення про перевірку доброчесності та рішення виборів як різні документи. Датуйте оновлення й не трактуйте чутки про кандидатів як офіційний список.",
+      "limits_en": "The official release was available in indexed text; direct page retrieval returned an access error. No prosecutor has been elected through this procedure yet, and no outcome or effect on Ukraine-related proceedings is established.",
+      "limits_uk": "Офіційний реліз був доступний в індексованому тексті; пряме отримання сторінки повернуло помилку доступу. За цією процедурою прокурора ще не обрано; результату чи впливу на провадження щодо України тут не встановлено.",
+      "supporting_sources": [
+        {
+          "name": "Assembly of States Parties — election procedure and documents",
+          "url": "https://asp.icc-cpi.int/elections/prosecutor/Prosecutor2027"
+        }
+      ]
+    }
+  ],
+  "internal_notes": [
+    "EDITORIAL NOTES — INTERNAL. Friday 146, 30 October 2026. User authorised website publication and Telegram announcement.",
+    "Seven cards: museumindictment;184centre documentdiscrepancies;Abdulgaziiev releaseandreturn;WhiteAngels28Octoberprimary;Dnipro15dead30October07:34;BellingcatSentineldelays29October;ICC27Octoberrelease31Octoberapplications. No filler advocacy/CPK. No new toolkitentry.",
+    "Sources: Ukrinform29October10:10 attributionPGO museum; originalPGO403 and no indictment/casefile read. Actapproved23October, strike6May2022 notnewattack. Commandchain/intent prosecutionclaims. No namedprivateindividual accusation or currentinfrastructurelocations.",
+    "Koord29October15:47 originalmeeting read. Specificnewangle officialdocumentdiscrepancies/DNAsamplechecking vs Daily144media-submissioncard. No claim legalchange, allquestionsresolved or individualfate. No privatebiometricrecords or disappearancecoordinates.",
+    "Abdulgaziiev: Ukrinform29October15:00 quotesChubarov; Suspilne independently reportsrights-sources return29October. Judicialrelease26October. Restrictionreported byChubarov not independentlyreadlegalact; noacquittal/freedomfromallrestrictionsassertion. Omit detailedmedicaldiagnoses, familyidentifiers,address/travel. Differinghistoricalconvictionyearreportsnotrepeated.",
+    "WhiteAngels originalNPU28October16:00 fullyread, ZMINArepublication29October notmisdatedasoriginal. Twoofficerswounded andhumanitarianvehicledamaged officialaccount, notindependentweapon/geolocation/intent. UkrainianRedCrossSociety distinctICRC; no pickupvillage/routes/schedules.",
+    "Dnipro originalNPU29October12:45 13dead10wounded; later29October14dead14wounded; Ukrinform30October07:34 15deadfollowinghospitaldeath reportedbyOVA. Currentcardfirstsentenceuses15. Do notsubtractfrom14wounded toinvent13currentwounded orsumsequentialtotals. OriginalOVA Telegramnotindependentconfirmation; explicitlyattributedagencyreport. No liveinfrastructuredata/victimnames/graphicimages.",
+    "Bellingcat LoganWilliams29October fullyread, capturevsPublicationmetadata. Delayobservedfrom28March2026. ScopeGaza/partsWestBank/easternMed; notUA/worldwide. Policy24h notfullendtoendlatency example26hvs4h. No independentAPIaudit or restrictionbypass. Nomodel/toolinstallreview or catalogasToolbox.",
+    "ICC27October officialreleaseindexedtextread insearch; directICC/ASP403. ASPprocedurelaunch26October, applications31Oct2026–31Jan2027, qualifiedapplicationsFebruary2027, electionDecember2027subjectamendment. No newlyelectedprosecutor nor caseimpact claim. No candidatepersonalallegations repeated.",
+    "Excluded Lubinets29OctbroadICRCnevervisitsheadline: scopecontradicts earlierICRCreportedvisits and requires clarification; notuncriticallyamplified. No duplicateyesterdayhearing/internationalvisitproposal/Oleshky/childreturns/HRW. Training26Octreserve notneeded.",
+    "Bestprimarysources:Koord,NPU,Bellingcat,ICCindexedrelease. Secondarylimitations:PGOdirectblocked,Abdulgaziievjudicial/medicalrecordsnotread,DniproOVAthroughagency. Internalnotes neverpublic.",
+    "Weeklycandidates: culturalheritage damagevscommandproof; documentconflictaudit; releasevsphysicalreturnvsrestrictions; humanitarianincidentprovenance; casualtyversioncontrol; acquisitionvsavailabilitytimes; institutionalvsproceduralupdates. Followup:indictmentpublicact; familycorrectionoutcomes throughprotectedchannels; releaserestrictionact; independentlyverifiedincidentmedia; casualtylaterofficialupdates;Copernicusdocumentation;ICCformalprocedure."
+  ]
+}
