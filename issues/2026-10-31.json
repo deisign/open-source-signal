@@ -1,0 +1,156 @@
+{
+  "issue_number": "147",
+  "date_iso": "2026-10-31",
+  "date_label_en": "31 October 2026",
+  "date_label_uk": "31 жовтня 2026",
+  "slug": "open-source-signal",
+  "title_en": "Open Source Signal",
+  "title_uk": "Сигнал відкритих джерел",
+  "issue_type": "Tool Radar",
+  "language_label": "EN + UKR",
+  "subtitle_en": "Saturday Tool Radar: local investigation workspaces, image geolocation and OSINT automation.",
+  "subtitle_uk": "Суботній Tool Radar: локальні середовища розслідувань, геолокація зображень та автоматизація OSINT.",
+  "dek_en": "Five independently developed tools: Azimut, Waypoint, locateanything, Netryx and OpenOSINT. Editorial selection, not a claim of new releases this week.",
+  "dek_uk": "П’ять інструментів незалежних розробників: Azimut, Waypoint, locateanything, Netryx та OpenOSINT. Редакційна добірка, а не твердження про релізи цього тижня.",
+  "editorial_frame": {
+    "what_this_is": "A curated Saturday Tool Radar; descriptions reflect developer documentation and editorial assessment, not independent benchmarks.",
+    "what_this_is_not": "A claim that all five tools were released or updated during 24–31 October 2026, or that model geolocation outputs are verified evidence."
+  },
+  "rubric_map": [
+    "🧰 Tool Radar",
+    "🗺️ Map Room",
+    "🛡️ Investigator OPSEC"
+  ],
+  "footer_note": "Open Source Signal · Saturday Tool Radar · Independent tools; validate outputs against primary evidence.",
+  "items": [
+    {
+      "theme": "investigations",
+      "emoji": "🧰",
+      "rubric_en": "Tool Radar",
+      "rubric_uk": "Радар інструментів",
+      "title_en": "Azimut: Investigation workspace",
+      "title_uk": "Azimut: Середовище розслідування",
+      "source_name": "Azimut — GitHub repository",
+      "source_url": "https://github.com/OsintMeThat/azimut",
+      "source_date_label_en": "Accessed 31 October 2026",
+      "source_date_label_uk": "Перевірено 31 жовтня 2026",
+      "what_happened_en": "Azimut offers a local investigation workspace with timeline, link graph, CSV import, media handling, metadata and SHA-256 evidence hashes.",
+      "what_happened_uk": "Azimut пропонує локальне середовище розслідування з хронологією, графом зв’язків, імпортом CSV, роботою з медіа, метаданими та SHA-256.",
+      "why_it_matters_en": "A structured case workspace helps distinguish sources, observations and analytical links in accountability investigations.",
+      "why_it_matters_uk": "Структурований простір кейсу допомагає відокремлювати джерела, спостереження та аналітичні зв’язки у розслідуваннях.",
+      "how_to_use_en": "Test a disposable case with public documents; export timeline, evidence inventory and hashes, then compare with originals.",
+      "how_to_use_uk": "Перевірте на тестовому кейсі з публічними документами; експортуйте хронологію, реєстр матеріалів і хеші та звірте з оригіналами.",
+      "limits_en": "A hash verifies byte identity, not truth or authorship; check export formats, persistence and security before sensitive use.",
+      "limits_uk": "Хеш підтверджує тотожність байтів, а не правдивість чи авторство; перед роботою з чутливими даними перевірте експорт, зберігання й безпеку.",
+      "tags": [
+        "tool-radar",
+        "case-management",
+        "independent-tools"
+      ]
+    },
+    {
+      "theme": "maps",
+      "emoji": "🗺️",
+      "rubric_en": "Map Room",
+      "rubric_uk": "Картографічна кімната",
+      "title_en": "Waypoint: Image geolocation",
+      "title_uk": "Waypoint: Геолокація зображень",
+      "source_name": "Waypoint — GitHub repository",
+      "source_url": "https://github.com/KillaMeep/waypoint-osint",
+      "source_date_label_en": "Accessed 31 October 2026",
+      "source_date_label_uk": "Перевірено 31 жовтня 2026",
+      "what_happened_en": "Waypoint combines image-geolocation hypotheses with sun-position reasoning and street-level panorama comparison; the project is Windows-oriented.",
+      "what_happened_uk": "Waypoint поєднує гіпотези геолокації зображень з аналізом положення сонця та порівнянням панорам вулиць; проєкт орієнтований на Windows.",
+      "why_it_matters_en": "Independent visual and solar clues can help test rather than merely repeat a model's guess.",
+      "why_it_matters_uk": "Незалежні візуальні та сонячні ознаки допомагають перевіряти, а не просто повторювати припущення моделі.",
+      "how_to_use_en": "Use a known-location public test image; record proposed coordinates, sun assumptions and matched landmarks.",
+      "how_to_use_uk": "Візьміть публічне контрольне фото з відомою локацією; зафіксуйте запропоновані координати, припущення щодо сонця та збіги орієнтирів.",
+      "limits_en": "Geolocation output is a hypothesis; weather, camera orientation, timestamps and incomplete panorama coverage can mislead.",
+      "limits_uk": "Результат геолокації — гіпотеза; погода, орієнтація камери, час і неповне покриття панорам можуть вводити в оману.",
+      "tags": [
+        "tool-radar",
+        "geolocation",
+        "independent-tools"
+      ]
+    },
+    {
+      "theme": "maps",
+      "emoji": "🗺️",
+      "rubric_en": "Map Room",
+      "rubric_uk": "Картографічна кімната",
+      "title_en": "locateanything: Local image location analysis",
+      "title_uk": "locateanything: Локальний аналіз місця знімання",
+      "source_name": "locateanything — GitHub repository",
+      "source_url": "https://github.com/cognis-digital/locateanything",
+      "source_date_label_en": "Accessed 31 October 2026",
+      "source_date_label_uk": "Перевірено 31 жовтня 2026",
+      "what_happened_en": "locateanything estimates image location using metadata and visual clues and can output candidates as JSON or GeoJSON.",
+      "what_happened_uk": "locateanything оцінює місце знімання за метаданими та візуальними ознаками й може повертати кандидати у JSON або GeoJSON.",
+      "why_it_matters_en": "Structured geographic output can be reviewed alongside map layers instead of hiding model guesses in prose.",
+      "why_it_matters_uk": "Структурований географічний результат можна перевіряти разом із картографічними шарами, а не ховати припущення моделі в тексті.",
+      "how_to_use_en": "Run on a public geotagged test set, compare estimated coordinates against ground truth and inspect GeoJSON in QGIS.",
+      "how_to_use_uk": "Запустіть на публічному тестовому наборі з геотегами, порівняйте координати з еталоном і відкрийте GeoJSON у QGIS.",
+      "limits_en": "EXIF may be absent or manipulated; visual estimates and confidence need independent calibration.",
+      "limits_uk": "EXIF може бути відсутнім або зміненим; візуальні оцінки та впевненість потребують незалежної перевірки.",
+      "tags": [
+        "tool-radar",
+        "geolocation",
+        "independent-tools"
+      ]
+    },
+    {
+      "theme": "maps",
+      "emoji": "🗺️",
+      "rubric_en": "Map Room",
+      "rubric_uk": "Картографічна кімната",
+      "title_en": "Netryx: Street-level geolocation",
+      "title_uk": "Netryx: Геолокація вуличних знімків",
+      "source_name": "Netryx — GitHub repository",
+      "source_url": "https://github.com/rushowr/Netryx-OpenSource-Next-Gen-Street-Level-Geolocation",
+      "source_date_label_en": "Accessed 31 October 2026",
+      "source_date_label_uk": "Перевірено 31 жовтня 2026",
+      "what_happened_en": "Netryx focuses on street-level image geolocation through panorama matching and a follow-up search near candidate locations.",
+      "what_happened_uk": "Netryx зосереджений на геолокації вуличних знімків через зіставлення панорам та додатковий пошук біля можливих локацій.",
+      "why_it_matters_en": "A second-stage local search is useful for challenging a broad first-pass guess.",
+      "why_it_matters_uk": "Другий етап локального пошуку дає змогу перевірити грубу первинну гіпотезу.",
+      "how_to_use_en": "Compare on public street images with Waypoint and locateanything, logging false matches and coverage gaps.",
+      "how_to_use_uk": "Порівняйте на публічних вуличних фото з Waypoint та locateanything, фіксуючи хибні збіги й прогалини покриття.",
+      "limits_en": "Not designed for satellite imagery or interiors; street-view coverage and imagery age constrain results.",
+      "limits_uk": "Не призначений для супутникових знімків чи інтер’єрів; покриття панорам і давність зображень обмежують результат.",
+      "tags": [
+        "tool-radar",
+        "geolocation",
+        "independent-tools"
+      ]
+    },
+    {
+      "theme": "opsec",
+      "emoji": "🛡️",
+      "rubric_en": "Investigator OPSEC",
+      "rubric_uk": "Безпека дослідника",
+      "title_en": "OpenOSINT: OSINT workflow automation",
+      "title_uk": "OpenOSINT: Автоматизація OSINT",
+      "source_name": "OpenOSINT — GitHub repository",
+      "source_url": "https://github.com/OpenOSINT/OpenOSINT",
+      "source_date_label_en": "Accessed 31 October 2026",
+      "source_date_label_uk": "Перевірено 31 жовтня 2026",
+      "what_happened_en": "OpenOSINT bundles CLI, web and MCP interfaces for active and passive checks, with reporting and optional local-model integration.",
+      "what_happened_uk": "OpenOSINT об’єднує CLI, веб- та MCP-інтерфейси для активних і пасивних перевірок, звітності та необов’язкової інтеграції з локальними моделями.",
+      "why_it_matters_en": "Explicit distinction between passive and active network checks matters for investigator safety and reproducibility.",
+      "why_it_matters_uk": "Чітке розмежування пасивних і активних мережевих перевірок важливе для безпеки дослідника та відтворюваності.",
+      "how_to_use_en": "Audit a domain under your control, log each outbound request and compare reported DNS, TLS and HTTP findings with primary records.",
+      "how_to_use_uk": "Перевірте власний домен, запишіть усі вихідні запити й звірте результати DNS, TLS та HTTP з первинними даними.",
+      "limits_en": "Active checks may contact targets; automated risk ratings are not proof of compromise or attribution.",
+      "limits_uk": "Активні перевірки можуть звертатися до цільових серверів; автоматичні оцінки ризику не доводять компрометацію чи атрибуцію.",
+      "tags": [
+        "tool-radar",
+        "automation",
+        "independent-tools"
+      ]
+    }
+  ],
+  "internal_notes": [
+    "Selected by editor 31 October 2026. No release freshness or hands-on accuracy benchmark independently established.",
+    "awesome-osint-repos used for discovery only, not published as a tool."
+  ]
+}
