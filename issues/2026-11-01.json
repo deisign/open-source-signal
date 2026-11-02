@@ -1,0 +1,152 @@
+{
+  "issue_number": "148",
+  "date_iso": "2026-11-01",
+  "date_label_en": "1 November 2026",
+  "date_label_uk": "1 листопада 2026",
+  "slug": "open-source-signal",
+  "title_en": "Open Source Signal",
+  "title_uk": "Сигнал відкритих джерел",
+  "issue_type": "Sunday Journal",
+  "language_label": "EN + UKR",
+  "subtitle_en": "Sunday Journal: verification, civilian protection and captivity records.",
+  "subtitle_uk": "Недільний журнал: верифікація, захист цивільних і облік полону.",
+  "dek_en": "An edited Sunday selection of confirmed developments and methodological lessons, including older source material explicitly marked as retrospective.",
+  "dek_uk": "Редакційна недільна добірка підтверджених подій і методологічних висновків; давніші джерела позначено як ретроспективні.",
+  "editorial_frame": {
+    "what_this_is": "Source-attributed editorial synthesis. Dates and evidence status are preserved.",
+    "what_this_is_not": "Independent forensic verification, legal verdict or complete casualty inventory."
+  },
+  "rubric_map": [
+    "📡 Signal One",
+    "⚖️ War Crimes Verification",
+    "🕊️ Losses, Captivity & Missing",
+    "🛡️ Investigator OPSEC"
+  ],
+  "footer_note": "Open Source Signal — source-aware bilingual OSINT publishing.",
+  "items": [
+    {
+      "theme": "platforms",
+      "emoji": "🛡️",
+      "rubric_en": "Investigator OPSEC",
+      "rubric_uk": "Безпека дослідника",
+      "title_en": "Alert-app compromise",
+      "title_uk": "Компрометація застосунку тривог",
+      "source_name": "Reuters",
+      "source_url": "https://www.reuters.com/world/europe/ukrainian-air-force-says-public-air-raid-alert-app-has-been-hacked-2026-11-01/",
+      "source_date_label_en": "1 November 2026",
+      "source_date_label_uk": "1 листопада 2026",
+      "what_happened_en": "Ukraine's Air Force reported false nuclear, chemical and missile warnings in a public air-raid alert app on 1 November and said the alerts were not genuine.",
+      "what_happened_uk": "Повітряні сили України повідомили про неправдиві ядерні, хімічні та ракетні попередження в застосунку повітряних тривог 1 листопада та спростували їхню достовірність.",
+      "why_it_matters_en": "A compromised alert channel is a platform-integrity incident, not evidence that the warned-about attack occurred.",
+      "why_it_matters_uk": "Компрометація каналу оповіщення є інцидентом цілісності платформи, а не доказом події, про яку сповіщали.",
+      "how_to_use_en": "Preserve screenshots with timestamps, compare with Air Force statements and other official alert channels, and label fabricated alerts separately from real attacks.",
+      "how_to_use_uk": "Зберігайте скриншоти з часом, звіряйте їх із заявами Повітряних сил та іншими офіційними каналами; відокремлюйте підроблені тривоги від реальних атак.",
+      "limits_en": "The technical intrusion vector and attribution were not independently established in this reporting.",
+      "limits_uk": "Технічний шлях проникнення та атрибуцію атаки в цьому повідомленні незалежно не встановлено.",
+      "tags": [
+        "verification",
+        "platform-integrity"
+      ]
+    },
+    {
+      "theme": "ukraine",
+      "emoji": "🚑",
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "title_en": "Kherson evacuation window",
+      "title_uk": "Евакуаційне вікно на Херсонщині",
+      "source_name": "Ukrinform / General Staff",
+      "source_url": "https://www.ukrinform.net/amp/rubric-ato/4180298-general-staff-ukrainian-troops-evacuated-167-civilians-from-kherson-region-during-ceasefire.html",
+      "source_date_label_en": "1 November 2026",
+      "source_date_label_uk": "1 листопада 2026",
+      "what_happened_en": "Ukraine's General Staff said 167 civilians were evacuated from Ukrainian-controlled riverside settlements in Kherson region during a localized humanitarian ceasefire.",
+      "what_happened_uk": "Генштаб України повідомив про евакуацію 167 цивільних із підконтрольних Україні прибережних населених пунктів Херсонщини під час локального гуманітарного перемир’я.",
+      "why_it_matters_en": "Evacuation counts need a clear geography, period and reporting authority; they should not be conflated with evacuations from occupied Oleshky.",
+      "why_it_matters_uk": "Для підрахунку евакуйованих важливі географія, період і джерело; не слід плутати ці дані з евакуацією з окупованих Олешок.",
+      "how_to_use_en": "Build an event ledger distinguishing announced ceasefire, reported departures, arrival confirmation and separate banks of the Dnipro.",
+      "how_to_use_uk": "Ведіть журнал подій, відокремлюючи оголошення перемир’я, повідомлення про виїзд, підтвердження прибуття та різні береги Дніпра.",
+      "limits_en": "The 167 figure is attributed to the General Staff; it is not an independently audited total.",
+      "limits_uk": "Число 167 наведене за даними Генштабу; це не незалежно аудована кількість.",
+      "tags": [
+        "verification",
+        "humanitarian-evacuation"
+      ]
+    },
+    {
+      "theme": "war-crimes",
+      "emoji": "⚖️",
+      "rubric_en": "War Crimes Verification",
+      "rubric_uk": "Верифікація воєнних злочинів",
+      "title_en": "Vinnytsia school-dormitory strike",
+      "title_uk": "Удар по гуртожитку на Вінниччині",
+      "source_name": "The Kyiv Independent / State Emergency Service",
+      "source_url": "https://kyivindependent.com/",
+      "source_date_label_en": "1 November 2026",
+      "source_date_label_uk": "1 листопада 2026",
+      "what_happened_en": "The Kyiv Independent reported that a Russian drone strike near a vocational-school dormitory housing displaced people killed a 13-year-old child and another person; later injury totals were being updated.",
+      "what_happened_uk": "The Kyiv Independent повідомило, що удар російського дрона біля гуртожитку професійного навчального закладу, де жили переселенці, забрав життя 13-річної дитини та ще однієї людини; дані про поранених уточнювалися.",
+      "why_it_matters_en": "A civilian-harm casefile must distinguish an initial emergency-services report from later casualty revisions.",
+      "why_it_matters_uk": "У справі про шкоду цивільним слід відокремлювати первинне повідомлення рятувальників від пізніших уточнень кількості постраждалих.",
+      "how_to_use_en": "Record source timestamps, facility function and public photographs without exposing residents' personal details.",
+      "how_to_use_uk": "Фіксуйте час повідомлень, функцію будівлі й публічні фото, не розкриваючи персональних даних мешканців.",
+      "limits_en": "Initial casualty figures are provisional; the precise weapon and legal characterization require separate verification.",
+      "limits_uk": "Початкові дані про жертви попередні; тип зброї та правова кваліфікація потребують окремої перевірки.",
+      "tags": [
+        "verification",
+        "civilian-harm"
+      ]
+    },
+    {
+      "theme": "war-crimes",
+      "emoji": "📊",
+      "rubric_en": "War Crimes Verification",
+      "rubric_uk": "Верифікація воєнних злочинів",
+      "title_en": "October civilian harm baseline",
+      "title_uk": "Жовтневий контекст шкоди цивільним",
+      "source_name": "UN Human Rights Monitoring Mission",
+      "source_url": "https://ukraine.ohchr.org/uk/Protection-of-Civilians-in-Armed-Conflict-September-2026",
+      "source_date_label_en": "15 October 2026",
+      "source_date_label_uk": "15 жовтня 2026",
+      "what_happened_en": "UN monitors verified at least 328 civilian deaths and 2,105 injuries in September 2026, with long-range weapons responsible for most casualties.",
+      "what_happened_uk": "Моніторингова місія ООН підтвердила щонайменше 328 загиблих і 2105 поранених цивільних у вересні 2026 року; найбільшу частку жертв спричинила далекобійна зброя.",
+      "why_it_matters_en": "The verified September baseline helps contextualize new November incidents without pretending a full October total is already available.",
+      "why_it_matters_uk": "Верифіковані дані за вересень допомагають оцінювати листопадові інциденти без удавання, що повна статистика за жовтень уже доступна.",
+      "how_to_use_en": "Separate UN-verified totals from daily emergency-service counts and note the reporting lag.",
+      "how_to_use_uk": "Відокремлюйте підтверджені ООН підрахунки від щоденних зведень рятувальників та враховуйте затримку звітності.",
+      "limits_en": "This report covers September, not a verified October or November total.",
+      "limits_uk": "Звіт охоплює вересень, а не підтверджену статистику за жовтень чи листопад.",
+      "tags": [
+        "verification",
+        "un-monitoring"
+      ]
+    },
+    {
+      "theme": "losses",
+      "emoji": "🕊️",
+      "rubric_en": "Losses, Captivity & Missing",
+      "rubric_uk": "Втрати, полон, зниклі",
+      "title_en": "Olenivka survivors and exchange status",
+      "title_uk": "Ті, хто вижив в Оленівці, та статус обміну",
+      "source_name": "Ukraine Ministry of Defence",
+      "source_url": "https://mod.gov.ua/en/news/olenivka-survivors-freed-in-ukraine-prisoner-exchange",
+      "source_date_label_en": "23 October 2026",
+      "source_date_label_uk": "23 жовтня 2026",
+      "what_happened_en": "Ukraine's Ministry of Defence reported that the 23 October exchange returned 261 service members and nine civilians, including survivors of the Olenivka prison attack.",
+      "what_happened_uk": "Міноборони України повідомило, що під час обміну 23 жовтня повернулися 261 військовослужбовець і дев’ятеро цивільних, зокрема ті, хто вижив після атаки на колонію в Оленівці.",
+      "why_it_matters_en": "Release status and historical victim identification must not be conflated; surviving an attack does not mean previously confirmed dead.",
+      "why_it_matters_uk": "Статус звільнення та історичну ідентифікацію жертв не можна змішувати: факт виживання після атаки не означає, що людину раніше достовірно вважали загиблою.",
+      "how_to_use_en": "Maintain separate fields for captivity, release, historical incident involvement and corroborating official records.",
+      "how_to_use_uk": "Ведіть окремі поля для полону, звільнення, причетності до історичного інциденту та підтверджувальних офіційних записів.",
+      "limits_en": "This is a retrospective item from 23 October, not a new exchange on 1–2 November.",
+      "limits_uk": "Це ретроспективний матеріал від 23 жовтня, а не повідомлення про новий обмін 1–2 листопада.",
+      "tags": [
+        "verification",
+        "pow-exchange"
+      ]
+    }
+  ],
+  "internal_notes": [
+    "Editorial source selection. Dates reflect original source publication; no unsupported claim of newly released evidence.",
+    "Do not expose civilian identities or evacuation routes."
+  ]
+}
