@@ -35,3 +35,12 @@ If the build fails, inspect the actual Actions log before making changes. Do not
 ## Historical incident — 2026-11-03
 
 Issue #150 was initially mishandled as Markdown and then an incomplete JSON was briefly committed. The corrected JSON was committed at `4d561f04570a5138eebf27b16db45dab4e9de3da`. The operator confirmed the site deployed and manually triggered the Telegram workflow. This is why the canonical JSON-first sequence and automation bridge are documented here.
+
+## Verified automation bridge — 2026-11-03
+
+- Telegram workflow: `.github/workflows/telegram.yml`, with both `workflow_dispatch` and `push` on `telegram/requests/*.json`.
+- ChatGPT's connected GitHub file-create action can commit a uniquely named request JSON, which starts the Telegram workflow. Required JSON: `{"issue":"YYYY-MM-DD.json","lang":"uk","max_items":7,"force":false}`.
+- The workflow resolves the request, validates parameters, builds and renders, checks `data/telegram_sent.json`, and sends only if not already recorded. Keep `force=false` by default.
+- **Verified green test:** [GitHub Actions run 41630966085](https://github.com/deisign/open-source-signal/actions/runs/41630966085) completed with `success`. This test targeted the already-sent `2026-11-03.json` and was designed to exercise duplicate protection.
+- The manual Telegram send of issue #150 was recorded separately in `data/telegram_sent.json` under run `41630501757` at `2026-11-03T11:49:01Z`.
+- Operational sequence: commit validated issue JSON → wait for successful site deployment → create a new `telegram/requests/YYYY-MM-DD-<unique>.json` → verify successful Telegram Actions run and sent-log entry. Do not use `force=true` unless explicitly requested.
