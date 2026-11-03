@@ -1,6 +1,9 @@
 name: Publish Telegram announcement
 
 on:
+  push:
+    paths:
+      - 'telegram/requests/*.json'
   workflow_dispatch:
     inputs:
       issue:
@@ -42,6 +45,65 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Resolve Telegram request
+        shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          EVENT_BEFORE: ${{ github.event.before }}
+          EVENT_AFTER: ${{ github.sha }}
+          MANUAL_ISSUE: ${{ inputs.issue }}
+          MANUAL_LANG: ${{ inputs.lang }}
+          MANUAL_MAX_ITEMS: ${{ inputs.max_items }}
+          MANUAL_FORCE: ${{ inputs.force }}
+          MANUAL_URL: ${{ inputs.issue_url }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import re
+          import subprocess
+          from pathlib import Path
+
+          if os.environ["EVENT_NAME"] == "push":
+              before = os.environ["EVENT_BEFORE"]
+              after = os.environ["EVENT_AFTER"]
+              if before == "0" * 40:
+                  raise SystemExit("Cannot resolve request from initial push")
+              paths = subprocess.check_output(
+                  ["git", "diff", "--name-only", "--diff-filter=AM", before, after], text=True
+              ).splitlines()
+              paths = [p for p in paths if re.fullmatch(r"telegram/requests/[^/]+\\.json", p)]
+              if len(paths) != 1:
+                  raise SystemExit(f"Expected exactly one Telegram request, found {paths}")
+              req = json.loads(Path(paths[0]).read_text(encoding="utf-8"))
+              issue = req["issue"]
+              lang = req.get("lang", "uk")
+              max_items = str(req.get("max_items", 7))
+              force = str(req.get("force", False)).lower()
+              url = req.get("issue_url", "")
+          else:
+              issue = os.environ["MANUAL_ISSUE"]
+              lang = os.environ["MANUAL_LANG"] or "uk"
+              max_items = os.environ["MANUAL_MAX_ITEMS"] or "7"
+              force = os.environ["MANUAL_FORCE"] or "false"
+              url = os.environ["MANUAL_URL"]
+
+          if not re.fullmatch(r"20\\d{2}-\\d{2}-\\d{2}\\.json", issue):
+              raise SystemExit("Invalid issue filename")
+          if lang not in ("uk", "en") or not max_items.isdigit() or not 1 <= int(max_items) <= 9:
+              raise SystemExit("Invalid Telegram request parameters")
+          if force not in ("true", "false"):
+              raise SystemExit("Invalid force flag")
+          if url and not url.startswith("https://osintsignal.org/issues/"):
+              raise SystemExit("Issue URL must use the official site")
+          with open(os.environ["GITHUB_ENV"], "a", encoding="utf-8") as out:
+              for key, value in {
+                  "ISSUE": issue, "LANG": lang, "MAX_ITEMS": max_items,
+                  "FORCE": force, "ISSUE_URL_OVERRIDE": url,
+              }.items():
+                  print(f"{key}={value}", file=out)
+          PY
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -63,14 +125,14 @@ jobs:
         run: |
           set -euo pipefail
 
-          ISSUE_PATH="issues/${{ inputs.issue }}"
+          ISSUE_PATH="issues/${{ env.ISSUE }}"
 
           if [ ! -f "$ISSUE_PATH" ]; then
             echo "Issue JSON not found: $ISSUE_PATH" >&2
             exit 1
           fi
 
-          ISSUE_URL="${{ inputs.issue_url }}"
+          ISSUE_URL="${{ env.ISSUE_URL_OVERRIDE }}"
 
           if [ -z "$ISSUE_URL" ]; then
             ISSUE_URL=$(python - "$ISSUE_PATH" <<'PY'
@@ -92,10 +154,10 @@ jobs:
           fi
 
           TEXT_FILE=$(python telegram_digest.py "$ISSUE_PATH" \
-            --lang "${{ inputs.lang }}" \
+            --lang "${{ env.LANG }}" \
             --url "$ISSUE_URL" \
             --out dist \
-            --max-items "${{ inputs.max_items }}")
+            --max-items "${{ env.MAX_ITEMS }}")
 
           echo "text_file=$TEXT_FILE" >> "$GITHUB_OUTPUT"
           echo "issue_url=$ISSUE_URL" >> "$GITHUB_OUTPUT"
@@ -108,9 +170,9 @@ jobs:
         run: |
           python telegram_sent_log.py check \
             --sent-log data/telegram_sent.json \
-            --issue "${{ inputs.issue }}" \
-            --lang "${{ inputs.lang }}" \
-            --force "${{ inputs.force }}"
+            --issue "${{ env.ISSUE }}" \
+            --lang "${{ env.LANG }}" \
+            --force "${{ env.FORCE }}"
 
       - name: Send Telegram announcement
         if: steps.duplicate.outputs.should_send == 'true'
@@ -127,8 +189,8 @@ jobs:
         run: |
           python telegram_sent_log.py record \
             --sent-log data/telegram_sent.json \
-            --issue "${{ inputs.issue }}" \
-            --lang "${{ inputs.lang }}" \
+            --issue "${{ env.ISSUE }}" \
+            --lang "${{ env.LANG }}" \
             --issue-url "${{ steps.render.outputs.issue_url }}" \
             --text-file "${{ steps.render.outputs.text_file }}" \
             --run-id "${{ github.run_id }}" \
@@ -145,7 +207,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No sent-log changes to commit."
           else
-            git commit -m "Record Telegram announcement for ${{ inputs.issue }} (${{ inputs.lang }})"
+            git commit -m "Record Telegram announcement for ${{ env.ISSUE }} (${{ env.LANG }})"
             git push
           fi
 
