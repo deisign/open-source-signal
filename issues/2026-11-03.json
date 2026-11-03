@@ -1,1 +1,179 @@
-{"issue_number":"150","date_iso":"2026-11-03","title_en":"Open Source Signal","title_uk":"Сигнал відкритих джерел"}
+{
+  "issue_number": "150",
+  "date_iso": "2026-11-03",
+  "date_label_en": "3 November 2026",
+  "date_label_uk": "3 листопада 2026",
+  "slug": "open-source-signal",
+  "title_en": "Open Source Signal",
+  "title_uk": "Сигнал відкритих джерел",
+  "issue_type": "Daily Signal",
+  "language_label": "EN + UKR",
+  "subtitle_en": "Satellite verification, geolocated evidence and OSINT methodology.",
+  "subtitle_uk": "Супутникова перевірка, геолоковані свідчення та методологія OSINT.",
+  "dek_en": "Six OSINT investigations and methodological studies, with original publication dates distinguished from the issue date.",
+  "dek_uk": "Шість OSINT-досліджень і методологічних матеріалів із чітким розмежуванням дат публікацій та дати випуску.",
+  "editorial_frame": {
+    "what_this_is": "Source-attributed OSINT editorial synthesis. Source publication dates are preserved, including retrospective methodology items.",
+    "what_this_is_not": "An independent forensic investigation, a damage attribution, or a catalogue of tools."
+  },
+  "rubric_map": [
+    "📡 Signal One",
+    "🛰️ Map Room",
+    "🗺️ Tradecraft",
+    "🧊 Platform Watch",
+    "🧭 AI Verification",
+    "🛡️ Investigator OPSEC"
+  ],
+  "footer_note": "Open Source Signal — source-aware bilingual OSINT publishing.",
+  "items": [
+    {
+      "theme": "ukraine",
+      "emoji": "📡",
+      "rubric_en": "Signal One",
+      "rubric_uk": "Головний сигнал",
+      "source_name": "The Insider",
+      "source_url": "https://theins.ru/news/299027",
+      "source_date_label_en": "2 November 2026",
+      "source_date_label_uk": "2 листопада 2026",
+      "title_en": "Samara pumping station: checking fire reports with NASA FIRMS",
+      "title_uk": "Станція «Самара»: перевірка повідомлень про пожежу через NASA FIRMS",
+      "what_happened_en": "The Insider described Astra's open-source identification of the Samara oil pumping station and compared the reported fire with NASA FIRMS thermal detections.",
+      "what_happened_uk": "The Insider описало OSINT-локалізацію нафтоперекачувальної станції «Самара», проведену Astra, та зіставило повідомлення про пожежу з тепловими сигналами NASA FIRMS.",
+      "why_it_matters_en": "Independent satellite detections can corroborate a reported fire without proving the cause.",
+      "why_it_matters_uk": "Незалежні супутникові дані можуть підтверджувати ознаки пожежі, але не її причину.",
+      "how_to_use_en": "Compare location, acquisition time and the thermal anomaly against independent reports.",
+      "how_to_use_uk": "Зіставляйте місце, час супутникового спостереження та теплову аномалію з незалежними повідомленнями.",
+      "limits_en": "Thermal anomalies alone do not establish perpetrators or damage extent.",
+      "limits_uk": "Теплові аномалії самі по собі не встановлюють виконавців чи масштабу пошкоджень.",
+      "tags": [
+        "osint",
+        "verification"
+      ]
+    },
+    {
+      "theme": "maps",
+      "emoji": "🛰️",
+      "rubric_en": "Map Room",
+      "rubric_uk": "Картографічна кімната",
+      "source_name": "The Wall Street Journal",
+      "source_url": "https://www.wsj.com/world/middle-east/how-the-journal-investigated-iran-damage-bases-18cbd9ee",
+      "source_date_label_en": "31 October 2026",
+      "source_date_label_uk": "31 жовтня 2026",
+      "title_en": "Mapping damage at 24 Middle Eastern installations",
+      "title_uk": "Картографування пошкоджень на 24 об’єктах Близького Сходу",
+      "what_happened_en": "The Wall Street Journal described a satellite-image investigation of damage to 274 structures at 24 installations, using change detection and cross-checks against other public evidence.",
+      "what_happened_uk": "The Wall Street Journal описала супутникове дослідження пошкоджень 274 споруд на 24 об’єктах із застосуванням виявлення змін і перевірки іншими відкритими джерелами.",
+      "why_it_matters_en": "Large-scale image triage still requires human review and source corroboration.",
+      "why_it_matters_uk": "Масове виявлення змін на знімках потребує ручної перевірки й незалежних підтверджень.",
+      "how_to_use_en": "Record acquisition dates and confidence levels for each mapped structure.",
+      "how_to_use_uk": "Фіксуйте дати зйомки та рівень упевненості для кожної позначеної споруди.",
+      "limits_en": "Damage visible in imagery does not by itself prove the cause.",
+      "limits_uk": "Видимі на знімках пошкодження самі по собі не доводять причину.",
+      "tags": [
+        "osint",
+        "verification"
+      ]
+    },
+    {
+      "theme": "tradecraft",
+      "emoji": "🗺️",
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "source_name": "Aube Géopolitique / GeoConfirmed",
+      "source_url": "https://geopolitique.aubeetoilee.com/en/terrain?conflit=ukraine",
+      "source_date_label_en": "2 November 2026 snapshot",
+      "source_date_label_uk": "Зріз даних 2 листопада 2026",
+      "title_en": "GeoConfirmed-derived archive: capture time versus publication time",
+      "title_uk": "Архів GeoConfirmed: час зйомки та час публікації",
+      "what_happened_en": "Aube Géopolitique displays a GeoConfirmed-derived archive of geolocated public images, including source links and publication timestamps.",
+      "what_happened_uk": "Aube Géopolitique представляє архів геолокованих публічних зображень на основі GeoConfirmed із посиланнями на джерела та часовими мітками публікацій.",
+      "why_it_matters_en": "Geolocation and post timestamps are separate evidence dimensions.",
+      "why_it_matters_uk": "Геолокація й час публікації є різними вимірами доказової інформації.",
+      "how_to_use_en": "Keep capture, upload and event dates in separate fields.",
+      "how_to_use_uk": "Зберігайте дати зйомки, завантаження та події в окремих полях.",
+      "limits_en": "A geolocated post cannot alone establish when footage was recorded or who was responsible.",
+      "limits_uk": "Геолокований допис сам по собі не встановлює часу зйомки або відповідальних осіб.",
+      "tags": [
+        "osint",
+        "verification"
+      ]
+    },
+    {
+      "theme": "platforms",
+      "emoji": "🧊",
+      "rubric_en": "Platform Watch",
+      "rubric_uk": "Платформний радар",
+      "source_name": "ISS Global",
+      "source_url": "https://www.issglobal.co.uk/osint-reports?type=Investigation",
+      "source_date_label_en": "2 November 2026",
+      "source_date_label_uk": "2 листопада 2026",
+      "title_en": "Cyber incidents involving European refrigeration systems",
+      "title_uk": "Кіберінциденти з холодильними системами в Європі",
+      "what_happened_en": "ISS Global listed an investigation concerning reported cyber interference with supermarket refrigeration systems in Europe.",
+      "what_happened_uk": "ISS Global представила дослідження повідомлень про кіберутручання в холодильні системи супермаркетів Європи.",
+      "why_it_matters_en": "Incident analysis must distinguish reported changes to controls from independently documented losses.",
+      "why_it_matters_uk": "Аналіз інцидентів має розрізняти повідомлені зміни налаштувань і незалежно підтверджені збитки.",
+      "how_to_use_en": "Build an incident table with source, date, affected system and verification status.",
+      "how_to_use_uk": "Створюйте таблицю інцидентів із джерелом, датою, ураженою системою та статусом перевірки.",
+      "limits_en": "Only the publisher's listing was assessed; a common attacker or cause is not established.",
+      "limits_uk": "Перевірено лише опис видавця; спільного виконавця чи причину не встановлено.",
+      "tags": [
+        "osint",
+        "verification"
+      ]
+    },
+    {
+      "theme": "ai",
+      "emoji": "🧭",
+      "rubric_en": "AI Verification",
+      "rubric_uk": "ШІ та верифікація",
+      "source_name": "Bellingcat",
+      "source_url": "https://www.bellingcat.com/resources/2026/10/22/can-llms-supercharge-geolocations-our-tests-show-big-improvements-but-humans-remain-key/",
+      "source_date_label_en": "22 October 2026 — retrospective",
+      "source_date_label_uk": "22 жовтня 2026 — ретроспектива",
+      "title_en": "Can LLMs geolocate photos? A 52-image test",
+      "title_uk": "Чи можуть LLM геолокувати фото? Тест на 52 зображеннях",
+      "what_happened_en": "Bellingcat evaluated models on 52 previously unpublished photos without metadata, distinguishing broad-area guesses from precise geolocation.",
+      "what_happened_uk": "Bellingcat оцінила моделі на 52 раніше не опублікованих фотографіях без метаданих, розділяючи приблизне визначення району та точну геолокацію.",
+      "why_it_matters_en": "Model suggestions can accelerate search but do not replace verification.",
+      "why_it_matters_uk": "Припущення моделей можуть прискорювати пошук, але не замінюють перевірку.",
+      "how_to_use_en": "Verify landmarks, viewpoint and independent map evidence before publishing coordinates.",
+      "how_to_use_uk": "Перед публікацією координат перевіряйте орієнтири, ракурс та незалежні картографічні дані.",
+      "limits_en": "Retrospective study; model answers are hypotheses, not ground truth.",
+      "limits_uk": "Ретроспективне дослідження; відповіді моделей — гіпотези, а не підтверджені факти.",
+      "tags": [
+        "osint",
+        "verification"
+      ]
+    },
+    {
+      "theme": "opsec",
+      "emoji": "🛡️",
+      "rubric_en": "Investigator OPSEC",
+      "rubric_uk": "Безпека дослідника",
+      "source_name": "InformNapalm",
+      "source_url": "https://informnapalm.org/en/osint-opsec/",
+      "source_date_label_en": "September 2026 — retrospective",
+      "source_date_label_uk": "Вересень 2026 — ретроспектива",
+      "title_en": "InformNapalm on OSINT, maps and operational security",
+      "title_uk": "InformNapalm про OSINT, мапи та операційну безпеку",
+      "what_happened_en": "InformNapalm discussed tensions between public geolocated material, outside OSINT interpretations and operational security in wartime.",
+      "what_happened_uk": "InformNapalm розглянула суперечності між публічними геолокованими матеріалами, інтерпретаціями OSINT-аналітиків та операційною безпекою під час війни.",
+      "why_it_matters_en": "Verification and publication are distinct editorial decisions.",
+      "why_it_matters_uk": "Верифікація та оприлюднення — окремі редакційні рішення.",
+      "how_to_use_en": "Review disclosure risks before combining precise locations, times and movement patterns.",
+      "how_to_use_uk": "Оцінюйте ризики розкриття перед поєднанням точних місць, часу та закономірностей пересування.",
+      "limits_en": "This is a retrospective methods item, not a current operational map.",
+      "limits_uk": "Це ретроспективний методологічний матеріал, а не поточна оперативна мапа.",
+      "tags": [
+        "osint",
+        "verification"
+      ]
+    }
+  ],
+  "internal_notes": [
+    "Six OSINT-focused cards; two retrospective methods pieces.",
+    "ISS Global listing only; do not imply the full report was independently audited.",
+    "Verify original source URLs before amplification."
+  ]
+}
