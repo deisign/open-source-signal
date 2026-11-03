@@ -72,7 +72,7 @@ jobs:
               paths = subprocess.check_output(
                   ["git", "diff", "--name-only", "--diff-filter=AM", before, after], text=True
               ).splitlines()
-              paths = [p for p in paths if re.fullmatch(r"telegram/requests/[^/]+\\.json", p)]
+              paths = [p for p in paths if re.fullmatch(r"telegram/requests/[^/]+\.json", p)]
               if len(paths) != 1:
                   raise SystemExit(f"Expected exactly one Telegram request, found {paths}")
               req = json.loads(Path(paths[0]).read_text(encoding="utf-8"))
@@ -88,7 +88,7 @@ jobs:
               force = os.environ["MANUAL_FORCE"] or "false"
               url = os.environ["MANUAL_URL"]
 
-          if not re.fullmatch(r"20\\d{2}-\\d{2}-\\d{2}\\.json", issue):
+          if not re.fullmatch(r"20\\d{2}-\\d{2}-\\d{2}\.json", issue):
               raise SystemExit("Invalid issue filename")
           if lang not in ("uk", "en") or not max_items.isdigit() or not 1 <= int(max_items) <= 9:
               raise SystemExit("Invalid Telegram request parameters")
