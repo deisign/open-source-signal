@@ -1,0 +1,160 @@
+{
+  "issue_number": "151",
+  "date_iso": "2026-11-04",
+  "date_label_en": "4 November 2026",
+  "date_label_uk": "4 листопада 2026",
+  "slug": "open-source-signal",
+  "title_en": "Open Source Signal",
+  "title_uk": "Сигнал відкритих джерел",
+  "issue_type": "Daily Signal",
+  "language_label": "EN + UKR",
+  "subtitle_en": "Ukraine accountability, evidence revisions and the limits of social-media signals.",
+  "subtitle_uk": "Українська оптика: документування шкоди, уточнення доказів і межі сигналів із соцмереж.",
+  "dek_en": "Wednesday: civilian-harm records, revised weapon attribution, satellite-evidence limits and a six-country study of sabotage chatter.",
+  "dek_uk": "Середа: облік постраждалих цивільних, уточнення типу зброї, межі супутникових доказів і дослідження диверсійних наративів у шести країнах.",
+  "editorial_frame": {
+    "what_this_is": "Source-attributed bilingual OSINT synthesis with an explicit Ukrainian accountability focus and general verification methodology.",
+    "what_this_is_not": "Independent forensic attribution, a judicial verdict, a live targeting guide or a complete casualty register."
+  },
+  "rubric_map": [
+    "⚖️ War Crimes Verification",
+    "📁 Casefile",
+    "🧭 Tradecraft",
+    "🇺🇦 Ukraine Lens",
+    "🔎 Platform Watch"
+  ],
+  "footer_note": "Open Source Signal — Ukrainian accountability lens, international OSINT methods, verifiable sources.",
+  "items": [
+    {
+      "rubric_en": "War Crimes Verification",
+      "rubric_uk": "Верифікація воєнних злочинів",
+      "theme": "civilian-harm",
+      "emoji": "⚖️",
+      "source_name": "Reuters",
+      "source_url": "https://www.reuters.com/world/europe/dozens-dead-missing-after-russian-strike-ukrainian-aid-centre-officials-say-2026-11-04/",
+      "source_date_label_en": "4 November 2026",
+      "source_date_label_uk": "4 листопада 2026",
+      "title_en": "Komyshuvakha: separating reported deaths, missing persons and responsibility",
+      "title_uk": "Комишуваха: загиблі, зниклі безвісти та атрибуція удару — окремі твердження",
+      "what_happened_en": "Reuters reported Ukrainian officials' updated count of 37 dead and 59 missing after a Russian strike on a humanitarian aid distribution site in Komyshuvakha, Zaporizhzhia Oblast. Russian officials disputed the target's civilian character.",
+      "what_happened_uk": "Reuters передає оновлені дані української влади: 37 загиблих і 59 зниклих безвісти після російського удару по місцю видачі гуманітарної допомоги в Комишувасі на Запоріжжі. Російська сторона заперечує цивільний характер цілі.",
+      "why_it_matters_en": "A case record should distinguish a reported casualty count, people still missing, the nature of the site and responsibility for the strike.",
+      "why_it_matters_uk": "У картці інциденту потрібно розділити кількість підтверджених владою загиблих, зниклих безвісти, характер об’єкта й відповідальність за удар.",
+      "how_to_use_en": "Archive dated official statements, site descriptions and independently verifiable visual evidence; preserve revisions to the counts.",
+      "how_to_use_uk": "Архівуйте датовані заяви, відомості про призначення об’єкта й доступні для незалежної перевірки візуальні матеріали; зберігайте історію уточнення цифр.",
+      "limits_en": "Figures are attributed to officials and may change; reporting alone is not a judicial finding or independent forensic attribution.",
+      "limits_uk": "Цифри наведені з посиланням на посадовців і можуть змінюватися; журналістське повідомлення не є судовим висновком чи незалежною експертизою.",
+      "tags": [
+        "ukraine",
+        "civilian-harm",
+        "evidence"
+      ]
+    },
+    {
+      "rubric_en": "Casefile",
+      "rubric_uk": "Розбір кейсу",
+      "theme": "verification",
+      "emoji": "📁",
+      "source_name": "Nightwatch",
+      "source_url": "https://nightwatch.services/daily_reports/850",
+      "source_date_label_en": "3 November 2026",
+      "source_date_label_uk": "3 листопада 2026",
+      "title_en": "Kharkiv hospital: why weapon identification must remain revisable",
+      "title_uk": "Лікарня в Харкові: чому ідентифікація боєприпасу має залишатися відкритою до уточнень",
+      "what_happened_en": "Nightwatch revised its assessment of the weapon involved in the Kharkiv hospital strike: incident-specific material better supports a suspected FAB-250 with a UMPK-5R module than an earlier categorical missile label. It reported 73 injured, while noting the absence of independent forensic confirmation.",
+      "what_happened_uk": "Nightwatch переглянув оцінку типу зброї під час удару по лікарні в Харкові: матеріали конкретного інциденту більше відповідають версії про ФАБ-250 з модулем УМПК-5Р, ніж попередньому категоричному визначенню «ракета». У звіті згадано 73 постраждалих і відсутність незалежного експертного підтвердження.",
+      "why_it_matters_en": "The ability to revise a claim is a strength of evidence-based reporting, not an excuse to merge competing labels.",
+      "why_it_matters_uk": "Можливість виправити попередню версію — ознака доказового підходу; суперечливі позначення не варто механічно об’єднувати.",
+      "how_to_use_en": "Keep the original and revised assessments, supporting imagery, confidence levels and the reason for revision in one incident timeline.",
+      "how_to_use_uk": "Зберігайте початкову й уточнену версії, підтверджувальні зображення, рівень упевненості та причину зміни в одній хронології.",
+      "limits_en": "The weapon type and injury count are reported assessments, not independently established forensic conclusions.",
+      "limits_uk": "Тип боєприпасу й кількість постраждалих залишаються повідомленими оцінками, а не незалежно встановленими експертними висновками.",
+      "tags": [
+        "ukraine",
+        "chronology",
+        "verification"
+      ]
+    },
+    {
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "theme": "research",
+      "emoji": "🧭",
+      "source_name": "The Disinformation Commission",
+      "source_url": "https://disinformationcommission.com/investigation/europe-sabotage-online-chatter-followed-attacks-no-early-warning",
+      "source_date_label_en": "3 November 2026",
+      "source_date_label_uk": "3 листопада 2026",
+      "title_en": "Sixty-three sabotage incidents: social chatter followed, rather than predicted, attacks",
+      "title_uk": "63 диверсійні інциденти: соцмережі реагували на події, а не передбачали їх",
+      "what_happened_en": "The Disinformation Commission studied 63 sabotage incidents in six European countries between January 2023 and October 2026. Its analysis found little useful advance signal in public social-media discussion; conversation typically increased after an incident.",
+      "what_happened_uk": "The Disinformation Commission проаналізувала 63 диверсійні інциденти у шести європейських країнах за період від січня 2023-го до жовтня 2026 року. Дослідники не знайшли переконливого випереджального сигналу в публічних обговореннях: активність здебільшого зростала вже після події.",
+      "why_it_matters_en": "An attractive dashboard of posts is not automatically an early-warning system; a useful model needs an explicit baseline and false-positive test.",
+      "why_it_matters_uk": "Приваблива панель моніторингу дописів ще не є системою раннього попередження: потрібні базова частота подій і перевірка хибних спрацювань.",
+      "how_to_use_en": "For monitoring projects, test lead time, precision and false positives against a dated incident corpus before promising prediction.",
+      "how_to_use_uk": "Для моніторингових проєктів перевіряйте випередження, точність і хибні спрацювання на датованому корпусі інцидентів, перш ніж обіцяти прогнозування.",
+      "limits_en": "The study's six-country sample and platform coverage do not establish a universal rule for all conflicts or private channels.",
+      "limits_uk": "Вибірка із шести країн та охоплення платформ не дозволяють переносити висновок на всі конфлікти чи закриті канали.",
+      "tags": [
+        "telegram",
+        "methodology",
+        "disinformation"
+      ]
+    },
+    {
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "theme": "ukraine",
+      "emoji": "🇺🇦",
+      "source_name": "Institute for the Study of War",
+      "source_url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-november-3-2026/",
+      "source_date_label_en": "3 November 2026",
+      "source_date_label_uk": "3 листопада 2026",
+      "title_en": "Geolocated footage and damage assessments: different grades of evidence",
+      "title_uk": "Геолоковане відео та оцінка пошкоджень: різні рівні доказовості",
+      "what_happened_en": "ISW's November 3 assessment referenced geolocated imagery of fire at a Russian refinery and a Ukrainian OSINT channel's assessment of damage at a Russian industrial facility. These are source-attributed observations rather than independently measured full damage totals.",
+      "what_happened_uk": "У звіті ISW за 3 листопада наведено геолоковані матеріали про пожежу на російському нафтопереробному об’єкті та оцінку пошкоджень промислового підприємства, оприлюднену українським OSINT-каналом. Це атрибутовані спостереження, а не незалежно виміряний повний масштаб збитків.",
+      "why_it_matters_en": "A geolocated image can support the location of a visible event without proving all downstream claims about its effects.",
+      "why_it_matters_uk": "Геолокація зображення допомагає встановити місце видимої події, але не підтверджує автоматично всі висновки про наслідки.",
+      "how_to_use_en": "Separate imagery-based observations, official acknowledgements and analyst interpretations in the evidence table.",
+      "how_to_use_uk": "Відокремлюйте спостереження за зображеннями, офіційні підтвердження й аналітичні інтерпретації в таблиці доказів.",
+      "limits_en": "No precise coordinates or operationally actionable target details are reproduced; the cited assessment does not prove comprehensive damage.",
+      "limits_uk": "Точні координати й оперативно придатні дані про цілі тут не відтворюються; наведена оцінка не доводить повного масштабу пошкоджень.",
+      "tags": [
+        "ukraine",
+        "geolocation",
+        "source-attribution"
+      ]
+    },
+    {
+      "rubric_en": "Platform Watch",
+      "rubric_uk": "Платформний радар",
+      "theme": "platform",
+      "emoji": "🔎",
+      "source_name": "Nightwatch",
+      "source_url": "https://nightwatch.services/daily_reports/850",
+      "source_date_label_en": "3 November 2026",
+      "source_date_label_uk": "3 листопада 2026",
+      "title_en": "Three power plants reported offline: why the facility names remain unknown",
+      "title_uk": "Повідомлення про зупинку трьох ТЕС: чому назви об’єктів залишаються невстановленими",
+      "what_happened_en": "Nightwatch distinguished a Ukrainian energy operator's report that three unnamed thermal power plants stopped generating from geolocated footage showing smoke at a separately discussed power facility. It explicitly did not identify the three plants from the available evidence.",
+      "what_happened_uk": "Nightwatch розмежував повідомлення українського енергетичного оператора про зупинку генерації на трьох неназваних ТЕС і геолоковане відео диму над іншим обговорюваним енергооб’єктом. Ідентифікувати три станції на підставі доступних матеріалів автори не змогли.",
+      "why_it_matters_en": "Multiple reposts of one statement do not amount to multiple independent confirmations; geographic proximity is not proof of incident identity.",
+      "why_it_matters_uk": "Кілька передруків однієї заяви не є кількома незалежними підтвердженнями; географічна близькість не доводить тотожності інцидентів.",
+      "how_to_use_en": "Track each claim's originating operator and evidence, and keep facility identity explicitly unknown unless corroborated.",
+      "how_to_use_uk": "Фіксуйте першоджерело й доказ для кожного твердження, а назви об’єктів залишайте невстановленими до незалежного підтвердження.",
+      "limits_en": "This is an editorial case about verification limits, not a current operational status report or a list of infrastructure targets.",
+      "limits_uk": "Це редакційний кейс про межі перевірки, а не поточний оперативний звіт чи перелік інфраструктурних цілей.",
+      "tags": [
+        "ukraine",
+        "platforms",
+        "source-chain"
+      ]
+    }
+  ],
+  "internal_notes": [
+    "Reuters item dated November 4: official counts are provisional and should be rechecked for later revisions.",
+    "Nightwatch is a secondary OSINT assessment; distinguish it from independent forensic findings.",
+    "ISW industrial imagery is discussed only at the evidence-method level, without coordinates or actionable targeting detail.",
+    "The Disinformation Commission's 63-case study is not proof that all online monitoring is useless."
+  ]
+}
