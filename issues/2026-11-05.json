@@ -1,0 +1,160 @@
+{
+  "issue_number": "152",
+  "date_iso": "2026-11-05",
+  "date_label_en": "5 November 2026",
+  "date_label_uk": "5 листопада 2026",
+  "slug": "open-source-signal",
+  "title_en": "Open Source Signal",
+  "title_uk": "Сигнал відкритих джерел",
+  "issue_type": "Daily Signal",
+  "language_label": "EN + UKR",
+  "subtitle_en": "Civilian-harm verification, source provenance, acoustic geolocation and OSINT safety.",
+  "subtitle_uk": "Верифікація шкоди цивільним, походження доказів, акустична геолокація та безпека OSINT.",
+  "dek_en": "Thursday: changing casualty counts, verification-level maps, sanctions supply-chain investigations, aircraft-audio geolocation and GNSS-resistant visual checks.",
+  "dek_uk": "Четвер: уточнення втрат, мапи з рівнями верифікації, розслідування санкційних ланцюгів, геолокація за звуком літаків і перевірка зображень за перешкод GNSS.",
+  "editorial_frame": {
+    "what_this_is": "Bilingual OSINT editorial review with Ukrainian accountability focus and independently useful international verification methods. Source publication dates are stated.",
+    "what_this_is_not": "A new forensic investigation, a complete incident census, a legal determination or a manual for locating private people."
+  },
+  "rubric_map": [
+    "⚖️ War Crimes Verification",
+    "🇺🇦 Ukraine Lens",
+    "🛡️ Investigator OPSEC",
+    "🧭 Tradecraft",
+    "📁 Casefile"
+  ],
+  "footer_note": "Open Source Signal — Ukrainian accountability lens, international OSINT methods, verifiable sources.",
+  "items": [
+    {
+      "rubric_en": "War Crimes Verification",
+      "rubric_uk": "Верифікація воєнних злочинів",
+      "theme": "civilian-harm",
+      "emoji": "⚖️",
+      "source_name": "Reuters",
+      "source_url": "https://www.reuters.com/world/europe/dozens-dead-missing-after-russian-strike-ukrainian-aid-centre-officials-say-2026-11-04/",
+      "source_date_label_en": "4 November 2026; updated report",
+      "source_date_label_uk": "4 листопада 2026; оновлене повідомлення",
+      "title_en": "Komyshuvakha: why casualty figures need versioned evidence",
+      "title_uk": "Комишуваха: чому дані про загиблих треба зберігати з історією уточнень",
+      "what_happened_en": "Reuters' updated report gives a death toll of 40 and 59 missing following the strike on a site used for shelter and humanitarian aid. Ukrainian authorities attribute the attack to Russian forces; Russia disputes the civilian nature of the target.",
+      "what_happened_uk": "В оновленому повідомленні Reuters йдеться про 40 загиблих і 59 зниклих безвісти після удару по об’єкту, який використовували як укриття та пункт гуманітарної допомоги. Українська влада покладає відповідальність на російські сили; Росія заперечує цивільний характер цілі.",
+      "why_it_matters_en": "Yesterday's reported figures have already changed. A reliable incident register needs timestamped claims, not one overwritten total.",
+      "why_it_matters_uk": "Учорашні цифри вже змінилися. Доказовий реєстр потребує датованих версій повідомлень, а не одного числа, яке постійно перезаписують.",
+      "how_to_use_en": "Preserve the publication timestamp, attributed source, categories of affected people and links to corroborating footage.",
+      "how_to_use_uk": "Зберігайте час публікації, джерело кожної цифри, категорії постраждалих і посилання на матеріали для незалежної перевірки.",
+      "limits_en": "Casualty figures remain provisional; neither a media account nor video alone establishes legal responsibility.",
+      "limits_uk": "Дані про втрати залишаються попередніми; журналістське повідомлення або відео самі по собі не встановлюють юридичної відповідальності.",
+      "tags": [
+        "ukraine",
+        "civilian-harm",
+        "evidence-log"
+      ]
+    },
+    {
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "theme": "ukraine",
+      "emoji": "🇺🇦",
+      "source_name": "Bellingcat",
+      "source_url": "https://ukraine.bellingcat.com/",
+      "source_date_label_en": "Living project; accessed 5 November 2026",
+      "source_date_label_uk": "Постійний проєкт; переглянуто 5 листопада 2026",
+      "title_en": "Bellingcat's civilian-harm map: what a verified point does—and does not—mean",
+      "title_uk": "Мапа шкоди цивільним Bellingcat: що означає перевірена точка",
+      "what_happened_en": "Bellingcat's Ukraine Civilian Harm Timemap publishes geolocated open-source footage only after checks for originality and location. The team notes that public coordinates are deliberately obscured and that responsibility is not necessarily established.",
+      "what_happened_uk": "Bellingcat публікує на мапі шкоди цивільним в Україні лише матеріали, для яких перевірено походження та місце зйомки. Публічні координати навмисно зміщені; відповідальність за інцидент не завжди встановлена.",
+      "why_it_matters_en": "A map is a curated evidence sample, not a complete census or a verdict about perpetrators.",
+      "why_it_matters_uk": "Мапа є відібраним масивом доказів, а не повним переписом інцидентів чи висновком про винуватців.",
+      "how_to_use_en": "Store verification status, source provenance and location precision as separate fields when reusing map entries.",
+      "how_to_use_uk": "Під час використання записів зберігайте окремо статус перевірки, походження матеріалу й точність локалізації.",
+      "limits_en": "Absence from the map is not evidence an incident did not happen; coordinates are intentionally generalized.",
+      "limits_uk": "Відсутність точки на мапі не означає, що події не було; координати навмисно узагальнені.",
+      "tags": [
+        "ukraine",
+        "civilian-harm",
+        "geolocation"
+      ]
+    },
+    {
+      "rubric_en": "Investigator OPSEC",
+      "rubric_uk": "Безпека дослідника",
+      "theme": "opsec",
+      "emoji": "🛡️",
+      "source_name": "Thaki Cloud Tech Blog",
+      "source_url": "https://www.thakicloud.com/tech-blog/en/dev/airplane-doppler-geolocation/",
+      "source_date_label_en": "4 November 2026",
+      "source_date_label_uk": "4 листопада 2026",
+      "title_en": "An aircraft sound can leak recording location: Doppler and ADS-B",
+      "title_uk": "Звук літака може видати місце запису: ефект Доплера та ADS-B",
+      "what_happened_en": "A technical write-up describes matching aircraft Doppler patterns in recorded audio with public ADS-B flight tracks. It reports a separate field replication whose location estimate was around 100 metres from the camera.",
+      "what_happened_uk": "Технічний огляд описує зіставлення доплерівського сліду літака на аудіозаписі з публічними маршрутами ADS-B. Автори переказують окрему польову реплікацію, де оцінка місця була приблизно за 100 метрів від камери.",
+      "why_it_matters_en": "Background audio can expose sensitive context even when visual metadata and obvious landmarks are removed.",
+      "why_it_matters_uk": "Фоновий звук здатен розкрити чутливі обставини, навіть коли метадані й помітні орієнтири прибрано.",
+      "how_to_use_en": "Treat ambient audio as potentially identifying information when publishing recordings of witnesses or sensitive sites.",
+      "how_to_use_uk": "Сприймайте фонове аудіо як потенційно ідентифікаційні дані під час публікації записів свідків або чутливих місць.",
+      "limits_en": "The accuracy claim comes from reported demonstrations under favourable conditions; this issue does not independently reproduce the technique.",
+      "limits_uk": "Точність наведено за описом демонстрацій у сприятливих умовах; редакція не відтворювала метод самостійно.",
+      "tags": [
+        "opsec",
+        "audio",
+        "geolocation"
+      ]
+    },
+    {
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "theme": "tradecraft",
+      "emoji": "🧭",
+      "source_name": "SSX360",
+      "source_url": "https://ssx360.com/publication/001/",
+      "source_date_label_en": "21 October 2026; retrospective",
+      "source_date_label_uk": "21 жовтня 2026; ретроспектива",
+      "title_en": "329 candidates, one roofline: documenting rejected geolocation hypotheses",
+      "title_uk": "329 варіантів і один дах: як документувати відхилені гіпотези геолокації",
+      "what_happened_en": "SSX360 examines GeoSudoku's geolocation of footage from Bataysk using roofline comparisons and a reported search across 329 candidate locations, while discussing GNSS interference as a verification complication.",
+      "what_happened_uk": "SSX360 розбирає геолокацію відео з Батайська, виконану GeoSudoku через зіставлення ліній дахів і перевірку, за описом авторів, 329 можливих місць. Окремо розглянуто перешкоди GNSS як чинник ризику для перевірки.",
+      "why_it_matters_en": "Showing why 328 candidates were excluded is often more useful than presenting a lone pin without an audit trail.",
+      "why_it_matters_uk": "Пояснення, чому 328 варіантів відхилено, нерідко цінніше за одну позначку на мапі без журналу перевірки.",
+      "how_to_use_en": "Record candidate locations, disconfirming features, imagery dates and final visual matches in an evidence ledger.",
+      "how_to_use_uk": "Зберігайте варіанти локацій, ознаки невідповідності, дати знімків та остаточні візуальні збіги в журналі доказів.",
+      "limits_en": "The counts and conclusion are attributed to the report; independent replication was not performed for this issue.",
+      "limits_uk": "Кількість перевірених місць і висновок наведено за звітом; редакція не проводила незалежного повторення.",
+      "tags": [
+        "geolocation",
+        "methodology",
+        "evidence-ledger"
+      ]
+    },
+    {
+      "rubric_en": "Casefile",
+      "rubric_uk": "Розбір кейсу",
+      "theme": "investigations",
+      "emoji": "📁",
+      "source_name": "The Insider",
+      "source_url": "https://theins.ru/inv",
+      "source_date_label_en": "27 October 2026; retrospective investigation listing",
+      "source_date_label_uk": "27 жовтня 2026; ретроспективний огляд розслідувань",
+      "title_en": "Russian military technology under sanctions: follow the supplier trail",
+      "title_uk": "Російські військові технології під санкціями: перевіряйте ланцюг постачання",
+      "what_happened_en": "The Insider's investigations index lists an October 27 investigation by Andrey Zayakin and Timur Olevsky on Russia's continued development of quantum and laser technologies for military uses despite sanctions.",
+      "what_happened_uk": "У реєстрі розслідувань The Insider є матеріал Андрія Заякіна та Тимура Олевського від 27 жовтня про розвиток у Росії квантових і лазерних технологій для військових потреб попри санкції.",
+      "why_it_matters_en": "Supplier-chain research requires separating named entities, product claims and the legal scope of each restriction.",
+      "why_it_matters_uk": "Дослідження ланцюгів постачання вимагає розділяти встановлені компанії, твердження про продукцію та юридичну сферу кожного обмеження.",
+      "how_to_use_en": "Use the investigation as a lead; verify company identifiers, customs claims and sanctions records against primary documents.",
+      "how_to_use_uk": "Використовуйте розслідування як відправну точку; перевіряйте ідентифікатори компаній, митні відомості та санкційні реєстри за первинними документами.",
+      "limits_en": "This entry is grounded in the publisher's investigation index; individual supply-chain allegations were not independently audited.",
+      "limits_uk": "Ця картка спирається на реєстр розслідувань видавця; окремі твердження про ланцюги постачання редакція незалежно не перевіряла.",
+      "tags": [
+        "ukraine",
+        "investigations",
+        "sanctions"
+      ]
+    }
+  ],
+  "internal_notes": [
+    "The Komyshuvakha report is a dated update to the previous issue; preserve both counts as source snapshots.",
+    "Bellingcat Timemap is an ongoing project, not a newly launched product.",
+    "SSX360 and The Insider investigations index are retrospective, labelled as such.",
+    "Aircraft Doppler technique is discussed as OPSEC risk, not instructions for locating people."
+  ]
+}
