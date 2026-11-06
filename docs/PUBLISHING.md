@@ -44,3 +44,15 @@ Issue #150 was initially mishandled as Markdown and then an incomplete JSON was 
 - **Verified green test:** [GitHub Actions run 41630966085](https://github.com/deisign/open-source-signal/actions/runs/41630966085) completed with `success`. This test targeted the already-sent `2026-11-03.json` and was designed to exercise duplicate protection.
 - The manual Telegram send of issue #150 was recorded separately in `data/telegram_sent.json` under run `41630501757` at `2026-11-03T11:49:01Z`.
 - Operational sequence: commit validated issue JSON → wait for successful site deployment → create a new `telegram/requests/YYYY-MM-DD-<unique>.json` → verify successful Telegram Actions run and sent-log entry. Do not use `force=true` unless explicitly requested.
+
+## Operator approval gate (effective 6 November 2026)
+
+**Explicit operator instruction is mandatory for every publication action.** A request to *assemble, research, draft or prepare* an issue authorizes editorial preparation only. It does **not** authorize committing an issue to the publishing branch, deploying the site, creating a `telegram/requests/*.json` trigger, or sending Telegram.
+
+Separate approvals:
+- **Publish the issue / site**: only after an explicit instruction to publish; commit validated `issues/YYYY-MM-DD.json` then verify deployment.
+- **Send Telegram announcement**: only after an explicit instruction to send or publish the Telegram announcement; create a request file only then.
+- An explicit instruction to publish both site and Telegram may authorize both steps in sequence, provided deployment is confirmed first.
+- Never infer approval from the weekday, a request to assemble a correct issue, previous publication habits, or a completed site deployment.
+
+This approval gate governs the assistant's actions even though GitHub workflows may technically support automatic triggering after an authorized commit.
