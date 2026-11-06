@@ -208,7 +208,19 @@ jobs:
             echo "No sent-log changes to commit."
           else
             git commit -m "Record Telegram announcement for ${{ env.ISSUE }} (${{ env.LANG }})"
-            git push
+            # Another publisher may have pushed while Telegram was being sent.
+            # Preserve both updates; never rerun the Telegram send for a log-only retry.
+            for attempt in 1 2 3 4 5; do
+              git fetch origin main
+              if git rebase origin/main && git push origin HEAD:main; then
+                echo "Telegram sent log recorded."
+                exit 0
+              fi
+              git rebase --abort 2>/dev/null || true
+              sleep "$attempt"
+            done
+            echo "Telegram was sent, but the sent log could not be pushed after retries." >&2
+            exit 1
           fi
 
       - name: Skip duplicate notice
