@@ -1,0 +1,161 @@
+{
+  "issue_number": "153",
+  "date_iso": "2026-11-06",
+  "date_label_en": "6 November 2026",
+  "date_label_uk": "6 листопада 2026",
+  "slug": "open-source-signal",
+  "title_en": "Open Source Signal",
+  "title_uk": "Сигнал відкритих джерел",
+  "issue_type": "Daily Signal",
+  "language_label": "EN + UKR",
+  "subtitle_en": "Ukraine-focused disinformation verification, civilian-harm evidence and orbital OSINT.",
+  "subtitle_uk": "Українська оптика: перевірка дезінформації, доказів шкоди цивільним та орбітальних OSINT-даних.",
+  "dek_en": "Friday: fabricated newsroom identities, Oleshky evacuation claims, evolving civilian-harm records, satellite proximity and the limits of visual attribution.",
+  "dek_uk": "П’ятниця: фальшиві медіабренди, повідомлення про евакуацію з Олешок, уточнення даних про загиблих, зближення супутників і межі візуальної атрибуції.",
+  "editorial_frame": {
+    "what_this_is": "A source-attributed EN/UKR OSINT editorial digest. Claims, reported counts and analytical hypotheses are separated; publication dates are explicit.",
+    "what_this_is_not": "An independent criminal investigation, a forensic confirmation of orbital intent, or a tactical targeting report."
+  },
+  "rubric_map": [
+    "📡 Signal One",
+    "📱 Telegram Radar",
+    "⚖️ War Crimes Verification",
+    "🛰️ Map Room",
+    "🧭 Tradecraft"
+  ],
+  "footer_note": "Open Source Signal — Ukrainian accountability lens, international OSINT methods, verifiable sources.",
+  "items": [
+    {
+      "rubric_en": "Signal One",
+      "rubric_uk": "Головний сигнал",
+      "theme": "ukraine",
+      "emoji": "📡",
+      "source_name": "The Insider / Antibot4Navalny",
+      "source_url": "https://www.theins.org/en/news/299171",
+      "source_date_label_en": "4 November 2026",
+      "source_date_label_uk": "4 листопада 2026",
+      "title_en": "Matryoshka impersonates newsrooms to launder allegations against Ukraine",
+      "title_uk": "«Матрьошка» імітує редакції, щоб легітимізувати звинувачення проти України",
+      "what_happened_en": "The Insider, citing Antibot4Navalny researchers, describes more than ten fake videos and posts impersonating France 24, Euronews, Human Rights Watch and UN initiatives. They circulate unsupported allegations of Ukrainian 'secret prisons' tied to a reported November 2 incident near Kyiv.",
+      "what_happened_uk": "The Insider із посиланням на дослідників Antibot4Navalny описує понад десять фальшивих відео й дописів, що імітують France 24, Euronews, Human Rights Watch та ініціативи ООН. У них поширюють недоведені звинувачення про українські «таємні в’язниці», прив’язуючи їх до повідомлень про подію 2 листопада під Києвом.",
+      "why_it_matters_en": "Impersonated institutional branding can make one coordinated narrative look like several independent confirmations.",
+      "why_it_matters_uk": "Підроблене оформлення відомих інституцій створює ілюзію кількох незалежних підтверджень одного наративу.",
+      "how_to_use_en": "Check each purported publisher's own channels; separate the underlying incident, added allegations and bot-network attribution.",
+      "how_to_use_uk": "Перевіряйте заявлені публікації на власних ресурсах редакцій; окремо аналізуйте початкову подію, додані звинувачення та атрибуцію мережі.",
+      "limits_en": "The Insider withheld original links; the specific campaign's attribution and scale were not independently replicated by this journal. The allegations remain unproven.",
+      "limits_uk": "The Insider не оприлюднив первинні посилання; редакція журналу не відтворювала незалежно атрибуцію й масштаб кампанії. Звинувачення залишаються недоведеними.",
+      "tags": [
+        "ukraine",
+        "disinformation",
+        "source-impersonation"
+      ]
+    },
+    {
+      "rubric_en": "Telegram Radar",
+      "rubric_uk": "Telegram-радар",
+      "theme": "platform",
+      "emoji": "📱",
+      "source_name": "Institute for the Study of War",
+      "source_url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-november-5-2026/",
+      "source_date_label_en": "5 November 2026",
+      "source_date_label_uk": "5 листопада 2026",
+      "title_en": "Oleshky evacuation: when competing bus counts become an information operation",
+      "title_uk": "Евакуація з Олешок: коли суперечливі цифри автобусів стають інформаційною операцією",
+      "what_happened_en": "ISW reports that Russian milblogger Vladimir Romanov had written of 17 evacuation buses, including four heading to Russia, whereas a Newsmax account cited 15 buses, 11 bound for Ukraine and four for Russia. ISW also reports his subsequent arrest and interprets it in the context of information control.",
+      "what_happened_uk": "ISW повідомляє, що російський воєнний блогер Володимир Романов писав про 17 автобусів евакуації, з яких чотири мали прямувати до Росії. У повідомленні Newsmax фігурують 15 автобусів: 11 до України й чотири до Росії. ISW також описує повідомлення про затримання блогера в контексті контролю інформації.",
+      "why_it_matters_en": "A count of vehicles is not a count of evacuees; differences between accounts require time, route and origin checks.",
+      "why_it_matters_uk": "Кількість автобусів не дорівнює кількості евакуйованих; розбіжності потребують перевірки часу, маршруту й походження повідомлень.",
+      "how_to_use_en": "Archive original posts and revisions; track the stated direction and time of each convoy separately.",
+      "how_to_use_uk": "Архівуйте первинні дописи та їхні зміни; окремо фіксуйте час і заявлений напрямок кожної колони.",
+      "limits_en": "The bus totals come from different attributed reports and may describe different snapshots. ISW's interpretation of motives is analytical, not a proven fact.",
+      "limits_uk": "Цифри походять із різних повідомлень і можуть стосуватися різних моментів. Оцінка мотивів у ISW є аналітичною, а не доведеним фактом.",
+      "tags": [
+        "ukraine",
+        "telegram",
+        "verification"
+      ]
+    },
+    {
+      "rubric_en": "War Crimes Verification",
+      "rubric_uk": "Верифікація воєнних злочинів",
+      "theme": "civilian-harm",
+      "emoji": "⚖️",
+      "source_name": "Institute for the Study of War",
+      "source_url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-november-5-2026/",
+      "source_date_label_en": "5 November 2026",
+      "source_date_label_uk": "5 листопада 2026",
+      "title_en": "Komyshuvakha: the reported death toll reaches at least 43",
+      "title_uk": "Комишуваха: повідомлена кількість загиблих зросла щонайменше до 43",
+      "what_happened_en": "ISW cites President Volodymyr Zelensky's November 5 statement that at least 43 people had died after the November 2 strike on a humanitarian aid station in Komyshuvakha. This updates earlier reported figures carried in previous issues.",
+      "what_happened_uk": "ISW посилається на заяву президента Володимира Зеленського від 5 листопада: після удару 2 листопада по пункту гуманітарної допомоги в Комишувасі загинули щонайменше 43 людини. Це нове уточнення цифр, наведених у попередніх випусках.",
+      "why_it_matters_en": "The key OSINT task is versioning a civilian-harm record, not presenting the latest count as final.",
+      "why_it_matters_uk": "Головне OSINT-завдання — зберігати історію змін у реєстрі шкоди цивільним, а не подавати останню цифру як остаточну.",
+      "how_to_use_en": "Record the date, named official and source for every revision; distinguish confirmed deaths from persons still unaccounted for.",
+      "how_to_use_uk": "Для кожного уточнення зберігайте дату, посадовця й джерело; відокремлюйте загиблих від людей, доля яких невідома.",
+      "limits_en": "This is a reported official count via ISW, not an independently audited casualty list or a judicial finding.",
+      "limits_uk": "Це повідомлена офіційна цифра у викладі ISW, а не незалежно перевірений список жертв чи судовий висновок.",
+      "tags": [
+        "ukraine",
+        "civilian-harm",
+        "evidence-versioning"
+      ]
+    },
+    {
+      "rubric_en": "Map Room",
+      "rubric_uk": "Картографічна кімната",
+      "theme": "maps",
+      "emoji": "🛰️",
+      "source_name": "Reuters",
+      "source_url": "https://www.reuters.com/business/aerospace-defense/russia-may-have-rehearsed-attack-satellite-specialist-says-flagging-another-2026-11-05/",
+      "source_date_label_en": "5 November 2026",
+      "source_date_label_uk": "5 листопада 2026",
+      "title_en": "Kosmos 2612 and ICEYE: orbital proximity does not establish intent",
+      "title_uk": "«Космос-2612» та ICEYE: зближення на орбіті не доводить наміру",
+      "what_happened_en": "Reuters reports that Russia's Kosmos 2612 came within about a kilometre, possibly a few hundred metres, of ICEYE-X36 in October. Experts discussed possible hostile intent; orbital observations alone cannot prove an attack rehearsal or damage.",
+      "what_happened_uk": "Reuters повідомляє, що російський «Космос-2612» у жовтні наблизився до ICEYE-X36 приблизно на кілометр, можливо — на кілька сотень метрів. Експерти обговорюють потенційно ворожий намір, але орбітальні спостереження не доводять репетиції атаки чи завданої шкоди.",
+      "why_it_matters_en": "Commercial radar satellites serve public-interest monitoring and Ukraine-related imagery; their safety also concerns civilian OSINT infrastructure.",
+      "why_it_matters_uk": "Комерційні радарні супутники забезпечують суспільно важливий моніторинг і знімки, пов’язані з Україною; їхня безпека стосується й цивільної OSINT-інфраструктури.",
+      "how_to_use_en": "Separate measured proximity, tracking uncertainty, possible capabilities and inferred intent in the evidence table.",
+      "how_to_use_uk": "Відокремлюйте виміряну дистанцію, похибку стеження, можливі технічні спроможності та припущення про намір у таблиці доказів.",
+      "limits_en": "The reported distances are estimates, and the intention, interference and any damage are unproven.",
+      "limits_uk": "Наведені відстані — оцінки; намір, втручання в роботу й можливі пошкодження не доведені.",
+      "tags": [
+        "satellites",
+        "geospatial",
+        "ukraine"
+      ]
+    },
+    {
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "theme": "tradecraft",
+      "emoji": "🧭",
+      "source_name": "Institute for the Study of War",
+      "source_url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-november-5-2026/",
+      "source_date_label_en": "5 November 2026",
+      "source_date_label_uk": "5 листопада 2026",
+      "title_en": "From geolocated smoke to damage assessment: do not skip evidentiary steps",
+      "title_uk": "Від геолокованого диму до оцінки пошкоджень: не пропускайте доказові етапи",
+      "what_happened_en": "ISW cites geolocated November 5 footage of smoke at a refinery and imagery of fires at other industrial facilities, while separately describing an updated battle-damage assessment of earlier strikes. The underlying claims have different evidentiary strengths.",
+      "what_happened_uk": "ISW посилається на геолоковане відео диму над нафтопереробним об’єктом від 5 листопада та зображення пожеж на інших промислових майданчиках, окремо згадуючи уточнену оцінку наслідків попередніх ударів. Доказова сила цих тверджень різна.",
+      "why_it_matters_en": "A visible plume establishes an observable phenomenon; it does not by itself establish the cause, target function or damage severity.",
+      "why_it_matters_uk": "Видимий стовп диму засвідчує спостережуване явище, але сам по собі не доводить причину, функцію об’єкта чи масштаб пошкоджень.",
+      "how_to_use_en": "For each claim log observation date, image provenance, confidence and what additional corroboration would be needed.",
+      "how_to_use_uk": "Для кожного твердження фіксуйте дату спостереження, походження зображення, рівень упевненості та потрібні додаткові підтвердження.",
+      "limits_en": "This methodological note omits exact locations and operational details; no independent image analysis was conducted for this issue.",
+      "limits_uk": "Ця методична нотатка не наводить точних координат чи оперативних деталей; незалежного аналізу зображень для цього випуску не проводили.",
+      "tags": [
+        "geolocation",
+        "verification",
+        "methodology"
+      ]
+    }
+  ],
+  "internal_notes": [
+    "The Matryoshka campaign is reported by The Insider based on Antibot4Navalny materials; original posts are not linked and attribution was not independently reproduced.",
+    "The Oleshky bus counts are attributed to separate reports; they must not be reconciled as if describing the same snapshot.",
+    "Komyshuvakha is a dated update to the prior two issues, not a new incident.",
+    "ICEYE satellite proximity is observational; the attack-rehearsal hypothesis remains unproven.",
+    "The geolocation case is methodological and deliberately omits actionable target coordinates."
+  ]
+}
