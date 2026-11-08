@@ -1,0 +1,218 @@
+{
+  "issue_number": "W45",
+  "slug": "open-source-signal-weekly-2026-W45",
+  "output_name": "open-source-signal-weekly-2026-W45.html",
+  "date_iso": "2026-11-08",
+  "week_label_en": "2–8 November 2026",
+  "week_label_uk": "2–8 листопада 2026",
+  "title_en": "Open Source Signal Weekly",
+  "title_uk": "Тижневий сигнал відкритих джерел",
+  "subtitle_en": "Preserve the event, the update and the evidence behind each claim.",
+  "subtitle_uk": "Зберігайте подію, її уточнення та докази кожного твердження.",
+  "dek_en": "Week 45: changing civilian-harm records, a second strike at a rescue site, Kyiv infrastructure, geolocation, Telegram evidence and limits of attribution.",
+  "dek_uk": "Тиждень 45: уточнення даних про цивільні втрати, повторний удар по рятувальній техніці, інфраструктура Києва, геолокація, Telegram-докази та межі атрибуції.",
+  "editorial_frame": {
+    "what_this_is": "Sunday Weekly Journal for ISO Week 45, 2–8 November 2026. An editorial synthesis of Daily issues and Saturday Tool Radar with separately attributed 7–8 November developments.",
+    "what_this_is_not": "A mechanically merged Daily Signal, independently audited casualty register, criminal verdict, or benchmark of tools."
+  },
+  "rubric_map": [
+    "📡 Signal of the Week / Головний сигнал тижня",
+    "🇺🇦 Ukraine Lens / Українська оптика",
+    "⚖️ War Crimes Verification / Верифікація воєнних злочинів",
+    "🕯️ Losses, Captivity & Missing / Втрати, полон, зниклі",
+    "🧰 Tradecraft / Методика",
+    "🛠️ Tools / Datasets / Інструменти й набори даних",
+    "⚠️ Risk Watch / Межі й ризики"
+  ],
+  "editorial_note_en": "The week shows why an OSINT record should be an auditable sequence rather than a polished final number. Komyshuvakha's casualty count changed as recovery continued, and a new strike at the rescue site requires a separate incident entry. Damage imagery of Kyiv's bridge and energy infrastructure can anchor location, not total operational loss. The same discipline applies to Telegram amplification graphs, archive captures, satellite products and claims about orbital intent: keep source, observation, inference, date and uncertainty distinct.",
+  "editorial_note_uk": "Тиждень показав, чому OSINT-запис має бути перевірюваною послідовністю, а не відполірованим остаточним числом. Дані про загиблих у Комишувасі змінювалися під час пошукових робіт, а новий удар по місцю роботи рятувальників потребує окремого запису. Зображення пошкоджень київського мосту й енергетики можуть підтвердити місце, але не повну втрату функцій. Та сама дисципліна потрібна для графів Telegram, архівних копій, супутникових продуктів і припущень про орбітальні наміри: розділяйте джерело, спостереження, висновок, дату й невизначеність.",
+  "items": [
+    {
+      "rubric_key": "signal",
+      "emoji": "📡",
+      "rubric_en": "Signal of the Week",
+      "rubric_uk": "Головний сигнал тижня",
+      "tags": [
+        "weekly",
+        "accountability",
+        "verification"
+      ],
+      "title_en": "Komyshuvakha: the evidence record changed every day",
+      "title_uk": "Комишуваха: доказовий запис змінювався щодня",
+      "source_line_en": "Reuters · 4 November; ISW · 5 November; SESU via Ukrainska Pravda · 7–8 November",
+      "source_line_uk": "Reuters · 4 листопада; ISW · 5 листопада; ДСНС через «Українську правду» · 7–8 листопада",
+      "what_happened_en": "The 2 November attack on a humanitarian aid location was followed by successive reports of fatalities and missing people. ISW cited a reported death toll of at least 43 on 5 November; on 7 November, the State Emergency Service reported 55. On 8 November rescuers reported another drone strike on their equipment at the site, without new rescuer injuries. These are updates to one original event plus a distinct later incident.",
+      "what_happened_uk": "Після удару 2 листопада по місцю надання гуманітарної допомоги з’являлися нові повідомлення про загиблих і зниклих. ISW 5 листопада наводив щонайменше 43 загиблих; 7 листопада ДСНС повідомила про 55. 8 листопада рятувальники повідомили про новий удар дроном по техніці на місці робіт, без нових поранених серед рятувальників. Це уточнення первинної події та окремий пізніший інцидент.",
+      "why_it_matters_en": "A single unversioned casualty number destroys the evidence chronology; a subsequent strike must not be collapsed into the first one.",
+      "why_it_matters_uk": "Єдина цифра без історії змін руйнує хронологію доказів; повторний удар не можна зливати з першим.",
+      "how_to_use_en": "Create an incident ID for 2 November; store each dated count with source and status. Give the 8 November equipment strike its own linked incident ID.",
+      "how_to_use_uk": "Створіть ідентифікатор інциденту 2 листопада; зберігайте кожну датовану цифру з джерелом і статусом. Удар по техніці 8 листопада позначте окремим пов’язаним інцидентом.",
+      "limits_en": "These are attributed reports, not an independently verified named casualty register or legal finding.",
+      "limits_uk": "Це атрибутовані повідомлення, а не незалежно перевірений поіменний реєстр жертв чи правовий висновок."
+    },
+    {
+      "rubric_key": "ukraine",
+      "emoji": "🇺🇦",
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "tags": [
+        "weekly",
+        "accountability",
+        "verification"
+      ],
+      "title_en": "Kyiv's bridge and power infrastructure: visible damage is not a full assessment",
+      "title_uk": "Київський міст та енергетика: видимі пошкодження — не повна оцінка",
+      "source_line_en": "Reuters · 7 November; ISW · 7 November",
+      "source_line_uk": "Reuters · 7 листопада; ISW · 7 листопада",
+      "what_happened_en": "Reports of the 6–7 November missile-and-drone attack described damage to power infrastructure and Kyiv's Northern Bridge. ISW discussed geolocated bridge imagery. Footage can support a location and visible damage, but does not establish the total outage duration, structural safety, weapon or military purpose.",
+      "what_happened_uk": "Повідомлення про ракетно-дронову атаку 6–7 листопада описували пошкодження енергетичної інфраструктури та Північного мосту в Києві. ISW розглядав геолоковані зображення мосту. Кадри можуть підтвердити місце та видимі пошкодження, але не встановлюють тривалість відключень, стан конструкцій, тип зброї чи військове призначення.",
+      "why_it_matters_en": "The distinction between an observed strike, visible damage and sustained loss matters for accountability and recovery reporting.",
+      "why_it_matters_uk": "Для документування відповідальності й відновлення важливо відокремлювати спостережений удар, видимі пошкодження та тривалу втрату функцій.",
+      "how_to_use_en": "Maintain separate fields for location, capture time, damage evidence, service interruption and official inspection.",
+      "how_to_use_uk": "Ведіть окремі поля місця, часу знімання, доказів пошкоджень, перебоїв послуг та офіційного огляду.",
+      "limits_en": "The journal did not independently reproduce the geolocation or inspect infrastructure.",
+      "limits_uk": "Редакція не відтворювала геолокацію самостійно й не оглядала інфраструктуру."
+    },
+    {
+      "rubric_key": "warcrimes",
+      "emoji": "⚖️",
+      "rubric_en": "War Crimes Verification",
+      "rubric_uk": "Верифікація воєнних злочинів",
+      "tags": [
+        "weekly",
+        "accountability",
+        "verification"
+      ],
+      "title_en": "Hospital and humanitarian sites require separate legal and visual layers",
+      "title_uk": "Лікарня та гуманітарні об’єкти: окремо візуальні й правові висновки",
+      "source_line_en": "Reuters · 4 November; Nightwatch · 3 November",
+      "source_line_uk": "Reuters · 4 листопада; Nightwatch · 3 листопада",
+      "what_happened_en": "This week's reporting included the Komyshuvakha humanitarian-aid strike and an assessment of a reported Kharkiv hospital incident. Public claims about target type, weapon and responsibility should be tracked separately from visible damage and witness accounts.",
+      "what_happened_uk": "Цього тижня повідомляли про удар по пункту гуманітарної допомоги в Комишувасі та оцінки інциденту з лікарнею в Харкові. Твердження про характер об’єкта, зброю та відповідальність слід фіксувати окремо від видимих пошкоджень і свідчень.",
+      "why_it_matters_en": "Protecting the integrity of each claim avoids prematurely presenting an incident as a completed legal case.",
+      "why_it_matters_uk": "Розділення тверджень допомагає не подавати інцидент як уже завершену юридичну справу.",
+      "how_to_use_en": "Record original source media, timestamps, geolocation reasoning, damage observations, witness accounts and any later procedural steps.",
+      "how_to_use_uk": "Зберігайте першоджерела, час, аргументи геолокації, видимі пошкодження, свідчення та подальші процесуальні дії.",
+      "limits_en": "Neither the weapon identification nor individual criminal responsibility was independently established here.",
+      "limits_uk": "Тип зброї та індивідуальну кримінальну відповідальність редакція незалежно не встановлювала."
+    },
+    {
+      "rubric_key": "losses",
+      "emoji": "🕯️",
+      "rubric_en": "Losses, Captivity & Missing",
+      "rubric_uk": "Втрати, полон, зниклі",
+      "tags": [
+        "weekly",
+        "accountability",
+        "verification"
+      ],
+      "title_en": "Do not merge the missing with the confirmed dead",
+      "title_uk": "Не змішуйте зниклих із підтвердженими загиблими",
+      "source_line_en": "Reuters · 4 November; SESU via Ukrainska Pravda · 7 November",
+      "source_line_uk": "Reuters · 4 листопада; ДСНС через «Українську правду» · 7 листопада",
+      "what_happened_en": "Early reports of the Komyshuvakha attack distinguished people reported dead from those unaccounted for. Later recoveries increased the reported death toll. Those are changes in evidence status, not permission to sum incompatible categories.",
+      "what_happened_uk": "Перші повідомлення про Комишуваху розрізняли загиблих і людей, місцеперебування яких невідоме. Пізніше виявлення тіл збільшило повідомлену кількість загиблих. Це зміни статусів доказів, а не підстава складати несумісні категорії.",
+      "why_it_matters_en": "An evidence ledger must represent what is known at each timestamp and how a person's status changed.",
+      "why_it_matters_uk": "Доказовий реєстр має показувати, що було відомо на кожен момент і як змінювався статус людини.",
+      "how_to_use_en": "Use dated aggregate snapshots publicly; keep any identifiable person-level records in protected systems with provenance.",
+      "how_to_use_uk": "Публічно використовуйте датовані агреговані зрізи; ідентифіковані записи про людей тримайте в захищених системах із джерелами.",
+      "limits_en": "No individual identification is inferred from a body count or an image.",
+      "limits_uk": "За кількістю тіл чи зображенням не робимо висновків про особу."
+    },
+    {
+      "rubric_key": "tradecraft",
+      "emoji": "🧰",
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "tags": [
+        "weekly",
+        "accountability",
+        "verification"
+      ],
+      "title_en": "A map pin is a claim with a provenance trail",
+      "title_uk": "Позначка на мапі — це твердження з історією джерел",
+      "source_line_en": "Bellingcat · 22 October; GeoConfirmed-derived archive · 2 November",
+      "source_line_uk": "Bellingcat · 22 жовтня; архів на основі GeoConfirmed · 2 листопада",
+      "what_happened_en": "A retrospective Bellingcat test of LLM photo geolocation and this week's review of a GeoConfirmed-derived archive show the same risk: candidate coordinates and published map pins can look more authoritative than the underlying evidence.",
+      "what_happened_uk": "Ретроспективний тест Bellingcat щодо геолокації фото мовними моделями та огляд архіву на основі GeoConfirmed цього тижня показують спільний ризик: координати-кандидати й позначки на мапі можуть виглядати переконливіше за докази, на яких вони ґрунтуються.",
+      "why_it_matters_en": "Publishing coordinates without rejected alternatives and source capture times hides uncertainty.",
+      "why_it_matters_uk": "Публікація координат без відхилених альтернатив і часу збереження джерела приховує невизначеність.",
+      "how_to_use_en": "Save original frames, visual landmarks, competing hypotheses, rejection reasons and the difference between event and upload times.",
+      "how_to_use_uk": "Зберігайте оригінальні кадри, орієнтири, альтернативні версії, причини відхилення та різницю між часом події й публікації.",
+      "limits_en": "Model confidence and third-party map labels are not independent verification.",
+      "limits_uk": "Впевненість моделі та позначки сторонньої мапи не є незалежною перевіркою."
+    },
+    {
+      "rubric_key": "tools",
+      "emoji": "🛠️",
+      "rubric_en": "Tools / Datasets",
+      "rubric_uk": "Інструменти й набори даних",
+      "tags": [
+        "weekly",
+        "accountability",
+        "verification"
+      ],
+      "title_en": "Telegram provenance and reproducible satellite queries",
+      "title_uk": "Походження Telegram-даних і відтворювані супутникові запити",
+      "source_line_en": "Tool Radar · 7 November 2026",
+      "source_line_uk": "Tool Radar · 7 листопада 2026",
+      "what_happened_en": "Saturday's Tool Radar reviewed Pulpit for Telegram amplification networks, tg-archive for message history, OSINT Investigation Toolkit for hashes and UTC, EODAG for satellite data and DFIR-IRIS for case workflows. These are editorial candidates, not verified new releases of the week.",
+      "what_happened_uk": "Суботній Tool Radar розглянув Pulpit для мереж поширення в Telegram, tg-archive для історії повідомлень, OSINT Investigation Toolkit для хешів і UTC, EODAG для супутникових даних і DFIR-IRIS для ведення справ. Це редакційна добірка, а не підтверджені нові релізи тижня.",
+      "why_it_matters_en": "The value is in making source capture, query and review reproducible, not multiplying tool names.",
+      "why_it_matters_uk": "Цінність у відтворюваності збереження джерел, запитів і перевірок, а не в кількості назв інструментів.",
+      "how_to_use_en": "Pilot each tool with synthetic or public data; preserve input hashes, timestamps, outputs and reviewer notes.",
+      "how_to_use_uk": "Перевіряйте інструменти на синтетичних чи публічних даних; зберігайте хеші, час, результати й нотатки перевіряча.",
+      "limits_en": "The journal did not independently install or benchmark these tools.",
+      "limits_uk": "Редакція не встановлювала й не тестувала ці інструменти незалежно."
+    },
+    {
+      "rubric_key": "risk",
+      "emoji": "⚠️",
+      "rubric_en": "Risk Watch",
+      "rubric_uk": "Межі й ризики",
+      "tags": [
+        "weekly",
+        "accountability",
+        "verification"
+      ],
+      "title_en": "Fake newsroom branding and orbital proximity are not independent corroboration",
+      "title_uk": "Підроблені медіабренди й орбітальне зближення не є незалежним підтвердженням",
+      "source_line_en": "The Insider · 4 November; Reuters · 5 November",
+      "source_line_uk": "The Insider · 4 листопада; Reuters · 5 листопада",
+      "what_happened_en": "The Insider reported a Matryoshka campaign impersonating several media and institutional brands. Reuters reported close orbital approaches involving Kosmos 2612 and an ICEYE satellite, while experts discussed possible intent. In both stories, apparent plurality or proximity can be overread.",
+      "what_happened_uk": "The Insider повідомив про кампанію «Матрьошка», що імітувала кілька медіа й інституцій. Reuters описав зближення на орбіті «Космосу-2612» і супутника ICEYE та оцінки експертів щодо можливого наміру. В обох випадках множинність видимих джерел або близькість легко переоцінити.",
+      "why_it_matters_en": "A coordinated imitation of five brands is not five confirmations; orbital proximity alone is not proof of attack rehearsal.",
+      "why_it_matters_uk": "Імітація п’яти брендів не дає п’яти підтверджень; орбітальна близькість сама по собі не доводить репетиції атаки.",
+      "how_to_use_en": "Verify the publisher at its primary domain; for space claims, separate observed trajectories from hypotheses about purpose.",
+      "how_to_use_uk": "Перевіряйте публікацію на первинному домені; в орбітальних сюжетах відокремлюйте траєкторії від версій щодо мети.",
+      "limits_en": "Attribution of a campaign and intent of a spacecraft remain attributed assessments, not editorial findings.",
+      "limits_uk": "Атрибуція кампанії та намір космічного апарата залишаються оцінками джерел, а не власними висновками редакції."
+    }
+  ],
+  "reading_list": [
+    {
+      "title": "Reuters — Komyshuvakha",
+      "url": "https://www.reuters.com/world/europe/dozens-dead-missing-after-russian-strike-ukrainian-aid-centre-officials-say-2026-11-04/"
+    },
+    {
+      "title": "Ukrainska Pravda — SESU, 7 November",
+      "url": "https://www.pravda.com.ua/eng/news/2026/11/07/8061683/"
+    },
+    {
+      "title": "Ukrainska Pravda — SESU, 8 November",
+      "url": "https://www.pravda.com.ua/eng/news/2026/11/08/8061790/"
+    },
+    {
+      "title": "ISW — 7 November",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-november-7-2026/"
+    },
+    {
+      "title": "The Insider — Matryoshka",
+      "url": "https://www.theins.org/en/news/299171"
+    },
+    {
+      "title": "Tool Radar — 7 November",
+      "url": "https://osintsignal.org/issues/open-source-signal-2026-11-07.html"
+    }
+  ]
+}
