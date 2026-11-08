@@ -143,5 +143,7 @@
       ]
     }
   ],
-  "internal_notes": "Published from source documentation and reporting; no independent technical test."
+  "internal_notes": [
+    "Published from source documentation and reporting; no independent technical test."
+  ]
 }
