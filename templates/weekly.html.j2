@@ -220,7 +220,8 @@ button.active, button:hover, .toolbar-links a:hover { background: var(--ink); co
 .emoji { font-size: 24px; }
 .issue-index { font-size: 28px; color: rgba(20,20,20,.18); }
 .lang-panel { padding: 10px 34px 16px 36px; }
-body.lang-en .lang-panel.uk, body.lang-en .rubric .uk, body.lang-uk .lang-panel.en, body.lang-uk .rubric .en { display: none; }
+body.lang-en .hero-uk, body.lang-uk .hero-en, body.lang-en .lang-panel.uk, body.lang-en .rubric .uk, body.lang-uk .lang-panel.en, body.lang-uk .rubric .en { display: none; }
+body.lang-both .hero-uk { display: block; }
 body.lang-both .weekly-split { display: grid; grid-template-columns: 1fr 1fr; }
 body.lang-both .weekly-split > .lang-panel.en { border-right: 1px solid rgba(20,20,20,.12); }
 body.lang-both .card-topline, body.lang-both .tags, body.lang-both .section-aside { grid-column: 1 / -1; }
@@ -317,9 +318,19 @@ footer { padding: 60px 0 90px; color: #4f493f; font-family: JetBrains Mono, mono
       overflow-wrap: anywhere;
     }
 
+  .mobile-language-nav { display: none; }
+  @media (max-width: 860px) {
+    .mobile-language-nav { display: flex; position: sticky; top: 0; z-index: 20; justify-content: center; gap: 8px; padding: 10px 8px; background: #f2eddd; border-bottom: 1px solid var(--line); }
+    .mobile-language-nav button { padding: 9px 11px; font-size: 13px; }
+    .hero { min-height: 0; padding: 18px 0 30px; }
+    .hero-card { border-radius: 22px; }
+    .toolbar { position: static; }
+    .toolbar .language-toggle { display: none; }
+  }
   </style>
 </head>
 <body class="lang-both">
+  <nav class="mobile-language-nav" aria-label="Choose language"><button type="button" data-lang="uk">Українська</button><button type="button" data-lang="en">English</button><button type="button" data-lang="both" class="active">EN + UKR</button></nav>
   <header class="hero">
     <div class="wrap">
       <div class="hero-card">
@@ -332,14 +343,17 @@ footer { padding: 60px 0 90px; color: #4f493f; font-family: JetBrains Mono, mono
         </div>
         <div class="kicker">
           <span class="pill">Issue {{ weekly["issue_number"] }}</span>
-          <span class="pill">{{ weekly["week_label_en"] }}</span>
-          <span class="pill">Weekly Magazine</span>
+          <span class="pill hero-en">{{ weekly["week_label_en"] }}</span>
+          <span class="pill hero-uk">{{ weekly.get("week_label_uk", weekly["week_label_en"]) }}</span>
+          <span class="pill hero-en">Weekly Magazine</span><span class="pill hero-uk">Тижневий журнал</span>
           <span class="pill">EN + UKR</span>
         </div>
-        <h1>{{ weekly["title_en"] }}</h1>
-        <p class="ua-masthead">{{ weekly["title_uk"] }}</p>
-        <p class="subtitle">{{ weekly["subtitle_en"] }}</p>
-        <p class="dek">{{ weekly["dek_en"] }}</p>
+        <h1 class="hero-en">{{ weekly["title_en"] }}</h1>
+        <p class="ua-masthead hero-uk">{{ weekly["title_uk"] }}</p>
+        <p class="subtitle hero-en">{{ weekly["subtitle_en"] }}</p>
+        <p class="subtitle hero-uk">{{ weekly.get("subtitle_uk", weekly["subtitle_en"]) }}</p>
+        <p class="dek hero-en">{{ weekly["dek_en"] }}</p>
+        <p class="dek hero-uk">{{ weekly.get("dek_uk", weekly["dek_en"]) }}</p>
       </div>
     </div>
   </header>
@@ -461,7 +475,7 @@ buttons.forEach((button) => {
     const lang = button.dataset.lang;
     document.body.classList.remove("lang-both", "lang-en", "lang-uk");
     document.body.classList.add("lang-" + lang);
-    buttons.forEach((b) => b.classList.toggle("active", b === button));
+    buttons.forEach((b) => b.classList.toggle("active", b.dataset.lang === lang));
   });
 });
   </script>
