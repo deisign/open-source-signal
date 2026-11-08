@@ -1,0 +1,147 @@
+{
+  "issue_number": "154",
+  "date_iso": "2026-11-07",
+  "date_label_en": "7 November 2026",
+  "date_label_uk": "7 листопада 2026",
+  "slug": "open-source-signal",
+  "title_en": "Open Source Signal",
+  "title_uk": "Сигнал відкритих джерел",
+  "issue_type": "Tool Radar",
+  "language_label": "EN + UKR",
+  "subtitle_en": "Telegram archives, provenance and reproducible investigations.",
+  "subtitle_uk": "Інструменти для збереження доказів, аналізу Telegram і відтворюваних розслідувань.",
+  "dek_en": "Telegram archives, provenance and reproducible investigations.",
+  "dek_uk": "П’ять інструментів: редакційний відбір, а не твердження про нові релізи тижня.",
+  "editorial_frame": {
+    "what_this_is": "Bilingual, source-attributed editorial selection.",
+    "what_this_is_not": "An independent forensic test, judicial finding or claim of newly released tools."
+  },
+  "rubric_map": [
+    "🧰 Tool Radar",
+    "📱 Telegram Radar"
+  ],
+  "footer_note": "Open Source Signal — preserve sources, document uncertainty, verify independently.",
+  "items": [
+    {
+      "rubric_en": "Tool Radar",
+      "rubric_uk": "Радар інструментів",
+      "theme": "investigations",
+      "emoji": "🧰",
+      "source_name": "Pulpit GitHub",
+      "source_url": "https://github.com/giovabal/pulpit",
+      "source_date_label_en": "Reviewed 8 November 2026",
+      "source_date_label_uk": "Переглянуто 8 листопада 2026",
+      "title_en": "Pulpit: Telegram amplification graphs",
+      "title_uk": "Pulpit: Графи поширення в Telegram",
+      "what_happened_en": "Telethon collection of forwards and t.me references; directed networks, coordination measures, GraphML and CSV exports.",
+      "what_happened_uk": "Збирає пересилання й посилання t.me через Telethon; будує орієнтовані графи, оцінює синхронність, експортує GraphML і CSV.",
+      "why_it_matters_en": "Provides a reproducible component for public-interest investigations.",
+      "why_it_matters_uk": "Дає відтворюваний компонент для суспільно важливих розслідувань.",
+      "how_to_use_en": "Test with public, non-sensitive material and retain original sources and outputs.",
+      "how_to_use_uk": "Тестуйте на публічних нечутливих даних і зберігайте першоджерела та результати.",
+      "limits_en": "A link does not prove coordination or ownership; sampling biases the graph.",
+      "limits_uk": "Посилання не доводить координації чи власності; вибірка впливає на граф.",
+      "tags": [
+        "tool-radar",
+        "verification"
+      ]
+    },
+    {
+      "rubric_en": "Tool Radar",
+      "rubric_uk": "Радар інструментів",
+      "theme": "investigations",
+      "emoji": "🧰",
+      "source_name": "tg-archive GitHub",
+      "source_url": "https://github.com/tggo/tg-archive",
+      "source_date_label_en": "Reviewed 8 November 2026",
+      "source_date_label_uk": "Переглянуто 8 листопада 2026",
+      "title_en": "tg-archive: Local Telegram archive",
+      "title_uk": "tg-archive: Локальний архів Telegram",
+      "what_happened_en": "Go client saves messages to SQLite and Markdown, records observed edits and deletions, and supports Linux.",
+      "what_happened_uk": "Клієнт на Go зберігає повідомлення в SQLite і Markdown, фіксує спостережені правки й видалення, підтримує Linux.",
+      "why_it_matters_en": "Provides a reproducible component for public-interest investigations.",
+      "why_it_matters_uk": "Дає відтворюваний компонент для суспільно важливих розслідувань.",
+      "how_to_use_en": "Test with public, non-sensitive material and retain original sources and outputs.",
+      "how_to_use_uk": "Тестуйте на публічних нечутливих даних і зберігайте першоджерела та результати.",
+      "limits_en": "Cannot recover messages deleted before capture; Telegram sessions require protection.",
+      "limits_uk": "Не відновлює повідомлення, видалені до збору; сесії Telegram треба захищати.",
+      "tags": [
+        "tool-radar",
+        "verification"
+      ]
+    },
+    {
+      "rubric_en": "Tool Radar",
+      "rubric_uk": "Радар інструментів",
+      "theme": "investigations",
+      "emoji": "🧰",
+      "source_name": "OSINT Investigation Toolkit GitHub",
+      "source_url": "https://github.com/sahifasyed/OSINT-Investigation-Toolkit",
+      "source_date_label_en": "Reviewed 8 November 2026",
+      "source_date_label_uk": "Переглянуто 8 листопада 2026",
+      "title_en": "OSINT Investigation Toolkit: Evidence custody and UTC",
+      "title_uk": "OSINT Investigation Toolkit: Облік доказів і UTC",
+      "what_happened_en": "SHA-256 artifact registration, action logs, metadata extraction, timezone normalization and confidence-labelled reports.",
+      "what_happened_uk": "Реєстрація SHA-256, журнал дій, метадані, нормалізація часових поясів та звіти з рівнями впевненості.",
+      "why_it_matters_en": "Provides a reproducible component for public-interest investigations.",
+      "why_it_matters_uk": "Дає відтворюваний компонент для суспільно важливих розслідувань.",
+      "how_to_use_en": "Test with public, non-sensitive material and retain original sources and outputs.",
+      "how_to_use_uk": "Тестуйте на публічних нечутливих даних і зберігайте першоджерела та результати.",
+      "limits_en": "Metadata can be altered; a local log is not independently tamper-proof.",
+      "limits_uk": "Метадані можуть бути змінені; локальний журнал не має незалежного захисту від втручання.",
+      "tags": [
+        "tool-radar",
+        "verification"
+      ]
+    },
+    {
+      "rubric_en": "Tool Radar",
+      "rubric_uk": "Радар інструментів",
+      "theme": "investigations",
+      "emoji": "🧰",
+      "source_name": "EODAG GitHub",
+      "source_url": "https://github.com/CS-SI/eodag",
+      "source_date_label_en": "Reviewed 8 November 2026",
+      "source_date_label_uk": "Переглянуто 8 листопада 2026",
+      "title_en": "EODAG: Earth observation access",
+      "title_uk": "EODAG: Доступ до супутникових даних",
+      "what_happened_en": "Python and CLI interfaces search and retrieve satellite products from multiple providers.",
+      "what_happened_uk": "Python API і CLI для пошуку й завантаження супутникових продуктів від різних постачальників.",
+      "why_it_matters_en": "Provides a reproducible component for public-interest investigations.",
+      "why_it_matters_uk": "Дає відтворюваний компонент для суспільно важливих розслідувань.",
+      "how_to_use_en": "Test with public, non-sensitive material and retain original sources and outputs.",
+      "how_to_use_uk": "Тестуйте на публічних нечутливих даних і зберігайте першоджерела та результати.",
+      "limits_en": "Clouds, resolution and licensing constrain analysis.",
+      "limits_uk": "Хмарність, роздільність і ліцензії обмежують аналіз.",
+      "tags": [
+        "tool-radar",
+        "verification"
+      ]
+    },
+    {
+      "rubric_en": "Tool Radar",
+      "rubric_uk": "Радар інструментів",
+      "theme": "investigations",
+      "emoji": "🧰",
+      "source_name": "DFIR-IRIS GitHub",
+      "source_url": "https://github.com/dfir-iris/iris-web",
+      "source_date_label_en": "Reviewed 8 November 2026",
+      "source_date_label_uk": "Переглянуто 8 листопада 2026",
+      "title_en": "DFIR-IRIS: Structured case work",
+      "title_uk": "DFIR-IRIS: Структуровані розслідування",
+      "what_happened_en": "Open-source collaborative case management with tasks and incident-response workflows.",
+      "what_happened_uk": "Відкрита платформа для спільного ведення справ, завдань і реагування на інциденти.",
+      "why_it_matters_en": "Provides a reproducible component for public-interest investigations.",
+      "why_it_matters_uk": "Дає відтворюваний компонент для суспільно важливих розслідувань.",
+      "how_to_use_en": "Test with public, non-sensitive material and retain original sources and outputs.",
+      "how_to_use_uk": "Тестуйте на публічних нечутливих даних і зберігайте першоджерела та результати.",
+      "limits_en": "Built for cyber incidents, not a judicial chain-of-custody system.",
+      "limits_uk": "Створена для кіберінцидентів, а не судового збереження доказів.",
+      "tags": [
+        "tool-radar",
+        "verification"
+      ]
+    }
+  ],
+  "internal_notes": "Published from source documentation and reporting; no independent technical test."
+}
