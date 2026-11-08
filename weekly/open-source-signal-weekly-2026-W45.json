@@ -192,27 +192,57 @@
   "reading_list": [
     {
       "title": "Reuters — Komyshuvakha",
-      "url": "https://www.reuters.com/world/europe/dozens-dead-missing-after-russian-strike-ukrainian-aid-centre-officials-say-2026-11-04/"
+      "href": "https://www.reuters.com/world/europe/dozens-dead-missing-after-russian-strike-ukrainian-aid-centre-officials-say-2026-11-04/",
+      "note": "Primary report or issue reference"
     },
     {
       "title": "Ukrainska Pravda — SESU, 7 November",
-      "url": "https://www.pravda.com.ua/eng/news/2026/11/07/8061683/"
+      "href": "https://www.pravda.com.ua/eng/news/2026/11/07/8061683/",
+      "note": "Primary report or issue reference"
     },
     {
       "title": "Ukrainska Pravda — SESU, 8 November",
-      "url": "https://www.pravda.com.ua/eng/news/2026/11/08/8061790/"
+      "href": "https://www.pravda.com.ua/eng/news/2026/11/08/8061790/",
+      "note": "Primary report or issue reference"
     },
     {
       "title": "ISW — 7 November",
-      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-november-7-2026/"
+      "href": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-november-7-2026/",
+      "note": "Primary report or issue reference"
     },
     {
       "title": "The Insider — Matryoshka",
-      "url": "https://www.theins.org/en/news/299171"
+      "href": "https://www.theins.org/en/news/299171",
+      "note": "Primary report or issue reference"
     },
     {
       "title": "Tool Radar — 7 November",
-      "url": "https://osintsignal.org/issues/open-source-signal-2026-11-07.html"
+      "href": "https://osintsignal.org/issues/open-source-signal-2026-11-07.html",
+      "note": "Primary report or issue reference"
+    }
+  ],
+  "compact_sections": [
+    {
+      "rubric_key": "method",
+      "emoji": "🧭",
+      "title": "Evidence ledger / Реєстр доказів",
+      "short_title": "One claim, one dated source",
+      "points": [
+        "Separate event time from publication time",
+        "Version casualty totals without overwriting history",
+        "Give repeat strikes distinct incident IDs"
+      ]
+    },
+    {
+      "rubric_key": "tools",
+      "emoji": "🛠️",
+      "title": "Tool Radar / Інструменти",
+      "short_title": "Test before trusting",
+      "points": [
+        "Use public or synthetic test data",
+        "Retain original source files and hashes",
+        "Treat graph edges and geolocation as hypotheses"
+      ]
     }
   ]
 }
