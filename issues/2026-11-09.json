@@ -1,0 +1,180 @@
+{
+  "issue_number": "155",
+  "date_iso": "2026-11-09",
+  "date_label_en": "9 November 2026",
+  "date_label_uk": "9 листопада 2026",
+  "slug": "open-source-signal",
+  "title_en": "Open Source Signal",
+  "title_uk": "Сигнал відкритих джерел",
+  "issue_type": "Daily Signal",
+  "language_label": "EN + UKR",
+  "subtitle_en": "Mortality records, civilian harm and the provenance of digital evidence.",
+  "subtitle_uk": "Записи про смертність, шкода цивільним і походження цифрових доказів.",
+  "dek_en": "Six verified-source editorial leads, with Ukrainian accountability and wider OSINT practice.",
+  "dek_uk": "Шість редакційних матеріалів із джерелами: українська оптика та міжнародна OSINT-практика.",
+  "editorial_frame": {
+    "what_this_is": "Monday bilingual Daily Signal: source-attributed developments and retrospective methods, each explicitly dated.",
+    "what_this_is_not": "Independent authentication of leaked personal records, a definitive casualty register, a judicial verdict or live incident monitoring."
+  },
+  "rubric_map": [
+    "📡 Signal One",
+    "🕯️ Losses, Captivity & Missing",
+    "🇺🇦 Ukraine Lens",
+    "⚖️ Tradecraft",
+    "📡 Surveillance Watch",
+    "🛰️ Map Room"
+  ],
+  "footer_note": "Open Source Signal — preserve sources, document uncertainty, verify independently.",
+  "items": [
+    {
+      "rubric_en": "Signal One",
+      "rubric_uk": "Головний сигнал",
+      "theme": "accountability",
+      "emoji": "📡",
+      "source_name": "T4P live statistics",
+      "source_url": "https://t4pua.org/en/stat",
+      "source_date_label_en": "9 November 2026",
+      "source_date_label_uk": "9 листопада 2026",
+      "title_en": "T4P's 9 November snapshot: document the denominator",
+      "title_uk": "Зріз T4P на 9 листопада: фіксуйте знаменник",
+      "what_happened_en": "T4P's public database lists 10,232 documented incidents in the death category and 16,375 victims as of 9 November. It explicitly says its probable-war-crimes database is incomplete and not final.",
+      "what_happened_uk": "Публічна база T4P станом на 9 листопада містить 10 232 задокументовані випадки в категорії загибелі людини та 16 375 постраждалих. T4P прямо зазначає, що база ймовірних воєнних злочинів неповна й не остаточна.",
+      "why_it_matters_en": "These are counts of documented cases and victims, not a complete national mortality figure or a judicial finding.",
+      "why_it_matters_uk": "Це кількість задокументованих кейсів і постраждалих, а не повна статистика смертності чи судове рішення.",
+      "how_to_use_en": "Archive a dated snapshot with category definitions; compare later changes without overwriting the original.",
+      "how_to_use_uk": "Архівуйте датований зріз із визначеннями категорій; порівнюйте зміни без перезапису попередніх значень.",
+      "limits_en": "Counts may be revised; coverage is incomplete and classifications do not imply adjudicated guilt.",
+      "limits_uk": "Числа можуть уточнюватися; охоплення неповне, а класифікація не означає встановлення вини судом.",
+      "tags": [
+        "daily",
+        "verification"
+      ]
+    },
+    {
+      "rubric_en": "Losses, Captivity & Missing",
+      "rubric_uk": "Втрати, полон, зниклі",
+      "theme": "losses",
+      "emoji": "🕯️",
+      "source_name": "Ukrainska Pravda citing Meduza and hackers; Moscow Times",
+      "source_url": "https://www.pravda.com.ua/eng/news/2026/11/08/8061862/",
+      "source_date_label_en": "8 November 2026",
+      "source_date_label_uk": "8 листопада 2026",
+      "title_en": "Rosstat Leaks: competing mortality estimates require independent audit",
+      "title_uk": "Rosstat Leaks: різні оцінки смертності потребують незалежної перевірки",
+      "what_happened_en": "Silent Crow and Cyber Partisans BY claim to have obtained Russian mortality records. Cyber Partisans calculate 393,881 war-related deaths; Silent Crow's broader estimate is 450,100, reportedly including additional categories. Rosstat acknowledges a cyberattack but denies a database leak.",
+      "what_happened_uk": "Silent Crow і «Кіберпартизани BY» заявляють про отримання російських записів про смертність. «Кіберпартизани» нарахували 393 881 смерть, пов’язану з війною; ширша оцінка Silent Crow — 450 100, із додатковими категоріями. Росстат підтверджує кібератаку, але заперечує витік баз.",
+      "why_it_matters_en": "Potentially useful administrative evidence, but differing inclusion rules and unverified provenance prevent presenting either total as an established fact.",
+      "why_it_matters_uk": "Потенційно важливі адміністративні дані, але різні критерії включення й неперевірене походження не дозволяють подавати жодну цифру як встановлений факт.",
+      "how_to_use_en": "Compare aggregate definitions, ICD-10 cause codes and time windows with independent named-loss research; do not distribute identifiable leaked records.",
+      "how_to_use_uk": "Зіставляйте агреговані визначення, коди причин смерті ICD-10 і періоди з незалежними поіменними дослідженнями; не поширюйте персональні записи з витоку.",
+      "limits_en": "Neither the full dataset nor the estimates were independently authenticated by this journal. The attack itself does not prove exfiltration.",
+      "limits_uk": "Редакція не автентифікувала повний масив чи оцінки. Сам факт атаки не доводить викрадення даних.",
+      "tags": [
+        "daily",
+        "verification"
+      ]
+    },
+    {
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "theme": "ukraine",
+      "emoji": "🇺🇦",
+      "source_name": "The Insider citing Ukraine's Energy Ministry",
+      "source_url": "https://theins.ru/news/299311",
+      "source_date_label_en": "8 November 2026",
+      "source_date_label_uk": "8 листопада 2026",
+      "title_en": "Seven Ukrainian regions report power cuts after strikes",
+      "title_uk": "Після ударів знеструмлення зафіксовано в семи областях",
+      "what_happened_en": "Ukraine's Energy Ministry reported outages in Dnipropetrovsk, Zhytomyr, Rivne, Sumy, Kharkiv, Chernihiv and Poltava regions after Russian attacks. The report also described a loss of external power at Zaporizhzhia nuclear plant and reliance on diesel generators.",
+      "what_happened_uk": "Міненерго України повідомило про знеструмлення у Дніпропетровській, Житомирській, Рівненській, Сумській, Харківській, Чернігівській і Полтавській областях після російських ударів. Також повідомлялося про втрату зовнішнього живлення Запорізькою АЕС і перехід на дизель-генератори.",
+      "why_it_matters_en": "An attack, temporary interruption and sustained loss of capacity are different evidentiary states.",
+      "why_it_matters_uk": "Удар, тимчасове знеструмлення та тривала втрата потужності — різні доказові стани.",
+      "how_to_use_en": "Track dated operator notices, restoration updates and IAEA statements separately from visible damage imagery.",
+      "how_to_use_uk": "Окремо відстежуйте датовані повідомлення операторів, відновлення та заяви МАГАТЕ, не змішуючи їх із зображеннями пошкоджень.",
+      "limits_en": "The report is attributed to officials; duration and full impact require follow-up confirmation.",
+      "limits_uk": "Дані атрибутовано посадовцям; тривалість і повний масштаб потребують додаткового підтвердження.",
+      "tags": [
+        "daily",
+        "verification"
+      ]
+    },
+    {
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "theme": "investigations",
+      "emoji": "⚖️",
+      "source_name": "Centre for Information Resilience, UK Parliament written evidence",
+      "source_url": "https://committees.parliament.uk/writtenevidence/168899/html/",
+      "source_date_label_en": "2 September 2026; retrospective",
+      "source_date_label_uk": "2 вересня 2026; ретроспектива",
+      "title_en": "Ukraine's OSINT evidence: preservation before courtroom admissibility",
+      "title_uk": "OSINT-докази в Україні: збереження перед процесуальною допустимістю",
+      "what_happened_en": "CIR's written evidence says Ukrainian investigators and courts increasingly use open-source material in potential war-crimes cases. It describes a July 2026 parliamentary round table and a working group considering Criminal Procedure Code changes on digital evidence.",
+      "what_happened_uk": "У письмових свідченнях CIR зазначено, що українські слідчі та суди дедалі частіше використовують відкриті джерела у справах про ймовірні воєнні злочини. Описано парламентський круглий стіл у липні 2026 року та робочу групу щодо змін до КПК стосовно цифрових доказів.",
+      "why_it_matters_en": "An OSINT finding is not automatically admissible evidence; provenance, integrity and procedural handling matter.",
+      "why_it_matters_uk": "OSINT-висновок не стає автоматично допустимим доказом; важливі походження, цілісність і процесуальне оформлення.",
+      "how_to_use_en": "Keep originals, hashes, metadata, collection context, transfers and verification decisions in an auditable chain.",
+      "how_to_use_uk": "Зберігайте оригінали, хеші, метадані, контекст отримання, передачі та рішення щодо перевірки.",
+      "limits_en": "This is a September submission, not proof that the proposed legislative amendments have been enacted.",
+      "limits_uk": "Це вересневі письмові свідчення, а не підтвердження ухвалення запропонованих змін.",
+      "tags": [
+        "daily",
+        "verification"
+      ]
+    },
+    {
+      "rubric_en": "Surveillance Watch",
+      "rubric_uk": "Моніторинг стеження",
+      "theme": "surveillance",
+      "emoji": "📡",
+      "source_name": "The Insider citing RTÜK chairman and Anadolu",
+      "source_url": "https://theins.ru/news/299323",
+      "source_date_label_en": "8 November 2026",
+      "source_date_label_uk": "8 листопада 2026",
+      "title_en": "Turkey's Via+ proposes AI-assisted monitoring of 800-plus channels",
+      "title_uk": "Турецька Via+ передбачає ШІ-моніторинг понад 800 каналів",
+      "what_happened_en": "Turkey's broadcast regulator RTÜK says Via+ will monitor over 800 television channels and digital platforms, transcribe and translate speech, and flag possible regulatory violations. Its chair said development was about 90% complete; human officials would make enforcement decisions.",
+      "what_happened_uk": "Турецький регулятор RTÜK заявив, що Via+ відстежуватиме понад 800 телеканалів і цифрових платформ, транскрибуватиме та перекладатиме мовлення й позначатиме можливі порушення. За словами голови відомства, розробку завершено приблизно на 90%; рішення про санкції залишаться за людьми.",
+      "why_it_matters_en": "Automated content monitoring changes surveillance scale and raises questions about error rates, transparency and due process.",
+      "why_it_matters_uk": "Автоматизований моніторинг змінює масштаб нагляду та порушує питання помилкових спрацювань, прозорості й процедурних гарантій.",
+      "how_to_use_en": "Separate advertised capabilities, observed deployment and actual legal authority; monitor evidence of false positives.",
+      "how_to_use_uk": "Розділяйте заявлені функції, фактичне впровадження та правові повноваження; відстежуйте дані про хибні спрацювання.",
+      "limits_en": "Technical throughput and completion figures are regulator claims, not independently benchmarked performance.",
+      "limits_uk": "Пропускна здатність і ступінь готовності — заяви регулятора, а не незалежно перевірені показники.",
+      "tags": [
+        "daily",
+        "verification"
+      ]
+    },
+    {
+      "rubric_en": "Map Room",
+      "rubric_uk": "Картографічна кімната",
+      "theme": "geolocation",
+      "emoji": "🛰️",
+      "source_name": "Bellingcat, Jake Godin",
+      "source_url": "https://www.bellingcat.com/news/middle-east/2026/10/01/viral-google-maps-images-shared-widely-this-week-show-gaza-ruins-we-obtained-more-recent-satellite-imagery/",
+      "source_date_label_en": "1 October 2026; retrospective",
+      "source_date_label_uk": "1 жовтня 2026; ретроспектива",
+      "title_en": "Satellite publication dates are not acquisition dates",
+      "title_uk": "Дата публікації супутникового знімка — не дата знімання",
+      "what_happened_en": "Bellingcat compared widely circulated Google imagery of Gaza with newer Planet Labs images. It found that some imagery presented as newly updated reflected earlier acquisition dates, while subsequent damage was visible in later imagery.",
+      "what_happened_uk": "Bellingcat зіставив поширені зображення Гази з Google із новішими знімками Planet Labs. Частина матеріалів, поданих як нові, мала ранішу дату знімання, тоді як пізніші кадри показували подальші руйнування.",
+      "why_it_matters_en": "Confusing platform update time with image capture time can distort an incident chronology.",
+      "why_it_matters_uk": "Плутанина між оновленням сервісу та часом знімання спотворює хронологію подій.",
+      "how_to_use_en": "Record provider, acquisition date, publication date and comparison imagery before drawing temporal conclusions.",
+      "how_to_use_uk": "Фіксуйте постачальника, дату знімання, дату публікації та порівняльні кадри до висновків про час події.",
+      "limits_en": "This is a retrospective methodological case, not a breaking event on 9 November.",
+      "limits_uk": "Це ретроспективний методичний кейс, а не подія 9 листопада.",
+      "tags": [
+        "daily",
+        "verification"
+      ]
+    }
+  ],
+  "internal_notes": [
+    "Rosstat totals are hacker-derived estimates and not independently verified; do not mirror or link to raw personal records.",
+    "T4P live statistical snapshot is dated 9 November 2026.",
+    "CIR and Bellingcat pieces are explicitly retrospective, not 9 November breaking news.",
+    "Sources checked for attribution; no independent technical or forensic audit."
+  ]
+}
