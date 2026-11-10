@@ -1,0 +1,181 @@
+{
+  "issue_number": "156",
+  "date_iso": "2026-11-10",
+  "date_label_en": "10 November 2026",
+  "date_label_uk": "10 листопада 2026",
+  "slug": "open-source-signal",
+  "title_en": "Open Source Signal",
+  "title_uk": "Сигнал відкритих джерел",
+  "issue_type": "Daily Signal",
+  "language_label": "EN + UKR",
+  "subtitle_en": "Synthetic battlefield footage, leaked mortality records and evidence preservation.",
+  "subtitle_uk": "ШІ-підробки з фронту, витік записів про смертність і збереження доказів.",
+  "dek_en": "Ukraine-focused accountability reporting and wider OSINT verification practice.",
+  "dek_uk": "Українська оптика документування та міжнародна практика OSINT-верифікації.",
+  "editorial_frame": {
+    "what_this_is": "Bilingual source-attributed OSINT digest, with explicit attribution and methodological limitations.",
+    "what_this_is_not": "Independent authentication of leaked personal records, conclusive AI detection or verification of battlefield damage."
+  },
+  "rubric_map": [
+    "📡 Signal One",
+    "🕯️ Losses, Captivity & Missing",
+    "🇺🇦 Ukraine Lens",
+    "🛰️ Infrastructure Signals",
+    "⚖️ Tradecraft",
+    "🔍 AI Verification"
+  ],
+  "footer_note": "Open Source Signal — preserve sources, document uncertainty, verify independently.",
+  "internal_notes": [
+    "Published Tuesday 10 November 2026, not Wednesday; dates are explicit.",
+    "FT AI-manipulation claims attributed to reporting and ISW, not independently forensically established.",
+    "Guardian Rosstat aggregate not independently authenticated by this journal; no personal records.",
+    "ZSU military impact is an official claim, not independent battle-damage assessment.",
+    "HURIDOCS is a dated retrospective method article."
+  ],
+  "items": [
+    {
+      "rubric_en": "Signal One",
+      "rubric_uk": "Головний сигнал",
+      "theme": "verification",
+      "emoji": "📡",
+      "source_name": "Financial Times",
+      "source_url": "https://www.ft.com/content/7f36031b-ea90-4a3a-a570-a6c6ff96e45a",
+      "source_date_label_en": "9 November 2026",
+      "source_date_label_uk": "9 листопада 2026",
+      "title_en": "Russian battlefield videos raise AI-manipulation questions",
+      "title_uk": "Російські фронтові відео викликають підозри щодо ШІ-маніпуляцій",
+      "what_happened_en": "The Financial Times reports that footage used to support Russian battlefield claims includes suspected AI manipulation. ISW identified 35 likely generated or altered clips, including footage linked to claims about Dobropillia.",
+      "what_happened_uk": "Financial Times повідомляє про ймовірні ШІ-маніпуляції у відео, якими підкріплюють російські заяви про успіхи на фронті. ISW виявив 35 імовірно згенерованих або змінених роликів, зокрема щодо Добропілля.",
+      "why_it_matters_en": "Video alone is insufficient evidence of territorial control; falsified visuals can contaminate reporting chains.",
+      "why_it_matters_uk": "Самого відео недостатньо для підтвердження контролю над територією; підробки можуть спотворювати ланцюг звітності.",
+      "how_to_use_en": "Check frame continuity, geolocation, independent satellite images and dated ground reports.",
+      "how_to_use_uk": "Перевіряйте послідовність кадрів, геолокацію, незалежні супутникові знімки й датовані повідомлення.",
+      "limits_en": "Suspected manipulation is not conclusive forensic proof; attribution of a centrally directed campaign remains unproven.",
+      "limits_uk": "Підозра щодо маніпуляції не є остаточним технічним доказом; централізоване керування кампанією не доведено.",
+      "tags": [
+        "daily",
+        "verification"
+      ]
+    },
+    {
+      "rubric_en": "Losses, Captivity & Missing",
+      "rubric_uk": "Втрати, полон, зниклі",
+      "theme": "losses",
+      "emoji": "🕯️",
+      "source_name": "The Guardian",
+      "source_url": "https://www.theguardian.com/world/2026/nov/09/russians-killed-ukraine-war-leaked-data",
+      "source_date_label_en": "9 November 2026",
+      "source_date_label_uk": "9 листопада 2026",
+      "title_en": "Rosstat Leaks: Guardian examines war-linked death certificates",
+      "title_uk": "Rosstat Leaks: Guardian аналізує свідоцтва про смерті, пов’язані з війною",
+      "what_happened_en": "The Guardian reports that an alleged leak of more than 11 million Russian death certificates suggests 412,576 war-linked deaths. The newspaper says it could not verify the entire dataset; Rosstat denies sensitive data was stolen.",
+      "what_happened_uk": "Guardian повідомляє, що ймовірний витік понад 11 мільйонів російських свідоцтв про смерть дає оцінку 412 576 смертей, пов’язаних із війною. Видання не змогло перевірити весь масив; Росстат заперечує викрадення чутливих даних.",
+      "why_it_matters_en": "The report adds a third aggregate estimate to earlier hacker counts, underscoring the need to compare definitions rather than merge totals.",
+      "why_it_matters_uk": "Матеріал додає третю агреговану оцінку до попередніх підрахунків хакерів і показує потребу порівнювати визначення, а не механічно зводити цифри.",
+      "how_to_use_en": "Compare periods, ICD categories and aggregate counts with independent named-loss registers; protect personal data.",
+      "how_to_use_uk": "Зіставляйте періоди, категорії ICD та агрегати з незалежними поіменними реєстрами; захищайте персональні дані.",
+      "limits_en": "Neither the full leak nor the aggregate figure was independently authenticated by this journal.",
+      "limits_uk": "Редакція не здійснювала незалежної автентифікації всього витоку чи агрегованої цифри.",
+      "tags": [
+        "daily",
+        "verification"
+      ]
+    },
+    {
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "theme": "ukraine",
+      "emoji": "🇺🇦",
+      "source_name": "The Kyiv Independent",
+      "source_url": "https://kyivindependent.com/fact-check-how-clashes-on-kyivs-outskirts-fueled-russian-disinformation-blitz/",
+      "source_date_label_en": "6 November 2026",
+      "source_date_label_uk": "6 листопада 2026",
+      "title_en": "Real unrest near Kyiv, fabricated hostage narrative",
+      "title_uk": "Реальний конфлікт під Києвом і вигадана історія про заручників",
+      "what_happened_en": "The Kyiv Independent investigated a 2 November confrontation at a National Guard facility in Petropavlivska Borshchahivka. False claims about a detained and tortured minor spread widely; the outlet found no hard evidence Moscow initiated the unrest, while pro-Kremlin networks amplified misleading narratives.",
+      "what_happened_uk": "Kyiv Independent дослідив сутички 2 листопада біля об’єкта Нацгвардії у Петропавлівській Борщагівці. Поширювалися неправдиві твердження про ув’язненого та катованого підлітка; доказів організації сутичок Москвою немає, але прокремлівські мережі активно поширювали викривлені версії.",
+      "why_it_matters_en": "Separating a real grievance from fabricated claims prevents an information operation from obscuring actual events.",
+      "why_it_matters_uk": "Відокремлення реальних проблем від вигаданих тверджень допомагає не втратити фактичну картину події.",
+      "how_to_use_en": "Build separate timelines for the incident, first appearance of claims, and cross-platform amplification.",
+      "how_to_use_uk": "Будуйте окремі хронології події, появи тверджень і міжплатформного поширення.",
+      "limits_en": "Amplification does not establish who organised the original confrontation; investigations continue.",
+      "limits_uk": "Поширення повідомлень не встановлює організаторів початкової сутички; розслідування триває.",
+      "tags": [
+        "daily",
+        "verification"
+      ]
+    },
+    {
+      "rubric_en": "Infrastructure Signals",
+      "rubric_uk": "Інфраструктурні сигнали",
+      "theme": "infrastructure",
+      "emoji": "🛰️",
+      "source_name": "Armed Forces of Ukraine",
+      "source_url": "https://www.zsu.gov.ua/en/news/the-defence-forces-hit-a-russian-satellite-communications-jamming-station-in-donetsk-oblast",
+      "source_date_label_en": "9 November 2026",
+      "source_date_label_uk": "9 листопада 2026",
+      "title_en": "Ukraine reports strike on Russian satellite-link jamming station",
+      "title_uk": "Україна повідомила про удар по станції подавлення супутникового зв’язку",
+      "what_happened_en": "Ukraine's Armed Forces reported strikes on 8–9 November against a Russian Starlink-jamming station near Sartana, plus ammunition and logistics depots in occupied territories.",
+      "what_happened_uk": "Збройні сили України повідомили про удари 8–9 листопада по російській станції подавлення Starlink біля Сартани, а також по складах боєприпасів і логістики на окупованих територіях.",
+      "why_it_matters_en": "An official strike report can seed a dated infrastructure-loss register, but not an independently confirmed damage assessment.",
+      "why_it_matters_uk": "Офіційне повідомлення може бути початковим записом у реєстрі втрат інфраструктури, але не незалежним підтвердженням пошкоджень.",
+      "how_to_use_en": "Record official claim, object class, date and later independent corroboration as distinct fields.",
+      "how_to_use_uk": "Фіксуйте окремо офіційну заяву, тип об’єкта, дату та подальші незалежні підтвердження.",
+      "limits_en": "Extent of damage and personnel casualties were not independently confirmed.",
+      "limits_uk": "Ступінь пошкоджень і втрати особового складу незалежно не підтверджено.",
+      "tags": [
+        "daily",
+        "verification"
+      ]
+    },
+    {
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "theme": "investigations",
+      "emoji": "⚖️",
+      "source_name": "HURIDOCS, Lucía Gómez Vicente",
+      "source_url": "https://huridocs.org/2026/11/building-osint-evidence-databases-lessons-from-the-amnesty-digital-investigations-summit/",
+      "source_date_label_en": "3 November 2026; retrospective",
+      "source_date_label_uk": "3 листопада 2026; ретроспектива",
+      "title_en": "HURIDOCS: an evidence database is more than a link archive",
+      "title_uk": "HURIDOCS: база доказів — це більше, ніж архів посилань",
+      "what_happened_en": "HURIDOCS reflects on its Amnesty Digital Investigations Summit workshop, focusing on provenance, early preservation, structured records and the risk of AI enhancement introducing nonexistent details.",
+      "what_happened_uk": "HURIDOCS підсумовує практикум на Amnesty Digital Investigations Summit: походження даних, раннє збереження, структуровані записи й ризик появи неіснуючих деталей після ШІ-покращення зображень.",
+      "why_it_matters_en": "Investigations require durable context and traceability, not just accumulated URLs.",
+      "why_it_matters_uk": "Розслідуванням потрібні довготривалий контекст і простежуваність, а не лише накопичені URL.",
+      "how_to_use_en": "Keep original captures, integrity metadata, processing history and links between claims and records.",
+      "how_to_use_uk": "Зберігайте оригінали, метадані цілісності, історію обробки та зв’язки між твердженнями й записами.",
+      "limits_en": "Preservation alone does not authenticate a source; this is a retrospective methodological article.",
+      "limits_uk": "Саме збереження не доводить автентичності; це ретроспективний методичний матеріал.",
+      "tags": [
+        "daily",
+        "verification"
+      ]
+    },
+    {
+      "rubric_en": "AI Verification",
+      "rubric_uk": "ШІ та верифікація",
+      "theme": "verification",
+      "emoji": "🔍",
+      "source_name": "What the Fact, citing Gwara Media and Ukraine's Centre for Countering Disinformation",
+      "source_url": "https://www.whatthefact.app/fact-checks/2026-11-09-iranian-tv-irinn-map-kyiv-odesa-lviv-missile-targets",
+      "source_date_label_en": "9 November 2026",
+      "source_date_label_uk": "9 листопада 2026",
+      "title_en": "Forged Iranian TV map falsely marks Ukrainian cities as targets",
+      "title_uk": "Підроблена мапа іранського ТБ неправдиво позначає українські міста цілями",
+      "what_happened_en": "Fact-checkers report that a circulating image purporting to show IRINN targeting Kyiv, Odesa and Lviv was fabricated. Ukraine's Centre for Countering Disinformation compared it with the original broadcast; genuine Iranian statements concerned possible attacks on European US/NATO facilities, not Ukrainian cities.",
+      "what_happened_uk": "Фактчекери встановили, що поширений кадр нібито з IRINN із Києвом, Одесою та Львовом як цілями є підробкою. ЦПД порівняв його з оригінальним ефіром; реальні іранські заяви стосувалися можливих ударів по американських або натовських об’єктах у Європі, а не українських містах.",
+      "why_it_matters_en": "A genuine threatening statement can be paired with a fabricated visual to create a new false claim.",
+      "why_it_matters_uk": "Справжню погрозу можна поєднати з підробленим зображенням і створити нове неправдиве твердження.",
+      "how_to_use_en": "Compare alleged broadcast screenshots with source footage, language, tickers, cartography and earliest circulation.",
+      "how_to_use_uk": "Зіставляйте скриншоти з оригінальним ефіром, мовою титрів, картографією та першими поширеннями.",
+      "limits_en": "Creator and coordination of the forgery remain unidentified; automated AI-detector scores are not decisive.",
+      "limits_uk": "Авторів і координацію підробки не встановлено; оцінки автоматичних ШІ-детекторів не є остаточним доказом.",
+      "tags": [
+        "daily",
+        "verification"
+      ]
+    }
+  ]
+}
