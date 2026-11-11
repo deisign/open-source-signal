@@ -1,0 +1,155 @@
+{
+  "issue_number": "157",
+  "date_iso": "2026-11-11",
+  "date_label_en": "11 November 2026",
+  "date_label_uk": "11 листопада 2026",
+  "slug": "open-source-signal",
+  "title_en": "Open Source Signal",
+  "title_uk": "Сигнал відкритих джерел",
+  "issue_type": "Daily Signal",
+  "language_label": "EN + UKR",
+  "subtitle_en": "Evidence after the Komyshuvakha strike, civilian infrastructure and OSINT verification.",
+  "subtitle_uk": "Докази після удару по Комишувасі, цивільна інфраструктура та OSINT-верифікація.",
+  "dek_en": "Ukraine-focused accountability reporting and OSINT methods, with explicit evidentiary limits.",
+  "dek_uk": "Українська оптика документування та методи OSINT із чіткими межами доказовості.",
+  "editorial_frame": {
+    "what_this_is": "Bilingual, source-attributed editorial digest; primary reporting and secondary analysis distinguished.",
+    "what_this_is_not": "An independent forensic investigation or verified casualty, attribution or battle-damage register."
+  },
+  "rubric_map": [
+    "📡 Signal One",
+    "🇺🇦 Ukraine Lens",
+    "🕯️ Losses, Captivity & Missing",
+    "⚖️ Tradecraft",
+    "🛰️ Map Room"
+  ],
+  "footer_note": "Open Source Signal — preserve sources, document uncertainty, verify independently.",
+  "internal_notes": [
+    "Issue prepared from the editorial selection of 11 November 2026.",
+    "CNN report linked through a syndicated copy, not the original CNN URL; identify this explicitly.",
+    "Reuters local authority statements remain attributed and independently unverified.",
+    "Mediazona and satellite items are retrospective methodology, not new 11 November events."
+  ],
+  "items": [
+    {
+      "rubric_en": "Signal One",
+      "rubric_uk": "Головний сигнал",
+      "theme": "accountability",
+      "emoji": "📡",
+      "source_name": "CNN (syndicated at Egypt Independent)",
+      "source_url": "https://www.egyptindependent.com/new-ukrainian-footage-shows-how-a-russian-strike-turned-a-civilian-shelter-into-a-mass-grave/",
+      "source_date_label_en": "10 November 2026",
+      "source_date_label_uk": "10 листопада 2026",
+      "title_en": "New visual evidence examines the sequence of strikes at Komyshuvakha",
+      "title_uk": "Нові візуальні докази допомагають відтворити послідовність ударів по Комишувасі",
+      "what_happened_en": "A CNN investigation examined Ukrainian police body-camera footage, geolocated videos, eyewitness accounts and munition fragments after the 2 November strike. The report describes a second strike after people sought shelter and rescuers arrived.",
+      "what_happened_uk": "Розслідування CNN аналізує відео з нагрудних камер поліції, геолоковані записи, свідчення очевидців та уламки боєприпасів після удару 2 листопада. Матеріал описує повторний удар, коли люди сховалися в укритті, а рятувальники прибули на місце.",
+      "why_it_matters_en": "Multiple evidence types help reconstruct a timeline rather than merely describe the aftermath.",
+      "why_it_matters_uk": "Поєднання різних типів доказів дає змогу відтворювати хронологію, а не лише описувати наслідки.",
+      "how_to_use_en": "Preserve original footage provenance, timestamp each strike separately and record how munition identification was made.",
+      "how_to_use_uk": "Зберігайте походження відео, окремо фіксуйте час кожного удару й підстави ідентифікації боєприпасів.",
+      "limits_en": "The available link is a syndicated CNN report. Fragment consistency does not establish an individual perpetrator or command responsibility.",
+      "limits_uk": "Доступне посилання веде на передрук CNN. Відповідність уламків типу боєприпасу не встановлює конкретного виконавця чи командну відповідальність.",
+      "tags": [
+        "daily",
+        "accountability"
+      ]
+    },
+    {
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "theme": "ukraine",
+      "emoji": "🇺🇦",
+      "source_name": "Reuters",
+      "source_url": "https://www.reuters.com/world/europe/drone-attack-leaves-part-ukraines-kryvyi-rih-without-power-2026-11-10/",
+      "source_date_label_en": "10 November 2026",
+      "source_date_label_uk": "10 листопада 2026",
+      "title_en": "Kryvyi Rih: reported drone attack disrupts basic utilities",
+      "title_uk": "Кривий Ріг: після атаки дронів повідомляють про перебої з комунальними послугами",
+      "what_happened_en": "Local authorities reported that a drone strike on critical infrastructure in Kryvyi Rih disrupted electricity, water and heating. Reuters said it could not independently verify the account.",
+      "what_happened_uk": "Місцева влада повідомила, що удар дронів по критичній інфраструктурі Кривого Рогу спричинив перебої з електропостачанням, водою та опаленням. Reuters не зміг незалежно перевірити ці відомості.",
+      "why_it_matters_en": "An infrastructure incident may cause cascading civilian effects beyond the immediate target.",
+      "why_it_matters_uk": "Один інфраструктурний інцидент може спричиняти каскадні наслідки для цивільного населення.",
+      "how_to_use_en": "Record damage reports, outages and restoration times separately, with their original source and observation time.",
+      "how_to_use_uk": "Окремо документуйте повідомлення про пошкодження, відключення та відновлення з джерелом і часом спостереження.",
+      "limits_en": "The reported impact is attributed to local authorities; no independent damage assessment is supplied.",
+      "limits_uk": "Відомості про наслідки походять від місцевої влади; незалежної оцінки пошкоджень немає.",
+      "tags": [
+        "daily",
+        "ukraine"
+      ]
+    },
+    {
+      "rubric_en": "Losses, Captivity & Missing",
+      "rubric_uk": "Втрати, полон, зниклі",
+      "theme": "losses",
+      "emoji": "🕯️",
+      "source_name": "Mediazona",
+      "source_url": "https://en.zona.media/article/2026/11/06/casualties_eng-trl",
+      "source_date_label_en": "6 November 2026; methodology",
+      "source_date_label_uk": "6 листопада 2026; методика",
+      "title_en": "Why military branch cannot prove an individual UAV-operator role",
+      "title_uk": "Чому рід військ не доводить роль конкретного оператора БПЛА",
+      "what_happened_en": "Mediazona explains named-loss verification and the distinction between branch of service and actual specialty. A unit affiliation does not necessarily establish what a person did.",
+      "what_happened_uk": "«Медіазона» пояснює критерії перевірки поіменних втрат і різницю між родом військ та реальною спеціальністю. Належність до підрозділу не обов’язково встановлює фактичну роль людини.",
+      "why_it_matters_en": "This distinction is critical for research into Russian UAV-operator casualties.",
+      "why_it_matters_uk": "Це розмежування критично важливе для дослідження втрат російських операторів БПЛА.",
+      "how_to_use_en": "Maintain separate unit, branch, role, role-evidence and date-of-death fields.",
+      "how_to_use_uk": "Ведіть окремі поля підрозділу, роду військ, ролі, доказу ролі й дати загибелі.",
+      "limits_en": "Named-loss registers are incomplete; classification may remain uncertain.",
+      "limits_uk": "Поіменні реєстри неповні; класифікація може залишатися невизначеною.",
+      "tags": [
+        "daily",
+        "losses"
+      ]
+    },
+    {
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "theme": "verification",
+      "emoji": "⚖️",
+      "source_name": "Institute for the Study of War",
+      "source_url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-november-8-2026/",
+      "source_date_label_en": "8 November 2026",
+      "source_date_label_uk": "8 листопада 2026",
+      "title_en": "Decoys complicate automated visual recognition in war footage",
+      "title_uk": "Муляжі ускладнюють автоматизоване розпізнавання на воєнних відео",
+      "what_happened_en": "ISW discusses reports and footage of Russian decoy personnel and equipment intended to confuse drone-based visual identification.",
+      "what_happened_uk": "ISW розглядає повідомлення й відео про використання російськими військами муляжів людей і техніки, що можуть вводити в оману системи візуального розпізнавання.",
+      "why_it_matters_en": "A detected human-shaped or vehicle-shaped object is not necessarily a person or operational vehicle.",
+      "why_it_matters_uk": "Виявлений силует людини чи техніки не обов’язково означає реальну людину або справну машину.",
+      "how_to_use_en": "Separate automated detections from independently verified object identities in evidence logs.",
+      "how_to_use_uk": "Відокремлюйте автоматичні спрацювання від незалежно підтвердженої ідентифікації об’єктів.",
+      "limits_en": "The scale and measured effectiveness against particular computer-vision models remain unknown.",
+      "limits_uk": "Масштаб застосування та виміряна ефективність проти конкретних моделей комп’ютерного зору невідомі.",
+      "tags": [
+        "daily",
+        "verification"
+      ]
+    },
+    {
+      "rubric_en": "Map Room",
+      "rubric_uk": "Картографічна кімната",
+      "theme": "geolocation",
+      "emoji": "🛰️",
+      "source_name": "Reuters",
+      "source_url": "https://www.reuters.com/world/ukraine-russia-war/russia-builds-major-new-drone-attack-base-six-weeks-satellite-images-show-2026-10-15/",
+      "source_date_label_en": "15 October 2026; retrospective",
+      "source_date_label_uk": "15 жовтня 2026; ретроспектива",
+      "title_en": "Satellite-image time series document Russian drone-facility construction",
+      "title_uk": "Часові ряди супутникових знімків документують будівництво російського об’єкта БПЛА",
+      "what_happened_en": "Reuters analysed satellite imagery showing rapid construction at a Russian drone-related facility between August and October. Construction evidence does not alone demonstrate operational readiness.",
+      "what_happened_uk": "Reuters проаналізував супутникові знімки, що показують швидке будівництво російського об’єкта, пов’язаного з БПЛА, протягом серпня–жовтня. Сам факт будівництва не доводить готовності до експлуатації.",
+      "why_it_matters_en": "Time-series imagery separates physical change from assumptions about a site's function or capability.",
+      "why_it_matters_uk": "Часові ряди знімків відокремлюють фізичні зміни від припущень щодо призначення й можливостей об’єкта.",
+      "how_to_use_en": "Compare capture dates, construction stages and corroborating public records; avoid publishing actionable targeting details.",
+      "how_to_use_uk": "Зіставляйте дати знімання, етапи будівництва та відкриті документи, не публікуючи даних для оперативного наведення.",
+      "limits_en": "Retrospective methodology item, not a newly discovered event on 11 November.",
+      "limits_uk": "Ретроспективний методичний матеріал, а не нова подія 11 листопада.",
+      "tags": [
+        "daily",
+        "geolocation"
+      ]
+    }
+  ]
+}
