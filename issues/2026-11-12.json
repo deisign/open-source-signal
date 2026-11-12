@@ -1,0 +1,155 @@
+{
+  "issue_number": "158",
+  "date_iso": "2026-11-12",
+  "date_label_en": "12 November 2026",
+  "date_label_uk": "12 листопада 2026",
+  "slug": "open-source-signal",
+  "title_en": "Open Source Signal",
+  "title_uk": "Сигнал відкритих джерел",
+  "issue_type": "Daily Signal",
+  "language_label": "EN + UKR",
+  "subtitle_en": "Ukraine-focused incident verification, prisoner-exchange evidence and international accountability.",
+  "subtitle_uk": "Перевірка інцидентів, доказовість обміну полоненими та міжнародна відповідальність.",
+  "dek_en": "Five source-attributed reports with clear boundaries between claims and verified observations.",
+  "dek_uk": "П’ять матеріалів із зазначенням джерел та розмежуванням заяв і перевірених спостережень.",
+  "editorial_frame": {
+    "what_this_is": "Bilingual, source-attributed editorial digest; primary reporting and secondary analysis distinguished.",
+    "what_this_is_not": "An independent forensic investigation or verified casualty, attribution or battle-damage register."
+  },
+  "rubric_map": [
+    "📡 Signal One",
+    "🇺🇦 Ukraine Lens",
+    "🕯️ Losses, Captivity & Missing",
+    "🛰️ Map Room",
+    "🌍 Global OSINT"
+  ],
+  "footer_note": "Open Source Signal — preserve sources, document uncertainty, verify independently.",
+  "internal_notes": [
+    "Editorial verification 12 November: the previously proposed European Observatory of Drone Incidents item was omitted because the cited resource could not be validated.",
+    "Original Ukraine Evidence Hub Chornomorsk dossier was not independently located; use Reuters reporting on the Odesa market with explicit attribution.",
+    "Original Reuters prisoner exchange link replaced with verified Reuters article.",
+    "Amnesty International primary release replaces AP as primary source."
+  ],
+  "items": [
+    {
+      "rubric_en": "Signal One",
+      "rubric_uk": "Головний сигнал",
+      "theme": "infrastructure",
+      "emoji": "📡",
+      "source_name": "Reuters",
+      "source_url": "https://www.reuters.com/world/drone-attack-causes-fire-russias-baltic-sea-port-ust-luga-governor-says-2026-11-11/",
+      "source_date_label_en": "11 November 2026",
+      "source_date_label_uk": "11 листопада 2026",
+      "title_en": "Ust-Luga port fire: verified incident, disputed extent of damage",
+      "title_uk": "Пожежа в порту Усть-Луга: підтверджений інцидент, невизначений масштаб пошкоджень",
+      "what_happened_en": "The regional governor reported a port fire and three injured workers following a drone attack. Ukraine's General Staff claimed responsibility and said five fuel tanks were damaged.",
+      "what_happened_uk": "Губернатор Ленінградської області повідомив про пожежу в порту та трьох постраждалих працівників після атаки дронів. Генштаб України заявив про відповідальність і пошкодження п’яти паливних резервуарів.",
+      "why_it_matters_en": "Agreement on the occurrence of a fire does not independently validate the claimed number of damaged tanks.",
+      "why_it_matters_uk": "Збіг повідомлень про пожежу не є незалежним підтвердженням кількості пошкоджених резервуарів.",
+      "how_to_use_en": "Track the incident, claimed damage, casualties and later imagery assessments as separate evidence records.",
+      "how_to_use_uk": "Ведіть окремі записи інциденту, заявлених пошкоджень, постраждалих і подальших оцінок за знімками.",
+      "limits_en": "Five damaged tanks are a Ukrainian military claim, not independently established battle damage.",
+      "limits_uk": "П’ять пошкоджених резервуарів — заява українських військових, а не незалежно встановлений результат.",
+      "tags": [
+        "daily",
+        "infrastructure"
+      ]
+    },
+    {
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "theme": "accountability",
+      "emoji": "🇺🇦",
+      "source_name": "Reuters",
+      "source_url": "https://www.reuters.com/world/europe/us-russia-ukraine-start-second-day-abu-dhabi-peace-talks-2026-11-11/",
+      "source_date_label_en": "11 November 2026",
+      "source_date_label_uk": "11 листопада 2026",
+      "title_en": "Odesa region market strike: civilians killed amid peace talks",
+      "title_uk": "Удар по ринку на Одещині: загибель цивільних під час переговорів",
+      "what_happened_en": "Reuters reported, citing Ukrainian officials, that a strike on a market in Odesa region killed three people amid ongoing peace talks. The precise circumstances require further corroboration.",
+      "what_happened_uk": "Reuters із посиланням на українських посадовців повідомив про трьох загиблих унаслідок удару по ринку в Одеській області під час переговорів. Обставини потребують подальшої перевірки.",
+      "why_it_matters_en": "Documenting civilian harm requires time-specific counts and careful attribution.",
+      "why_it_matters_uk": "Документування шкоди цивільним потребує прив’язки чисел до часу та чіткого зазначення джерела.",
+      "how_to_use_en": "Preserve official initial statements, subsequent revisions and independently authenticated imagery.",
+      "how_to_use_uk": "Зберігайте початкові офіційні повідомлення, подальші уточнення та незалежно перевірені зображення.",
+      "limits_en": "The casualty count is attributed to Ukrainian officials; this source alone does not independently establish all strike circumstances.",
+      "limits_uk": "Кількість загиблих наведена за українськими посадовцями; джерело саме по собі не встановлює всі обставини удару.",
+      "tags": [
+        "daily",
+        "accountability"
+      ]
+    },
+    {
+      "rubric_en": "Losses, Captivity & Missing",
+      "rubric_uk": "Втрати, полон, зниклі",
+      "theme": "pow",
+      "emoji": "🕯️",
+      "source_name": "Reuters",
+      "source_url": "https://www.reuters.com/world/europe/us-russia-ukraine-start-second-day-abu-dhabi-peace-talks-2026-11-11/",
+      "source_date_label_en": "12 November 2026",
+      "source_date_label_uk": "12 листопада 2026",
+      "title_en": "Abu Dhabi: a prisoner-swap agreement is not a completed exchange",
+      "title_uk": "Абу-Дабі: домовленість про обмін полоненими ще не є здійсненим обміном",
+      "what_happened_en": "Russia and Ukraine agreed in principle to a major prisoner exchange after two days of US-mediated talks. Numbers and implementation were still to be settled.",
+      "what_happened_uk": "Росія та Україна принципово погодили великий обмін полоненими після двох днів переговорів за посередництва США. Кількість людей і виконання домовленості ще мали визначити.",
+      "why_it_matters_en": "A negotiated exchange must not be counted as a completed return in POW databases.",
+      "why_it_matters_uk": "Домовленість про обмін не можна зараховувати як підтверджене повернення людей у реєстрах полонених.",
+      "how_to_use_en": "Record agreement, planned transfer, actual handover and independently confirmed arrival as distinct events.",
+      "how_to_use_uk": "Окремо фіксуйте домовленість, заплановану передачу, фактичну передачу та підтверджене прибуття.",
+      "limits_en": "No individual identities or completed transfers are established by this announcement.",
+      "limits_uk": "Повідомлення не підтверджує персонального складу чи факту завершеної передачі.",
+      "tags": [
+        "daily",
+        "pow"
+      ]
+    },
+    {
+      "rubric_en": "Map Room",
+      "rubric_uk": "Картографічна кімната",
+      "theme": "verification",
+      "emoji": "🛰️",
+      "source_name": "Institute for the Study of War",
+      "source_url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-november-11-2026/",
+      "source_date_label_en": "11 November 2026",
+      "source_date_label_uk": "11 листопада 2026",
+      "title_en": "Visual evidence and damage claims must be recorded separately",
+      "title_uk": "Візуальні докази та заяви про пошкодження слід обліковувати окремо",
+      "what_happened_en": "ISW's 11 November campaign assessment discusses reported Ukrainian strikes and open-source observations relating to Russian military and industrial infrastructure.",
+      "what_happened_uk": "Огляд ISW за 11 листопада розглядає повідомлення про українські удари та спостереження з відкритих джерел щодо російської військової й промислової інфраструктури.",
+      "why_it_matters_en": "Geolocated footage and imagery can establish visible effects without proving production shutdowns or all claimed damage.",
+      "why_it_matters_uk": "Геолоковані відео та знімки можуть підтверджувати видимі наслідки, але не доводять зупинку виробництва чи всі заявлені пошкодження.",
+      "how_to_use_en": "Associate each observation with a capture date, location confidence and source lineage.",
+      "how_to_use_uk": "Прив’язуйте кожне спостереження до дати знімання, впевненості в геолокації та походження джерела.",
+      "limits_en": "This digest does not independently verify every cited image or operational effect.",
+      "limits_uk": "Цей огляд не є незалежною перевіркою кожного зображення чи операційного наслідку.",
+      "tags": [
+        "daily",
+        "verification"
+      ]
+    },
+    {
+      "rubric_en": "Global OSINT",
+      "rubric_uk": "Міжнародний OSINT",
+      "theme": "accountability",
+      "emoji": "🌍",
+      "source_name": "Amnesty International",
+      "source_url": "https://www.amnesty.org/en/latest/news/2026/11/south-sudan-authorities-un-must-investigate-failure-to-protect-victims-of-abiemnom-massacre/",
+      "source_date_label_en": "12 November 2026",
+      "source_date_label_uk": "12 листопада 2026",
+      "title_en": "South Sudan: 82 interviews and verified imagery document Abiemnom massacre",
+      "title_uk": "Південний Судан: 82 інтерв’ю та перевірені зображення документують різанину в Абіємномі",
+      "what_happened_en": "Amnesty International documented the 1 March attack in Abiemnom using 82 interviews, satellite imagery and verified photographs and video. The report questions the preventive response of national authorities and UN peacekeepers.",
+      "what_happened_uk": "Amnesty International задокументувала напад 1 березня в Абіємномі за допомогою 82 інтерв’ю, супутникових знімків і перевірених фото та відео. Звіт ставить питання про запобіжні дії влади та миротворців ООН.",
+      "why_it_matters_en": "The case illustrates triangulation of testimony, imagery and prior warnings for accountability investigations.",
+      "why_it_matters_uk": "Кейс демонструє зіставлення свідчень, зображень і попереджень для розслідувань відповідальності.",
+      "how_to_use_en": "Build an evidence timeline distinguishing early warnings, attack events, protection actions and subsequent investigations.",
+      "how_to_use_uk": "Створюйте хронологію доказів, розділяючи попередження, перебіг нападу, захисні дії та подальші розслідування.",
+      "limits_en": "Amnesty's conclusions are investigative findings; UNMISS cited resource constraints and legal responsibility requires further proceedings.",
+      "limits_uk": "Висновки Amnesty є результатами розслідування; UNMISS посилалася на брак ресурсів, а юридична відповідальність потребує подальшого розгляду.",
+      "tags": [
+        "daily",
+        "accountability"
+      ]
+    }
+  ]
+}
