@@ -1,0 +1,180 @@
+{
+  "issue_number": "159",
+  "date_iso": "2026-11-13",
+  "date_label_en": "13 November 2026",
+  "date_label_uk": "13 листопада 2026",
+  "slug": "open-source-signal",
+  "title_en": "Open Source Signal",
+  "title_uk": "Сигнал відкритих джерел",
+  "issue_type": "Daily Signal",
+  "language_label": "EN + UKR",
+  "subtitle_en": "Civilian harm in Kyiv, trafficking investigations, POW verification and open-source security.",
+  "subtitle_uk": "Шкода цивільним у Києві, розслідування вербування, перевірка обмінів та безпека відкритих даних.",
+  "dek_en": "Six bilingual items with attributed claims, verification guidance and limitations.",
+  "dek_uk": "Шість двомовних матеріалів із атрибуцією тверджень, методикою перевірки та обмеженнями.",
+  "editorial_frame": {
+    "what_this_is": "Bilingual, source-attributed editorial digest; primary reporting and secondary analysis distinguished.",
+    "what_this_is_not": "An independent forensic investigation or verified casualty, attribution or battle-damage register."
+  },
+  "rubric_map": [
+    "📡 Signal One",
+    "⚖️ Accountability",
+    "🕯️ Losses, Captivity & Missing",
+    "📊 Data & Methods",
+    "🛰️ Infrastructure & Verification",
+    "🌍 Global OSINT"
+  ],
+  "footer_note": "Open Source Signal — preserve sources, document uncertainty, verify independently.",
+  "internal_notes": [
+    "Bellingcat article dated 5 November is included as a retrospective international OSINT case; direct retrieval was unavailable at editorial finalization.",
+    "Starshield report checked against Axios article; competing claims are not independently resolved.",
+    "POW exchange is prospective; do not count as completed transfers.",
+    "No South Sudan Amnesty repeat from #158."
+  ],
+  "items": [
+    {
+      "rubric_en": "Signal One",
+      "rubric_uk": "Головний сигнал",
+      "theme": "ukraine",
+      "emoji": "📡",
+      "source_name": "Reuters",
+      "source_url": "https://www.reuters.com/world/europe/russia-ukraine-exchange-attacks-capitals-us-envoys-head-moscow-2026-11-12/",
+      "source_date_label_en": "12 November 2026",
+      "source_date_label_uk": "12 листопада 2026",
+      "title_en": "Kyiv apartment strike and power outages highlight civilian harm",
+      "title_uk": "Удар по житловому будинку в Києві та відключення світла: цивільні наслідки",
+      "what_happened_en": "Local authorities reported one woman killed and five injured in Kyiv after Russian strikes, including a hit on a nine-storey building in Solomianskyi district. Ukrainian officials also reported outages across nine regions.",
+      "what_happened_uk": "За повідомленням місцевої влади, після російських ударів у Києві загинула жінка, п’ятеро людей дістали поранення; зокрема, постраждав дев’ятиповерховий будинок у Солом’янському районі. Українські посадовці повідомили про відключення у дев’яти областях.",
+      "why_it_matters_en": "Claims about military targets do not replace documentation of observable civilian consequences.",
+      "why_it_matters_uk": "Заяви про військові цілі не замінюють документування наслідків для цивільних.",
+      "how_to_use_en": "Separate records for residential damage, casualties, grid outages and recovery.",
+      "how_to_use_uk": "Окремо обліковуйте пошкодження житла, постраждалих, відключення та відновлення.",
+      "limits_en": "Casualty figures are time-specific official reports; all impact locations are not independently verified.",
+      "limits_uk": "Кількість постраждалих наведена станом на час повідомлення; не всі місця ураження перевірені незалежно.",
+      "tags": [
+        "daily",
+        "ukraine"
+      ]
+    },
+    {
+      "rubric_en": "Accountability",
+      "rubric_uk": "Відповідальність",
+      "theme": "accountability",
+      "emoji": "⚖️",
+      "source_name": "Amnesty International",
+      "source_url": "https://www.amnesty.org/en/documents/eur46/1672/2026/en/",
+      "source_date_label_en": "11 November 2026",
+      "source_date_label_uk": "11 листопада 2026",
+      "title_en": "Ukraine opens separate investigation into alleged recruitment trafficking",
+      "title_uk": "Україна розпочала окреме розслідування ймовірної торгівлі людьми під час вербування",
+      "what_happened_en": "A coalition of NGOs reported that Ukraine's acting Prosecutor General announced on 6 November a criminal investigation into alleged trafficking and exploitation of foreign nationals recruited for Russia's war.",
+      "what_happened_uk": "Коаліція правозахисних організацій повідомила, що 6 листопада виконувач обов’язків Генпрокурора України оголосив кримінальне розслідування ймовірної торгівлі людьми та експлуатації іноземців, завербованих для війни на боці Росії.",
+      "why_it_matters_en": "Criminal investigations require source provenance beyond media narratives.",
+      "why_it_matters_uk": "Кримінальні розслідування потребують відстежуваного походження доказів, а не лише медійних переказів.",
+      "how_to_use_en": "Preserve recruitment advertisements, contracts, interviews and dates with consent and safety controls.",
+      "how_to_use_uk": "Зберігайте оголошення про набір, контракти, свідчення й дати з урахуванням згоди та безпеки.",
+      "limits_en": "Opening an investigation does not establish guilt in any individual case.",
+      "limits_uk": "Початок розслідування не доводить вини в окремій справі.",
+      "tags": [
+        "daily",
+        "accountability"
+      ]
+    },
+    {
+      "rubric_en": "Losses, Captivity & Missing",
+      "rubric_uk": "Втрати, полон, зниклі",
+      "theme": "pow",
+      "emoji": "🕯️",
+      "source_name": "Reuters",
+      "source_url": "https://www.reuters.com/world/europe/kushner-says-us-working-toward-largest-prisoner-exchange-russias-war-ukraine-2026-11-13/",
+      "source_date_label_en": "13 November 2026",
+      "source_date_label_uk": "13 листопада 2026",
+      "title_en": "Proposed large POW exchange remains uncompleted",
+      "title_uk": "Масштабний обмін полоненими поки залишається планом",
+      "what_happened_en": "US envoy Jared Kushner said efforts were under way toward a potentially very large prisoner exchange. No confirmed list of people transferred or completed handover was announced.",
+      "what_happened_uk": "Представник США Джаред Кушнер повідомив про підготовку потенційно масштабного обміну полоненими. Підтвердженого списку переданих осіб або завершеної передачі не оголошено.",
+      "why_it_matters_en": "Negotiated numbers must not be recorded as people actually returned.",
+      "why_it_matters_uk": "Озвучені плани не можна обліковувати як фактично повернених людей.",
+      "how_to_use_en": "Use separate statuses for proposed, agreed, transferred and confirmed returned.",
+      "how_to_use_uk": "Використовуйте окремі статуси: запропоновано, погоджено, передано, повернення підтверджено.",
+      "limits_en": "The number and identities of eventual returnees remain unconfirmed.",
+      "limits_uk": "Кількість і особи майбутніх звільнених не підтверджені.",
+      "tags": [
+        "daily",
+        "pow"
+      ]
+    },
+    {
+      "rubric_en": "Data & Methods",
+      "rubric_uk": "Дані та методи",
+      "theme": "methodology",
+      "emoji": "📊",
+      "source_name": "Kyiv Dialogue / Ukraine Air War Monitor",
+      "source_url": "https://www.kyiv-dialogue.org/index.php/en/news/newsreader/ukraine-air-war-monitor-vol-xxii.html",
+      "source_date_label_en": "9 November 2026",
+      "source_date_label_uk": "9 листопада 2026",
+      "title_en": "October air-war monitoring: counting attacks is not counting impacts",
+      "title_uk": "Моніторинг повітряної війни за жовтень: атаки не дорівнюють влучанням",
+      "what_happened_en": "Ukraine Air War Monitor reports more than 6,000 long-range drone attacks against civilian targets in October, using its own monitoring definitions.",
+      "what_happened_uk": "Ukraine Air War Monitor повідомляє про понад 6000 атак далекобійних дронів по цивільних цілях у жовтні відповідно до власної методики підрахунку.",
+      "why_it_matters_en": "Metrics are comparable only when event definitions and coverage are clear.",
+      "why_it_matters_uk": "Показники можна зіставляти лише за зрозумілих визначень подій і повноти охоплення.",
+      "how_to_use_en": "Record the period, denominator, counting unit and confidence for each dataset.",
+      "how_to_use_uk": "Фіксуйте період, одиницю підрахунку, охоплення та рівень упевненості для кожного набору даних.",
+      "limits_en": "The figure is the monitor's estimate, not 6,000 independently verified impacts.",
+      "limits_uk": "Це оцінка моніторингу, а не 6000 незалежно підтверджених влучань.",
+      "tags": [
+        "daily",
+        "methodology"
+      ]
+    },
+    {
+      "rubric_en": "Infrastructure & Verification",
+      "rubric_uk": "Інфраструктура та верифікація",
+      "theme": "verification",
+      "emoji": "🛰️",
+      "source_name": "Axios",
+      "source_url": "https://www.axios.com/2026/11/12/ukraine-starshield-restricted-spacex-russia-zelensky",
+      "source_date_label_en": "12 November 2026",
+      "source_date_label_uk": "12 листопада 2026",
+      "title_en": "Ukraine reports Starshield disruptions; SpaceX denies service changes",
+      "title_uk": "Україна повідомляє про перебої Starshield; SpaceX заперечує зміни",
+      "what_happened_en": "Ukrainian officials reported restrictions affecting Starshield satellite services used by the military. SpaceX told Axios there had been no change.",
+      "what_happened_uk": "Українські посадовці повідомили про обмеження супутникового сервісу Starshield, який використовують військові. SpaceX заявила Axios, що жодних змін не було.",
+      "why_it_matters_en": "An observed disruption, a provider policy change and an attributed cause are different claims.",
+      "why_it_matters_uk": "Зафіксований збій, зміна політики постачальника та встановлена причина — різні твердження.",
+      "how_to_use_en": "Compare public timelines and technical statements without exposing active military system details.",
+      "how_to_use_uk": "Зіставляйте публічні хронології та технічні заяви, не розкриваючи даних про діючі військові системи.",
+      "limits_en": "The contradictory accounts are unresolved; intent and cause are not independently established.",
+      "limits_uk": "Суперечливі заяви не узгоджені; причину й намір незалежно не встановлено.",
+      "tags": [
+        "daily",
+        "verification"
+      ]
+    },
+    {
+      "rubric_en": "Global OSINT",
+      "rubric_uk": "Міжнародний OSINT",
+      "theme": "methodology",
+      "emoji": "🌍",
+      "source_name": "Bellingcat",
+      "source_url": "https://www.bellingcat.com/news/2026/11/05/how-online-maps-lay-bare-the-us-military-bases-targeted-by-iran/",
+      "source_date_label_en": "5 November 2026; retrospective",
+      "source_date_label_uk": "5 листопада 2026; ретроспектива",
+      "title_en": "Public mapping platforms and unintended disclosure of sensitive information",
+      "title_uk": "Публічні картографічні сервіси та ненавмисне розкриття чутливих даних",
+      "what_happened_en": "Bellingcat examines how public mapping services and user-submitted photographs can reveal sensitive information about military facilities in the Middle East.",
+      "what_happened_uk": "Bellingcat досліджує, як відкриті картографічні сервіси та фотографії користувачів можуть розкривати чутливі відомості про військові об’єкти на Близькому Сході.",
+      "why_it_matters_en": "The availability of data and proof of its use by an attacker are separate questions.",
+      "why_it_matters_uk": "Доступність інформації та доказ її використання нападником — різні питання.",
+      "how_to_use_en": "Audit geotags and user-contributed imagery without republishing operationally sensitive details.",
+      "how_to_use_uk": "Перевіряйте геотеги та користувацькі знімки без повторної публікації оперативно чутливих деталей.",
+      "limits_en": "Public availability does not prove that a particular attacker used the material to select targets.",
+      "limits_uk": "Публічна доступність не доводить використання матеріалів конкретним нападником для вибору цілей.",
+      "tags": [
+        "daily",
+        "methodology"
+      ]
+    }
+  ]
+}
