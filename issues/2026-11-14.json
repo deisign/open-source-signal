@@ -1,0 +1,128 @@
+{
+  "issue_number": "155",
+  "date_iso": "2026-11-14",
+  "date_label_en": "14 November 2026",
+  "date_label_uk": "14 листопада 2026",
+  "slug": "open-source-signal",
+  "title_en": "Open Source Signal",
+  "title_uk": "Сигнал відкритих джерел",
+  "issue_type": "Tool Radar",
+  "language_label": "EN + UKR",
+  "subtitle_en": "Passive collection, mapped evidence and repeatable research environments.",
+  "subtitle_uk": "Пасивний збір, картографування доказів і відтворювані дослідницькі середовища.",
+  "dek_en": "Four documented tools and workflows selected for practical verification rather than novelty alone.",
+  "dek_uk": "Чотири документовані інструменти та робочі процеси: практична перевірка важливіша за новизну.",
+  "editorial_frame": {
+    "what_this_is": "Bilingual source-attributed editorial selection; release dates stated where verified.",
+    "what_this_is_not": "Independent technical testing, security certification or a claim that every project launched this week."
+  },
+  "rubric_map": [
+    "🧰 Tool Radar",
+    "🗺️ Map Room"
+  ],
+  "footer_note": "Open Source Signal — preserve sources, document uncertainty, verify independently.",
+  "items": [
+    {
+      "rubric_en": "Tool Radar",
+      "rubric_uk": "Радар інструментів",
+      "theme": "investigations",
+      "emoji": "🧰",
+      "source_name": "OpenOSINT GitHub / PyPI",
+      "source_url": "https://github.com/OpenOSINT/OpenOSINT",
+      "source_date_label_en": "Reviewed 14 November 2026",
+      "source_date_label_uk": "Перевірено 14 листопада 2026",
+      "title_en": "OpenOSINT 2.38.1",
+      "title_uk": "OpenOSINT 2.38.1: пасивний OSINT для агентів",
+      "what_happened_en": "A new package was published on 14 November; the project offers passive-by-default CLI, MCP and agent workflows with source-linked results.",
+      "what_happened_uk": "14 листопада опубліковано пакет 2.38.1; проєкт пропонує CLI, MCP та агентні сценарії з пасивним режимом за замовчуванням і посиланнями на джерела.",
+      "why_it_matters_en": "A useful reference for keeping automated investigations observable and reducing unintended active requests.",
+      "why_it_matters_uk": "Корисний приклад прозорої автоматизації розслідувань без зайвих активних запитів.",
+      "how_to_use_en": "Compare passive settings and logging with existing pipelines before any integration.",
+      "how_to_use_uk": "Порівняйте пасивні налаштування й журнали з наявними процесами перед інтеграцією.",
+      "limits_en": "Package publication does not establish a security audit; some checks contact target infrastructure.",
+      "limits_uk": "Публікація пакета не є аудитом безпеки; окремі перевірки звертаються до цільової інфраструктури.",
+      "tags": [
+        "tool-radar",
+        "workflow"
+      ]
+    },
+    {
+      "rubric_en": "Tool Radar",
+      "rubric_uk": "Радар інструментів",
+      "theme": "investigations",
+      "emoji": "🧰",
+      "source_name": "Vidit GitHub",
+      "source_url": "https://github.com/vidithq/vidit",
+      "source_date_label_en": "Reviewed 14 November 2026",
+      "source_date_label_uk": "Перевірено 14 листопада 2026",
+      "title_en": "Vidit: geolocation evidence archive",
+      "title_uk": "Vidit: архів геолокаційних доказів",
+      "what_happened_en": "Open-source platform for archiving and mapping geolocated armed-conflict events with structured sources, media and analyst review.",
+      "what_happened_uk": "Відкрита платформа для архівування й картографування геолокованих подій збройних конфліктів із джерелами, медіа та перевіркою аналітика.",
+      "why_it_matters_en": "Separates machine detections from human-verified public records.",
+      "why_it_matters_uk": "Відокремлює автоматичні знахідки від записів, підтверджених аналітиком.",
+      "how_to_use_en": "Review the data model and test on historical, nonsensitive cases.",
+      "how_to_use_uk": "Вивчіть модель даних і протестуйте на історичних нечутливих кейсах.",
+      "limits_en": "Beta-stage project; a mapped claim is not independent proof and location data can be sensitive.",
+      "limits_uk": "Проєкт на стадії beta; позначка на карті не є незалежним доказом, координати можуть бути чутливими.",
+      "tags": [
+        "tool-radar",
+        "geolocation"
+      ]
+    },
+    {
+      "rubric_en": "Tool Radar",
+      "rubric_uk": "Радар інструментів",
+      "theme": "investigations",
+      "emoji": "🧰",
+      "source_name": "Bellingcat GitHub",
+      "source_url": "https://github.com/bellingcat/osm-search",
+      "source_date_label_en": "Reviewed 14 November 2026",
+      "source_date_label_uk": "Перевірено 14 листопада 2026",
+      "title_en": "Bellingcat OSM Search",
+      "title_uk": "Bellingcat OSM Search: пошук просторових ознак",
+      "what_happened_en": "Searches OpenStreetMap features by proximity, narrowing candidate locations from visible landmark combinations.",
+      "what_happened_uk": "Шукає об’єкти OpenStreetMap за близькістю та звужує коло можливих локацій за поєднанням орієнтирів.",
+      "why_it_matters_en": "Makes a geographic hypothesis testable instead of relying on visual intuition.",
+      "why_it_matters_uk": "Дозволяє перевіряти географічну гіпотезу, а не покладатися лише на візуальне враження.",
+      "how_to_use_en": "Use for retrospective civilian-location verification and cross-check against imagery.",
+      "how_to_use_uk": "Застосовуйте для ретроспективної перевірки цивільних локацій та звіряйте із зображеннями.",
+      "limits_en": "OSM completeness varies; proximity alone does not prove a location.",
+      "limits_uk": "Повнота OSM нерівномірна; близькість об’єктів сама собою не доводить місце.",
+      "tags": [
+        "tool-radar",
+        "geolocation"
+      ]
+    },
+    {
+      "rubric_en": "Tool Radar",
+      "rubric_uk": "Радар інструментів",
+      "theme": "investigations",
+      "emoji": "🧰",
+      "source_name": "Trace Labs release",
+      "source_url": "https://github.com/tracelabs/tlosint-vm/releases/tag/2026.10",
+      "source_date_label_en": "Reviewed 14 November 2026",
+      "source_date_label_uk": "Перевірено 14 листопада 2026",
+      "title_en": "Trace Labs OSINT VM 2026.10",
+      "title_uk": "Trace Labs OSINT VM 2026.10: оновлене середовище",
+      "what_happened_en": "The October release added 18 SOCMINT tools and introduced an apt repository and a QubesOS template.",
+      "what_happened_uk": "Жовтневий випуск додав 18 SOCMINT-інструментів, репозиторій apt та шаблон для QubesOS.",
+      "why_it_matters_en": "A maintained investigator environment can reduce setup friction and improve reproducibility.",
+      "why_it_matters_uk": "Підтримуване дослідницьке середовище спрощує налаштування та відтворення робочих процесів.",
+      "how_to_use_en": "Test in an isolated VM; review the package list before adopting tools.",
+      "how_to_use_uk": "Тестуйте в ізольованій VM; перевірте перелік пакетів перед використанням.",
+      "limits_en": "A curated VM does not certify each included tool; this is an October release, not a new November launch.",
+      "limits_uk": "Добірка у VM не гарантує надійності кожного інструмента; реліз жовтневий, не листопадовий.",
+      "tags": [
+        "tool-radar",
+        "workflow"
+      ]
+    }
+  ],
+  "internal_notes": [
+    "Strong: OpenOSINT 2.38.1 published 14 November; verify changelog before calling it a feature release.",
+    "Weekly follow-up: Vidit and Bellingcat OSM Search geolocation provenance workflow.",
+    "Trace Labs 2026.10 is a retrospective infrastructure pick, not a November release.",
+    "No independent installation or functional test performed."
+  ]
+}
