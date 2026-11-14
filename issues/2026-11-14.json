@@ -8,17 +8,19 @@
   "title_uk": "Сигнал відкритих джерел",
   "issue_type": "Tool Radar",
   "language_label": "EN + UKR",
-  "subtitle_en": "Passive collection, mapped evidence and repeatable research environments.",
-  "subtitle_uk": "Пасивний збір, картографування доказів і відтворювані дослідницькі середовища.",
-  "dek_en": "Four documented tools and workflows selected for practical verification rather than novelty alone.",
-  "dek_uk": "Чотири документовані інструменти та робочі процеси: практична перевірка важливіша за новизну.",
+  "subtitle_en": "Twelve tools for preservation, geolocation, identity research, graph analysis and source security.",
+  "subtitle_uk": "Дванадцять інструментів для архівування, геолокації, дослідження ідентичностей, графів і безпеки джерел.",
+  "dek_en": "A practical bilingual selection spanning collection, verification, data cleaning and investigation infrastructure.",
+  "dek_uk": "Практична двомовна добірка для збору, перевірки, очищення даних і побудови дослідницької інфраструктури.",
   "editorial_frame": {
     "what_this_is": "Bilingual source-attributed editorial selection; release dates stated where verified.",
     "what_this_is_not": "Independent technical testing, security certification or a claim that every project launched this week."
   },
   "rubric_map": [
     "🧰 Tool Radar",
-    "🗺️ Map Room"
+    "🗺️ Map Room",
+    "🗄️ Evidence & Archive",
+    "🔗 Network Analysis"
   ],
   "footer_note": "Open Source Signal — preserve sources, document uncertainty, verify independently.",
   "items": [
@@ -117,12 +119,205 @@
         "tool-radar",
         "workflow"
       ]
+    },
+    {
+      "rubric_en": "Tool Radar",
+      "rubric_uk": "Радар інструментів",
+      "theme": "investigations",
+      "emoji": "🧰",
+      "source_name": "bellingcat/auto-archiver GitHub",
+      "source_url": "https://github.com/bellingcat/auto-archiver",
+      "source_date_label_en": "Repository checked 14 November 2026",
+      "source_date_label_uk": "Репозиторій перевірено 14 листопада 2026",
+      "title_en": "Bellingcat auto-archiver: capture before deletion",
+      "title_uk": "Bellingcat auto-archiver: збереження до видалення",
+      "what_happened_en": "Automates archiving of URLs for videos, images and social posts from a Google Sheets workflow.",
+      "what_happened_uk": "Автоматизує архівування URL відео, зображень і дописів через робочий процес Google Sheets.",
+      "why_it_matters_en": "Capturing sources promptly helps preserve evidence that may later change or disappear.",
+      "why_it_matters_uk": "Своєчасне збереження джерел допомагає втримати матеріали, які можуть змінитися чи зникнути.",
+      "how_to_use_en": "Build an intake sheet for public-source leads; record capture time and original URL.",
+      "how_to_use_uk": "Створіть таблицю приймання публічних джерел; фіксуйте час збереження та початковий URL.",
+      "limits_en": "Platform access, deleted material and storage quotas limit completeness; handle sensitive media carefully.",
+      "limits_uk": "Доступ платформ, видалені матеріали й квоти сховища обмежують повноту; обережно працюйте з чутливими медіа.",
+      "tags": [
+        "tool-radar",
+        "archive"
+      ]
+    },
+    {
+      "rubric_en": "Tool Radar",
+      "rubric_uk": "Радар інструментів",
+      "theme": "investigations",
+      "emoji": "🧰",
+      "source_name": "sherlock-project/sherlock GitHub",
+      "source_url": "https://github.com/sherlock-project/sherlock",
+      "source_date_label_en": "Repository checked 14 November 2026",
+      "source_date_label_uk": "Репозиторій перевірено 14 листопада 2026",
+      "title_en": "Sherlock: username discovery",
+      "title_uk": "Sherlock: пошук облікових записів за ніком",
+      "what_happened_en": "Checks whether a username appears on multiple supported social platforms.",
+      "what_happened_uk": "Перевіряє наявність імені користувача на багатьох підтримуваних соціальних платформах.",
+      "why_it_matters_en": "Helps map public online traces during attribution research.",
+      "why_it_matters_uk": "Допомагає систематизувати публічні цифрові сліди під час дослідження атрибуції.",
+      "how_to_use_en": "Use only on public-interest cases; manually validate each hit and retain URLs.",
+      "how_to_use_uk": "Використовуйте для суспільно значущих кейсів; перевіряйте кожен збіг вручну та зберігайте URL.",
+      "limits_en": "Matching usernames do not establish a shared owner; site responses can be misleading.",
+      "limits_uk": "Однакові ніки не доводять спільного власника; відповіді сайтів можуть вводити в оману.",
+      "tags": [
+        "tool-radar",
+        "identity"
+      ]
+    },
+    {
+      "rubric_en": "Tool Radar",
+      "rubric_uk": "Радар інструментів",
+      "theme": "investigations",
+      "emoji": "🧰",
+      "source_name": "soxoj/maigret GitHub",
+      "source_url": "https://github.com/soxoj/maigret",
+      "source_date_label_en": "Repository checked 14 November 2026",
+      "source_date_label_uk": "Репозиторій перевірено 14 листопада 2026",
+      "title_en": "Maigret: structured username reports",
+      "title_uk": "Maigret: структуровані звіти за ніком",
+      "what_happened_en": "Collects public username matches across a large catalog of websites and produces structured reports.",
+      "what_happened_uk": "Збирає публічні збіги нікнеймів у великому каталозі сайтів і формує структуровані звіти.",
+      "why_it_matters_en": "Useful for comparing and documenting leads without treating matches as identity proof.",
+      "why_it_matters_uk": "Корисний для порівняння та документування зачіпок без підміни збігів доказом особи.",
+      "how_to_use_en": "Run against a test identity and inspect false positives before adding to a workflow.",
+      "how_to_use_uk": "Запустіть на тестовій ідентичності та перевірте хибні збіги перед інтеграцією.",
+      "limits_en": "Coverage changes as sites change; usernames can be reused by unrelated people.",
+      "limits_uk": "Покриття змінюється разом із сайтами; однакові ніки можуть належати різним людям.",
+      "tags": [
+        "tool-radar",
+        "identity"
+      ]
+    },
+    {
+      "rubric_en": "Tool Radar",
+      "rubric_uk": "Радар інструментів",
+      "theme": "investigations",
+      "emoji": "🧰",
+      "source_name": "visjs/vis-network GitHub",
+      "source_url": "https://github.com/visjs/vis-network",
+      "source_date_label_en": "Repository checked 14 November 2026",
+      "source_date_label_uk": "Репозиторій перевірено 14 листопада 2026",
+      "title_en": "vis-network: interactive relationship maps",
+      "title_uk": "vis-network: інтерактивні карти зв’язків",
+      "what_happened_en": "JavaScript library for rendering interactive network graphs with customizable nodes and edges.",
+      "what_happened_uk": "JavaScript-бібліотека для інтерактивних графів із налаштовуваними вузлами та зв’язками.",
+      "why_it_matters_en": "Can display source-backed relationships in investigation dashboards.",
+      "why_it_matters_uk": "Може показувати підтверджені джерелами зв’язки в дослідницьких панелях.",
+      "how_to_use_en": "Prototype a graph from an existing CSV with explicit relation types and provenance.",
+      "how_to_use_uk": "Побудуйте прототип графа з CSV, зазначивши типи зв’язків та походження даних.",
+      "limits_en": "Visualization is not inference; large graphs require filtering and careful labeling.",
+      "limits_uk": "Візуалізація не є доказом; великі графи потребують фільтрації та чітких підписів.",
+      "tags": [
+        "tool-radar",
+        "graphs"
+      ]
+    },
+    {
+      "rubric_en": "Tool Radar",
+      "rubric_uk": "Радар інструментів",
+      "theme": "investigations",
+      "emoji": "🧰",
+      "source_name": "exiftool/exiftool GitHub",
+      "source_url": "https://github.com/exiftool/exiftool",
+      "source_date_label_en": "Repository checked 14 November 2026",
+      "source_date_label_uk": "Репозиторій перевірено 14 листопада 2026",
+      "title_en": "ExifTool: metadata inspection",
+      "title_uk": "ExifTool: перевірка метаданих",
+      "what_happened_en": "Reads and writes metadata across many image, video and document formats.",
+      "what_happened_uk": "Читає та змінює метадані багатьох форматів зображень, відео й документів.",
+      "why_it_matters_en": "Useful for recording timestamps, camera fields and provenance clues.",
+      "why_it_matters_uk": "Корисний для фіксації часових позначок, полів камери й ознак походження.",
+      "how_to_use_en": "Inspect a copy of an artifact, preserve the original hash, and compare time zones.",
+      "how_to_use_uk": "Аналізуйте копію артефакту, збережіть хеш оригіналу та звіряйте часові пояси.",
+      "limits_en": "Metadata is editable and may be stripped by platforms; it does not prove authenticity.",
+      "limits_uk": "Метадані можна змінити, а платформи можуть їх видаляти; вони не доводять автентичність.",
+      "tags": [
+        "tool-radar",
+        "media"
+      ]
+    },
+    {
+      "rubric_en": "Tool Radar",
+      "rubric_uk": "Радар інструментів",
+      "theme": "investigations",
+      "emoji": "🧰",
+      "source_name": "mapillary/mapillary_tools GitHub",
+      "source_url": "https://github.com/mapillary/mapillary_tools",
+      "source_date_label_en": "Repository checked 14 November 2026",
+      "source_date_label_uk": "Репозиторій перевірено 14 листопада 2026",
+      "title_en": "Mapillary tools: street-level imagery workflow",
+      "title_uk": "Mapillary tools: робота з панорамами вулиць",
+      "what_happened_en": "CLI utilities process and upload street-level imagery with associated location metadata.",
+      "what_happened_uk": "CLI-утиліти обробляють і завантажують вуличні зображення з геоданими.",
+      "why_it_matters_en": "Street-level imagery can complement map and satellite verification.",
+      "why_it_matters_uk": "Вуличні знімки можуть доповнювати перевірку карт і супутникових зображень.",
+      "how_to_use_en": "Study metadata handling and public imagery coverage before any upload.",
+      "how_to_use_uk": "Вивчіть обробку метаданих і покриття публічних зображень перед завантаженням.",
+      "limits_en": "Upload workflows can disclose precise locations; not a standalone geolocation verifier.",
+      "limits_uk": "Завантаження може розкривати точні координати; це не самостійний інструмент підтвердження геолокації.",
+      "tags": [
+        "tool-radar",
+        "geolocation"
+      ]
+    },
+    {
+      "rubric_en": "Tool Radar",
+      "rubric_uk": "Радар інструментів",
+      "theme": "investigations",
+      "emoji": "🧰",
+      "source_name": "mvt-project/mvt GitHub",
+      "source_url": "https://github.com/mvt-project/mvt",
+      "source_date_label_en": "Repository checked 14 November 2026",
+      "source_date_label_uk": "Репозиторій перевірено 14 листопада 2026",
+      "title_en": "MVT: mobile compromise indicators",
+      "title_uk": "MVT: індикатори компрометації телефона",
+      "what_happened_en": "Mobile Verification Toolkit assists forensic checks for signs of potential device compromise.",
+      "what_happened_uk": "Mobile Verification Toolkit допомагає перевіряти пристрої на ознаки можливої компрометації.",
+      "why_it_matters_en": "Relevant to source protection and the security of investigative devices.",
+      "why_it_matters_uk": "Важливий для захисту джерел і безпеки пристроїв дослідників.",
+      "how_to_use_en": "Use on devices with authorization, follow documented acquisition procedures, and keep outputs private.",
+      "how_to_use_uk": "Застосовуйте на пристроях із дозволом, дотримуйтеся процедур збору даних і не публікуйте результати.",
+      "limits_en": "Absence of indicators does not prove a clean device; specialist interpretation may be needed.",
+      "limits_uk": "Відсутність індикаторів не доводить безпечність пристрою; може знадобитися фахова інтерпретація.",
+      "tags": [
+        "tool-radar",
+        "security"
+      ]
+    },
+    {
+      "rubric_en": "Tool Radar",
+      "rubric_uk": "Радар інструментів",
+      "theme": "investigations",
+      "emoji": "🧰",
+      "source_name": "OpenRefine/OpenRefine GitHub",
+      "source_url": "https://github.com/OpenRefine/OpenRefine",
+      "source_date_label_en": "Repository checked 14 November 2026",
+      "source_date_label_uk": "Репозиторій перевірено 14 листопада 2026",
+      "title_en": "OpenRefine: clean messy source tables",
+      "title_uk": "OpenRefine: очищення неструктурованих таблиць",
+      "what_happened_en": "Open-source desktop tool for cleaning, transforming and reconciling tabular data.",
+      "what_happened_uk": "Відкритий настільний інструмент для очищення, перетворення та узгодження табличних даних.",
+      "why_it_matters_en": "Helps normalize names, dates and categories before registry matching.",
+      "why_it_matters_uk": "Допомагає нормалізувати імена, дати й категорії перед зіставленням реєстрів.",
+      "how_to_use_en": "Test transformations on a copied CSV and preserve a change log and source columns.",
+      "how_to_use_uk": "Тестуйте перетворення на копії CSV, зберігайте журнал змін і початкові колонки.",
+      "limits_en": "Automated clustering may merge distinct people or records; review ambiguous matches.",
+      "limits_uk": "Автоматичне групування може об’єднати різних людей або записи; перевіряйте неоднозначні збіги.",
+      "tags": [
+        "tool-radar",
+        "data"
+      ]
     }
   ],
   "internal_notes": [
     "Strong: OpenOSINT 2.38.1 published 14 November; verify changelog before calling it a feature release.",
     "Weekly follow-up: Vidit and Bellingcat OSM Search geolocation provenance workflow.",
     "Trace Labs 2026.10 is a retrospective infrastructure pick, not a November release.",
-    "No independent installation or functional test performed."
+    "No independent installation or functional test performed.",
+    "Eight additional GitHub repositories verified through repository API on 14 November; no installation testing performed."
   ]
 }
