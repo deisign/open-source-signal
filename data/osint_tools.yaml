@@ -10362,3 +10362,178 @@
     входів; розділіть сирі матеріали та перетворення. Перевірте відтворення результату колегою.
   coverage_status: reviewed
   coverage_checked_at: '2026-10-24'
+
+- id: vidit
+  name: 'Vidit'
+  url: https://github.com/vidithq/vidit
+  category: geolocation
+  use_cases:
+  - 'Archive and map geolocated public conflict events'
+  input: 'Public source links, geolocation evidence and media'
+  output: 'Mapped events and source-linked case records'
+  access: free
+  requires_login: false
+  api_available: false
+  opsec_level: medium
+  legal_risk: medium
+  evidence_value: medium
+  automation_value: medium
+  learning_cost: medium
+  tested_status: untested
+  public: true
+  project_fit: 'Archive and map geolocated public conflict events'
+  notes: 'Beta-stage; a map marker is not independent verification.'
+  use_cases_uk:
+  - 'Архівувати й картографувати геолоковані публічні події'
+  input_uk:
+  - 'Публічні джерела, геолокаційні докази й медіа'
+  output_uk:
+  - 'Події на карті та записи з посиланнями на джерела'
+  notes_uk: 'Стадія beta; позначка на карті не є незалежним підтвердженням.'
+  coverage_status: reviewed
+  coverage_checked_at: '2026-11-14'
+  publication_refs:
+  - issue: 2026-11-14.json
+    item_index: 2
+    href: issues/open-source-signal-2026-11-14.html
+  mention_refs: []
+
+- id: sherlock
+  name: 'Sherlock'
+  url: https://github.com/sherlock-project/sherlock
+  category: data_analysis_monitoring
+  use_cases:
+  - 'Search public websites for a username'
+  input: 'Username'
+  output: 'Candidate profile URLs'
+  access: free
+  requires_login: false
+  api_available: false
+  opsec_level: medium
+  legal_risk: medium
+  evidence_value: medium
+  automation_value: medium
+  learning_cost: medium
+  tested_status: untested
+  public: true
+  project_fit: 'Search public websites for a username'
+  notes: 'Matching usernames do not prove shared identity.'
+  use_cases_uk:
+  - 'Шукати нікнейм на публічних сайтах'
+  input_uk:
+  - 'Нікнейм'
+  output_uk:
+  - 'Можливі URL профілів'
+  notes_uk: 'Однакові ніки не доводять тотожності особи.'
+  coverage_status: reviewed
+  coverage_checked_at: '2026-11-14'
+  publication_refs:
+  - issue: 2026-11-14.json
+    item_index: 6
+    href: issues/open-source-signal-2026-11-14.html
+  mention_refs: []
+
+- id: maigret
+  name: 'Maigret'
+  url: https://github.com/soxoj/maigret
+  category: data_analysis_monitoring
+  use_cases:
+  - 'Collect and report public username matches'
+  input: 'Username'
+  output: 'Structured account-discovery report'
+  access: free
+  requires_login: false
+  api_available: false
+  opsec_level: medium
+  legal_risk: medium
+  evidence_value: medium
+  automation_value: medium
+  learning_cost: medium
+  tested_status: untested
+  public: true
+  project_fit: 'Collect and report public username matches'
+  notes: 'False positives and changing website coverage require manual review.'
+  use_cases_uk:
+  - 'Збирати та документувати публічні збіги нікнеймів'
+  input_uk:
+  - 'Нікнейм'
+  output_uk:
+  - 'Структурований звіт про знайдені акаунти'
+  notes_uk: 'Хибні збіги та зміни сайтів потребують ручної перевірки.'
+  coverage_status: reviewed
+  coverage_checked_at: '2026-11-14'
+  publication_refs:
+  - issue: 2026-11-14.json
+    item_index: 7
+    href: issues/open-source-signal-2026-11-14.html
+  mention_refs: []
+
+- id: vis_network
+  name: 'vis-network'
+  url: https://github.com/visjs/vis-network
+  category: data_visualization
+  use_cases:
+  - 'Render interactive source-linked relationship graphs'
+  input: 'Nodes, edges and attributes'
+  output: 'Interactive network visualization'
+  access: free
+  requires_login: false
+  api_available: false
+  opsec_level: medium
+  legal_risk: medium
+  evidence_value: medium
+  automation_value: medium
+  learning_cost: medium
+  tested_status: untested
+  public: true
+  project_fit: 'Render interactive source-linked relationship graphs'
+  notes: 'Visualization alone does not establish causality or coordination.'
+  use_cases_uk:
+  - 'Візуалізувати інтерактивні графи зв’язків із джерелами'
+  input_uk:
+  - 'Вузли, зв’язки та атрибути'
+  output_uk:
+  - 'Інтерактивна мережева візуалізація'
+  notes_uk: 'Візуалізація сама собою не доводить причинності чи координації.'
+  coverage_status: reviewed
+  coverage_checked_at: '2026-11-14'
+  publication_refs:
+  - issue: 2026-11-14.json
+    item_index: 8
+    href: issues/open-source-signal-2026-11-14.html
+  mention_refs: []
+
+- id: mapillary_tools
+  name: 'Mapillary Tools'
+  url: https://github.com/mapillary/mapillary_tools
+  category: geolocation
+  use_cases:
+  - 'Process street-level imagery and location metadata'
+  input: 'Street-level images and location metadata'
+  output: 'Processed imagery and upload-ready assets'
+  access: free
+  requires_login: false
+  api_available: false
+  opsec_level: medium
+  legal_risk: medium
+  evidence_value: medium
+  automation_value: medium
+  learning_cost: medium
+  tested_status: untested
+  public: true
+  project_fit: 'Process street-level imagery and location metadata'
+  notes: 'Uploads may disclose precise locations; obtain consent and avoid sensitive imagery.'
+  use_cases_uk:
+  - 'Обробляти вуличні знімки й геометадані'
+  input_uk:
+  - 'Вуличні знімки та геометадані'
+  output_uk:
+  - 'Оброблені зображення й матеріали для завантаження'
+  notes_uk: 'Завантаження може розкривати точні координати; потрібна згода й обережність із чутливими знімками.'
+  coverage_status: reviewed
+  coverage_checked_at: '2026-11-14'
+  publication_refs:
+  - issue: 2026-11-14.json
+    item_index: 10
+    href: issues/open-source-signal-2026-11-14.html
+  mention_refs: []
