@@ -10379,7 +10379,7 @@
   evidence_value: medium
   automation_value: medium
   learning_cost: medium
-  tested_status: untested
+  tested_status: watchlist
   public: true
   project_fit: 'Archive and map geolocated public conflict events'
   notes: 'Beta-stage; a map marker is not independent verification.'
@@ -10414,7 +10414,7 @@
   evidence_value: medium
   automation_value: medium
   learning_cost: medium
-  tested_status: untested
+  tested_status: watchlist
   public: true
   project_fit: 'Search public websites for a username'
   notes: 'Matching usernames do not prove shared identity.'
@@ -10449,7 +10449,7 @@
   evidence_value: medium
   automation_value: medium
   learning_cost: medium
-  tested_status: untested
+  tested_status: watchlist
   public: true
   project_fit: 'Collect and report public username matches'
   notes: 'False positives and changing website coverage require manual review.'
@@ -10484,7 +10484,7 @@
   evidence_value: medium
   automation_value: medium
   learning_cost: medium
-  tested_status: untested
+  tested_status: watchlist
   public: true
   project_fit: 'Render interactive source-linked relationship graphs'
   notes: 'Visualization alone does not establish causality or coordination.'
@@ -10519,7 +10519,7 @@
   evidence_value: medium
   automation_value: medium
   learning_cost: medium
-  tested_status: untested
+  tested_status: watchlist
   public: true
   project_fit: 'Process street-level imagery and location metadata'
   notes: 'Uploads may disclose precise locations; obtain consent and avoid sensitive imagery.'
