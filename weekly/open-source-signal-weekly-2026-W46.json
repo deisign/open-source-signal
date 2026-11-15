@@ -1,0 +1,257 @@
+{
+  "issue_number": "W46",
+  "slug": "open-source-signal-weekly-2026-W46",
+  "output_name": "open-source-signal-weekly-2026-W46.html",
+  "date_iso": "2026-11-15",
+  "week_label_en": "9–15 November 2026",
+  "week_label_uk": "9–15 листопада 2026",
+  "title_en": "Open Source Signal Weekly",
+  "title_uk": "Тижневий сигнал відкритих джерел",
+  "subtitle_en": "A claim is not a confirmed outcome.",
+  "subtitle_uk": "Твердження ще не є підтвердженим результатом.",
+  "dek_en": "Week 46: disputed Russian casualty estimates, civilian infrastructure strikes, war-crimes evidence, prisoner-exchange negotiations and the limits of visual verification.",
+  "dek_uk": "Тиждень 46: суперечливі оцінки втрат Росії, удари по цивільній інфраструктурі, докази воєнних злочинів, переговори про обмін полоненими та межі візуальної перевірки.",
+  "editorial_frame": {
+    "what_this_is": "Bilingual editorial synthesis of 9–15 November 2026 using Daily Signal 9–13 November, Saturday Tool Radar 14 November and selected independently checked primary reporting.",
+    "what_this_is_not": "An independently audited casualty database, confirmation of a completed prisoner exchange, judicial finding or tool security benchmark."
+  },
+  "rubric_map": [
+    "📡 Signal of the Week / Головний сигнал тижня",
+    "🇺🇦 Ukraine Lens / Українська оптика",
+    "⚖️ War Crimes Verification / Верифікація воєнних злочинів",
+    "🕯️ Losses, Captivity & Missing / Втрати, полон, зниклі",
+    "🧭 Tradecraft / Методика",
+    "🧰 Tools / Datasets / Інструменти й набори даних",
+    "⚠️ Risk Watch / Межі й ризики"
+  ],
+  "editorial_note_en": "Across the week, source claims, observations and confirmed outcomes repeatedly diverged. Mortality estimates need denominators and dates; exchange agreements need verified transfer records; visual claims need provenance and independent checks. A trustworthy journal preserves these distinctions.",
+  "editorial_note_uk": "Протягом тижня заяви джерел, спостереження й підтверджені результати не раз розходилися. Оцінкам втрат потрібні критерії й дати; домовленостям про обмін — підтвердження передачі; візуальним твердженням — походження й незалежна перевірка. Надійний журнал зберігає ці відмінності.",
+  "items": [
+    {
+      "rubric_key": "signal",
+      "emoji": "📡",
+      "rubric_en": "Signal of the Week",
+      "rubric_uk": "Головний сигнал тижня",
+      "title_en": "Russia’s leaked mortality records: numbers without a common denominator",
+      "title_uk": "Витік даних про смертність у Росії: цифри без спільного знаменника",
+      "source_line_en": "The Guardian · 9 November; Ukrainska Pravda · 8 November",
+      "source_line_uk": "The Guardian · 9 листопада; «Українська правда» · 8 листопада",
+      "what_happened_en": "The Guardian analysed allegedly leaked Rosstat records and reported 412,576 death certificates explicitly linked to the war. Cyber Partisans and Silent Crow circulated other estimates, including 393,881 and 450,100, using different selection approaches.",
+      "what_happened_uk": "The Guardian проаналізувала ймовірно викрадені записи Росстату та повідомила про 412 576 свідоцтв про смерть із прямим зв’язком із війною. Cyber Partisans і Silent Crow навели інші оцінки, зокрема 393 881 та 450 100, за відмінними критеріями.",
+      "why_it_matters_en": "Different methodologies must not be combined into a single verified fatality count.",
+      "why_it_matters_uk": "Різні методики не можна зводити до одного нібито підтвердженого числа.",
+      "how_to_use_en": "Preserve each estimate with its source, criteria, coverage dates and verification status.",
+      "how_to_use_uk": "Зберігайте кожну оцінку разом із джерелом, критеріями, періодом і статусом перевірки.",
+      "limits_en": "The Guardian could not independently authenticate the full dataset; Rosstat disputed the disclosure of sensitive records.",
+      "limits_uk": "The Guardian не змогла незалежно підтвердити весь масив; Росстат заперечував витік чутливих записів.",
+      "tags": [
+        "accountability",
+        "casualties",
+        "data"
+      ]
+    },
+    {
+      "rubric_key": "ukraine",
+      "emoji": "🇺🇦",
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "title_en": "Infrastructure strikes: outage reports are not damage assessments",
+      "title_uk": "Удари по інфраструктурі: знеструмлення не дорівнює оцінці руйнувань",
+      "source_line_en": "Reuters · 10–12 November",
+      "source_line_uk": "Reuters · 10–12 листопада",
+      "what_happened_en": "Reports described electricity and utility disruptions in Kryvyi Rih and damage and civilian casualties following strikes in Kyiv; the events occurred at different locations and times.",
+      "what_happened_uk": "Повідомлення описували перебої електро-, водо- й теплопостачання у Кривому Розі та пошкодження й цивільні жертви після ударів по Києву; це різні події за місцем і часом.",
+      "why_it_matters_en": "A temporary service interruption does not prove a permanent loss of infrastructure capacity.",
+      "why_it_matters_uk": "Тимчасова перерва в наданні послуг не доводить тривалої втрати працездатності об’єкта.",
+      "how_to_use_en": "Track each incident by location, event time, reported casualties, affected services and later restoration updates.",
+      "how_to_use_uk": "Фіксуйте кожен інцидент за місцем, часом, повідомленнями про жертви, порушеними послугами та подальшим відновленням.",
+      "limits_en": "Initial reports were attributed to officials; independent physical-damage assessments were not established for every site.",
+      "limits_uk": "Початкові повідомлення спиралися на заяви посадовців; незалежну оцінку пошкоджень встановлено не для кожного об’єкта.",
+      "tags": [
+        "ukraine",
+        "civilian-harm"
+      ]
+    },
+    {
+      "rubric_key": "verification",
+      "emoji": "⚖️",
+      "rubric_en": "War Crimes Verification",
+      "rubric_uk": "Верифікація воєнних злочинів",
+      "title_en": "Two investigations, multiple evidence types",
+      "title_uk": "Два розслідування, кілька типів доказів",
+      "source_line_en": "CNN coverage via Egypt Independent · 11 November; Amnesty International · 12 November",
+      "source_line_uk": "Матеріал CNN через Egypt Independent · 11 листопада; Amnesty International · 12 листопада",
+      "what_happened_en": "Reporting on the 2 November Komyshuvakha attack described body-camera footage and geolocated video. Amnesty International documented the 1 March Abiemnom massacre using 82 interviews, satellite imagery and verified photographs and videos.",
+      "what_happened_uk": "Матеріал про удар 2 листопада по Комишувасі описував записи нагрудних камер і геолоковане відео. Amnesty International дослідила масове вбивство 1 березня в Абіємномі на основі 82 інтерв’ю, супутникових знімків і перевірених фото та відео.",
+      "why_it_matters_en": "Evidence triangulation is strongest when sources, observation times and independent corroboration remain visible.",
+      "why_it_matters_uk": "Зіставлення доказів сильніше, коли видно джерела, час спостережень і незалежні підтвердження.",
+      "how_to_use_en": "Build separate incident timelines; distinguish testimony, original media, imagery and analytical conclusions.",
+      "how_to_use_uk": "Створіть окремі хронології подій; розділяйте свідчення, оригінальні медіа, знімки й аналітичні висновки.",
+      "limits_en": "Neither investigation alone is a judicial finding; specific allegations require case-by-case assessment.",
+      "limits_uk": "Жодне з розслідувань саме по собі не є судовим рішенням; окремі твердження потребують перевірки.",
+      "tags": [
+        "war-crimes",
+        "verification"
+      ]
+    },
+    {
+      "rubric_key": "captivity",
+      "emoji": "🕯️",
+      "rubric_en": "Losses, Captivity & Missing",
+      "rubric_uk": "Втрати, полон, зниклі",
+      "title_en": "A negotiated prisoner exchange is not a completed transfer",
+      "title_uk": "Домовленість про обмін — не завершена передача полонених",
+      "source_line_en": "Reuters · 13–14 November; Mediazona · 6 November",
+      "source_line_uk": "Reuters · 13–14 листопада; «Медіазона» · 6 листопада",
+      "what_happened_en": "US envoy Jared Kushner described efforts toward a large prisoner exchange. On 14 November, Reuters reported a Ukrainian account of an agreement in principle covering more than 1,000 people; the cited reports did not establish a completed transfer.",
+      "what_happened_uk": "Представник США Джаред Кушнер говорив про підготовку великого обміну полоненими. 14 листопада Reuters передало українську заяву про принципову домовленість щодо понад тисячі людей; наведені повідомлення не підтверджують фактичної передачі.",
+      "why_it_matters_en": "A proposed or agreed exchange must not change a person's confirmed custody status.",
+      "why_it_matters_uk": "Пропозиція чи домовленість про обмін не змінює підтвердженого статусу перебування людини в полоні.",
+      "how_to_use_en": "Keep proposed, agreed, transferred and independently confirmed states separate; assess UAV specialism using person-level evidence.",
+      "how_to_use_uk": "Розділяйте статуси «запропоновано», «узгоджено», «передано» та «незалежно підтверджено»; спеціальність БпЛА перевіряйте за персональними доказами.",
+      "limits_en": "No individual transfer list was verified in these reports; unit affiliation alone does not establish UAV operator duties.",
+      "limits_uk": "У цих повідомленнях немає перевіреного списку переданих осіб; належність до підрозділу не доводить роботу оператором БпЛА.",
+      "tags": [
+        "pow",
+        "accountability"
+      ]
+    },
+    {
+      "rubric_key": "method",
+      "emoji": "🧭",
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "title_en": "Synthetic-looking battlefield footage and the map disclosure trap",
+      "title_uk": "Підозрілі бойові відео та ризики відкритих карт",
+      "source_line_en": "Financial Times · 10 November; Bellingcat · 5 November",
+      "source_line_uk": "Financial Times · 10 листопада; Bellingcat · 5 листопада",
+      "what_happened_en": "The Financial Times reported suspected AI-altered battlefield footage. Bellingcat examined how public map contributions can reveal sensitive information about military facilities.",
+      "what_happened_uk": "Financial Times повідомила про бойові відео з ознаками можливих ШІ-змін. Bellingcat дослідила, як публічні картографічні матеріали можуть розкривати чутливі відомості про військові об’єкти.",
+      "why_it_matters_en": "Visual plausibility is not proof of authenticity; public-source availability is not a reason to amplify sensitive details.",
+      "why_it_matters_uk": "Візуальна переконливість не доводить автентичності; відкритість джерела не означає потреби поширювати чутливі деталі.",
+      "how_to_use_en": "Preserve originals, hashes, timestamps, acquisition dates and alternative explanations; redact sensitive locations.",
+      "how_to_use_uk": "Зберігайте оригінали, хеші, часові позначки, дати знімання й альтернативні пояснення; приховуйте чутливі координати.",
+      "limits_en": "Suspicion of manipulation is not proof that every cited clip is synthetic.",
+      "limits_uk": "Підозра щодо маніпуляції не доводить, що кожне згадане відео є синтетичним.",
+      "tags": [
+        "media-forensics",
+        "opsec"
+      ]
+    },
+    {
+      "rubric_key": "tools",
+      "emoji": "🧰",
+      "rubric_en": "Tools / Datasets",
+      "rubric_uk": "Інструменти й набори даних",
+      "title_en": "Saturday Tool Radar: twelve tools, five new catalog entries",
+      "title_uk": "Суботній Tool Radar: 12 інструментів, п’ять нових у каталозі",
+      "source_line_en": "Open Source Signal Tool Radar #155 · 14 November",
+      "source_line_uk": "Open Source Signal Tool Radar #155 · 14 листопада",
+      "what_happened_en": "The Saturday issue reviewed 12 tools covering archiving, geolocation, relationship graphs, data cleaning and device security. Five previously absent tools were added to the site's Toolkit source catalog.",
+      "what_happened_uk": "Суботній випуск розглянув 12 інструментів для архівування, геолокації, графів зв’язків, очищення даних і безпеки пристроїв. П’ять відсутніх раніше позицій додано до вихідного каталогу Toolkit.",
+      "why_it_matters_en": "A reproducible workflow combines capture, provenance, review and explicit limits.",
+      "why_it_matters_uk": "Відтворюваний процес поєднує збереження, походження даних, перевірку й чіткі обмеження.",
+      "how_to_use_en": "Start with source preservation, then review location and identity evidence, and document transformations.",
+      "how_to_use_uk": "Починайте зі збереження джерел, далі перевіряйте геолокацію й ідентичності та документуйте перетворення.",
+      "limits_en": "Editorial selection, not independent installation testing or a security audit.",
+      "limits_uk": "Редакційна добірка, а не незалежний тест встановлення чи аудит безпеки.",
+      "tags": [
+        "tools",
+        "tool-radar"
+      ]
+    },
+    {
+      "rubric_key": "risk",
+      "emoji": "⚠️",
+      "rubric_en": "Risk Watch",
+      "rubric_uk": "Межі й ризики",
+      "title_en": "The same failure mode: treating a claim as a confirmed state",
+      "title_uk": "Спільна помилка: сприймати твердження як підтверджений стан",
+      "source_line_en": "Editorial synthesis · 9–15 November",
+      "source_line_uk": "Редакційний підсумок · 9–15 листопада",
+      "what_happened_en": "The week's sources included conflicting casualty estimates, uncompleted exchange negotiations, suspected video manipulation and sensitive mapping data.",
+      "what_happened_uk": "Джерела тижня містили суперечливі оцінки втрат, незавершені переговори про обмін, підозри щодо зміненого відео та чутливі картографічні дані.",
+      "why_it_matters_en": "A clear status model prevents speculation from silently becoming a fact in downstream databases.",
+      "why_it_matters_uk": "Чітка модель статусів не дозволяє припущенням непомітно ставати фактами в базах даних.",
+      "how_to_use_en": "Keep observation, source claim, analyst inference and confirmed outcome as distinct fields.",
+      "how_to_use_uk": "Розділяйте спостереження, заяву джерела, висновок аналітика й підтверджений результат.",
+      "limits_en": "This is a methodological synthesis, not a new factual incident report.",
+      "limits_uk": "Це методологічний підсумок, а не повідомлення про нову подію.",
+      "tags": [
+        "risk",
+        "verification"
+      ]
+    }
+  ],
+  "reading_list": [
+    {
+      "title": "The Guardian — Rosstat mortality records",
+      "href": "https://www.theguardian.com/world/2026/nov/09/russians-killed-ukraine-war-leaked-data",
+      "note": "Source or issue reference"
+    },
+    {
+      "title": "Ukrainska Pravda — competing leak estimates",
+      "href": "https://www.pravda.com.ua/eng/news/2026/11/08/8061862/",
+      "note": "Source or issue reference"
+    },
+    {
+      "title": "Reuters — Kryvyi Rih infrastructure",
+      "href": "https://www.reuters.com/world/europe/drone-attack-leaves-part-ukraines-kryvyi-rih-without-power-2026-11-10/",
+      "note": "Source or issue reference"
+    },
+    {
+      "title": "Reuters — Kyiv strikes",
+      "href": "https://www.reuters.com/world/europe/russia-ukraine-exchange-attacks-capitals-us-envoys-head-moscow-2026-11-12/",
+      "note": "Source or issue reference"
+    },
+    {
+      "title": "Amnesty International — Abiemnom investigation",
+      "href": "https://www.amnesty.org/en/latest/news/2026/11/south-sudan-authorities-un-must-investigate-failure-to-protect-victims-of-abiemnom-massacre/",
+      "note": "Source or issue reference"
+    },
+    {
+      "title": "Reuters — proposed prisoner exchange",
+      "href": "https://www.reuters.com/world/europe/kushner-says-us-working-toward-largest-prisoner-exchange-russias-war-ukraine-2026-11-13/",
+      "note": "Source or issue reference"
+    },
+    {
+      "title": "Financial Times — suspected AI video manipulation",
+      "href": "https://www.ft.com/content/7f36031b-ea90-4a3a-a570-a6c6ff96e45a",
+      "note": "Source or issue reference"
+    },
+    {
+      "title": "Bellingcat — map disclosure risks",
+      "href": "https://www.bellingcat.com/news/2026/11/05/how-online-maps-lay-bare-the-us-military-bases-targeted-by-iran/",
+      "note": "Source or issue reference"
+    },
+    {
+      "title": "Open Source Signal — Saturday Tool Radar",
+      "href": "https://osintsignal.org/issues/open-source-signal-2026-11-14.html",
+      "note": "Source or issue reference"
+    }
+  ],
+  "compact_sections": [
+    {
+      "rubric_key": "method",
+      "emoji": "🧭",
+      "title": "Evidence states / Статуси доказів",
+      "short_title": "Claim ≠ confirmed outcome",
+      "points": [
+        "Keep source claim, observation and analyst inference separate",
+        "Version counts and record their inclusion criteria",
+        "Confirm transfers before updating POW status"
+      ]
+    },
+    {
+      "rubric_key": "risk",
+      "emoji": "⚠️",
+      "title": "Publication safeguards / Запобіжники публікації",
+      "short_title": "Provenance before amplification",
+      "points": [
+        "Preserve original files and capture times",
+        "Do not infer identity or specialty from a unit label",
+        "Avoid disclosing sensitive current geolocations"
+      ]
+    }
+  ]
+}
