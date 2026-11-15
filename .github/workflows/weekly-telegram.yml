@@ -1,0 +1,41 @@
+name: Publish Weekly Telegram
+on:
+  push:
+    paths:
+      - 'telegram/weekly_requests/*.json'
+permissions:
+  contents: read
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Render weekly Telegram announcement
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path("weekly/open-source-signal-weekly-2026-W46.json")
+          j=json.loads(p.read_text(encoding="utf-8"))
+          url="https://osintsignal.org/weekly/"+j["output_name"]
+          lines=["📡 <b>ТИЖНЕВИЙ СИГНАЛ — W46</b>",
+                 "9–15 листопада 2026", "",
+                 "<b>Твердження ще не є підтвердженим результатом.</b>", ""]
+          for item in j["items"]:
+              lines.append(item["emoji"]+" <b>"+item["rubric_uk"]+"</b>")
+              lines.append(item["title_uk"])
+              lines.append("")
+          lines.extend(["Головне цього тижня: суперечливі оцінки втрат Росії, удари по цивільній інфраструктурі, перевірка доказів воєнних злочинів і переговори про обмін полоненими. Окремо — методика перевірки відео та 12 інструментів суботнього Tool Radar.","","Повний двомовний журнал: "+url])
+          text="\n".join(lines)
+          assert len(text)<3900,len(text)
+          Path("weekly-telegram.txt").write_text(text,encoding="utf-8")
+          print(text)
+          PY
+      - name: Send Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python send_telegram.py --text-file weekly-telegram.txt --disable-preview
