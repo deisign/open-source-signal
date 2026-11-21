@@ -3075,8 +3075,11 @@
     перекладачі й неправильний scope можуть зіпсувати доказ швидше, ніж бюрократ загубить козу. Запис
     додано за архівним оглядом 19 жовтня 2026; доступність, умови доступу й роботу повторно не тестували.'
   coverage_status: reviewed
-  coverage_checked_at: '2026-10-19'
+  coverage_checked_at: '2026-11-21'
   publication_refs:
+  - issue: 2026-11-21.json
+    item_index: 1
+    href: issues/open-source-signal-2026-11-21.html
   - issue: 2026-05-23.json
     item_index: 0
     href: issues/open-source-signal-2026-05-23.html
@@ -3846,8 +3849,11 @@
     як різні statuses. Запис додано за архівним оглядом 19 жовтня 2026; доступність, умови доступу й роботу
     повторно не тестували.
   coverage_status: reviewed
-  coverage_checked_at: '2026-10-19'
+  coverage_checked_at: '2026-11-21'
   publication_refs:
+  - issue: 2026-11-21.json
+    item_index: 6
+    href: issues/open-source-signal-2026-11-21.html
   - issue: 2026-06-06.json
     item_index: 4
     href: issues/open-source-signal-2026-06-06.html
@@ -10536,4 +10542,184 @@
   - issue: 2026-11-14.json
     item_index: 10
     href: issues/open-source-signal-2026-11-14.html
+  mention_refs: []
+
+- id: opensandbox
+  name: 'OpenSandbox'
+  url: https://github.com/opensandbox-group/OpenSandbox
+  category: data_analysis_monitoring
+  use_cases:
+  - 'Isolate agent code and file operations'
+  input: 'Run agents or code in disposable environments'
+  output: 'Sandbox execution logs and artifacts'
+  access: mixed
+  requires_login: false
+  api_available: false
+  access_details_verified: false
+  opsec_level: medium
+  legal_risk: medium
+  evidence_value: medium
+  automation_value: medium
+  learning_cost: medium
+  tested_status: untested
+  public: true
+  project_fit: 'Isolate agent code and file operations'
+  notes: 'Container isolation depends on configuration and is not an absolute security guarantee.'
+  use_cases_uk:
+  - 'Ізолювати код і файлові операції агентів'
+  input_uk:
+  - 'Запуск коду й агентів у тимчасових середовищах'
+  output_uk:
+  - 'Журнали запусків та артефакти'
+  notes_uk: 'Ізоляція контейнерів залежить від конфігурації й не гарантує повної безпеки.'
+  coverage_status: reviewed
+  coverage_checked_at: '2026-11-21'
+  publication_refs:
+  - issue: 2026-11-21.json
+    item_index: 0
+    href: issues/open-source-signal-2026-11-21.html
+  mention_refs: []
+
+- id: gbrain
+  name: 'GBrain'
+  url: https://github.com/garrytan/gbrain
+  category: data_analysis_monitoring
+  use_cases:
+  - 'Maintain source-linked agent memory'
+  input: 'Research notes and sourced claims'
+  output: 'Revisable agent memory records'
+  access: mixed
+  requires_login: false
+  api_available: false
+  access_details_verified: false
+  opsec_level: medium
+  legal_risk: medium
+  evidence_value: medium
+  automation_value: medium
+  learning_cost: medium
+  tested_status: untested
+  public: true
+  project_fit: 'Maintain source-linked agent memory'
+  notes: 'Agent memory does not independently validate facts; review privacy and retention.'
+  use_cases_uk:
+  - 'Зберігати пам’ять агента з джерелами'
+  input_uk:
+  - 'Нотатки й твердження з посиланнями'
+  output_uk:
+  - 'Записи пам’яті з можливістю виправлення'
+  notes_uk: 'Пам’ять агента не перевіряє факти самостійно; потрібна перевірка приватності та зберігання.'
+  coverage_status: reviewed
+  coverage_checked_at: '2026-11-21'
+  publication_refs:
+  - issue: 2026-11-21.json
+    item_index: 2
+    href: issues/open-source-signal-2026-11-21.html
+  mention_refs: []
+
+- id: transformers_js
+  name: 'Transformers.js'
+  url: https://github.com/huggingface/transformers.js
+  category: data_analysis_monitoring
+  use_cases:
+  - 'Run local multilingual ML inference'
+  input: 'Texts and local model inputs'
+  output: 'Model predictions and embeddings'
+  access: mixed
+  requires_login: false
+  api_available: false
+  access_details_verified: false
+  opsec_level: medium
+  legal_risk: medium
+  evidence_value: medium
+  automation_value: medium
+  learning_cost: medium
+  tested_status: untested
+  public: true
+  project_fit: 'Run local multilingual ML inference'
+  notes: 'Models may download over the network; outputs require verification.'
+  use_cases_uk:
+  - 'Запускати локальний багатомовний ML'
+  input_uk:
+  - 'Тексти й дані для локальних моделей'
+  output_uk:
+  - 'Прогнози моделей та ембединги'
+  notes_uk: 'Моделі можуть завантажуватися з мережі; результати потребують перевірки.'
+  coverage_status: reviewed
+  coverage_checked_at: '2026-11-21'
+  publication_refs:
+  - issue: 2026-11-21.json
+    item_index: 3
+    href: issues/open-source-signal-2026-11-21.html
+  mention_refs: []
+
+- id: openmotion
+  name: 'OpenMotion'
+  url: https://github.com/nexu-io/openmotion
+  category: data_visualization
+  use_cases:
+  - 'Create editable visual investigation explainers'
+  input: 'Scene assets, text and timeline'
+  output: 'Rendered video and editable project'
+  access: mixed
+  requires_login: false
+  api_available: false
+  access_details_verified: false
+  opsec_level: medium
+  legal_risk: medium
+  evidence_value: medium
+  automation_value: medium
+  learning_cost: medium
+  tested_status: untested
+  public: true
+  project_fit: 'Create editable visual investigation explainers'
+  notes: 'A rendered reconstruction is not evidence and needs editorial review.'
+  use_cases_uk:
+  - 'Створювати редаговані візуальні пояснення'
+  input_uk:
+  - 'Матеріали сцен, текст і таймлайн'
+  output_uk:
+  - 'Відео та редагований проєкт'
+  notes_uk: 'Візуальна реконструкція не є доказом і потребує редакційної перевірки.'
+  coverage_status: reviewed
+  coverage_checked_at: '2026-11-21'
+  publication_refs:
+  - issue: 2026-11-21.json
+    item_index: 4
+    href: issues/open-source-signal-2026-11-21.html
+  mention_refs: []
+
+- id: attackflow
+  name: 'AttackFlow'
+  url: https://github.com/osnolanarf/attackflow
+  category: data_visualization
+  use_cases:
+  - 'Visualize dated incident sequences'
+  input: 'Dated event notes'
+  output: 'Exportable incident timeline'
+  access: mixed
+  requires_login: false
+  api_available: false
+  access_details_verified: false
+  opsec_level: medium
+  legal_risk: medium
+  evidence_value: medium
+  automation_value: medium
+  learning_cost: medium
+  tested_status: untested
+  public: true
+  project_fit: 'Visualize dated incident sequences'
+  notes: 'A timeline illustrates claims but does not independently verify them.'
+  use_cases_uk:
+  - 'Візуалізувати датовані послідовності інцидентів'
+  input_uk:
+  - 'Датовані нотатки про події'
+  output_uk:
+  - 'Хронологія інциденту для експорту'
+  notes_uk: 'Хронологія ілюструє твердження, але не перевіряє їх самостійно.'
+  coverage_status: reviewed
+  coverage_checked_at: '2026-11-21'
+  publication_refs:
+  - issue: 2026-11-21.json
+    item_index: 5
+    href: issues/open-source-signal-2026-11-21.html
   mention_refs: []
