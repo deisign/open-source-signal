@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "description": "Curated Open Source Signal OSINT toolkit registry; inclusion does not imply independent security audit.",
+  "last_editorial_review": "2026-11-21",
+  "tools": [
+    {
+      "id": "opensandbox",
+      "name": "OpenSandbox",
+      "url": "https://github.com/opensandbox-group/OpenSandbox",
+      "category": "agent-isolation",
+      "description_en": "Disposable environments for agents and untrusted code",
+      "first_featured_issue": 165,
+      "first_featured_date": "2026-11-21",
+      "review_status": "documentation-reviewed",
+      "independently_tested": false
+    },
+    {
+      "id": "browsertrix-crawler",
+      "name": "Browsertrix Crawler",
+      "url": "https://github.com/webrecorder/browsertrix-crawler",
+      "category": "web-preservation",
+      "description_en": "Browser-based crawling and archival packages",
+      "first_featured_issue": 165,
+      "first_featured_date": "2026-11-21",
+      "review_status": "documentation-reviewed",
+      "independently_tested": false
+    },
+    {
+      "id": "gbrain",
+      "name": "GBrain",
+      "url": "https://github.com/garrytan/gbrain",
+      "category": "agent-memory",
+      "description_en": "Source-aware persistent agent memory",
+      "first_featured_issue": 165,
+      "first_featured_date": "2026-11-21",
+      "review_status": "documentation-reviewed",
+      "independently_tested": false
+    },
+    {
+      "id": "transformers-js",
+      "name": "Transformers.js",
+      "url": "https://github.com/huggingface/transformers.js",
+      "category": "local-ml",
+      "description_en": "Browser and JavaScript ML inference",
+      "first_featured_issue": 165,
+      "first_featured_date": "2026-11-21",
+      "review_status": "documentation-reviewed",
+      "independently_tested": false
+    },
+    {
+      "id": "openmotion",
+      "name": "OpenMotion",
+      "url": "https://github.com/nexu-io/openmotion",
+      "category": "visual-storytelling",
+      "description_en": "Editable timeline-based video production",
+      "first_featured_issue": 165,
+      "first_featured_date": "2026-11-21",
+      "review_status": "documentation-reviewed",
+      "independently_tested": false
+    },
+    {
+      "id": "attackflow",
+      "name": "AttackFlow",
+      "url": "https://github.com/osnolanarf/attackflow",
+      "category": "incident-timelines",
+      "description_en": "Standalone browser incident timeline visualization",
+      "first_featured_issue": 165,
+      "first_featured_date": "2026-11-21",
+      "review_status": "documentation-reviewed",
+      "independently_tested": false
+    },
+    {
+      "id": "opensanctions",
+      "name": "OpenSanctions",
+      "url": "https://github.com/opensanctions/opensanctions",
+      "category": "sanctions-entities",
+      "description_en": "Sanctions and entity normalization infrastructure",
+      "first_featured_issue": 165,
+      "first_featured_date": "2026-11-21",
+      "review_status": "documentation-reviewed",
+      "independently_tested": false
+    }
+  ]
+}
