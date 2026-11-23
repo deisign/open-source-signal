@@ -1,0 +1,235 @@
+{
+  "issue_number": "W47",
+  "slug": "open-source-signal-weekly-2026-W47",
+  "output_name": "open-source-signal-weekly-2026-W47.html",
+  "date_iso": "2026-11-22",
+  "week_label_en": "16–22 November 2026",
+  "week_label_uk": "16–22 листопада 2026",
+  "title_en": "Open Source Signal Weekly",
+  "title_uk": "Тижневий сигнал відкритих джерел",
+  "subtitle_en": "An observation is not an established outcome.",
+  "subtitle_uk": "Спостереження ще не є встановленим результатом.",
+  "dek_en": "Humanitarian pauses, territorial claims, OPCW evidence, casualties, maritime OSINT, tools and investigator safety.",
+  "dek_uk": "Гуманітарні паузи, спірний контроль територій, докази ОЗХЗ, втрати, морський OSINT, інструменти й безпека.",
+  "editorial_frame": {
+    "what_this_is": "Bilingual weekly synthesis of 16–22 November 2026.",
+    "what_this_is_not": "Independent confirmation of evacuations, battlefield control, casualties or attribution."
+  },
+  "rubric_map": [
+    "📡 Signal of the Week / Головний сигнал тижня",
+    "🇺🇦 Ukraine Lens / Українська оптика",
+    "⚖️ War Crimes Verification / Верифікація воєнних злочинів",
+    "🕯️ Losses, Captivity & Missing / Втрати, полон, зниклі",
+    "🧭 Tradecraft / Методика",
+    "🧰 Tools / Datasets / Інструменти й набори даних",
+    "⚠️ Risk Watch / Межі й ризики"
+  ],
+  "editorial_note_en": "Keep announcements, observed evidence and confirmed outcomes separate.",
+  "editorial_note_uk": "Розділяйте заяви, спостережувані докази й підтверджені результати.",
+  "items": [
+    {
+      "rubric_key": "signal",
+      "emoji": "📡",
+      "rubric_en": "Signal of the Week",
+      "rubric_uk": "Головний сигнал тижня",
+      "title_en": "Humanitarian pauses are not completed evacuations",
+      "title_uk": "Гуманітарні паузи — не завершена евакуація",
+      "what_happened_en": "Ukraine proposed localized pauses for civilian evacuations from 15 occupied settlements along the Dnipro. The earlier Oleshky pause is a precedent, not proof of a new agreement.",
+      "what_happened_uk": "Україна запропонувала локальні паузи для евакуації з 15 окупованих населених пунктів уздовж Дніпра. Попередня пауза в Олешках — прецедент, а не доказ нової домовленості.",
+      "why_it_matters_en": "Record proposal, acceptance, access and completed evacuation as separate states.",
+      "why_it_matters_uk": "Окремо фіксувати пропозицію, згоду, доступ і фактичну евакуацію.",
+      "how_to_use_en": "Record proposal, acceptance, access and completed evacuation as separate states.",
+      "how_to_use_uk": "Окремо фіксувати пропозицію, згоду, доступ і фактичну евакуацію.",
+      "limits_en": "The Kremlin had not responded as of ISW’s 21 November assessment.",
+      "limits_uk": "На момент оцінки ISW від 21 листопада відповіді Кремля не було.",
+      "source_line_en": "Source: https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-november-21-2026/",
+      "source_line_uk": "Джерело: https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-november-21-2026/",
+      "tags": [
+        "osint",
+        "verification"
+      ]
+    },
+    {
+      "rubric_key": "ukraine",
+      "emoji": "🇺🇦",
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "title_en": "A flag is not territorial control",
+      "title_uk": "Прапор не доводить контролю території",
+      "what_happened_en": "Geolocated Russian flag footage in Varachyne on 21 November was assessed as an infiltration episode, not proof of enduring control.",
+      "what_happened_uk": "Геолоковане відео з російським прапором у Варачиному 21 листопада ISW трактує як епізод проникнення, а не підтвердження сталого контролю.",
+      "why_it_matters_en": "Require persistence, multiple observations and temporal checks before changing control maps.",
+      "why_it_matters_uk": "Перед зміною карт контролю потрібні тривалість присутності, кілька спостережень і перевірка часу.",
+      "how_to_use_en": "Require persistence, multiple observations and temporal checks before changing control maps.",
+      "how_to_use_uk": "Перед зміною карт контролю потрібні тривалість присутності, кілька спостережень і перевірка часу.",
+      "limits_en": "ISW reported no strong evidence of changed control in northern Sumy Oblast on 22 November.",
+      "limits_uk": "ISW не мала переконливих доказів зміни контролю на півночі Сумщини 22 листопада.",
+      "source_line_en": "Source: https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-november-22-2026/",
+      "source_line_uk": "Джерело: https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-november-22-2026/",
+      "tags": [
+        "osint",
+        "verification"
+      ]
+    },
+    {
+      "rubric_key": "verification",
+      "emoji": "⚖️",
+      "rubric_en": "War Crimes Verification",
+      "rubric_uk": "Верифікація воєнних злочинів",
+      "title_en": "OPCW and the evidentiary ladder",
+      "title_uk": "ОЗХЗ і рівні доказування",
+      "what_happened_en": "An OPCW document circulated on 17 November concerns a Ukrainian investigation into alleged use of riot-control agents in a 2024 incident.",
+      "what_happened_uk": "Документ ОЗХЗ, оприлюднений 17 листопада, стосується українського розслідування ймовірного застосування засобів боротьби з масовими заворушеннями у 2024 році.",
+      "why_it_matters_en": "Separate the incident date, national findings, international circulation and legal attribution.",
+      "why_it_matters_uk": "Розділяти дату інциденту, національні висновки, міжнародне поширення й правову атрибуцію.",
+      "how_to_use_en": "Separate the incident date, national findings, international circulation and legal attribution.",
+      "how_to_use_uk": "Розділяти дату інциденту, національні висновки, міжнародне поширення й правову атрибуцію.",
+      "limits_en": "The document is not itself a final judicial finding.",
+      "limits_uk": "Документ сам собою не є остаточним судовим рішенням.",
+      "source_line_en": "Source: https://www.opcw.org/sites/default/files/documents/2026/11/c31s01%28e%29.pdf",
+      "source_line_uk": "Джерело: https://www.opcw.org/sites/default/files/documents/2026/11/c31s01%28e%29.pdf",
+      "tags": [
+        "osint",
+        "verification"
+      ]
+    },
+    {
+      "rubric_key": "captivity",
+      "emoji": "🕯️",
+      "rubric_en": "Losses, Captivity & Missing",
+      "rubric_uk": "Втрати, полон, зниклі",
+      "title_en": "Do not turn battlefield counts into named casualty lists",
+      "title_uk": "Не перетворювати бойові оцінки на поіменні списки",
+      "what_happened_en": "ISW relayed a Ukrainian brigade spokesperson’s estimate that roughly 80 percent of Russian losses in one Lyman-area context occurred during attempted river crossings.",
+      "what_happened_uk": "ISW передала оцінку представника української бригади, що близько 80% російських втрат у певному контексті на Лиманському напрямку припали на спроби переправи.",
+      "why_it_matters_en": "Preserve speaker, unit, geography, time window and denominator before comparison with named records.",
+      "why_it_matters_uk": "Зберігати автора, підрозділ, географію, період і знаменник перед зіставленням із поіменними даними.",
+      "how_to_use_en": "Preserve speaker, unit, geography, time window and denominator before comparison with named records.",
+      "how_to_use_uk": "Зберігати автора, підрозділ, географію, період і знаменник перед зіставленням із поіменними даними.",
+      "limits_en": "This is a local attributed estimate, not a verified nationwide death count.",
+      "limits_uk": "Це локальна оцінка зі слів джерела, а не підтверджений загальнодержавний підрахунок загиблих.",
+      "source_line_en": "Source: https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-november-22-2026/",
+      "source_line_uk": "Джерело: https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-november-22-2026/",
+      "tags": [
+        "osint",
+        "verification"
+      ]
+    },
+    {
+      "rubric_key": "method",
+      "emoji": "🧭",
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "title_en": "Sparta II: maritime evidence and legal geography",
+      "title_uk": "Sparta II: морські докази й правова географія",
+      "what_happened_en": "Reports of a 21 November drone strike on the Russian cargo vessel combine geolocated fire footage, AIS context and differing descriptions of EEZ, international and territorial waters.",
+      "what_happened_uk": "Повідомлення про удар 21 листопада по російському судну поєднують геолоковане відео пожежі, дані AIS та різні описи виключної економічної зони, міжнародних і територіальних вод.",
+      "why_it_matters_en": "Distinguish vessel location at strike time from subsequent drift and rescue location.",
+      "why_it_matters_uk": "Відокремлювати місце судна під час удару від подальшого дрейфу й місця рятувальних робіт.",
+      "how_to_use_en": "Distinguish vessel location at strike time from subsequent drift and rescue location.",
+      "how_to_use_uk": "Відокремлювати місце судна під час удару від подальшого дрейфу й місця рятувальних робіт.",
+      "limits_en": "AIS, geolocation and official statements are complementary, not interchangeable.",
+      "limits_uk": "AIS, геолокація та офіційні заяви доповнюють, але не замінюють одна одну.",
+      "source_line_en": "Source: https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-november-21-2026/",
+      "source_line_uk": "Джерело: https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-november-21-2026/",
+      "tags": [
+        "osint",
+        "verification"
+      ]
+    },
+    {
+      "rubric_key": "tools",
+      "emoji": "🧰",
+      "rubric_en": "Tools / Datasets",
+      "rubric_uk": "Інструменти й набори даних",
+      "title_en": "Seven tools, but historical deduplication matters",
+      "title_uk": "Сім інструментів, але важлива перевірка архіву",
+      "what_happened_en": "Tool Radar #165 featured OpenSandbox, Browsertrix, GBrain, Transformers.js, OpenMotion, AttackFlow and OpenSanctions.",
+      "what_happened_uk": "Tool Radar #165 розглянув OpenSandbox, Browsertrix, GBrain, Transformers.js, OpenMotion, AttackFlow та OpenSanctions.",
+      "why_it_matters_en": "Use the canonical Toolkit registry to identify earlier reviews and link new coverage without duplicating records.",
+      "why_it_matters_uk": "Перевіряти попередні огляди в основному реєстрі Toolkit і додавати посилання без дублювання записів.",
+      "how_to_use_en": "Use the canonical Toolkit registry to identify earlier reviews and link new coverage without duplicating records.",
+      "how_to_use_uk": "Перевіряти попередні огляди в основному реєстрі Toolkit і додавати посилання без дублювання записів.",
+      "limits_en": "Browsertrix and OpenSanctions had already appeared in earlier issues; do not label all seven first-time discoveries.",
+      "limits_uk": "Browsertrix та OpenSanctions вже згадувалися в попередніх випусках; усі сім не можна називати першими знахідками.",
+      "source_line_en": "Source: https://osintsignal.org/issues/open-source-signal-2026-11-21.html",
+      "source_line_uk": "Джерело: https://osintsignal.org/issues/open-source-signal-2026-11-21.html",
+      "tags": [
+        "osint",
+        "verification"
+      ]
+    },
+    {
+      "rubric_key": "risk",
+      "emoji": "⚠️",
+      "rubric_en": "Risk Watch",
+      "rubric_uk": "Межі й ризики",
+      "title_en": "Ad-based deanonymization and investigator safety",
+      "title_uk": "Деанонімізація через рекламу та безпека дослідника",
+      "what_happened_en": "Citizen Lab report 195 describes alleged large-scale deanonymization through advertising technology and names an actor DARK CARTOGRAPHER; technical attribution and disclosure continue.",
+      "what_happened_uk": "Звіт Citizen Lab №195 описує деанонімізацію через рекламні технології та називає актора DARK CARTOGRAPHER; технічна атрибуція й розкриття деталей тривають.",
+      "why_it_matters_en": "Treat advertising identifiers and investigator browsing context as potential exposure surfaces.",
+      "why_it_matters_uk": "Розглядати рекламні ідентифікатори та контекст перегляду дослідника як потенційні канали витоку.",
+      "how_to_use_en": "Treat advertising identifiers and investigator browsing context as potential exposure surfaces.",
+      "how_to_use_uk": "Розглядати рекламні ідентифікатори та контекст перегляду дослідника як потенційні канали витоку.",
+      "limits_en": "Do not infer named victims or definitive actor attribution beyond the report.",
+      "limits_uk": "Не встановлювати конкретних жертв чи остаточної атрибуції поза межами звіту.",
+      "source_line_en": "Source: https://citizenlab.ca/wp-content/uploads/2026/11/195_Exposing_AdFection.pdf",
+      "source_line_uk": "Джерело: https://citizenlab.ca/wp-content/uploads/2026/11/195_Exposing_AdFection.pdf",
+      "tags": [
+        "osint",
+        "verification"
+      ]
+    }
+  ],
+  "reading_list": [
+    {
+      "title": "Humanitarian pauses are not completed evacuations",
+      "href": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-november-21-2026/",
+      "note": "Signal of the Week"
+    },
+    {
+      "title": "A flag is not territorial control",
+      "href": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-november-22-2026/",
+      "note": "Ukraine Lens"
+    },
+    {
+      "title": "OPCW and the evidentiary ladder",
+      "href": "https://www.opcw.org/sites/default/files/documents/2026/11/c31s01%28e%29.pdf",
+      "note": "War Crimes Verification"
+    },
+    {
+      "title": "Do not turn battlefield counts into named casualty lists",
+      "href": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-november-22-2026/",
+      "note": "Losses, Captivity & Missing"
+    },
+    {
+      "title": "Sparta II: maritime evidence and legal geography",
+      "href": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-november-21-2026/",
+      "note": "Tradecraft"
+    },
+    {
+      "title": "Seven tools, but historical deduplication matters",
+      "href": "https://osintsignal.org/issues/open-source-signal-2026-11-21.html",
+      "note": "Tools / Datasets"
+    },
+    {
+      "title": "Ad-based deanonymization and investigator safety",
+      "href": "https://citizenlab.ca/wp-content/uploads/2026/11/195_Exposing_AdFection.pdf",
+      "note": "Risk Watch"
+    }
+  ],
+  "compact_sections": [
+    {
+      "rubric_key": "method",
+      "emoji": "🧭",
+      "title": "Evidence states / Стани доказів",
+      "short_title": "Claim ≠ outcome",
+      "points": [
+        "Separate proposal, observation and completed action",
+        "Preserve source attribution and dates",
+        "Do not turn estimates into named records"
+      ]
+    }
+  ]
+}
