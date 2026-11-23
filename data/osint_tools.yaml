@@ -10561,7 +10561,7 @@
   evidence_value: medium
   automation_value: medium
   learning_cost: medium
-  tested_status: untested
+  tested_status: watchlist
   public: true
   project_fit: 'Isolate agent code and file operations'
   notes: 'Container isolation depends on configuration and is not an absolute security guarantee.'
@@ -10597,7 +10597,7 @@
   evidence_value: medium
   automation_value: medium
   learning_cost: medium
-  tested_status: untested
+  tested_status: watchlist
   public: true
   project_fit: 'Maintain source-linked agent memory'
   notes: 'Agent memory does not independently validate facts; review privacy and retention.'
@@ -10633,7 +10633,7 @@
   evidence_value: medium
   automation_value: medium
   learning_cost: medium
-  tested_status: untested
+  tested_status: watchlist
   public: true
   project_fit: 'Run local multilingual ML inference'
   notes: 'Models may download over the network; outputs require verification.'
@@ -10669,7 +10669,7 @@
   evidence_value: medium
   automation_value: medium
   learning_cost: medium
-  tested_status: untested
+  tested_status: watchlist
   public: true
   project_fit: 'Create editable visual investigation explainers'
   notes: 'A rendered reconstruction is not evidence and needs editorial review.'
@@ -10705,7 +10705,7 @@
   evidence_value: medium
   automation_value: medium
   learning_cost: medium
-  tested_status: untested
+  tested_status: watchlist
   public: true
   project_fit: 'Visualize dated incident sequences'
   notes: 'A timeline illustrates claims but does not independently verify them.'
