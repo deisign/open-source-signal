@@ -1,0 +1,203 @@
+{
+  "issue_number": "166",
+  "date_iso": "2026-11-23",
+  "date_label_en": "23 November 2026",
+  "date_label_uk": "23 листопада 2026",
+  "slug": "open-source-signal",
+  "title_en": "Open Source Signal",
+  "title_uk": "Сигнал відкритих джерел",
+  "issue_type": "Daily Signal",
+  "language_label": "EN + UKR",
+  "subtitle_en": "Claims, images and attribution are different evidence states.",
+  "subtitle_uk": "Заяви, зображення й атрибуція — різні стани доказів.",
+  "dek_en": "Ukraine-focused verification, maritime OSINT, ad-tech surveillance and agent security.",
+  "dek_uk": "Верифікація з українською оптикою, морський OSINT, рекламне стеження й безпека агентів.",
+  "editorial_frame": {
+    "what_this_is": "Seven bilingual editorial cards for 23 November 2026.",
+    "what_this_is_not": "Independent confirmation of territorial control, attack attribution or new discoveries for every source."
+  },
+  "rubric_map": [
+    "📡 Signal One / Головний сигнал",
+    "🇺🇦 Ukraine Lens / Українська оптика",
+    "🕯️ Civilian Harm / Шкода цивільним",
+    "🧭 Verification / Верифікація",
+    "🚢 International / Міжнародний OSINT",
+    "👁️ Surveillance / Стеження",
+    "🛡️ Investigator OPSEC / Безпека дослідника"
+  ],
+  "footer_note": "Distinguish observation from claims and inference.",
+  "internal_notes": [
+    "Some reports concern events from 21–22 November.",
+    "The agent security report was originally dated 16 November."
+  ],
+  "items": [
+    {
+      "rubric_en": "Signal One",
+      "rubric_uk": "Головний сигнал",
+      "title_en": "Kaliningrad air defence: a visible event without a confirmed attacker",
+      "title_uk": "ППО Калінінграда: подія на відео без підтвердженого нападника",
+      "what_happened_en": "Geolocated footage published on 21 November shows air defences firing near Baltiysk. ISW could not establish what was targeted or confirm a Ukrainian attack.",
+      "what_happened_uk": "Геолоковане відео 21 листопада показує роботу ППО поблизу Балтійська. ISW не встановила ціль і не підтвердила українську атаку.",
+      "why_it_matters_en": "Separate visual observation, source claims and attribution.",
+      "why_it_matters_uk": "Розділяти візуальне спостереження, заяви й атрибуцію.",
+      "how_to_use_en": "Separate visual observation, source claims and attribution.",
+      "how_to_use_uk": "Розділяти візуальне спостереження, заяви й атрибуцію.",
+      "limits_en": "No confirmed attacker or target.",
+      "limits_uk": "Нападника й ціль не підтверджено.",
+      "source_url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-november-22-2026/",
+      "source_name": "Institute for the Study of War",
+      "source_date_label_en": "21–22 November 2026",
+      "source_date_label_uk": "21–22 листопада 2026",
+      "theme": "signal",
+      "emoji": "📡",
+      "tags": [
+        "osint",
+        "verification"
+      ]
+    },
+    {
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "title_en": "Old footage cannot establish current control",
+      "title_uk": "Старе відео не доводить поточного контролю",
+      "what_happened_en": "Russian sources circulated flag videos concerning Khrypuny, Volokhivka and Anyskyne; ISW warned the footage may be old or misleading.",
+      "what_happened_uk": "Російські джерела поширили відео з прапорами у Хрипунах, Волохівці та Аниськиному; ISW застерегла, що кадри можуть бути старими або оманливими.",
+      "why_it_matters_en": "Check first upload, shadows, terrain and independently dated changes before updating maps.",
+      "why_it_matters_uk": "Перевіряти першу публікацію, тіні, місцевість і незалежно датовані зміни до оновлення карт.",
+      "how_to_use_en": "Check first upload, shadows, terrain and independently dated changes before updating maps.",
+      "how_to_use_uk": "Перевіряти першу публікацію, тіні, місцевість і незалежно датовані зміни до оновлення карт.",
+      "limits_en": "ISW could not confirm the footage was recent.",
+      "limits_uk": "ISW не підтвердила актуальності відео.",
+      "source_url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-november-22-2026/",
+      "source_name": "Institute for the Study of War",
+      "source_date_label_en": "21–22 November 2026",
+      "source_date_label_uk": "21–22 листопада 2026",
+      "theme": "ukraine",
+      "emoji": "🇺🇦",
+      "tags": [
+        "osint",
+        "verification"
+      ]
+    },
+    {
+      "rubric_en": "Civilian Harm",
+      "rubric_uk": "Шкода цивільним",
+      "title_en": "Weekly strike totals need attribution and a time window",
+      "title_uk": "Тижневі підрахунки ударів потребують джерела й періоду",
+      "what_happened_en": "On 22 November Zelensky reported roughly 2,700 drones, 1,460 glide bombs and 165 missiles used against Ukraine over the preceding week.",
+      "what_happened_uk": "22 листопада Зеленський повідомив про приблизно 2700 дронів, 1460 керованих авіабомб і 165 ракет за попередній тиждень.",
+      "why_it_matters_en": "Preserve source, reporting window and categories; do not equate launched weapons with confirmed impacts.",
+      "why_it_matters_uk": "Зберігати джерело, період і категорії; не прирівнювати запущені засоби до підтверджених влучань.",
+      "how_to_use_en": "Preserve source, reporting window and categories; do not equate launched weapons with confirmed impacts.",
+      "how_to_use_uk": "Зберігати джерело, період і категорії; не прирівнювати запущені засоби до підтверджених влучань.",
+      "limits_en": "Attributed presidential figures, not an independently audited strike dataset.",
+      "limits_uk": "Це цифри із заяви президента, а не незалежно перевірений реєстр ударів.",
+      "source_url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-november-22-2026/",
+      "source_name": "Institute for the Study of War",
+      "source_date_label_en": "21–22 November 2026",
+      "source_date_label_uk": "21–22 листопада 2026",
+      "theme": "war-crimes",
+      "emoji": "🕯️",
+      "tags": [
+        "osint",
+        "verification"
+      ]
+    },
+    {
+      "rubric_en": "Verification",
+      "rubric_uk": "Верифікація",
+      "title_en": "Northern Sumy: contradictory control claims",
+      "title_uk": "Північ Сумщини: суперечливі заяви про контроль",
+      "what_happened_en": "Ukrainian and Russian sources gave conflicting accounts of Yablunivka, Oleksiivka and Varachyne on 21–22 November. ISW did not confirm a change in control.",
+      "what_happened_uk": "Українські та російські джерела суперечливо описували Яблунівку, Олексіївку та Варачине 21–22 листопада. ISW не підтвердила зміну контролю.",
+      "why_it_matters_en": "Mark claims as disputed and preserve imagery dates; avoid precise live tactical detail.",
+      "why_it_matters_uk": "Позначати заяви як спірні й зберігати дати кадрів; уникати оперативних тактичних деталей.",
+      "how_to_use_en": "Mark claims as disputed and preserve imagery dates; avoid precise live tactical detail.",
+      "how_to_use_uk": "Позначати заяви як спірні й зберігати дати кадрів; уникати оперативних тактичних деталей.",
+      "limits_en": "No independent confirmation of new control.",
+      "limits_uk": "Незалежного підтвердження нового контролю немає.",
+      "source_url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-november-22-2026/",
+      "source_name": "Institute for the Study of War",
+      "source_date_label_en": "21–22 November 2026",
+      "source_date_label_uk": "21–22 листопада 2026",
+      "theme": "map",
+      "emoji": "🧭",
+      "tags": [
+        "osint",
+        "verification"
+      ]
+    },
+    {
+      "rubric_en": "International",
+      "rubric_uk": "Міжнародний OSINT",
+      "title_en": "Sparta II: distinguish maritime zones and event timing",
+      "title_uk": "Sparta II: морські зони та час події",
+      "what_happened_en": "The reported strike on the Russian cargo ship was followed by drift into Finnish waters; AIS and official accounts describe different moments and legal zones.",
+      "what_happened_uk": "Після повідомленого удару російське вантажне судно дрейфувало у фінські води; AIS та офіційні заяви стосуються різних моментів і правових зон.",
+      "why_it_matters_en": "Keep strike location, drift, rescue and flag-state assertions separate.",
+      "why_it_matters_uk": "Розділяти місце удару, дрейф, порятунок і заяви держав.",
+      "how_to_use_en": "Keep strike location, drift, rescue and flag-state assertions separate.",
+      "how_to_use_uk": "Розділяти місце удару, дрейф, порятунок і заяви держав.",
+      "limits_en": "Cargo and full circumstances not independently established here.",
+      "limits_uk": "Вантаж і всі обставини редакція незалежно не встановила.",
+      "source_url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-november-21-2026/",
+      "source_name": "Institute for the Study of War",
+      "source_date_label_en": "21–22 November 2026",
+      "source_date_label_uk": "21–22 листопада 2026",
+      "theme": "infra",
+      "emoji": "🚢",
+      "tags": [
+        "osint",
+        "verification"
+      ]
+    },
+    {
+      "rubric_en": "Surveillance",
+      "rubric_uk": "Стеження",
+      "title_en": "Citizen Lab: advertising as a deanonymization channel",
+      "title_uk": "Citizen Lab: реклама як канал деанонімізації",
+      "what_happened_en": "Citizen Lab report 195 describes an actor it calls DARK CARTOGRAPHER using ad-tech vendors for user deanonymization since at least 2019.",
+      "what_happened_uk": "Звіт Citizen Lab №195 описує використання рекламних технологій актором DARK CARTOGRAPHER для деанонімізації користувачів щонайменше з 2019 року.",
+      "why_it_matters_en": "Review research browsing isolation and retention of ad identifiers.",
+      "why_it_matters_uk": "Перевірити ізоляцію дослідницького браузера та зберігання рекламних ідентифікаторів.",
+      "how_to_use_en": "Review research browsing isolation and retention of ad identifiers.",
+      "how_to_use_uk": "Перевірити ізоляцію дослідницького браузера та зберігання рекламних ідентифікаторів.",
+      "limits_en": "Further technical details and attribution are pending disclosure.",
+      "limits_uk": "Додаткові технічні деталі й атрибуція очікують розкриття.",
+      "source_url": "https://citizenlab.ca/wp-content/uploads/2026/11/195_Exposing_AdFection.pdf",
+      "source_name": "Citizen Lab",
+      "source_date_label_en": "November 2026",
+      "source_date_label_uk": "листопад 2026",
+      "theme": "surveillance",
+      "emoji": "👁️",
+      "tags": [
+        "osint",
+        "verification"
+      ]
+    },
+    {
+      "rubric_en": "Investigator OPSEC",
+      "rubric_uk": "Безпека дослідника",
+      "title_en": "Agent configuration is executable trust-sensitive material",
+      "title_uk": "Конфігурація агента — матеріал, критичний для довіри",
+      "what_happened_en": "GTIG reported malicious modifications to AI coding assistant settings in compromised repositories, potentially triggering unwanted downloads when assistants launch.",
+      "what_happened_uk": "GTIG повідомила про шкідливі зміни конфігурацій AI-кодинг-асистентів у скомпрометованих репозиторіях, які можуть запускати небажані завантаження.",
+      "why_it_matters_en": "Inspect execution hooks and configuration diffs before opening untrusted research projects.",
+      "why_it_matters_uk": "Перевіряти хуки виконання й зміни конфігурацій перед відкриттям неперевірених проєктів.",
+      "how_to_use_en": "Inspect execution hooks and configuration diffs before opening untrusted research projects.",
+      "how_to_use_uk": "Перевіряти хуки виконання й зміни конфігурацій перед відкриттям неперевірених проєктів.",
+      "limits_en": "Original report dated 16 November; not a newly discovered 23 November attack.",
+      "limits_uk": "Первинний звіт від 16 листопада; це не нова атака 23-го.",
+      "source_url": "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold",
+      "source_name": "Google Threat Intelligence Group",
+      "source_date_label_en": "16 November 2026",
+      "source_date_label_uk": "16 листопада 2026",
+      "theme": "opsec",
+      "emoji": "🛡️",
+      "tags": [
+        "osint",
+        "verification"
+      ]
+    }
+  ]
+}
