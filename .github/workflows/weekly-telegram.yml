@@ -18,17 +18,17 @@ jobs:
           python - <<'PY'
           import json
           from pathlib import Path
-          p=Path("weekly/open-source-signal-weekly-2026-W46.json")
+          p=Path("weekly/open-source-signal-weekly-2026-W47.json")
           j=json.loads(p.read_text(encoding="utf-8"))
           url="https://osintsignal.org/weekly/"+j["output_name"]
-          lines=["📡 <b>ТИЖНЕВИЙ СИГНАЛ — W46</b>",
-                 "9–15 листопада 2026", "",
-                 "<b>Твердження ще не є підтвердженим результатом.</b>", ""]
+          lines=["📡 <b>ТИЖНЕВИЙ СИГНАЛ — W47</b>",
+                 "16–22 листопада 2026", "",
+                 "<b>Спостереження ще не є встановленим результатом.</b>", ""]
           for item in j["items"]:
               lines.append(item["emoji"]+" <b>"+item["rubric_uk"]+"</b>")
               lines.append(item["title_uk"])
               lines.append("")
-          lines.extend(["Головне цього тижня: суперечливі оцінки втрат Росії, удари по цивільній інфраструктурі, перевірка доказів воєнних злочинів і переговори про обмін полоненими. Окремо — методика перевірки відео та 12 інструментів суботнього Tool Radar.","","Повний двомовний журнал: "+url])
+          lines.extend(["Головне цього тижня: гуманітарна евакуація, перевірка територіальних заяв, докази ОЗХЗ, оцінки втрат і морський OSINT. Окремо — безпека дослідників та суботній Tool Radar.","","Повний двомовний журнал: "+url])
           text="\n".join(lines)
           assert len(text)<3900,len(text)
           Path("weekly-telegram.txt").write_text(text,encoding="utf-8")
