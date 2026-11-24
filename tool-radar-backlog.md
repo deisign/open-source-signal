@@ -29,7 +29,7 @@ Evaluate on receipt and record the verdict, including rejections to avoid repeat
 
 ## Candidates
 
-No standalone tool candidates evaluated yet.
+Three standalone tool candidates assessed on 2026-11-24; see below.
 
 ## Methodology and reading candidates — 2026-11-24
 
@@ -43,3 +43,39 @@ Articles are not software. Keep them separate from public Toolkit entries; extra
 | [Cybersecurity UA — post 947](https://t.me/cybersecurity_ua/947) | WATCHLIST | Ukrainian defensive OPSEC resource per submitter. Exact URL accessible only as Telegram embed shell during review; full post, date and claims not verified. Reassess when content available. |
 
 Editorial idea: comparative benchmark of public Telegram channel search engines; no private-person lookup. Check existing Toolkit records before evaluating services individually. No hands-on testing performed during this intake. No publication or Toolkit changes approved.
+
+## Tool candidates — 2026-11-24: social monitoring and Telegram analysis
+
+Intake: OSINTFlow reference https://t.me/osintflow/17265 and direct links. Evaluations below are documentation/source reviews, not hands-on tests. Canonical Toolkit data/osint_tools.yaml checked: no matching entries by name.
+
+### RecentReborn — TEST_REQUIRED (editorial score 7/10)
+
+- URL: https://recentreborn.com/ ; pricing https://recentreborn.com/pricing ; system status https://recentreborn.com/status ; release notes https://recentreborn.com/release-notes
+- Category: Public social-media chronological discovery (Instagram, TikTok, YouTube).
+- Documented: newest-first discovery by hashtag/keyword/location (platform-dependent); Chrome extension, dashboard, search history, REST API and MCP introduced in 2026.
+- Pricing checked: Free 10 searches/day, 1-day history, Chrome extension and hashtag suggestions; Pro $9.99/month, 100 searches/day, 30-day history and exports; Business $39.99/month, 500/day, 60-day history and profile detail lookup. Refresh and load-more consume credits.
+- Significant known limitation: provider status page says Instagram's changes have disabled chronological posts/reels results, with no near-term restoration anticipated. Provider says Instagram location, TikTok and YouTube search remain unaffected. Therefore do NOT present full Instagram coverage as currently working.
+- OSINT fit: early discovery of public event footage and cross-platform keyword monitoring. Freshness, comprehensiveness and chronological guarantees not independently measured; paid black-box infrastructure and query/data handling need review.
+- Next step: controlled test using non-personal public hashtags and known timestamped videos across platforms. Measure coverage, lag, ordering, duplicate rate, source-link preservation, actual quotas and OPSEC. Compare against native searches/other monitored services.
+- Publication: not yet. Toolkit: not yet. No hands-on execution performed.
+
+### TelepathyDB — WATCHLIST (provisional editorial score 6/10)
+
+- URL: https://telepathydb.com/ ; vendor: https://prose.ltd/
+- Category: Commercial Telegram public-channel search, historical archive, analytics.
+- Vendor-documented: multilingual/boolean text and image search, forwards/network analytics, archive of public channels, engagement, translations, API. Vendor asserts large coverage; independent corpus-size and freshness testing absent.
+- Availability: direct product landing page showed Anvil application error when checked 2026-11-24. Do not treat 14-day/no-card trial claim from submitter as verified current pricing; independently confirm when service recovers.
+- Fit: potential source for historical public-post retrieval and comparative channel coverage; redundancy with local telegram-osint-metasearch must be tested, not assumed.
+- Risks: paid hosted third-party query confidentiality; provider selection/corpus biases; missing/edited/deleted post semantics; risk of private-person deanonymization. Limit tests to public channels.
+- Publication: not yet. Toolkit: not yet. No hands-on access tested.
+
+### Telepathy Community — REJECTED (editorial score 2/10)
+
+- Repository: https://github.com/prose-intelligence-ltd/Telepathy-Community
+- Category: Python CLI for Telegram chat archiving and analytics. MIT. Described features include public chat scans, media/replies, forward edges and Gephi export.
+- Verified from repository README 2026-11-24: owner explicitly states no active maintenance; last toolkit-source modification 2024-07-12; subsequent 2026 pushes were repository housekeeping. README documents unparseable main source (IndentationError), inconsistent Telethon dependency versions (setup.py vs requirements.txt), and inconsistent package version identifiers. GitHub repository metadata last_push 2026-08-13 does NOT indicate new functional releases.
+- Decision: not recommend installation or Tool Radar feature in current condition; useful only as historical methodology/reference. Consider an actively maintained repaired fork if independently tested.
+- Safety: avoid user/location lookup functions and any deanonymization of private persons. No installation tests were run.
+- Publication: no. Toolkit: no.
+
+Source confidence: provider claims are labelled as such; GitHub maintenance assessment grounded in the repository's own prominent notice, but no local install was run. These assessments must be refreshed before a later issue.
