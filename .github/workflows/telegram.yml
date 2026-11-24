@@ -198,30 +198,35 @@ jobs:
 
       - name: Commit Telegram sent log
         if: steps.duplicate.outputs.should_send == 'true'
+        shell: bash
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+          # The build step can dirty tracked files. Commit only the sent log
+          # and restore any other tracked modifications before rebasing.
           git add data/telegram_sent.json
-
+          git diff --name-only -z | xargs -0 -r git restore --
           if git diff --cached --quiet; then
             echo "No sent-log changes to commit."
-          else
-            git commit -m "Record Telegram announcement for ${{ env.ISSUE }} (${{ env.LANG }})"
-            # Another publisher may have pushed while Telegram was being sent.
-            # Preserve both updates; never rerun the Telegram send for a log-only retry.
-            for attempt in 1 2 3 4 5; do
-              git fetch origin main
-              if git rebase origin/main && git push origin HEAD:main; then
-                echo "Telegram sent log recorded."
-                exit 0
-              fi
-              git rebase --abort 2>/dev/null || true
-              sleep "$attempt"
-            done
-            echo "Telegram was sent, but the sent log could not be pushed after retries." >&2
-            exit 1
+            exit 0
           fi
+
+          git commit -m "Record Telegram announcement for ${{ env.ISSUE }} (${{ env.LANG }})"
+
+          # The message has already been sent. Retry ONLY the log push.
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            if git rebase origin/main && git push origin HEAD:main; then
+              echo "Telegram sent log recorded."
+              exit 0
+            fi
+            git rebase --abort 2>/dev/null || true
+            sleep "$attempt"
+          done
+          echo "Telegram was sent, but the sent log could not be pushed after retries." >&2
+          exit 1
 
       - name: Skip duplicate notice
         if: steps.duplicate.outputs.should_send != 'true'
