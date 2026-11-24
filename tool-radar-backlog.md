@@ -29,4 +29,17 @@ Evaluate on receipt and record the verdict, including rejections to avoid repeat
 
 ## Candidates
 
-No candidates submitted to this register yet.
+No standalone tool candidates evaluated yet.
+
+## Methodology and reading candidates — 2026-11-24
+
+Articles are not software. Keep them separate from public Toolkit entries; extract and evaluate individual tools separately.
+
+| Source | Status | Editorial assessment |
+|---|---|---|
+| [Tech Tactician — 12 Best Telegram Search Engines](https://techtactician.com/find-telegram-channels-best-search-engines/) | TEST_REQUIRED | Austin Maurice; 2025-07-01, updated 2026-07-28. Author reports testing; TGWorld explicitly offline. Useful discovery list, not an independent benchmark. Compare public-channel search coverage, freshness, relevance, access and privacy with standardized nonpersonal queries. Individual services not yet independently tested. |
+| [Hackers Arise — You Can't Hide on Telegram](https://hackers-arise.com/open-source-intelligence-or-osint-you-cant-hide-on-telegram/) | REJECTED | OTW, 2025-02-20. Basic concepts mixed with privacy-invasive deanonymization and third-party bot recommendations; unsuitable for editorial endorsement. |
+| [0xINT — Telegram OSINT Investigation](https://oxint.io/blog/telegram-osint-investigation/) | WATCHLIST | 2026-04-10. Commercial methodology article; useful selective background on public-channel repost graphs and evidence preservation. Overconfident attribution claims and unsafe recommendations preclude blanket endorsement. Independently verify any selected technique. |
+| [Cybersecurity UA — post 947](https://t.me/cybersecurity_ua/947) | WATCHLIST | Ukrainian defensive OPSEC resource per submitter. Exact URL accessible only as Telegram embed shell during review; full post, date and claims not verified. Reassess when content available. |
+
+Editorial idea: comparative benchmark of public Telegram channel search engines; no private-person lookup. Check existing Toolkit records before evaluating services individually. No hands-on testing performed during this intake. No publication or Toolkit changes approved.
