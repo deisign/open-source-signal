@@ -79,3 +79,100 @@ Intake: OSINTFlow reference https://t.me/osintflow/17265 and direct links. Evalu
 - Publication: no. Toolkit: no.
 
 Source confidence: provider claims are labelled as such; GitHub maintenance assessment grounded in the repository's own prominent notice, but no local install was run. These assessments must be refreshed before a later issue.
+
+
+## Candidate intake — 2026-11-24: broad OSINTFlow batch
+
+This batch contains **50 distinct candidates/references**. Evaluation is editorial, not hands-on execution. Checked selected official pages and GitHub metadata/README on 2026-11-24; other descriptions remain unverified intake leads. READY is an editorial shortlist, not a test certificate. Existing Toolkit entries must never be duplicated. No tool has been installed or tested during intake.
+
+### Search syntax, privacy and defensive hygiene
+
+| Candidate | Status | Editorial assessment |
+|---|---|---|
+| [One-Liner-OSINT](https://github.com/yogsec/One-Liner-OSINT) | REJECTED | MIT, active August 2026, but repetitive dorks, obsolete cache syntax, credential-hunting examples and unreliable search semantics; do not endorse |
+| [Go for Dorks!](https://dorks.xen00rw.me/) | WATCHLIST | Multi-engine dork builder, latest site update Dec 2025; limited novelty; query semantics untested |
+| [Best Free Data Breach Checker Tools](https://www.digitalfootprintcheck.com/free-data-breach-checker) | WATCHLIST | Vendor-published comparison; not impartial testing; use only for leads to defensive self-check resources |
+| [Research Clinic Security](https://researchclinic.net/#Security) | READY | Paul Myers' investigation reference directory, useful for defensive exposure tools and methodology; individually verify links |
+| [Cybersecurity UA /1126](https://t.me/cybersecurity_ua/1126) | WATCHLIST | Defensive self-removal from Google; full post not reviewed; confirm platform policies independently |
+| [Cybersecurity UA /1241](https://t.me/cybersecurity_ua/1241) | WATCHLIST | Nonconsensual content/impersonation reporting; full post not reviewed |
+| [Cybersecurity UA /1204](https://t.me/cybersecurity_ua/1204) | WATCHLIST | Self-data removal collection; full post not reviewed |
+| [OSINT Atlas](https://intelfocus.org/osint-atlas/) | TEST_REQUIRED | Intel Focus catalogue shows 151 entries in source; test curation, update dates, links and overlap |
+
+### Extraction, archiving and browser infrastructure
+
+| Candidate | Status | Editorial assessment |
+|---|---|---|
+| [Firecrawl](https://firecrawl.dev/) | TEST_REQUIRED | Hosted extraction; test page-to-Markdown, reference preservation, pricing and data retention |
+| [Jina AI Reader](https://jina.ai/reader/) | TEST_REQUIRED | Hosted readable text extraction; compare with Defuddle and Crawl4AI; quotas unverified |
+| [Apify](https://apify.com/) | WATCHLIST | Marketplace not one product; actor quality and cost vary; no standalone Tool Radar slot yet |
+| [Thunderbit](https://thunderbit.com/) | WATCHLIST | Browser extraction convenience; price, security and distinctiveness not verified |
+| [RSS.app](https://rss.app/) | TEST_REQUIRED | Website/social RSS generation; benchmark freshness and source fidelity against existing media-monitoring/n8n |
+| [Crawl4AI](https://github.com/unclecode/crawl4ai) | TOOLKIT | Existing canonical id crawl4ai; maintained Apache-2.0, no duplicate |
+| [Browser Use](https://github.com/browser-use/browser-use) | TEST_REQUIRED | MIT browser-agent framework; assess traceability, dependencies, reproducibility and privacy |
+| [Crawlee](https://github.com/apify/crawlee) | TEST_REQUIRED | Apache-2.0 crawler, actively maintained; compare JS/TS against Scrapy and local stack |
+| [Scrapy](https://github.com/scrapy/scrapy) | READY | Mature maintained BSD-3-Clause Python crawler; baseline utility, not automatically novel news |
+| [Scrapling](https://github.com/D4Vinci/Scrapling) | TEST_REQUIRED | Maintained BSD-3-Clause; documented adaptive selectors and extraction, high relevance to unstable source sites |
+| [AutoScraper](https://github.com/alirezamika/autoscraper) | WATCHLIST | MIT example-driven extractor; unknown resilience to modern dynamic sites, likely less robust than Scrapling |
+| [Defuddle](https://github.com/kepano/defuddle) | TEST_REQUIRED | Maintained MIT content-to-Markdown parser used in Obsidian Web Clipper; strong potential for source-aware pipeline |
+| [curl_cffi](https://github.com/lexiforest/curl_cffi) | WATCHLIST | Maintained MIT low-level HTTP/browser-fingerprint transport component; no standalone editorial novelty |
+| [curl-impersonate](https://github.com/lwthiker/curl-impersonate) | REJECTED | Older related project last repository push July 2024; redundant with maintained curl_cffi as presented |
+| [CloakBrowser](https://github.com/CloakHQ/CloakBrowser) | WATCHLIST | MIT patched browser, recent development; claimed anti-bot success unverified, free versus Pro binaries differ; security/terms risks |
+| [invisible_playwright](https://github.com/feder-cr/invisible_playwright) | WATCHLIST | Patched Firefox wrapper; maintenance indicated by changelog, binary trust and anti-detection marketing require audit |
+
+### Geospatial, Telegram, identity search and audio
+
+| Candidate | Status | Editorial assessment |
+|---|---|---|
+| [Soar Atlas](https://soaratlas.com/) | TEST_REQUIRED | Satellite maps and timelines; JS-only app inaccessible to text fetch. Verify capture countdown, watermark, dates, provenance and licensing |
+| [Teleteg](https://teleteg.com/) | TEST_REQUIRED | Public channel/group index with activity, language and creation filters; claims about searching individual users' messages not independently verified |
+| [uFind.name](https://ufind.name/) | WATCHLIST | Reported Google CSE wrapper; inaccessible during review, privacy/false-positive concerns and limited novelty |
+| [IDCrawl](https://www.idcrawl.com/) | WATCHLIST | People search alternative, untested; avoid private-person profiling and false identity inference |
+| [Webmii](https://webmii.com/) | WATCHLIST | Public name-search lead, untested; name collisions |
+| [Social Searcher](https://www.social-searcher.com/) | TEST_REQUIRED | Search for public social mentions; benchmark against RecentReborn on same public terms |
+| [User Searcher](https://www.user-searcher.com/) | WATCHLIST | Username search, untested; matching handle does not prove identity |
+| [WhatsMyName](https://whatsmyname.app/) | TEST_REQUIRED | Username-search resource; validate supported-site recency and false-positive behavior |
+| [Sherlock](https://github.com/sherlock-project/sherlock) | TOOLKIT | Already exists in canonical Toolkit, id sherlock |
+| [Namechk](https://namechk.com/) | WATCHLIST | Username/domain availability only, not identity verification |
+| [DTMF Tone Generator and Decoder](https://freetoolcabin.com/dtmf-tone-generator/) | TEST_REQUIRED | Despite title, page describes decoder; test symbol accuracy with controlled consenting audio, don't expose phone numbers |
+| [DOPPLERGEIST](https://github.com/1337isnot1337/DOPPLERGEIST) | TEST_REQUIRED | Aircraft acoustic Doppler and ADS-B location hypothesis; PolyForm Noncommercial source-available, not open-source; time/geographic bounds, large downloads and independent accuracy validation essential |
+
+### Tool directories and research databases
+
+| Candidate | Status | Editorial assessment |
+|---|---|---|
+| [Bellingcat Online Investigation Toolkit](https://bellingcat.gitbook.io/toolkit) | TOOLKIT | Already in canonical Toolkit, id bellingcat_online_investigation_toolkit |
+| [OSINT Tools Library](https://tools.osintnewsletter.com/) | WATCHLIST | External directory; check dead links and curation against current Toolkit |
+| [Awesome OSINT](https://github.com/jivoi/awesome-osint) | WATCHLIST | Maintained open-source resource list; no standalone functionality, compare with existing directories |
+| [OSINT Stuff Tool Collection](https://github.com/cipher387/osint_stuff_tool_collection) | TEST_REQUIRED | Active GitHub collection with niche leads, validate links/dedup before editorial endorsement |
+| [The OSINT Rack](https://osintrack.com/) | WATCHLIST | Thematic tool directory, current curation and usefulness not verified |
+| [OCCRP ID — Research Databases](https://id.occrp.org/databases/) | READY | Relevant global research-database catalogue for public-interest company/court/procurement investigations; database discovery not verification |
+
+### Media authenticity and deepfake verification
+
+| Candidate | Status | Editorial assessment |
+|---|---|---|
+| [DeepFake-O-Meter](https://zinc.cse.buffalo.edu/ubmdfl/deep-o-meter/) | TEST_REQUIRED | Academic multi-detector tool; verify present support, input handling, error rates and data retention |
+| [Deepware Scanner](https://deepware.ai/us/index.html) | WATCHLIST | Vendor deepfake video scanner; modality and independent accuracy unverified |
+| [Reality Defender](https://www.realitydefender.com/) | WATCHLIST | Commercial multimodal classifier; unverified benchmarks, privacy and false positives |
+| [Sensity AI](https://sensity.ai/) | WATCHLIST | Commercial synthetic media detection; accuracy/terms unverified |
+| [AI or Not](https://www.aiornot.com/) | WATCHLIST | Commercial synthetic-content classifier; detection score not proof |
+| [InVID / WeVerify](https://www.invid-project.eu/tools-and-services/invid-verification-plugin) | TOOLKIT | Already in canonical Toolkit id invid_weverify; keyframe/source verification is not definitive deepfake detection |
+| [Hiya Deepfake Voice Detector](https://www.hiya.com/products/deepfake-voice-detector) | WATCHLIST | Vendor voice classifier; modalities, reliability and processing privacy not yet tested |
+
+### Browser fingerprinting and investigator OPSEC
+
+| Candidate | Status | Editorial assessment |
+|---|---|---|
+| [Detect.Expert](https://github.com/vektort13/Detect.Expert) | TEST_REQUIRED | New MIT fingerprint forensics extension, repo created Nov 7 2026; 158-API guard claimed, strong defensive angle; source/permission audit required, README notes no IP/TLS/engine spoof and detector blind spots |
+
+### Editorial shortlist and evaluation protocol
+
+Priority tests: **DOPPLERGEIST** (novel, high uncertainty and noncommercial licence), **Defuddle** (editorial Markdown extraction), **Scrapling** (robust scraping), **Soar Atlas** (imagery dates), **Teleteg** (compare with internal telegram-osint-metasearch), **Detect.Expert** (observable browser tracking), **RSS.app** (source-feed continuity). Strong reference entries: **OCCRP ID**, **Research Clinic** and **Scrapy**. Already in Toolkit and not new: **Crawl4AI, Sherlock, Bellingcat Toolkit, InVID/WeVerify**.
+
+Controlled comparisons should use legal/public sample data and independently timestamped reference records, record version and date, capture original URL and checksums where applicable, measure precision/recall and missing-data behavior, test privacy/OPSEC and licence limits. No credential harvesting, private-person deanonymization, illicit access or operational targeting. Deepfake classifiers offer uncertainty signals, never proof of authenticity or fabrication.
+
+Source notes: GitHub metadata accessed for yogsec/One-Liner-OSINT, 1337isnot1337/DOPPLERGEIST, vektort13/Detect.Expert, crawl4ai, browser-use, Crawlee, Scrapy, Scrapling, AutoScraper, Defuddle, curl_cffi, curl-impersonate, CloakBrowser, Awesome OSINT and OSINT Stuff; product descriptions checked selectively via official pages. DOPPLERGEIST explicitly PolyForm Noncommercial; its examples are not independent benchmarks. Detect.Expert README calls Chrome store listing pending and acknowledges browser-level blind spots. Teleteg's own documentation emphasizes indexing public channels/groups rather than proving person-message search. Do not equate GitHub push dates to new working feature releases.
+
+Other OSINTFlow posts mentioned Google/Drive/DuckDuckGo/Bing/YouTube/Yandex query guides: these are **search-method articles**, not additional software candidates. Treat them as a reading-reference bundle until individually examined: https://t.me/osintflow/13267, https://t.me/osintflow/3861, https://t.me/osintflow/3519, https://t.me/osintflow/8387, https://t.me/osintflow/13089, https://t.me/osintflow/12850, https://t.me/osintflow/12959, https://t.me/osintflow/727, https://t.me/osintflow/11487. The alleged Soar release posts https://x.com/SoarAtlas/status/2097942789904568677 and OSINT Atlas launch https://x.com/IntelFocusHQ/status/2089260224813080936 are pointers only; verify original posting dates before describing as 'today's' news.
+
+No public issue created; no Telegram request created; no canonical Toolkit edits made.
