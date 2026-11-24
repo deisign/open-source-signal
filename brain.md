@@ -78,3 +78,7 @@ Allowed tested_status: core, recommended, situational, watchlist, caution, depre
 - Weekly Telegram workflow is hardcoded and lacks durable duplicate protection. Generalization is separate engineering work, not an improvised change during publication.
 - Review redundant data/toolkit.json separately.
 - Keep source verification distinct from successful rendering/deployment: green CI does not establish factual accuracy or URL validity.
+
+## 8. Tool Radar candidate intake
+
+Read `tool-radar-backlog.md` before Saturday selection and Toolkit updates. Evaluate user-submitted tools on receipt, record verdicts including rejections, and deduplicate against prior issues and the canonical Toolkit. Intake is not publication approval. Backlog statuses are separate from Toolkit tested_status values.
