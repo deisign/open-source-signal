@@ -1,0 +1,152 @@
+{
+  "issue_number": "168",
+  "date_iso": "2026-11-25",
+  "date_label_en": "25 November 2026",
+  "date_label_uk": "25 листопада 2026",
+  "slug": "open-source-signal",
+  "title_en": "Open Source Signal",
+  "title_uk": "Сигнал відкритих джерел",
+  "issue_type": "Daily Signal",
+  "language_label": "EN + UKR",
+  "subtitle_en": "From documentation to accountability.",
+  "subtitle_uk": "Від документування до відповідальності.",
+  "dek_en": "Five signals on accountability, investigative methods and surveillance.",
+  "dek_uk": "П’ять сигналів про відповідальність, методику розслідувань та стеження.",
+  "editorial_frame": {
+    "what_this_is": "Bilingual source-attributed editorial digest for 25 November 2026.",
+    "what_this_is_not": "Independent forensic or judicial verification."
+  },
+  "rubric_map": [
+    "📡 Signal One / Головний сигнал",
+    "🇺🇦 Ukraine Lens / Українська оптика",
+    "🧭 Tradecraft / Методика",
+    "🔎 Surveillance Watch / Інфраструктура стеження",
+    "🧰 Toolbox / Інструментарій"
+  ],
+  "footer_note": "Open Source Signal — preserve sources, document uncertainty, verify independently.",
+  "internal_notes": [
+    "Reduced to five distinct items after source review. Official search-index text checked for Fortify Rights, Council of Europe, GIJN and UK DfT; direct open failed for first two. Defuddle repository metadata checked during prior intake; no hands-on test. GIJN event completion unverified."
+  ],
+  "items": [
+    {
+      "rubric_en": "Signal One",
+      "rubric_uk": "Головний сигнал",
+      "theme": "ukraine",
+      "emoji": "📡",
+      "source_name": "Fortify Rights / Truth Hounds",
+      "source_url": "https://www.fortifyrights.org/ukr-inv-2026-11-24/",
+      "source_date_label_en": "24 November 2026",
+      "source_date_label_uk": "24 листопада 2026",
+      "title_en": "Foreign recruitment: from documentation to criminal proceedings",
+      "title_uk": "Вербування іноземців: від документування до кримінального провадження",
+      "what_happened_en": "The organisations report that Ukraine announced a human-trafficking investigation on 6 November, following their March study of recruitment of Bangladeshi nationals.",
+      "what_happened_uk": "Правозахисники повідомляють про оголошене 6 листопада українське розслідування торгівлі людьми після березневого дослідження вербування громадян Бангладеш.",
+      "why_it_matters_en": "Recruitment and captivity records can illuminate cross-border exploitation.",
+      "why_it_matters_uk": "Дані про вербування та полон допомагають досліджувати транскордонну експлуатацію.",
+      "how_to_use_en": "Separate recruitment, coercion, military service and captivity; protect interviewees.",
+      "how_to_use_uk": "Розрізняти вербування, примус, військову службу та полон; захищати опитаних.",
+      "limits_en": "Opening proceedings is not a conviction; the statement is dated 24 November, not the opening date.",
+      "limits_uk": "Відкриття провадження не є вироком; 24 листопада — дата заяви, а не відкриття справи.",
+      "tags": [
+        "daily",
+        "accountability"
+      ]
+    },
+    {
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "theme": "ukraine",
+      "emoji": "🇺🇦",
+      "source_name": "Council of Europe",
+      "source_url": "https://www.coe.int/en/web/kyiv/-/development-of-standards-for-pre-trial-investigations-into-cases-of-torture-and-ill-treatment-for-the-state-bureau-of-investigation-and-the-office-of-the-prosecutor-general-completed-with-council-of-europe-support",
+      "source_date_label_en": "24 November 2026",
+      "source_date_label_uk": "24 листопада 2026",
+      "title_en": "Torture investigation standards reach drafting milestone",
+      "title_uk": "Завершено розробку стандартів розслідування катувань",
+      "what_happened_en": "The Council of Europe reports that Ukrainian investigators and prosecutors completed work on standards at a 23–24 November meeting.",
+      "what_happened_uk": "Рада Європи повідомляє про завершення роботи над стандартами для слідчих ДБР і прокурорів на засіданні 23–24 листопада.",
+      "why_it_matters_en": "Consistent procedures matter for accountability.",
+      "why_it_matters_uk": "Узгоджені процедури важливі для забезпечення відповідальності.",
+      "how_to_use_en": "Track the final joint order and distinguish source records from legal findings.",
+      "how_to_use_uk": "Відстежувати спільний наказ та розрізняти первинні матеріали й правові висновки.",
+      "limits_en": "Formal approval and implementation remain pending.",
+      "limits_uk": "Формальне затвердження та впровадження ще попереду.",
+      "tags": [
+        "daily",
+        "justice"
+      ]
+    },
+    {
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "theme": "verification",
+      "emoji": "🧭",
+      "source_name": "GIJN / ICIJ",
+      "source_url": "https://gijn.org/academy/how-to-investigate-cryptocurrency/",
+      "source_date_label_en": "16 October 2026; training scheduled 24 November",
+      "source_date_label_uk": "16 жовтня 2026; навчання заплановане на 24 листопада",
+      "title_en": "Blockchain records and attribution",
+      "title_uk": "Записи блокчейну та атрибуція",
+      "what_happened_en": "GIJN announced a cryptocurrency investigation training with ICIJ for 24 November, emphasizing primary-source checks.",
+      "what_happened_uk": "GIJN анонсувала спільне з ICIJ навчання з криптовалютних розслідувань на 24 листопада з акцентом на перевірці першоджерел.",
+      "why_it_matters_en": "Transaction visibility does not establish ownership.",
+      "why_it_matters_uk": "Видимість транзакцій не встановлює власника.",
+      "how_to_use_en": "Distinguish recorded transfers from independently supported ownership claims.",
+      "how_to_use_uk": "Розрізняти зафіксовані перекази та незалежно підтверджені твердження про власність.",
+      "limits_en": "The announcement establishes the planned session, not its completion or tool accuracy.",
+      "limits_uk": "Анонс підтверджує запланований захід, а не його проведення чи точність інструментів.",
+      "tags": [
+        "daily",
+        "finance"
+      ]
+    },
+    {
+      "rubric_en": "Surveillance Watch",
+      "rubric_uk": "Інфраструктура стеження",
+      "theme": "surveillance",
+      "emoji": "🔎",
+      "source_name": "UK Department for Transport",
+      "source_url": "https://www.gov.uk/government/news/new-digital-number-plates-to-help-police-crackdown-on-criminal-drone-use",
+      "source_date_label_en": "24 November 2026",
+      "source_date_label_uk": "24 листопада 2026",
+      "title_en": "Drone identification trial in London",
+      "title_uk": "Випробування системи ідентифікації дронів у Лондоні",
+      "what_happened_en": "The UK government announced a police drone-identification trial in London, intended to extend detection coverage.",
+      "what_happened_uk": "Уряд Великої Британії оголосив про випробування системи ідентифікації дронів для поліції Лондона з метою розширення покриття.",
+      "why_it_matters_en": "Identification infrastructure raises questions about data access and oversight.",
+      "why_it_matters_uk": "Інфраструктура ідентифікації порушує питання доступу до даних та нагляду.",
+      "how_to_use_en": "Track published governance, retention and evaluation documents.",
+      "how_to_use_uk": "Відстежувати оприлюднені документи щодо нагляду, зберігання даних та оцінки результатів.",
+      "limits_en": "The announcement does not establish achieved performance.",
+      "limits_uk": "Оголошення не встановлює фактичної ефективності системи.",
+      "tags": [
+        "daily",
+        "privacy"
+      ]
+    },
+    {
+      "rubric_en": "Toolbox",
+      "rubric_uk": "Інструментарій",
+      "theme": "verification",
+      "emoji": "🧰",
+      "source_name": "Defuddle",
+      "source_url": "https://github.com/kepano/defuddle",
+      "source_date_label_en": "Repository review, 24 November 2026",
+      "source_date_label_uk": "Огляд репозиторію, 24 листопада 2026",
+      "title_en": "Extracted text is a derivative record",
+      "title_uk": "Вилучений текст є похідним матеріалом",
+      "what_happened_en": "The MIT-licensed Defuddle project extracts main webpage content as Markdown.",
+      "what_happened_uk": "Проєкт Defuddle з ліцензією MIT виділяє основний вміст вебсторінок у Markdown.",
+      "why_it_matters_en": "Clean text helps search and analysis but can omit context.",
+      "why_it_matters_uk": "Очищений текст полегшує пошук та аналіз, але може втрачати контекст.",
+      "how_to_use_en": "Keep original captures, source URLs and retrieval dates separately.",
+      "how_to_use_uk": "Окремо зберігати оригінальні копії, URL джерел та дати отримання.",
+      "limits_en": "Editorial repository review, not a new-release report or hands-on benchmark.",
+      "limits_uk": "Редакційний огляд репозиторію, а не новина про реліз чи практичний тест.",
+      "tags": [
+        "daily",
+        "archiving"
+      ]
+    }
+  ]
+}
