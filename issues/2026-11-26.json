@@ -1,0 +1,202 @@
+{
+  "issue_number": "169",
+  "date_iso": "2026-11-26",
+  "date_label_en": "26 November 2026",
+  "date_label_uk": "26 листопада 2026",
+  "slug": "open-source-signal",
+  "title_en": "Open Source Signal",
+  "title_uk": "Сигнал відкритих джерел",
+  "issue_type": "Daily Signal",
+  "language_label": "EN + UKR",
+  "subtitle_en": "Transparency, evidence chains and investigative resilience.",
+  "subtitle_uk": "Прозорість, ланцюги доказів та стійкість розслідувань.",
+  "dek_en": "Seven signals on Ukrainian accountability and international investigative practice.",
+  "dek_uk": "Сім сигналів про українську підзвітність та міжнародну практику розслідувань.",
+  "editorial_frame": {
+    "what_this_is": "Bilingual source-attributed editorial digest for 26 November 2026.",
+    "what_this_is_not": "Independent forensic or judicial verification."
+  },
+  "rubric_map": [
+    "📡 Signal One / Головний сигнал",
+    "🇺🇦 Ukraine Lens / Українська оптика",
+    "🕯️ Losses, Captivity & Missing / Втрати, полон, зниклі",
+    "🗺️ Map Room / Картографічна кімната",
+    "🛡️ Investigator OPSEC / Безпека дослідника",
+    "🧭 Tradecraft / Методика",
+    "📊 Casefile / Розбір кейсу"
+  ],
+  "footer_note": "Open Source Signal — preserve sources, document uncertainty, verify independently.",
+  "internal_notes": [
+    "All seven canonical article URLs and supporting text retrieved via search index on 26 November; direct fetch returned cache/access errors, not verified HTTP 404. Hromadske canonical non-AMP URL used. Missing in Ukraine is retrospective and LLM-assisted; no dataset audit. GIJN Lithium Atlas describes earlier research."
+  ],
+  "items": [
+    {
+      "rubric_en": "Signal One",
+      "rubric_uk": "Головний сигнал",
+      "theme": "ukraine",
+      "emoji": "📡",
+      "source_name": "Hromadske",
+      "source_url": "https://hromadske.ua/en/zakoproyekty/274952-security-or-transparency-ukraine-debates-restoring-asset-declarations-for-intelligence-officers",
+      "source_date_label_en": "25 November 2026",
+      "source_date_label_uk": "25 листопада 2026",
+      "title_en": "Transparency without exposing intelligence personnel",
+      "title_uk": "Прозорість без розкриття співробітників розвідки",
+      "what_happened_en": "Parliament is considering renewed financial disclosure requirements for security and intelligence personnel, with safeguards against dangerous public disclosure.",
+      "what_happened_uk": "Парламент розглядає відновлення декларування для співробітників силових органів із запобіжниками проти небезпечного розкриття даних.",
+      "why_it_matters_en": "Financial accountability and public access are distinct policy choices.",
+      "why_it_matters_uk": "Фінансова підзвітність та публічний доступ є різними питаннями.",
+      "how_to_use_en": "Track the bill, amendments and final access rules separately.",
+      "how_to_use_uk": "Окремо відстежувати законопроєкт, поправки та остаточні правила доступу.",
+      "limits_en": "A proposal is not enacted law.",
+      "limits_uk": "Законопроєкт ще не є чинним законом.",
+      "tags": [
+        "daily",
+        "ukraine"
+      ]
+    },
+    {
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "theme": "ukraine",
+      "emoji": "🇺🇦",
+      "source_name": "The Kyiv Independent",
+      "source_url": "https://kyivindependent.com/exclusive-freshly-made-european-american-components-found-in-russian-drones-attacking-ukraine/",
+      "source_date_label_en": "24 November 2026",
+      "source_date_label_uk": "24 листопада 2026",
+      "title_en": "Tracing restricted technology through supply chains",
+      "title_uk": "Розслідування постачання підсанкційних технологій",
+      "what_happened_en": "A collaborative investigation reports evidence of foreign components manufactured after export restrictions were introduced.",
+      "what_happened_uk": "Спільне журналістське розслідування описує докази наявності іноземних компонентів, виготовлених після запровадження експортних обмежень.",
+      "why_it_matters_en": "Manufacturing dates challenge explanations based solely on old stock.",
+      "why_it_matters_uk": "Дати виробництва ставлять під сумнів пояснення винятково старими запасами.",
+      "how_to_use_en": "Compare documented dates with trade records and manufacturers’ responses.",
+      "how_to_use_uk": "Зіставляти документовані дати з торговельними записами та відповідями виробників.",
+      "limits_en": "Presence of a product does not prove knowing involvement by its manufacturer; partner outlets form one investigation.",
+      "limits_uk": "Наявність продукції не доводить свідомої участі виробника; публікації партнерів є одним розслідуванням.",
+      "tags": [
+        "daily",
+        "ukraine"
+      ]
+    },
+    {
+      "rubric_en": "Losses, Captivity & Missing",
+      "rubric_uk": "Втрати, полон, зниклі",
+      "theme": "ukraine",
+      "emoji": "🕯️",
+      "source_name": "Координаційний штаб",
+      "source_url": "https://koordshtab.gov.ua/posts/ukrayina-hotova-do-provedennya-masshtabnoho-obminu-viyskovopolonenymy-4014",
+      "source_date_label_en": "25 November 2026",
+      "source_date_label_uk": "25 листопада 2026",
+      "title_en": "Exchange readiness is not a completed exchange",
+      "title_uk": "Готовність до обміну не є фактом обміну",
+      "what_happened_en": "Ukraine’s coordination headquarters published a statement confirming readiness for a prisoner exchange.",
+      "what_happened_uk": "Координаційний штаб повідомив про готовність України до обміну військовополоненими.",
+      "why_it_matters_en": "Official statements and completed exchanges are different event types.",
+      "why_it_matters_uk": "Офіційні заяви та завершені обміни є різними типами подій.",
+      "how_to_use_en": "Record readiness, agreement and completed returns separately.",
+      "how_to_use_uk": "Окремо фіксувати готовність, погодження та фактичне повернення людей.",
+      "limits_en": "The statement does not establish a date or final participant list.",
+      "limits_uk": "Заява не встановлює дати чи остаточного складу обміну.",
+      "tags": [
+        "daily",
+        "ukraine"
+      ]
+    },
+    {
+      "rubric_en": "Map Room",
+      "rubric_uk": "Картографічна кімната",
+      "theme": "global",
+      "emoji": "🗺️",
+      "source_name": "GIJN / SEJournal",
+      "source_url": "https://gijn.org/stories/lithium-treasure-map-investigative-journalists/",
+      "source_date_label_en": "26 November 2026",
+      "source_date_label_uk": "26 листопада 2026",
+      "title_en": "Lithium Atlas: mapping resource development",
+      "title_uk": "Lithium Atlas: картографування ресурсних проєктів",
+      "what_happened_en": "GIJN describes an investigative collaboration that mapped more than 500 prospective lithium extraction projects worldwide.",
+      "what_happened_uk": "GIJN описує спільне розслідування, у межах якого нанесено на карту понад 500 перспективних проєктів видобутку літію.",
+      "why_it_matters_en": "A reusable map connects geographic, ownership and environmental context.",
+      "why_it_matters_uk": "Карта поєднує географічний, корпоративний та екологічний контекст.",
+      "how_to_use_en": "Distinguish development stages and document dataset provenance.",
+      "how_to_use_uk": "Розрізняти стадії розвитку та документувати походження даних.",
+      "limits_en": "Prospective projects are not operating mines; the article describes earlier research.",
+      "limits_uk": "Перспективні проєкти не є діючими шахтами; стаття описує раніше проведене дослідження.",
+      "tags": [
+        "daily",
+        "global"
+      ]
+    },
+    {
+      "rubric_en": "Investigator OPSEC",
+      "rubric_uk": "Безпека дослідника",
+      "theme": "global",
+      "emoji": "🛡️",
+      "source_name": "GIJN",
+      "source_url": "https://gijn.org/stories/proekt-gijn-member-profile/",
+      "source_date_label_en": "24 November 2026",
+      "source_date_label_uk": "24 листопада 2026",
+      "title_en": "Investigating an authoritarian state from exile",
+      "title_uk": "Розслідування авторитарної держави з-за кордону",
+      "what_happened_en": "GIJN profiles Proekt and its shift toward data-driven reporting following forced relocation in 2021.",
+      "what_happened_uk": "GIJN розповідає про «Проект» і посилення ролі аналізу даних після вимушеного переїзду редакції у 2021 році.",
+      "why_it_matters_en": "Editorial continuity depends on organisational resilience as well as technical tools.",
+      "why_it_matters_uk": "Безперервність роботи редакції залежить від організаційної стійкості, а не лише від інструментів.",
+      "how_to_use_en": "Plan secure source handling, backups and legal support.",
+      "how_to_use_uk": "Планувати захист джерел, резервне копіювання та юридичну підтримку.",
+      "limits_en": "Exile does not eliminate risks to sources inside the country.",
+      "limits_uk": "Еміграція не усуває ризиків для джерел усередині країни.",
+      "tags": [
+        "daily",
+        "global"
+      ]
+    },
+    {
+      "rubric_en": "Tradecraft",
+      "rubric_uk": "Методика",
+      "theme": "verification",
+      "emoji": "🧭",
+      "source_name": "GIJN",
+      "source_url": "https://gijn.org/stories/investigating-personal-stories/",
+      "source_date_label_en": "25 November 2026",
+      "source_date_label_uk": "25 листопада 2026",
+      "title_en": "Family archives and historical accountability",
+      "title_uk": "Родинні архіви та історична відповідальність",
+      "what_happened_en": "Annie Hylton examines ethical questions in investigations drawing on journalists’ own family histories.",
+      "what_happened_uk": "Енні Гілтон розглядає етичні питання розслідувань, що спираються на родинні історії самих журналістів.",
+      "why_it_matters_en": "Personal testimony can illuminate historical events but requires independent checks.",
+      "why_it_matters_uk": "Особисті свідчення можуть висвітлювати історичні події, але потребують незалежної перевірки.",
+      "how_to_use_en": "Compare testimony with archival documents and assess public interest before disclosure.",
+      "how_to_use_uk": "Зіставляти свідчення з архівними документами та оцінювати суспільний інтерес перед публікацією.",
+      "limits_en": "Kinship does not imply responsibility for another person’s crimes.",
+      "limits_uk": "Спорідненість не означає відповідальності за чужі злочини.",
+      "tags": [
+        "daily",
+        "verification"
+      ]
+    },
+    {
+      "rubric_en": "Casefile",
+      "rubric_uk": "Розбір кейсу",
+      "theme": "ukraine",
+      "emoji": "📊",
+      "source_name": "Missing in Ukraine",
+      "source_url": "https://missinginukraine.org/about",
+      "source_date_label_en": "14 September 2026 — retrospective",
+      "source_date_label_uk": "14 вересня 2026 — ретроспектива",
+      "title_en": "Foreign fighter records: dataset provenance",
+      "title_uk": "Облік іноземців у російських військах: походження даних",
+      "what_happened_en": "The independent publisher describes an automated, language-model-assisted pipeline based primarily on a public Telegram channel, supplemented by other sources and sampled human review.",
+      "what_happened_uk": "Незалежний автор описує автоматизований збір із використанням мовної моделі, переважно на основі одного публічного Telegram-каналу, додаткових джерел та вибіркового людського контролю.",
+      "why_it_matters_en": "Structured records can inherit source errors and extraction mistakes.",
+      "why_it_matters_uk": "Структуровані записи можуть успадковувати помилки джерел та автоматичного вилучення.",
+      "how_to_use_en": "Verify aggregate claims against original sources; distinguish events from individuals and reported statuses.",
+      "how_to_use_uk": "Перевіряти агреговані твердження за першоджерелами; розрізняти події, осіб та повідомлені статуси.",
+      "limits_en": "Retrospective methodology review, not an official register or independently audited dataset.",
+      "limits_uk": "Ретроспективний огляд методології, а не офіційний реєстр чи незалежно перевірена база.",
+      "tags": [
+        "daily",
+        "ukraine"
+      ]
+    }
+  ]
+}
