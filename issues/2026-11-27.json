@@ -1,0 +1,202 @@
+{
+  "issue_number": "170",
+  "date_iso": "2026-11-27",
+  "date_label_en": "27 November 2026",
+  "date_label_uk": "27 листопада 2026",
+  "slug": "open-source-signal",
+  "title_en": "Open Source Signal",
+  "title_uk": "Сигнал відкритих джерел",
+  "issue_type": "Daily Signal",
+  "language_label": "EN + UKR",
+  "subtitle_en": "Evidence, identification and the limits of certainty.",
+  "subtitle_uk": "Докази, ідентифікація та межі достовірності.",
+  "dek_en": "Seven signals on Ukrainian accountability and international OSINT.",
+  "dek_uk": "Сім сигналів про українську підзвітність та міжнародний OSINT.",
+  "editorial_frame": {
+    "what_this_is": "Bilingual source-attributed editorial digest for 27 November 2026.",
+    "what_this_is_not": "Independent forensic or judicial verification."
+  },
+  "rubric_map": [
+    "📡 Signal One / Головний сигнал",
+    "📊 Losses, Captivity & Missing / Втрати, полон, зниклі",
+    "⚖️ War Crimes Verification / Верифікація воєнних злочинів",
+    "🇺🇦 Ukraine Lens / Українська оптика",
+    "🌐 Platform Watch / Платформний радар",
+    "🤖 AI Verification / ШІ та верифікація",
+    "🛡️ Investigator OPSEC / Безпека дослідника"
+  ],
+  "footer_note": "Open Source Signal — preserve sources, document uncertainty, verify independently.",
+  "internal_notes": [
+    "All seven article URLs and supporting material retrieved from indexed original publisher pages on 27 November. Direct HTTP checks and local tests not performed. Meduza/Mediazona estimate attributed to authors, not Rosstat; no raw leaked records linked. Resemble is secondary vendor reporting. EDRi retrospective."
+  ],
+  "items": [
+    {
+      "rubric_en": "Signal One",
+      "rubric_uk": "Головний сигнал",
+      "theme": "ukraine",
+      "emoji": "📡",
+      "source_name": "SSU",
+      "source_url": "https://www.ssu.gov.ua/en/novyny/sbu-spilno-z-inshymy-skladovymy-syl-bezpeky-ta-oborony-orhanizuvala-cherhovu-repatriatsiiu-til-zahyblykh-oborontsiv-ukrainy16",
+      "source_date_label_en": "26 November 2026",
+      "source_date_label_uk": "26 листопада 2026",
+      "title_en": "Repatriation is not identification",
+      "title_uk": "Репатріація ще не означає ідентифікацію",
+      "what_happened_en": "The SSU reported the return of 250 bodies on 26 November and announced forthcoming forensic identification.",
+      "what_happened_uk": "СБУ повідомила про повернення 250 тіл 26 листопада та проведення подальших експертиз для ідентифікації.",
+      "why_it_matters_en": "Returned remains and confirmed identities are distinct measures.",
+      "why_it_matters_uk": "Кількість повернутих тіл та встановлених особистостей — різні показники.",
+      "how_to_use_en": "Record repatriation and identification dates separately.",
+      "how_to_use_uk": "Окремо фіксувати дати репатріації та ідентифікації.",
+      "limits_en": "Final identification results are not yet established by this announcement.",
+      "limits_uk": "Повідомлення не встановлює остаточних результатів ідентифікації.",
+      "tags": [
+        "daily",
+        "ukraine"
+      ]
+    },
+    {
+      "rubric_en": "Losses, Captivity & Missing",
+      "rubric_uk": "Втрати, полон, зниклі",
+      "theme": "ukraine",
+      "emoji": "📊",
+      "source_name": "Meduza / Mediazona",
+      "source_url": "https://meduza.io/en/feature/2026/11/23/more-than-700-000-russian-troops-died-in-the-war-in-ukraine-by-late-september-2026-meduza-and-mediazona-estimate",
+      "source_date_label_en": "23 November 2026",
+      "source_date_label_uk": "23 листопада 2026",
+      "title_en": "Russian losses: three layers of evidence",
+      "title_uk": "Російські втрати: три рівні доказовості",
+      "what_happened_en": "The joint study compares named records, registered deaths and estimates incorporating registration delays. The authors estimate 490,000 military deaths already registered and over 700,000 total by late September.",
+      "what_happened_uk": "Спільне дослідження зіставляє поіменні записи, зареєстровані смерті та модельні оцінки із врахуванням затримок реєстрації. Автори оцінюють зареєстровані військові смерті у 490 тисяч, а загальні втрати загиблими — понад 700 тисяч на кінець вересня.",
+      "why_it_matters_en": "Administrative registration delays affect completeness.",
+      "why_it_matters_uk": "Затримки адміністративної реєстрації впливають на повноту даних.",
+      "how_to_use_en": "Keep named counts, administrative estimates and model outputs separate, with their cutoff dates.",
+      "how_to_use_uk": "Окремо обліковувати поіменні дані, адміністративні оцінки та результати моделювання із датами зрізу.",
+      "limits_en": "The estimates are the authors’ findings, not official Rosstat totals. Recent months carry substantial uncertainty; no independent audit by this journal.",
+      "limits_uk": "Це оцінки авторів, а не офіційні підсумки Росстату. Найновіші місяці мають значну невизначеність; редакція не проводила незалежного аудиту.",
+      "tags": [
+        "daily",
+        "ukraine"
+      ]
+    },
+    {
+      "rubric_en": "War Crimes Verification",
+      "rubric_uk": "Верифікація воєнних злочинів",
+      "theme": "ukraine",
+      "emoji": "⚖️",
+      "source_name": "SSU",
+      "source_url": "https://www.ssu.gov.ua/en/novyny/za-materialamy-sbu-natspolitsii-ta-ohp-sudytymut-rashysta-na-prizvysko-doktor-zlo-yakyi-katuvav-ukrainskykh-polonenykh",
+      "source_date_label_en": "24 November 2026",
+      "source_date_label_uk": "24 листопада 2026",
+      "title_en": "From investigation to trial",
+      "title_uk": "Від розслідування до суду",
+      "what_happened_en": "The SSU announced that a case involving a Russian medic accused of torturing Ukrainian prisoners of war had been submitted to court.",
+      "what_happened_uk": "СБУ повідомила про передання до суду справи щодо російського медика, якого обвинувачують у катуванні українських військовополонених.",
+      "why_it_matters_en": "Procedural status matters in accountability records.",
+      "why_it_matters_uk": "Процесуальний статус важливий для реєстрів відповідальності.",
+      "how_to_use_en": "Distinguish allegations, charges, referral to court and judgment.",
+      "how_to_use_uk": "Розрізняти повідомлення, обвинувачення, передання справи до суду та вирок.",
+      "limits_en": "An official announcement is not a conviction.",
+      "limits_uk": "Офіційне повідомлення не є обвинувальним вироком.",
+      "tags": [
+        "daily",
+        "ukraine"
+      ]
+    },
+    {
+      "rubric_en": "Ukraine Lens",
+      "rubric_uk": "Українська оптика",
+      "theme": "ukraine",
+      "emoji": "🇺🇦",
+      "source_name": "Ukraine Evidence Hub",
+      "source_url": "https://ukraine-evidence.org/case-files/cf-50",
+      "source_date_label_en": "26 November 2026",
+      "source_date_label_uk": "26 листопада 2026",
+      "title_en": "Separating source tiers",
+      "title_uk": "Розмежування рівнів джерел",
+      "what_happened_en": "The Kharkiv case file identifies preliminary local-authority findings separately from UN-verified aggregate figures and includes official photographs with hashes.",
+      "what_happened_uk": "Харківське досьє відокремлює попередні дані місцевої влади від підтверджених ООН загальних показників та містить офіційні фотографії з хешами.",
+      "why_it_matters_en": "Source provenance and integrity metadata improve traceability.",
+      "why_it_matters_uk": "Походження джерел та метадані цілісності полегшують перевірку.",
+      "how_to_use_en": "Record source tier, retrieval date and original documentation.",
+      "how_to_use_uk": "Фіксувати рівень джерела, дату отримання та первинний документ.",
+      "limits_en": "The aggregator states that the incident deaths have not yet been verified by the UN; hashes do not prove factual accuracy.",
+      "limits_uk": "Агрегатор зазначає, що загибель людей у цьому випадку ще не підтверджена ООН; хеші не доводять достовірності змісту.",
+      "tags": [
+        "daily",
+        "ukraine"
+      ]
+    },
+    {
+      "rubric_en": "Platform Watch",
+      "rubric_uk": "Платформний радар",
+      "theme": "global",
+      "emoji": "🌐",
+      "source_name": "Alliance4Europe",
+      "source_url": "https://alliance4europe.eu/report/state-of-manipulation-a-threat-to-europes-security",
+      "source_date_label_en": "November 2026",
+      "source_date_label_uk": "Листопад 2026",
+      "title_en": "Removing content is not dismantling a network",
+      "title_uk": "Видалення контенту не означає ліквідації мережі",
+      "what_happened_en": "The November report documents recurring influence operations and uneven platform responses, including persistent accounts and restored monetisation.",
+      "what_happened_uk": "Листопадовий звіт описує повторювані інформаційні операції та неоднорідну реакцію платформ, зокрема збереження облікових записів і відновлення монетизації.",
+      "why_it_matters_en": "Individual takedowns do not necessarily disrupt an operation.",
+      "why_it_matters_uk": "Видалення окремих матеріалів не обов’язково припиняє операцію.",
+      "how_to_use_en": "Track content, accounts, campaigns and platform actions separately.",
+      "how_to_use_uk": "Окремо обліковувати контент, акаунти, кампанії та дії платформ.",
+      "limits_en": "Reported metrics cover selected documented operations, not all platform activity.",
+      "limits_uk": "Показники охоплюють досліджені операції, а не всю активність платформ.",
+      "tags": [
+        "daily",
+        "global"
+      ]
+    },
+    {
+      "rubric_en": "AI Verification",
+      "rubric_uk": "ШІ та верифікація",
+      "theme": "verification",
+      "emoji": "🤖",
+      "source_name": "Resemble AI",
+      "source_url": "https://www.resemble.ai/resources/the-deepfake-watchlist-week-of-november-20-26-2026",
+      "source_date_label_en": "26 November 2026",
+      "source_date_label_uk": "26 листопада 2026",
+      "title_en": "Synthetic media ahead of Taiwan’s elections",
+      "title_uk": "Синтетичний контент напередодні виборів на Тайвані",
+      "what_happened_en": "The vendor’s weekly review cites Reuters reporting that Taiwanese officials flagged more than 2,150 allegedly AI-generated videos ahead of local elections.",
+      "what_happened_uk": "Щотижневий огляд компанії посилається на Reuters: тайванські посадовці повідомили про понад 2150 імовірно згенерованих ШІ відео напередодні місцевих виборів.",
+      "why_it_matters_en": "Campaign-level analysis complements individual media verification.",
+      "why_it_matters_uk": "Аналіз кампаній доповнює перевірку окремих матеріалів.",
+      "how_to_use_en": "Separate authenticity, coordination, attribution and measured audience effects.",
+      "how_to_use_uk": "Розрізняти автентичність, координованість, атрибуцію та виміряний вплив.",
+      "limits_en": "A commercial vendor’s secondary summary is not independent verification of the figures or attribution.",
+      "limits_uk": "Вторинний огляд комерційного розробника не є незалежним підтвердженням цифр чи атрибуції.",
+      "tags": [
+        "daily",
+        "verification"
+      ]
+    },
+    {
+      "rubric_en": "Investigator OPSEC",
+      "rubric_uk": "Безпека дослідника",
+      "theme": "global",
+      "emoji": "🛡️",
+      "source_name": "EDRi",
+      "source_url": "https://edri.org/our-work/open-letter-edri-warns-of-eus-undemocratic-attempt-to-introduce-surveillance-in-satellite-based-communications/",
+      "source_date_label_en": "17 November 2026 — retrospective",
+      "source_date_label_uk": "17 листопада 2026 — ретроспектива",
+      "title_en": "Satellite communications and surveillance regulation",
+      "title_uk": "Супутникові комунікації та регулювання стеження",
+      "what_happened_en": "EDRi’s open letter warns that two EU legislative proposals could enable retention and interception obligations for satellite operators.",
+      "what_happened_uk": "У відкритому листі EDRi застерігає, що дві законодавчі пропозиції ЄС можуть дозволити встановлення вимог щодо зберігання даних та перехоплення для супутникових операторів.",
+      "why_it_matters_en": "Satellite connectivity is not exempt from jurisdictional risks.",
+      "why_it_matters_uk": "Супутниковий зв’язок не усуває юрисдикційних ризиків.",
+      "how_to_use_en": "Consider operator jurisdiction and published data-retention rules in security assessments.",
+      "how_to_use_uk": "Враховувати юрисдикцію оператора та оприлюднені правила зберігання даних під час оцінки безпеки.",
+      "limits_en": "Retrospective advocacy statement concerning proposals, not enacted obligations.",
+      "limits_uk": "Ретроспективний огляд правозахисної позиції щодо пропозицій, а не чинних вимог.",
+      "tags": [
+        "daily",
+        "global"
+      ]
+    }
+  ]
+}
